@@ -28,3 +28,6 @@ desktop.ini
 # Local env files
 .env
 .env.local
+
+# Claude Code local settings (not part of project)
+.claude/settings.local.json
