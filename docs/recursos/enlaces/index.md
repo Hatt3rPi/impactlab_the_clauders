@@ -1,15 +1,34 @@
 ---
-title: Enlaces
-description: Links útiles externos.
+title: "Enlaces"
+description: "Índice de URLs útiles: links curados manualmente por el equipo + URLs extraídas de los runs Deep Research agrupadas por archivo."
 tags:
   - recursos
+  - enlaces
 ---
 
-# Enlaces útiles
+# Enlaces
 
 <!-- AUTO-BANNER -->
 !!! abstract ":material-toy-brick: Plantilla / esqueleto inicial"
-    Estructura generada al iniciar la wiki, sin datos del equipo. **Reemplazar el contenido antes de citarlo.** Convención: ver [Convenciones de contenido](../convenciones-de-contenido.md).
+    Estructura generada al iniciar la wiki, sin datos del equipo. **Reemplazar el contenido antes de citarlo.** Convención: ver [Convenciones de contenido](../../convenciones-de-contenido.md).
+
+## URLs de runs Deep Research (29-abr-2026)
+
+Citaciones del agente Google Deep Research Max en los 5 runs. **Cada archivo preserva el contexto de origen.**
+
+| Run | Foco | # URLs | Archivo |
+|---|---|---|---|
+| #01 | Ideas fuera del radar | 25 | [run-01-ideas-fuera-del-radar.md](run-01-ideas-fuera-del-radar.md) |
+| #02 | Ganadores hackathons IA 2025-2026 | 46 | [run-02-ganadores-hackathons.md](run-02-ganadores-hackathons.md) |
+| #03 | Datasets sub-utilizados + 5 cruces | 44 | [run-03-datasets-subutilizados.md](run-03-datasets-subutilizados.md) |
+| #04 | Money left on the table en Chile | 54 | [run-04-money-left-on-the-table.md](run-04-money-left-on-the-table.md) |
+| #05 | Canales distribución NSE D-E | 74 | [run-05-canales-distribucion.md](run-05-canales-distribucion.md) |
+
+**Total: 243 URLs en 160 dominios distintos.** Tabla cruzada por institución: [por-institucion.md](por-institucion.md).
+
+---
+
+## Links curados manualmente
 
 ## Competencia
 

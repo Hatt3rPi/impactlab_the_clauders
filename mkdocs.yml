@@ -122,13 +122,28 @@ nav:
   - Ideas:
       - ideas/index.md
       - Plantilla: ideas/_template.md
-      - sabidurIA ciudadana ⭐ (unificadora): ideas/sabiduria-ciudadana.md
+      - "Rescate Ciudadano ⭐": ideas/rescate-ciudadano-acreencias.md
+      - "sabidurIA ciudadana ⭐ (unificadora)": ideas/sabiduria-ciudadana.md
       - Defensor (DICOM): ideas/defensor-dicom.md
+      - "Legado Claro ⭐ (herencias)": ideas/legado-claro-herencias.md
       - Letra Chica / Tu Plata (CAE): ideas/letra-chica-cae.md
-      - Tu Plata Mipyme: ideas/tu-plata-mipyme.md
+      - GES-Claim (salud retroactiva): ideas/ges-claim-salud-retroactiva.md
+      - RutaJusta (Ley Uber): ideas/rutajusta-ley-uber.md
+      - CuidaDerechos (cuidadoras): ideas/cuidaderechos-cuidadoras.md
+      - Agua Comunitaria / APR-Bot: ideas/agua-comunitaria-apr.md
       - Mi Plan B (sobreendeudamiento): ideas/mi-plan-b-sobreendeudamiento.md
+      - EmancipIA (egresados SENAME): ideas/emancipia-egresados-sename.md
+      - Tu Plata Mipyme: ideas/tu-plata-mipyme.md
+      - Re-Inicia (quiebra personal): ideas/re-inicia-quiebra-personal.md
+      - Viuda Protegida (pensión): ideas/viuda-protegida-pension.md
+      - Voz Financiera (accesibilidad): ideas/voz-financiera-accesibilidad.md
+      - Retención Alimentos: ideas/retencion-alimentos.md
       - ConfíaConmigo (migrantes): ideas/confiaconmigo-migrantes.md
       - Mi Pensión: ideas/mi-pension.md
+      - Cosecha Justa (temporeros): ideas/cosecha-justa-temporeros.md
+      - Respiro CAE (desertores): ideas/respiro-cae-desertores.md
+      - Feria Legal (ambulantes): ideas/feria-legal-ambulantes.md
+      - Talento Tributa (creadores): ideas/talento-tributa-creadores.md
       - Open Finance Explainer: ideas/open-finance-explainer.md
       - Antiestafa / Pillo (fuera de línea): ideas/antiestafa-pillo.md
       - Mis Datos · ARCOP (fuera de línea): ideas/mis-datos-arcop.md
@@ -194,6 +209,13 @@ nav:
       - Proceso y hoja de ruta (7 días): equipo/proceso-y-hoja-de-ruta.md
       - Estrategia de pitch para el lab: equipo/estrategia-pitch-lab.md
   - Recursos:
-      - Enlaces: recursos/enlaces.md
+      - Enlaces:
+          - recursos/enlaces/index.md
+          - Por institución: recursos/enlaces/por-institucion.md
+          - "Run 01 — Ideas fuera del radar": recursos/enlaces/run-01-ideas-fuera-del-radar.md
+          - "Run 02 — Ganadores hackathons": recursos/enlaces/run-02-ganadores-hackathons.md
+          - "Run 03 — Datasets sub-utilizados": recursos/enlaces/run-03-datasets-subutilizados.md
+          - "Run 04 — Money left on the table": recursos/enlaces/run-04-money-left-on-the-table.md
+          - "Run 05 — Canales distribución": recursos/enlaces/run-05-canales-distribucion.md
       - Mentores: recursos/mentores.md
       - Workshops: recursos/workshops.md

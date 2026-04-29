@@ -18,6 +18,9 @@ tags:
 !!! info ":material-book-open-variant: Síntesis de fuentes externas"
     Promoción a forma curada del [run Deep Research del 29-abr-2026](../_runs-deep-research/2026-04-29-01-ideas-fuera-del-radar.md). 25 fuentes oficiales chilenas (CMF, Mintrab, MOP, BCN, Sup. Salud, MinSal, Asoc. AFP, etc.) + casos análogos internacionales (UK, USA, Singapur, India, Brasil). **Aún no validadas por el equipo.**
 
+!!! success ":material-check-bold: Ya integradas en el tablero maestro"
+    Las 15 ideas listadas aquí **ya tienen ficha standalone** con scoring formal en [`docs/ideas/`](../../ideas/index.md) y aparecen en la [tabla maestra unificada de 25 ideas](../../ideas/index.md#tabla-maestra-25-ideas-ordenadas-por-score). Este archivo se mantiene como **referencia histórica del run #01** (casos análogos internacionales completos, contexto narrativo, justificación de cada idea).
+
 > Este archivo **promueve a forma curada** los hallazgos del reporte crudo de 380 líneas. Para detalle completo, leer el reporte.
 
 ## TL;DR
