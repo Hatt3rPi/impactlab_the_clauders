@@ -22,11 +22,9 @@ Notas sobre el marco normativo chileno relevante para las tres líneas temática
 
 ## Notas existentes
 
-> Por ahora vacío. Crear notas con [`../_template.md`](../_template.md).
-
 | Nota | Fuente | Autor | Fecha | Línea |
 |---|---|---|---|---|
-| — | — | — | — | — |
+| [Marco regulatorio Chile 2026](marco-regulatorio-chile-2026.md) | PDF estrategia + Deep Research | Equipo (síntesis) | 2026-04-29 | transversal |
 
 ## Estructura sugerida de cada nota
 

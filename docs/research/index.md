@@ -9,6 +9,13 @@ tags:
 
 Notas de investigación organizadas por tipo de fuente. Cada nota usa la [plantilla](_template.md).
 
+## Documentos fuente
+
+Investigación generada por el equipo antes de la formación, incorporada el **2026-04-29**:
+
+- :material-file-pdf-box: [Estrategia Literacy Regulatoria](../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf) — 12 páginas con marco completo + 8 ideas + roadmap 7 días.
+- :material-file-document: [Deep Research Calibria](../assets/research/2026-04-29-deep-research-calibria.html) — 62 fuentes oficiales y privadas, scoring de 18 dolores, cuadrante de oportunidades.
+
 ## Categorías
 
 <div class="grid cards" markdown>

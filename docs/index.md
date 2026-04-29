@@ -32,15 +32,17 @@ Bienvenidos al espacio de trabajo del equipo **The Clauders** para el [Claude Im
 
 ## Estado actual del equipo
 
-!!! success "Fase: Definición de problema dentro de Inclusión Financiera"
-    El [29/04 elegimos la línea temática](reuniones/2026-04-29-definicion-problema-setup.md): **Inclusión Financiera**. Ahora estamos en levantamiento de **10 problemas por persona con métricas**, para reducir el pool a 3 → 1 antes del 5 de mayo.
+!!! success "Fase: Selección de idea dentro de Inclusión Financiera"
+    El [29/04 elegimos la línea temática](reuniones/2026-04-29-definicion-problema-setup.md): **Inclusión Financiera**. El equipo ya incorporó **research previo** (estrategia + deep research) con **9 ideas pre-evaluadas**. Próximo paso: cerrar la idea ganadora entre las 3 candidatas top.
 
 - [x] Inscripción individual completada
 - [x] Formación de equipo (4 personas: Felipe, Jose, Cristian, Anahi)
 - [x] Selección de línea temática — **Inclusión financiera** ([ADR 0002](especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md))
 - [x] Decisión de plataforma — **Web mobile-first** ([ADR 0003](especificaciones/adrs/0003-plataforma-web-mobile-first.md))
-- [ ] Selección del problema específico (10 → 3 → 1)
-- [ ] Validación con usuarios reales (vía redes sociales)
+- [x] Pool de ideas pre-evaluadas con scoring ([Tablero de ideas](ideas/index.md))
+- [ ] Selección de idea ganadora (top 3: [Defensor](ideas/defensor-dicom.md), [Letra Chica](ideas/letra-chica-cae.md), [Tu Plata Mipyme](ideas/tu-plata-mipyme.md))
+- [ ] Spike técnico de la idea ganadora
+- [ ] Validación con usuarios reales (5-10 entrevistas)
 - [ ] MVP testeado antes del lab
 - [ ] Prototipo refinado durante el lab
 - [ ] Pitch (7 de mayo · 12:00)

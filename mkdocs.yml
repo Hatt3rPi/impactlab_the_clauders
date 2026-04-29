@@ -121,14 +121,32 @@ nav:
   - Ideas:
       - ideas/index.md
       - Plantilla: ideas/_template.md
+      - Defensor (DICOM) ⭐: ideas/defensor-dicom.md
+      - Letra Chica / Tu Plata (CAE): ideas/letra-chica-cae.md
+      - Tu Plata Mipyme: ideas/tu-plata-mipyme.md
+      - Mi Plan B (sobreendeudamiento): ideas/mi-plan-b-sobreendeudamiento.md
+      - ConfíaConmigo (migrantes): ideas/confiaconmigo-migrantes.md
+      - Mi Pensión: ideas/mi-pension.md
+      - Open Finance Explainer: ideas/open-finance-explainer.md
+      - Antiestafa / Pillo (fuera de línea): ideas/antiestafa-pillo.md
+      - Mis Datos · ARCOP (fuera de línea): ideas/mis-datos-arcop.md
       - Archivadas: ideas/archivadas/index.md
   - Research:
       - research/index.md
       - Plantilla: research/_template.md
-      - Regulatorio: research/regulatorio/index.md
-      - Usuarios: research/usuarios/index.md
-      - Mercado: research/mercado/index.md
-      - Tecnología: research/tecnologia/index.md
+      - Regulatorio:
+          - research/regulatorio/index.md
+          - Marco regulatorio Chile 2026: research/regulatorio/marco-regulatorio-chile-2026.md
+      - Usuarios:
+          - research/usuarios/index.md
+          - Segmentos y dolores: research/usuarios/segmentos-y-dolores.md
+      - Mercado:
+          - research/mercado/index.md
+          - Soluciones existentes y brechas: research/mercado/soluciones-existentes.md
+          - Patrones hackathons fintech: research/mercado/patrones-hackathons-fintech.md
+      - Tecnología:
+          - research/tecnologia/index.md
+          - Capacidades Claude diferenciadoras: research/tecnologia/capacidades-claude-diferenciadoras.md
   - Definiciones:
       - Glosario: definiciones/glosario.md
       - Stakeholders: definiciones/stakeholders.md

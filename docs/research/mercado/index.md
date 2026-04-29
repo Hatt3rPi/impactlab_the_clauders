@@ -42,6 +42,7 @@ Para diferenciarnos del resto de los **200 participantes** del lab, necesitamos 
 
 | Nota | Categoría | Autor | Fecha | Línea |
 |---|---|---|---|---|
-| — | — | — | — | — |
+| [Soluciones existentes en Chile y brechas críticas](soluciones-existentes.md) | Mapeo competitivo | Equipo | 2026-04-29 | transversal |
+| [Patrones que ganan hackathons fintech](patrones-hackathons-fintech.md) | Benchmark | Equipo | 2026-04-29 | transversal |
 
-> Crear notas con [`../_template.md`](../_template.md).
+> Crear notas adicionales con [`../_template.md`](../_template.md).

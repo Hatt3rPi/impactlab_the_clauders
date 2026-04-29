@@ -33,9 +33,9 @@ El criterio de **Impacto cívico (25 %)** depende de tener un **usuario real** i
 
 | Nota | Tipo | Autor | Fecha | Línea |
 |---|---|---|---|---|
-| — | — | — | — | — |
+| [Segmentos vulnerables y dolores ciudadanos](segmentos-y-dolores.md) | Síntesis | Equipo | 2026-04-29 | transversal |
 
-> Crear notas con [`../_template.md`](../_template.md).
+> Crear notas adicionales con [`../_template.md`](../_template.md).
 
 ## Personas tentativas (a refinar)
 

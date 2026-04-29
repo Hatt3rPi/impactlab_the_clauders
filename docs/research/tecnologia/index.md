@@ -54,6 +54,6 @@ El criterio **Claude & Agentic Thinking (25 %)** + el **bonus +5** dependen de q
 
 | Nota | Tema | Autor | Fecha |
 |---|---|---|---|
-| — | — | — | — |
+| [Capacidades de Claude diferenciadoras](capacidades-claude-diferenciadoras.md) | Stack + features | Equipo | 2026-04-29 |
 
-> Crear notas con [`../_template.md`](../_template.md).
+> Crear notas adicionales con [`../_template.md`](../_template.md).

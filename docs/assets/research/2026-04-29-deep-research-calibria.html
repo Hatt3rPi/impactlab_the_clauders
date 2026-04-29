@@ -1,0 +1,1919 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deep Research · Hackathon IA Chile · Calibria</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --bg-card: #141414;
+    --bg-elevated: #1a1a1a;
+    --border: #262626;
+    --border-strong: #333;
+    --ink: #f5f5f0;
+    --ink-soft: #b8b8b0;
+    --ink-mute: #777770;
+    --accent: #ffd84d;
+    --accent-soft: rgba(255, 216, 77, 0.12);
+    --accent-line: rgba(255, 216, 77, 0.35);
+    --inclusion: #4ade80;
+    --ciber: #f87171;
+    --datos: #60a5fa;
+    --transv: #c084fc;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* ============ LAYOUT ============ */
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ============ HERO ============ */
+  .hero {
+    padding: 80px 0 60px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, var(--accent-soft) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin-bottom: 24px;
+    padding: 6px 12px;
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-line);
+    border-radius: 100px;
+  }
+
+  .eyebrow::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  h1.hero-title {
+    font-family: var(--serif);
+    font-size: clamp(40px, 6vw, 72px);
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+    max-width: 900px;
+  }
+
+  h1.hero-title em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+    color: var(--ink-soft);
+    max-width: 720px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .hero-meta span strong {
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  /* ============ NAV ============ */
+  .toc {
+    position: sticky;
+    top: 0;
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    z-index: 100;
+    padding: 16px 0;
+  }
+
+  .toc-list {
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+    list-style: none;
+    scrollbar-width: none;
+  }
+
+  .toc-list::-webkit-scrollbar { display: none; }
+
+  .toc-list a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 100px;
+    white-space: nowrap;
+    transition: all 0.15s;
+  }
+
+  .toc-list a:hover {
+    background: var(--bg-card);
+    color: var(--ink);
+  }
+
+  /* ============ SECTIONS ============ */
+  section {
+    padding: 80px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .section-num {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--accent);
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+    max-width: 900px;
+  }
+
+  h2 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  h3 {
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 40px 0 16px;
+    color: var(--ink);
+  }
+
+  h4 {
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--ink-mute);
+    margin: 24px 0 12px;
+  }
+
+  p {
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+    max-width: 800px;
+  }
+
+  p strong { color: var(--ink); font-weight: 600; }
+
+  /* ============ STATS GRID ============ */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    margin: 40px 0;
+    border: 1px solid var(--border);
+  }
+
+  .stat-card {
+    background: var(--bg-card);
+    padding: 28px 24px;
+    transition: background 0.2s;
+  }
+
+  .stat-card:hover {
+    background: var(--bg-elevated);
+  }
+
+  .stat-num {
+    font-family: var(--serif);
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--accent);
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+  }
+
+  .stat-label {
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height: 1.4;
+  }
+
+  .stat-source {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--ink-mute);
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* ============ CALLOUT ============ */
+  .callout {
+    background: linear-gradient(135deg, var(--bg-card), var(--bg-elevated));
+    border: 1px solid var(--accent-line);
+    padding: 32px;
+    margin: 40px 0;
+    border-radius: 4px;
+    position: relative;
+  }
+
+  .callout::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--accent);
+  }
+
+  .callout-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
+
+  .callout p { margin-bottom: 0; color: var(--ink); }
+
+  /* ============ TIMELINE ============ */
+  .timeline {
+    position: relative;
+    margin: 40px 0;
+    padding-left: 32px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--border-strong);
+  }
+
+  .timeline-item {
+    position: relative;
+    padding-bottom: 32px;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 2px solid var(--accent);
+  }
+
+  .timeline-item.past::before {
+    border-color: var(--ink-mute);
+  }
+
+  .timeline-date {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+
+  .timeline-item.past .timeline-date {
+    color: var(--ink-mute);
+  }
+
+  .timeline-title {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+
+  .timeline-desc {
+    font-size: 14px;
+    color: var(--ink-soft);
+    max-width: 700px;
+  }
+
+  /* ============ VERTICAL CARDS ============ */
+  .verticals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin: 40px 0;
+  }
+
+  .vertical-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 32px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+
+  .vertical-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-strong);
+  }
+
+  .vertical-card.inclusion { border-top: 3px solid var(--inclusion); }
+  .vertical-card.ciber { border-top: 3px solid var(--ciber); }
+  .vertical-card.datos { border-top: 3px solid var(--datos); }
+
+  .vertical-tag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+
+  .tag-inclusion { background: rgba(74, 222, 128, 0.15); color: var(--inclusion); }
+  .tag-ciber { background: rgba(248, 113, 113, 0.15); color: var(--ciber); }
+  .tag-datos { background: rgba(96, 165, 250, 0.15); color: var(--datos); }
+  .tag-transv { background: rgba(192, 132, 252, 0.15); color: var(--transv); }
+
+  .vertical-card h3 {
+    margin: 0 0 16px;
+    font-size: 22px;
+  }
+
+  .vertical-card p {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .vertical-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+
+  .vertical-stat {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .vertical-stat strong {
+    font-family: var(--mono);
+    font-size: 14px;
+    color: var(--accent);
+    min-width: 60px;
+  }
+
+  /* ============ TABLE ============ */
+  .table-wrapper {
+    overflow-x: auto;
+    margin: 32px 0;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    min-width: 900px;
+  }
+
+  thead {
+    background: var(--bg-elevated);
+  }
+
+  th {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 14px 12px;
+    color: var(--ink-soft);
+    font-weight: 500;
+    border-bottom: 1px solid var(--border-strong);
+    white-space: nowrap;
+  }
+
+  th.center, td.center { text-align: center; }
+  th.score-col, td.score-col { text-align: right; padding-right: 16px; }
+
+  td {
+    padding: 14px 12px;
+    border-bottom: 1px solid var(--border);
+    color: var(--ink-soft);
+    vertical-align: top;
+  }
+
+  tbody tr:hover { background: var(--bg-card); }
+  tbody tr:last-child td { border-bottom: none; }
+
+  td.problem {
+    color: var(--ink);
+    font-weight: 500;
+    max-width: 380px;
+  }
+
+  td.score {
+    font-family: var(--mono);
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 14px;
+  }
+
+  td.rank {
+    font-family: var(--mono);
+    color: var(--ink-mute);
+    font-weight: 500;
+    width: 32px;
+  }
+
+  /* Score bar */
+  .score-bar {
+    display: inline-block;
+    width: 36px;
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    margin-right: 8px;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .score-bar-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: var(--accent);
+  }
+
+  /* Vertical pills in table */
+  .v-pill {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+  }
+
+  /* ============ QUADRANT ============ */
+  .quadrant-section {
+    margin: 48px 0;
+  }
+
+  .quadrant-wrapper {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 40px;
+    position: relative;
+  }
+
+  .quadrant {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1.3 / 1;
+    max-width: 900px;
+    margin: 0 auto;
+    background:
+      linear-gradient(to right, transparent 49.5%, var(--border-strong) 49.5%, var(--border-strong) 50.5%, transparent 50.5%),
+      linear-gradient(to bottom, transparent 49.5%, var(--border-strong) 49.5%, var(--border-strong) 50.5%, transparent 50.5%);
+  }
+
+  .quad-label {
+    position: absolute;
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--ink-mute);
+    padding: 4px 10px;
+    background: var(--bg-card);
+    z-index: 2;
+  }
+
+  .quad-label.tl { top: 12px; left: 12px; color: var(--accent); border: 1px solid var(--accent-line); }
+  .quad-label.tr { top: 12px; right: 12px; }
+  .quad-label.bl { bottom: 12px; left: 12px; }
+  .quad-label.br { bottom: 12px; right: 12px; }
+
+  .quad-header {
+    font-family: var(--serif);
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 4px;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--ink-soft);
+    display: block;
+  }
+
+  .quad-label.tl .quad-header { color: var(--accent); }
+
+  .axis-label {
+    position: absolute;
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--ink-soft);
+  }
+
+  .axis-x {
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .axis-y {
+    top: 50%;
+    left: -50px;
+    transform: rotate(-90deg) translateX(50%);
+    transform-origin: right center;
+  }
+
+  .axis-arrow-x {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--border-strong);
+  }
+
+  .axis-arrow-y {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -8px;
+    width: 1px;
+    background: var(--border-strong);
+  }
+
+  .opp-dot {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    transition: transform 0.15s;
+    border: 2px solid var(--bg-card);
+    box-shadow: 0 0 0 2px currentColor;
+  }
+
+  .opp-dot:hover {
+    transform: translate(-50%, -50%) scale(1.6);
+    z-index: 10;
+  }
+
+  .opp-dot.inclusion { background: var(--inclusion); color: var(--inclusion); }
+  .opp-dot.ciber { background: var(--ciber); color: var(--ciber); }
+  .opp-dot.datos { background: var(--datos); color: var(--datos); }
+  .opp-dot.transv { background: var(--transv); color: var(--transv); }
+
+  .opp-dot::after {
+    content: attr(data-num);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--mono);
+    font-size: 9px;
+    font-weight: 700;
+    color: var(--bg);
+  }
+
+  .quad-tooltip {
+    position: absolute;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-strong);
+    padding: 12px 14px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: var(--ink);
+    width: 240px;
+    z-index: 20;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .opp-dot:hover + .quad-tooltip { opacity: 1; }
+
+  .quad-tooltip strong { display: block; margin-bottom: 4px; color: var(--accent); }
+  .quad-tooltip span { color: var(--ink-soft); font-size: 11px; }
+
+  .quad-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    justify-content: center;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--ink-soft);
+  }
+
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  /* Opportunity detail cards */
+  .opp-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .opp-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 20px;
+    border-radius: 4px;
+    border-left: 3px solid var(--border-strong);
+  }
+
+  .opp-card.inclusion { border-left-color: var(--inclusion); }
+  .opp-card.ciber { border-left-color: var(--ciber); }
+  .opp-card.datos { border-left-color: var(--datos); }
+  .opp-card.transv { border-left-color: var(--transv); }
+
+  .opp-card.quick-win {
+    background: linear-gradient(135deg, var(--bg-card), rgba(255, 216, 77, 0.04));
+    border-color: var(--accent-line);
+  }
+
+  .opp-num {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-mute);
+    margin-bottom: 4px;
+  }
+
+  .opp-title {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+
+  .opp-desc {
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+
+  .opp-footer {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-mute);
+    flex-wrap: wrap;
+  }
+
+  .opp-metric {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .opp-metric strong {
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  /* ============ SOLUTIONS GRID ============ */
+  .solutions-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 24px;
+    margin: 32px 0;
+  }
+
+  .sol-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 28px;
+    border-radius: 4px;
+  }
+
+  .sol-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sol-card-header h4 {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--ink);
+    margin: 0;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  .sol-list {
+    list-style: none;
+  }
+
+  .sol-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+
+  .sol-list li:last-child { border-bottom: none; }
+  .sol-list strong { color: var(--ink); display: block; margin-bottom: 2px; font-weight: 600; }
+
+  .gap-banner {
+    background: rgba(248, 113, 113, 0.08);
+    border: 1px solid rgba(248, 113, 113, 0.3);
+    padding: 14px 16px;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: var(--ink);
+    line-height: 1.5;
+  }
+
+  .gap-banner strong {
+    color: var(--ciber);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    display: block;
+    margin-bottom: 4px;
+    font-family: var(--mono);
+  }
+
+  /* ============ RECO CARDS ============ */
+  .reco-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+  }
+
+  .reco-card {
+    background: var(--bg-card);
+    border: 1px solid var(--accent-line);
+    padding: 32px 28px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .reco-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--accent);
+  }
+
+  .reco-name {
+    font-family: var(--serif);
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 4px;
+    letter-spacing: -0.02em;
+  }
+
+  .reco-name em {
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .reco-tagline {
+    font-size: 14px;
+    color: var(--ink);
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+
+  .reco-body {
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .reco-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-mute);
+  }
+
+  .reco-meta span strong {
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  /* ============ PRINCIPLES ============ */
+  .principles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    margin: 40px 0;
+    border: 1px solid var(--border);
+  }
+
+  .principle {
+    background: var(--bg-card);
+    padding: 28px 24px;
+  }
+
+  .principle-num {
+    font-family: var(--serif);
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--accent);
+    line-height: 1;
+    font-style: italic;
+    margin-bottom: 12px;
+  }
+
+  .principle-title {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+
+  .principle-desc {
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  /* ============ FOOTER ============ */
+  footer {
+    padding: 60px 0 40px;
+    border-top: 1px solid var(--border);
+    background: var(--bg);
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .footer-brand {
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+
+  .footer-tagline {
+    font-size: 13px;
+    color: var(--ink-mute);
+    max-width: 480px;
+    line-height: 1.5;
+  }
+
+  .footer-meta {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-mute);
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .footer-meta div { margin-bottom: 4px; }
+
+  .footer-bottom {
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* ============ SOURCES ============ */
+  .sources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+  }
+
+  .source-block {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 24px;
+    border-radius: 4px;
+  }
+
+  .source-block h4 {
+    margin: 0 0 12px;
+    color: var(--accent);
+  }
+
+  .source-block p {
+    font-size: 12px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .verification-note {
+    background: rgba(248, 113, 113, 0.08);
+    border: 1px solid rgba(248, 113, 113, 0.25);
+    padding: 20px 24px;
+    margin-top: 32px;
+    border-radius: 4px;
+  }
+
+  .verification-note h4 {
+    color: var(--ciber);
+    margin: 0 0 12px;
+  }
+
+  .verification-note p {
+    font-size: 12px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 768px) {
+    .container { padding: 0 20px; }
+    section { padding: 60px 0; }
+    .hero { padding: 60px 0 40px; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-meta { text-align: left; }
+    .footer-bottom { flex-direction: column; gap: 12px; }
+    .quadrant-wrapper { padding: 24px; }
+    .axis-y { left: -40px; font-size: 10px; }
+    .quad-label { font-size: 9px; padding: 3px 6px; }
+    .quad-header { font-size: 13px; }
+    .reco-name { font-size: 28px; }
+  }
+
+  /* ============ UTILITIES ============ */
+  .lead {
+    font-size: 18px;
+    color: var(--ink);
+    line-height: 1.6;
+    max-width: 800px;
+    margin-bottom: 24px;
+  }
+
+  .lead em {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .anchor-offset { scroll-margin-top: 80px; }
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="container">
+    <span class="eyebrow">Deep Research · Hackathon IA-nativa Chile</span>
+    <h1 class="hero-title">5 millones de chilenos tienen <em>derechos financieros que no pueden leer</em>.</h1>
+    <p class="hero-subtitle">Análisis del marco regulatorio Chile 2026 (Leyes 21.521, 21.719, 21.673, 21.663), mapa de dolores ciudadanos con data oficial, scoring multicriterio de 18 problemas y cuadrante de oportunidades IA-nativas no cubiertas.</p>
+    <div class="hero-meta">
+      <span>Fecha · <strong>29 abr 2026</strong></span>
+      <span>Fuentes · <strong>62 oficiales y privadas</strong></span>
+      <span>Verticales · <strong>Inclusión · Ciberseg · Datos</strong></span>
+      <span>Cliente · <strong>Hackathon Chile</strong></span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ TOC ============ -->
+<nav class="toc">
+  <div class="container">
+    <ul class="toc-list">
+      <li><a href="#resumen">Resumen</a></li>
+      <li><a href="#ley-fintech">Ley Fintech</a></li>
+      <li><a href="#ley-datos">Ley de Datos</a></li>
+      <li><a href="#dolores">Dolores ciudadanos</a></li>
+      <li><a href="#scoring">Scoring multicriterio</a></li>
+      <li><a href="#soluciones">Soluciones actuales</a></li>
+      <li><a href="#cuadrante">Cuadrante oportunidades</a></li>
+      <li><a href="#recomendaciones">Recomendaciones</a></li>
+      <li><a href="#fuentes">Fuentes</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ RESUMEN EJECUTIVO ============ -->
+<section id="resumen" class="anchor-offset">
+  <div class="container">
+    <span class="section-num">00 · Resumen ejecutivo</span>
+    <h2>Chile bancarizó al 91%, pero <em>perdió la batalla por la calidad</em> del uso financiero.</h2>
+
+    <p class="lead">El marco regulatorio está listo. La implementación está retrasada. El usuario chileno es regulatoriamente <em>rico</em> y operativamente <em>huérfano</em>. Esa brecha define las oportunidades de la hackathon.</p>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-num">682K</div>
+        <div class="stat-label">reclamos en SERNAC durante 2024</div>
+        <div class="stat-source">SERNAC Cuenta Pública 2024</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">+57%</div>
+        <div class="stat-label">crecimiento de reclamos en CMF (81.798 totales)</div>
+        <div class="stat-source">CMF 2024</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">27,6B</div>
+        <div class="stat-label">intentos de ciberataques en Chile en 2024 (4,6× más que 2023)</div>
+        <div class="stat-source">Fortinet FortiGuard 2025</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">94,3%</div>
+        <div class="stat-label">de los chilenos ha recibido phishing al menos una vez</div>
+        <div class="stat-source">USS-Chile Nos Habla 2024</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">7%</div>
+        <div class="stat-label">tasa de respuesta favorable bancos a reclamos de fraude (era 51%)</div>
+        <div class="stat-source">CMF post Ley 21.673</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">4,01M</div>
+        <div class="stat-label">morosos en Chile (25,2% de la población adulta)</div>
+        <div class="stat-source">USS-Equifax Q1 2026</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">45%</div>
+        <div class="stat-label">alcanza el mínimo OCDE de alfabetización financiera (vs 58% promedio)</div>
+        <div class="stat-source">OECD/INFE 2023</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">67%</div>
+        <div class="stat-label">no sabe cómo se usan sus datos personales</div>
+        <div class="stat-source">Ipsos vía Deloitte Chile</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-label">Tesis central</div>
+      <p>Chile tiene la legislación financiera y de privacidad más alineada con OCDE/GDPR de Latinoamérica, pero <strong>carece de traducción operativa</strong>. Las leyes dibujan un consumidor protegido; en la práctica, no sabe ejercer sus derechos, los formularios están dispersos, las respuestas tardan semanas y los bancos demandan a sus víctimas. Las soluciones IA-nativas más valiosas son las que <strong>convierten artículos de ley en flujos accionables conversacionales</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEY FINTECH ============ -->
+<section id="ley-fintech" class="anchor-offset">
+  <div class="container">
+    <span class="section-num">01 · Marco regulatorio fintech</span>
+    <h2>Ley 21.521: tres años vigente, <em>solo 1 intermediario nuevo autorizado</em>.</h2>
+
+    <p>Promulgada el 22-dic-2022 y vigente desde el 3-feb-2023, la Ley Fintech reformó el mercado financiero chileno con siete servicios regulados: asesoría crediticia, asesoría de inversión, custodia de instrumentos financieros, plataformas de financiamiento colectivo, sistemas alternativos de transacción (SAT), enrutamiento de órdenes e intermediación. Su gobernanza recae en la CMF, que opera el Registro de Prestadores de Servicios Financieros (RPSF) bajo modelo proporcional por bloques.</p>
+
+    <h3>Cronología de implementación</h3>
+    <div class="timeline">
+      <div class="timeline-item past">
+        <div class="timeline-date">04 ene 2023</div>
+        <div class="timeline-title">Publicación en Diario Oficial</div>
+        <div class="timeline-desc">Ley N° 21.521 promueve la competencia e inclusión financiera mediante innovación.</div>
+      </div>
+      <div class="timeline-item past">
+        <div class="timeline-date">12 ene 2024</div>
+        <div class="timeline-title">NCG 502 emitida</div>
+        <div class="timeline-desc">Registro, autorización, gobierno corporativo y capital. Vigencia desde feb-2024.</div>
+      </div>
+      <div class="timeline-item past">
+        <div class="timeline-date">03 jul 2024</div>
+        <div class="timeline-title">NCG 514 - Sistema de Finanzas Abiertas</div>
+        <div class="timeline-desc">4 tipos de participantes (IPI, IPC, PSBI, PSIP), APIs ISO 22022, 6 categorías de datos, 5 APIs de pago.</div>
+      </div>
+      <div class="timeline-item past">
+        <div class="timeline-date">03 feb 2025</div>
+        <div class="timeline-title">Cierre de transitoriedad</div>
+        <div class="timeline-desc">335 solicitudes recibidas. Solo 179 autorizadas (178 asesores heredados + 1 intermediario nuevo: Koywe).</div>
+      </div>
+      <div class="timeline-item past">
+        <div class="timeline-date">12 nov 2025</div>
+        <div class="timeline-title">Postergación Open Finance</div>
+        <div class="timeline-desc">CMF pone en consulta modificación que extiende entrada en vigencia 12 meses adicionales.</div>
+      </div>
+      <div class="timeline-item past">
+        <div class="timeline-date">09 feb 2026</div>
+        <div class="timeline-title">NCG 559 dictada</div>
+        <div class="timeline-desc">Regula entidades fiscalizadas con servicios fintech sin inscripción. Plazo declarativo: 30-abr-2026.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">06-07 may 2026</div>
+        <div class="timeline-title">Chile Fintech Forum 2026</div>
+        <div class="timeline-desc">Por primera vez en 6 años, la CMF NO asistirá. Señal de fricción regulador-gremio.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">01 jun 2026</div>
+        <div class="timeline-title">Designación Consejo APDP (datos)</div>
+        <div class="timeline-desc">Plazo máximo adelantado por Ley de Reajuste del Sector Público.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">04 jul 2027</div>
+        <div class="timeline-title">Open Finance operativo (postergado)</div>
+        <div class="timeline-desc">Originalmente jul-2026. Extendido tras presión del sector banca y retail financiero.</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-label">Brechas reconocidas</div>
+      <p>Sesgo del registro hacia asesoría de inversión, demoras en el Anexo Técnico 3, costos de cumplimiento prohibitivos para fintech pequeñas (UF 5.000 ≈ CLP $190M a abril 2026), y zona gris que la NCG 559 recién cerró tres años después de la promulgación. <strong>Resultado: la promesa de "más competencia" sigue concentrada en pocos jugadores.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEY DE DATOS ============ -->
+<section id="ley-datos" class="anchor-offset">
+  <div class="container">
+    <span class="section-num">02 · Ley 21.719 de Protección de Datos</span>
+    <h2>Vigencia el 1-dic-2026: <em>17 meses para que las empresas se adapten</em>, solo 41% tiene DPO.</h2>
+
+    <p>Publicada el 13-dic-2024 con vacancia de 24 meses. Reemplaza un régimen de 1999 que carecía de autoridad de control y operaba reactivamente. La nueva norma incorpora 8 principios, derechos ARCOP (Acceso, Rectificación, Cancelación, Oposición, Portabilidad, Bloqueo más oposición a decisiones automatizadas), aplicación extraterritorial y régimen sancionatorio escalonado.</p>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-num">20K</div>
+        <div class="stat-label">UTM máximo por infracción gravísima (~CLP $1.392M / USD $1,2M)</div>
+        <div class="stat-source">Ley 21.719 Art. 38</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">2-4%</div>
+        <div class="stat-label">de ingresos anuales en Chile por reincidencia (no-PYMEs)</div>
+        <div class="stat-source">Ley 21.719</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">59%</div>
+        <div class="stat-label">de empresas cree que tiene tiempo suficiente para adaptarse</div>
+        <div class="stat-source">PwC-FGE jun-jul 2025</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">41%</div>
+        <div class="stat-label">de empresas chilenas tiene DPO designado a 17 meses de vigencia</div>
+        <div class="stat-source">PwC-FGE 2025</div>
+      </div>
+    </div>
+
+    <h3>Convergencia con GDPR</h3>
+    <p>≈85-90% alineada con GDPR pero sin decisión de adecuación de la Comisión Europea. Divergencias principales: <strong>ausencia de plazo numérico para notificación de brechas</strong> (GDPR exige 72 hrs; práctica recomendada en Chile es 48-72 hrs como estándar de diligencia), máximos sancionatorios menores (USD 1,2M vs €20M), figura del Modelo de Prevención de Infracciones (MPI) inexistente en GDPR, y período de gracia de 12 meses solo amonestaciones para PYMEs.</p>
+
+    <div class="callout">
+      <div class="callout-label">Riesgo institucional</div>
+      <p>La Comisión Asesora Ministerial denunció <strong>insuficiencia presupuestaria estructural</strong> de la APDP. Las remuneraciones proyectadas (Presidente $7,1M; consejeros $6M mensuales) están bajo el promedio de fiscalizadores (>$12M) y podrían facilitar captura regulatoria. El plazo legal para reglamentos (jun-2025) se incumplió y a abril 2026 solo se aprobaron las cláusulas modelo para transferencias internacionales (dic-2025).</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOLORES ============ -->
+<section id="dolores" class="anchor-offset">
+  <div class="container">
+    <span class="section-num">03 · Mapa de dolores ciudadanos</span>
+    <h2>Tres verticales, un solo patrón: <em>regulación abundante, ejercicio práctico imposible</em>.</h2>
+
+    <div class="verticals">
+      <div class="vertical-card inclusion">
+        <span class="vertical-tag tag-inclusion">Inclusión Financiera</span>
+        <h3>La frontera ya no es el acceso, es la calidad</h3>
+        <p>91% de adultos tiene al menos un producto financiero, pero solo 45% alcanza el mínimo OCDE de alfabetización (vs 58% promedio). El comportamiento financiero retrocedió de 6,1 (2016) a 4,9 (2023) sobre 9 puntos.</p>
+        <div class="vertical-stats">
+          <div class="vertical-stat"><strong>4,32</strong>conocimiento sobre 7 puntos</div>
+          <div class="vertical-stat"><strong>62%</strong>no cubre imprevisto sin crédito</div>
+          <div class="vertical-stat"><strong>9%</strong>de PYMES recibe crédito bancario</div>
+          <div class="vertical-stat"><strong>33%</strong>migrantes con instrumento financiero</div>
+        </div>
+      </div>
+
+      <div class="vertical-card ciber">
+        <span class="vertical-tag tag-ciber">Ciberseguridad Ciudadana</span>
+        <h3>Crisis sin precedentes y bancos demandando víctimas</h3>
+        <p>Pérdidas operacionales por fraude bancario crecieron 35% (2022) y 106% (2023). Tras Ley 21.673, reclamos por fraude subieron 88% mensual y respuesta favorable cayó del 51% al 7%. Hay ~30.000 juicios entre bancos y clientes en curso.</p>
+        <div class="vertical-stats">
+          <div class="vertical-stat"><strong>11,8¢</strong>fraude/USD100 (4,2× UE)</div>
+          <div class="vertical-stat"><strong>+125%</strong>phishing 2024 (Kaspersky)</div>
+          <div class="vertical-stat"><strong>+213%</strong>ataques móviles en Chile</div>
+          <div class="vertical-stat"><strong>29%</strong>adultos mayores víctimas</div>
+        </div>
+      </div>
+
+      <div class="vertical-card datos">
+        <span class="vertical-tag tag-datos">Protección de Datos</span>
+        <h3>Vacío institucional + asimetría informacional</h3>
+        <p>2 de cada 3 personas no saben cómo se usan sus datos personales. 48,9% nunca lee la política de privacidad. 67% se ha visto obligado a entregar datos contra su voluntad. La APDP aún no tiene Consejo Directivo nombrado.</p>
+        <div class="vertical-stats">
+          <div class="vertical-stat"><strong>1,18M</strong>solicitudes "No Molestar" 2024</div>
+          <div class="vertical-stat"><strong>45%</strong>incumplimiento Claro-VTR</div>
+          <div class="vertical-stat"><strong>4M</strong>clientes Santander filtrados</div>
+          <div class="vertical-stat"><strong>72%</strong>preocupado por sus datos</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCORING ============ -->
+<section id="scoring" class="anchor-offset">
+  <div class="container">
+    <span class="section-num">04 · Scoring multicriterio</span>
+    <h2>Top 18 dolores priorizados con <em>volumen × severidad × frecuencia × ausencia × viabilidad IA</em>.</h2>
+
+    <p>Ponderación: Volumen 25% · Severidad 25% · Frecuencia 15% · Ausencia de solución 20% · Viabilidad IA 15%. Escala 1-10. Ordenado por score total descendente.</p>
+
+    <div class="table-wrapper">
+      <table id="scoring-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Dolor</th>
+            <th>Vertical</th>
+            <th class="center">Vol</th>
+            <th class="center">Sev</th>
+            <th class="center">Frec</th>
+            <th class="center">Aus</th>
+            <th class="center">IA</th>
+            <th class="score-col">Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="rank">01</td>
+            <td class="problem">Phishing/vishing/smishing masivo: 94,3% recibió, 53% no sabe 2FA</td>
+            <td><span class="v-pill tag-ciber">Ciberseg</span></td>
+            <td class="center">10</td><td class="center">9</td><td class="center">10</td><td class="center">8</td><td class="center">10</td>
+            <td class="score score-col">9,35</td>
+          </tr>
+          <tr>
+            <td class="rank">02</td>
+            <td class="problem">Imposibilidad práctica de ejercer derechos ARCO contra empresas privadas</td>
+            <td><span class="v-pill tag-datos">Datos</span></td>
+            <td class="center">10</td><td class="center">8</td><td class="center">9</td><td class="center">10</td><td class="center">10</td>
+            <td class="score score-col">9,35</td>
+          </tr>
+          <tr>
+            <td class="rank">03</td>
+            <td class="problem">Caída de respuesta favorable a reclamos de fraude (51% → 7% post Ley 21.673)</td>
+            <td><span class="v-pill tag-transv">Transv</span></td>
+            <td class="center">9</td><td class="center">10</td><td class="center">9</td><td class="center">10</td><td class="center">8</td>
+            <td class="score score-col">9,25</td>
+          </tr>
+          <tr>
+            <td class="rank">04</td>
+            <td class="problem">Bancos demandan a víctimas de fraude alegando "culpa grave" (~30.000 juicios)</td>
+            <td><span class="v-pill tag-ciber">Ciberseg</span></td>
+            <td class="center">8</td><td class="center">10</td><td class="center">9</td><td class="center">9</td><td class="center">9</td>
+            <td class="score score-col">8,95</td>
+          </tr>
+          <tr>
+            <td class="rank">05</td>
+            <td class="problem">Desconocimiento sobre uso empresarial de datos (67% no sabe; 48,9% nunca lee políticas)</td>
+            <td><span class="v-pill tag-datos">Datos</span></td>
+            <td class="center">10</td><td class="center">7</td><td class="center">10</td><td class="center">9</td><td class="center">10</td>
+            <td class="score score-col">8,95</td>
+          </tr>
+          <tr>
+            <td class="rank">06</td>
+            <td class="problem">Baja comprensión de CAE/CTC y costo total del crédito (1 de 5 calcula tasa simple)</td>
+            <td><span class="v-pill tag-inclusion">Inclusión</span></td>
+            <td class="center">10</td><td class="center">7</td><td class="center">10</td><td class="center">8</td><td class="center">10</td>
+            <td class="score score-col">8,80</td>
+          </tr>
+          <tr>
+            <td class="rank">07</td>
+            <td class="problem">Adultos mayores víctimas de fraude digital (29% afectados; 12% confía ciegamente en internet)</td>
+            <td><span class="v-pill tag-ciber">Ciberseg</span></td>
+            <td class="center">7</td><td class="center">10</td><td class="center">9</td><td class="center">9</td><td class="center">9</td>
+            <td class="score score-col">8,75</td>
+          </tr>
+          <tr>
+            <td class="rank">08</td>
+            <td class="problem">Alfabetización financiera bajo OCDE (45% vs 58%; comportamiento cayó de 6,1 a 4,9)</td>
+            <td><span class="v-pill tag-inclusion">Inclusión</span></td>
+            <td class="center">10</td><td class="center">7</td><td class="center">10</td><td class="center">7</td><td class="center">10</td>
+            <td class="score score-col">8,65</td>
+          </tr>
+          <tr>
+            <td class="rank">09</td>
+            <td class="problem">Estafas en marketplaces y suplantación de marca (57% de denuncias por estafa son online)</td>
+            <td><span class="v-pill tag-ciber">Ciberseg</span></td>
+            <td class="center">9</td><td class="center">7</td><td class="center">10</td><td class="center">8</td><td class="center">10</td>
+            <td class="score score-col">8,60</td>
+          </tr>
+          <tr>
+            <td class="rank">10</td>
+            <td class="problem">PYMES sin acceso a crédito formal (9%) y >1M de microemprendimientos informales</td>
+            <td><span class="v-pill tag-inclusion">Inclusión</span></td>
+            <td class="center">8</td><td class="center">9</td><td class="center">9</td><td class="center">8</td><td class="center">9</td>
+            <td class="score score-col">8,55</td>
+          </tr>
+          <tr>
+            <td class="rank">11</td>
+            <td class="problem">Sobreendeudamiento crónico: 4,01M morosos (25,2%); 76% lleva >12 meses</td>
+            <td><span class="v-pill tag-inclusion">Inclusión</span></td>
+            <td class="center">10</td><td class="center">9</td><td class="center">9</td><td class="center">7</td><td class="center">7</td>
+            <td class="score score-col">8,50</td>
+          </tr>
+          <tr>
+            <td class="rank">12</td>
+            <td class="problem">Reclamos no respondidos en SERNAC/CMF (47% favorables; +57% YoY)</td>
+            <td><span class="v-pill tag-transv">Transv</span></td>
+            <td class="center">10</td><td class="center">8</td><td class="center">9</td><td class="center">7</td><td class="center">8</td>
+            <td class="score score-col">8,45</td>
+          </tr>
+          <tr>
+            <td class="rank">13</td>
+            <td class="problem">Resiliencia financiera precaria (62% no cubre imprevisto sin crédito)</td>
+            <td><span class="v-pill tag-inclusion">Inclusión</span></td>
+            <td class="center">10</td><td class="center">8</td><td class="center">9</td><td class="center">7</td><td class="center">8</td>
+            <td class="score score-col">8,45</td>
+          </tr>
+          <tr>
+            <td class="rank">14</td>
+            <td class="problem">Spam/llamadas no consentidas: 1,18M solicitudes "No Molestar" (45% incumplimiento)</td>
+            <td><span class="v-pill tag-datos">Datos</span></td>
+            <td class="center">10</td><td class="center">6</td><td class="center">10</td><td class="center">8</td><td class="center">9</td>
+            <td class="score score-col">8,30</td>
+          </tr>
+          <tr>
+            <td class="rank">15</td>
+            <td class="problem">Errores y demoras en bases DICOM/Equifax post-pago</td>
+            <td><span class="v-pill tag-datos">Datos</span></td>
+            <td class="center">9</td><td class="center">7</td><td class="center">8</td><td class="center">8</td><td class="center">9</td>
+            <td class="score score-col">8,15</td>
+          </tr>
+          <tr>
+            <td class="rank">16</td>
+            <td class="problem">Filtraciones masivas de datos personales (10M chilenos en foros; Santander 4M)</td>
+            <td><span class="v-pill tag-datos">Datos</span></td>
+            <td class="center">10</td><td class="center">9</td><td class="center">6</td><td class="center">8</td><td class="center">6</td>
+            <td class="score score-col">8,05</td>
+          </tr>
+          <tr>
+            <td class="rank">17</td>
+            <td class="problem">Violencia sexual digital contra NNA (39.000 víctimas; >70% adolescentes mujeres)</td>
+            <td><span class="v-pill tag-ciber">Ciberseg</span></td>
+            <td class="center">6</td><td class="center">10</td><td class="center">9</td><td class="center">8</td><td class="center">6</td>
+            <td class="score score-col">7,75</td>
+          </tr>
+          <tr>
+            <td class="rank">18</td>
+            <td class="problem">Brecha de bancarización en migrantes (33% con instrumento financiero)</td>
+            <td><span class="v-pill tag-inclusion">Inclusión</span></td>
+            <td class="center">6</td><td class="center">8</td><td class="center">8</td><td class="center">9</td><td class="center">8</td>
+            <td class="score score-col">7,70</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <div class="callout-label">Top 5 priorizados</div>
+      <p><strong>(1) Imposibilidad de ARCO + Phishing masivo</strong> empatan con 9,35 — son los problemas que mejor combinan masividad, ausencia de solución y viabilidad técnica IA. <strong>(2) Caída de respuesta a reclamos</strong> (9,25) es la falla regulatoria más severa del año. <strong>(3) Bancos demandando víctimas + Desconocimiento de uso de datos</strong> empatan con 8,95. <strong>(4) Comprensión de CAE/CTC</strong> (8,80) tiene viabilidad IA máxima.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOLUCIONES ACTUALES ============ -->
+<section id="soluciones" class="anchor-offset">
+  <div class="container">
+    <span class="section-num">05 · Mapeo de soluciones actuales en Chile</span>
+    <h2>Ecosistema robusto para inclusión, <em>vacío en ciberseguridad ciudadana y datos</em>.</h2>
+
+    <div class="solutions-section">
+      <div class="sol-card">
+        <div class="sol-card-header">
+          <h4>Inclusión Financiera</h4>
+          <span class="v-pill tag-inclusion">348 fintechs</span>
+        </div>
+        <ul class="sol-list">
+          <li><strong>CMF Educa</strong>Portal estático con simuladores. Sin IA ni personalización.</li>
+          <li><strong>App BancoEstado/CuentaRUT</strong>+13M cuentas, base de la pirámide. Asistente virtual básico.</li>
+          <li><strong>Comparaonline</strong>Corredora regulada, USD 60M ventas 2023. Sesgo comercial.</li>
+          <li><strong>Comparador SERNAC</strong>Créditos de consumo gratis. UX anticuada.</li>
+          <li><strong>Tenpo · Mach · Mercado Pago</strong>Dominan billeteras digitales.</li>
+          <li><strong>Fintual</strong>+USD 1.000M AUM, robo-advisor. Perfila clase media-alta.</li>
+          <li><strong>Destácame</strong>+2M usuarios (16% de adultos). Lo más cercano a "asistente financiero".</li>
+          <li><strong>Daniela (BCH) · Santi (Santander)</strong>Asistentes IA solo para clientes existentes.</li>
+          <li><strong>Fondo Esperanza · Banigualdad</strong>Microfinanzas presenciales para mujeres y vulnerables.</li>
+        </ul>
+      </div>
+
+      <div class="sol-card">
+        <div class="sol-card-header">
+          <h4>Ciberseguridad Ciudadana</h4>
+          <span class="v-pill tag-ciber">Reactiva</span>
+        </div>
+        <ul class="sol-list">
+          <li><strong>CSIRT Nacional/ANCI</strong>Alertas con mascota Ciberpudú. Sin app móvil ni reporte ciudadano.</li>
+          <li><strong>Comisaría Virtual</strong>App Carabineros desde jul-2025. ClaveÚnica, sin foco ciberdelitos.</li>
+          <li><strong>Denuncia Seguro 600</strong>Línea legacy.</li>
+          <li><strong>CMF Reclamos · SERNAC</strong>Centralizan reclamos. Responden en ~18 días hábiles.</li>
+          <li><strong>Antifraude bancario</strong>BancoEstado, BCH, Santander, BCI, Itaú: ML reactivo, sin compartir info cross-banco.</li>
+          <li><strong>Movistar McAfee · Entel · NeoSecure</strong>Antivirus comercial. B2B principalmente.</li>
+          <li><strong>Fundación País Digital · Mercado Hacker</strong>Incidencia y formación.</li>
+        </ul>
+        <div class="gap-banner">
+          <strong>Brecha crítica</strong>
+          NO existe en Chile a abril 2026 una app gratuita ciudadana de detección de phishing/SMS/llamadas con IA generativa. Tampoco un bot WhatsApp/Telegram que verifique URLs en tiempo real.
+        </div>
+      </div>
+
+      <div class="sol-card">
+        <div class="sol-card-header">
+          <h4>Protección de Datos</h4>
+          <span class="v-pill tag-datos">B2B only</span>
+        </div>
+        <ul class="sol-list">
+          <li><strong>Formulario ARCO CPLT</strong>Solo aplica al CPLT como responsable. No centraliza derechos contra empresas.</li>
+          <li><strong>Portabilidad Financiera (Ley 21.236)</strong>Existe desde sept-2020. UX dispersa en cada banco.</li>
+          <li><strong>Conoce tu Deuda CMF</strong>Informes gratis. Procesos de eliminación post-pago manuales y demoran.</li>
+          <li><strong>DefensaDeudores.cl y similares</strong>Mercado con muchas estafas.</li>
+          <li><strong>Derechos Digitales · Datos Protegidos</strong>ONGs de incidencia, no proveedores operativos.</li>
+          <li><strong>OneTrust · Trustjourney · Idónea · GlobalSuite</strong>SaaS B2B premium para cumplimiento empresarial.</li>
+        </ul>
+        <div class="gap-banner">
+          <strong>Brecha crítica</strong>
+          NO hay un asistente IA generativa que ayude al ciudadano a entender qué información tiene una empresa sobre él, redactar y trackear solicitudes ARCO, ni descifrar políticas de privacidad. El ciudadano está completamente huérfano.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CUADRANTE ============ -->
+<section id="cuadrante" class="anchor-offset">
+  <div class="container">
+    <span class="section-num">06 · Cuadrante de oportunidades IA-nativas</span>
+    <h2>Impacto vs complejidad técnica: <em>los Quick Wins son atacables en 24-72 horas</em>.</h2>
+
+    <p>Hover sobre los puntos para ver detalle. Los Quick Wins (cuadrante superior derecho) son ideales para hackathon: alto impacto, baja complejidad, y resuelven los dolores top del scoring.</p>
+
+    <div class="quadrant-section">
+      <div class="quadrant-wrapper">
+        <div class="quadrant" id="quadrant">
+          <div class="quad-label tl">Quick Wins <span class="quad-header">hackathon 24-72h</span></div>
+          <div class="quad-label tr">Big Bets <span class="quad-header">visión 6-18 meses</span></div>
+          <div class="quad-label bl">Fill-ins <span class="quad-header">útiles, no priorizar</span></div>
+          <div class="quad-label br">Time-sinks <span class="quad-header">evitar</span></div>
+
+          <div class="axis-arrow-x"></div>
+          <div class="axis-arrow-y"></div>
+          <div class="axis-label axis-x">Complejidad técnica →</div>
+          <div class="axis-label axis-y">↑ Impacto potencial</div>
+
+          <!-- QUICK WINS (top-left): low complexity (x small), high impact (y small) -->
+          <div class="opp-dot ciber" data-num="1" style="left: 22%; top: 14%;"></div>
+          <div class="quad-tooltip" style="left: 25%; top: 22%;">
+            <strong>1. Pillo · Verificador antiphishing</strong>
+            <span>WhatsApp + voz. Forward de SMS/link sospechoso, veredicto en menos de 10s.</span>
+          </div>
+
+          <div class="opp-dot inclusion" data-num="2" style="left: 15%; top: 22%;"></div>
+          <div class="quad-tooltip" style="left: 18%; top: 30%;">
+            <strong>2. Tu Plata · Traductor CAE/CTC</strong>
+            <span>Foto/PDF de oferta de crédito → costo total + simulador alternativas.</span>
+          </div>
+
+          <div class="opp-dot datos" data-num="3" style="left: 30%; top: 28%;"></div>
+          <div class="quad-tooltip" style="left: 32%; top: 36%;">
+            <strong>3. Mis Datos · Copiloto ARCOP</strong>
+            <span>Identifica responsable, redacta solicitud y trackea plazo de 30 días.</span>
+          </div>
+
+          <!-- BIG BETS (top-right): high complexity, high impact -->
+          <div class="opp-dot transv" data-num="4" style="left: 78%; top: 14%;"></div>
+          <div class="quad-tooltip" style="left: 55%; top: 22%;">
+            <strong>4. Agente antifraude Ley 21.673</strong>
+            <span>Detección + denuncia + escalamiento + defensa legal.</span>
+          </div>
+
+          <div class="opp-dot inclusion" data-num="5" style="left: 70%; top: 24%;"></div>
+          <div class="quad-tooltip" style="left: 47%; top: 32%;">
+            <strong>5. Copiloto PYMES SII + Open Finance</strong>
+            <span>Diagnóstico de salud financiera y formalización.</span>
+          </div>
+
+          <div class="opp-dot ciber" data-num="6" style="left: 88%; top: 18%;"></div>
+          <div class="quad-tooltip" style="left: 60%; top: 26%;">
+            <strong>6. Plataforma cuentas-mula cross-banco</strong>
+            <span>Registro federado para bloqueo proactivo de cuentas destino fraudulentas.</span>
+          </div>
+
+          <!-- FILL-INS (bottom-left): low complexity, low impact -->
+          <div class="opp-dot datos" data-num="7" style="left: 22%; top: 78%;"></div>
+          <div class="quad-tooltip" style="left: 25%; top: 60%;">
+            <strong>7. Bot "No Molestar" SERNAC en lote</strong>
+            <span>Automatiza solicitudes en bulk. Bajo impacto estratégico.</span>
+          </div>
+
+          <!-- TIME-SINKS (bottom-right): high complexity, low impact -->
+          <div class="opp-dot transv" data-num="8" style="left: 82%; top: 78%;"></div>
+          <div class="quad-tooltip" style="left: 55%; top: 60%;">
+            <strong>8. Scoring crediticio alternativo nicho</strong>
+            <span>Destácame cubre el espacio. MVP inviable en hackathon.</span>
+          </div>
+        </div>
+
+        <div class="quad-legend">
+          <div class="legend-item"><span class="legend-dot" style="background: var(--inclusion);"></span>Inclusión Financiera</div>
+          <div class="legend-item"><span class="legend-dot" style="background: var(--ciber);"></span>Ciberseguridad</div>
+          <div class="legend-item"><span class="legend-dot" style="background: var(--datos);"></span>Protección de Datos</div>
+          <div class="legend-item"><span class="legend-dot" style="background: var(--transv);"></span>Transversal</div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Detalle de las 8 oportunidades</h3>
+    <div class="opp-list">
+      <div class="opp-card ciber quick-win">
+        <div class="opp-num">QUICK WIN · 01</div>
+        <div class="opp-title">Pillo · Verificador conversacional antiphishing</div>
+        <div class="opp-desc">WhatsApp + voz. Bot que recibe forward de SMS, link o audio sospechoso y devuelve veredicto en menos de 10 segundos usando LLM + base de URLs maliciosas del CSIRT. Resuelve el dolor #1 del scoring (phishing 94,3%).</div>
+        <div class="opp-footer">
+          <div class="opp-metric"><span>Impacto</span> <strong>10</strong></div>
+          <div class="opp-metric"><span>Complejidad</span> <strong>4</strong></div>
+          <div class="opp-metric"><span>Vertical</span> <strong>Ciberseg</strong></div>
+        </div>
+      </div>
+
+      <div class="opp-card inclusion quick-win">
+        <div class="opp-num">QUICK WIN · 02</div>
+        <div class="opp-title">Tu Plata · Traductor de CAE/CTC con simulador</div>
+        <div class="opp-desc">Agente que recibe foto/PDF de oferta de crédito y explica costo total, seguros asociados, y compara con simulador SERNAC y "Conoce tu Deuda". Diferencial: ataca un dolor del 80%+ de la población.</div>
+        <div class="opp-footer">
+          <div class="opp-metric"><span>Impacto</span> <strong>9</strong></div>
+          <div class="opp-metric"><span>Complejidad</span> <strong>4</strong></div>
+          <div class="opp-metric"><span>Vertical</span> <strong>Inclusión</strong></div>
+        </div>
+      </div>
+
+      <div class="opp-card datos quick-win">
+        <div class="opp-num">QUICK WIN · 03</div>
+        <div class="opp-title">Mis Datos · Copiloto ARCOP</div>
+        <div class="opp-desc">Identifica al responsable correcto, redacta la solicitud según tipo (Acceso, Rectificación, Cancelación, Portabilidad, Oposición), la envía y monitorea el plazo de 30 días. Timing perfecto: 5 meses antes de vigencia plena.</div>
+        <div class="opp-footer">
+          <div class="opp-metric"><span>Impacto</span> <strong>9</strong></div>
+          <div class="opp-metric"><span>Complejidad</span> <strong>4</strong></div>
+          <div class="opp-metric"><span>Vertical</span> <strong>Datos</strong></div>
+        </div>
+      </div>
+
+      <div class="opp-card transv">
+        <div class="opp-num">BIG BET · 04</div>
+        <div class="opp-title">Agente antifraude end-to-end Ley 21.673</div>
+        <div class="opp-desc">Detecta el ataque, guía la denuncia con timestamping, presenta declaración jurada estructurada, escala al SERNAC/CMF si hay rechazo, y prepara la defensa legal si el banco demanda. Cubre dolores 1, 4 y 12.</div>
+        <div class="opp-footer">
+          <div class="opp-metric"><span>Impacto</span> <strong>10</strong></div>
+          <div class="opp-metric"><span>Complejidad</span> <strong>9</strong></div>
+          <div class="opp-metric"><span>Vertical</span> <strong>Transversal</strong></div>
+        </div>
+      </div>
+
+      <div class="opp-card inclusion">
+        <div class="opp-num">BIG BET · 05</div>
+        <div class="opp-title">Copiloto financiero PYMES con SII + Open Finance</div>
+        <div class="opp-desc">Une SII, CMF, Conoce tu Deuda y APIs Open Finance (operativas jul-2027) para diagnóstico de salud financiera, sugerir productos competitivos y formalizar microemprendimientos. Resuelve dolor 10.</div>
+        <div class="opp-footer">
+          <div class="opp-metric"><span>Impacto</span> <strong>9</strong></div>
+          <div class="opp-metric"><span>Complejidad</span> <strong>9</strong></div>
+          <div class="opp-metric"><span>Vertical</span> <strong>Inclusión</strong></div>
+        </div>
+      </div>
+
+      <div class="opp-card ciber">
+        <div class="opp-num">BIG BET · 06</div>
+        <div class="opp-title">Plataforma cross-banco de cuentas-mula</div>
+        <div class="opp-desc">Registro federado donde víctimas reportan números de cuenta destino fraudulentas; los bancos reciben señal en tiempo real para bloquear depósitos. Requiere coordinación regulatoria CMF.</div>
+        <div class="opp-footer">
+          <div class="opp-metric"><span>Impacto</span> <strong>10</strong></div>
+          <div class="opp-metric"><span>Complejidad</span> <strong>10</strong></div>
+          <div class="opp-metric"><span>Vertical</span> <strong>Ciberseg</strong></div>
+        </div>
+      </div>
+
+      <div class="opp-card datos">
+        <div class="opp-num">FILL-IN · 07</div>
+        <div class="opp-title">Bot "No Molestar" SERNAC automatizado</div>
+        <div class="opp-desc">Atiende dolor 14 (1,18M solicitudes manuales en 2024) pero es de bajo valor estratégico para hackathon. Útil como feature secundario.</div>
+        <div class="opp-footer">
+          <div class="opp-metric"><span>Impacto</span> <strong>5</strong></div>
+          <div class="opp-metric"><span>Complejidad</span> <strong>3</strong></div>
+          <div class="opp-metric"><span>Vertical</span> <strong>Datos</strong></div>
+        </div>
+      </div>
+
+      <div class="opp-card transv">
+        <div class="opp-num">TIME-SINK · 08</div>
+        <div class="opp-title">Scoring crediticio alternativo IA para nicho</div>
+        <div class="opp-desc">Destácame ya cubre el espacio y la complejidad de validar modelos sin acceso a datos formales hace inviable un MVP en hackathon. <strong>Evitar.</strong></div>
+        <div class="opp-footer">
+          <div class="opp-metric"><span>Impacto</span> <strong>5</strong></div>
+          <div class="opp-metric"><span>Complejidad</span> <strong>9</strong></div>
+          <div class="opp-metric"><span>Vertical</span> <strong>Transversal</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RECOMENDACIONES ============ -->
+<section id="recomendaciones" class="anchor-offset">
+  <div class="container">
+    <span class="section-num">07 · Recomendaciones para la hackathon</span>
+    <h2>Tres proyectos con <em>alta probabilidad de seguir como producto</em>.</h2>
+
+    <div class="reco-grid">
+      <div class="reco-card">
+        <div class="reco-name">Pillo</div>
+        <div class="reco-tagline">Verificador antiphishing conversacional vía WhatsApp + voz</div>
+        <div class="reco-body">Dirigido a adultos mayores y mujeres 40-59. Diferencial: integración con feed CSIRT, voice-first para baja literacy digital, métrica clara (intentos verificados / fraudes evitados). Es la única vertical donde el gap chileno es total y la regulación (Ley 21.663) habilita uso de IOCs públicos.</div>
+        <div class="reco-meta">
+          <span>Vertical · <strong>Ciberseguridad</strong></span>
+          <span>Stack · <strong>WhatsApp + LLM + CSIRT API</strong></span>
+        </div>
+      </div>
+
+      <div class="reco-card">
+        <div class="reco-name">Tu Plata</div>
+        <div class="reco-tagline">Traductor CAE/CTC con simulador de portabilidad</div>
+        <div class="reco-body">Recibe contratos vía foto y explica en lenguaje claro los costos totales, seguros y alternativas. Aprovecha comparador SERNAC, "Conoce tu Deuda" y portabilidad financiera Ley 21.236. Diferencial: ataca un dolor del 80%+ de la población y construye sobre Open Finance cuando entre en vigencia.</div>
+        <div class="reco-meta">
+          <span>Vertical · <strong>Inclusión</strong></span>
+          <span>Stack · <strong>OCR + LLM + APIs CMF</strong></span>
+        </div>
+      </div>
+
+      <div class="reco-card">
+        <div class="reco-name">Mis Datos</div>
+        <div class="reco-tagline">Copiloto ARCOP con generación y tracking de solicitudes</div>
+        <div class="reco-body">Anticipa entrada en vigencia de la Ley 21.719 el 1-dic-2026. Diferencial: timing perfecto, resuelve gap CRÍTICO documentado (no existe nada similar en Chile), demanda potencial masiva (67% no sabe cómo se usan sus datos). Pivot a B2B2C ofreciendo el rail a empresas que necesiten responder DSAR.</div>
+        <div class="reco-meta">
+          <span>Vertical · <strong>Datos</strong></span>
+          <span>Stack · <strong>LLM + Email + Tracking</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <h3>Tres principios de diseño no negociables</h3>
+    <div class="principles">
+      <div class="principle">
+        <div class="principle-num">i.</div>
+        <div class="principle-title">Conversacional + voice-first vía WhatsApp</div>
+        <div class="principle-desc">Adultos mayores y NSE D-E son los más vulnerables y menos digitales. WhatsApp tiene >95% de penetración en Chile y elimina la fricción de descargar otra app.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-num">ii.</div>
+        <div class="principle-title">Gratuito y de uso anónimo</div>
+        <div class="principle-desc">SERNAC y CMF cargan estigma de instituciones lentas. El atractivo IA-nativo es la inmediatez. Cualquier fricción de registro mata la adopción en los segmentos vulnerables.</div>
+      </div>
+      <div class="principle">
+        <div class="principle-num">iii.</div>
+        <div class="principle-title">Citar la fuente regulatoria en cada respuesta</div>
+        <div class="principle-desc">Ley 21.521, Ley 21.719, Ley 21.673, NCG correspondiente. Construye confianza, educa derechos y diferencia el producto de los chatbots genéricos.</div>
+      </div>
+    </div>
+
+    <h3>Segmentos a priorizar como early adopters</h3>
+    <p>Mujeres 40-59 con ingresos hasta CLP $750.000 (núcleo del retroceso 2016-2023), adultos mayores >60 con CuentaRUT (vector phishing), microempresarios y migrantes venezolanos (gap de bancarización 30+ puntos). Todos comparten patrón: alta penetración de WhatsApp, baja confianza institucional, altísima vulnerabilidad medida.</p>
+
+    <div class="callout">
+      <div class="callout-label">Ventana de oportunidad</div>
+      <p>Open Finance entra en julio 2027. Ley 21.719 en diciembre 2026. APDP se instala en junio 2026. <strong>Un producto IA construido en abril-mayo 2026 tiene 6-18 meses de ventaja regulatoria para volverse el estándar de facto antes de que el ecosistema se sature.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FUENTES ============ -->
+<section id="fuentes" class="anchor-offset">
+  <div class="container">
+    <span class="section-num">Anexo · Fuentes</span>
+    <h2>62 fuentes oficiales y privadas.</h2>
+
+    <div class="sources-grid">
+      <div class="source-block">
+        <h4>Regulatorias y oficiales</h4>
+        <p>CMF (NCG 502, 503, 504, 514, 526, 527, 559); Informe Anual 2024; Informe Endeudamiento 2025; Encuesta Capacidades Financieras Chile 2023 (CMF-CAF); Banco Central (Informe Sistemas de Pago ago-2024); SERNAC (Cuenta Pública 2024, Agenda Antifraudes); BCN/leychile (Leyes 19.628, 20.009, 20.575, 21.236, 21.459, 21.521, 21.663, 21.673, 21.719); ANCI/CSIRT Nacional (Decreto 295/2024); PDI Cibercrimen; Defensoría Niñez; CPLT; INE (EME7); CASEN 2022; Plan Mipymes 2025.</p>
+      </div>
+      <div class="source-block">
+        <h4>Estudios sectoriales</h4>
+        <p>OECD/INFE Survey 2023; World Bank FSAP Chile 2021 + Findex; OIM Chile (ene-2024); Fortinet FortiGuard 2025; Kaspersky LATAM 2024; ClaroVTR-Criteria Personas Mayores 2024; USS-Equifax 50° Informe Deuda Morosa Q1 2026; USS Chile Nos Habla (may-2024); PwC + FGE (jun-jul 2025); Ipsos vía Deloitte; ODECU/ACU (2021); PDI/U.Mayor CENACIB; Finnovista Fintech Radar VI; Entel Ocean.</p>
+      </div>
+      <div class="source-block">
+        <h4>Estudios jurídicos</h4>
+        <p>Carey, FerradaNehme, Ontier, Albagli Zaliasnik, Jara del Favero, Aninat, Gazmuri & Cía, RK Abogados, Bofill Mir, Garrigues Chile, Cuatrecasas, Prieto Abogados, Anguita Osorio, Alessandri, Deloitte Chile, EY, KPMG, PwC, Nisum.</p>
+      </div>
+      <div class="source-block">
+        <h4>Medios y gremios</h4>
+        <p>Diario Financiero, La Tercera Pulso, Ex-Ante, Emol, El Mostrador, BioBíoChile, Interferencia, CIPER, The Clinic, Hora12, IAPP, BigID, ResGuard, LexLatin. ABIF, FinteChile, ARF, CCS, Fundación País Digital, Derechos Digitales, ONG Datos Protegidos.</p>
+      </div>
+    </div>
+
+    <div class="verification-note">
+      <h4>⚠ Notas de verificación pendientes</h4>
+      <p>· La cifra "73% de chilenos no sabe sus derechos sobre datos" atribuida a Deloitte Chile 2024 no fue verificable. Las cifras públicas más cercanas son el 67% del estudio Ipsos referenciado por Deloitte y el 72% SERNAC 2023 sobre preocupación.<br>
+      · La estimación de "30.000 juicios" entre bancos y clientes proviene de Hora12 (abril 2025) sin cifra oficial del Poder Judicial.<br>
+      · La alerta del VECERT sobre filtración de 10M chilenos del Registro Civil (dic-2025) fue desmentida por el Registro Civil y permanece sin confirmar.<br>
+      · El "caso isapres 2023 como filtración cibernética masiva" no se verificó: lo ocurrido en 2023 fue la crisis financiera por sentencia GES, no una brecha de datos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Calibria</div>
+        <div class="footer-tagline">Deep research · Contexto regulatorio Chile 2026 · Hackathon IA-nativa para inclusión financiera, ciberseguridad ciudadana y protección de datos.</div>
+      </div>
+      <div class="footer-meta">
+        <div>Generado · 29 abr 2026</div>
+        <div>Skill · deep-researcher</div>
+        <div>Cliente · Hackathon Chile</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Calibria · Servicios de Consultoría y Desarrollo Tecnológico SpA</div>
+      <div>Reporte v1.0</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Smooth scroll for TOC
+  document.querySelectorAll('.toc-list a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        const offset = 80;
+        const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // Add score bar visualization to scoring table
+  document.querySelectorAll('#scoring-table tbody tr').forEach(row => {
+    const scoreCell = row.querySelector('td.score');
+    if (!scoreCell) return;
+    const score = parseFloat(scoreCell.textContent.replace(',', '.'));
+    const pct = (score / 10) * 100;
+    const bar = document.createElement('span');
+    bar.className = 'score-bar';
+    bar.innerHTML = `<span class="score-bar-fill" style="width: ${pct}%"></span>`;
+    scoreCell.insertBefore(bar, scoreCell.firstChild);
+  });
+
+  // Tooltip following dot - simple show/hide
+  document.querySelectorAll('.opp-dot').forEach(dot => {
+    const tooltip = dot.nextElementSibling;
+    if (tooltip && tooltip.classList.contains('quad-tooltip')) {
+      dot.addEventListener('mouseenter', () => {
+        tooltip.style.opacity = '1';
+      });
+      dot.addEventListener('mouseleave', () => {
+        tooltip.style.opacity = '0';
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
