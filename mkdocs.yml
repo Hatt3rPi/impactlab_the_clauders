@@ -154,6 +154,9 @@ nav:
       - Herramientas:
           - research/herramientas/index.md
           - Deep Research API (Google Gemini): research/herramientas/deep-research-google.md
+      - Ideas emergentes:
+          - research/ideas-emergentes/index.md
+          - "15 ideas fuera del radar (run #01)": research/ideas-emergentes/ideas-fuera-del-radar-2026-04-29.md
       - Runs Deep Research:
           - research/_runs-deep-research/index.md
   - Definiciones:
