@@ -20,12 +20,14 @@ Independiente de la línea temática elegida, el equipo necesita decidir **qué 
 - **PWA** (web instalable).
 - **Asistente embebido** en plataforma de terceros (WhatsApp, Telegram).
 
-Anahi presentó datos de un estudio actualizado de uso de tecnología en Chile:
+Anahi presentó datos sobre uso de tecnología en Chile que fueron **verificados con fuente oficial** (DataReportal Digital 2026, vía BYYD dic-2025):
 
-- **97 %** de los chilenos usa el celular para acceder a internet.
-- **69 %** usa el computador.
-- La acción más frecuente es **buscar información en Google** — incluyendo temas financieros y legales.
-- *(Fuente exacta del estudio pendiente de capturar en Research · Usuarios.)*
+- **95,3 %** de los chilenos accede a internet vía dispositivos **móviles**.
+- **73,9 %** usa internet principalmente para **buscar información**.
+- Tiempo promedio conectado: **52 h 49 min por semana**.
+- Compras móviles: 41,1 % del gasto en bienes de consumo.
+
+> Fuente verificada: [Comportamiento digital en Chile (DataReportal Digital 2026)](../../research/usuarios/comportamiento-digital-chile-2026.md).
 
 ## Decisión
 
@@ -42,8 +44,9 @@ Requisitos derivados:
 
 ### Positivas
 
-- **Cobertura máxima del usuario chileno** (no requiere instalar nada).
+- **Cobertura máxima del usuario chileno** (95,3 % móvil, no requiere instalar nada).
 - **Pitch alineado con datos de comportamiento real**, no con preferencias de equipo.
+- **El 73,9 % usa internet para buscar información** → SEO + AI-citability genera tráfico orgánico continuo, no solo el del lab.
 - **Diferenciador potencial:** otros equipos probablemente irán por chatbot embebido o app — una web indexable para AI Overviews puede ser más original.
 - **Tiempo de iteración más corto** — deploy continuo (Netlify) en cada push.
 - **Funciona como wiki + producto** — la misma stack web sirve para documentar y para entregar valor.
@@ -82,7 +85,7 @@ Requisitos derivados:
 ## Referencias
 
 - Reunión: [kickoff 2026-04-29](../../reuniones/2026-04-29-definicion-problema-setup.md).
-- Estudio sobre uso de tecnología en Chile (97 % mobile, 69 % desktop) — pendiente capturar fuente exacta en [Research · Usuarios](../../research/usuarios/index.md).
+- [Comportamiento digital en Chile (DataReportal Digital 2026)](../../research/usuarios/comportamiento-digital-chile-2026.md) — fuente primaria verificada para las cifras macro.
 
 ## Relacionados
 

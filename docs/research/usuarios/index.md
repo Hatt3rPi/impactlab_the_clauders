@@ -34,6 +34,7 @@ El criterio de **Impacto cívico (25 %)** depende de tener un **usuario real** i
 | Nota | Tipo | Autor | Fecha | Línea |
 |---|---|---|---|---|
 | [Segmentos vulnerables y dolores ciudadanos](segmentos-y-dolores.md) | Síntesis | Equipo | 2026-04-29 | transversal |
+| [Comportamiento digital en Chile (DataReportal 2026)](comportamiento-digital-chile-2026.md) | Cifras macro mobile | DataReportal vía BYYD | 2026-04-29 | transversal |
 
 > Crear notas adicionales con [`../_template.md`](../_template.md).
 
