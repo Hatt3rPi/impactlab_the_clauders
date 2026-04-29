@@ -1,0 +1,17 @@
+/* Pequeños ajustes visuales sobre el tema Material */
+
+.md-grid {
+  max-width: 1280px;
+}
+
+/* Tablas con scroll horizontal en mobile */
+.md-typeset table:not([class]) {
+  display: block;
+  overflow-x: auto;
+}
+
+/* Tarjetas/admoniciones más legibles */
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 0.78rem;
+}

@@ -1,0 +1,162 @@
+site_name: The Clauders — Claude Impact Lab Chile 2026
+site_description: Wiki interna del equipo The Clauders para el Claude Impact Lab Chile 2026 — El puente al ciudadano.
+site_author: The Clauders
+site_url: https://theclauders.netlify.app/
+
+repo_name: Hatt3rPi/impactlab_the_clauders
+repo_url: https://github.com/Hatt3rPi/impactlab_the_clauders
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: es
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang: es
+  - tags
+  - awesome-pages
+  - git-revision-date-localized:
+      type: date
+      timezone: America/Santiago
+      locale: es
+      fallback_to_build_date: true
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Hatt3rPi/impactlab_the_clauders
+    - icon: fontawesome/solid/globe
+      link: https://fintech.benditaia.cl/es
+      name: Sitio oficial de la competencia
+
+extra_css:
+  - assets/extra.css
+
+nav:
+  - Home: index.md
+  - Competencia:
+      - competencia/index.md
+      - Timeline: competencia/timeline.md
+      - Criterios de evaluación: competencia/criterios-evaluacion.md
+      - Deliverables: competencia/deliverables.md
+      - Reglas: competencia/reglas.md
+      - Premios: competencia/premios.md
+  - Líneas temáticas:
+      - lineas-tematicas/index.md
+      - Inclusión financiera: lineas-tematicas/inclusion-financiera.md
+      - Ciberseguridad ciudadana: lineas-tematicas/ciberseguridad-ciudadana.md
+      - Protección de datos: lineas-tematicas/proteccion-datos.md
+  - Ideas:
+      - ideas/index.md
+      - Plantilla: ideas/_template.md
+      - Archivadas: ideas/archivadas/index.md
+  - Research:
+      - research/index.md
+      - Plantilla: research/_template.md
+      - Regulatorio: research/regulatorio/index.md
+      - Usuarios: research/usuarios/index.md
+      - Mercado: research/mercado/index.md
+      - Tecnología: research/tecnologia/index.md
+  - Definiciones:
+      - Glosario: definiciones/glosario.md
+      - Stakeholders: definiciones/stakeholders.md
+      - Personas: definiciones/personas.md
+  - Stack:
+      - stack/index.md
+      - Claude API: stack/claude-api.md
+      - Claude Code: stack/claude-code.md
+      - Agent SDK: stack/agent-sdk.md
+      - MCPs: stack/mcps.md
+      - Datasets: stack/datasets.md
+      - Infraestructura: stack/infraestructura.md
+  - Especificaciones:
+      - especificaciones/index.md
+      - Arquitectura: especificaciones/arquitectura.md
+      - Prototipo: especificaciones/prototipo.md
+      - ADRs:
+          - especificaciones/adrs/index.md
+          - Plantilla: especificaciones/adrs/_template.md
+          - 0001 — Uso de ADRs: especificaciones/adrs/0001-uso-de-adrs.md
+  - Reuniones:
+      - reuniones/index.md
+      - Plantilla: reuniones/_template.md
+  - Equipo:
+      - Miembros: equipo/miembros.md
+      - Roles: equipo/roles.md
+      - Ways of working: equipo/ways-of-working.md
+  - Recursos:
+      - Enlaces: recursos/enlaces.md
+      - Mentores: recursos/mentores.md
+      - Workshops: recursos/workshops.md
