@@ -32,14 +32,16 @@ Cada reunión queda **versionada en el repo**: transcripción cruda + resumen ej
 
 > Idealmente sincronizadas con cada reunión. Mover a "cerradas" cuando se completen.
 
+- [ ] @Equipo — **Validar propuesta de [hoja de ruta](../equipo/proceso-y-hoja-de-ruta.md)** (3 etapas + 2 tollgates) en reunión de hoy 21:00
+- [ ] @Equipo — **Tollgate 1**: cerrar problema/segmento y aprobar PRD — objetivo hoy o mañana
 - [ ] @Jose — Compartir research inicial (cruce CMF + Impact Lab) en el repo — 2026-04-29
-- [ ] @Jose — Armar hoja de ruta con etapas e hitos — 2026-04-29
-- [ ] @Todos — Levantamiento individual: 10 problemas con métricas (volumen, severidad, frecuencia) — antes de hoy 21:00
 - [ ] @Todos — Centralizar links y fuentes en el repo — continuo
 - [ ] @Todos — Diseñar proceso de validación con usuarios vía redes sociales — esta semana
-- [ ] @Equipo — Reducir pool a 3 problemas y luego a 1 — antes del 5 de mayo
+- [ ] @Equipo — **Tollgate 2**: arquitectura + stack definidos antes del 5 de mayo
 - [ ] @Equipo — MVP testeado antes del kickoff del lab — 2026-05-06
 
 ## Acciones cerradas
 
 - [x] @Felipe — Montar repositorio/wiki como fuente de la verdad (2026-04-29)
+- [x] @Jose — Armar hoja de ruta con etapas e hitos (audio + diagrama 2026-04-29 → [propuesta registrada](../equipo/proceso-y-hoja-de-ruta.md))
+- [x] @Todos — Levantamiento individual reemplazado por incorporación de research previo + 9 ideas pre-evaluadas (2026-04-29)

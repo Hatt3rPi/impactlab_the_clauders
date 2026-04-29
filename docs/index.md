@@ -32,8 +32,8 @@ Bienvenidos al espacio de trabajo del equipo **The Clauders** para el [Claude Im
 
 ## Estado actual del equipo
 
-!!! success "Fase: Selección de idea dentro de Inclusión Financiera"
-    El [29/04 elegimos la línea temática](reuniones/2026-04-29-definicion-problema-setup.md): **Inclusión Financiera**. El equipo ya incorporó **research previo** (estrategia + deep research) con **9 ideas pre-evaluadas**. Próximo paso: cerrar la idea ganadora entre las 3 candidatas top.
+!!! success "Fase: Discovery (Tollgate 1 — ¿qué problema atacamos?)"
+    El [29/04 elegimos la línea temática](reuniones/2026-04-29-definicion-problema-setup.md): **Inclusión Financiera**. El equipo ya incorporó **research previo** con **9 ideas pre-evaluadas**, y Jose propuso una [hoja de ruta de 7 días con 3 etapas y 2 tollgates](equipo/proceso-y-hoja-de-ruta.md). Estamos en **Discovery**: cerrar el problema y armar el PRD.
 
 - [x] Inscripción individual completada
 - [x] Formación de equipo (4 personas: Felipe, Jose, Cristian, Anahi)
