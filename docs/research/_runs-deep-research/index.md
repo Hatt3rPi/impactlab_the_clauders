@@ -39,6 +39,7 @@ Cada archivo lleva:
 | 2026-04-29 | [Money left on the table en Chile](2026-04-29-04-money-left-on-the-table.md) | ~10 min | 54 fuentes (CMF, Hacienda, AAFP, La Tercera, BioBío, etc.) | ~USD 5 |
 | 2026-04-29 | [Ideas fuera del radar (15 ideas)](2026-04-29-01-ideas-fuera-del-radar.md) | ~18 min | 25 fuentes (CMF, Mintrab, MOP, BCN, Sup. Salud, etc.) + casos análogos UK/USA/Singapur/India/Brasil | ~USD 5 |
 | 2026-04-29 | [Patrones ganadores hackathons IA 2025-2026](2026-04-29-02-ganadores-hackathons-fintech-ia.md) | ~12 min | 46 fuentes (Anthropic, Mastercard, OpenAI, AWS, Microsoft, Kong, Visa, BID Lab) | ~USD 5 |
+| 2026-04-29 | [Datasets chilenos sub-utilizados + 5 cruces](2026-04-29-03-datasets-chilenos-subutilizados.md) | ~10 min | 44 fuentes (Banco Central, CMF, SUPERIR, MinDes BIDAT, FONASA, Poder Judicial, INE, ChileCompra OCDS) | ~USD 5 |
 
 ## Hallazgo operacional importante (29-abr-2026)
 

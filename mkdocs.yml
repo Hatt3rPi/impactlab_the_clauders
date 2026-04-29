@@ -151,6 +151,7 @@ nav:
       - Tecnología:
           - research/tecnologia/index.md
           - Capacidades Claude diferenciadoras: research/tecnologia/capacidades-claude-diferenciadoras.md
+          - Datasets sub-utilizados + 5 cruces: research/tecnologia/datasets-subutilizados-y-cruces.md
       - Herramientas:
           - research/herramientas/index.md
           - Deep Research API (Google Gemini): research/herramientas/deep-research-google.md
