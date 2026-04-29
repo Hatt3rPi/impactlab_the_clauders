@@ -24,6 +24,15 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
+# Forzar UTF-8 en stdout/stderr en Windows: la consola por default usa cp1252
+# y crashea con caracteres como [OK], =, →. Esto NO afecta a Linux/Mac.
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except (AttributeError, OSError):
+        pass  # Python <3.7 o stream no reconfigurable
+
 try:
     from google import genai
 except ImportError as exc:  # pragma: no cover
@@ -206,7 +215,7 @@ def ejecutar_prompt(
         timeout_seconds=timeout_seconds,
     )
     print(
-        f"[{prompt.slug}] ✓ Completado en {int(duracion)}s ({duracion / 60:.1f} min)"
+        f"[{prompt.slug}] [OK] Completado en {int(duracion)}s ({duracion / 60:.1f} min)"
     )
     return _extraer_resultado(sdk_result, prompt, agent, duracion, tipo_run="ejecucion-directa")
 
@@ -243,7 +252,7 @@ def solicitar_plan(
         input_override=input_text,
         previous_interaction_id=previous_interaction_id,
     )
-    print(f"[{prompt.slug}] ✓ Plan recibido en {int(duracion)}s ({duracion / 60:.1f} min)")
+    print(f"[{prompt.slug}] [OK] Plan recibido en {int(duracion)}s ({duracion / 60:.1f} min)")
     tipo = "plan-refinado" if previous_interaction_id else "plan-inicial"
     return _extraer_resultado(sdk_result, prompt, agent, duracion, tipo_run=tipo)
 
@@ -272,7 +281,7 @@ def aprobar_y_ejecutar(
         previous_interaction_id=plan_interaction_id,
     )
     print(
-        f"[{prompt.slug}] ✓ Ejecución completada en {int(duracion)}s ({duracion / 60:.1f} min)"
+        f"[{prompt.slug}] [OK] Ejecución completada en {int(duracion)}s ({duracion / 60:.1f} min)"
     )
     resultado = _extraer_resultado(sdk_result, prompt, agent, duracion, tipo_run="ejecucion-aprobada")
     resultado["plan_interaction_id"] = plan_interaction_id
@@ -281,7 +290,7 @@ def aprobar_y_ejecutar(
 
 def flujo_collaborative(prompt: Prompt) -> Optional[dict]:
     """Loop interactivo: plan → revisar → (aprobar | refinar | cancelar)."""
-    sep = "═" * 78
+    sep = "=" * 78
     print(f"\n{sep}")
     print(f"  COLLABORATIVE PLANNING — {prompt.slug}")
     print(f"  Verás el plan del agente antes de gastar la ejecución completa.")
@@ -332,8 +341,32 @@ def flujo_collaborative(prompt: Prompt) -> Optional[dict]:
         print(f"  Opción no reconocida: {accion!r}. Usa 'a', 'r' o 'c'.")
 
 
+def recuperar_resultado(
+    prompt: Prompt,
+    interaction_id: str,
+    *,
+    tipo_run: str = "plan-inicial",
+    agent: str = DEFAULT_AGENT,
+) -> dict:
+    """Recupera un resultado ya completado en la API por su interaction_id.
+
+    Útil cuando el cliente local crashea después de que el agente terminó —
+    el resultado vive en Google y se puede recuperar sin re-ejecutar.
+    """
+    print(f"\n[{prompt.slug}] Recuperando interaction {interaction_id} desde la API...")
+    client = obtener_cliente()
+    sdk_result = client.interactions.get(interaction_id)
+    estado = getattr(sdk_result, "status", "unknown")
+    if estado != "completed":
+        raise RuntimeError(
+            f"La interaction {interaction_id} está en estado '{estado}', no 'completed'."
+        )
+    print(f"[{prompt.slug}] [OK] Resultado recuperado.")
+    return _extraer_resultado(sdk_result, prompt, agent, 0, tipo_run=tipo_run)
+
+
 def _mostrar_plan(plan: dict) -> None:
-    sep = "═" * 78
+    sep = "=" * 78
     print(f"\n{sep}")
     print(f"  PLAN DEL AGENTE — {plan.get('titulo', plan.get('slug', ''))}")
     print(f"  interaction_id: {plan['interaction_id']}")
@@ -600,7 +633,7 @@ def main(argv: list[str]) -> int:
         print("No hay prompts para ejecutar.")
         return 1
 
-    modo_str = "COLLABORATIVE PLANNING (plan → revisar → aprobar)" if modo_plan else "directo"
+    modo_str = "COLLABORATIVE PLANNING (plan -> revisar -> aprobar)" if modo_plan else "directo"
     print(f"Ejecutando {len(prompts)} prompt(s) en modo {modo_str}.")
     if not modo_plan:
         print(f"Costo estimado: USD {len(prompts) * 3}-{len(prompts) * 7} (Max).")
@@ -630,11 +663,11 @@ def main(argv: list[str]) -> int:
             fallidos.append(prompt.slug)
 
     print(f"\nResumen:")
-    print(f"  Completados: {len(completados)}  → {', '.join(completados) or '-'}")
+    print(f"  Completados: {len(completados)}  ->> {', '.join(completados) or '-'}")
     if cancelados:
-        print(f"  Cancelados:  {len(cancelados)}  → {', '.join(cancelados)}")
+        print(f"  Cancelados:  {len(cancelados)}  ->> {', '.join(cancelados)}")
     if fallidos:
-        print(f"  Fallidos:    {len(fallidos)}  → {', '.join(fallidos)}", file=sys.stderr)
+        print(f"  Fallidos:    {len(fallidos)}  ->> {', '.join(fallidos)}", file=sys.stderr)
         return 1
     return 0
 

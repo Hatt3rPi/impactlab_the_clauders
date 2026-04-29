@@ -34,11 +34,17 @@ Cada archivo lleva:
 
 ## Runs registrados
 
-> Por ahora vacío. Se llena automáticamente al ejecutar el cliente.
-
-| Fecha | Run | Duración | Tokens aprox | Costo aprox |
+| Fecha | Run | Duración | Citaciones | Costo estimado |
 |---|---|---|---|---|
-| — | — | — | — | — |
+| 2026-04-29 | [Money left on the table en Chile](2026-04-29-04-money-left-on-the-table.md) | ~10 min | 54 fuentes (CMF, Hacienda, AAFP, La Tercera, BioBío, etc.) | ~USD 5 |
+
+## Hallazgo operacional importante (29-abr-2026)
+
+El primer run reveló que **`collaborative_planning: True` en el SDK preview de Google NO devuelve un plan corto** (como sugiere la doc) sino la **ejecución completa** del research. Implicancias:
+
+1. El costo del paso "plan" es el costo de la ejecución completa (~USD 3-7), no los ~USD 0,30 que asumimos.
+2. Para los siguientes prompts, **conviene ejecutarlos en modo directo** (`collaborative_planning: False`) y refinar via follow-ups con `previous_interaction_id` solo si el output amerita.
+3. El cliente local crashea al imprimir caracteres unicode en cmd de Windows — corregido en commit posterior.
 
 ## Documentación de la herramienta
 
