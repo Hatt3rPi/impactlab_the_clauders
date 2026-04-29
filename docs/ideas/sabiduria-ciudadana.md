@@ -23,6 +23,24 @@ tags:
 
 > :material-link-variant: **Idea unificadora.** Las otras 9 ideas del [tablero](index.md) son **casos particulares** (módulos) de este sistema. La estrategia es construir el motor agéntico genérico + **2-3 módulos brutalmente bien hechos** para el demo, dejando los demás como roadmap visible en la app.
 
+## Tesis (validada con cifras Deep Research, 29-abr-2026)
+
+> **El Estado chileno opera bajo un paradigma de "postulación activa": traslada la carga burocrática al ciudadano y genera pozos ciegos de capital no reclamado.**
+
+sabidurIA invierte la carga. No es "literacy financiera" — es **devolverle al ciudadano la plata que ya es suya y nadie le dijo cómo cobrar**.
+
+## Magnitud del problema (cifras oficiales chilenas)
+
+| | |
+|---|---|
+| **TAM (Mercado Total Direccionable)** | **> CLP 1 billón anual** (1 millón de millones CLP) |
+| **Capital cautivo base documentable** | CLP 524.832 millones (sólo cifras oficiales sólidas) |
+| **Slide-ready 60 palabras** | *"Más de **CLP 403 mil millones** sin cobrar; **CLP 612.000 prom. anual** por persona en AFC + Acreencias + PGU"* |
+| **Gap más alarmante** | **41 % en herencias AFP** — 220.000 afiliados fallecidos; familia abandona el saldo por no poder pagar la posesión efectiva |
+| **Top 3 cifras agregadas** | Isapres CLP 1,2 billones · AFC CLP 156.051 M · PGU anual CLP 152.830 M |
+
+> Detalle completo + fuentes: [Transferencias no activadas en Chile](../research/usuarios/transferencias-no-activadas-chile-2026.md).
+
 ## Origen
 
 Surgió en conversación al revisar el research del equipo. Los "5 millones de chilenos con derechos que no pueden ejercer" cubren muchos territorios distintos (DICOM, contratos, cesantía, enfermedad, herencia, subsidios, fraude, datos, emprendimiento, migración, jubilación, vivienda...). Cada uno admite una idea separada — pero **todas comparten el mismo patrón estructural**: el ciudadano vive un evento, hay datos públicos que iluminan qué le toca, y nadie hace la traducción.
