@@ -26,14 +26,20 @@ Cada reunión queda **versionada en el repo**: transcripción cruda + resumen ej
 
 | Fecha | Título | Tipo | Decisiones clave | Link |
 |---|---|---|---|---|
-| — | *Sin reuniones registradas* | — | — | — |
+| 2026-04-29 | Definición de problema y setup del hackathon | kickoff | Línea: inclusión financiera · Plataforma: web mobile-first · Roles asumidos | [Ver](2026-04-29-definicion-problema-setup.md) |
 
 ## Acciones abiertas (vivas)
 
 > Idealmente sincronizadas con cada reunión. Mover a "cerradas" cuando se completen.
 
-- [ ] —
+- [ ] @Jose — Compartir research inicial (cruce CMF + Impact Lab) en el repo — 2026-04-29
+- [ ] @Jose — Armar hoja de ruta con etapas e hitos — 2026-04-29
+- [ ] @Todos — Levantamiento individual: 10 problemas con métricas (volumen, severidad, frecuencia) — antes de hoy 21:00
+- [ ] @Todos — Centralizar links y fuentes en el repo — continuo
+- [ ] @Todos — Diseñar proceso de validación con usuarios vía redes sociales — esta semana
+- [ ] @Equipo — Reducir pool a 3 problemas y luego a 1 — antes del 5 de mayo
+- [ ] @Equipo — MVP testeado antes del kickoff del lab — 2026-05-06
 
 ## Acciones cerradas
 
-- [x] —
+- [x] @Felipe — Montar repositorio/wiki como fuente de la verdad (2026-04-29)

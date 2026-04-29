@@ -11,6 +11,9 @@ tags:
 > *Empoderar a las personas para controlar sus datos financieros mediante guías interactivas y agentes de derechos ARCO.*
 > — Descripción oficial del lab.
 
+!!! warning "Línea descartada"
+    El equipo descartó esta línea el [29/04](../reuniones/2026-04-29-definicion-problema-setup.md). Razón: actúa *después* de que el usuario ya está dentro del sistema; preferimos atacar el problema raíz (inclusión financiera). Ver [ADR 0002](../especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md). Esta página queda como referencia y la portabilidad de información personal sigue siendo una idea interesante para futuras iteraciones.
+
 ## Problema según el lab
 
 - El ciudadano **no sabe qué datos suyos** están en el sistema financiero ni quién los tiene.

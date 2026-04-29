@@ -9,8 +9,10 @@ tags:
 
 El lab ofrece **tres líneas temáticas** y cada equipo elige **una**. Esta sección sirve para comparar y decidir cuál atacamos.
 
-!!! info "Estado del equipo"
-    Aún explorando las **3 líneas en paralelo**. La decisión se tomará en la próxima reunión.
+!!! success "Decisión tomada: Inclusión Financiera"
+    El equipo eligió **Inclusión Financiera** en la [reunión de kickoff del 29/04](../reuniones/2026-04-29-definicion-problema-setup.md). Ver razones y alternativas en [ADR 0002](../especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md).
+
+    Las páginas de las otras dos líneas se mantienen como referencia, pero el equipo ya no trabaja en ellas.
 
 ## Matriz comparativa
 

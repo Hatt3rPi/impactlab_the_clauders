@@ -11,6 +11,9 @@ tags:
 > *Proteger a los ciudadanos del fraude digital con herramientas de IA accesibles.*
 > — Descripción oficial del lab.
 
+!!! warning "Línea descartada"
+    El equipo descartó esta línea el [29/04](../reuniones/2026-04-29-definicion-problema-setup.md). Razón: muy técnica para nuestro perfil (sin expertise full de seguridad) y actúa *después* de que el usuario ya está dentro del sistema. Ver [ADR 0002](../especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md). Esta página queda como referencia.
+
 ## Problema según el lab
 
 - Vulnerabilidad ciudadana ante **phishing, smishing, fraudes con QR, suplantación de identidad, estafas con IA**.

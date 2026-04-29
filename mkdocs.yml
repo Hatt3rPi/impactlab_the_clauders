@@ -149,9 +149,12 @@ nav:
           - especificaciones/adrs/index.md
           - Plantilla: especificaciones/adrs/_template.md
           - 0001 — Uso de ADRs: especificaciones/adrs/0001-uso-de-adrs.md
+          - 0002 — Línea temática (Inclusión Financiera): especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md
+          - 0003 — Plataforma web mobile-first: especificaciones/adrs/0003-plataforma-web-mobile-first.md
   - Reuniones:
       - reuniones/index.md
       - Plantilla: reuniones/_template.md
+      - "2026-04-29 · Definición de problema y setup": reuniones/2026-04-29-definicion-problema-setup.md
   - Equipo:
       - Miembros: equipo/miembros.md
       - Roles: equipo/roles.md

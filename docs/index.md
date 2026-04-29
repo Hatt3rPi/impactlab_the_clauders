@@ -32,14 +32,17 @@ Bienvenidos al espacio de trabajo del equipo **The Clauders** para el [Claude Im
 
 ## Estado actual del equipo
 
-!!! info "Fase: Exploración"
-    Estamos evaluando las **3 líneas temáticas en paralelo**. La decisión se tomará en la próxima reunión usando la [matriz comparativa](lineas-tematicas/index.md).
+!!! success "Fase: Definición de problema dentro de Inclusión Financiera"
+    El [29/04 elegimos la línea temática](reuniones/2026-04-29-definicion-problema-setup.md): **Inclusión Financiera**. Ahora estamos en levantamiento de **10 problemas por persona con métricas**, para reducir el pool a 3 → 1 antes del 5 de mayo.
 
 - [x] Inscripción individual completada
-- [ ] Formación de equipo (límite **5 de mayo**)
-- [ ] Selección de línea temática
-- [ ] Definición de problema y propuesta
-- [ ] Prototipo funcional
+- [x] Formación de equipo (4 personas: Felipe, Jose, Cristian, Anahi)
+- [x] Selección de línea temática — **Inclusión financiera** ([ADR 0002](especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md))
+- [x] Decisión de plataforma — **Web mobile-first** ([ADR 0003](especificaciones/adrs/0003-plataforma-web-mobile-first.md))
+- [ ] Selección del problema específico (10 → 3 → 1)
+- [ ] Validación con usuarios reales (vía redes sociales)
+- [ ] MVP testeado antes del lab
+- [ ] Prototipo refinado durante el lab
 - [ ] Pitch (7 de mayo · 12:00)
 
 ---

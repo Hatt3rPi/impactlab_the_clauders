@@ -11,6 +11,9 @@ tags:
 > *Hacer la regulación comprensible mediante agentes conversacionales en lenguaje claro.*
 > — Descripción oficial del lab.
 
+!!! success "Línea elegida"
+    El equipo eligió esta línea el [29/04](../reuniones/2026-04-29-definicion-problema-setup.md). Ver [ADR 0002](../especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md). Estamos ahora en levantamiento de problemas concretos dentro de esta línea.
+
 ## Problema según el lab
 
 - La **Ley Fintech 21.521** y sus circulares están escritas en lenguaje técnico-legal denso.

@@ -13,17 +13,19 @@ tags:
 
 | Nombre | Rol principal | Roles secundarios | Contacto | Disponibilidad pre-lab | Notas |
 |---|---|---|---|---|---|
-| Fabián | — | — | fabarca212@gmail.com | — | Owner del repo (Hatt3rPi) |
-| — | — | — | — | — | — |
+| **Felipe Abarca** (Fabián) | AI Builder + Tech lead | Owner del repo (Hatt3rPi) · Pitch lead potencial | fabarca212@gmail.com | Alta de día y noche; 6-7 con limitación familiar (gemelos 1a + niña 3a) pero entrada/salida flexible | 38 años · Civil industrial · ex Banco de Chile (6a), Transbank (7a) en planificación estratégica · Vibecoder con Claude Code desde Sonnet 3.5 · Producto activo `lacuenteria.cl` |
+| **Jose Foncea** | Project Manager + Comercial/Producto | Pitch lead potencial · Research lead | — | Alta | 31 años · Sin experiencia previa en hackathons · Ve el lab como catapulta · Hizo research inicial cruzando CMF + Impact Lab |
+| **Cristian Astorga** | AI Builder de apoyo | Apoyo técnico | — | Alta (mucho tiempo disponible) | Participó en hackathon AWS · Usa Supabase · Considera Obsidian para RAG · Conoce a Anahi del curso AWS |
+| **Anahi Gonzalez** | UX/UI + Vibecoder | Comercial/Producto · Análisis de datos | — | Alta (recién desempleada el 2026-04-27) | Periodista especializada en análisis de datos · ex RTBN · Foco en estructura informativa, marketing, diseño centrado en usuario |
 
 ## Roles cubiertos / faltantes
 
 Ver perfiles en [Roles](roles.md).
 
-- [ ] AI Builder
-- [ ] Comercial / Producto
-- [ ] Vibecoder
-- [ ] Pitch lead (puede solapar con cualquiera)
+- [x] **AI Builder** — Felipe (lead), Cristian (apoyo)
+- [x] **Comercial / Producto** — Jose (lead), Anahi (apoyo en análisis)
+- [x] **Vibecoder** — Anahi (UX/UI), Felipe (parcial)
+- [ ] **Pitch lead** — por confirmar (probables: Jose o Anahi por su perfil comunicacional)
 
 !!! warning "Recordatorio"
     El equipo se cierra el **5 de mayo**. Después no hay cambios.

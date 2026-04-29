@@ -28,6 +28,8 @@ Registro **inmutable** de las decisiones técnicas relevantes del equipo. Cada A
 | ID | Título | Estado | Fecha |
 |---|---|---|---|
 | [0001](0001-uso-de-adrs.md) | Uso de ADRs | Aceptado | 2026-04-29 |
+| [0002](0002-linea-tematica-inclusion-financiera.md) | Selección de línea temática: Inclusión Financiera | Aceptado | 2026-04-29 |
+| [0003](0003-plataforma-web-mobile-first.md) | Plataforma: web mobile-first (no app nativa) | Aceptado | 2026-04-29 |
 
 ## Estados posibles
 
