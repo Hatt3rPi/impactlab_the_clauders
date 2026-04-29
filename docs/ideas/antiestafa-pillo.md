@@ -15,6 +15,10 @@ tags:
 
 # Idea: Antiestafa / Pillo — verificador antiphishing conversacional
 
+<!-- AUTO-BANNER -->
+!!! info ":material-book-open-variant: Síntesis de fuentes externas"
+    Ficha de idea construida a partir del [PDF de estrategia](../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf) y/o el [Deep Research de Calibria](../assets/research/2026-04-29-deep-research-calibria.html). **Aún no validada por el equipo.**
+
 > :material-alert: **Esta idea pertenece a la línea Ciberseguridad Ciudadana**, no a la línea elegida (Inclusión Financiera). Si el equipo la considera la mejor apuesta, requeriría revisar [ADR 0002](../especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md) y cambiar de línea temática.
 
 > *Bot WhatsApp + voz donde el adulto mayor (o un familiar) reenvía un SMS, correo o llamada-transcrita y recibe diagnóstico instantáneo + protocolo de acción + reporte a CSIRT/CMF.*

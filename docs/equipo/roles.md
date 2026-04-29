@@ -8,6 +8,10 @@ tags:
 
 # Roles
 
+<!-- AUTO-BANNER -->
+!!! abstract ":material-toy-brick: Plantilla / esqueleto inicial"
+    Estructura generada al iniciar la wiki, sin datos del equipo. **Reemplazar el contenido antes de citarlo.** Convención: ver [Convenciones de contenido](../convenciones-de-contenido.md).
+
 El lab define **tres perfiles** ideales para un equipo. Idealmente combinamos los tres, aunque no es obligatorio tener todos.
 
 ## Perfiles del lab

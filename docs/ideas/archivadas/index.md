@@ -8,6 +8,10 @@ tags:
 
 # Ideas archivadas
 
+<!-- AUTO-BANNER -->
+!!! abstract ":material-toy-brick: Plantilla / esqueleto inicial"
+    Estructura generada al iniciar la wiki, sin datos del equipo. **Reemplazar el contenido antes de citarlo.** Convención: ver [Convenciones de contenido](../../convenciones-de-contenido.md).
+
 Ideas que **descartamos**, con la razón. Mantener este registro nos ayuda a:
 
 - No volver a discutir lo mismo.

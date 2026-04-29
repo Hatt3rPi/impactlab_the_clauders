@@ -7,6 +7,10 @@ tags:
 
 # Líneas temáticas
 
+<!-- AUTO-BANNER -->
+!!! note ":material-bank: Información oficial del lab"
+    Extraído del sitio oficial del [Claude Impact Lab Chile 2026](https://fintech.benditaia.cl/es) (WebFetch 2026-04-29). Confirmar con la organización antes del 6 de mayo.
+
 El lab ofrece **tres líneas temáticas** y cada equipo elige **una**. Esta sección sirve para comparar y decidir cuál atacamos.
 
 !!! success "Decisión tomada: Inclusión Financiera"

@@ -106,6 +106,7 @@ extra_css:
 
 nav:
   - Home: index.md
+  - Convenciones de contenido: convenciones-de-contenido.md
   - Competencia:
       - competencia/index.md
       - Timeline: competencia/timeline.md

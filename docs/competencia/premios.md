@@ -8,6 +8,10 @@ tags:
 
 # Premios
 
+<!-- AUTO-BANNER -->
+!!! note ":material-bank: Información oficial del lab"
+    Extraído del sitio oficial del [Claude Impact Lab Chile 2026](https://fintech.benditaia.cl/es) (WebFetch 2026-04-29). Confirmar con la organización antes del 6 de mayo.
+
 ## Para todos los participantes (200 personas)
 
 - :material-currency-usd: **USD 50** en créditos de Claude API.

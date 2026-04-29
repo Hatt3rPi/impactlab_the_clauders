@@ -8,6 +8,10 @@ tags:
 
 # Ciberseguridad ciudadana
 
+<!-- AUTO-BANNER -->
+!!! note ":material-bank: Información oficial del lab"
+    Extraído del sitio oficial del [Claude Impact Lab Chile 2026](https://fintech.benditaia.cl/es) (WebFetch 2026-04-29). Confirmar con la organización antes del 6 de mayo.
+
 > *Proteger a los ciudadanos del fraude digital con herramientas de IA accesibles.*
 > — Descripción oficial del lab.
 

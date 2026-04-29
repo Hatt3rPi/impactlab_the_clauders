@@ -15,6 +15,10 @@ tags:
 
 # Comportamiento digital en Chile
 
+<!-- AUTO-BANNER -->
+!!! info ":material-book-open-variant: Síntesis de fuente externa"
+    Sintetizado a partir de [BYYD blog (cita DataReportal Digital 2026)](https://www.byyd.me/en/blog/2025/12/chiles-mobile-market-key-trends-and-digital-insights/). **Verificar cifras antes de citarlas en el pitch.**
+
 Cifras **oficiales** de comportamiento digital chileno. Fuente útil para sustentar [ADR 0003 (plataforma web mobile-first)](../../especificaciones/adrs/0003-plataforma-web-mobile-first.md) y el pitch.
 
 ## Fuente

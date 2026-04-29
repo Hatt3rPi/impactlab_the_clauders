@@ -7,6 +7,10 @@ tags:
 
 # Miembros del equipo
 
+<!-- AUTO-BANNER -->
+!!! success ":material-check-bold: Producido por el equipo"
+    Documento generado por el equipo The Clauders. Es fuente primaria para este tema.
+
 > Llenar antes del **5 de mayo** (cierre de formación de equipos).
 
 ## Tabla

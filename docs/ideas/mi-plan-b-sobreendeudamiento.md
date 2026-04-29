@@ -15,6 +15,10 @@ tags:
 
 # Idea: Mi Plan B — coach de salida del sobreendeudamiento
 
+<!-- AUTO-BANNER -->
+!!! info ":material-book-open-variant: Síntesis de fuentes externas"
+    Ficha de idea construida a partir del [PDF de estrategia](../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf) y/o el [Deep Research de Calibria](../assets/research/2026-04-29-deep-research-calibria.html). **Aún no validada por el equipo.**
+
 > *El usuario sube todas sus cartolas, Mi Plan B consolida deuda, calcula CAE ponderado y explica si califica para procedimiento concursal con la Superintendencia de Insolvencia (Ley 21.563).*
 
 ## Problema

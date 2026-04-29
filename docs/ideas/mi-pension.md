@@ -15,6 +15,10 @@ tags:
 
 # Idea: Mi Pensión — traductor previsional con simulador
 
+<!-- AUTO-BANNER -->
+!!! info ":material-book-open-variant: Síntesis de fuentes externas"
+    Ficha de idea construida a partir del [PDF de estrategia](../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf) y/o el [Deep Research de Calibria](../assets/research/2026-04-29-deep-research-calibria.html). **Aún no validada por el equipo.**
+
 > *El usuario sube su Cartola Cuatrimestral AFP, Mi Pensión la lee y devuelve narrativa en español sencillo + simulador interactivo de escenarios bajo la nueva ley previsional 2025.*
 
 ## Problema

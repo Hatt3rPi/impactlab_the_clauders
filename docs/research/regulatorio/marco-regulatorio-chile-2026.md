@@ -15,6 +15,10 @@ tags:
 
 # Marco regulatorio chileno 2026
 
+<!-- AUTO-BANNER -->
+!!! info ":material-book-open-variant: Síntesis de fuentes externas"
+    Sintetizado a partir del [PDF de estrategia](../../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf) y el [Deep Research de Calibria](../../assets/research/2026-04-29-deep-research-calibria.html). **Verificar cifras antes de citarlas en el pitch.**
+
 Síntesis de las normas que el agente IA debe **conocer y citar correctamente**. Sin esto, la solución cae en alucinación regulatoria → descalifica.
 
 ## Fuentes de esta nota

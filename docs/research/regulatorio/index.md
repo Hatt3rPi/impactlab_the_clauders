@@ -8,6 +8,10 @@ tags:
 
 # Research regulatorio
 
+<!-- AUTO-BANNER -->
+!!! abstract ":material-toy-brick: Plantilla / esqueleto inicial"
+    Estructura generada al iniciar la wiki, sin datos del equipo. **Reemplazar el contenido antes de citarlo.** Convención: ver [Convenciones de contenido](../../convenciones-de-contenido.md).
+
 Notas sobre el marco normativo chileno relevante para las tres líneas temáticas.
 
 ## Backlog de fuentes a revisar

@@ -8,6 +8,10 @@ tags:
 
 # Infraestructura
 
+<!-- AUTO-BANNER -->
+!!! abstract ":material-toy-brick: Plantilla / esqueleto inicial"
+    Estructura generada al iniciar la wiki, sin datos del equipo. **Reemplazar el contenido antes de citarlo.** Convención: ver [Convenciones de contenido](../convenciones-de-contenido.md).
+
 Decisiones sobre **dónde corre** el prototipo, cómo se despliega y cómo lo monitoreamos.
 
 ## Restricciones del lab

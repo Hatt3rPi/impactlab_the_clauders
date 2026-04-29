@@ -11,6 +11,10 @@ tags:
 
 # {{Título de la nota}}
 
+<!-- AUTO-BANNER -->
+!!! abstract ":material-toy-brick: Plantilla — copiar para crear un archivo nuevo"
+    Esta es una plantilla. **No editarla directamente.** Copiar a un archivo nuevo y reemplazar los placeholders. Ver [Convenciones de contenido](../convenciones-de-contenido.md).
+
 ## Fuente
 
 - **Título:** ...

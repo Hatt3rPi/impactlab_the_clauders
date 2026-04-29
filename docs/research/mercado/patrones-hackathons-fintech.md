@@ -14,6 +14,10 @@ tags:
 
 # Patrones que ganan hackathons fintech
 
+<!-- AUTO-BANNER -->
+!!! info ":material-book-open-variant: Síntesis de fuente externa"
+    Sintetizado a partir del [PDF de estrategia Literacy Regulatoria](../../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf). **Verificar cifras antes de citarlas en el pitch.**
+
 Si vamos a ganar, **imitar lo que ya funciona** y **evitar lo que descalifica**.
 
 ## Fuente

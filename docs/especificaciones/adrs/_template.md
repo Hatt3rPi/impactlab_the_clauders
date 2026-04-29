@@ -9,6 +9,10 @@ tags:
 
 # ADR NNNN — {{Título corto}}
 
+<!-- AUTO-BANNER -->
+!!! abstract ":material-toy-brick: Plantilla — copiar para crear un archivo nuevo"
+    Esta es una plantilla. **No editarla directamente.** Copiar a un archivo nuevo y reemplazar los placeholders. Ver [Convenciones de contenido](../../convenciones-de-contenido.md).
+
 ## Contexto
 
 ¿Cuál es el problema o la pregunta abierta? ¿Qué fuerzas o restricciones operan?

@@ -9,6 +9,10 @@ tags:
 
 # Claude Code
 
+<!-- AUTO-BANNER -->
+!!! abstract ":material-toy-brick: Plantilla / esqueleto inicial"
+    Estructura generada al iniciar la wiki, sin datos del equipo. **Reemplazar el contenido antes de citarlo.** Convención: ver [Convenciones de contenido](../convenciones-de-contenido.md).
+
 CLI/agente oficial de Anthropic que actúa como par de programación dentro del editor (Cursor, VS Code, terminal).
 
 ## Para qué lo usaremos

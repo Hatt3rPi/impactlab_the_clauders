@@ -14,6 +14,10 @@ tags:
 
 # Soluciones existentes en Chile y brechas críticas
 
+<!-- AUTO-BANNER -->
+!!! info ":material-book-open-variant: Síntesis de fuentes externas"
+    Sintetizado a partir del [PDF de estrategia](../../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf) y el [Deep Research de Calibria](../../assets/research/2026-04-29-deep-research-calibria.html). **Verificar cifras antes de citarlas en el pitch.**
+
 Mapeo de **qué ya existe** para no duplicar y **dónde están los huecos** que justifican nuestra solución.
 
 ## Fuentes

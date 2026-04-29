@@ -15,6 +15,10 @@ tags:
 
 # Idea: Open Finance Explainer — consentimiento informado para SFA
 
+<!-- AUTO-BANNER -->
+!!! info ":material-book-open-variant: Síntesis de fuentes externas"
+    Ficha de idea construida a partir del [PDF de estrategia](../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf) y/o el [Deep Research de Calibria](../assets/research/2026-04-29-deep-research-calibria.html). **Aún no validada por el equipo.**
+
 > *Módulo white-label para fintechs que muestra al usuario qué datos compartirá, con quién, por cuánto tiempo, y traduce los términos NCG 514.*
 
 ## Problema

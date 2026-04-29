@@ -14,6 +14,10 @@ tags:
 
 # Reunión: {{Título}}
 
+<!-- AUTO-BANNER -->
+!!! abstract ":material-toy-brick: Plantilla — copiar para crear un archivo nuevo"
+    Esta es una plantilla. **No editarla directamente.** Copiar a un archivo nuevo y reemplazar los placeholders. Ver [Convenciones de contenido](../convenciones-de-contenido.md).
+
 ## TL;DR
 
 3-5 bullets con lo esencial para alguien que no estuvo.

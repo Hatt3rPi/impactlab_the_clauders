@@ -10,6 +10,10 @@ tags:
 
 # ADR 0001 — Uso de ADRs
 
+<!-- AUTO-BANNER -->
+!!! success ":material-check-bold: Producido por el equipo"
+    Documento generado por el equipo The Clauders. Es fuente primaria para este tema.
+
 ## Contexto
 
 El equipo trabajará en un sprint corto (48 h efectivas) con varias decisiones técnicas relevantes que se tomarán bajo presión: stack, modelo de Claude, patrón agéntico, datasets, hosting. Sin un registro:

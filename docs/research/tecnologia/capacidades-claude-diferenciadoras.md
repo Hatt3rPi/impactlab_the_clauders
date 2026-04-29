@@ -14,6 +14,10 @@ tags:
 
 # Capacidades de Claude que dan ventaja competitiva
 
+<!-- AUTO-BANNER -->
+!!! info ":material-book-open-variant: Síntesis de fuente externa"
+    Sintetizado a partir del [PDF de estrategia Literacy Regulatoria](../../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf). **Verificar cifras antes de citarlas en el pitch.**
+
 Lo que Claude hace **mejor que cualquier competidor** y nos puede dar el bonus de "Claude & Agentic Thinking (25 % + 5)".
 
 ## Fuente

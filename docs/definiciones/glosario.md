@@ -8,6 +8,10 @@ tags:
 
 # Glosario
 
+<!-- AUTO-BANNER -->
+!!! abstract ":material-toy-brick: Plantilla / esqueleto inicial"
+    Estructura generada al iniciar la wiki, sin datos del equipo. **Reemplazar el contenido antes de citarlo.** Convención: ver [Convenciones de contenido](../convenciones-de-contenido.md).
+
 Mantener este archivo vivo: cada vez que aparezca un acrónimo o término que costó entender, agrégalo aquí.
 
 ## Regulatorio / institucional

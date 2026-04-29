@@ -8,6 +8,10 @@ tags:
 
 # Datasets
 
+<!-- AUTO-BANNER -->
+!!! abstract ":material-toy-brick: Plantilla / esqueleto inicial"
+    Estructura generada al iniciar la wiki, sin datos del equipo. **Reemplazar el contenido antes de citarlo.** Convención: ver [Convenciones de contenido](../convenciones-de-contenido.md).
+
 Inventario de **datos públicos** que podemos usar. La organización promete datasets curados, pero también podemos traer los nuestros.
 
 ## Provistos por el lab

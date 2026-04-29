@@ -10,6 +10,10 @@ tags:
 
 # ADR 0002 — Selección de línea temática: Inclusión Financiera
 
+<!-- AUTO-BANNER -->
+!!! success ":material-check-bold: Producido por el equipo"
+    Documento generado por el equipo The Clauders. Es fuente primaria para este tema.
+
 ## Contexto
 
 El Claude Impact Lab Chile 2026 ofrece tres líneas temáticas y exige elegir **una**:

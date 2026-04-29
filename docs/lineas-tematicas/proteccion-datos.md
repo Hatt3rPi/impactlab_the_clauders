@@ -8,6 +8,10 @@ tags:
 
 # Protección de datos
 
+<!-- AUTO-BANNER -->
+!!! note ":material-bank: Información oficial del lab"
+    Extraído del sitio oficial del [Claude Impact Lab Chile 2026](https://fintech.benditaia.cl/es) (WebFetch 2026-04-29). Confirmar con la organización antes del 6 de mayo.
+
 > *Empoderar a las personas para controlar sus datos financieros mediante guías interactivas y agentes de derechos ARCO.*
 > — Descripción oficial del lab.
 

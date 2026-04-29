@@ -35,6 +35,9 @@ Bienvenidos al espacio de trabajo del equipo **The Clauders** para el [Claude Im
 !!! success "Fase: Discovery (Tollgate 1 — ¿qué problema atacamos?)"
     El [29/04 elegimos la línea temática](reuniones/2026-04-29-definicion-problema-setup.md): **Inclusión Financiera**. El equipo ya incorporó **research previo** con **9 ideas pre-evaluadas**, y Jose propuso una [hoja de ruta de 7 días con 3 etapas y 2 tollgates](equipo/proceso-y-hoja-de-ruta.md). Estamos en **Discovery**: cerrar el problema y armar el PRD.
 
+!!! tip "Cómo leer esta wiki"
+    Cada página abre con un **banner de origen** que indica si es :material-toy-brick: plantilla, :material-book-open-variant: síntesis de fuente externa, :material-check-bold: producido por el equipo, o :material-bank: información oficial del lab. Detalle en [Convenciones de contenido](convenciones-de-contenido.md).
+
 - [x] Inscripción individual completada
 - [x] Formación de equipo (4 personas: Felipe, Jose, Cristian, Anahi)
 - [x] Selección de línea temática — **Inclusión financiera** ([ADR 0002](especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md))

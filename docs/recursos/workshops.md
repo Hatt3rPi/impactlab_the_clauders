@@ -8,6 +8,10 @@ tags:
 
 # Workshops pre-lab
 
+<!-- AUTO-BANNER -->
+!!! abstract ":material-toy-brick: Plantilla / esqueleto inicial"
+    Estructura generada al iniciar la wiki, sin datos del equipo. **Reemplazar el contenido antes de citarlo.** Convención: ver [Convenciones de contenido](../convenciones-de-contenido.md).
+
 Tres workshops dictados por ingenieros de Anthropic los días **23-24 de abril** (online + presencial).
 
 ## Estado

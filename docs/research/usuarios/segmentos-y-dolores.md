@@ -14,6 +14,10 @@ tags:
 
 # Segmentos vulnerables y dolores ciudadanos
 
+<!-- AUTO-BANNER -->
+!!! info ":material-book-open-variant: Síntesis de fuentes externas"
+    Sintetizado a partir del [PDF de estrategia](../../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf) y el [Deep Research de Calibria](../../assets/research/2026-04-29-deep-research-calibria.html). **Verificar cifras antes de citarlas en el pitch.**
+
 Identifica **a quién servimos** y **qué les duele**. Insumo crítico para criterio de **Impacto cívico (25 %)**.
 
 ## Fuentes

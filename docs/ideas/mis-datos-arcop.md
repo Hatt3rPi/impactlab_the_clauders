@@ -15,6 +15,10 @@ tags:
 
 # Idea: Mis Datos — copiloto ARCOP
 
+<!-- AUTO-BANNER -->
+!!! info ":material-book-open-variant: Síntesis de fuentes externas"
+    Ficha de idea construida a partir del [PDF de estrategia](../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf) y/o el [Deep Research de Calibria](../assets/research/2026-04-29-deep-research-calibria.html). **Aún no validada por el equipo.**
+
 > :material-alert: **Esta idea pertenece a la línea Protección de Datos**, no a la línea elegida. Si se considera la mejor apuesta, requeriría revisar [ADR 0002](../especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md).
 
 > *Identifica al responsable correcto, redacta la solicitud según tipo (Acceso, Rectificación, Cancelación, Portabilidad, Oposición), la envía y monitorea el plazo de 30 días.*

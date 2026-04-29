@@ -9,6 +9,10 @@ tags:
 
 # Agent SDK
 
+<!-- AUTO-BANNER -->
+!!! abstract ":material-toy-brick: Plantilla / esqueleto inicial"
+    Estructura generada al iniciar la wiki, sin datos del equipo. **Reemplazar el contenido antes de citarlo.** Convención: ver [Convenciones de contenido](../convenciones-de-contenido.md).
+
 Kit oficial de Anthropic para construir **agentes** sobre la API de Claude. Es el centro del criterio **Claude & Agentic Thinking (25 % + bonus +5)**.
 
 ## Qué nos da

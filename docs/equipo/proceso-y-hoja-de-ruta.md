@@ -12,6 +12,10 @@ tags:
 
 # Proceso y hoja de ruta — 7 días pre-lab
 
+<!-- AUTO-BANNER -->
+!!! success ":material-check-bold: Producido por el equipo"
+    Documento generado por el equipo The Clauders. Es fuente primaria para este tema.
+
 !!! info "Estado: propuesta de Jose"
     Recibida vía audio + diagrama el **29-abr-2026** (post-kickoff). Pendiente de feedback y aprobación formal del equipo. Si se acepta, se promueve a [ADR](../especificaciones/adrs/index.md).
 

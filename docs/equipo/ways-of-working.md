@@ -8,6 +8,10 @@ tags:
 
 # Ways of working
 
+<!-- AUTO-BANNER -->
+!!! abstract ":material-toy-brick: Plantilla / esqueleto inicial"
+    Estructura generada al iniciar la wiki, sin datos del equipo. **Reemplazar el contenido antes de citarlo.** Convención: ver [Convenciones de contenido](../convenciones-de-contenido.md).
+
 Reglas mínimas para trabajar bien en un sprint corto.
 
 > :material-map: **Hoja de ruta del sprint pre-lab** propuesta por Jose: [Proceso y hoja de ruta (7 días)](proceso-y-hoja-de-ruta.md). Define las 3 etapas (Discovery → Diseño → Desarrollo) con 2 tollgates entre ellas.

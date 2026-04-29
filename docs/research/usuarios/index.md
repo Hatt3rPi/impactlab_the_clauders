@@ -8,6 +8,10 @@ tags:
 
 # Research de usuarios
 
+<!-- AUTO-BANNER -->
+!!! abstract ":material-toy-brick: Plantilla / esqueleto inicial"
+    Estructura generada al iniciar la wiki, sin datos del equipo. **Reemplazar el contenido antes de citarlo.** Convención: ver [Convenciones de contenido](../../convenciones-de-contenido.md).
+
 Quién es el ciudadano al que servimos, qué siente, qué necesita y qué intentos previos ha hecho.
 
 ## Por qué importa

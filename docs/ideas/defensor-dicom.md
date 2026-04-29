@@ -16,6 +16,10 @@ tags:
 
 # Idea: Defensor — copiloto de derechos financieros para chilenos en DICOM :material-star:
 
+<!-- AUTO-BANNER -->
+!!! info ":material-book-open-variant: Síntesis de fuentes externas"
+    Ficha de idea construida a partir del [PDF de estrategia](../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf) y/o el [Deep Research de Calibria](../assets/research/2026-04-29-deep-research-calibria.html). **Aún no validada por el equipo.**
+
 > *Para una mujer jefa de hogar con deuda repactada en retail, que recibe llamadas y SMS abusivos sin entender qué firmó, Defensor es un WhatsApp bot que en minutos le dice qué dice la ley, si hay infracción, le redacta la carta-respuesta y le indica dónde reclamar. Diferenciador: cita el artículo exacto.*
 
 > :material-star-circle: **Idea recomendada por la estrategia** ([PDF p. 6, 8](../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf)). Combina el segmento más numeroso (3,9 M morosos), encaja literalmente con el wording del Track 1, y usa **las cuatro capacidades diferenciales de Claude juntas** (Citations + Vision + ES-CL + Haiku para escala).

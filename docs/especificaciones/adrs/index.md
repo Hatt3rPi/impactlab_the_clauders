@@ -8,6 +8,10 @@ tags:
 
 # ADRs — Architecture Decision Records
 
+<!-- AUTO-BANNER -->
+!!! abstract ":material-toy-brick: Plantilla / esqueleto inicial"
+    Estructura generada al iniciar la wiki, sin datos del equipo. **Reemplazar el contenido antes de citarlo.** Convención: ver [Convenciones de contenido](../../convenciones-de-contenido.md).
+
 Registro **inmutable** de las decisiones técnicas relevantes del equipo. Cada ADR captura **una** decisión: el contexto, la decisión tomada, las consecuencias y las alternativas consideradas.
 
 ## Por qué ADRs

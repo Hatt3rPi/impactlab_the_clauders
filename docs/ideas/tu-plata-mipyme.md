@@ -16,6 +16,10 @@ tags:
 
 # Idea: Tu Plata Mipyme — asistente regulatorio para microemprendedores informales
 
+<!-- AUTO-BANNER -->
+!!! info ":material-book-open-variant: Síntesis de fuentes externas"
+    Ficha de idea construida a partir del [PDF de estrategia](../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf) y/o el [Deep Research de Calibria](../assets/research/2026-04-29-deep-research-calibria.html). **Aún no validada por el equipo.**
+
 > *Para una microemprendedora de feria que vende empanadas y no sabe si formalizar, Tu Plata Mipyme genera ruta paso-a-paso, identifica productos CORFO/FOGAPE para los que califica, simula utilidad bajo Pro-Pyme Transparente y le redacta una carta de presentación al banco.*
 
 > :material-flag: **Plan C según la estrategia** ([PDF p. 7](../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf)) — *si el equipo tiene contacto con microemprendedores reales para entrevistar*.

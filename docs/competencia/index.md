@@ -7,6 +7,10 @@ tags:
 
 # Claude Impact Lab Chile 2026 — El puente al ciudadano
 
+<!-- AUTO-BANNER -->
+!!! note ":material-bank: Información oficial del lab"
+    Extraído del sitio oficial del [Claude Impact Lab Chile 2026](https://fintech.benditaia.cl/es) (WebFetch 2026-04-29). Confirmar con la organización antes del 6 de mayo.
+
 ## Qué es
 
 El **primer Claude Impact Lab global enfocado en inclusión financiera**, organizado por **Anthropic** junto a **BenditaIA** y **FinteChile**, dentro del Chile Fintech Forum 2026.

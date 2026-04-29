@@ -7,6 +7,10 @@ tags:
 
 # Tablero de ideas
 
+<!-- AUTO-BANNER -->
+!!! abstract ":material-toy-brick: Plantilla / esqueleto inicial"
+    Estructura generada al iniciar la wiki, sin datos del equipo. **Reemplazar el contenido antes de citarlo.** Convención: ver [Convenciones de contenido](../convenciones-de-contenido.md).
+
 Pool **pre-evaluado** de ideas para el lab, derivado del [research del equipo](../research/index.md) (estrategia + deep research previos).
 
 !!! info "Estado"

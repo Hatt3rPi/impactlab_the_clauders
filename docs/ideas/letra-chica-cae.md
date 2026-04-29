@@ -16,6 +16,10 @@ tags:
 
 # Idea: Letra Chica / Tu Plata — semáforo de contratos financieros
 
+<!-- AUTO-BANNER -->
+!!! info ":material-book-open-variant: Síntesis de fuentes externas"
+    Ficha de idea construida a partir del [PDF de estrategia](../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf) y/o el [Deep Research de Calibria](../assets/research/2026-04-29-deep-research-calibria.html). **Aún no validada por el equipo.**
+
 > *El usuario fotografía un contrato (tarjeta retail, crédito de consumo, plan de telco) y la IA le muestra un semáforo verde-amarillo-rojo por cláusula con la ley violada citada y un cálculo de costo total real.*
 
 > :material-flag: **Plan B según la estrategia** ([PDF p. 6-7](../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf)) — *si el equipo prefiere un producto con demo más visual*. También recomendada por el deep research como **Quick Win 2** (Impacto 9 / Complejidad 4).

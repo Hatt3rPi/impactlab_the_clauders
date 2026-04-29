@@ -18,6 +18,10 @@ tags:
 
 # Reunión: Definición de problema y setup del hackathon
 
+<!-- AUTO-BANNER -->
+!!! success ":material-check-bold: Producido por el equipo"
+    Documento generado por el equipo The Clauders. Es fuente primaria para este tema.
+
 ## TL;DR
 
 - Primera reunión del equipo. Cada miembro se presentó (background, disponibilidad, expectativas).

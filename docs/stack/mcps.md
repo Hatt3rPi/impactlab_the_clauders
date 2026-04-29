@@ -8,6 +8,10 @@ tags:
 
 # MCPs (Model Context Protocol)
 
+<!-- AUTO-BANNER -->
+!!! abstract ":material-toy-brick: Plantilla / esqueleto inicial"
+    Estructura generada al iniciar la wiki, sin datos del equipo. **Reemplazar el contenido antes de citarlo.** Convención: ver [Convenciones de contenido](../convenciones-de-contenido.md).
+
 Protocolo abierto que estandariza **cómo un agente accede a datos y herramientas externas**. Es la pieza que conecta a Claude con el "mundo real".
 
 ## Por qué nos importa

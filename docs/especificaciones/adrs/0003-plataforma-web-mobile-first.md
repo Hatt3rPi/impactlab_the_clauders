@@ -11,6 +11,10 @@ tags:
 
 # ADR 0003 — Plataforma: web mobile-first (no app nativa)
 
+<!-- AUTO-BANNER -->
+!!! success ":material-check-bold: Producido por el equipo"
+    Documento generado por el equipo The Clauders. Es fuente primaria para este tema.
+
 ## Contexto
 
 Independiente de la línea temática elegida, el equipo necesita decidir **qué tipo de plataforma** usar para llegar al usuario final. Las opciones realistas en 48 h:

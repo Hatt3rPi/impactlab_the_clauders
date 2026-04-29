@@ -8,6 +8,10 @@ tags:
 
 # Stakeholders
 
+<!-- AUTO-BANNER -->
+!!! abstract ":material-toy-brick: Plantilla / esqueleto inicial"
+    Estructura generada al iniciar la wiki, sin datos del equipo. **Reemplazar el contenido antes de citarlo.** Convención: ver [Convenciones de contenido](../convenciones-de-contenido.md).
+
 Mapa de **quién importa** alrededor de nuestra solución. No todos son usuarios; algunos son influenciadores, validadores, financiadores o fiscalizadores.
 
 ## Tabla maestra

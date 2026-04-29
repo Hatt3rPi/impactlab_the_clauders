@@ -8,6 +8,10 @@ tags:
 
 # Research tecnológico
 
+<!-- AUTO-BANNER -->
+!!! abstract ":material-toy-brick: Plantilla / esqueleto inicial"
+    Estructura generada al iniciar la wiki, sin datos del equipo. **Reemplazar el contenido antes de citarlo.** Convención: ver [Convenciones de contenido](../../convenciones-de-contenido.md).
+
 Notas sobre **cómo construir** la solución: patrones agénticos, librerías, MCPs, benchmarks de modelos, evaluación.
 
 ## Por qué importa

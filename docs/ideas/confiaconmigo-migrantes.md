@@ -15,6 +15,10 @@ tags:
 
 # Idea: ConfíaConmigo — traductor de derechos para migrantes
 
+<!-- AUTO-BANNER -->
+!!! info ":material-book-open-variant: Síntesis de fuentes externas"
+    Ficha de idea construida a partir del [PDF de estrategia](../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf) y/o el [Deep Research de Calibria](../assets/research/2026-04-29-deep-research-calibria.html). **Aún no validada por el equipo.**
+
 > *Bot multiidioma (español, criollo haitiano básico) que guía el onboarding bancario completo, explica derechos laborales y financieros, y responde en formato audio o texto.*
 
 ## Problema
