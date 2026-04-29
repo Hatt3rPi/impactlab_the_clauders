@@ -43,7 +43,7 @@ Bienvenidos al espacio de trabajo del equipo **The Clauders** para el [Claude Im
 - [x] Selección de línea temática — **Inclusión financiera** ([ADR 0002](especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md))
 - [x] Decisión de plataforma — **Web mobile-first** ([ADR 0003](especificaciones/adrs/0003-plataforma-web-mobile-first.md))
 - [x] Pool de ideas pre-evaluadas con scoring ([Tablero de ideas](ideas/index.md))
-- [ ] Selección de idea ganadora (top 3: [Defensor](ideas/defensor-dicom.md), [Letra Chica](ideas/letra-chica-cae.md), [Tu Plata Mipyme](ideas/tu-plata-mipyme.md))
+- [ ] Selección de idea ganadora — apuesta unificadora [sabidurIA ciudadana](ideas/sabiduria-ciudadana.md) o casos individuales ([Defensor](ideas/defensor-dicom.md), [Letra Chica](ideas/letra-chica-cae.md), [Tu Plata Mipyme](ideas/tu-plata-mipyme.md))
 - [ ] Spike técnico de la idea ganadora
 - [ ] Validación con usuarios reales (5-10 entrevistas)
 - [ ] MVP testeado antes del lab
