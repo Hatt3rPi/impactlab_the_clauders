@@ -4,33 +4,52 @@ Wiki interna del equipo **The Clauders** para el [Claude Impact Lab Chile 2026 �
 
 > **Sitio publicado:** <https://theclauders.netlify.app>
 
-Este repositorio contiene research, ideas, definiciones, stack técnico, especificaciones y transcripciones de reuniones del equipo durante la fase de exploración y el lab. Está construido con [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) y desplegado en [Netlify](https://www.netlify.com/).
+Este repositorio contiene research, ideas, definiciones, stack técnico, especificaciones y transcripciones de reuniones del equipo. Está construido con [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
 
-## Quickstart local
+## Cómo usarla (la forma simple)
+
+Tú **no escribes Markdown**. Conectas el repositorio a un agente IA y le pides cosas en lenguaje natural:
+
+> *"Te dejo la transcripción de la reunión de hoy, súbela y actualiza el tablero de ideas según lo que decidimos."*
+>
+> *"Acá hay un PDF con un research de mercado, incorpóralo donde corresponda."*
+>
+> *"Decidimos cambiar el stack a Astro, registra el ADR."*
+>
+> *"¿Qué quedó pendiente del último kickoff?"*
+
+El agente lee la wiki entera, decide dónde va cada cosa (acta de reunión, ficha de idea, ADR, nota de research, etc.), respeta las [convenciones de contenido](docs/convenciones-de-contenido.md) y actualiza tanto el archivo nuevo como los índices, navegación y referencias cruzadas. Tú solo revisas el commit.
+
+### Opción A — Claude Code (recomendado)
+
+[Claude Code](https://claude.com/claude-code) es la CLI/IDE oficial de Anthropic.
+
+1. Instalar Claude Code en tu máquina.
+2. `cd` al repo clonado y abrir Claude Code.
+3. Pedirle al agente lo que necesites en lenguaje natural. Él se encarga de leer la estructura, editar los archivos correctos, hacer build local para verificar y commitear/pushear (este equipo opera en modo proactivo, así no preguntará para cada commit).
+
+### Opción B — Cowork
+
+Si el equipo prefiere [Cowork](https://cowork.io/) u otra herramienta agéntica con acceso a GitHub, conectar el repo y pedirle lo mismo en lenguaje natural. La idea es la misma: tú dictas en español, el agente edita la wiki y hace commit.
+
+### Opción C — Markdown a mano (fallback)
+
+Si quieres editar directo los `.md`:
 
 ```bash
-# 1. Crear entorno virtual (opcional pero recomendado)
-python -m venv .venv
-source .venv/bin/activate   # Linux/Mac
-# .venv\Scripts\activate    # Windows PowerShell
-
-# 2. Instalar dependencias
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-
-# 3. Levantar servidor de desarrollo con hot-reload
-mkdocs serve
-# → abrir http://localhost:8000
-
-# 4. (Opcional) Generar el sitio estático
-mkdocs build
+mkdocs serve  # → http://localhost:8000
 ```
+
+Si agregas una página nueva, súmala al `nav` en `mkdocs.yml`. Para reuniones, ideas o ADRs nuevos, copia la `_template.md` correspondiente. Commit a `main` y la wiki se redespliega sola.
 
 ## Estructura
 
 ```
 docs/
 ├── competencia/        Información oficial del lab
-├── lineas-tematicas/   Las 3 líneas posibles (en exploración)
+├── lineas-tematicas/   Las 3 líneas posibles
 ├── ideas/              Tablero de ideas con scoring
 ├── research/           Notas de investigación (regulatorio, usuarios, mercado, tech)
 ├── definiciones/       Glosario, stakeholders, personas
@@ -41,31 +60,8 @@ docs/
 └── recursos/           Enlaces, mentores, workshops
 ```
 
-Cada sección tiene su propio `index.md` y, donde aplica, un archivo `_template.md` con la plantilla a copiar.
+Cada sección tiene su propio `index.md` y, donde aplica, un archivo `_template.md`.
 
-## Despliegue (Netlify)
+## Convenciones de contenido
 
-El sitio se publica automáticamente en Netlify en cada push a `main`. La configuración vive en [`netlify.toml`](netlify.toml) y `runtime.txt`.
-
-### Setup inicial (una sola vez)
-
-1. Ir a <https://app.netlify.com/> y conectar la cuenta con GitHub.
-2. **Add new site → Import an existing project → GitHub →** seleccionar `Hatt3rPi/impactlab_the_clauders`.
-3. Netlify lee `netlify.toml` y completa los campos:
-    - **Build command:** `pip install -r requirements.txt && mkdocs build`
-    - **Publish directory:** `site`
-    - **Python version:** 3.12 (vía `runtime.txt` y `PYTHON_VERSION`)
-4. **Deploy site.** El primer build tarda ~1 min.
-5. (Opcional) **Site settings → Change site name** para personalizar la URL `*.netlify.app`.
-6. (Opcional) **Domain management** para apuntar un dominio propio.
-
-### Después
-
-Cada `git push` a `main` dispara un build en Netlify. Los logs y el historial quedan en el dashboard del sitio.
-
-## Cómo contribuir
-
-1. Crea o edita el archivo dentro de `docs/`.
-2. Si agregas una página nueva, súmala al `nav` en `mkdocs.yml`.
-3. Para reuniones e ideas nuevas, copia la plantilla `_template.md` correspondiente.
-4. Commit + push a `main`. El sitio se redespliega automáticamente.
+Cada página abre con un **banner** que indica su origen: plantilla, síntesis de fuente externa, producido por el equipo, o información oficial del lab. Detalle en [`docs/convenciones-de-contenido.md`](docs/convenciones-de-contenido.md).
