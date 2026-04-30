@@ -99,9 +99,46 @@ flowchart LR
     CONTA -.-> E3
     CONTA -.-> E4
     GOV -.-> E4
+
+    %% Navegación: click en nodos para profundizar (abre en nueva pestaña)
+    click E1 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-1-sueno-free" _blank "Ver detalle de la etapa Sueño en plan.md"
+    click E2 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-2-informal-activo-free" _blank "Ver detalle de la etapa Informal activo en plan.md"
+    click E3 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-3-en-formalizacion-pro" _blank "Ver detalle de la etapa Formalización en plan.md"
+    click E4 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-4-pyme-en-crecimiento-plus-marketplace" _blank "Ver detalle de la etapa PYME crecimiento en plan.md"
+    click D1A "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-0-idea-sueno" _blank "Dolor E0-D2: ver ficha en dolores.md"
+    click D1B "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-0-idea-sueno" _blank "Dolor E0-D3: ver ficha en dolores.md"
+    click D1C "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-0-idea-sueno" _blank "Dolor E0-D7: ver ficha en dolores.md"
+    click D2A "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-1-validacion-informal" _blank "Dolor E1-D1: ver ficha en dolores.md"
+    click D2B "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-1-validacion-informal" _blank "Dolor E1-D2: ver ficha en dolores.md"
+    click D2C "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-1-validacion-informal" _blank "Dolor E1-D7: ver ficha en dolores.md"
+    click D3A "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-2-formalizacion" _blank "Dolor E2-D2: ver ficha en dolores.md"
+    click D3B "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-2-formalizacion" _blank "Dolor E2-D3: ver ficha en dolores.md"
+    click D3C "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-2-formalizacion" _blank "Dolores E2-D1, E2-D5, E2-D6: ver fichas en dolores.md"
+    click D4A "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-3-operacion-formal" _blank "Dolor E3-D1: ver ficha en dolores.md"
+    click D4B "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-4-crecimiento" _blank "Dolor E4-D2: ver ficha en dolores.md"
+    click D4C "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-4-crecimiento" _blank "Dolor E4-D4: ver ficha en dolores.md"
 ```
 
 > **Lectura del diagrama.** Cada etapa concentra dolores arquetípicos respaldados por el run #06; las **flechas punteadas** muestran los puntos de abandono típicos en los que el emprendedor queda atrapado o retrocede. Las **cajas grises** son las instituciones que hoy son barrera —no enemigas— pero cuyo lenguaje, costo o lógica de operación expulsa al segmento NSE D-E. La trayectoria sólida E1 → E2 → E3 → E4 es la que ocurre en el papel; en la práctica, la mayor parte del universo se atasca entre E1 y E2.
+>
+> **Navegación.** Los nodos de etapas y dolores son **clickables**: abren en nueva pestaña la sección correspondiente del plan técnico o la ficha del dolor en `dolores.md`. Si el click no funciona en tu navegador (algunos bloquean handlers de mermaid), usa la tabla de abajo:
+
+??? abstract "Tabla de navegación rápida — AS-IS"
+
+    **Etapas (en `plan.md` §3.2):**
+
+    - [Etapa 1 — Sueño](plan.md#etapa-1-sueno-free)
+    - [Etapa 2 — Informal activo](plan.md#etapa-2-informal-activo-free)
+    - [Etapa 3 — En formalización](plan.md#etapa-3-en-formalizacion-pro)
+    - [Etapa 4 — PYME en crecimiento](plan.md#etapa-4-pyme-en-crecimiento-plus-marketplace)
+
+    **Fichas de dolores (en `dolores.md`):**
+
+    - [Etapa 0 — Idea / Sueño](dolores.md#etapa-0-idea-sueno) (E0-D2 miedo SII · E0-D3 pricing · E0-D7 finanzas mezcladas)
+    - [Etapa 1 — Validación Informal](dolores.md#etapa-1-validacion-informal) (E1-D1 sin RUT · E1-D2 CuentaRUT · E1-D7 crecimiento invisible)
+    - [Etapa 2 — Formalización](dolores.md#etapa-2-formalizacion) (E2-D1 RES · E2-D2 figura jurídica · E2-D3 abismo F4415 · E2-D5 patente · E2-D6 SEREMI)
+    - [Etapa 3 — Operación Formal](dolores.md#etapa-3-operacion-formal) (E3-D1 F29)
+    - [Etapa 4 — Crecimiento](dolores.md#etapa-4-crecimiento) (E4-D2 subsidios · E4-D4 primer empleado)
 
 ### 1.2 Causas principales
 
@@ -113,9 +150,33 @@ flowchart LR
 
 ### 1.3 Impactos observables
 
-- **Tiempo perdido.** Trámites diseñados para una hora terminan tomando semanas o se abandonan. El 35-40 % de borradores RES quedan sin firmar (ver causa 5 en 1.2); los que avanzan recorren entre 4 y 6 sub-trámites en agencias desconectadas (RES → SII F4415 → boleta/factura → patente municipal → SEREMI cuando aplica).
-- **Dinero dejado en la mesa.** **Más del 50 % de las postulaciones a SERCOTEC/CORFO se rechazan** por mala formulación o inadmisibilidad *(Fuente: [research run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md))*. **El 44 % de los emprendedores identifica el acceso a financiamiento como su barrera principal** *(Fuente: [research run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md))*. Dueños únicos que califican al régimen Pro-Pyme Transparente (14 D N°8, 0 % impuesto de primera categoría a nivel empresa) "siguen en el régimen general gravoso (27 %) por desconocimiento técnico y contable" *(Fuente: [run #04 money-left-on-the-table](../competencia/research/_runs-deep-research/2026-04-29-04-money-left-on-the-table.md))*. A esto se suman ventas B2B perdidas por no poder facturar y multas municipales de 1 a 3 UTM por decomiso de fiscalizadores *(Fuente: [research run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md))*.
-- **Capacidad no construida.** Sin contabilidad sistemática el emprendedor no ve su utilidad real, no distingue finanzas familiares de las del negocio y no puede demostrar trayectoria al banco; el crecimiento es invisible. **~60 % de las ideas informales mueren antes de la primera venta** *(Fuente: [research run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md))*.
+Los impactos del problema están separados en **cuantitativos** (con métrica de tiempo, dinero o tasa) y **cualitativos** (efectos sobre confianza, autonomía y capacidad de delegación que no son monetarios pero son observables).
+
+#### 1.3.1 Cuantitativos
+
+| # | Impacto | Métrica | Magnitud | Fuente |
+|---|---|---|---|---|
+| I-Q1 | Borradores RES (Tu Empresa en Un Día) abandonados | % de borradores no firmados | **35-40 %** del total iniciado | [run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) |
+| I-Q2 | Postulaciones CORFO/SERCOTEC rechazadas | % de rechazo | **>50 %** por mala formulación o inadmisibilidad | [run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) |
+| I-Q3 | Emprendedores con acceso a financiamiento como barrera principal | % del segmento | **44 %** declara financiamiento como barrera #1 | [run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) |
+| I-Q4 | Sobrepago tributario por desconocer Pro-Pyme Transparente (14 D N°8) | Diferencial de tasa primera categoría | Pagan **27 %** cuando calificarían a **0 %** | [run #04 money-left-on-the-table](../competencia/research/_runs-deep-research/2026-04-29-04-money-left-on-the-table.md) |
+| I-Q5 | Ventas B2B perdidas por no poder facturar | Pérdida mensual estimada | **~$200.000 CLP/mes** por caso (Felipe — cuñada vende tortas) | [run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) |
+| I-Q6 | Multas municipales por decomiso de fiscalizadores | Sanción por evento | **1 a 3 UTM** ($68.000 a $204.000 CLP, abril 2026) | [run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) |
+| I-Q7 | Sub-trámites desconectados para formalizar | # de agencias distintas | **4 a 6** sub-trámites (RES, SII F4415, boleta/factura, patente municipal, SEREMI) | [run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) |
+| I-Q8 | Mortalidad temprana de ideas informales | % que cierra antes de la 1ª venta | **~60 %** de las ideas mueren antes de vender | [run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) |
+| I-Q9 | Brecha de ingresos por género en microemprendedores | Diferencia mujer vs. hombre, Los Ríos | **-43,7 %** ingreso de la microemprendedora vs. el microemprendedor | [run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) |
+| I-Q10 | Universo total expuesto al problema | Microemprendedores informales en Chile | **1,08 M (INE EME8)** · 59 % mujeres · 38 % informalidad Araucanía | [que-es.md](que-es.md) |
+
+#### 1.3.2 Cualitativos
+
+| # | Impacto | Manifestación observable | Fuente |
+|---|---|---|---|
+| I-C1 | **Miedo irracional al SII** que paraliza antes de empezar | El emprendedor descarta formalizar "porque me van a multar" sin haber hecho nada — bloqueo psicológico transversal a todo el journey | [run #06 §E0-D2](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) (CRÍTICO transversal) |
+| I-C2 | **Soledad operativa del emprendedor** sin red de apoyo | Decisiones financieras tomadas solo, sin contraparte que valide; ausencia de mentor por costo o por geografía | [run #06 §E0-D6](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) |
+| I-C3 | **Crecimiento invisible** — el emprendedor no sabe si gana o pierde plata | Sin contabilidad sistemática, sin balance real; el negocio existe pero no se puede demostrar al banco ni al usuario mismo | [run #06 §E1-D7](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) |
+| I-C4 | **Mezcla de finanzas familiares y del negocio** | Cuenta única, sin separar plata de la casa de plata del negocio — base para que I-Q3 (no acceder a banca) y I-Q5 (no facturar B2B) ocurran | [run #06 §E0-D7](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) |
+| I-C5 | **Lenguaje técnico-legal como barrera cognitiva** | Comprensión lectora bajo nivel 3 PIAAC en NSE D-E; los reglamentos SII/CORFO requieren registro de lectura que el segmento no maneja — la información existe pero es inaccesible | [reunión 29-abr](../reuniones/2026-04-29-definicion-problema-setup.md) |
+| I-C6 | **Dependencia de un asesor humano caro** | Cuando la persona logra superar I-C1 e I-C5, queda dependiente de un contador/abogado que cobra por hora — sin tier gratuito en el mercado | [plan.md §1.2](plan.md) |
 
 ### 1.4 Costo de no actuar
 
@@ -233,20 +294,112 @@ flowchart LR
     AG1 ==>|"upgrade trigger:<br/>'lista para vender'"| AG2
     AG2 ==>|"handoff JSON:<br/>'quiero formalizar'"| AG3
     AG3 ==>|"6 meses formalizada<br/>handoff JSON"| AG4
+
+    %% Navegación: click en nodos para profundizar (abre en nueva pestaña)
+    click WA "https://theclauders.netlify.app/tu-plata-mipyme/especificaciones/adrs/0004-whatsapp-first-freemium-multiagente/" _blank "ADR-0004: por qué WhatsApp-first"
+    click WEB "https://theclauders.netlify.app/tu-plata-mipyme/especificaciones/adrs/0004-whatsapp-first-freemium-multiagente/" _blank "ADR-0004: rol de la web complementaria"
+    click SUP "https://theclauders.netlify.app/tu-plata-mipyme/plan/#42-componentes-y-tecnologia" _blank "Componentes técnicos en plan.md §4.2"
+    click HAI "https://theclauders.netlify.app/tu-plata-mipyme/plan/#42-componentes-y-tecnologia" _blank "Componentes técnicos en plan.md §4.2"
+    click SDK "https://theclauders.netlify.app/tu-plata-mipyme/plan/#5-sistema-multi-agente-diseno-detallado" _blank "Sistema multi-agente con Agent SDK en plan.md §5"
+    click DB "https://theclauders.netlify.app/tu-plata-mipyme/plan/#43-modelo-de-datos-nucleo" _blank "Modelo de datos en plan.md §4.3"
+    click MCP "https://theclauders.netlify.app/tu-plata-mipyme/plan/#42-componentes-y-tecnologia" _blank "MCPs y caching en plan.md §4.2"
+    click E1 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-1-sueno-free" _blank "Detalle Etapa Sueño en plan.md"
+    click E2 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-2-informal-activo-free" _blank "Detalle Etapa Informal activo en plan.md"
+    click E3 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-3-en-formalizacion-pro" _blank "Detalle Etapa Formalización en plan.md"
+    click E4 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-4-pyme-en-crecimiento-plus-marketplace" _blank "Detalle Etapa PYME crecimiento en plan.md"
+    click AG1 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-1-sueno-free" _blank "Agente mentor-inicio en plan.md §3.2"
+    click AG2 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-2-informal-activo-free" _blank "Agente acompanante-informal en plan.md §3.2"
+    click AG3 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-3-en-formalizacion-pro" _blank "Agente gestor-formalizacion en plan.md §3.2"
+    click AG4 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-4-pyme-en-crecimiento-plus-marketplace" _blank "Agente estratega-crecimiento en plan.md §3.2"
+    click S1 "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-0-idea-sueno" _blank "Dolores E0 cerrados por mentor-inicio"
+    click S2 "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-1-validacion-informal" _blank "Dolores E1 cerrados por acompanante-informal"
+    click S3 "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-2-formalizacion" _blank "Dolores E2 cerrados por gestor-formalizacion"
+    click S4 "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-4-crecimiento" _blank "Dolores E3-E4 cerrados por estratega-crecimiento"
+    click T1A "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools mentor-inicio en backlog.md"
+    click T1B "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools mentor-inicio en backlog.md"
+    click T1C "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools mentor-inicio en backlog.md"
+    click T2A "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools acompanante-informal en backlog.md"
+    click T2B "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools acompanante-informal en backlog.md"
+    click T2C "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools acompanante-informal en backlog.md"
+    click T2D "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools acompanante-informal en backlog.md"
+    click T3A "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools gestor-formalizacion en backlog.md"
+    click T3B "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools gestor-formalizacion en backlog.md"
+    click T3C "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools gestor-formalizacion en backlog.md"
+    click T3D "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools gestor-formalizacion en backlog.md"
+    click T4A "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools estratega-crecimiento en backlog.md"
+    click T4B "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools estratega-crecimiento en backlog.md"
+    click T4C "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools estratega-crecimiento en backlog.md"
+    click T4D "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools estratega-crecimiento en backlog.md"
 ```
 
 > **Lectura del diagrama.** Las **cajas verdes** son los canales (WhatsApp principal · Web complementaria). Las **cajas grises** son los componentes técnicos compartidos: el supervisor en Sonnet 4.6 enruta a 4 subagentes vía Agent SDK; Haiku 4.5 clasifica intención (más barato, más rápido); Postgres persiste el expediente del emprendedor entre sesiones; los MCPs propios sobre SII/CORFO/SERCOTEC habilitan tools que **citan la fuente y no alucinan números**. Las **cajas violetas** son los agentes; las **azules** son sus tools; las **verdes claras** muestran qué dolores específicos del AS-IS se cierran en cada etapa. Las **flechas gruesas** entre agentes son los **handoffs explícitos** con contexto JSON estructurado (no historia conversacional cruda) que mantienen la continuidad del journey sin perder al usuario entre etapas.
+>
+> **Navegación.** Todos los nodos del diagrama son **clickables** y abren en nueva pestaña la sección correspondiente del plan técnico, ADR-0004 o las fichas de dolores. Si el click no funciona en tu navegador, usa la tabla de abajo:
+
+??? abstract "Tabla de navegación rápida — TO-BE"
+
+    **Canales y stack técnico:**
+
+    - [WhatsApp + Web (ADR-0004)](especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md) — decisión arquitectónica del canal y modelo
+    - [Componentes técnicos (plan.md §4.2)](plan.md#42-componentes-y-tecnologia) — Sonnet 4.6 · Haiku 4.5 · Twilio · FastAPI · Postgres · MCPs
+    - [Sistema multi-agente (plan.md §5)](plan.md#5-sistema-multi-agente-diseno-detallado) — supervisor + handoffs JSON
+    - [Modelo de datos (plan.md §4.3)](plan.md#43-modelo-de-datos-nucleo) — expediente del emprendedor en Postgres
+
+    **Etapas y agentes (en `plan.md` §3.2):**
+
+    - [Etapa 1 · agente `mentor-inicio`](plan.md#etapa-1-sueno-free)
+    - [Etapa 2 · agente `acompanante-informal`](plan.md#etapa-2-informal-activo-free) — foco Fase 0 demo del lab
+    - [Etapa 3 · agente `gestor-formalizacion`](plan.md#etapa-3-en-formalizacion-pro)
+    - [Etapa 4 · agente `estratega-crecimiento`](plan.md#etapa-4-pyme-en-crecimiento-plus-marketplace)
+
+    **Tools (en `backlog.md` por etapa, columna E0-E5):**
+
+    - [Backlog completo de 60 features](backlog.md) — categorizado E0-E5 con marcadores ✅/❌/💡/⏳
+
+    **Dolores cerrados (en `dolores.md`):**
+
+    - [E0 cerrados por mentor-inicio](dolores.md#etapa-0-idea-sueno)
+    - [E1 cerrados por acompanante-informal](dolores.md#etapa-1-validacion-informal)
+    - [E2 cerrados por gestor-formalizacion](dolores.md#etapa-2-formalizacion)
+    - [E3-E4 cerrados por estratega-crecimiento](dolores.md#etapa-4-crecimiento)
 
 **Cambio neto frente al AS-IS.** Donde antes había instituciones-barrera y abandono entre etapas, ahora hay un único punto de entrada (WhatsApp) con cuatro especialistas que se relevan, citan la norma y derivan a humano cuando corresponde. La fricción que el segmento experimenta no se elimina —los trámites siguen existiendo— pero deja de operar como muro: el copiloto traduce, ordena, recuerda y acompaña.
 
 ### 2.2 Beneficios esperados
 
-- **Cobertura efectiva del segmento donde ya está.** Llegar al 1,08 M de microemprendedores informales por el canal que ya usan, sin pedirles aprender una app nueva ni instalar nada: WhatsApp con 95,3 % de penetración mobile en Chile *(Fuente: [comportamiento digital Chile 2026](../competencia/research/usuarios/comportamiento-digital-chile-2026.md))*. Esto cierra la brecha de canal descrita en la causa 3 de la Sección 1.
-- **Acompañamiento continuo, no consulta puntual.** Sustituir el modelo "una visita al contador / una llamada a SERCOTEC" por una conversación recurrente y asincrónica que captura ventas y gastos día a día, recuerda plazos y siembra conciencia de formalización sin presionar — diferenciador estructural frente a los RAG estáticos que dominarán el lab *(Fuente: [ADR-0004](especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md))*.
-- **Asesoría especializada por etapa, no genérica.** Cuatro agentes con system prompts focalizados <2k tokens por etapa (vs. >8k que degradan calidad en evals internos), cada uno con sus tools y memoria. Un soñador no recibe el mismo trato que una PYME que postula a CORFO; el supervisor enruta y los handoffs pasan contexto JSON estructurado *(Fuente: [plan.md](plan.md))*.
-- **Modelo económico inclusivo y sostenible.** Tier Free indefinido para soñador e informal activo; cobro solo cuando el valor monetario del siguiente paso es evidente para el usuario (Pro ~$4.990 CLP/mes al formalizar; Plus $15.000-30.000 CLP por postulación a subsidio); marketplace con comisión 10-15 % al derivar a contador/abogado certificado regional. Captura willingness-to-pay real sin reproducir la barrera económica que es causa raíz del problema *(Fuente: [que-es.md](que-es.md))*.
-- **Trazabilidad normativa con cita verificable.** Cada respuesta tributaria, jurídica o de fomento incluye link a la fuente oficial (SII, CORFO, SERCOTEC, CMF), implementado vía MCP propio sobre corpus regulatorio chileno con prompt caching de Anthropic (>80 % hit objetivo) — mitiga el riesgo descalificante de alucinación legal del lab *(Fuente: [estrategia de pitch](../equipo/estrategia-pitch-lab.md))*.
-- **Reducción de capital público no aprovechado.** Bajar el >50 % de rechazo en SERCOTEC/CORFO por mala formulación y la fuga de dueños únicos que pagan 27 % de primera categoría cuando calificarían a 0 % en Pro-Pyme Transparente, vía postulación asistida y match probabilístico con instrumentos *(Fuente: [research run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md))*.
+Los beneficios están separados en **cuantitativos** (con métrica medible y meta) y **cualitativos** (capacidad habilitada que no se cuantifica directamente pero sostiene la adopción real). Cada beneficio cuantitativo mapea a un impacto del problema actual (§1.3.1) — la columna *Cierra impacto* hace explícito ese 1:1.
+
+#### 2.2.1 Cuantitativos
+
+| # | Beneficio | Métrica | Meta a 12 meses post-lab | Cierra impacto | Fuente |
+|---|---|---|---|---|---|
+| B-Q1 | Cobertura del segmento por su canal natural | % del 1,08 M alcanzable vía WhatsApp | **95,3 % penetración mobile**; objetivo Fase 1: **MAU 50 → 500** | I-Q10 | [plan.md §8.1](plan.md) · [comportamiento digital Chile 2026](../competencia/research/usuarios/comportamiento-digital-chile-2026.md) |
+| B-Q2 | Reducción del rechazo en SERCOTEC/CORFO por mala formulación | % rechazo evitado vía borrador asistido + matcher | Reducir **>50 %** de rechazo a **<25 %** en cohorte asistida | I-Q2 | [run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) · [plan.md §3.2 E4](plan.md) |
+| B-Q3 | Mayor tasa de cierre de borradores RES | % borradores firmados | Subir **60-65 % firma actual** a **>80 %** en cohorte asistida | I-Q1 | [run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) |
+| B-Q4 | Ahorro tributario por activar Pro-Pyme Transparente | Diferencial de tasa primera categoría | Llevar a la cohorte de **27 %** a **0 %** cuando califique | I-Q4 | [run #04 money-left-on-the-table](../competencia/research/_runs-deep-research/2026-04-29-04-money-left-on-the-table.md) |
+| B-Q5 | Ingresos B2B recuperados al poder facturar | $ CLP/mes recuperados por caso formalizado | **~$200.000 CLP/mes/caso** habilitado para emitir factura | I-Q5 | [run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) |
+| B-Q6 | Reducción de multas municipales por decomiso | Multas evitadas vía checklist anticipado de patente y SEREMI | Evitar **1-3 UTM/evento** ($68.000-$204.000 CLP) | I-Q6 | [run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) |
+| B-Q7 | Cierre del abismo entre 4-6 sub-trámites | # agencias coordinadas por el copiloto | 1 hilo conductor en lugar de 4-6 trámites desconectados | I-Q7 | [plan.md §3.2 E3](plan.md) |
+| B-Q8 | Reducción de mortalidad temprana de ideas | % de ideas que llegan a 1ª venta | Subir **~40 % actual** a meta Fase 1 (medido en cohorte) | I-Q8 | [run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) · [plan.md §3.2 E1](plan.md) |
+| B-Q9 | Reducción brecha de género en cohorte | % usuarias mujeres vs línea base 59 % informalidad femenina | Mantener **≥ 59 %** mujeres en MAU, con foco regional | I-Q9 | [plan.md §8.2](plan.md) |
+| B-Q10 | Costo unitario sostenible para Free indefinido | Costo Anthropic por usuario activo/mes | **< $0,30 USD** con caching >80 % | viabilidad del modelo | [plan.md §8.3](plan.md) |
+| B-Q11 | Latencia en canal asincrónico real | p95 respuesta WhatsApp | **< 4 s** | adopción real | [plan.md §8.3](plan.md) |
+| B-Q12 | Conversión Free → Pro en triggers contextuales | % que paga al ver el trigger | **> 8 %** | sostenibilidad | [plan.md §8.1](plan.md) |
+
+> **Lectura de los 3 escenarios.** Los rangos del plan técnico permiten construir un escenario Conservador (metas Fase 1 al cierre del piloto, mes 3), Optimista (+20 % sobre meta, adopción acelerada por endorsement de SERCOTEC) y Pesimista (-20 %, dependencia mayor a entrevistas reales que el lab no permite alcanzar). Detalle del mapeo a impacto público y capital activado en [PITCH §3](PITCH.md).
+
+#### 2.2.2 Cualitativos
+
+| # | Beneficio | Capacidad habilitada (no la tecnología) | Cierra impacto | Fuente |
+|---|---|---|---|---|
+| B-C1 | **Confianza con el SII desmitificada** | El emprendedor entiende qué le piden y por qué — el SII deja de ser un fantasma punitivo y pasa a ser un trámite ordenado por etapa | I-C1 | [plan.md §3.2 E1](plan.md) · [dolores.md §E0-D2](dolores.md#etapa-0-idea-sueno) |
+| B-C2 | **Sale de la soledad operativa** | El acompañamiento asincrónico genera una contraparte estable — no reemplaza al mentor humano pero ocupa el espacio cuando no hay | I-C2 | [run #06 §E0-D6](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) |
+| B-C3 | **Hace visible el crecimiento del negocio** | Reporte semanal de utilidad real con simulación Pro-Pyme — el emprendedor pasa de "no sé si gano" a "veo cuánto y por qué" | I-C3 | [plan.md §3.2 E2](plan.md) |
+| B-C4 | **Separa finanzas familiares de las del negocio** | Pregunta diagnóstica al onboarding + acompañamiento de hábito — no es una herramienta financiera, es un orden operativo | I-C4 | [run #06 §E0-D7](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) |
+| B-C5 | **Traduce el lenguaje técnico-legal** | Mensajes ≤ 160 chars, una idea por mensaje, español chileno cercano sin tecnicismos sin explicar — la información que existe deja de ser inaccesible | I-C5 | [plan.md §1.2 principios duros](plan.md) |
+| B-C6 | **Reduce dependencia económica de asesoría humana** | Free indefinido cubre acompañamiento; el cobro solo aparece en eventos de valor monetario evidente — sin reproducir la barrera de pago al primer contacto | I-C6 | [ADR-0004](especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md) |
+| B-C7 | **Trazabilidad normativa con cita verificable** | Cada respuesta tributaria/legal lleva link a la fuente oficial — diferenciador estructural frente a los RAG estáticos del lab y mitigación del riesgo descalificante de alucinación legal | mitiga R-02 | [estrategia de pitch](../equipo/estrategia-pitch-lab.md) |
+| B-C8 | **Asesoría especializada por etapa** | 4 agentes con system prompts <2k tokens (vs. >8k monolíticos que degradan calidad), handoffs JSON estructurados — un soñador no recibe el mismo trato que una PYME postulando a CORFO | sostiene B-Q3, B-Q8 | [plan.md §5](plan.md) |
 
 ### 2.3 Indicadores de éxito
 
