@@ -15,3 +15,145 @@
 .md-typeset details {
   font-size: 0.78rem;
 }
+
+/* === Botón "ver en pantalla completa" para diagramas e imágenes === */
+.diagram-fullscreen-wrap {
+  position: relative;
+}
+
+.dfs-img-wrap {
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+}
+
+.diagram-fullscreen-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 5;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--md-default-fg-color--lightest, rgba(0, 0, 0, 0.12));
+  border-radius: 6px;
+  background: var(--md-default-bg-color, #fff);
+  color: var(--md-default-fg-color, #1f2937);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  padding: 0;
+}
+
+.diagram-fullscreen-wrap:hover .diagram-fullscreen-btn,
+.diagram-fullscreen-btn:focus,
+.diagram-fullscreen-btn:focus-visible {
+  opacity: 1;
+}
+
+.diagram-fullscreen-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+@media (hover: none) {
+  .diagram-fullscreen-btn { opacity: 0.85; }
+}
+
+/* === Modal fullscreen con zoom/pan === */
+html.dfs-open,
+html.dfs-open body {
+  overflow: hidden;
+}
+
+.dfs-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(15, 23, 42, 0.92);
+  display: none;
+  flex-direction: column;
+}
+
+.dfs-modal[aria-hidden="false"] {
+  display: flex;
+}
+
+.dfs-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  background: rgba(15, 23, 42, 0.85);
+  color: #f1f5f9;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dfs-toolbar .dfs-btn {
+  background: rgba(255, 255, 255, 0.08);
+  color: #f1f5f9;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  width: 34px;
+  height: 34px;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.dfs-toolbar .dfs-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.dfs-toolbar .dfs-close {
+  margin-left: auto;
+}
+
+.dfs-toolbar .dfs-hint {
+  font-size: 0.78rem;
+  color: rgba(241, 245, 249, 0.7);
+  margin-left: 8px;
+}
+
+@media (max-width: 600px) {
+  .dfs-toolbar .dfs-hint { display: none; }
+}
+
+.dfs-stage {
+  flex: 1 1 auto;
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: none;
+}
+
+.dfs-stage.dfs-dragging {
+  cursor: grabbing;
+}
+
+.dfs-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  will-change: transform;
+}
+
+.dfs-canvas svg,
+.dfs-canvas img {
+  display: block;
+  max-width: none !important;
+  max-height: none !important;
+  width: auto;
+  height: auto;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
