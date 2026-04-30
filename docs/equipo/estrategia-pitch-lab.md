@@ -14,9 +14,9 @@ tags:
 
 <!-- AUTO-BANNER -->
 !!! info ":material-book-open-variant: Síntesis de fuentes externas"
-    Tácticas extraídas del [run Deep Research del 29-abr-2026](../research/_runs-deep-research/2026-04-29-02-ganadores-hackathons-fintech-ia.md) sobre patrones de ganadores en hackathons fintech IA 2025-2026. **Aún no validadas en práctica por el equipo.**
+    Tácticas extraídas del [run Deep Research del 29-abr-2026](../competencia/research/_runs-deep-research/2026-04-29-02-ganadores-hackathons-fintech-ia.md) sobre patrones de ganadores en hackathons fintech IA 2025-2026. **Aún no validadas en práctica por el equipo.**
 
-> Este documento **complementa** las [convenciones de patrones hackathons](../research/mercado/patrones-hackathons-fintech.md) (que sintetizó el PDF de Calibria con datos pre-2024) con datos frescos sobre cómo cambió el listón en los últimos 18 meses con la llegada de Claude 4.x, Gemini 3.1, GPT-5 y los agentes asíncronos.
+> Este documento **complementa** las [convenciones de patrones hackathons](../competencia/research/mercado/patrones-hackathons-fintech.md) (que sintetizó el PDF de Calibria con datos pre-2024) con datos frescos sobre cómo cambió el listón en los últimos 18 meses con la llegada de Claude 4.x, Gemini 3.1, GPT-5 y los agentes asíncronos.
 
 ## La tesis: el listón subió radicalmente en 2025-2026
 
@@ -128,6 +128,6 @@ Si el equipo confirma sabidurIA en el Tollgate 1, esta estrategia se aplica así
 
 ## Referencias
 
-- [Run Deep Research #02 — Patrones de ganadores 2025-2026](../research/_runs-deep-research/2026-04-29-02-ganadores-hackathons-fintech-ia.md) (reporte crudo, 441 líneas, 46 fuentes).
-- [Patrones que ganan hackathons fintech (datos pre-2024)](../research/mercado/patrones-hackathons-fintech.md) — síntesis previa del PDF de Calibria, sigue siendo válida pero **se complementa** con esta nota.
-- [Capacidades de Claude diferenciadoras](../research/tecnologia/capacidades-claude-diferenciadoras.md) — stack técnico recomendado.
+- [Run Deep Research #02 — Patrones de ganadores 2025-2026](../competencia/research/_runs-deep-research/2026-04-29-02-ganadores-hackathons-fintech-ia.md) (reporte crudo, 441 líneas, 46 fuentes).
+- [Patrones que ganan hackathons fintech (datos pre-2024)](../competencia/research/mercado/patrones-hackathons-fintech.md) — síntesis previa del PDF de Calibria, sigue siendo válida pero **se complementa** con esta nota.
+- [Capacidades de Claude diferenciadoras](../competencia/research/tecnologia/capacidades-claude-diferenciadoras.md) — stack técnico recomendado.

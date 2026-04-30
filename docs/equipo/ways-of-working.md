@@ -40,7 +40,7 @@ Reglas mínimas para trabajar bien en un sprint corto.
 ## Documentación
 
 - **Lo que cuesta entender dos veces** se documenta.
-- **Glosario vivo:** si tuviste que googlear un término, súbelo a [Glosario](../definiciones/glosario.md).
+- **Glosario vivo:** si tuviste que googlear un término, súbelo a [Glosario](../tu-plata-mipyme/definiciones/glosario.md).
 - **Reuniones:** transcripción + resumen ejecutivo.
 - **Decisiones técnicas:** ADRs.
 - **Ideas:** plantilla con scoring.

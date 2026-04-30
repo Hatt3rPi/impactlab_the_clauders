@@ -96,4 +96,4 @@ Más en [Reglas](reglas.md).
 
 ## Cómo lo aplicamos a las ideas
 
-Cada idea en el [tablero de ideas](../ideas/index.md) debe scorear contra esta tabla. Usar la [plantilla de idea](../ideas/_template.md) que ya incluye estos campos.
+Cada idea en el [tablero de ideas](ideas-evaluadas/index.md) debe scorear contra esta tabla. Usar la [plantilla de idea](ideas-evaluadas/_template.md) que ya incluye estos campos.

@@ -18,7 +18,7 @@ Cada reunión queda **versionada en el repo**: transcripción cruda + resumen ej
 1. Copiar [`_template.md`](_template.md) a `docs/reuniones/YYYY-MM-DD-titulo-corto.md`.
 2. Llenar las secciones (TL;DR, decisiones, acciones, transcripción).
 3. Sumar la fila al [índice](#indice-cronologico) de abajo.
-4. Si la reunión generó decisiones técnicas relevantes, crear el [ADR](../especificaciones/adrs/index.md) correspondiente.
+4. Si la reunión generó decisiones técnicas relevantes, crear el [ADR](../tu-plata-mipyme/especificaciones/adrs/index.md) correspondiente.
 
 ## Convenciones
 

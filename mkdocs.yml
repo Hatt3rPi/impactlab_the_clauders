@@ -106,122 +106,131 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Convenciones de contenido: convenciones-de-contenido.md
-  - Competencia:
+
+  - "🚀 Tu Plata Mipyme":
+      - tu-plata-mipyme/index.md
+      - "Qué es y para quién": tu-plata-mipyme/que-es.md
+      - "Plan de implementación": tu-plata-mipyme/plan.md
+      - "Backlog (60 features)": tu-plata-mipyme/backlog.md
+      - "Definiciones":
+          - tu-plata-mipyme/definiciones/index.md
+          - "Glosario": tu-plata-mipyme/definiciones/glosario.md
+          - "Stakeholders": tu-plata-mipyme/definiciones/stakeholders.md
+          - "Personas": tu-plata-mipyme/definiciones/personas.md
+      - "Especificaciones":
+          - tu-plata-mipyme/especificaciones/index.md
+          - "Arquitectura": tu-plata-mipyme/especificaciones/arquitectura.md
+          - "Prototipo": tu-plata-mipyme/especificaciones/prototipo.md
+          - "Stack tecnológico":
+              - tu-plata-mipyme/especificaciones/stack/index.md
+              - "Claude API": tu-plata-mipyme/especificaciones/stack/claude-api.md
+              - "Claude Code": tu-plata-mipyme/especificaciones/stack/claude-code.md
+              - "Agent SDK": tu-plata-mipyme/especificaciones/stack/agent-sdk.md
+              - "MCPs": tu-plata-mipyme/especificaciones/stack/mcps.md
+              - "Datasets": tu-plata-mipyme/especificaciones/stack/datasets.md
+              - "Infraestructura": tu-plata-mipyme/especificaciones/stack/infraestructura.md
+          - "Decisiones (ADRs)":
+              - tu-plata-mipyme/especificaciones/adrs/index.md
+              - "Plantilla": tu-plata-mipyme/especificaciones/adrs/_template.md
+              - "0001 — Uso de ADRs": tu-plata-mipyme/especificaciones/adrs/0001-uso-de-adrs.md
+              - "0002 — Línea temática": tu-plata-mipyme/especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md
+              - "0003 — Plataforma web mobile-first": tu-plata-mipyme/especificaciones/adrs/0003-plataforma-web-mobile-first.md
+              - "0004 — WhatsApp-first / freemium / multi-agente": tu-plata-mipyme/especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md
+
+  - "🏆 Competencia":
       - competencia/index.md
-      - Timeline: competencia/timeline.md
-      - Criterios de evaluación: competencia/criterios-evaluacion.md
-      - Deliverables: competencia/deliverables.md
-      - Reglas: competencia/reglas.md
-      - Premios: competencia/premios.md
-  - Líneas temáticas:
-      - lineas-tematicas/index.md
-      - Inclusión financiera: lineas-tematicas/inclusion-financiera.md
-      - Ciberseguridad ciudadana: lineas-tematicas/ciberseguridad-ciudadana.md
-      - Protección de datos: lineas-tematicas/proteccion-datos.md
-  - Ideas:
-      - ideas/index.md
-      - Plantilla: ideas/_template.md
-      - "Backlog Tu Plata Mipyme (60 features)": ideas/backlog-tu-plata-mipyme.md
-      - "Rescate Ciudadano ⭐": ideas/rescate-ciudadano-acreencias.md
-      - "sabidurIA ciudadana ⭐ (unificadora)": ideas/sabiduria-ciudadana.md
-      - Defensor (DICOM): ideas/defensor-dicom.md
-      - "Legado Claro ⭐ (herencias)": ideas/legado-claro-herencias.md
-      - Letra Chica / Tu Plata (CAE): ideas/letra-chica-cae.md
-      - GES-Claim (salud retroactiva): ideas/ges-claim-salud-retroactiva.md
-      - RutaJusta (Ley Uber): ideas/rutajusta-ley-uber.md
-      - CuidaDerechos (cuidadoras): ideas/cuidaderechos-cuidadoras.md
-      - Agua Comunitaria / APR-Bot: ideas/agua-comunitaria-apr.md
-      - Mi Plan B (sobreendeudamiento): ideas/mi-plan-b-sobreendeudamiento.md
-      - EmancipIA (egresados SENAME): ideas/emancipia-egresados-sename.md
-      - Tu Plata Mipyme: ideas/tu-plata-mipyme.md
-      - Re-Inicia (quiebra personal): ideas/re-inicia-quiebra-personal.md
-      - Viuda Protegida (pensión): ideas/viuda-protegida-pension.md
-      - Voz Financiera (accesibilidad): ideas/voz-financiera-accesibilidad.md
-      - Retención Alimentos: ideas/retencion-alimentos.md
-      - ConfíaConmigo (migrantes): ideas/confiaconmigo-migrantes.md
-      - Mi Pensión: ideas/mi-pension.md
-      - Cosecha Justa (temporeros): ideas/cosecha-justa-temporeros.md
-      - Respiro CAE (desertores): ideas/respiro-cae-desertores.md
-      - Feria Legal (ambulantes): ideas/feria-legal-ambulantes.md
-      - Talento Tributa (creadores): ideas/talento-tributa-creadores.md
-      - Open Finance Explainer: ideas/open-finance-explainer.md
-      - Antiestafa / Pillo (fuera de línea): ideas/antiestafa-pillo.md
-      - Mis Datos · ARCOP (fuera de línea): ideas/mis-datos-arcop.md
-      - Archivadas: ideas/archivadas/index.md
-  - Research:
-      - research/index.md
-      - Plantilla: research/_template.md
-      - Regulatorio:
-          - research/regulatorio/index.md
-          - Marco regulatorio Chile 2026: research/regulatorio/marco-regulatorio-chile-2026.md
-      - Usuarios:
-          - research/usuarios/index.md
-          - Segmentos y dolores: research/usuarios/segmentos-y-dolores.md
-          - Comportamiento digital (DataReportal 2026): research/usuarios/comportamiento-digital-chile-2026.md
-          - Transferencias no activadas (cifras pitch): research/usuarios/transferencias-no-activadas-chile-2026.md
-      - Mercado:
-          - research/mercado/index.md
-          - Soluciones existentes y brechas: research/mercado/soluciones-existentes.md
-          - Patrones hackathons fintech: research/mercado/patrones-hackathons-fintech.md
-          - Canales distribución NSE D-E + GTM: research/mercado/canales-distribucion-y-gtm.md
-      - Tecnología:
-          - research/tecnologia/index.md
-          - Capacidades Claude diferenciadoras: research/tecnologia/capacidades-claude-diferenciadoras.md
-          - Datasets sub-utilizados + 5 cruces: research/tecnologia/datasets-subutilizados-y-cruces.md
-      - Herramientas:
-          - research/herramientas/index.md
-          - Deep Research API (Google Gemini): research/herramientas/deep-research-google.md
-      - Ideas emergentes:
-          - research/ideas-emergentes/index.md
-          - "15 ideas fuera del radar (run #01)": research/ideas-emergentes/ideas-fuera-del-radar-2026-04-29.md
-      - Runs Deep Research:
-          - research/_runs-deep-research/index.md
-  - Definiciones:
-      - Glosario: definiciones/glosario.md
-      - Stakeholders: definiciones/stakeholders.md
-      - Personas: definiciones/personas.md
-      - "Tu Plata Mipyme (producto)": definiciones/tu-plata-mipyme.md
-  - Stack:
-      - stack/index.md
-      - Claude API: stack/claude-api.md
-      - Claude Code: stack/claude-code.md
-      - Agent SDK: stack/agent-sdk.md
-      - MCPs: stack/mcps.md
-      - Datasets: stack/datasets.md
-      - Infraestructura: stack/infraestructura.md
-  - Especificaciones:
-      - especificaciones/index.md
-      - Arquitectura: especificaciones/arquitectura.md
-      - Prototipo: especificaciones/prototipo.md
-      - "Plan Tu Plata Mipyme": especificaciones/tu-plata-mipyme-plan.md
-      - ADRs:
-          - especificaciones/adrs/index.md
-          - Plantilla: especificaciones/adrs/_template.md
-          - 0001 — Uso de ADRs: especificaciones/adrs/0001-uso-de-adrs.md
-          - 0002 — Línea temática (Inclusión Financiera): especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md
-          - 0003 — Plataforma web mobile-first: especificaciones/adrs/0003-plataforma-web-mobile-first.md
-          - "0004 — Tu Plata Mipyme: WhatsApp-first, freemium, multi-agente": especificaciones/adrs/0004-tu-plata-mipyme-whatsapp-first-freemium-multiagente.md
-  - Reuniones:
+      - "Timeline": competencia/timeline.md
+      - "Criterios de evaluación": competencia/criterios-evaluacion.md
+      - "Deliverables": competencia/deliverables.md
+      - "Reglas": competencia/reglas.md
+      - "Premios": competencia/premios.md
+      - "Líneas temáticas":
+          - competencia/lineas-tematicas/index.md
+          - "Inclusión financiera": competencia/lineas-tematicas/inclusion-financiera.md
+          - "Ciberseguridad ciudadana": competencia/lineas-tematicas/ciberseguridad-ciudadana.md
+          - "Protección de datos": competencia/lineas-tematicas/proteccion-datos.md
+      - "Ideas evaluadas":
+          - competencia/ideas-evaluadas/index.md
+          - "Plantilla": competencia/ideas-evaluadas/_template.md
+          - "Rescate Ciudadano ⭐": competencia/ideas-evaluadas/rescate-ciudadano-acreencias.md
+          - "sabidurIA ciudadana ⭐": competencia/ideas-evaluadas/sabiduria-ciudadana.md
+          - "Defensor (DICOM)": competencia/ideas-evaluadas/defensor-dicom.md
+          - "Legado Claro ⭐ (herencias)": competencia/ideas-evaluadas/legado-claro-herencias.md
+          - "Letra Chica / Tu Plata (CAE)": competencia/ideas-evaluadas/letra-chica-cae.md
+          - "GES-Claim (salud retroactiva)": competencia/ideas-evaluadas/ges-claim-salud-retroactiva.md
+          - "RutaJusta (Ley Uber)": competencia/ideas-evaluadas/rutajusta-ley-uber.md
+          - "CuidaDerechos (cuidadoras)": competencia/ideas-evaluadas/cuidaderechos-cuidadoras.md
+          - "Agua Comunitaria / APR-Bot": competencia/ideas-evaluadas/agua-comunitaria-apr.md
+          - "Mi Plan B (sobreendeudamiento)": competencia/ideas-evaluadas/mi-plan-b-sobreendeudamiento.md
+          - "EmancipIA (egresados SENAME)": competencia/ideas-evaluadas/emancipia-egresados-sename.md
+          - "Tu Plata Mipyme (ficha histórica)": competencia/ideas-evaluadas/tu-plata-mipyme.md
+          - "Re-Inicia (quiebra personal)": competencia/ideas-evaluadas/re-inicia-quiebra-personal.md
+          - "Viuda Protegida (pensión)": competencia/ideas-evaluadas/viuda-protegida-pension.md
+          - "Voz Financiera (accesibilidad)": competencia/ideas-evaluadas/voz-financiera-accesibilidad.md
+          - "Retención Alimentos": competencia/ideas-evaluadas/retencion-alimentos.md
+          - "ConfíaConmigo (migrantes)": competencia/ideas-evaluadas/confiaconmigo-migrantes.md
+          - "Mi Pensión": competencia/ideas-evaluadas/mi-pension.md
+          - "Cosecha Justa (temporeros)": competencia/ideas-evaluadas/cosecha-justa-temporeros.md
+          - "Respiro CAE (desertores)": competencia/ideas-evaluadas/respiro-cae-desertores.md
+          - "Feria Legal (ambulantes)": competencia/ideas-evaluadas/feria-legal-ambulantes.md
+          - "Talento Tributa (creadores)": competencia/ideas-evaluadas/talento-tributa-creadores.md
+          - "Open Finance Explainer": competencia/ideas-evaluadas/open-finance-explainer.md
+          - "Antiestafa / Pillo": competencia/ideas-evaluadas/antiestafa-pillo.md
+          - "Mis Datos · ARCOP": competencia/ideas-evaluadas/mis-datos-arcop.md
+          - "Archivadas": competencia/ideas-evaluadas/archivadas/index.md
+      - "Research":
+          - competencia/research/index.md
+          - "Plantilla": competencia/research/_template.md
+          - "Regulatorio":
+              - competencia/research/regulatorio/index.md
+              - "Marco regulatorio Chile 2026": competencia/research/regulatorio/marco-regulatorio-chile-2026.md
+          - "Usuarios":
+              - competencia/research/usuarios/index.md
+              - "Segmentos y dolores": competencia/research/usuarios/segmentos-y-dolores.md
+              - "Comportamiento digital (DataReportal 2026)": competencia/research/usuarios/comportamiento-digital-chile-2026.md
+              - "Transferencias no activadas": competencia/research/usuarios/transferencias-no-activadas-chile-2026.md
+          - "Mercado":
+              - competencia/research/mercado/index.md
+              - "Soluciones existentes y brechas": competencia/research/mercado/soluciones-existentes.md
+              - "Patrones hackathons fintech": competencia/research/mercado/patrones-hackathons-fintech.md
+              - "Canales distribución NSE D-E + GTM": competencia/research/mercado/canales-distribucion-y-gtm.md
+          - "Tecnología":
+              - competencia/research/tecnologia/index.md
+              - "Capacidades Claude diferenciadoras": competencia/research/tecnologia/capacidades-claude-diferenciadoras.md
+              - "Datasets sub-utilizados + 5 cruces": competencia/research/tecnologia/datasets-subutilizados-y-cruces.md
+          - "Herramientas":
+              - competencia/research/herramientas/index.md
+              - "Deep Research API (Google Gemini)": competencia/research/herramientas/deep-research-google.md
+          - "Ideas emergentes":
+              - competencia/research/ideas-emergentes/index.md
+              - "15 ideas fuera del radar (run #01)": competencia/research/ideas-emergentes/ideas-fuera-del-radar-2026-04-29.md
+          - "Runs Deep Research":
+              - competencia/research/_runs-deep-research/index.md
+
+  - "👥 Equipo":
+      - "Miembros": equipo/miembros.md
+      - "Roles": equipo/roles.md
+      - "Ways of working": equipo/ways-of-working.md
+      - "Hoja de ruta (7 días)": equipo/proceso-y-hoja-de-ruta.md
+      - "Estrategia de pitch": equipo/estrategia-pitch-lab.md
+
+  - "📅 Reuniones":
       - reuniones/index.md
-      - Plantilla: reuniones/_template.md
-      - "2026-04-29 · Definición de problema y setup": reuniones/2026-04-29-definicion-problema-setup.md
-      - "2026-04-30 · Revisión de dolores (E0-E3)": reuniones/2026-04-30-revision-dolores-backlog.md
-  - Equipo:
-      - Miembros: equipo/miembros.md
-      - Roles: equipo/roles.md
-      - Ways of working: equipo/ways-of-working.md
-      - Proceso y hoja de ruta (7 días): equipo/proceso-y-hoja-de-ruta.md
-      - Estrategia de pitch para el lab: equipo/estrategia-pitch-lab.md
-  - Recursos:
-      - Enlaces:
+      - "Plantilla": reuniones/_template.md
+      - "2026-04-29 · Definición de problema": reuniones/2026-04-29-definicion-problema-setup.md
+      - "2026-04-30 · Revisión de dolores E0-E3": reuniones/2026-04-30-revision-dolores-backlog.md
+
+  - "📎 Recursos":
+      - "Enlaces":
           - recursos/enlaces/index.md
-          - Por institución: recursos/enlaces/por-institucion.md
+          - "Por institución": recursos/enlaces/por-institucion.md
           - "Run 01 — Ideas fuera del radar": recursos/enlaces/run-01-ideas-fuera-del-radar.md
           - "Run 02 — Ganadores hackathons": recursos/enlaces/run-02-ganadores-hackathons.md
           - "Run 03 — Datasets sub-utilizados": recursos/enlaces/run-03-datasets-subutilizados.md
           - "Run 04 — Money left on the table": recursos/enlaces/run-04-money-left-on-the-table.md
           - "Run 05 — Canales distribución": recursos/enlaces/run-05-canales-distribucion.md
           - "Run 06 — Entrepreneur Journey": recursos/enlaces/run-06-entrepreneur-journey.md
-      - Mentores: recursos/mentores.md
-      - Workshops: recursos/workshops.md
+      - "Mentores": recursos/mentores.md
+      - "Workshops": recursos/workshops.md
+
+  - "Convenciones de contenido": convenciones-de-contenido.md

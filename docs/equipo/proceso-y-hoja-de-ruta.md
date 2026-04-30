@@ -17,7 +17,7 @@ tags:
     Documento generado por el equipo The Clauders. Es fuente primaria para este tema.
 
 !!! info "Estado: propuesta de Jose"
-    Recibida vía audio + diagrama el **29-abr-2026** (post-kickoff). Pendiente de feedback y aprobación formal del equipo. Si se acepta, se promueve a [ADR](../especificaciones/adrs/index.md).
+    Recibida vía audio + diagrama el **29-abr-2026** (post-kickoff). Pendiente de feedback y aprobación formal del equipo. Si se acepta, se promueve a [ADR](../tu-plata-mipyme/especificaciones/adrs/index.md).
 
 ## Diagrama original
 
@@ -50,7 +50,7 @@ flowchart LR
 
 **Trabajo:**
 
-- Revisar el pool de dolores ya identificados (ver [Segmentos y dolores](../research/usuarios/segmentos-y-dolores.md)).
+- Revisar el pool de dolores ya identificados (ver [Segmentos y dolores](../competencia/research/usuarios/segmentos-y-dolores.md)).
 - Ponderar y priorizar.
 - Validar con usuarios reales (entrevistas).
 - Capturar el problema en un **PRD / spec**.
@@ -130,9 +130,9 @@ Jose lo describe como una **mezcla de**:
 
 Si esta propuesta se acepta:
 
-- El [tablero de ideas](../ideas/index.md) deja de "competir entre todas" y queda como **insumo** para el Tollgate 1: el equipo elige la idea, escribe PRD, y *recién entonces* se diseña.
-- La sección [Especificaciones · Prototipo](../especificaciones/prototipo.md) es donde vivirá el PRD.
-- Las [Especificaciones · Arquitectura](../especificaciones/arquitectura.md) se llenan al final del Tollgate 2.
+- El [tablero de ideas](../competencia/ideas-evaluadas/index.md) deja de "competir entre todas" y queda como **insumo** para el Tollgate 1: el equipo elige la idea, escribe PRD, y *recién entonces* se diseña.
+- La sección [Especificaciones · Prototipo](../tu-plata-mipyme/especificaciones/prototipo.md) es donde vivirá el PRD.
+- Las [Especificaciones · Arquitectura](../tu-plata-mipyme/especificaciones/arquitectura.md) se llenan al final del Tollgate 2.
 - El [tablero de Reuniones](../reuniones/index.md) gana 2 reuniones formales ancladas a los tollgates.
 
 ## Preguntas abiertas para el equipo

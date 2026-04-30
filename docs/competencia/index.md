@@ -47,11 +47,11 @@ El **primer Claude Impact Lab global enfocado en inclusión financiera**, organi
 
 Los equipos eligen **una de tres** líneas:
 
-1. [Inclusión financiera](../lineas-tematicas/inclusion-financiera.md) — agentes que traducen regulación a lenguaje claro.
-2. [Ciberseguridad ciudadana](../lineas-tematicas/ciberseguridad-ciudadana.md) — herramientas accesibles contra fraude digital.
-3. [Protección de datos](../lineas-tematicas/proteccion-datos.md) — empoderar al ciudadano con sus derechos ARCO.
+1. [Inclusión financiera](lineas-tematicas/inclusion-financiera.md) — agentes que traducen regulación a lenguaje claro.
+2. [Ciberseguridad ciudadana](lineas-tematicas/ciberseguridad-ciudadana.md) — herramientas accesibles contra fraude digital.
+3. [Protección de datos](lineas-tematicas/proteccion-datos.md) — empoderar al ciudadano con sus derechos ARCO.
 
-Comparativa lado a lado en [Líneas temáticas](../lineas-tematicas/index.md).
+Comparativa lado a lado en [Líneas temáticas](lineas-tematicas/index.md).
 
 ## Stack y recursos provistos
 
@@ -64,4 +64,4 @@ Comparativa lado a lado en [Líneas temáticas](../lineas-tematicas/index.md).
 - **15+ mentores** en IA y fintech
 - **3 workshops pre-lab** dictados por ingenieros de Anthropic
 
-Detalle en [Stack técnico](../stack/index.md).
+Detalle en [Stack técnico](../tu-plata-mipyme/especificaciones/stack/index.md).

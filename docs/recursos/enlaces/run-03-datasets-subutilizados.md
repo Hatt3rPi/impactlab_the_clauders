@@ -11,7 +11,7 @@ tags:
 
 <!-- AUTO-BANNER -->
 !!! info ":material-book-open-variant: Síntesis de fuentes externas"
-    Lista de URLs citadas por el agente Google Deep Research Max en el run [`run-03`](../../research/_runs-deep-research/2026-04-29-03-datasets-chilenos-subutilizados.md). **Verificar contra fuente primaria antes de citar en el pitch.**
+    Lista de URLs citadas por el agente Google Deep Research Max en el run [`run-03`](../../competencia/research/_runs-deep-research/2026-04-29-03-datasets-chilenos-subutilizados.md). **Verificar contra fuente primaria antes de citar en el pitch.**
 
 > :warning: Los URLs son **redirects de `vertexaisearch.cloud.google.com`**. El dominio destino visible (texto del link) es la fuente real. Si un redirect deja de funcionar, buscar manualmente en el dominio destino.
 

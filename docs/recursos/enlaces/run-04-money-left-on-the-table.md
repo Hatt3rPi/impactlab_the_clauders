@@ -11,7 +11,7 @@ tags:
 
 <!-- AUTO-BANNER -->
 !!! info ":material-book-open-variant: Síntesis de fuentes externas"
-    Lista de URLs citadas por el agente Google Deep Research Max en el run [`run-04`](../../research/_runs-deep-research/2026-04-29-04-money-left-on-the-table.md). **Verificar contra fuente primaria antes de citar en el pitch.**
+    Lista de URLs citadas por el agente Google Deep Research Max en el run [`run-04`](../../competencia/research/_runs-deep-research/2026-04-29-04-money-left-on-the-table.md). **Verificar contra fuente primaria antes de citar en el pitch.**
 
 > :warning: Los URLs son **redirects de `vertexaisearch.cloud.google.com`**. El dominio destino visible (texto del link) es la fuente real. Si un redirect deja de funcionar, buscar manualmente en el dominio destino.
 

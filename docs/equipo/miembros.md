@@ -46,4 +46,4 @@ Ver perfiles en [Roles](roles.md).
 
 - **Status diario corto** en el canal: qué hice ayer / qué haré hoy / bloqueos.
 - Decisiones grandes → reunión + entrada en [Reuniones](../reuniones/index.md).
-- Decisiones técnicas → [ADR](../especificaciones/adrs/index.md).
+- Decisiones técnicas → [ADR](../tu-plata-mipyme/especificaciones/adrs/index.md).

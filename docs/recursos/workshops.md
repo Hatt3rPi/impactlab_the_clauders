@@ -59,6 +59,6 @@ Tres workshops dictados por ingenieros de Anthropic los días **23-24 de abril**
 
 ## Recursos derivados
 
-- Si un workshop genera un patrón técnico que usaremos → mover a [Research · Tecnología](../research/tecnologia/index.md).
+- Si un workshop genera un patrón técnico que usaremos → mover a [Research · Tecnología](../competencia/research/tecnologia/index.md).
 - Si genera una decisión → ADR.
-- Si revela un dataset → actualizar [Stack · Datasets](../stack/datasets.md).
+- Si revela un dataset → actualizar [Stack · Datasets](../tu-plata-mipyme/especificaciones/stack/datasets.md).

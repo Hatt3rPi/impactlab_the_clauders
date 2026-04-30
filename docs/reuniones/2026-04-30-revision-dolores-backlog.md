@@ -25,7 +25,7 @@ tags:
 
 ## TL;DR
 
-- El equipo revisó **dolor por dolor** el catálogo del [run #06 Deep Research](../research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md), decidiendo cuáles atacar y cuáles excluir.
+- El equipo revisó **dolor por dolor** el catálogo del [run #06 Deep Research](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md), decidiendo cuáles atacar y cuáles excluir.
 - **Etapa 0 (Idea/sueño):** la barrera es **psicológica, no tecnológica**. El copiloto debe actuar como consejero antes de meter herramientas financieras.
 - **Etapa 1 (Validación informal):** "informalidad es un escudo de cristal". La IA debe demostrar empíricamente que **el costo de ser informal ya superó el costo de formalizarse**.
 - **Etapa 2 (Formalización):** el equipo confirma que esto **es uno de los fuertes** del producto — la IA es el hilo conductor entre RES → SII → patente municipal → SEREMI → INAPI (este último excluido).
@@ -162,8 +162,8 @@ Notación: ✅ **incluir** · ❌ **excluir** · 💡 **guiño/futuro** · ⏳ *
 
 ## Referencias
 
-- [Run #06 Deep Research — Entrepreneur Journey](../research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md)
-- [Backlog Tu Plata Mipyme (60 features)](../ideas/backlog-tu-plata-mipyme.md) — actualizar con decisiones de esta reunión.
-- [Definición canónica Tu Plata Mipyme](../definiciones/tu-plata-mipyme.md)
-- [ADR 0004 — WhatsApp-first, freemium, multi-agente](../especificaciones/adrs/0004-tu-plata-mipyme-whatsapp-first-freemium-multiagente.md) — el modelo freemium queda en revisión.
+- [Run #06 Deep Research — Entrepreneur Journey](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md)
+- [Backlog Tu Plata Mipyme (60 features)](../tu-plata-mipyme/backlog.md) — actualizar con decisiones de esta reunión.
+- [Definición canónica Tu Plata Mipyme](../tu-plata-mipyme/que-es.md)
+- [ADR 0004 — WhatsApp-first, freemium, multi-agente](../tu-plata-mipyme/especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md) — el modelo freemium queda en revisión.
 - Transcripción literal: `Formalización y Asistente Conversacional Transcripción.txt` (no commiteada).

@@ -30,21 +30,32 @@ Bienvenidos al espacio de trabajo del equipo **The Clauders** para el [Claude Im
 
 ---
 
+## 🚀 Idea ganadora: Tu Plata Mipyme
+
+!!! success "Aterrizamos la idea ganadora (30-abr-2026)"
+    **Tu Plata Mipyme** — copiloto freemium en WhatsApp + Web que acompaña al microemprendedor chileno desde el sueño hasta la PYME. Target: mujeres microemprendedoras 30-50 años en regiones del sur (Araucanía 38% informalidad).
+
+    **[:material-rocket-launch: Ir al hub del producto →](tu-plata-mipyme/index.md)**
+
+    Ahí encontrarás: [definición canónica](tu-plata-mipyme/que-es.md) · [plan de implementación](tu-plata-mipyme/plan.md) · [backlog de 60 features](tu-plata-mipyme/backlog.md) · [arquitectura](tu-plata-mipyme/especificaciones/arquitectura.md) · [stack](tu-plata-mipyme/especificaciones/stack/index.md) · [4 ADRs](tu-plata-mipyme/especificaciones/adrs/index.md).
+
 ## Estado actual del equipo
 
-!!! success "Fase: Discovery (Tollgate 1 — ¿qué problema atacamos?)"
-    El [29/04 elegimos la línea temática](reuniones/2026-04-29-definicion-problema-setup.md): **Inclusión Financiera**. El equipo ya incorporó **research previo** con **9 ideas pre-evaluadas**, y Jose propuso una [hoja de ruta de 7 días con 3 etapas y 2 tollgates](equipo/proceso-y-hoja-de-ruta.md). Estamos en **Discovery**: cerrar el problema y armar el PRD.
+!!! info "Fase: Tollgate 2 — Diseño en curso"
+    Idea ganadora aterrizada. Backlog en validación del equipo (21 ✅ / 6 ❌ / 1 💡 / 32 ⏳ tras revisión [30-abr](reuniones/2026-04-30-revision-dolores-backlog.md)). Próximo: revisar E3-E5 + spike técnico del supervisor multi-agente.
 
 !!! tip "Cómo leer esta wiki"
     Cada página abre con un **banner de origen** que indica si es :material-toy-brick: plantilla, :material-book-open-variant: síntesis de fuente externa, :material-check-bold: producido por el equipo, o :material-bank: información oficial del lab. Detalle en [Convenciones de contenido](convenciones-de-contenido.md).
 
 - [x] Inscripción individual completada
 - [x] Formación de equipo (4 personas: Felipe, Jose, Cristian, Anahi)
-- [x] Selección de línea temática — **Inclusión financiera** ([ADR 0002](especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md))
-- [x] Decisión de plataforma — **Web mobile-first** ([ADR 0003](especificaciones/adrs/0003-plataforma-web-mobile-first.md))
-- [x] Pool de ideas pre-evaluadas con scoring ([Tablero de ideas](ideas/index.md))
-- [ ] Selección de idea ganadora — apuesta unificadora [sabidurIA ciudadana](ideas/sabiduria-ciudadana.md) o casos individuales ([Defensor](ideas/defensor-dicom.md), [Letra Chica](ideas/letra-chica-cae.md), [Tu Plata Mipyme](ideas/tu-plata-mipyme.md))
-- [ ] Spike técnico de la idea ganadora
+- [x] Selección de línea temática — **Inclusión financiera** ([ADR 0002](tu-plata-mipyme/especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md))
+- [x] Plataforma inicial — **Web mobile-first** ([ADR 0003](tu-plata-mipyme/especificaciones/adrs/0003-plataforma-web-mobile-first.md), parcialmente superseded)
+- [x] Pool de ideas pre-evaluadas con scoring ([Tablero de ideas](competencia/ideas-evaluadas/index.md))
+- [x] **Idea ganadora aterrizada — Tu Plata Mipyme** ([ADR 0004](tu-plata-mipyme/especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md))
+- [x] Backlog de 60 features generado y revisado parcialmente
+- [ ] Completar revisión backlog E3-E5 (32 features pendientes)
+- [ ] Spike técnico del supervisor multi-agente
 - [ ] Validación con usuarios reales (5-10 entrevistas)
 - [ ] MVP testeado antes del lab
 - [ ] Prototipo refinado durante el lab
@@ -70,52 +81,52 @@ Ver el [timeline completo](competencia/timeline.md).
 
 <div class="grid cards" markdown>
 
+-   :material-rocket-launch: **Tu Plata Mipyme**
+
+    ---
+
+    El producto: definición, plan, backlog, arquitectura, stack y ADRs.
+
+    [:octicons-arrow-right-24: Ir al hub](tu-plata-mipyme/index.md)
+
 -   :material-trophy: **Competencia**
 
     ---
 
-    Información oficial: criterios, deliverables, premios.
+    Información oficial del lab + líneas temáticas + research exploratorio + 25 ideas evaluadas.
 
     [:octicons-arrow-right-24: Ir a competencia](competencia/index.md)
 
--   :material-lightbulb-on: **Ideas**
+-   :material-account-multiple: **Equipo**
 
     ---
 
-    Tablero de ideas con scoring contra los 5 criterios.
+    Miembros, roles, ways of working, hoja de ruta y estrategia de pitch.
 
-    [:octicons-arrow-right-24: Ver tablero](ideas/index.md)
+    [:octicons-arrow-right-24: Ver equipo](equipo/miembros.md)
 
--   :material-magnify: **Research**
-
-    ---
-
-    Notas de investigación regulatoria, de usuarios, mercado y tecnología.
-
-    [:octicons-arrow-right-24: Explorar research](research/index.md)
-
--   :material-stack-overflow: **Stack técnico**
+-   :material-calendar: **Reuniones**
 
     ---
 
-    Claude API, Agent SDK, MCPs, datasets de CMF/SII/SERNAC.
-
-    [:octicons-arrow-right-24: Ver stack](stack/index.md)
-
--   :material-account-multiple: **Reuniones**
-
-    ---
-
-    Transcripciones y resúmenes ejecutivos.
+    Actas y decisiones del equipo (29-abr · 30-abr).
 
     [:octicons-arrow-right-24: Ver reuniones](reuniones/index.md)
 
--   :material-file-tree: **Especificaciones**
+-   :material-link: **Recursos**
 
     ---
 
-    Arquitectura, alcance del prototipo y decisiones (ADRs).
+    Enlaces curados, mentores y workshops del lab.
 
-    [:octicons-arrow-right-24: Ver especificaciones](especificaciones/index.md)
+    [:octicons-arrow-right-24: Ver recursos](recursos/enlaces/index.md)
+
+-   :material-book-open-variant: **Convenciones**
+
+    ---
+
+    Cómo escribir y mantener esta wiki.
+
+    [:octicons-arrow-right-24: Ver convenciones](convenciones-de-contenido.md)
 
 </div>

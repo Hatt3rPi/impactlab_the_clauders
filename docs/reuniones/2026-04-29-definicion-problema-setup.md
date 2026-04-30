@@ -39,8 +39,8 @@ Conocernos como equipo, alinear expectativas y definir el proceso de selección 
 
 | # | Decisión | Razón | Registro |
 |---|---|---|---|
-| 1 | Línea temática: **Inclusión financiera** | Ataca el problema raíz; las otras dos líneas actúan sobre usuarios ya dentro del sistema. Equipo sin expertise en ciberseguridad técnica. | [ADR 0002](../especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md) |
-| 2 | Plataforma: **web mobile-first**, no app nativa | 95-97 % de chilenos accede por mobile; búsqueda financiera/legal pasa por Google → priorizar SEO + accesibilidad por crawlers IA. | [ADR 0003](../especificaciones/adrs/0003-plataforma-web-mobile-first.md) |
+| 1 | Línea temática: **Inclusión financiera** | Ataca el problema raíz; las otras dos líneas actúan sobre usuarios ya dentro del sistema. Equipo sin expertise en ciberseguridad técnica. | [ADR 0002](../tu-plata-mipyme/especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md) |
+| 2 | Plataforma: **web mobile-first**, no app nativa | 95-97 % de chilenos accede por mobile; búsqueda financiera/legal pasa por Google → priorizar SEO + accesibilidad por crawlers IA. | [ADR 0003](../tu-plata-mipyme/especificaciones/adrs/0003-plataforma-web-mobile-first.md) |
 | 3 | Repositorio del equipo como **fuente de la verdad** (wiki + research + ideas) | Ambiente productivo "todo por excelencia"; nos obliga a subir el estándar. | Implícita; este repo. |
 | 4 | **Validación con usuarios** en paralelo a la fase de ideas, vía redes sociales personales | Cruzar data oficial (CMF, SII, SERNAC) con feedback real antes del lab. | — |
 | 5 | **Llegar al lab con MVP testeado**, no construir desde cero allá | Permite usar las 48 h para refinar y estresar la solución con apoyo de mentores. | — |
@@ -89,7 +89,7 @@ Cifras y temas que enmarcan la oportunidad:
 - **Ley Fintech 21.521:** brecha entre registro y asesoría de inversión, concentración en pocos jugadores.
 - **Ley de Protección de Datos:** entra en vigencia nov/dic 2026, con 17 meses para que las empresas se adapten. Habilita **portabilidad de información personal** (ej: pasar historial de clínica A a clínica B).
 
-> Jose comparte este documento al equipo después de la reunión. Cuando llegue, va a [Research · Regulatorio](../research/regulatorio/index.md).
+> Jose comparte este documento al equipo después de la reunión. Cuando llegue, va a [Research · Regulatorio](../competencia/research/regulatorio/index.md).
 
 ### 3. Selección de línea temática
 
