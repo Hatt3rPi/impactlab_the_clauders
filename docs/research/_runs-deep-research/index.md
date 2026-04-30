@@ -41,6 +41,7 @@ Cada archivo lleva:
 | 2026-04-29 | [Patrones ganadores hackathons IA 2025-2026](2026-04-29-02-ganadores-hackathons-fintech-ia.md) | ~12 min | 46 fuentes (Anthropic, Mastercard, OpenAI, AWS, Microsoft, Kong, Visa, BID Lab) | ~USD 5 |
 | 2026-04-29 | [Datasets chilenos sub-utilizados + 5 cruces](2026-04-29-03-datasets-chilenos-subutilizados.md) | ~10 min | 44 fuentes (Banco Central, CMF, SUPERIR, MinDes BIDAT, FONASA, Poder Judicial, INE, ChileCompra OCDS) | ~USD 5 |
 | 2026-04-29 | [Canales distribución NSE D-E](2026-04-29-05-canales-distribucion-confianza.md) | ~10 min | 74 fuentes (CEP, Cadem, Latinobarómetro, IPS, Hacienda, casos comparables Yape/DaviPlata/Gov.br/Sine) | ~USD 5 |
+| 2026-04-30 | [Entrepreneur Journey + Backlog Tu Plata Mipyme (60 features)](2026-04-30-06-entrepreneur-journey-backlog.md) | ~15 min | 58 fuentes (SII, RES, ChileAtiende, SUPERIR, ApiGateway, TuPana, Banigualdad + 17 casos LATAM: Stone, Conta Azul, Clip, Alegra, Sempli, Yape, Culqi, Bind ERP) | ~USD 5 |
 
 ## Hallazgo operacional importante (29-abr-2026)
 

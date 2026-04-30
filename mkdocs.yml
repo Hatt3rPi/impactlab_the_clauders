@@ -122,6 +122,7 @@ nav:
   - Ideas:
       - ideas/index.md
       - Plantilla: ideas/_template.md
+      - "Backlog Tu Plata Mipyme (60 features)": ideas/backlog-tu-plata-mipyme.md
       - "Rescate Ciudadano ⭐": ideas/rescate-ciudadano-acreencias.md
       - "sabidurIA ciudadana ⭐ (unificadora)": ideas/sabiduria-ciudadana.md
       - Defensor (DICOM): ideas/defensor-dicom.md
@@ -220,5 +221,6 @@ nav:
           - "Run 03 — Datasets sub-utilizados": recursos/enlaces/run-03-datasets-subutilizados.md
           - "Run 04 — Money left on the table": recursos/enlaces/run-04-money-left-on-the-table.md
           - "Run 05 — Canales distribución": recursos/enlaces/run-05-canales-distribucion.md
+          - "Run 06 — Entrepreneur Journey": recursos/enlaces/run-06-entrepreneur-journey.md
       - Mentores: recursos/mentores.md
       - Workshops: recursos/workshops.md

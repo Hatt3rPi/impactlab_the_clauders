@@ -11,9 +11,12 @@ tags:
 
 <!-- AUTO-BANNER -->
 !!! info ":material-book-open-variant: Síntesis de fuentes externas"
-    Agregación cruzada de los URLs citados por el agente Google Deep Research Max en los 5 runs ejecutados el 29-abr-2026, agrupados por dominio destino.
+    Agregación cruzada de los URLs citados por el agente Google Deep Research Max en los runs ejecutados, agrupados por dominio destino.
 
-**Total: 243 citaciones · 160 dominios distintos.**
+**Total: 301 citaciones · ~180 dominios distintos** (5 runs del 29-abr + run #06 del 30-abr).
+
+!!! note "Pendiente: integración cross-index del run #06"
+    Las 58 fuentes del [run #06 (Entrepreneur Journey)](run-06-entrepreneur-journey.md) **aún no están integradas a la tabla cross por institución** abajo. Para fuentes únicas del run #06: ApiGateway.cl, TuPana.ai, Banigualdad.cl, SuperIR.gob.cl, Economía.gob.cl (RES), ChileAtiende, SII, Bsale, casos LATAM (Stone, Conta Azul, Clip, Alegra, Sempli, Yape, Culqi, Bind ERP, Crehana, Niubiz). Ver listado completo en `run-06-entrepreneur-journey.md`.
 
 ## Top dominios (más citados)
 
