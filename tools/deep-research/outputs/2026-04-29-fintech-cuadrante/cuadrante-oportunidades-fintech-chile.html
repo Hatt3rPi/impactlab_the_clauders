@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuadrante de Oportunidades · Impact Lab Fintech Chile 2026 · The Clauders</title>
+<style>
+  :root {
+    --bg: #0E1A19;
+    --bg-elev: #142826;
+    --bg-card: #1A302E;
+    --ink: #E8DDC9;
+    --ink-dim: #A89F8E;
+    --ink-mute: #6B6354;
+    --gold: #D1A954;
+    --gold-soft: #B89240;
+    --green: #233F3C;
+    --green-bright: #4A8B82;
+    --red-warn: #C44D4D;
+    --quick-wins: #4A8B82;
+    --big-bets: #D1A954;
+    --backlog: #6B6354;
+    --evitar: #5C3A3A;
+    --border: #2A4541;
+    --serif: 'Georgia', 'Times New Roman', serif;
+    --sans: 'Inter', -apple-system, system-ui, 'Segoe UI', sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 60px 40px;
+  }
+
+  /* HEADER */
+  .header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+  }
+
+  .meta-strip {
+    display: flex;
+    gap: 24px;
+    font-size: 13px;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+  }
+
+  .meta-strip span::after {
+    content: '·';
+    margin-left: 24px;
+    color: var(--ink-mute);
+  }
+
+  .meta-strip span:last-child::after { content: ''; }
+
+  h1 {
+    font-family: var(--serif);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--ink);
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    color: var(--ink-dim);
+    max-width: 760px;
+    font-weight: 300;
+  }
+
+  .badge-team {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--bg);
+    padding: 4px 12px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 24px;
+  }
+
+  /* SECTION */
+  section {
+    margin-bottom: 80px;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--gold);
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    font-family: var(--sans);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  h4 {
+    font-family: var(--sans);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+
+  p { margin-bottom: 16px; color: var(--ink-dim); }
+
+  strong { color: var(--ink); font-weight: 600; }
+
+  /* RESUMEN EJECUTIVO */
+  .exec-summary {
+    background: var(--bg-elev);
+    border-left: 3px solid var(--gold);
+    padding: 32px 40px;
+    margin-bottom: 60px;
+  }
+
+  .exec-summary p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--ink);
+  }
+
+  .exec-summary p:last-child { margin-bottom: 0; }
+
+  /* KEY STATS GRID */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .stat-card {
+    background: var(--bg-elev);
+    padding: 24px;
+    border-top: 2px solid var(--gold);
+  }
+
+  .stat-num {
+    font-family: var(--serif);
+    font-size: 36px;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .stat-label {
+    font-size: 13px;
+    color: var(--ink-dim);
+    line-height: 1.4;
+  }
+
+  /* TABLA DOLORES */
+  .table-wrap { overflow-x: auto; margin-bottom: 40px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  th {
+    background: var(--green);
+    color: var(--ink);
+    padding: 14px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid var(--border);
+  }
+
+  td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    color: var(--ink-dim);
+    vertical-align: top;
+  }
+
+  td strong { color: var(--ink); }
+
+  tr:hover td { background: var(--bg-elev); }
+
+  .vertical-pill {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .v-inclusion { background: rgba(74, 139, 130, 0.2); color: #6FB8AE; }
+  .v-ciber { background: rgba(196, 77, 77, 0.2); color: #E07878; }
+  .v-datos { background: rgba(209, 169, 84, 0.2); color: var(--gold); }
+
+  /* CUADRANTE SVG */
+  .quadrant-wrap {
+    background: var(--bg-elev);
+    padding: 40px;
+    margin-bottom: 40px;
+  }
+
+  .quadrant-svg {
+    width: 100%;
+    height: auto;
+    max-width: 900px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .quadrant-legend {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+    font-size: 13px;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .legend-swatch {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+  }
+
+  /* CARDS QUICK WINS / BIG BETS */
+  .opp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .opp-card {
+    background: var(--bg-card);
+    padding: 28px;
+    border: 1px solid var(--border);
+    position: relative;
+    transition: border-color 0.2s;
+  }
+
+  .opp-card:hover { border-color: var(--gold); }
+
+  .opp-card.recommended {
+    border: 2px solid var(--gold);
+    box-shadow: 0 0 0 1px rgba(209, 169, 84, 0.15);
+  }
+
+  .opp-card.recommended::before {
+    content: 'RECOMENDADO';
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: var(--gold);
+    color: var(--bg);
+    padding: 4px 12px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+
+  .opp-id {
+    font-family: var(--serif);
+    font-size: 13px;
+    color: var(--gold);
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+  }
+
+  .opp-title {
+    font-family: var(--serif);
+    font-size: 22px;
+    color: var(--ink);
+    margin-bottom: 12px;
+    line-height: 1.25;
+  }
+
+  .opp-pitch {
+    font-size: 14px;
+    color: var(--ink-dim);
+    margin-bottom: 20px;
+    line-height: 1.55;
+  }
+
+  .opp-scores {
+    display: flex;
+    gap: 20px;
+    padding: 16px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin: 16px 0;
+  }
+
+  .score-block { flex: 1; }
+  .score-label {
+    font-size: 11px;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+  }
+  .score-val {
+    font-family: var(--serif);
+    font-size: 24px;
+    color: var(--ink);
+  }
+
+  .score-bar {
+    width: 100%;
+    height: 4px;
+    background: var(--green);
+    margin-top: 6px;
+    overflow: hidden;
+  }
+
+  .score-fill {
+    height: 100%;
+    background: var(--gold);
+  }
+
+  .opp-list {
+    list-style: none;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+
+  .opp-list li {
+    padding: 4px 0 4px 18px;
+    color: var(--ink-dim);
+    position: relative;
+  }
+
+  .opp-list.pros li::before { content: '+'; color: var(--green-bright); position: absolute; left: 0; font-weight: 700; }
+  .opp-list.cons li::before { content: '−'; color: var(--red-warn); position: absolute; left: 0; font-weight: 700; }
+  .opp-list.tools li::before { content: '◆'; color: var(--gold); position: absolute; left: 0; font-size: 10px; top: 8px; }
+
+  .opp-section-label {
+    font-size: 11px;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 16px 0 4px 0;
+    font-weight: 600;
+  }
+
+  /* WARNINGS */
+  .warning-card {
+    background: rgba(196, 77, 77, 0.08);
+    border-left: 3px solid var(--red-warn);
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+
+  .warning-card h4 {
+    color: #E07878;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+  }
+
+  /* CRONOGRAMA */
+  .timeline {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 40px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border);
+  }
+
+  .timeline-item {
+    position: relative;
+    padding-bottom: 32px;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -34px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--gold);
+    border: 3px solid var(--bg);
+    box-shadow: 0 0 0 1px var(--gold);
+  }
+
+  .timeline-date {
+    font-family: var(--serif);
+    font-size: 16px;
+    color: var(--gold);
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+
+  .timeline-title {
+    font-size: 15px;
+    color: var(--ink);
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+
+  .timeline-desc {
+    font-size: 13px;
+    color: var(--ink-dim);
+  }
+
+  /* RECOMMENDATION */
+  .recommendation {
+    background: linear-gradient(135deg, var(--green) 0%, var(--bg-elev) 100%);
+    padding: 48px;
+    border: 1px solid var(--gold);
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .recommendation h2 {
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+
+  .recommendation p {
+    font-size: 18px;
+    color: var(--ink);
+    max-width: 760px;
+    margin: 0 auto 16px auto;
+    line-height: 1.6;
+  }
+
+  .recommendation .cta {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--bg);
+    padding: 14px 32px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 40px;
+    margin-top: 80px;
+    color: var(--ink-mute);
+    font-size: 13px;
+  }
+
+  footer p { color: var(--ink-mute); }
+
+  details { margin-bottom: 8px; }
+  details summary {
+    cursor: pointer;
+    color: var(--gold);
+    padding: 8px 0;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .container { padding: 32px 20px; }
+    h1 { font-size: 32px; }
+    h2 { font-size: 24px; }
+    .opp-grid { grid-template-columns: 1fr; }
+    .quadrant-legend { grid-template-columns: 1fr; }
+    .meta-strip { flex-direction: column; gap: 4px; }
+    .meta-strip span::after { content: ''; }
+  }
+
+  @media print {
+    body { background: white; color: black; }
+    .container { padding: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="meta-strip">
+      <span>Reporte de Investigación</span>
+      <span>29 abril 2026</span>
+      <span>Versión 1.0</span>
+    </div>
+    <h1>Cuadrante de Oportunidades<br>Fintech Ciudadana Chile 2026</h1>
+    <p class="subtitle">Mapa estratégico de dolores, soluciones y oportunidades IA-nativas para los 3 verticales del Claude Impact Lab Chile: inclusión financiera, ciberseguridad ciudadana y protección de datos.</p>
+    <span class="badge-team">Equipo The Clauders</span>
+  </header>
+
+  <!-- RESUMEN EJECUTIVO -->
+  <section>
+    <h2>Resumen ejecutivo</h2>
+    <div class="exec-summary">
+      <p>Tras el análisis sistemático de <strong>6 dimensiones (regulatoria oficial, etnográfica ciudadana, competencia, estadística, innovación chilena y síntesis legal)</strong>, identificamos <strong>20 dolores priorizables</strong> en el ciudadano financiero chileno y <strong>28 soluciones existentes</strong> en el ecosistema local. La conclusión más relevante: <strong>no existe en Chile una solución B2C que use RAG sobre regulación financiera con citación verificable de fuentes</strong>. Cicero (B2B abogados) es lo más cercano, pero está cerrado al ciudadano.</p>
+      <p>El cuadrante revela <strong>5 Quick Wins ejecutables en 48h</strong> y <strong>3 Big Bets</strong> de visión post-lab. Los Quick Wins se concentran en patrones donde Claude tiene ventaja diferencial nativa: <strong>Vision sobre cartolas y screenshots de phishing</strong>, <strong>Citations API sobre NCG CMF y leyes chilenas</strong>, <strong>Structured outputs para formularios ARCO/portabilidad</strong>, y <strong>memoria de largo plazo</strong> para procesos multi-etapa (60-180 días). El hito regulatorio más urgente: la <strong>Ley 21.719 entra en vigor el 1-dic-2026</strong> (a 7 meses), abriendo la ventana óptima para construir el primer tramitador ARCO ciudadano de Chile.</p>
+      <p>Recomendación: <strong>combinar dos patrones en un solo agente — anti-phishing en flagrancia + tramitador ARCO con memoria — citando jurisprudencia 2026 que protege al cliente bancario</strong>. Es la jugada de mayor impacto, menor complejidad y mayor diferenciación frente a las 28 soluciones mapeadas.</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-num">20</div>
+        <div class="stat-label">Dolores ciudadanos priorizables identificados</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">28</div>
+        <div class="stat-label">Soluciones existentes en Chile (públicas, fintech, asistentes bancarios)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">15</div>
+        <div class="stat-label">Brechas regulatorias entre derecho formal y ejercicio real</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">3.9M</div>
+        <div class="stat-label">Chilenos en mora · 24,5% de adultos endeudados</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">+109%</div>
+        <div class="stat-label">Reclamos por fraude bancario 2024 vs 2023 (SERNAC)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">7 meses</div>
+        <div class="stat-label">Para vigencia Ley 21.719 (1-dic-2026, multas hasta 20.000 UTM)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LISTA MAESTRA DE DOLORES -->
+  <section>
+    <h2>Lista maestra de dolores deduplicada</h2>
+    <p>Consolidación de los hallazgos de los 6 agentes. Cada dolor cruza fuentes regulatorias oficiales, evidencia etnográfica, estadística cuantitativa y brechas regulatorias. Solo Chile.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Dolor</th>
+            <th>Vertical</th>
+            <th># Personas</th>
+            <th>$ CLP en juego</th>
+            <th>Segmento principal</th>
+            <th>Fuente clave</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>P001</strong></td>
+            <td><strong>Fraude bancario digital descontrolado</strong> · phishing/vishing/smishing + asimetría procesal Ley 20.009</td>
+            <td><span class="vertical-pill v-ciber">Ciberseguridad</span></td>
+            <td>~16M digitales · 19.834 reclamantes 2024</td>
+            <td>$275.000M reclamados (2024)</td>
+            <td>Mujeres (55%), &lt;30 y &gt;60 (40%)</td>
+            <td>SERNAC 2025; CS abr-2026</td>
+          </tr>
+          <tr>
+            <td><strong>P002</strong></td>
+            <td><strong>Cesantía AFC no retirada</strong> — fondos cotizados sin reclamar</td>
+            <td><span class="vertical-pill v-inclusion">Inclusión</span></td>
+            <td>482.033</td>
+            <td>$156.051M</td>
+            <td>Pensionados, herederos</td>
+            <td>SP, feb-2025</td>
+          </tr>
+          <tr>
+            <td><strong>P003</strong></td>
+            <td><strong>Morosidad masiva sin asesoría financiera</strong></td>
+            <td><span class="vertical-pill v-inclusion">Inclusión</span></td>
+            <td>3.864.279 (24,5%)</td>
+            <td>USD 9.416M (~2,81% PIB)</td>
+            <td>Mujeres, 18-24 (única franja en alza)</td>
+            <td>USS-Equifax Q1-2025</td>
+          </tr>
+          <tr>
+            <td><strong>P004</strong></td>
+            <td><strong>Brecha alfabetización financiera</strong> · letra chica no comprendida</td>
+            <td><span class="vertical-pill v-inclusion">Inclusión</span></td>
+            <td>~6,3M (42% baja alfabetización)</td>
+            <td>—</td>
+            <td>Mujeres, NSE bajo, adultos mayores</td>
+            <td>UC/CPP 2024 (nota 1,6/5)</td>
+          </tr>
+          <tr>
+            <td><strong>P005</strong></td>
+            <td><strong>Vacío derechos ARCO+P+B previo Ley 21.719</strong></td>
+            <td><span class="vertical-pill v-datos">Datos</span></td>
+            <td>~16M titulares + 1M empresas</td>
+            <td>Sanciones hasta 20.000 UTM (~$1.400M)</td>
+            <td>Toda la población digital</td>
+            <td>Ley 21.719 (vigencia 1-dic-2026)</td>
+          </tr>
+          <tr>
+            <td><strong>P006</strong></td>
+            <td><strong>Brecha de género en montos de crédito</strong> (37 pts)</td>
+            <td><span class="vertical-pill v-inclusion">Inclusión</span></td>
+            <td>~5,5M mujeres adultas</td>
+            <td>$1,3M deuda promedio menor</td>
+            <td>Mujeres jefas de hogar</td>
+            <td>CMF Informe Género 2024</td>
+          </tr>
+          <tr>
+            <td><strong>P007</strong></td>
+            <td><strong>Adultos mayores: brecha digital + vulnerabilidad fraude</strong></td>
+            <td><span class="vertical-pill v-inclusion">Inclusión</span> <span class="vertical-pill v-ciber">Ciber</span></td>
+            <td>~3M (60+)</td>
+            <td>—</td>
+            <td>60+, vishing 71%</td>
+            <td>SERNAC; UC 2024; ANCI</td>
+          </tr>
+          <tr>
+            <td><strong>P008</strong></td>
+            <td><strong>Phishing/smishing masivos</strong></td>
+            <td><span class="vertical-pill v-ciber">Ciberseguridad</span></td>
+            <td>16M expuestos · 6,3M intentos bloqueados</td>
+            <td>&gt;$40.000M perdidos 2024</td>
+            <td>Transversal, foco BancoEstado</td>
+            <td>ANCI 2025; CSIRT</td>
+          </tr>
+          <tr>
+            <td><strong>P009</strong></td>
+            <td><strong>Microemprendedores informales</strong> sin acceso formal y bajo Ley antievasión 2026</td>
+            <td><span class="vertical-pill v-inclusion">Inclusión</span></td>
+            <td>~1,5M (58-68% TEA informales)</td>
+            <td>—</td>
+            <td>Feriantes, delivery, redes sociales</td>
+            <td>GEM Chile 2024; Ley 21.713</td>
+          </tr>
+          <tr>
+            <td><strong>P010</strong></td>
+            <td><strong>Endeudamiento juvenil CAE</strong></td>
+            <td><span class="vertical-pill v-inclusion">Inclusión</span></td>
+            <td>1.110.000 deudores</td>
+            <td>USD 11.900M</td>
+            <td>Jóvenes 18-30, desertores</td>
+            <td>Mineduc; CIEDESS; CEP</td>
+          </tr>
+          <tr>
+            <td><strong>P011</strong></td>
+            <td><strong>Fintechs en zona gris</strong> tras inscripción Ley 21.521</td>
+            <td><span class="vertical-pill v-inclusion">Inclusión</span> <span class="vertical-pill v-datos">Datos</span></td>
+            <td>~175 fintechs · usuarios afectados</td>
+            <td>—</td>
+            <td>Usuarios wallets pequeñas</td>
+            <td>CMF NCG 502; FinteChile</td>
+          </tr>
+          <tr>
+            <td><strong>P012</strong></td>
+            <td><strong>PGU y herencias previsionales no cobradas</strong></td>
+            <td><span class="vertical-pill v-inclusion">Inclusión</span></td>
+            <td>No cuantificado oficial</td>
+            <td>—</td>
+            <td>Adultos mayores, herederos bajos ingresos</td>
+            <td>SP, IPS, AAFP IPE-129</td>
+          </tr>
+          <tr>
+            <td><strong>P013</strong></td>
+            <td><strong>Cobranza extrajudicial abusiva</strong> · topes Ley 19.496 art. 37 incumplidos</td>
+            <td><span class="vertical-pill v-inclusion">Inclusión</span></td>
+            <td>3,9M morosos como víctimas potenciales</td>
+            <td>14.000 reclamos formales (×10 estimado real)</td>
+            <td>Morosos C2-D-E, mujeres jefas hogar</td>
+            <td>SERNAC; Ley 21.398</td>
+          </tr>
+          <tr>
+            <td><strong>P014</strong></td>
+            <td><strong>Repactaciones retail unilaterales</strong> (CMR, Ripley, La Polar histórico)</td>
+            <td><span class="vertical-pill v-inclusion">Inclusión</span> <span class="vertical-pill v-datos">Datos</span></td>
+            <td>950k sobreendeudados retail</td>
+            <td>Provisiones $150-200M</td>
+            <td>Mujeres jefas hogar, deudores retail</td>
+            <td>CIPER 2011; CMF 2024</td>
+          </tr>
+          <tr>
+            <td><strong>P015</strong></td>
+            <td><strong>Migrantes sin historial crediticio</strong></td>
+            <td><span class="vertical-pill v-inclusion">Inclusión</span></td>
+            <td>~700k venezolanos · 33% migrantes con producto vs 97% chilenos</td>
+            <td>—</td>
+            <td>Migrantes venezolanos, peruanos, colombianos</td>
+            <td>CMF 2019; AFI 2024</td>
+          </tr>
+          <tr>
+            <td><strong>P016</strong></td>
+            <td><strong>Lista negra territorial retail</strong> · discriminación por comuna</td>
+            <td><span class="vertical-pill v-inclusion">Inclusión</span> <span class="vertical-pill v-datos">Datos</span></td>
+            <td>No cuantificado oficial</td>
+            <td>—</td>
+            <td>Poblaciones D-E Santiago</td>
+            <td>CIPER 2011 (patrón persistente)</td>
+          </tr>
+          <tr>
+            <td><strong>P017</strong></td>
+            <td><strong>Portabilidad financiera Ley 21.236</strong> con uso marginal</td>
+            <td><span class="vertical-pill v-inclusion">Inclusión</span></td>
+            <td>~6M deudores consumo elegibles</td>
+            <td>~60% reducción costo refinanciamiento</td>
+            <td>Deudores consumo + hipotecarios</td>
+            <td>CMF; DOE Actualidad Jurídica</td>
+          </tr>
+          <tr>
+            <td><strong>P018</strong></td>
+            <td><strong>Sobreendeudamiento sin acceso a Ley 21.563</strong> (procedimiento concursal)</td>
+            <td><span class="vertical-pill v-inclusion">Inclusión</span></td>
+            <td>950k sobreendeudados · 13k procedimientos en 2 años (&lt;0,3%)</td>
+            <td>—</td>
+            <td>Hogares insolventes</td>
+            <td>Superir 2025</td>
+          </tr>
+          <tr>
+            <td><strong>P019</strong></td>
+            <td><strong>Seguros desgravamen e incendio opacos</strong></td>
+            <td><span class="vertical-pill v-inclusion">Inclusión</span></td>
+            <td>~1,5M hogares hipoteca activa</td>
+            <td>—</td>
+            <td>Hipotecarios</td>
+            <td>NCG CMF 469; FNE</td>
+          </tr>
+          <tr>
+            <td><strong>P020</strong></td>
+            <td><strong>REDEC Ley 21.680 recién en vigor</strong> · ciudadano sin alfabetización del registro consolidado</td>
+            <td><span class="vertical-pill v-inclusion">Inclusión</span> <span class="vertical-pill v-datos">Datos</span></td>
+            <td>~10M con deuda formal</td>
+            <td>—</td>
+            <td>Deudores formales</td>
+            <td>Ley 21.680 + NCG CMF 540 (1-abr-2026)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- BRECHA CRÍTICA / SOLUCIONES EXISTENTES -->
+  <section>
+    <h2>Soluciones existentes y brecha crítica</h2>
+    <p>Mapeamos 28 soluciones chilenas en las tres verticales. Resultado: <strong>cero soluciones B2C usan RAG sobre regulación financiera con citación verificable de fuentes</strong>. Cicero existe pero es B2B exclusivo para abogados.</p>
+
+    <div class="opp-grid">
+      <div class="opp-card recommended" style="grid-column: 1 / -1;">
+        <div class="opp-id">BRECHA CRÍTICA · OPORTUNIDAD INSIGNIA</div>
+        <h3 class="opp-title">No existe RAG regulatoria ciudadana en Chile</h3>
+        <p class="opp-pitch">Verificado por fetch directo a cmfeduca.cl, conocetudeuda.cmfchile.cl, cicero.cl, csirt.gob.cl, faniai.bancochile.cl, sernac.cl. Esta es la BRECHA que ningún player chileno está cubriendo, y donde Claude (Citations API + Vision + Tool use con MCPs sobre APIs públicas + memoria de largo plazo) tiene ventaja diferencial nativa.</p>
+        <div class="opp-section-label">Hallazgos del mapeo competitivo</div>
+        <ul class="opp-list">
+          <li><strong>CMF Educa</strong>: contenido estático con calculadoras y glosario. Sin IA, sin RAG, sin chatbot.</li>
+          <li><strong>Conoce tu Deuda CMF</strong>: informe estructurado descargable. No interpreta, no recomienda estrategia, no cita normativa aplicable.</li>
+          <li><strong>FANi AI (Banco de Chile + Microsoft)</strong>: IA generativa pero acotada al onboarding de cuenta FAN. No cita Ley 21.521 ni Ley 21.236.</li>
+          <li><strong>Santi (Santander), Daniela (Banco de Chile), AnaBot (BancoEstado)</strong>: NLU clásico orientado a FAQs y trámites. Sin LLM con citación normativa, sin tool use sobre productos del banco, sin Vision sobre cartolas.</li>
+          <li><strong>Cicero (cicero.cl)</strong>: RAG con citación verificable sobre BCN/CMF/SII/jurisprudencia. <strong>B2B exclusivo para abogados, precio "por abogado"</strong>. NO expone su motor a ciudadanos.</li>
+          <li><strong>SERNAC, CSIRT, ChileAtiende</strong>: contenido y alertas estáticas. Sin agente conversacional con RAG.</li>
+          <li><strong>Destácame "Sofi"</strong>: asistente conversacional para morosos. Sin LLM open-ended, sin RAG legal, sin memoria persistente.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUADRANTE VISUAL -->
+  <section>
+    <h2>Cuadrante de oportunidades · Impacto × Complejidad</h2>
+    <p>Eje Y: Impacto Potencial (0-100). Eje X: Complejidad Técnica (0-100). Umbrales: Impacto &gt; 60 = Alto · Complejidad &gt; 50 = Alta. Cuanto más arriba y más a la izquierda, mejor.</p>
+
+    <div class="quadrant-wrap">
+      <svg class="quadrant-svg" viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+        <!-- Fondo cuadrantes -->
+        <rect x="80" y="80" width="370" height="270" fill="rgba(74, 139, 130, 0.12)" />
+        <rect x="450" y="80" width="370" height="270" fill="rgba(209, 169, 84, 0.12)" />
+        <rect x="80" y="350" width="370" height="270" fill="rgba(107, 99, 84, 0.08)" />
+        <rect x="450" y="350" width="370" height="270" fill="rgba(92, 58, 58, 0.12)" />
+
+        <!-- Etiquetas cuadrantes -->
+        <text x="265" y="115" text-anchor="middle" fill="#4A8B82" font-size="14" font-weight="700" letter-spacing="2">QUICK WINS</text>
+        <text x="265" y="135" text-anchor="middle" fill="#A89F8E" font-size="11">Hackathon 48h</text>
+
+        <text x="635" y="115" text-anchor="middle" fill="#D1A954" font-size="14" font-weight="700" letter-spacing="2">BIG BETS</text>
+        <text x="635" y="135" text-anchor="middle" fill="#A89F8E" font-size="11">Visión post-lab</text>
+
+        <text x="265" y="595" text-anchor="middle" fill="#6B6354" font-size="13" font-weight="600" letter-spacing="2">BACKLOG</text>
+        <text x="265" y="615" text-anchor="middle" fill="#6B6354" font-size="11">Bajo impacto, fácil</text>
+
+        <text x="635" y="595" text-anchor="middle" fill="#5C3A3A" font-size="13" font-weight="600" letter-spacing="2">EVITAR</text>
+        <text x="635" y="615" text-anchor="middle" fill="#6B6354" font-size="11">Alto costo, bajo impacto</text>
+
+        <!-- Ejes -->
+        <line x1="80" y1="350" x2="820" y2="350" stroke="#D1A954" stroke-width="2" />
+        <line x1="450" y1="80" x2="450" y2="620" stroke="#D1A954" stroke-width="2" />
+
+        <!-- Bordes -->
+        <rect x="80" y="80" width="740" height="540" fill="none" stroke="#2A4541" stroke-width="1" />
+
+        <!-- Etiquetas ejes -->
+        <text x="450" y="660" text-anchor="middle" fill="#E8DDC9" font-size="13" font-weight="700">COMPLEJIDAD TÉCNICA →</text>
+        <text x="80" y="675" text-anchor="middle" fill="#A89F8E" font-size="11">Baja</text>
+        <text x="820" y="675" text-anchor="middle" fill="#A89F8E" font-size="11">Alta</text>
+
+        <text x="40" y="350" text-anchor="middle" fill="#E8DDC9" font-size="13" font-weight="700" transform="rotate(-90 40 350)">IMPACTO POTENCIAL →</text>
+        <text x="65" y="620" text-anchor="middle" fill="#A89F8E" font-size="11">Bajo</text>
+        <text x="65" y="85" text-anchor="middle" fill="#A89F8E" font-size="11">Alto</text>
+
+        <!-- ============ DOTS ============ -->
+        <!-- QUICK WINS (impacto > 60, complejidad ≤ 50) -->
+        <!-- P008 phishing 100/25 -->
+        <g>
+          <circle cx="265" cy="100" r="14" fill="#4A8B82" stroke="#E8DDC9" stroke-width="2" />
+          <text x="265" y="105" text-anchor="middle" fill="#0E1A19" font-size="11" font-weight="700">P8</text>
+        </g>
+        <!-- P005 ARCO 100/45 -->
+        <g>
+          <circle cx="412" cy="100" r="14" fill="#4A8B82" stroke="#D1A954" stroke-width="3" />
+          <text x="412" y="105" text-anchor="middle" fill="#0E1A19" font-size="11" font-weight="700">P5</text>
+        </g>
+        <!-- P004 alfabetización 83/25 -->
+        <g>
+          <circle cx="265" cy="200" r="13" fill="#4A8B82" stroke="#E8DDC9" stroke-width="2" />
+          <text x="265" y="205" text-anchor="middle" fill="#0E1A19" font-size="11" font-weight="700">P4</text>
+        </g>
+        <!-- P013 cobranza 82/25 -->
+        <g>
+          <circle cx="265" cy="210" r="13" fill="#4A8B82" stroke="#E8DDC9" stroke-width="2" transform="translate(40 -10)" />
+          <text x="305" y="205" text-anchor="middle" fill="#0E1A19" font-size="11" font-weight="700">P13</text>
+        </g>
+        <!-- P017 portabilidad 82/45 -->
+        <g>
+          <circle cx="412" cy="210" r="13" fill="#4A8B82" stroke="#E8DDC9" stroke-width="2" />
+          <text x="412" y="215" text-anchor="middle" fill="#0E1A19" font-size="11" font-weight="700">P17</text>
+        </g>
+
+        <!-- BIG BETS (impacto > 60, complejidad > 50) -->
+        <!-- P001 fraude integral 100/65 -->
+        <g>
+          <circle cx="568" cy="100" r="14" fill="#D1A954" stroke="#E8DDC9" stroke-width="2" />
+          <text x="568" y="105" text-anchor="middle" fill="#0E1A19" font-size="11" font-weight="700">P1</text>
+        </g>
+        <!-- P003 morosidad 93/55 -->
+        <g>
+          <circle cx="487" cy="135" r="14" fill="#D1A954" stroke="#E8DDC9" stroke-width="2" />
+          <text x="487" y="140" text-anchor="middle" fill="#0E1A19" font-size="11" font-weight="700">P3</text>
+        </g>
+        <!-- P020 REDEC 85/65 -->
+        <g>
+          <circle cx="568" cy="170" r="13" fill="#D1A954" stroke="#E8DDC9" stroke-width="2" />
+          <text x="568" y="175" text-anchor="middle" fill="#0E1A19" font-size="11" font-weight="700">P20</text>
+        </g>
+        <!-- P010 CAE 80/75 -->
+        <g>
+          <circle cx="643" cy="195" r="13" fill="#D1A954" stroke="#E8DDC9" stroke-width="2" />
+          <text x="643" y="200" text-anchor="middle" fill="#0E1A19" font-size="11" font-weight="700">P10</text>
+        </g>
+        <!-- P018 Ley 21.563 77/80 -->
+        <g>
+          <circle cx="680" cy="225" r="12" fill="#D1A954" stroke="#E8DDC9" stroke-width="2" />
+          <text x="680" y="230" text-anchor="middle" fill="#0E1A19" font-size="11" font-weight="700">P18</text>
+        </g>
+        <!-- P007 adultos mayores 68/80 -->
+        <g>
+          <circle cx="680" cy="285" r="12" fill="#D1A954" stroke="#E8DDC9" stroke-width="2" />
+          <text x="680" y="290" text-anchor="middle" fill="#0E1A19" font-size="11" font-weight="700">P7</text>
+        </g>
+        <!-- P009 microemprendedores 68/100 -->
+        <g>
+          <circle cx="800" cy="285" r="12" fill="#D1A954" stroke="#E8DDC9" stroke-width="2" />
+          <text x="800" y="290" text-anchor="middle" fill="#0E1A19" font-size="11" font-weight="700">P9</text>
+        </g>
+
+        <!-- EVITAR (impacto ≤ 60, complejidad > 50) -->
+        <!-- P006 género 60/65 -->
+        <g>
+          <circle cx="568" cy="350" r="11" fill="#5C3A3A" stroke="#E8DDC9" stroke-width="1.5" />
+          <text x="568" y="355" text-anchor="middle" fill="#E8DDC9" font-size="10" font-weight="700">P6</text>
+        </g>
+        <!-- P002 AFC 57/80 -->
+        <g>
+          <circle cx="680" cy="370" r="11" fill="#5C3A3A" stroke="#E8DDC9" stroke-width="1.5" />
+          <text x="680" y="375" text-anchor="middle" fill="#E8DDC9" font-size="10" font-weight="700">P2</text>
+        </g>
+        <!-- P019 seguros 60/75 -->
+        <g>
+          <circle cx="643" cy="350" r="11" fill="#5C3A3A" stroke="#E8DDC9" stroke-width="1.5" />
+          <text x="643" y="355" text-anchor="middle" fill="#E8DDC9" font-size="10" font-weight="700">P19</text>
+        </g>
+        <!-- P012 PGU 57/100 -->
+        <g>
+          <circle cx="800" cy="370" r="11" fill="#5C3A3A" stroke="#E8DDC9" stroke-width="1.5" />
+          <text x="800" y="375" text-anchor="middle" fill="#E8DDC9" font-size="10" font-weight="700">P12</text>
+        </g>
+        <!-- P014 repactaciones 60/100 -->
+        <g>
+          <circle cx="800" cy="350" r="11" fill="#5C3A3A" stroke="#E8DDC9" stroke-width="1.5" />
+          <text x="800" y="355" text-anchor="middle" fill="#E8DDC9" font-size="10" font-weight="700">P14</text>
+        </g>
+        <!-- P015 migrantes 50/100 -->
+        <g>
+          <circle cx="800" cy="430" r="11" fill="#5C3A3A" stroke="#E8DDC9" stroke-width="1.5" />
+          <text x="800" y="435" text-anchor="middle" fill="#E8DDC9" font-size="10" font-weight="700">P15</text>
+        </g>
+
+        <!-- BACKLOG (impacto ≤ 60, complejidad ≤ 50) -->
+        <!-- P011 fintech 37/40 -->
+        <g>
+          <circle cx="376" cy="500" r="10" fill="#6B6354" stroke="#E8DDC9" stroke-width="1.5" />
+          <text x="376" y="505" text-anchor="middle" fill="#E8DDC9" font-size="10" font-weight="700">P11</text>
+        </g>
+        <!-- P016 lista negra 25/30 -->
+        <g>
+          <circle cx="302" cy="555" r="9" fill="#6B6354" stroke="#E8DDC9" stroke-width="1.5" />
+          <text x="302" y="560" text-anchor="middle" fill="#E8DDC9" font-size="10" font-weight="700">P16</text>
+        </g>
+
+        <!-- Borde RECOMENDADO sobre P5 -->
+        <text x="412" y="78" text-anchor="middle" fill="#D1A954" font-size="9" font-weight="700" letter-spacing="1">★ INSIGNIA</text>
+      </svg>
+
+      <div class="quadrant-legend">
+        <div class="legend-item">
+          <div class="legend-swatch" style="background:#4A8B82;"></div>
+          <div><strong>Quick Wins</strong> · ejecutables en hackathon 48h, alta probabilidad de demo exitoso</div>
+        </div>
+        <div class="legend-item">
+          <div class="legend-swatch" style="background:#D1A954;"></div>
+          <div><strong>Big Bets</strong> · alto impacto pero complejidad técnica que excede 48h, visión post-lab</div>
+        </div>
+        <div class="legend-item">
+          <div class="legend-swatch" style="background:#6B6354;"></div>
+          <div><strong>Backlog</strong> · bajo impacto, fácil de hacer · revisar más adelante</div>
+        </div>
+        <div class="legend-item">
+          <div class="legend-swatch" style="background:#5C3A3A;"></div>
+          <div><strong>Evitar</strong> · alto costo, bajo impacto, riesgo regulatorio o complejidad estructural</div>
+        </div>
+      </div>
+    </div>
+
+    <details>
+      <summary>Ver tabla de scoring detallado por dolor (20 oportunidades)</summary>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Dolor</th>
+              <th>Impacto Y (0-100)</th>
+              <th>Complejidad X (0-100)</th>
+              <th>Cuadrante</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>P008</td><td>Phishing/smishing masivos</td><td>100</td><td>25</td><td>QUICK WIN</td></tr>
+            <tr><td>P005</td><td>ARCO Ley 21.719 (insignia)</td><td>100</td><td>45</td><td>QUICK WIN ★</td></tr>
+            <tr><td>P001</td><td>Fraude bancario integral con jurisprudencia</td><td>100</td><td>65</td><td>BIG BET</td></tr>
+            <tr><td>P003</td><td>Morosidad masiva sin asesoría</td><td>93</td><td>55</td><td>BIG BET</td></tr>
+            <tr><td>P020</td><td>REDEC Ley 21.680 navigator</td><td>85</td><td>65</td><td>BIG BET</td></tr>
+            <tr><td>P004</td><td>Traductor cartola/letra chica</td><td>83</td><td>25</td><td>QUICK WIN</td></tr>
+            <tr><td>P013</td><td>Calculadora cobranza Ley 19.496</td><td>82</td><td>25</td><td>QUICK WIN</td></tr>
+            <tr><td>P017</td><td>Acelerador portabilidad Ley 21.236</td><td>82</td><td>45</td><td>QUICK WIN</td></tr>
+            <tr><td>P010</td><td>CAE asistente</td><td>80</td><td>75</td><td>BIG BET</td></tr>
+            <tr><td>P018</td><td>Procedimiento concursal Ley 21.563</td><td>77</td><td>80</td><td>BIG BET</td></tr>
+            <tr><td>P007</td><td>Adultos mayores accesible</td><td>68</td><td>80</td><td>BIG BET</td></tr>
+            <tr><td>P009</td><td>Microemprendedores informales</td><td>68</td><td>100</td><td>BIG BET</td></tr>
+            <tr><td>P006</td><td>Brecha género crédito</td><td>60</td><td>65</td><td>EVITAR</td></tr>
+            <tr><td>P019</td><td>Seguros desgravamen opacos</td><td>60</td><td>75</td><td>EVITAR</td></tr>
+            <tr><td>P014</td><td>Repactaciones retail unilaterales</td><td>60</td><td>100</td><td>EVITAR</td></tr>
+            <tr><td>P002</td><td>AFC no retirada</td><td>57</td><td>80</td><td>EVITAR</td></tr>
+            <tr><td>P012</td><td>PGU/herencias no cobradas</td><td>57</td><td>100</td><td>EVITAR</td></tr>
+            <tr><td>P015</td><td>Migrantes sin historial</td><td>50</td><td>100</td><td>EVITAR</td></tr>
+            <tr><td>P011</td><td>Fintech zona gris</td><td>37</td><td>40</td><td>BACKLOG</td></tr>
+            <tr><td>P016</td><td>Lista negra territorial retail</td><td>25</td><td>30</td><td>BACKLOG</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </section>
+
+  <!-- TOP 5 QUICK WINS -->
+  <section>
+    <h2>Top 5 Quick Wins · ejecutables en hackathon 48h</h2>
+    <p>Ordenados por combinación de impacto + alineación regulatoria + ventana temporal + capacidad Claude diferencial.</p>
+
+    <div class="opp-grid">
+
+      <!-- P005 ARCO INSIGNIA -->
+      <div class="opp-card recommended">
+        <div class="opp-id">QW-1 · P005 · INSIGNIA</div>
+        <h3 class="opp-title">Tramitador de derechos ARCO Ley 21.719</h3>
+        <p class="opp-pitch">Asistente que ejerce derechos ARCO+P+B del ciudadano frente a un responsable de tratamiento (banco, retailer, AFP). Genera la solicitud, hace seguimiento de los 15 días hábiles, y si el responsable niega/no responde, escala a la nueva Agencia de Protección de Datos.</p>
+        <div class="opp-scores">
+          <div class="score-block">
+            <div class="score-label">Impacto</div>
+            <div class="score-val">100</div>
+            <div class="score-bar"><div class="score-fill" style="width:100%"></div></div>
+          </div>
+          <div class="score-block">
+            <div class="score-label">Complejidad</div>
+            <div class="score-val">45</div>
+            <div class="score-bar"><div class="score-fill" style="width:45%"></div></div>
+          </div>
+        </div>
+        <div class="opp-section-label">Por qué INSIGNIA</div>
+        <ul class="opp-list pros">
+          <li>Ley 21.719 entra en vigor 1-dic-2026 — mayo 2026 es la ventana óptima de construcción antes del mercado saturado</li>
+          <li>16M titulares + 1M empresas afectadas; multas hasta 20.000 UTM o 4% ingresos anuales</li>
+          <li>Solo 41% empresas con DPO designado — gap masivo de cumplimiento</li>
+          <li>Cero competencia chilena B2C en este espacio</li>
+        </ul>
+        <div class="opp-section-label">Capacidades Claude</div>
+        <ul class="opp-list tools">
+          <li>Structured outputs · solicitud ARCO con campos exactos exigidos por la ley</li>
+          <li>Citations API · cita art. específico Ley 21.719 (clave para que el responsable no rechace)</li>
+          <li>Memoria de largo plazo · seguimiento 30+30+180 días del flujo completo</li>
+        </ul>
+        <div class="opp-section-label">Riesgos</div>
+        <ul class="opp-list cons">
+          <li>NO ejercer derechos en nombre del usuario · el ciudadano firma la solicitud que el agente genera</li>
+        </ul>
+      </div>
+
+      <!-- P008 anti-phishing -->
+      <div class="opp-card">
+        <div class="opp-id">QW-2 · P008</div>
+        <h3 class="opp-title">Asistente anti-phishing en flagrancia</h3>
+        <p class="opp-pitch">El ciudadano envía screenshot de SMS, WhatsApp o email sospechoso. La solución dictamina si es phishing, identifica la suplantación específica (BancoEstado, SII, ChileAtiende) y entrega protocolo Ley 20.009 (modificada por Ley 21.673/2024).</p>
+        <div class="opp-scores">
+          <div class="score-block">
+            <div class="score-label">Impacto</div>
+            <div class="score-val">100</div>
+            <div class="score-bar"><div class="score-fill" style="width:100%"></div></div>
+          </div>
+          <div class="score-block">
+            <div class="score-label">Complejidad</div>
+            <div class="score-val">25</div>
+            <div class="score-bar"><div class="score-fill" style="width:25%"></div></div>
+          </div>
+        </div>
+        <div class="opp-section-label">Magnitud</div>
+        <ul class="opp-list pros">
+          <li>41.703 causas judiciales fraude Q3 2025 (récord histórico, +64,4% YoY)</li>
+          <li>6,3M intentos phishing bloqueados ene-oct 2025</li>
+          <li>Vishing concentra 71% de las quejas tipo phishing en SERNAC</li>
+          <li>Ningún producto chileno cubre el ciclo completo flagrancia + denuncia + restitución</li>
+        </ul>
+        <div class="opp-section-label">Capacidades Claude</div>
+        <ul class="opp-list tools">
+          <li>Vision · clasifica screenshot WhatsApp con logo de banco chileno</li>
+          <li>Citations API · cita Ley 20.009 art. específico</li>
+          <li>Memoria · 60 días retroactividad denuncia + 10 días hábiles restitución</li>
+        </ul>
+      </div>
+
+      <!-- P004 traductor cartola -->
+      <div class="opp-card">
+        <div class="opp-id">QW-3 · P004</div>
+        <h3 class="opp-title">Traductor de cartola y letra chica chilena</h3>
+        <p class="opp-pitch">El usuario sube foto/PDF de su contrato, cartola, liquidación o póliza chilena. La solución descompone el costo real (CAE, CTC, comisiones, desgravamen), citando la NCG correspondiente. Zona segura confirmada por NCG 502 que excluye "comunicación informativa/educativa" del concepto de asesoría.</p>
+        <div class="opp-scores">
+          <div class="score-block">
+            <div class="score-label">Impacto</div>
+            <div class="score-val">83</div>
+            <div class="score-bar"><div class="score-fill" style="width:83%"></div></div>
+          </div>
+          <div class="score-block">
+            <div class="score-label">Complejidad</div>
+            <div class="score-val">25</div>
+            <div class="score-bar"><div class="score-fill" style="width:25%"></div></div>
+          </div>
+        </div>
+        <div class="opp-section-label">Magnitud</div>
+        <ul class="opp-list pros">
+          <li>Nota país en alfabetización financiera: 1,6/5 (UC 2024)</li>
+          <li>Solo 31% jóvenes 18-29 sabe qué es CAE</li>
+          <li>Diferencia de costo total entre ofertas para el mismo crédito $1MM/12m: $1.016.261</li>
+          <li>Cero soluciones chilenas leen el documento real del usuario</li>
+        </ul>
+        <div class="opp-section-label">Capacidades Claude</div>
+        <ul class="opp-list tools">
+          <li>Vision · procesa PDFs/scans bancos chilenos (Estado, BCH, Santander, BCI, Itaú)</li>
+          <li>Citations API · ancla cada cifra a la NCG aplicable + Comparador SERNAC</li>
+          <li>Tool use · API Comparador SERNAC para benchmark</li>
+        </ul>
+      </div>
+
+      <!-- P013 cobranza -->
+      <div class="opp-card">
+        <div class="opp-id">QW-4 · P013</div>
+        <h3 class="opp-title">Calculadora cobranza extrajudicial Ley 19.496 art. 37</h3>
+        <p class="opp-pitch">El usuario sube su comprobante de cobranza y la solución detecta sobrecobros respecto al porcentaje legal (9% &lt;10 UF / 6% 10-50 UF / 3% &gt;50 UF), horarios indebidos en registro de llamadas y notificaciones a terceros. Genera carta de reclamo a SERNAC con cita exacta al art. 37 + Ley 21.398 ("No me hostiguen").</p>
+        <div class="opp-scores">
+          <div class="score-block">
+            <div class="score-label">Impacto</div>
+            <div class="score-val">82</div>
+            <div class="score-bar"><div class="score-fill" style="width:82%"></div></div>
+          </div>
+          <div class="score-block">
+            <div class="score-label">Complejidad</div>
+            <div class="score-val">25</div>
+            <div class="score-bar"><div class="score-fill" style="width:25%"></div></div>
+          </div>
+        </div>
+        <div class="opp-section-label">Por qué funciona</div>
+        <ul class="opp-list pros">
+          <li>3,9M morosos como víctimas potenciales · 14k reclamos formales (×10 estimado real)</li>
+          <li>Cálculo aritmético puro + cita al art. 37 = zona regulatoria segura (riesgo CMF nulo: jurisdicción SERNAC)</li>
+          <li>Patrón validado por SERNAC con plataforma "No Me Hostiguen"</li>
+        </ul>
+        <div class="opp-section-label">Capacidades Claude</div>
+        <ul class="opp-list tools">
+          <li>Vision · lee cartola de cobranza y registro de llamadas</li>
+          <li>Citations API · cita art. 37 Ley 19.496 + topes legales</li>
+          <li>Structured outputs · genera reclamo SERNAC con campos exactos</li>
+        </ul>
+      </div>
+
+      <!-- P017 portabilidad -->
+      <div class="opp-card">
+        <div class="opp-id">QW-5 · P017</div>
+        <h3 class="opp-title">Acelerador de portabilidad financiera Ley 21.236</h3>
+        <p class="opp-pitch">Diagnóstico + simulación + redacción de la Solicitud de Portabilidad y el Mandato de Término. Ley vigente desde 2020 con uso marginal: ahorro estimado de hasta 60% en costo de refinanciamiento. ~6M deudores de consumo elegibles que no ejercen el derecho.</p>
+        <div class="opp-scores">
+          <div class="score-block">
+            <div class="score-label">Impacto</div>
+            <div class="score-val">82</div>
+            <div class="score-bar"><div class="score-fill" style="width:82%"></div></div>
+          </div>
+          <div class="score-block">
+            <div class="score-label">Complejidad</div>
+            <div class="score-val">45</div>
+            <div class="score-bar"><div class="score-fill" style="width:45%"></div></div>
+          </div>
+        </div>
+        <div class="opp-section-label">Magnitud</div>
+        <ul class="opp-list pros">
+          <li>~6M deudores de crédito de consumo elegibles · uso muy bajo según CMF</li>
+          <li>Ahorro tipo: $700k → $280k para refinanciar crédito 1.000 UF (60% reducción)</li>
+          <li>Riesgo regulatorio CMF: bajo · es información procedimental pública</li>
+        </ul>
+        <div class="opp-section-label">Capacidades Claude</div>
+        <ul class="opp-list tools">
+          <li>Structured outputs · Solicitud Portabilidad con todos los campos legales</li>
+          <li>Citations API · referencia Ley 21.236 + NCG aplicable</li>
+          <li>Memoria · sigue al cliente en los 7-10 días que toma el banco actual</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TOP 3 BIG BETS -->
+  <section>
+    <h2>Top 3 Big Bets · visión de producto post-lab</h2>
+    <p>Oportunidades de mayor impacto pero que requieren más de 48h o tienen complejidad estructural. Construir un MVP en el lab y desarrollar el producto completo en los 60 días de incubación post-Impact Lab.</p>
+
+    <div class="opp-grid">
+
+      <div class="opp-card">
+        <div class="opp-id">BB-1 · P001</div>
+        <h3 class="opp-title">Plataforma anti-fraude integral con jurisprudencia 2026</h3>
+        <p class="opp-pitch">Combina el QW-2 anti-phishing con el ciclo completo de Ley 20.009: aviso 24/7 al banco, 60 días retroactividad, denuncia penal obligatoria, 10 días hábiles de restitución, escalamiento SERNAC. Cita los fallos Corte Suprema 2026 (Banco de Chile, BancoEstado, Bci) que elevan el estándar de prueba para imputar culpa grave al cliente.</p>
+        <div class="opp-scores">
+          <div class="score-block">
+            <div class="score-label">Impacto</div>
+            <div class="score-val">100</div>
+            <div class="score-bar"><div class="score-fill" style="width:100%"></div></div>
+          </div>
+          <div class="score-block">
+            <div class="score-label">Complejidad</div>
+            <div class="score-val">65</div>
+            <div class="score-bar"><div class="score-fill" style="width:65%"></div></div>
+          </div>
+        </div>
+        <div class="opp-section-label">Diferenciación</div>
+        <ul class="opp-list pros">
+          <li>Cierra ciclo completo: prevención (Vision) + denuncia (Structured) + seguimiento (Memoria)</li>
+          <li>Cita jurisprudencia 2026 favorable al cliente (Hoces, Diario Constitucional)</li>
+          <li>Mercado: 19.834 reclamantes/año + 41.703 causas judiciales 2025</li>
+        </ul>
+      </div>
+
+      <div class="opp-card">
+        <div class="opp-id">BB-2 · P003</div>
+        <h3 class="opp-title">Agente conductual de salida de morosidad</h3>
+        <p class="opp-pitch">Orquesta Conoce tu Deuda CMF + Comparador SERNAC + portabilidad Ley 21.236 + simulación procedimiento Ley 21.563 con plan personalizado y memoria de 12-24 meses. Acompaña al usuario más allá del plan inicial: recordatorios, victorias, ajustes. Lo más cercano hoy es Destácame Sofi pero sin memoria persistente, sin RAG legal, sin tool use multi-API.</p>
+        <div class="opp-scores">
+          <div class="score-block">
+            <div class="score-label">Impacto</div>
+            <div class="score-val">93</div>
+            <div class="score-bar"><div class="score-fill" style="width:93%"></div></div>
+          </div>
+          <div class="score-block">
+            <div class="score-label">Complejidad</div>
+            <div class="score-val">55</div>
+            <div class="score-bar"><div class="score-fill" style="width:55%"></div></div>
+          </div>
+        </div>
+        <div class="opp-section-label">Mercado</div>
+        <ul class="opp-list pros">
+          <li>3,9M morosos · USD 9.416M deuda total Chile (2,81% del PIB)</li>
+          <li>Solo 0,3% de los 950k sobreendeudados accede al procedimiento Ley 21.563</li>
+          <li>Mujeres concentran +185k morosas que hombres; jóvenes 18-24 única franja al alza</li>
+        </ul>
+      </div>
+
+      <div class="opp-card">
+        <div class="opp-id">BB-3 · P020</div>
+        <h3 class="opp-title">REDEC navigator + ARCO datos consolidados</h3>
+        <p class="opp-pitch">El Registro de Deuda Consolidada (Ley 21.680, NCG 540) entró en vigor el 1-abril-2026. ~10M chilenos con deuda formal pueden acceder a su reporte consolidado, pedir rectificación de errores y revocar consentimientos. Cuando se cruce con Ley 21.719 (1-dic-2026) habrá ventana de oro para construir el primer asistente que combine ambas.</p>
+        <div class="opp-scores">
+          <div class="score-block">
+            <div class="score-label">Impacto</div>
+            <div class="score-val">85</div>
+            <div class="score-bar"><div class="score-fill" style="width:85%"></div></div>
+          </div>
+          <div class="score-block">
+            <div class="score-label">Complejidad</div>
+            <div class="score-val">65</div>
+            <div class="score-bar"><div class="score-fill" style="width:65%"></div></div>
+          </div>
+        </div>
+        <div class="opp-section-label">Ventana</div>
+        <ul class="opp-list pros">
+          <li>1-abr-2026: vigencia REDEC (recién en operación)</li>
+          <li>1-dic-2026: vigencia Ley 21.719 (ARCO+P+B masificado)</li>
+          <li>Universo combinado: prácticamente toda la población adulta digital chilena</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ANTI-PATRONES Y RIESGOS -->
+  <section>
+    <h2>Advertencias y riesgos regulatorios</h2>
+    <p>Lo que el equipo The Clauders DEBE evitar al construir cualquier solución durante el lab.</p>
+
+    <div class="warning-card">
+      <h4>⚠ Anti-patrón 1 · Recomendación de inversión sin licencia (NCG 502)</h4>
+      <p>Desde 3-feb-2024, ninguna entidad puede prestar asesoría de inversión sin estar inscrita en el RPSF y autorizada por la CMF. Construir un "robo-advisor" o "AI que sugiere portafolio" en hackathon = bandera roja inmediata. Reformular toda salida como cita de NCG, no como decisión.</p>
+    </div>
+    <div class="warning-card">
+      <h4>⚠ Anti-patrón 2 · Recomendación crediticia sin licencia</h4>
+      <p>"Te conviene tomar el crédito Banco X a 24 meses" sin estar registrado = infracción Ley 21.521. El Comparador SERNAC se cuida explícitamente: muestra cifras y CAE, pero NO recomienda. Ese es el modelo a copiar.</p>
+    </div>
+    <div class="warning-card">
+      <h4>⚠ Anti-patrón 3 · Custodia de credenciales bancarias del usuario</h4>
+      <p>Almacenar la clave de internet banking para hacer scraping persistente queda fuera del consentimiento de Ley Fintech sin NCG 514 vigente (postergada a julio 2027). Usar Conoce tu Deuda CMF (ClaveÚnica) o que el usuario suba PDF/screenshot de su cartola.</p>
+    </div>
+    <div class="warning-card">
+      <h4>⚠ Anti-patrón 4 · Solución que requiere SFA / NCG 514 vigente</h4>
+      <p>NCG 514 postergada a julio 2027, implementación gradual hasta 2029. Cualquier producto que asuma el SFA operativo en mayo 2026 = no se puede demostrar funcionando. Usar APIs ya públicas: Conoce tu Deuda CMF, Comparador SERNAC, ChileAtiende, API Banco Central.</p>
+    </div>
+    <div class="warning-card">
+      <h4>⚠ Anti-patrón 5 · Auto-reporte fraudulento Ley 20.009</h4>
+      <p>La Ley 21.673 (mayo 2024) mantiene la sanción penal para quien simula fraude para obtener restitución indebida. Construir una herramienta que "ayude" a declarar fraudes para recuperar dinero está bordeando ilegalidad. La solución debe verificar que efectivamente fue suplantación, no reclasificar transacciones legítimas.</p>
+    </div>
+
+    <h3 style="margin-top: 32px; margin-bottom: 16px;">Reglas operativas para The Clauders</h3>
+    <ol class="opp-list" style="font-size: 14px;">
+      <li><strong>Nunca usar verbos imperativos</strong> sobre decisiones financieras: invierte, compra, vende, toma, contrata, elige.</li>
+      <li><strong>Siempre cerrar con "la decisión es tuya"</strong> o equivalente. Esto separa zona regulada de zona segura.</li>
+      <li><strong>Usar Citations API</strong> sobre toda cifra que provenga de regulador chileno (CMF, SERNAC, Banco Central, SII).</li>
+      <li><strong>Si la solución requiere intermediar dinero o tomar custodia</strong> → necesita licencia → fuera del alcance del hackathon.</li>
+      <li><strong>Acompañar al ciudadano en ejercicio de un derecho ya consagrado</strong> (Ley 20.009, Ley 21.236, Ley 21.719) → zona segura, alta replicabilidad.</li>
+    </ol>
+  </section>
+
+  <!-- CRONOGRAMA REGULATORIO -->
+  <section>
+    <h2>Cronograma regulatorio 2026-2027</h2>
+    <p>Hitos chilenos que afectan el espacio de oportunidad. La ventana óptima del Impact Lab (6-7 mayo 2026) está estratégicamente posicionada antes de los hitos más relevantes.</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">1 abril 2026</div>
+        <div class="timeline-title">Vigencia Ley 21.680 — Registro de Deuda Consolidada (REDEC)</div>
+        <div class="timeline-desc">~10M chilenos pueden acceder al reporte consolidado. NCG CMF 540 publicada 14-jul-2025.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Abril 2026</div>
+        <div class="timeline-title">Jurisprudencia Corte Suprema · estándar Ley 20.009</div>
+        <div class="timeline-desc">Fallos CS Banco de Chile, BancoEstado y Bci elevan el estándar de prueba para imputar negligencia grave al cliente.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">6-7 mayo 2026</div>
+        <div class="timeline-title">★ Claude Impact Lab Chile · primera edición</div>
+        <div class="timeline-desc">Espacio Riesco · 200 builders · 3 tracks · USD 500/track + Mac Mini + 60 días sandbox + presentación a reguladores. Host: Bendita IA / Felipe Pacheco.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Julio 2026 (postergado)</div>
+        <div class="timeline-title">Fecha original SFA — pospuesta por CMF</div>
+        <div class="timeline-desc">Sistema de Finanzas Abiertas Ley 21.521 Título III · NCG 514 ahora propuesto julio 2027 con implementación gradual hasta 2029.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">1 diciembre 2026</div>
+        <div class="timeline-title">★ Vigencia Ley 21.719 — Protección de Datos Personales</div>
+        <div class="timeline-desc">Nace la Agencia de Protección de Datos. Derechos ARCO+P+B exigibles. Multas hasta 20.000 UTM o 4% ingresos anuales. Notificación obligatoria de brechas. <strong>Hito más urgente del calendario.</strong></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Julio 2027 (propuesto)</div>
+        <div class="timeline-title">Nueva fecha tentativa SFA · primera ola</div>
+        <div class="timeline-desc">Bancos y emisores de tarjetas obligados a entregar APIs al SFA. Cooperativas, seguros y otros en olas siguientes hasta 2029.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECOMENDACIÓN FINAL -->
+  <section>
+    <div class="recommendation">
+      <h2>Recomendación · jugada principal</h2>
+      <p><strong>Construir un agente único que combine QW-1 (ARCO Ley 21.719) + QW-2 (anti-phishing Ley 20.009)</strong> sobre un núcleo conversacional Claude con Vision + Citations API + memoria de largo plazo. Apuntar al ciudadano que sufre fraude bancario y necesita simultáneamente: (1) recuperar el dinero por la vía Ley 20.009, (2) ejercer derecho ARCO sobre los datos comprometidos, (3) hacer seguimiento de los 60-180 días que toma el flujo combinado.</p>
+      <p>Esta jugada captura las dos brechas regulatorias más urgentes (1-dic-2026 y récord de fraude 2025), aprovecha la primera edición del Impact Lab Chile en su ventana óptima, y ocupa el espacio donde NINGUNA solución chilena B2C existe hoy. Citations API blinda el riesgo regulatorio CMF. Vision atiende la realidad chilena de WhatsApp y screenshots. Memoria captura el ciclo completo Ley 20.009.</p>
+      <a href="#" class="cta">The Clauders · construir el primer agente ciudadano-fintech RAG de Chile</a>
+    </div>
+  </section>
+
+  <!-- METODOLOGÍA -->
+  <section>
+    <h2>Metodología y trazabilidad</h2>
+    <details>
+      <summary>Ver detalle del proceso de investigación</summary>
+      <div style="padding: 16px 0;">
+        <p><strong>6 agentes especializados despachados en paralelo</strong> (en 2 tandas de 3) bajo el protocolo deep-researcher: descomposición → preguntas de investigación → web_search (mín 10) + web_fetch (mín 5) → síntesis estructurada.</p>
+        <ul class="opp-list" style="font-size: 14px;">
+          <li>Agente 1 · Fuentes regulatorias oficiales — 26 web_search + 9 web_fetch · 13 dolores cuantificados</li>
+          <li>Agente 2 · Etnográfica ciudadana — 17 web_search + 8 web_fetch · 13 dolores + glosario chileno (23 modismos)</li>
+          <li>Agente 3 · Soluciones existentes — 28 soluciones mapeadas + análisis brechas + verificación RAG B2C</li>
+          <li>Agente 4 · Estadística y evidencia — 26 web_search + 6 web_fetch · 35 estadísticas chilenas verificadas</li>
+          <li>Agente 5 · Innovación fintech Chile — 7 patrones ganadores + 5 anti-patrones + análisis riesgo regulatorio</li>
+          <li>Agente 6 · Síntesis regulatoria — 24 web_search + 9 web_fetch · 15 brechas + 10 pares PROHIBIDO/PERMITIDO + cronograma</li>
+        </ul>
+        <p><strong>Restricciones aplicadas:</strong> Solo benchmarks nacionales (Chile), idioma español Chile, fuentes 2023-2026 priorizadas (datos &gt;3 años solo si fundacionales).</p>
+        <p><strong>Verificación cruzada:</strong> El "fallo Corte Suprema abril 2026 caso Bci" del Agente 2 fue verificado por el Agente 6 con múltiples fuentes secundarias (chocale.cl 2026/02, 2026/04). Texto exacto del considerando NO consultado por bloqueo HTTP 403 al Diario Constitucional.</p>
+        <p><strong>Corrección:</strong> El prompt maestro mencionaba "Ley 21.484" como ley de deuda consolidada; la ley vigente que crea el REDEC es <strong>Ley 21.680</strong> (Agente 6).</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Ver fuentes consolidadas (más de 200 entre los 6 agentes)</summary>
+      <div style="padding: 16px 0;">
+        <p>Reportes individuales con fuentes numeradas y URLs verificadas:</p>
+        <ul class="opp-list" style="font-size: 14px;">
+          <li><a href="agente-1-regulatorias.md" style="color: var(--gold);">agente-1-regulatorias.md</a> · 62 fuentes</li>
+          <li><a href="agente-2-etnografica.md" style="color: var(--gold);">agente-2-etnografica.md</a> · 30 fuentes + glosario chileno</li>
+          <li><a href="agente-3-competencia.md" style="color: var(--gold);">agente-3-competencia.md</a> · 34 fuentes + análisis brechas</li>
+          <li><a href="agente-4-estadistica.md" style="color: var(--gold);">agente-4-estadistica.md</a> · 35 fuentes + ranking magnitud</li>
+          <li><a href="agente-5-innovacion.md" style="color: var(--gold);">agente-5-innovacion.md</a> · 50 fuentes + capacidades Claude</li>
+          <li><a href="agente-6-sintesis-regulatoria.md" style="color: var(--gold);">agente-6-sintesis-regulatoria.md</a> · 50 fuentes + cronograma 2026-2027</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>The Clauders · Claude Impact Lab Chile 2026 · Reporte de investigación de mercado fintech ciudadana</strong></p>
+    <p>Generado el 29 de abril de 2026 · 6-Agente deep research orquestado · español Chile · benchmarks nacionales exclusivamente.</p>
+    <p style="margin-top: 16px;">Output del Agente Maestro tras consolidar Tanda 1 (Regulatorias · Etnográfica · Competencia) y Tanda 2 (Estadística · Innovación · Síntesis Regulatoria). Ningún dato fue inventado: cuando una cifra no se pudo verificar en fuente oficial chilena se declaró explícitamente.</p>
+  </footer>
+
+</div>
+</body>
+</html>
