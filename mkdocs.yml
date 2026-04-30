@@ -109,6 +109,7 @@ nav:
 
   - "🚀 Tu Plata Mipyme":
       - tu-plata-mipyme/index.md
+      - "PRD": tu-plata-mipyme/PRD.md
       - "Qué es y para quién": tu-plata-mipyme/que-es.md
       - "Dolores del journey": tu-plata-mipyme/dolores.md
       - "Plan de implementación": tu-plata-mipyme/plan.md
