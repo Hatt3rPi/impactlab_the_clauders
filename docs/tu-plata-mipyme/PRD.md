@@ -418,7 +418,27 @@ Los siguientes supuestos deben mantenerse verdaderos para que el plan de Fase 0 
 
 ## 7. Riesgos
 
-[Pendiente — Tarea 11]
+Riesgos identificados con probabilidad, impacto y mitigación. Los marcados
+*(plan.md §9)* vienen del plan técnico ya documentado por el equipo; los marcados
+*(PRD)* fueron identificados al redactar este documento y requieren validación
+del equipo en la próxima reunión técnica.
+
+| # | Riesgo | Prob | Impacto | Mitigación | Owner |
+|---|---|---|---|---|---|
+| R-01 *(plan.md §9)* | Cambio de bases CORFO/SERCOTEC sin aviso durante el lab | Alta | Alto | Pipeline de re-indexación semanal + revisión humana de diff | Cristian |
+| R-02 *(plan.md §9)* | Alucinación en consejo tributario | Media | Crítico | Toda respuesta normativa pasa por verificador con tool de cita; respuesta sin cita = bloqueada | Cristian |
+| R-03 *(plan.md §9)* | Costo Anthropic explota con escala | Media | Alto | Caching agresivo (>80 % hit), Haiku para clasificación, batch para reportes asíncronos | Felipe |
+| R-04 *(plan.md §9)* | WhatsApp Business API limita templates | Media | Medio | Mensajes iniciados por usuario no requieren template; usar templates solo en recordatorios push | Felipe |
+| R-05 *(plan.md §9)* | No conseguir entrevistas con microemprendedoras reales en 7 días | Alta | Medio | Plan B con datos sintéticos + 1 entrevista tipo "estrella" para el pitch | Anahi |
+| R-06 *(plan.md §9)* | Acusación de "competir con SERCOTEC" | Baja | Alto | Posicionar desde día 1 como **complementario**, buscar carta de apoyo SERCOTEC en Fase 1 | Jose |
+| R-07 *(PRD)* | Falla de Claude API durante el pitch en vivo | Media | Crítico | Fallback offline pre-grabado para los 2 casos demo principales | Felipe |
+| R-08 *(PRD)* | Latencia p95 > 4s rompe la experiencia de "WhatsApp normal" | Media | Alto | Caching + clasificación rápida en Haiku + tools optimizados | Felipe |
+| R-09 *(PRD)* | Otro equipo presenta una idea similar en inclusión financiera | Media | Medio | Diferenciador claro: "WhatsApp-first + multi-agente real con handoffs" | Jose |
+| R-10 *(PRD)* | Sobreestimación del alcance — 4 agentes no caben en 48h | Alta | Alto | Fase 0 explícita: solo `acompanante-informal`; otros 3 quedan en Fase 1 | Jose |
+| R-11 *(PRD)* | Falla de internet en Espacio Riesco durante el pitch | Baja | Crítico | Hotspot personal de respaldo + fallback pre-grabado | Felipe |
+| R-12 *(PRD)* | Pitch deck no transmite la narrativa en 5 minutos | Media | Crítico | Ensayo cronometrado con mentores el 5 de mayo | Jose |
+| R-13 *(PRD)* | Modelo freemium choca con expectativa de gratuidad total del lab | Media | Medio | Confirmar con organización antes del 5 de mayo; preparar narrativa "Free es indefinido para acompañamiento" | Jose |
+| R-14 *(PRD)* | Costo de cumplimiento Ley 19.628 + Ley 21.719 frena la demo | Baja | Medio | Implementar lo mínimo legal para Fase 0 (consentimiento + ARCO + encriptación); profundizar en Fase 1 con asesoría legal | Cristian |
 
 ---
 
