@@ -42,10 +42,11 @@ En Chile hay aproximadamente **1,08 millones de microemprendedores informales** 
 El siguiente diagrama sintetiza, etapa por etapa, los dolores arquetípicos del segmento informal y las instituciones-barrera que hoy operan como muro de contención. Cada dolor lleva el código del [run #06 de deep research](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) y una glosa que explica el arquetipo.
 
 ```mermaid
+%%{init: {'securityLevel': 'loose'}}%%
 flowchart LR
-    classDef pain fill:#fee2e2,stroke:#b91c1c,color:#7f1d1d
-    classDef barrier fill:#e5e5e5,stroke:#525252,color:#1f2937
-    classDef abandon fill:#fafafa,stroke:#737373,color:#404040
+    classDef pain fill:#991b1b,stroke:#fca5a5,color:#ffffff,stroke-width:2px
+    classDef barrier fill:#475569,stroke:#cbd5e1,color:#ffffff,stroke-width:2px
+    classDef abandon fill:#374151,stroke:#9ca3af,color:#f3f4f6,stroke-width:1px
 
     subgraph E1["1. Sueno"]
         D1A["Miedo SII E0-D2"]:::pain
@@ -176,11 +177,12 @@ El acompañamiento se entrega vía **cuatro agentes especializados por etapa del
 El siguiente diagrama mapea, etapa por etapa, **qué agente y qué tools** asume cada conjunto de dolores del journey AS-IS, y **sobre qué stack técnico** se ejecuta. Cada etapa cierra con el listado de dolores resueltos referenciados por su código (E0-D2, E1-D1, etc.), preservando la trazabilidad con el AS-IS de §1.1.
 
 ```mermaid
+%%{init: {'securityLevel': 'loose'}}%%
 flowchart LR
-    classDef agent fill:#e0e7ff,stroke:#3730a3,color:#1e1b4b
-    classDef tool fill:#dbeafe,stroke:#1e40af,color:#1e3a8a
-    classDef solved fill:#d1fae5,stroke:#065f46,color:#064e3b
-    classDef tech fill:#f5f5f5,stroke:#525252,color:#1f2937
+    classDef agent fill:#3730a3,stroke:#a5b4fc,color:#ffffff,stroke-width:2px
+    classDef tool fill:#1e40af,stroke:#93c5fd,color:#ffffff,stroke-width:2px
+    classDef solved fill:#065f46,stroke:#6ee7b7,color:#ffffff,stroke-width:2px
+    classDef tech fill:#475569,stroke:#cbd5e1,color:#ffffff,stroke-width:2px
 
     WA["WhatsApp Twilio"]:::tech
     WEB["Web Next.js"]:::tech
