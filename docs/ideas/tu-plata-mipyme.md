@@ -1,8 +1,9 @@
 ---
-title: "Idea: Tu Plata Mipyme — asistente regulatorio para microemprendedores"
-description: "Asistente que guía formalización SII + productos CORFO + simulación Pro-Pyme."
+title: "Idea: Tu Plata Mipyme — co-piloto freemium para microemprendedores"
+description: "Plataforma WhatsApp + Web con multi-agente IA que acompaña al microemprendedor por 4 etapas: del sueño a PYME. Freemium."
 autor: "Estrategia Literacy Regulatoria"
 fecha: 2026-04-29
+actualizado: 2026-04-30
 linea: inclusion-financiera
 estado: activa
 prioridad: alta
@@ -12,17 +13,20 @@ tags:
   - pyme
   - sii
   - corfo
+  - freemium
+  - multi-agente
+  - whatsapp
 ---
 
-# Idea: Tu Plata Mipyme — asistente regulatorio para microemprendedores informales
+# Idea: Tu Plata Mipyme — co-piloto freemium para microemprendedores
 
 <!-- AUTO-BANNER -->
-!!! info ":material-book-open-variant: Síntesis de fuentes externas"
-    Ficha de idea construida a partir del [PDF de estrategia](../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf) y/o el [Deep Research de Calibria](../assets/research/2026-04-29-deep-research-calibria.html). **Aún no validada por el equipo.**
+!!! success ":material-check-bold: Producido por el equipo"
+    Idea evolucionada el 2026-04-30 — pasa de "asistente regulatorio one-shot" a **plataforma freemium con journey por etapas y multi-agente**. Ver [plan de implementación](../especificaciones/tu-plata-mipyme-plan.md) y [definición canónica](../definiciones/tu-plata-mipyme.md). Origen: [PDF de estrategia](../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf) + [Deep Research de Calibria](../assets/research/2026-04-29-deep-research-calibria.html).
 
-> *Para una microemprendedora de feria que vende empanadas y no sabe si formalizar, Tu Plata Mipyme genera ruta paso-a-paso, identifica productos CORFO/FOGAPE para los que califica, simula utilidad bajo Pro-Pyme Transparente y le redacta una carta de presentación al banco.*
+> *Para el microemprendedor informal que sueña con crecer, Tu Plata Mipyme es un **co-piloto en WhatsApp + Web** con agentes IA especializados que lo acompañan etapa por etapa — gratis hasta que vale la pena pagar.*
 
-> :material-flag: **Plan C según la estrategia** ([PDF p. 7](../assets/research/2026-04-29-estrategia-literacy-regulatoria.pdf)) — *si el equipo tiene contacto con microemprendedores reales para entrevistar*.
+> :material-rocket-launch: **"Claude co-work para el teléfono"** — democratizar la asesoría de gestión a lo largo de todo el país, eliminando la dependencia de contador, OTEC o sucursal SERCOTEC.
 
 ## Problema
 
@@ -37,31 +41,61 @@ Si una microemprendedora puede **describir su negocio en español natural** ("ve
 
 ## Propuesta
 
-### Qué hace
+### Modelo: freemium con journey por etapas
 
-- **Recibe** descripción del negocio en español natural por WhatsApp o web.
-- Devuelve:
-    1. **Ruta de formalización** paso a paso (SII, Boleta Electrónica, régimen tributario).
-    2. **Productos CORFO/SERCOTEC/FOGAPE** para los que califica con cálculo de probabilidad.
-    3. **Simulación de utilidad** bajo Pro-Pyme Transparente (cuánto se queda vs régimen general).
-    4. **Carta de presentación a banco** generada como PDF.
+**4 etapas, 4 agentes IA especializados** que se pasan contexto entre sí:
+
+| Etapa | Quién | Tier | Agente |
+|---|---|---|---|
+| 1 — **Sueño** | Tiene una idea, no ha vendido | Free | `mentor-inicio` |
+| 2 — **Informal activo** | Vende sin formalizar (1,08 M en Chile) | Free | `acompanante-informal` |
+| 3 — **En formalización** | Decidió formalizar, está en trámite SII | Pro (~$5.000/mes) | `gestor-formalizacion` |
+| 4 — **PYME en crecimiento** | Formalizada, postula a subsidios | Plus (pago por evento) | `estratega-crecimiento` |
+
+> El detalle completo del journey, agentes, tools y handoffs está en el [plan de implementación](../especificaciones/tu-plata-mipyme-plan.md).
+
+### Qué hace (visión consolidada)
+
+- **WhatsApp como canal principal**, web como amplificador visual (formularios, links, descargas).
+- **Captura conversacional** del estado del negocio: ventas, gastos, ubicación, rubro.
+- **Recordatorios personalizados** que empujan hacia formalización sin presionar.
+- **Simulación Pro-Pyme** vs régimen general con cifras reales del usuario.
+- **Matcher de fondos CORFO/SERCOTEC/FOGAPE** con cálculo de probabilidad.
+- **Carta de presentación al banco** generada como PDF.
+- **Marketplace de asesores humanos** certificados, por región (post-MVP).
+- **Repositorio contable** versionado, propiedad del emprendedor (post-MVP).
+- **Telemetría agregada anónima** para reportes a SERCOTEC / Subsecretaría de Economía.
 
 ### Qué NO hace
 
-- No tramita la formalización por el usuario.
+- No tramita formalización por el usuario (lo guía).
 - No recomienda banco específico.
+- No otorga crédito ni firma declaraciones tributarias.
+- No sustituye a SERCOTEC ni a CORFO — los **complementa**.
+
+### Principios de diseño (no negociables)
+
+- **WhatsApp-first** (96 % penetración smartphone, >90 % WhatsApp).
+- **Lenguaje 6° básico** (PIAAC nacional bajo nivel 3).
+- **1 decisión por pantalla**, mensajes ≤ 160 caracteres.
+- **Funciona en 3G**, audio entrante/saliente como primera clase.
+- **Cita la fuente normativa siempre**.
 
 ## Stack y datos
 
-- **Modelo Claude:** Sonnet 4.6 con prompt caching del corpus regulatorio.
-- **Patrones agénticos:** contexto largo carga toda la Circular SII + reglamento CORFO + bases SERCOTEC, **Tool use** al SII para validar RUT y régimen actual, **Memory tool** para acompañar el proceso semanas después.
-- **Datasets:** circulares SII, bases CORFO/SERCOTEC/FOSIS abiertas, ENIF 2025.
+- **Modelos Claude:** Sonnet 4.6 (agentes principales) + Haiku 4.5 (clasificación e intención). Opus solo en revisión legal crítica.
+- **Patrones agénticos:** Agent SDK con un supervisor + 4 subagents especializados, prompt caching del corpus regulatorio (>80 % hit), memory tool sobre Postgres.
+- **Tools clave:** validar RUT en SII, simulador Pro-Pyme, matcher CORFO/SERCOTEC, generador de PDF.
+- **Canal:** WhatsApp Business API (Twilio en MVP) + Next.js para la web.
+- **Datasets:** circulares SII, bases CORFO/SERCOTEC/FOSIS abiertas, ENIF 2025, EME8 INE.
 
-## Demo imaginada
+## Demo imaginada (Fase 0 — pitch del lab)
 
-1. **Inicio:** mensaje WhatsApp: "vendo empanadas en feria, gano $600.000/mes, tengo 35 años, soy mujer".
-2. **Magia:** Tu Plata Mipyme responde con plan en 5 pasos + lista de 3 productos CORFO con probabilidad de aprobación + simulación: "si formalizas en Pro-Pyme Transparente, pagas $XX y te quedan $YY netos".
-3. **Cierre:** se muestra el PDF de carta al banco.
+1. **Mensaje 1 (usuario, WhatsApp):** *"vendo empanadas en feria de Quilicura, gano como 600 lucas al mes, tengo 35"*.
+2. **Respuesta inmediata (agente `acompanante-informal`):** saluda en chileno cercano, captura 2 datos más en mensajes cortos.
+3. **Output visual (web):** simulación Pro-Pyme — *"si formalizas, pagas $X y te quedan $Y netos"*. Botón: *"¿Te ayudo a dar el paso?"*
+4. **Handoff a `gestor-formalizacion` (paid):** muestra checklist SII en 3 pasos + genera PDF de carta al banco.
+5. **Cierre:** recordatorio agendado a 7 días — *"¿Cómo vas con el Inicio de Actividades?"*
 
 ## Scoring (criterios oficiales)
 
@@ -92,11 +126,18 @@ Si una microemprendedora puede **describir su negocio en español natural** ("ve
 
 ## Próximos pasos para validar
 
-- [ ] Hablar con **3-5 microemprendedores reales** (tener perfil de mujer 30-50 con dolor de formalización).
+- [ ] Hablar con **3-5 microemprendedoras reales** (perfil mujer 30-50, dolor de formalización).
 - [ ] Pedir contactos a SERCOTEC / Hogar de Cristo / Fondo Esperanza.
 - [ ] Spike: validar RUT en SII con tool use.
+- [ ] Cerrar **decisiones abiertas** del [plan de implementación §10](../especificaciones/tu-plata-mipyme-plan.md#10-decisiones-que-faltan-antes-de-cerrar-fase-0): cuenta WhatsApp Business para demo, presupuesto Anthropic, equipo y roles.
 
 ## Solapamiento
 
 - **No solapa** con Defensor / Letra Chica.
-- Posible **canal post-lab** distinto: CORFO / SERCOTEC / cooperativas.
+- Posible **canal post-lab** distinto: CORFO / SERCOTEC / cooperativas / Fondo Esperanza.
+
+## Documentos relacionados
+
+- [Plan de implementación completo](../especificaciones/tu-plata-mipyme-plan.md) — arquitectura, agentes, fases, KPIs.
+- [Definición canónica del producto](../definiciones/tu-plata-mipyme.md) — qué es, qué no es, segmentos.
+- [Glosario de términos nuevos](../definiciones/glosario.md#tu-plata-mipyme) — Pro-Pyme, FOGAPE, freemium, multi-agente.

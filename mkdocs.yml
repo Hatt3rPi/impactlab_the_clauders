@@ -180,6 +180,7 @@ nav:
       - Glosario: definiciones/glosario.md
       - Stakeholders: definiciones/stakeholders.md
       - Personas: definiciones/personas.md
+      - "Tu Plata Mipyme (producto)": definiciones/tu-plata-mipyme.md
   - Stack:
       - stack/index.md
       - Claude API: stack/claude-api.md
@@ -192,12 +193,14 @@ nav:
       - especificaciones/index.md
       - Arquitectura: especificaciones/arquitectura.md
       - Prototipo: especificaciones/prototipo.md
+      - "Plan Tu Plata Mipyme": especificaciones/tu-plata-mipyme-plan.md
       - ADRs:
           - especificaciones/adrs/index.md
           - Plantilla: especificaciones/adrs/_template.md
           - 0001 — Uso de ADRs: especificaciones/adrs/0001-uso-de-adrs.md
           - 0002 — Línea temática (Inclusión Financiera): especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md
           - 0003 — Plataforma web mobile-first: especificaciones/adrs/0003-plataforma-web-mobile-first.md
+          - "0004 — Tu Plata Mipyme: WhatsApp-first, freemium, multi-agente": especificaciones/adrs/0004-tu-plata-mipyme-whatsapp-first-freemium-multiagente.md
   - Reuniones:
       - reuniones/index.md
       - Plantilla: reuniones/_template.md

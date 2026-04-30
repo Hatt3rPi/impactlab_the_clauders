@@ -1,12 +1,14 @@
 ---
 title: "ADR 0003 — Plataforma: web mobile-first (no app nativa)"
-estado: "Aceptado"
+estado: "Parcialmente superado"
 fecha: 2026-04-29
+actualizado: 2026-04-30
 autor: "The Clauders (decisión de equipo en reunión kickoff)"
 tags:
   - adr
   - plataforma
   - frontend
+  - parcialmente-superado
 ---
 
 # ADR 0003 — Plataforma: web mobile-first (no app nativa)
@@ -14,6 +16,14 @@ tags:
 <!-- AUTO-BANNER -->
 !!! success ":material-check-bold: Producido por el equipo"
     Documento generado por el equipo The Clauders. Es fuente primaria para este tema.
+
+!!! warning ":material-alert-circle: Parcialmente superado por ADR 0004 (2026-04-30)"
+    El [ADR 0004](0004-tu-plata-mipyme-whatsapp-first-freemium-multiagente.md) decidió que **para el producto Tu Plata Mipyme el canal principal es WhatsApp**, no la web. Este ADR 0003 sigue vigente para:
+
+    - La **wiki del equipo** (este sitio).
+    - **Productos de consulta puntual** (donde el usuario busca y encuentra una vez).
+
+    Para productos de **acompañamiento sostenido** (recurrente, asincrónico) el canal principal es WhatsApp y la web pasa a rol de amplificador (landing pública, tablero visual, descargas). Ver ADR 0004 §"Decisión 1" y §"Alternativa A descartada".
 
 ## Contexto
 
@@ -94,4 +104,5 @@ Requisitos derivados:
 ## Relacionados
 
 - ADR 0002 (Línea temática) — independiente, aplica con cualquier línea.
+- **Superado parcialmente por:** [ADR 0004 — Tu Plata Mipyme: WhatsApp-first, freemium y multi-agente](0004-tu-plata-mipyme-whatsapp-first-freemium-multiagente.md).
 - ADR futuro pendiente — stack frontend concreto (Astro u otro).
