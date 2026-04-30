@@ -125,23 +125,113 @@ El acompañamiento se entrega vía **cuatro agentes especializados por etapa del
 
 ### 3.1 Fase 0 — Alcance del demo del lab (in scope)
 
-[Pendiente — Tarea 7]
+La Fase 0 cubre los 7 días del lab (cierre 7 de mayo) y aplica el principio *un agente, una etapa, un flujo dorado*. El alcance funcional es deliberadamente reducido para llegar al pitch con un demo end-to-end que funciona, no con una superficie amplia a medio terminar *(Fuente: [plan.md §7](plan.md))*.
+
+- **Bot WhatsApp con un único agente operativo: `acompanante-informal`** (Etapa 2 del journey — el de mayor universo: 1,08 M de microemprendedores informales). El resto de los agentes existen como diseño documentado pero no se construyen en Fase 0 *(Fuente: [plan.md §7](plan.md))*.
+- **1 tool funcional:** simulador Pro-Pyme básico (régimen tributario simplificado para microempresarios, con disclaimer "no te calculo, te enseño lo que debes saber") *(Fuente: [plan.md §7](plan.md))*.
+- **1 tool de generación:** carta de presentación a banco en PDF descargable, como output diferenciador del flujo dorado *(Fuente: [plan.md §7](plan.md))*.
+- **Memoria persistente entre sesiones** (Postgres + memory tool del Agent SDK) que materializa el expediente del emprendedor para que la conversación retome el contexto día a día *(Fuente: [plan.md §7](plan.md))*.
+- **Telemetría anónima básica** (eventos opt-in, sin PII) para medir flujo dorado y latencia p95 *(Fuente: [plan.md §7](plan.md))*.
+- **Web landing con embed del chat** para usar como soporte visual durante el pitch (mitigación del riesgo "demo en vivo de WhatsApp es menos espectacular que UI rica") *(Fuente: [plan.md §7](plan.md))*.
+- **Demo end-to-end de 90 segundos** con script ensayado al menos 2 veces antes del pitch del 7 de mayo *(Fuente: [plan.md §7](plan.md))*.
 
 ### 3.2 Usuarios y stakeholders in scope
 
-[Pendiente — Tarea 7]
+**Usuario primario para Fase 0:** mujer microemprendedora de **30 a 50 años, NSE D-E, regiones del sur de Chile** — segmento priorizado por concentración del dolor (**Araucanía 38 % de informalidad**, **59 % de los informales son mujeres** según INE EME8) *(Fuente: [que-es.md](que-es.md))*. El demo se ensaya con un caso humano nombrado en el sur (microemprendedora de mermeladas en Pucón) para anclar la narrativa del pitch *(Fuente: [estrategia de pitch](../equipo/estrategia-pitch-lab.md))*.
+
+**Stakeholders del demo (audiencia del 7 de mayo):**
+
+- **Equipo del proyecto** — Felipe Abarca (AI Builder + Tech lead), Jose Foncea (PM + Comercial/Producto), Cristian Astorga (AI Builder de apoyo), Anahi Gonzalez (UX/UI + Vibecoder) *(Fuente: [reunión 29-abr](../reuniones/2026-04-29-definicion-problema-setup.md))*.
+- **Jurado y panel evaluador** del lab — evalúa con los 5 criterios oficiales (Impacto cívico 25 %, Uso responsable de datos 20 %, Claude & Agentic Thinking 25 %, Funcionalidad 15 %, Calidad del pitch 15 %) más bonus +5 puntos por *agentic thinking* excepcional *(Fuente: [criterios-evaluacion.md](../competencia/criterios-evaluacion.md))*.
+- **Mentores** del lab disponibles durante los 2 días del venue para feedback técnico y de pitch *(Fuente: [timeline.md](../competencia/timeline.md))*.
+- **Organizadores** — Anthropic, BenditaIA, FinteChile (organización del Claude Impact Lab Chile 2026) *(Fuente: [reglas](../competencia/reglas.md))*.
+
+**Stakeholders del producto post-lab (Fases 1-3, contexto):**
+
+- **Microemprendedores en las 4 etapas del journey** — soñador con idea (E1), informal activo (E2 — foco Fase 0), recién formalizado (E3), PYME que postula a subsidio (E4) *(Fuente: [ADR-0004](especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md))*.
+- **SII, CORFO, SERCOTEC, CMF, SERNAC** — receptores institucionales de reportes anonimizados sin PII a partir de Fase 2; fuentes de datos oficiales preferidas por las reglas del lab *(Fuente: [reglas](../competencia/reglas.md))*.
+- **ONGs partner para reclutamiento del piloto** — Fondo Esperanza y Hogar de Cristo, contempladas para reclutar 50-100 emprendedoras reales en Fase 1 *(Fuente: [plan.md §7](plan.md))*.
+- **Asesores humanos certificados** — contadores y abogados regionales que entrarán al marketplace en Fase 2 con comisión 10-15 % por derivación *(Fuente: [que-es.md](que-es.md))*.
 
 ### 3.3 Sistemas y datasets in scope
 
-[Pendiente — Tarea 7]
+**Stack obligatorio del lab.** Las reglas del Claude Impact Lab Chile 2026 fijan: uso de Claude API obligatorio (es lo que evalúan en el criterio "Claude & Agentic Thinking"), datos preferentemente desde fuentes públicas (CMF, SII, SERNAC) o datasets provistos por la organización, y no se exige un lenguaje o framework específico. La Fase 0 además se apoya en Claude Code, Agent SDK y MCPs para capturar el bonus +5 puntos por *agentic thinking* *(Fuente: [reglas](../competencia/reglas.md))*.
+
+**Stack del producto Fase 0.** La elección concreta para los 7 días del lab es:
+
+- **WhatsApp gateway:** Twilio (más rápido para prototipo; migración a Meta WhatsApp Business Cloud API directa diferida a ADR 0005) *(Fuente: [plan.md §4.2](plan.md))*.
+- **API gateway / orquestación:** FastAPI (Python), mismo lenguaje que Agent SDK, deploy fácil en Cloud Run *(Fuente: [plan.md §4.2](plan.md))*.
+- **Modelos:** Claude Sonnet 4.6 como motor de conversación y razonamiento; Claude Haiku 4.5 como fallback para clasificación de intención y respuestas FAQ *(Fuente: [plan.md §4.2](plan.md))*.
+- **Memoria y datos:** Postgres + memory tool del Agent SDK para el expediente del emprendedor *(Fuente: [plan.md §4.2](plan.md))*.
+- **Web:** Next.js 14 (App Router) + Tailwind para landing con embed del chat (Astro vs Next.js sigue abierto en ADR 0006 pendiente) *(Fuente: [plan.md §4.2](plan.md))*.
+- **Hosting:** Google Cloud Run para la API y Vercel/Netlify para la web; ambos pay-per-use con escala a 0 entre usos *(Fuente: [plan.md §4.2](plan.md))*.
+
+**Datasets oficiales del lab.** Reunión 30-abr aclara que los organizadores curan APIs/MCPs sobre fuentes legales/regulatorias y esperan que conectemos un MCP de Claude a sus fuentes *(Fuente: [reglas](../competencia/reglas.md))*. Para Tu Plata Mipyme aplican:
+
+- **SII (crítico):** F29, F22, F4415 inicio actividades, Pro-Pyme Transparente, RCV, Carpeta Tributaria, e-Boleta. Es la fuente regulatoria principal del flujo dorado y del simulador Pro-Pyme *(Fuente: [plan.md](plan.md))*.
+- **SERNAC (parcial, tangencial):** SERNAC Financiero como referencia para reclamos de cobranza en el journey post-MVP *(Fuente: [reglas](../competencia/reglas.md))*.
+- **CMF (opcional, agregados):** educación financiera básica y Open Banking Ley 21.521 quedan diferidos a Fase 3; en Fase 0 solo se usan agregados públicos sin integración transaccional *(Fuente: [plan.md](plan.md))*.
 
 ### 3.4 Roadmap post-lab (Fases 1-3)
 
-[Pendiente — Tarea 7]
+El roadmap post-lab está definido a alto nivel en `plan.md` y será refinado durante la fase de Diseño de Solución (post-Tollgate 1) y la **aceleración AI Fintech Sandbox** (60 días desde junio 2026 para los equipos ganadores del lab) *(Fuente: [timeline.md](../competencia/timeline.md))*.
+
+| Fase | Ventana | Alcance |
+|---|---|---|
+| **1 — Piloto cerrado** | mes 1-3 post-lab | Los 4 agentes operativos (`mentor-inicio`, `acompanante-informal`, `gestor-formalizacion`, `estratega-crecimiento`) · MCP SII real (validar RUT + estado) · 50-100 emprendedoras reclutadas vía Fondo Esperanza / Hogar de Cristo · marco ARCO/privacidad pulido con asesoría legal |
+| **2 — Apertura** | mes 4-9 | Tier Pro activado (Webpay / Mercado Pago) · marketplace de asesores humanos en 3 regiones piloto (RM + 2) · reportes anonimizados a SERCOTEC |
+| **3 — Crecimiento** | mes 10+ | Repositorio contable Git-like · Tier Plus (postulación asistida) generalizado · integraciones bancarias vía Open Finance (Ley 21.521) |
+
+*(Fuente: [plan.md §7](plan.md))*
 
 ### 3.5 Out of scope (exclusiones explícitas)
 
-[Pendiente — Tarea 7]
+Esta sección lista lo que **no** entra en el alcance — separado en (a) funcionalidades fuera del demo del lab pero en roadmap post-lab, (b) ideas no priorizadas del Tollgate 1 que siguen vigentes como referencia o roadmap, y (c) exclusiones de producto y temáticas que se mantienen fuera de alcance de forma permanente.
+
+#### a) Funcionalidades fuera del demo del lab (pero en roadmap)
+
+- **Los 3 agentes que no son `acompanante-informal`** (`mentor-inicio`, `gestor-formalizacion`, `estratega-crecimiento`) — diseñados y documentados, pero no construidos en Fase 0 *(Fuente: [ADR-0004](especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md))*.
+- **Cobro Tier Pro/Plus.** La lógica freemium queda implementada conceptualmente pero **sin pasarela de pago activa** en Fase 0 *(Fuente: [plan.md §7](plan.md))*.
+- **Marketplace de asesores humanos** (contadores y abogados certificados con comisión 10-15 %) — se activa en Fase 2 *(Fuente: [plan.md §7](plan.md))*.
+- **Repositorio contable Git-like** (visión post-MVP de Fase 3) *(Fuente: [plan.md §7](plan.md))*.
+- **TTS y Whisper de salida.** Fase 0 = solo texto. La voz saliente vía ElevenLabs y el audio entrante vía Whisper quedan diferidos *(Fuente: [plan.md §4.2](plan.md))*.
+
+#### b) Ideas no priorizadas del Tollgate 1
+
+Las siguientes 24 ideas evaluadas en el catálogo del equipo NO son parte del alcance de Tu Plata Mipyme. Siguen vigentes como referencia o roadmap post-lab; sus fichas individuales viven en `docs/competencia/ideas-evaluadas/`. *(Fuente: [ideas-evaluadas/index.md](../competencia/ideas-evaluadas/index.md))*
+
+- [agua-comunitaria-apr](../competencia/ideas-evaluadas/agua-comunitaria-apr.md)
+- [antiestafa-pillo](../competencia/ideas-evaluadas/antiestafa-pillo.md)
+- [confiaconmigo-migrantes](../competencia/ideas-evaluadas/confiaconmigo-migrantes.md)
+- [cosecha-justa-temporeros](../competencia/ideas-evaluadas/cosecha-justa-temporeros.md)
+- [cuidaderechos-cuidadoras](../competencia/ideas-evaluadas/cuidaderechos-cuidadoras.md)
+- [defensor-dicom](../competencia/ideas-evaluadas/defensor-dicom.md)
+- [emancipia-egresados-sename](../competencia/ideas-evaluadas/emancipia-egresados-sename.md)
+- [feria-legal-ambulantes](../competencia/ideas-evaluadas/feria-legal-ambulantes.md)
+- [ges-claim-salud-retroactiva](../competencia/ideas-evaluadas/ges-claim-salud-retroactiva.md)
+- [legado-claro-herencias](../competencia/ideas-evaluadas/legado-claro-herencias.md)
+- [letra-chica-cae](../competencia/ideas-evaluadas/letra-chica-cae.md)
+- [mi-pension](../competencia/ideas-evaluadas/mi-pension.md)
+- [mi-plan-b-sobreendeudamiento](../competencia/ideas-evaluadas/mi-plan-b-sobreendeudamiento.md)
+- [mis-datos-arcop](../competencia/ideas-evaluadas/mis-datos-arcop.md)
+- [open-finance-explainer](../competencia/ideas-evaluadas/open-finance-explainer.md)
+- [re-inicia-quiebra-personal](../competencia/ideas-evaluadas/re-inicia-quiebra-personal.md)
+- [rescate-ciudadano-acreencias](../competencia/ideas-evaluadas/rescate-ciudadano-acreencias.md)
+- [respiro-cae-desertores](../competencia/ideas-evaluadas/respiro-cae-desertores.md)
+- [retencion-alimentos](../competencia/ideas-evaluadas/retencion-alimentos.md)
+- [rutajusta-ley-uber](../competencia/ideas-evaluadas/rutajusta-ley-uber.md)
+- [sabiduria-ciudadana](../competencia/ideas-evaluadas/sabiduria-ciudadana.md)
+- [talento-tributa-creadores](../competencia/ideas-evaluadas/talento-tributa-creadores.md)
+- [viuda-protegida-pension](../competencia/ideas-evaluadas/viuda-protegida-pension.md)
+- [voz-financiera-accesibilidad](../competencia/ideas-evaluadas/voz-financiera-accesibilidad.md)
+
+#### c) Exclusiones de producto y temáticas
+
+- **No recomendamos bancos ni productos crediticios específicos.** Es un anti-objetivo del producto: orientamos y derivamos pero no comparamos instituciones financieras *(Fuente: [ADR-0004](especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md))*.
+- **No sustituimos asesoría profesional cuando el caso lo requiere.** El copiloto enseña y orienta; no firma declaraciones, no presenta F29, no representa en disputas, no emite dictámenes legales — esos casos se derivan al asesor humano del marketplace o al profesional certificado correspondiente *(Fuente: [plan.md §1.3](plan.md))*.
+- **No cargamos declaraciones tributarias en nombre del usuario** (no presentamos F29 ni F22 en su lugar; lo acompañamos a llenarlos) *(Fuente: [plan.md §1.3](plan.md))*.
+- **No vendemos datos personales.** Los datos agregados sin PII pueden compartirse con SERCOTEC, academia o reguladores bajo opt-in explícito; los datos personales del usuario nunca se venden *(Fuente: [ADR-0004](especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md))*.
+- **Líneas temáticas del lab no elegidas.** **Ciberseguridad ciudadana** y **Protección de datos personales** son las otras dos líneas oficiales del lab; quedan fuera del alcance de Tu Plata Mipyme. La línea elegida es **Inclusión Financiera** *(Fuente: [ADR-0002](especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md))*.
 
 ---
 
