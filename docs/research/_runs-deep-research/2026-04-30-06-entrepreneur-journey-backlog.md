@@ -536,367 +536,377 @@ Para que **Tu Plata Mipyme** sea un Copiloto real y no un mero buscador, necesit
 
 Lista exhaustiva de 60 ítems en formato Markdown estructurado, categorizado por etapas.
 
+!!! note ":material-check-decagram: Decisiones del equipo (30-abr-2026)"
+    Cada feature lleva el estado de validación tomado por el equipo en la [reunión del 30-abr-2026](../../reuniones/2026-04-30-revision-dolores-backlog.md):
+
+    - ✅ **Incluir** — feature aprobada para el alcance del producto.
+    - ❌ **Excluir** — descartada (fuera de alcance, redundante con otros productos, o cae en otra línea como ciberseguridad).
+    - 💡 **Guiño / futuro** — no es feature priorizada pero se menciona como logro/checklist al usuario avanzado.
+    - ⏳ **Pendiente** — el equipo aún no la ha revisado (E3 quedó incompleto, E4 y E5 sin revisar).
+
+    Versión curada del backlog (sin el detalle del agente, con escenarios de usuario): [Backlog Tu Plata Mipyme](../../ideas/backlog-tu-plata-mipyme.md).
+
 ### E0: Idea / Sueño
-- [E0-EMOC-01] "El Espejo Mágico": Test vocacional conversacional (10 preguntas) para identificar el arquetipo de emprendedor.
+- ❌ [E0-EMOC-01] "El Espejo Mágico": Test vocacional conversacional (10 preguntas) para identificar el arquetipo de emprendedor.
   - Dolor: Autopercepción de "no soy empresaria" y falta de validación externa.
   - Servicio que apalanca: Modelos psicológicos adaptados a interfaz WhatsApp.
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E0-EMOC-02] Mata-Mitos SII: Interacción ("Verdadero/Falso") para desmitificar los miedos a Impuestos Internos.
+- ✅ [E0-EMOC-02] Mata-Mitos SII: Interacción ("Verdadero/Falso") para desmitificar los miedos a Impuestos Internos.
   - Dolor: Miedo irracional al Estado y sus fiscalizaciones tempranas.
   - Servicio que apalanca: Información pública SII traducida a NLP.
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E0-FIN-03] Calculadora de "Sueldo Justo": IA que calcula el valor hora basado en costos de vida (Canasta Casen).
+- ✅ [E0-FIN-03] Calculadora de "Sueldo Justo": IA que calcula el valor hora basado en costos de vida (Canasta Casen).
   - Dolor: Desconocimiento del valor de su propio tiempo (autoexplotación).
   - Servicio que apalanca: Datos macroeconómicos (Casen/INE).
   - Tier sugerido: Free
   - Complejidad: M
 
-- [E0-OPER-04] Pizarrón de Costeo de Producto: Agente interactivo que pide costos de insumos, horas y gastos generales para calcular margen.
+- ✅ [E0-OPER-04] Pizarrón de Costeo de Producto: Agente interactivo que pide costos de insumos, horas y gastos generales para calcular margen.
   - Dolor: Fijación errónea de precios copiando a la competencia ciegamente.
   - Servicio que apalanca: IA de cálculo matemático simple.
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E0-CRECE-05] Validador de Idea Express: Búsqueda rápida de tendencias hiperlocales sobre la idea propuesta.
+- ❌ [E0-CRECE-05] Validador de Idea Express: Búsqueda rápida de tendencias hiperlocales sobre la idea propuesta.
   - Dolor: Parálisis analítica sobre viabilidad comercial en el barrio.
   - Servicio que apalanca: Google Trends API / RAG.
   - Tier sugerido: Pro
   - Complejidad: M
 
-- [E0-RIESGO-06] Simulador de Multas Realista: Educación directa sobre las consecuencias económicas reales de ser decomisado.
+- ✅ [E0-RIESGO-06] Simulador de Multas Realista: Educación directa sobre las consecuencias económicas reales de ser decomisado.
   - Dolor: Ignorancia sobre los costos de perder inventario vs formalizar.
   - Servicio que apalanca: Datos de rentas municipales (Ley de Rentas).
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E0-EMOC-07] Comunidad de Pares (Audio-Foro): IA distribuye testimonios cortos (audio) de mujeres exitosas del sur.
+- ⏳ [E0-EMOC-07] Comunidad de Pares (Audio-Foro): IA distribuye testimonios cortos (audio) de mujeres exitosas del sur.
   - Dolor: Soledad de la emprendedora rural.
   - Servicio que apalanca: Base de datos propia comunitaria.
   - Tier sugerido: Free
   - Complejidad: M
 
-- [E0-OPER-08] Separador Financiero Conceptual: Juego educativo sobre por qué no mezclar la CuentaRUT personal.
+- ✅ [E0-OPER-08] Separador Financiero Conceptual: Juego educativo sobre por qué no mezclar la CuentaRUT personal.
   - Dolor: Caos financiero domiciliario-comercial.
   - Servicio que apalanca: Educación financiera básica (CMF).
   - Tier sugerido: Free
   - Complejidad: S
 
 ### E1: Validación Informal
-- [E1-OPER-09] Caja Zapatos Digital (NLP): Registro de ingresos/gastos diarios por notas de voz ("vendí 2 mermeladas a 5 lucas").
+- ✅ [E1-OPER-09] Caja Zapatos Digital (NLP): Registro de ingresos/gastos diarios por notas de voz ("vendí 2 mermeladas a 5 lucas").
   - Dolor: Crecimiento invisible y ceguera financiera por falta de registros.
   - Servicio que apalanca: Base de datos estructurada propia generada vía NLP.
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E1-OPER-10] Alerta de Tope CuentaRUT: Conexión bancaria que avisa cuando los abonos mensuales superan umbrales de riesgo tributario o límites del banco.
+- ✅ [E1-OPER-10] Alerta de Tope CuentaRUT: Conexión bancaria que avisa cuando los abonos mensuales superan umbrales de riesgo tributario o límites del banco.
   - Dolor: Bloqueo de cuentas personales o alarmas de lavado de activos/evasión.
   - Servicio que apalanca: Fintoc/Prometeo (Open Banking).
   - Tier sugerido: Pro
   - Complejidad: M
 
-- [E1-FIN-11] Generador de Link de Pago Rápido: Creación instantánea de links para cobrar con tarjeta desde WhatsApp.
+- ⏳ [E1-FIN-11] Generador de Link de Pago Rápido: Creación instantánea de links para cobrar con tarjeta desde WhatsApp.
   - Dolor: Alta fricción de cobro y pérdida de ventas a clientes sin efectivo/transferencia.
   - Servicio que apalanca: API Mercado Pago / Flow.
   - Tier sugerido: Free (monetiza la pasarela).
   - Complejidad: M
 
-- [E1-RIESGO-12] Botón del Pánico Fiscalizador: Flujo de emergencia si llega inspección, dictando derechos y qué firmar.
+- ❌ [E1-RIESGO-12] Botón del Pánico Fiscalizador: Flujo de emergencia si llega inspección, dictando derechos y qué firmar.
   - Dolor: Desprotección jurídica ante decomisos y multas inminentes.
   - Servicio que apalanca: Base de leyes municipales y carabineros.
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E1-CRECE-13] Catálogo Web Instantáneo: Generación de una URL simple con foto y precios extraídos de la conversación.
+- ⏳ [E1-CRECE-13] Catálogo Web Instantáneo: Generación de una URL simple con foto y precios extraídos de la conversación.
   - Dolor: Desgaste mandando fotos individuales a clientes por WhatsApp.
   - Servicio que apalanca: Cloud storage propio + UI web básica.
   - Tier sugerido: Pro
   - Complejidad: M
 
-- [E1-OPER-14] Emisor de Cotizaciones Formales/Comprobantes Internos: Genera un PDF de comprobante de venta o cotización con un *Disclaimer Legal Estricto* ("Documento no válido como boleta SII"). **Riesgo y mitigación:** *El sistema IA y la empresa creadora incurrirían en riesgo legal (facilitación de evasión tributaria) si emitiera documentos similares a facturas falsas. Por ende, todo PDF debe tener una marca de agua ineludible.*
+- ⏳ [E1-OPER-14] Emisor de Cotizaciones Formales/Comprobantes Internos: Genera un PDF de comprobante de venta o cotización con un *Disclaimer Legal Estricto* ("Documento no válido como boleta SII"). **Riesgo y mitigación:** *El sistema IA y la empresa creadora incurrirían en riesgo legal (facilitación de evasión tributaria) si emitiera documentos similares a facturas falsas. Por ende, todo PDF debe tener una marca de agua ineludible.*
   - Dolor: Necesidad de profesionalizar la entrega a un cliente informal sin acceso a e-Boleta.
   - Servicio que apalanca: Generador PDF dinámico.
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E1-EMOC-15] Reporte de Pérdida B2B: Análisis mensual indicando "Cuánto dinero dejaste de ganar por no dar factura".
+- ✅ [E1-EMOC-15] Reporte de Pérdida B2B: Análisis mensual indicando "Cuánto dinero dejaste de ganar por no dar factura".
   - Dolor: Imposibilidad de vender a empresas medianas/grandes por informalidad.
   - Servicio que apalanca: Nudging conductual / IA analítica.
   - Tier sugerido: Pro
   - Complejidad: S
 
-- [E1-OPER-16] Caza-Estafas Visual (OCR): Análisis de comprobantes de transferencia (pantallazos) detectando pixelado, fechas o fuentes tipográficas alteradas.
+- ❌ [E1-OPER-16] Caza-Estafas Visual (OCR): Análisis de comprobantes de transferencia (pantallazos) detectando pixelado, fechas o fuentes tipográficas alteradas.
   - Dolor: Epidemia de estafas en el comercio de barrio por pantallazos falsos (MACH/BancoEstado).
   - Servicio que apalanca: Vision AI (Claude 3.5 Sonnet / OCR).
   - Tier sugerido: Pro
   - Complejidad: L
 
 ### E2: Formalización
-- [E2-FORM-17] Triage Jurídico MEF vs EIRL vs SpA: Árbol de decisión rápido para escoger estructura.
+- ✅ [E2-FORM-17] Triage Jurídico MEF vs EIRL vs SpA: Árbol de decisión rápido para escoger estructura.
   - Dolor: Elección equivocada de empresa que choca con planes reguladores a futuro.
   - Servicio que apalanca: Lógica legal Ley 19.749 y RES.
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E2-FORM-18] Traductor de Tu Empresa en Un Día: Acompañamiento donde usuaria manda foto de la pantalla web que no entiende y el bot explica el campo.
+- ✅ [E2-FORM-18] Traductor de Tu Empresa en Un Día: Acompañamiento donde usuaria manda foto de la pantalla web que no entiende y el bot explica el campo.
   - Dolor: 35-40% de abandonos por jerga incomprensible (Ej. "Objeto social").
   - Servicio que apalanca: Vision AI sobre portal web del Ministerio de Economía `[cite: 9]`.
   - Tier sugerido: Free
   - Complejidad: M
 
-- [E2-FORM-19] Redactor de Objeto Social Amplio: Dictas "hago pan" y redacta un párrafo legal blindado.
+- ✅ [E2-FORM-19] Redactor de Objeto Social Amplio: Dictas "hago pan" y redacta un párrafo legal blindado.
   - Dolor: Bloqueo de futuras líneas de negocio por restricción en estatutos.
   - Servicio que apalanca: LLM generación de textos legales.
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E2-FORM-20] Buscador de Giros SII (Diccionario Inverso): Match entre "vendo ropa" y el código numérico técnico del SII.
+- ✅ [E2-FORM-20] Buscador de Giros SII (Diccionario Inverso): Match entre "vendo ropa" y el código numérico técnico del SII.
   - Dolor: Errores catastróficos de clasificación que impiden patente.
   - Servicio que apalanca: RAG base de datos oficial de actividades SII.
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E2-FORM-21] Acompañamiento Inicio de Actividades (F4415): Guía paso a paso para activarse tributariamente en SII.
+- ✅ [E2-FORM-21] Acompañamiento Inicio de Actividades (F4415): Guía paso a paso para activarse tributariamente en SII.
   - Dolor: Creer que crear empresa en RES habilita automáticamente para vender `[cite: 10]`.
   - Servicio que apalanca: Portal sii.cl `[cite: 10]`.
   - Tier sugerido: Free
   - Complejidad: M
 
-- [E2-FORM-22] Búsqueda Fonética INAPI: Chequeo expreso para evitar plagio accidental.
+- 💡 [E2-FORM-22] Búsqueda Fonética INAPI: Chequeo expreso para evitar plagio accidental.
   - Dolor: Perder plata en marca, publicidad y tasas por choque de nombres.
   - Servicio que apalanca: Web scraping / API INAPI.
   - Tier sugerido: Pro
   - Complejidad: M
 
-- [E2-FORM-23] Asesor de Domicilio Tributario: Guía de acreditación (contrato vs avalúo vs virtual).
+- ✅ [E2-FORM-23] Asesor de Domicilio Tributario: Guía de acreditación (contrato vs avalúo vs virtual).
   - Dolor: Rechazo del SII por papeles inmobiliarios mal notariados o sin rol.
   - Servicio que apalanca: Conexión a portales de Oficinas Virtuales.
   - Tier sugerido: Free / Pro
   - Complejidad: M
 
-- [E2-FORM-24] Handoff a Contador Pyme: Derivación y agendamiento 1:1 con un humano si el trámite colapsa.
+- ✅ [E2-FORM-24] Handoff a Contador Pyme: Derivación y agendamiento 1:1 con un humano si el trámite colapsa.
   - Dolor: Casos borde técnicos imposibles de resolver para un emprendedor sin estudios.
   - Servicio que apalanca: Marketplace propio de expertos auditados.
   - Tier sugerido: Marketplace (fee).
   - Complejidad: M
 
-- [E2-FORM-25] Simulador de Gastos de Formalización: Estimación en CLP de firma electrónica, notario y capital mínimo.
+- ✅ [E2-FORM-25] Simulador de Gastos de Formalización: Estimación en CLP de firma electrónica, notario y capital mínimo.
   - Dolor: Sorpresa financiera en medio del proceso que desmotiva a continuar.
   - Servicio que apalanca: Calculadora interna de costos registrales.
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E2-FORM-26] Pre-chequeo SEREMI Alimentos: Checklist higiénico y burocrático previo a pedir hora.
+- ✅ [E2-FORM-26] Pre-chequeo SEREMI Alimentos: Checklist higiénico y burocrático previo a pedir hora.
   - Dolor: Rechazo recurrente del SEREMI de Salud por faltas arquitectónicas mínimas.
   - Servicio que apalanca: Normativa Minsal / AS Digital.
   - Tier sugerido: Pro
   - Complejidad: M
 
-- [E2-FORM-27] Asesor de Patentes Municipales: Buscador de normativas zonales según la municipalidad específica.
+- ✅ [E2-FORM-27] Asesor de Patentes Municipales: Buscador de normativas zonales según la municipalidad específica.
   - Dolor: Falta de transparencia en regulaciones comunales arcaicas.
   - Servicio que apalanca: Base RAG de ordenanzas municipales.
   - Tier sugerido: Plus
   - Complejidad: L
 
-- [E2-FORM-28] Orientador de Firmas Electrónicas: Instrucción clara de cuál comprar (evitando hardware caro).
+- ✅ [E2-FORM-28] Orientador de Firmas Electrónicas: Instrucción clara de cuál comprar (evitando hardware caro).
   - Dolor: Compra errónea de Token Avanzado para trámite de firma simple.
   - Servicio que apalanca: Empresas proveedoras E-Cert / Acepta `[cite: 9]`.
   - Tier sugerido: Free
   - Complejidad: S
 
 ### E3: Operación Formal
-- [E3-OPER-29] Facturador WhatsApp ("Pana/ApiGateway"): Orden natural ("Factura 50 mil al RUT X") y emite PDF `[cite: 2, 19]`.
+- ❌ [E3-OPER-29] Facturador WhatsApp ("Pana/ApiGateway"): Orden natural ("Factura 50 mil al RUT X") y emite PDF `[cite: 2, 19]`.
   - Dolor: Interfaz tosca y poco móvil del SII Mipyme, que impide facturar en la calle.
   - Servicio que apalanca: PFX + Integración ApiGateway / SII Mipyme `[cite: 2]`.
   - Tier sugerido: Pro
   - Complejidad: L
 
-- [E3-OPER-30] Emisor de e-Boletas exprés: Flujo rápido para emisión diaria de comprobantes de ventas retail.
+- ❌ [E3-OPER-30] Emisor de e-Boletas exprés: Flujo rápido para emisión diaria de comprobantes de ventas retail.
   - Dolor: Alta fricción con la aplicación actual e-Boleta del Estado.
   - Servicio que apalanca: SII e-Boleta API / PFX.
   - Tier sugerido: Pro
   - Complejidad: L
 
-- [E3-OPER-31] Recordatorio Empático F29: Notificación "push" en WhatsApp días previos al vencimiento.
+- ✅ [E3-OPER-31] Recordatorio Empático F29: Notificación "push" en WhatsApp días previos al vencimiento.
   - Dolor: Olvido de declaración por estar operando la pyme; multas automáticas.
   - Servicio que apalanca: Calendario Tributario SII.
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E3-OPER-32] Declarador "Sin Movimiento" (F29 cero): Guía para despachar rápido un mes sin ventas.
+- ⏳ [E3-OPER-32] Declarador "Sin Movimiento" (F29 cero): Guía para despachar rápido un mes sin ventas.
   - Dolor: Acumulación irracional de multas porque el negocio no vendió y "no hizo nada".
   - Servicio que apalanca: SII Portal.
   - Tier sugerido: Free
   - Complejidad: M
 
-- [E3-FIN-33] Calculador Boleta Honorarios (Líquido a Bruto): Respuesta instantánea para saber el monto bruto de una retención.
+- ⏳ [E3-FIN-33] Calculador Boleta Honorarios (Líquido a Bruto): Respuesta instantánea para saber el monto bruto de una retención.
   - Dolor: Confusión aritmética de la pyme al contratar talento esporádico (freelance).
   - Servicio que apalanca: Lógica SII retenciones 2024 (13.75%).
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E3-OPER-34] Monitor de Compras RCV: Aviso de facturas recibidas de proveedores cargadas al RUT de la empresa.
+- ⏳ [E3-OPER-34] Monitor de Compras RCV: Aviso de facturas recibidas de proveedores cargadas al RUT de la empresa.
   - Dolor: Facturas sorpresa no reconocidas a su RUT (posible fraude).
   - Servicio que apalanca: RCV del SII vía web scraping autorizado PFX `[cite: 2]`.
   - Tier sugerido: Plus
   - Complejidad: L
 
-- [E3-RIESGO-35] Traductor de Notificaciones (Correos Rojos) SII: Usuario sube captura del correo y la IA explica su gravedad en lenguaje coloquial.
+- ⏳ [E3-RIESGO-35] Traductor de Notificaciones (Correos Rojos) SII: Usuario sube captura del correo y la IA explica su gravedad en lenguaje coloquial.
   - Dolor: Pánico ante la terminología fiscalizante del Servicio.
   - Servicio que apalanca: Vision AI + RAG tributario.
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E3-FIN-36] Simulador de Pro-Pyme Transparente: Proyección del IGC personal para la dueña del negocio.
+- ⏳ [E3-FIN-36] Simulador de Pro-Pyme Transparente: Proyección del IGC personal para la dueña del negocio.
   - Dolor: Ceguera frente al impuestazo del mes de abril por tributación final del socio `[cite: 9]`.
   - Servicio que apalanca: IA de cálculo de tablas de impuestos Global Complementario.
   - Tier sugerido: Plus
   - Complejidad: L
 
-- [E3-OPER-37] Descargador de Certificados/Carpeta Tributaria: Generación de la carpeta con 1 mensaje para enviarla al banco.
+- ⏳ [E3-OPER-37] Descargador de Certificados/Carpeta Tributaria: Generación de la carpeta con 1 mensaje para enviarla al banco.
   - Dolor: Perder créditos porque el ejecutivo bancario exige historial que la dueña no sabe cómo bajar.
   - Servicio que apalanca: SII Carpeta Tributaria PFX.
   - Tier sugerido: Pro
   - Complejidad: M
 
-- [E3-OPER-38] Handoff Operación Renta (F22): Derivación directa y temprana (marzo) a contadores para el balance anual.
+- ⏳ [E3-OPER-38] Handoff Operación Renta (F22): Derivación directa y temprana (marzo) a contadores para el balance anual.
   - Dolor: Errores en F22 causan retención de devoluciones, y es muy complejo para IA resolver 100% de la contabilidad sin humano.
   - Servicio que apalanca: Marketplace Tu Plata Mipyme.
   - Tier sugerido: Marketplace.
   - Complejidad: M
 
-- [E3-FIN-39] Conciliador Bancario Visual: Subida de cartola CuentaRUT en PDF para cruce con ventas declaradas.
+- ⏳ [E3-FIN-39] Conciliador Bancario Visual: Subida de cartola CuentaRUT en PDF para cruce con ventas declaradas.
   - Dolor: Dinero perdido o cobros olvidados por desorden.
   - Servicio que apalanca: Open Banking o OCR de cartolas.
   - Tier sugerido: Plus
   - Complejidad: L
 
 ### E4: Crecimiento
-- [E4-FIN-40] Scout de Subsidios (Sercotec/Corfo): Alerta personalizada cuando se abren ventanas (Semilla, Crece).
+- ⏳ [E4-FIN-40] Scout de Subsidios (Sercotec/Corfo): Alerta personalizada cuando se abren ventanas (Semilla, Crece).
   - Dolor: Desconocimiento de los calendarios regionales de fomento.
   - Servicio que apalanca: Calendarios públicos Sercotec.
   - Tier sugerido: Free
   - Complejidad: M
 
-- [E4-FIN-41] Borrador Modelo Canvas Sercotec: Entrevista que extrae propuesta de valor y rellena el formato exigido.
+- ⏳ [E4-FIN-41] Borrador Modelo Canvas Sercotec: Entrevista que extrae propuesta de valor y rellena el formato exigido.
   - Dolor: Tasa de rechazo brutal (>50%) por mala formulación de proyectos viables `[cite: 6, 7]`.
   - Servicio que apalanca: Frameworks teóricos empresariales.
   - Tier sugerido: Pro / Plus
   - Complejidad: M
 
-- [E4-FIN-42] Asistente "Pitch" Video: Rol de juez para practicar las preguntas del video de 90 segundos que pide Sercotec.
+- ⏳ [E4-FIN-42] Asistente "Pitch" Video: Rol de juez para practicar las preguntas del video de 90 segundos que pide Sercotec.
   - Dolor: Vergüenza escénica y desorden narrativo en el video postulante.
   - Servicio que apalanca: IA de voz (Voice Mode).
   - Tier sugerido: Pro
   - Complejidad: S
 
-- [E4-FIN-43] Recomendador de Microcréditos: Si el SII muestra flujo estable, sugiere fondo y estima cuota de créditos como Fondo Esperanza (tasa base ~5%) o Banigualdad (1.52% mensual) `[cite: 12, 13]`.
+- ⏳ [E4-FIN-43] Recomendador de Microcréditos: Si el SII muestra flujo estable, sugiere fondo y estima cuota de créditos como Fondo Esperanza (tasa base ~5%) o Banigualdad (1.52% mensual) `[cite: 12, 13]`.
   - Dolor: Miedo a las tasas usureras o rechazo bancario (44% no accede) `[cite: 12]`.
   - Servicio que apalanca: APIs o links referenciales de microfinancieras chilenas.
   - Tier sugerido: Free / Marketplace
   - Complejidad: M
 
-- [E4-FIN-44] Desmitificador FOGAPE: Explicación y cálculo de amortización de créditos con aval del Estado.
+- ⏳ [E4-FIN-44] Desmitificador FOGAPE: Explicación y cálculo de amortización de créditos con aval del Estado.
   - Dolor: Creencia popular de que el FOGAPE "no se paga" si a uno le va mal.
   - Servicio que apalanca: BancoEstado Microempresas.
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E4-LEGAL-45] Generador de Contrato de Trabajo Seguro: Entrega PDF legal validado según Código del Trabajo para el primer garzón/vendedor.
+- ⏳ [E4-LEGAL-45] Generador de Contrato de Trabajo Seguro: Entrega PDF legal validado según Código del Trabajo para el primer garzón/vendedor.
   - Dolor: Exposición grave a demandas de tutela laboral por contratos copiados de Google.
   - Servicio que apalanca: Código del Trabajo (Biblioteca Congreso).
   - Tier sugerido: Pro
   - Complejidad: M
 
-- [E4-LEGAL-46] Guía Previred Exprés: Ayuda paso a paso para enrolar trabajadores y pagar leyes sociales.
+- ⏳ [E4-LEGAL-46] Guía Previred Exprés: Ayuda paso a paso para enrolar trabajadores y pagar leyes sociales.
   - Dolor: Altísima fricción del portal Previred para nóminas pequeñas.
   - Servicio que apalanca: Portal Previred.
   - Tier sugerido: Pro
   - Complejidad: S
 
-- [E4-LEGAL-47] Simulador de Finiquito (básico): Estimador matemático del mes por año y vacaciones proporcionales (Art 161).
+- ⏳ [E4-LEGAL-47] Simulador de Finiquito (básico): Estimador matemático del mes por año y vacaciones proporcionales (Art 161).
   - Dolor: Pymes que no pueden despedir por no saber cuánto cuesta realmente hacerlo.
   - Servicio que apalanca: Calculadoras laborales (DT).
   - Tier sugerido: Plus
   - Complejidad: M
 
-- [E4-LEGAL-48] Generador de Protocolo Ley Karin: Plantilla estándar para evitar sanciones por acoso laboral.
+- ⏳ [E4-LEGAL-48] Generador de Protocolo Ley Karin: Plantilla estándar para evitar sanciones por acoso laboral.
   - Dolor: Consultoras de RRHH cobrando en exceso a negocios de barrio por PDFs genéricos.
   - Servicio que apalanca: Modelos públicos DT.
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E4-CRECE-49] Bot Analista de Precios Proveedores: Compara variaciones de precios (si la usuaria sube fotos de facturas de harina) para sugerir subir precios finales.
+- ⏳ [E4-CRECE-49] Bot Analista de Precios Proveedores: Compara variaciones de precios (si la usuaria sube fotos de facturas de harina) para sugerir subir precios finales.
   - Dolor: Pymes absorben la inflación de insumos, quebrando silenciosamente.
   - Servicio que apalanca: IA Analítica (Series de tiempo cortas).
   - Tier sugerido: Pro
   - Complejidad: L
 
-- [E4-CRECE-50] Creador de Textos para Instagram/Redes: RAG que toma la descripción cruda de la mermelada y crea un "Copy" de venta con emojis.
+- ⏳ [E4-CRECE-50] Creador de Textos para Instagram/Redes: RAG que toma la descripción cruda de la mermelada y crea un "Copy" de venta con emojis.
   - Dolor: Emprendedores no saben redactar publicaciones magnéticas.
   - Servicio que apalanca: Prompt engineering de marketing digital.
   - Tier sugerido: Pro
   - Complejidad: S
 
-- [E4-CRECE-51] Filtro de Mercado Público PymeÁgil: Traductor que indica qué licitaciones de "Compra Ágil" < 30 UTM existen en el rubro del usuario.
+- ⏳ [E4-CRECE-51] Filtro de Mercado Público PymeÁgil: Traductor que indica qué licitaciones de "Compra Ágil" < 30 UTM existen en el rubro del usuario.
   - Dolor: Burocracia monstruosa de ChileProveedores auyenta a la microempresa.
   - Servicio que apalanca: API Mercado Público.
   - Tier sugerido: Plus
   - Complejidad: L
 
 ### E5: Recuperación y Cierre
-- [E5-LEGAL-52] Asesor Ley 21.563 Reorganización Mipyme: Preguntas diagnósticas para ver si califica para protección de 40 días (prorrogables) contra embargos y remates `[cite: 4, 5, 17]`.
+- ⏳ [E5-LEGAL-52] Asesor Ley 21.563 Reorganización Mipyme: Preguntas diagnósticas para ver si califica para protección de 40 días (prorrogables) contra embargos y remates `[cite: 4, 5, 17]`.
   - Dolor: Juicios ejecutivos bancarios que destruyen el patrimonio personal de la pyme.
   - Servicio que apalanca: Superintendencia de Insolvencia (SUPERIR).
   - Tier sugerido: Free
   - Complejidad: M
 
-- [E5-LEGAL-53] El "Torniquete" (Término de Giro Asistido): Checklist para suspender la empresa temporalmente en el SII y no acumular multas.
+- ⏳ [E5-LEGAL-53] El "Torniquete" (Término de Giro Asistido): Checklist para suspender la empresa temporalmente en el SII y no acumular multas.
   - Dolor: Las Mipymes "mueren" de facto, pero siguen vivas en el SII acumulando multas F29 por años.
   - Servicio que apalanca: Portal de cese de actividades SII.
   - Tier sugerido: Pro
   - Complejidad: M
 
-- [E5-EMOC-54] Botón de la Vergüenza (Educación DICOM): Traducción legal sobre prescripción de deudas y borrado.
+- ⏳ [E5-EMOC-54] Botón de la Vergüenza (Educación DICOM): Traducción legal sobre prescripción de deudas y borrado.
   - Dolor: Estigma paralizante y vulnerabilidad ante mafias de "borrado de deudas".
   - Servicio que apalanca: Ley de Boletín Comercial y protección financiera `[cite: 4]`.
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E5-LEGAL-55] Derivación Quiebra Simplificada: Acompañamiento en el duelo y handoff a un abogado especializado para extinguir pasivos insolutos ("Discharge") `[cite: 5, 16, 17]`.
+- ⏳ [E5-LEGAL-55] Derivación Quiebra Simplificada: Acompañamiento en el duelo y handoff a un abogado especializado para extinguir pasivos insolutos ("Discharge") `[cite: 5, 16, 17]`.
   - Dolor: Muerte económica de por vida por no saber ejecutar un cierre ordenado.
   - Servicio que apalanca: Abogados Marketplace + SUPERIR `[cite: 5, 17]`.
   - Tier sugerido: Plus / Marketplace
   - Complejidad: M
 
-- [E5-EMOC-56] Diario Post-Mortem (Lecciones): Flujo reflexivo para documentar el fracaso y extraer el "Pivot".
+- ⏳ [E5-EMOC-56] Diario Post-Mortem (Lecciones): Flujo reflexivo para documentar el fracaso y extraer el "Pivot".
   - Dolor: Duelo emocional severo no procesado.
   - Servicio que apalanca: IA de contención emocional (Psicología).
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E5-LEGAL-57] Guía Renegociación 2da Categoría (Honorarios): Flujo específico para usuarios de honorarios excluidos de liquidación de empresa pero aptos para la renegociación gratuita personal `[cite: 4, 16]`.
+- ⏳ [E5-LEGAL-57] Guía Renegociación 2da Categoría (Honorarios): Flujo específico para usuarios de honorarios excluidos de liquidación de empresa pero aptos para la renegociación gratuita personal `[cite: 4, 16]`.
   - Dolor: Profesionales en default por falta de liquidez post-pandemia.
   - Servicio que apalanca: Plataforma Mi SUPERIR (Renegociación) `[cite: 16]`.
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E5-LEGAL-58] Disolución de Sociedad RES: Guía de los pasos de firma en "Tu Empresa en un Día" para liquidar legalmente el RUT.
+- ⏳ [E5-LEGAL-58] Disolución de Sociedad RES: Guía de los pasos de firma en "Tu Empresa en un Día" para liquidar legalmente el RUT.
   - Dolor: Sociedades zombis legales sin actividad comercial.
   - Servicio que apalanca: Portal RES del Ministerio de Economía.
   - Tier sugerido: Pro
   - Complejidad: S
 
-- [E5-FIN-59] Invocación Sernac Financiero: Asistencia en la redacción de reclamos ante usura o renegociaciones bancarias abusivas vinculadas a créditos de la empresa `[cite: 4]`.
+- ⏳ [E5-FIN-59] Invocación Sernac Financiero: Asistencia en la redacción de reclamos ante usura o renegociaciones bancarias abusivas vinculadas a créditos de la empresa `[cite: 4]`.
   - Dolor: Abuso de agencias de cobranza judicial sobre Mipymes caídas.
   - Servicio que apalanca: Portal Reclamos SERNAC.
   - Tier sugerido: Free
   - Complejidad: S
 
-- [E5-EMOC-60] Ruta de Reinvención (Onboarding Secundario): Sugerencias de cómo re-iniciar operando a escala menor bajo figura MEF para disminuir riesgo futuro.
+- ⏳ [E5-EMOC-60] Ruta de Reinvención (Onboarding Secundario): Sugerencias de cómo re-iniciar operando a escala menor bajo figura MEF para disminuir riesgo futuro.
   - Dolor: El trauma del fracaso impide volver a intentarlo y formalizarse.
   - Servicio que apalanca: Retorno a Etapa 1 del Journey.
   - Tier sugerido: Free
