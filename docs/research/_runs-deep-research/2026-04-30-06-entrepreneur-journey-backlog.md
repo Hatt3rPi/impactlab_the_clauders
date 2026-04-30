@@ -37,10 +37,6 @@ duracion_segundos: 889
 
 ***Aviso Legal y de Riesgo:** El presente documento contiene análisis estratégicos sobre normativas tributarias (SII), leyes laborales, estructuras corporativas (RES) y procedimientos de insolvencia (Ley 21.563) en Chile. Este contenido es de carácter estrictamente informativo y de diseño de producto. No constituye asesoría legal, financiera, contable ni tributaria. Se recomienda a los usuarios finales de cualquier herramienta derivada de este reporte buscar validación con profesionales colegiados.*
 
-
-
-
-
 ### Resumen Ejecutivo
 
 Este reporte define la hoja de ruta técnica y de producto para el **Claude Impact Lab Chile 2026**. El desafío abordado es la alta fricción burocrática y cognitiva que enfrentan los microemprendedores informales en Chile, focalizando en el segmento de mujeres de 30-50 años en la Macrozona Sur. 
@@ -77,60 +73,68 @@ El viaje del microemprendedor no es lineal. Para el segmento objetivo (mujeres d
 La fase inicial se caracteriza por una profunda parálisis analítica. Las emprendedoras del sur de Chile a menudo inician sus negocios por necesidad (desempleo o cuidados familiares) más que por oportunidad.
 
 **1. Dolor: Autopercepción de "no soy empresaria" (Síndrome del impostor socioeconómico).**
-1. **Cómo se resuelve hoy:** Autogestión, apoyo familiar intermitente y dependiente del círculo cercano.
-2. **Costo actual:** Gratis en dinero, pero alto costo emocional y de inmovilismo.
-3. **Tiempo y fricción:** Semanas, meses o años de parálisis analítica antes de lanzar un producto.
-4. **Tasa de fracaso/abandono:** Estimada en un 60% de las ideas informales que mueren antes de concretar la primera venta.
-5. **Brecha IA:** Un agente "mentor-inicio" empático que valide la idea mediante micro-interacciones motivacionales, normalizando el miedo.
+
+- **Cómo se resuelve hoy:** Autogestión, apoyo familiar intermitente y dependiente del círculo cercano.
+- **Costo actual:** Gratis en dinero, pero alto costo emocional y de inmovilismo.
+- **Tiempo y fricción:** Semanas, meses o años de parálisis analítica antes de lanzar un producto.
+- **Tasa de fracaso/abandono:** Estimada en un 60% de las ideas informales que mueren antes de concretar la primera venta.
+- **Brecha IA:** Un agente "mentor-inicio" empático que valide la idea mediante micro-interacciones motivacionales, normalizando el miedo.
 
 **2. Dolor: Miedo irracional al Servicio de Impuestos Internos (SII).**
-1. **Cómo se resuelve hoy:** Consumo de mitos de boca en boca o lectura de grupos de Facebook desregulados.
-2. **Costo actual:** Gratis, pero genera desinformación crónica.
-3. **Tiempo y fricción:** Búsquedas ambiguas que resultan en mayor confusión legal.
-4. **Tasa de fracaso/abandono:** No hay datos centralizados, pero el miedo tributario es la barrera #1 a la formalización temprana.
-5. **Brecha IA:** Desmitificación proactiva. La IA puede explicar en lenguaje cotidiano que vender montos pequeños al inicio no desencadena auditorías inmediatas.
+
+- **Cómo se resuelve hoy:** Consumo de mitos de boca en boca o lectura de grupos de Facebook desregulados.
+- **Costo actual:** Gratis, pero genera desinformación crónica.
+- **Tiempo y fricción:** Búsquedas ambiguas que resultan en mayor confusión legal.
+- **Tasa de fracaso/abandono:** No hay datos centralizados, pero el miedo tributario es la barrera #1 a la formalización temprana.
+- **Brecha IA:** Desmitificación proactiva. La IA puede explicar en lenguaje cotidiano que vender montos pequeños al inicio no desencadena auditorías inmediatas.
 
 **3. Dolor: Ignorancia sobre fijación de precios (¿Cuánto cobro?).**
-1. **Cómo se resuelve hoy:** Copiar el precio del competidor más cercano sin evaluar estructura de costos.
-2. **Costo actual:** Pérdida de rentabilidad invisible y erosión del capital familiar.
-3. **Tiempo y fricción:** Ajustes reactivos y lentos solo cuando el negocio se queda sin caja.
-4. **Tasa de fracaso/abandono:** Mortalidad por "quiebra invisible" (se agota la liquidez sin entender por qué).
-5. **Brecha IA:** Calculadora de costos por WhatsApp. "Cuéntame qué ingredientes usas y cuánto tiempo te toma, yo te sugiero un precio mínimo".
+
+- **Cómo se resuelve hoy:** Copiar el precio del competidor más cercano sin evaluar estructura de costos.
+- **Costo actual:** Pérdida de rentabilidad invisible y erosión del capital familiar.
+- **Tiempo y fricción:** Ajustes reactivos y lentos solo cuando el negocio se queda sin caja.
+- **Tasa de fracaso/abandono:** Mortalidad por "quiebra invisible" (se agota la liquidez sin entender por qué).
+- **Brecha IA:** Calculadora de costos por WhatsApp. "Cuéntame qué ingredientes usas y cuánto tiempo te toma, yo te sugiero un precio mínimo".
 
 **4. Dolor: Viabilidad del mercado hiperlocal.**
-1. **Cómo se resuelve hoy:** Ensayo y error empírico en ferias vecinales o vendiendo a familiares.
-2. **Costo actual:** Inversión de capital semilla familiar sin retorno garantizado.
-3. **Tiempo y fricción:** Ciclo de producto lento (1-3 meses para validar demanda empíricamente).
-4. **Tasa de fracaso/abandono:** Alto abandono si el primer lote no se vende rápidamente.
-5. **Brecha IA:** Análisis de demanda básica interactiva ("¿A quién le vas a vender en tu barrio? ¿Cuántas personas pasan por ahí?").
+
+- **Cómo se resuelve hoy:** Ensayo y error empírico en ferias vecinales o vendiendo a familiares.
+- **Costo actual:** Inversión de capital semilla familiar sin retorno garantizado.
+- **Tiempo y fricción:** Ciclo de producto lento (1-3 meses para validar demanda empíricamente).
+- **Tasa de fracaso/abandono:** Alto abandono si el primer lote no se vende rápidamente.
+- **Brecha IA:** Análisis de demanda básica interactiva ("¿A quién le vas a vender en tu barrio? ¿Cuántas personas pasan por ahí?").
 
 **5. Dolor: Fricción cognitiva sobre "qué permisos necesito".**
-1. **Cómo se resuelve hoy:** Navegar sitios web de municipalidades (frecuentemente desactualizados) o preguntar presencialmente.
-2. **Costo actual:** Transporte a la municipalidad y pérdida de tiempo productivo.
-3. **Tiempo y fricción:** Horas de fila, respuestas burocráticas e incomprensibles.
-4. **Tasa de fracaso/abandono:** Abandono del proceso formal ante la primera lista de requisitos exigentes.
-5. **Brecha IA:** Un mapeo instantáneo de requisitos (ej. SEREMI de Salud para alimentos) explicado paso a paso en lenguaje natural.
+
+- **Cómo se resuelve hoy:** Navegar sitios web de municipalidades (frecuentemente desactualizados) o preguntar presencialmente.
+- **Costo actual:** Transporte a la municipalidad y pérdida de tiempo productivo.
+- **Tiempo y fricción:** Horas de fila, respuestas burocráticas e incomprensibles.
+- **Tasa de fracaso/abandono:** Abandono del proceso formal ante la primera lista de requisitos exigentes.
+- **Brecha IA:** Un mapeo instantáneo de requisitos (ej. SEREMI de Salud para alimentos) explicado paso a paso en lenguaje natural.
 
 **6. Dolor: Soledad del emprendedor (Falta de red de apoyo).**
-1. **Cómo se resuelve hoy:** Postulación a programas sociales (FOSIS o Sercotec).
-2. **Costo actual:** Postulación gratuita, pero alto costo en tiempo para recolectar documentos.
-3. **Tiempo y fricción:** Semanas de espera para resolución de concursos públicos.
-4. **Tasa de fracaso/abandono:** Alta tasa de rechazo (>50% a >80% por cupos limitados en fondos estatales) `[cite: 6, 7]`.
-5. **Brecha IA:** Acompañamiento 24/7, simulando una presencia de soporte constante y derivación a comunidades virtuales.
+
+- **Cómo se resuelve hoy:** Postulación a programas sociales (FOSIS o Sercotec).
+- **Costo actual:** Postulación gratuita, pero alto costo en tiempo para recolectar documentos.
+- **Tiempo y fricción:** Semanas de espera para resolución de concursos públicos.
+- **Tasa de fracaso/abandono:** Alta tasa de rechazo (>50% a >80% por cupos limitados en fondos estatales) `[cite: 6, 7]`.
+- **Brecha IA:** Acompañamiento 24/7, simulando una presencia de soporte constante y derivación a comunidades virtuales.
 
 **7. Dolor: Mezclar finanzas familiares con el negocio potencial.**
-1. **Cómo se resuelve hoy:** Uso de la CuentaRUT personal para cobros, pagos de supermercado y compra de insumos.
-2. **Costo actual:** Caos contable que oculta la verdadera rentabilidad.
-3. **Tiempo y fricción:** Horas intentando descifrar la cartola a fin de mes.
-4. **Tasa de fracaso/abandono:** Quiebre de la economía doméstica arrastrada por el negocio.
-5. **Brecha IA:** Educar tempranamente sobre la separación de bolsillos y habilitar un registro de "Caja Zapatos" digital en el chat antes de abrir cuentas de empresa.
+
+- **Cómo se resuelve hoy:** Uso de la CuentaRUT personal para cobros, pagos de supermercado y compra de insumos.
+- **Costo actual:** Caos contable que oculta la verdadera rentabilidad.
+- **Tiempo y fricción:** Horas intentando descifrar la cartola a fin de mes.
+- **Tasa de fracaso/abandono:** Quiebre de la economía doméstica arrastrada por el negocio.
+- **Brecha IA:** Educar tempranamente sobre la separación de bolsillos y habilitar un registro de "Caja Zapatos" digital en el chat antes de abrir cuentas de empresa.
 
 **8. Dolor: Desconocimiento del valor de su propio tiempo.**
-1. **Cómo se resuelve hoy:** Autoexplotación. No se cobra la mano de obra, solo los insumos físicos.
-2. **Costo actual:** Trabajo gratuito; imposibilidad de contratar a un ayudante a futuro.
-3. **Tiempo y fricción:** Agotamiento crónico (Burnout).
-4. **Tasa de fracaso/abandono:** Cierre por desgaste físico y mental de la fundadora.
-5. **Brecha IA:** IA que fuerza al usuario a asignar un "sueldo" mínimo por hora trabajada en su costeo, visibilizando su valor laboral.
+
+- **Cómo se resuelve hoy:** Autoexplotación. No se cobra la mano de obra, solo los insumos físicos.
+- **Costo actual:** Trabajo gratuito; imposibilidad de contratar a un ayudante a futuro.
+- **Tiempo y fricción:** Agotamiento crónico (Burnout).
+- **Tasa de fracaso/abandono:** Cierre por desgaste físico y mental de la fundadora.
+- **Brecha IA:** IA que fuerza al usuario a asignar un "sueldo" mínimo por hora trabajada en su costeo, visibilizando su valor laboral.
 
 **Síntesis E0:** La barrera principal aquí no es tecnológica, es psicológica. El usuario no busca un software de gestión; busca validación. El copiloto debe actuar como un consejero de confianza antes de introducir herramientas financieras.
 
@@ -139,60 +143,68 @@ La fase inicial se caracteriza por una profunda parálisis analítica. Las empre
 En esta fase, la emprendedora ya vende, pero opera bajo el radar. Utiliza redes sociales y canales físicos vecinales. El dinero fluye, pero el riesgo legal y tributario comienza a materializarse.
 
 **1. Dolor: Ventas sin RUT comercial (imposibilidad de emitir facturas a empresas).**
-1. **Cómo se resuelve hoy:** Rechazar clientes grandes o pedir facturas prestadas a un tercero (práctica ilegal).
-2. **Costo actual:** Costo de oportunidad altísimo (pérdida de clientes B2B) o pago de "comisión" al prestador de la factura.
-3. **Tiempo y fricción:** Negociaciones informales e incómodas con compradores corporativos.
-4. **Tasa de fracaso/abandono:** Estancamiento del negocio; imposibilidad de escalar las ventas.
-5. **Brecha IA:** Cuantificar la pérdida diaria ("Este mes perdiste $200.000 por no dar factura. Formalizarte cuesta $0 en Tu Empresa en Un Día").
+
+- **Cómo se resuelve hoy:** Rechazar clientes grandes o pedir facturas prestadas a un tercero (práctica ilegal).
+- **Costo actual:** Costo de oportunidad altísimo (pérdida de clientes B2B) o pago de "comisión" al prestador de la factura.
+- **Tiempo y fricción:** Negociaciones informales e incómodas con compradores corporativos.
+- **Tasa de fracaso/abandono:** Estancamiento del negocio; imposibilidad de escalar las ventas.
+- **Brecha IA:** Cuantificar la pérdida diaria ("Este mes perdiste $200.000 por no dar factura. Formalizarte cuesta $0 en Tu Empresa en Un Día").
 
 **2. Dolor: Recepción de pagos (Uso de Cuentas Personales).**
-1. **Cómo se resuelve hoy:** Transferencias directas a CuentaRUT personal o MACH personal.
-2. **Costo actual:** Gratis inicialmente.
-3. **Tiempo y fricción:** Conciliación manual cliente por cliente.
-4. **Tasa de fracaso/abandono:** Bloqueo de cuentas por sobrepasar límites mensuales o por actividad sospechosa por parte del banco.
-5. **Brecha IA:** Alertas proactivas sobre límites de CuentaRUT y riesgo de bloqueos por presunción de lavado de activos o evasión si el volumen crece.
+
+- **Cómo se resuelve hoy:** Transferencias directas a CuentaRUT personal o MACH personal.
+- **Costo actual:** Gratis inicialmente.
+- **Tiempo y fricción:** Conciliación manual cliente por cliente.
+- **Tasa de fracaso/abandono:** Bloqueo de cuentas por sobrepasar límites mensuales o por actividad sospechosa por parte del banco.
+- **Brecha IA:** Alertas proactivas sobre límites de CuentaRUT y riesgo de bloqueos por presunción de lavado de activos o evasión si el volumen crece.
 
 **3. Dolor: Riesgo de decomiso por inspectores municipales o Carabineros.**
-1. **Cómo se resuelve hoy:** Correr, esconder mercancía o pagar multas.
-2. **Costo actual:** Multas de 1 a 3 UTM ($65.000 - $195.000 CLP) más pérdida total del inventario incautado.
-3. **Tiempo y fricción:** Estrés constante y pérdida de días de trabajo.
-4. **Tasa de fracaso/abandono:** Cierre forzado del negocio tras un decomiso grande.
-5. **Brecha IA:** Asesoría legal preventiva de emergencia ("Qué hacer si te fiscalizan") y diseño de ruta hacia permisos precarios municipales.
+
+- **Cómo se resuelve hoy:** Correr, esconder mercancía o pagar multas.
+- **Costo actual:** Multas de 1 a 3 UTM ($65.000 - $195.000 CLP) más pérdida total del inventario incautado.
+- **Tiempo y fricción:** Estrés constante y pérdida de días de trabajo.
+- **Tasa de fracaso/abandono:** Cierre forzado del negocio tras un decomiso grande.
+- **Brecha IA:** Asesoría legal preventiva de emergencia ("Qué hacer si te fiscalizan") y diseño de ruta hacia permisos precarios municipales.
 
 **4. Dolor: Estafas por falsas transferencias (Pantallazos adulterados).**
-1. **Cómo se resuelve hoy:** Revisar la app del banco manualmente en cada venta frente al cliente.
-2. **Costo actual:** Pérdida del valor del producto vendido más el costo del insumo.
-3. **Tiempo y fricción:** 1-2 minutos de fricción por cliente en el punto de venta, generando filas.
-4. **Tasa de fracaso/abandono:** Pérdidas semanales constantes que erosionan la confianza.
-5. **Brecha IA:** Educación sobre conciliación, análisis OCR de pantallazos o derivación rápida a POS móviles o links de pago seguros.
+
+- **Cómo se resuelve hoy:** Revisar la app del banco manualmente en cada venta frente al cliente.
+- **Costo actual:** Pérdida del valor del producto vendido más el costo del insumo.
+- **Tiempo y fricción:** 1-2 minutos de fricción por cliente en el punto de venta, generando filas.
+- **Tasa de fracaso/abandono:** Pérdidas semanales constantes que erosionan la confianza.
+- **Brecha IA:** Educación sobre conciliación, análisis OCR de pantallazos o derivación rápida a POS móviles o links de pago seguros.
 
 **5. Dolor: Desorden de inventario básico.**
-1. **Cómo se resuelve hoy:** Anotaciones en cuaderno o fiar en base a la memoria.
-2. **Costo actual:** Quiebres de stock o productos perecibles vencidos.
-3. **Tiempo y fricción:** Conteos manuales de fin de día agotadores.
-4. **Tasa de fracaso/abandono:** Pérdida de ventas por no tener producto disponible cuando el cliente lo pide.
-5. **Brecha IA:** Tracking conversacional por WhatsApp. "Hoy vendí 3 mermeladas". La IA descuenta y avisa cuándo reponer insumos.
+
+- **Cómo se resuelve hoy:** Anotaciones en cuaderno o fiar en base a la memoria.
+- **Costo actual:** Quiebres de stock o productos perecibles vencidos.
+- **Tiempo y fricción:** Conteos manuales de fin de día agotadores.
+- **Tasa de fracaso/abandono:** Pérdida de ventas por no tener producto disponible cuando el cliente lo pide.
+- **Brecha IA:** Tracking conversacional por WhatsApp. "Hoy vendí 3 mermeladas". La IA descuenta y avisa cuándo reponer insumos.
 
 **6. Dolor: Costos de despacho informales (Delivery no optimizado).**
-1. **Cómo se resuelve hoy:** Uso de Uber/DiDi personal o entregas físicas en estaciones de metro.
-2. **Costo actual:** Alto costo en tarifas de transporte de pasajeros usadas para carga, o horas de tiempo de la emprendedora.
-3. **Tiempo y fricción:** Tiempos de viaje que interrumpen la producción.
-4. **Tasa de fracaso/abandono:** Cancelación de pedidos por logística inviable o clientes que no llegan al punto de encuentro.
-5. **Brecha IA:** Integración o sugerencia de agregadores de última milla económicos (ej. Starken, Chilexpress) y cálculo de tarifa de despacho en el costo final.
+
+- **Cómo se resuelve hoy:** Uso de Uber/DiDi personal o entregas físicas en estaciones de metro.
+- **Costo actual:** Alto costo en tarifas de transporte de pasajeros usadas para carga, o horas de tiempo de la emprendedora.
+- **Tiempo y fricción:** Tiempos de viaje que interrumpen la producción.
+- **Tasa de fracaso/abandono:** Cancelación de pedidos por logística inviable o clientes que no llegan al punto de encuentro.
+- **Brecha IA:** Integración o sugerencia de agregadores de última milla económicos (ej. Starken, Chilexpress) y cálculo de tarifa de despacho en el costo final.
 
 **7. Dolor: Crecimiento invisible (No saber si hay ganancias reales).**
-1. **Cómo se resuelve hoy:** Dinero en caja de zapatos. Si hay plata a fin de mes, "se ganó".
-2. **Costo actual:** Descapitalización por consumo de ingresos asumiendo falsas ganancias.
-3. **Tiempo y fricción:** Ceguera financiera permanente.
-4. **Tasa de fracaso/abandono:** 100% de incapacidad para proyectar crecimiento a 6 meses.
-5. **Brecha IA:** Generación de un mini-estado de resultados conversacional simplificado ("Este mes te quedaron $150.000 libres reales").
+
+- **Cómo se resuelve hoy:** Dinero en caja de zapatos. Si hay plata a fin de mes, "se ganó".
+- **Costo actual:** Descapitalización por consumo de ingresos asumiendo falsas ganancias.
+- **Tiempo y fricción:** Ceguera financiera permanente.
+- **Tasa de fracaso/abandono:** 100% de incapacidad para proyectar crecimiento a 6 meses.
+- **Brecha IA:** Generación de un mini-estado de resultados conversacional simplificado ("Este mes te quedaron $150.000 libres reales").
 
 **8. Dolor: Miedo a la pérdida de beneficios sociales.**
-1. **Cómo se resuelve hoy:** Mantenerse en estricta informalidad para no alterar el Registro Social de Hogares (RSH) ni perder subsidios.
-2. **Costo actual:** Beneficios estatales bajos vs. Estancamiento crónico de ingresos propios.
-3. **Tiempo y fricción:** Monitoreo constante de topes del RSH.
-4. **Tasa de fracaso/abandono:** Sub-declaración intencional de ingresos que perpetúa la pobreza.
-5. **Brecha IA:** Aclarar con datos reales de MIDESO cómo la formalización como SpA (persona jurídica distinta) no afecta automáticamente la vulnerabilidad personal en el RSH si se estructura adecuadamente.
+
+- **Cómo se resuelve hoy:** Mantenerse en estricta informalidad para no alterar el Registro Social de Hogares (RSH) ni perder subsidios.
+- **Costo actual:** Beneficios estatales bajos vs. Estancamiento crónico de ingresos propios.
+- **Tiempo y fricción:** Monitoreo constante de topes del RSH.
+- **Tasa de fracaso/abandono:** Sub-declaración intencional de ingresos que perpetúa la pobreza.
+- **Brecha IA:** Aclarar con datos reales de MIDESO cómo la formalización como SpA (persona jurídica distinta) no afecta automáticamente la vulnerabilidad personal en el RSH si se estructura adecuadamente.
 
 **Síntesis E1:** La informalidad es un escudo de cristal. Protege de la burocracia, pero expone a estafas, multas y estancamiento. La IA debe actuar como un "acompañante" que demuestre empíricamente que el costo de ser informal ya superó al costo de formalizarse.
 
@@ -201,18 +213,20 @@ En esta fase, la emprendedora ya vende, pero opera bajo el radar. Utiliza redes 
 Este es el cuello de botella cívico. La emprendedora decide dar el salto, pero choca contra una muralla de jerga legal, formularios incompatibles y costos ocultos.
 
 **1. Dolor: Fricción técnica en "Tu Empresa en Un Día" (RES).**
-1. **Cómo se resuelve hoy:** Portal web gratuito del Ministerio de Economía. Permite crear sociedades con redacción automática `[cite: 8, 9]`.
-2. **Costo actual:** Gratis el borrador, $2.000 a $15.000 la firma electrónica o notaría `[cite: 9]`.
-3. **Tiempo y fricción:** 1 a 3 días navegando campos como "objeto social" y "capital suscrito".
-4. **Tasa de fracaso/abandono:** Aproximadamente 35-40% de los borradores no se firman por dudas técnicas.
-5. **Brecha IA:** Asistente paso-a-paso que traduzca campos legales mediante *Vision AI* (capturas de pantalla) y guíe hacia la firma.
+
+- **Cómo se resuelve hoy:** Portal web gratuito del Ministerio de Economía. Permite crear sociedades con redacción automática `[cite: 8, 9]`.
+- **Costo actual:** Gratis el borrador, $2.000 a $15.000 la firma electrónica o notaría `[cite: 9]`.
+- **Tiempo y fricción:** 1 a 3 días navegando campos como "objeto social" y "capital suscrito".
+- **Tasa de fracaso/abandono:** Aproximadamente 35-40% de los borradores no se firman por dudas técnicas.
+- **Brecha IA:** Asistente paso-a-paso que traduzca campos legales mediante *Vision AI* (capturas de pantalla) y guíe hacia la firma.
 
 **2. Dolor: Elección errónea de figura jurídica.**
-1. **Cómo se resuelve hoy:** Asesoría pagada de contadores o consumo de videos de YouTube.
-2. **Costo actual:** $50.000 - $150.000 por la consulta humana.
-3. **Tiempo y fricción:** Días de investigación y confusión.
-4. **Tasa de fracaso/abandono:** Alta incidencia de crear EIRLs restrictivas o sociedades que luego chocan con planes reguladores municipales.
-5. **Brecha IA:** *Triage* conversacional rápido: "¿Trabajarás desde casa? ¿Tendrás socios?". La IA recomienda la estructura óptima de inmediato.
+
+- **Cómo se resuelve hoy:** Asesoría pagada de contadores o consumo de videos de YouTube.
+- **Costo actual:** $50.000 - $150.000 por la consulta humana.
+- **Tiempo y fricción:** Días de investigación y confusión.
+- **Tasa de fracaso/abandono:** Alta incidencia de crear EIRLs restrictivas o sociedades que luego chocan con planes reguladores municipales.
+- **Brecha IA:** *Triage* conversacional rápido: "¿Trabajarás desde casa? ¿Tendrás socios?". La IA recomienda la estructura óptima de inmediato.
 
 *Tabla Comparativa de Figuras Jurídicas Relevantes:*
 
@@ -224,46 +238,52 @@ Este es el cuello de botella cívico. La emprendedora decide dar el salto, pero 
 | **Limitaciones** | Responsabilidad ilimitada. Capital máximo 1.000 UF. Residir en la casa. | Rígida. Un solo giro. Modificarla es burocrático. | Puede ser más compleja contablemente para alguien que recién inicia. |
 
 **3. Dolor: El abismo entre la escritura (RES) y el SII (Formulario 4415).**
-1. **Cómo se resuelve hoy:** Autogestión en sii.cl. El error clásico es creer que el RUT asignado por RES ya permite facturar `[cite: 10]`.
-2. **Costo actual:** Multas (1 UTM a 1 UTA) por no realizar el inicio de actividades a tiempo o vender sin él `[cite: 10]`.
-3. **Tiempo y fricción:** Interfaz confusa del SII que requiere ClaveÚnica o Clave Tributaria.
-4. **Tasa de fracaso/abandono:** Abandono del proceso dejando un RUT inactivo permanentemente.
-5. **Brecha IA:** Alerta proactiva post-creación: "Felicidades por tu SpA. Aún no puedes vender. Vamos al SII a hacer el F4415".
+
+- **Cómo se resuelve hoy:** Autogestión en sii.cl. El error clásico es creer que el RUT asignado por RES ya permite facturar `[cite: 10]`.
+- **Costo actual:** Multas (1 UTM a 1 UTA) por no realizar el inicio de actividades a tiempo o vender sin él `[cite: 10]`.
+- **Tiempo y fricción:** Interfaz confusa del SII que requiere ClaveÚnica o Clave Tributaria.
+- **Tasa de fracaso/abandono:** Abandono del proceso dejando un RUT inactivo permanentemente.
+- **Brecha IA:** Alerta proactiva post-creación: "Felicidades por tu SpA. Aún no puedes vender. Vamos al SII a hacer el F4415".
 
 **4. Dolor: Acreditación de Domicilio Tributario.**
-1. **Cómo se resuelve hoy:** Presentar certificado de avalúo fiscal, contrato de arriendo notariado, o contratar arriendo de oficina virtual.
-2. **Costo actual:** Arriendo virtual desde $10.000 a $20.000 CLP mensuales.
-3. **Tiempo y fricción:** Rechazo sistemático del SII si el documento no está correctamente legalizado o carece del rol de la propiedad.
-4. **Tasa de fracaso/abandono:** Bloqueo del inicio de actividades por no poder probar un domicilio válido.
-5. **Brecha IA:** Explicar la diferencia entre domicilio tributario y comercial, y conectar con *marketplaces* de oficinas virtuales integradas.
+
+- **Cómo se resuelve hoy:** Presentar certificado de avalúo fiscal, contrato de arriendo notariado, o contratar arriendo de oficina virtual.
+- **Costo actual:** Arriendo virtual desde $10.000 a $20.000 CLP mensuales.
+- **Tiempo y fricción:** Rechazo sistemático del SII si el documento no está correctamente legalizado o carece del rol de la propiedad.
+- **Tasa de fracaso/abandono:** Bloqueo del inicio de actividades por no poder probar un domicilio válido.
+- **Brecha IA:** Explicar la diferencia entre domicilio tributario y comercial, y conectar con *marketplaces* de oficinas virtuales integradas.
 
 **5. Dolor: Obtención de Patente Municipal (Ley de Rentas Municipales).**
-1. **Cómo se resuelve hoy:** Trámite presencial o portales municipales altamente burocráticos y desactualizados. Fricción por zonificación.
-2. **Costo actual:** 2.5 a 5 por mil del capital propio tributario, mínimo 1 UTM anual.
-3. **Tiempo y fricción:** Meses de demora; requerimiento de recepción definitiva del inmueble.
-4. **Tasa de fracaso/abandono:** Muchísimas Mipymes operan formalizadas en el SII pero ilegales municipalmente.
-5. **Brecha IA:** Información geolocalizada. "En tu comuna, estos son los papeles exactos; si trabajas en casa, usemos la ruta MEF".
+
+- **Cómo se resuelve hoy:** Trámite presencial o portales municipales altamente burocráticos y desactualizados. Fricción por zonificación.
+- **Costo actual:** 2.5 a 5 por mil del capital propio tributario, mínimo 1 UTM anual.
+- **Tiempo y fricción:** Meses de demora; requerimiento de recepción definitiva del inmueble.
+- **Tasa de fracaso/abandono:** Muchísimas Mipymes operan formalizadas en el SII pero ilegales municipalmente.
+- **Brecha IA:** Información geolocalizada. "En tu comuna, estos son los papeles exactos; si trabajas en casa, usemos la ruta MEF".
 
 **6. Dolor: Permisos Sanitarios (Resolución Sanitaria SEREMI).**
-1. **Cómo se resuelve hoy:** Trámite en asdigital.minsal.cl.
-2. **Costo actual:** Aranceles SEREMI variables según rubro.
-3. **Tiempo y fricción:** Alta complejidad técnica (planos de planta, flujogramas de alimentos, memoria técnica).
-4. **Tasa de fracaso/abandono:** Alto rechazo por incumplimiento de requisitos infraestructurales (ej. lavamanos separado, materialidad de muros).
-5. **Brecha IA:** Checklist conversacional previo. "Antes de pagar el arancel, asegúrate de tener basureros con tapa a pedal y superficies lavables".
+
+- **Cómo se resuelve hoy:** Trámite en asdigital.minsal.cl.
+- **Costo actual:** Aranceles SEREMI variables según rubro.
+- **Tiempo y fricción:** Alta complejidad técnica (planos de planta, flujogramas de alimentos, memoria técnica).
+- **Tasa de fracaso/abandono:** Alto rechazo por incumplimiento de requisitos infraestructurales (ej. lavamanos separado, materialidad de muros).
+- **Brecha IA:** Checklist conversacional previo. "Antes de pagar el arancel, asegúrate de tener basureros con tapa a pedal y superficies lavables".
 
 **7. Dolor: Protección de marca (INAPI).**
-1. **Cómo se resuelve hoy:** Trámite autogestionado o contratación de estudios de abogados marcarios.
-2. **Costo actual:** Trámite estatal ~$200.000 CLP (tasas UTM). Abogados cobran $400.000+ CLP adicionales.
-3. **Tiempo y fricción:** 6 a 8 meses de proceso. Publicación en Diario Oficial y plazos de oposición.
-4. **Tasa de fracaso/abandono:** Rechazo de marca por similitud fonética o descriptividad, perdiendo el dinero de las tasas.
-5. **Brecha IA:** Búsqueda rápida exploratoria de fonética básica para evitar que elijan nombres ya registrados antes de crear la SpA.
+
+- **Cómo se resuelve hoy:** Trámite autogestionado o contratación de estudios de abogados marcarios.
+- **Costo actual:** Trámite estatal ~$200.000 CLP (tasas UTM). Abogados cobran $400.000+ CLP adicionales.
+- **Tiempo y fricción:** 6 a 8 meses de proceso. Publicación en Diario Oficial y plazos de oposición.
+- **Tasa de fracaso/abandono:** Rechazo de marca por similitud fonética o descriptividad, perdiendo el dinero de las tasas.
+- **Brecha IA:** Búsqueda rápida exploratoria de fonética básica para evitar que elijan nombres ya registrados antes de crear la SpA.
 
 **8. Dolor: Sobrecarga de firmas electrónicas (FEA vs FE Simple vs Token).**
-1. **Cómo se resuelve hoy:** Compra de firma a empresas acreditadas (Acepta, E-Cert) `[cite: 9]`.
-2. **Costo actual:** $2.000 a $15.000 por firma simple online; Firmas Avanzadas con Token superan los $40.000.
-3. **Tiempo y fricción:** Confusión sobre qué tipo de firma comprar (Avanzada vs Simple) para RES o SII.
-4. **Tasa de fracaso/abandono:** Compra errónea de firmas incompatibles.
-5. **Brecha IA:** Explicación directiva: "Para RES solo necesitas comprar la firma simple de $2.000. Te mando el link correcto, no compres el token físico".
+
+- **Cómo se resuelve hoy:** Compra de firma a empresas acreditadas (Acepta, E-Cert) `[cite: 9]`.
+- **Costo actual:** $2.000 a $15.000 por firma simple online; Firmas Avanzadas con Token superan los $40.000.
+- **Tiempo y fricción:** Confusión sobre qué tipo de firma comprar (Avanzada vs Simple) para RES o SII.
+- **Tasa de fracaso/abandono:** Compra errónea de firmas incompatibles.
+- **Brecha IA:** Explicación directiva: "Para RES solo necesitas comprar la firma simple de $2.000. Te mando el link correcto, no compres el token físico".
 
 **Síntesis E2:** La formalización no es un acto, es un flujo de 4 a 6 sub-trámites en distintas agencias (RES, SII, Municipalidad, SEREMI) que no conversan entre sí. La IA debe ser el hilo conductor que mantenga a la usuaria enfocada.
 
@@ -272,25 +292,28 @@ Este es el cuello de botella cívico. La emprendedora decide dar el salto, pero 
 Ya existe la "Empresa". Ahora, el Estado exige un cumplimiento mensual estricto. Un error aquí significa multas que pueden quebrar a una mipyme en sus primeros meses.
 
 **1. Dolor: Declaración Mensual de Impuestos (F29).**
-1. **Cómo se resuelve hoy:** Portal SII (propuesta de F29) o contador humano.
-2. **Costo actual:** Contador mensual ($30.000 - $80.000/mes). Multas altas por atraso.
-3. **Tiempo y fricción:** Estrés de cumplimiento entre los días 12 y 20 de cada mes.
-4. **Tasa de fracaso/abandono:** Acumulación de multas por olvidar declarar "sin movimiento".
-5. **Brecha IA:** Recordatorio proactivo ("Mañana vence el F29") y conexión con contadores del *marketplace* para validación.
+
+- **Cómo se resuelve hoy:** Portal SII (propuesta de F29) o contador humano.
+- **Costo actual:** Contador mensual ($30.000 - $80.000/mes). Multas altas por atraso.
+- **Tiempo y fricción:** Estrés de cumplimiento entre los días 12 y 20 de cada mes.
+- **Tasa de fracaso/abandono:** Acumulación de multas por olvidar declarar "sin movimiento".
+- **Brecha IA:** Recordatorio proactivo ("Mañana vence el F29") y conexión con contadores del *marketplace* para validación.
 
 **2. Dolor: Facturación Electrónica (Uso del Sistema Gratuito SII Mipyme).**
-1. **Cómo se resuelve hoy:** App e-Boleta del SII o Mipyme web desde computador de escritorio.
-2. **Costo actual:** Sistema gratuito, pero lento.
-3. **Tiempo y fricción:** Interfaz tosca, difícil de usar desde el móvil con conectividad intermitente.
-4. **Tasa de fracaso/abandono:** Errores de tipeo en RUTs o giros que anulan facturas, requiriendo complejas Notas de Crédito.
-5. **Brecha IA:** Integración API. La IA recibe un audio ("Hazle factura a la Comercializadora Sur por 50 lucas") y devuelve el PDF en WhatsApp.
+
+- **Cómo se resuelve hoy:** App e-Boleta del SII o Mipyme web desde computador de escritorio.
+- **Costo actual:** Sistema gratuito, pero lento.
+- **Tiempo y fricción:** Interfaz tosca, difícil de usar desde el móvil con conectividad intermitente.
+- **Tasa de fracaso/abandono:** Errores de tipeo en RUTs o giros que anulan facturas, requiriendo complejas Notas de Crédito.
+- **Brecha IA:** Integración API. La IA recibe un audio ("Hazle factura a la Comercializadora Sur por 50 lucas") y devuelve el PDF en WhatsApp.
 
 **3. Dolor: Elección y Comprensión del Régimen Tributario.**
-1. **Cómo se resuelve hoy:** Asignación automática por el SII (frecuentemente Pro-Pyme General) sin optimización.
-2. **Costo actual:** Pago de impuestos mayores a los correspondientes por desconocimiento del Régimen Transparente.
-3. **Tiempo y fricción:** Imposibilidad de entender los efectos tributarios en el año fiscal siguiente.
-4. **Tasa de fracaso/abandono:** Tributación ineficiente.
-5. **Brecha IA:** Traducción de las implicancias directas de los regímenes Pyme a lenguaje llano.
+
+- **Cómo se resuelve hoy:** Asignación automática por el SII (frecuentemente Pro-Pyme General) sin optimización.
+- **Costo actual:** Pago de impuestos mayores a los correspondientes por desconocimiento del Régimen Transparente.
+- **Tiempo y fricción:** Imposibilidad de entender los efectos tributarios en el año fiscal siguiente.
+- **Tasa de fracaso/abandono:** Tributación ineficiente.
+- **Brecha IA:** Traducción de las implicancias directas de los regímenes Pyme a lenguaje llano.
 
 *Tabla Comparativa de Regímenes Tributarios Pyme (Ley 21.210):*
 
@@ -302,39 +325,44 @@ Ya existe la "Empresa". Ahora, el Estado exige un cumplimiento mensual estricto.
 | **Contabilidad** | Completa (o simplificada si se opta). | Estrictamente simplificada (ingresos menos egresos). |
 
 **4. Dolor: Operación Renta Anual (F22).**
-1. **Cómo se resuelve hoy:** Asistente del SII en abril o contador estacional.
-2. **Costo actual:** Pago honorario puntual a contadores ($50.000 - $150.000). Pago obligatorio de cotizaciones previsionales si hubo boletas de honorarios.
-3. **Tiempo y fricción:** Pánico en el mes de abril por cruces de información (DJ).
-4. **Tasa de fracaso/abandono:** Retención de devoluciones de impuestos por inconsistencias.
-5. **Brecha IA:** Acompañamiento en el Asistente del SII y pre-alerta de montos a pagar o devolver.
+
+- **Cómo se resuelve hoy:** Asistente del SII en abril o contador estacional.
+- **Costo actual:** Pago honorario puntual a contadores ($50.000 - $150.000). Pago obligatorio de cotizaciones previsionales si hubo boletas de honorarios.
+- **Tiempo y fricción:** Pánico en el mes de abril por cruces de información (DJ).
+- **Tasa de fracaso/abandono:** Retención de devoluciones de impuestos por inconsistencias.
+- **Brecha IA:** Acompañamiento en el Asistente del SII y pre-alerta de montos a pagar o devolver.
 
 **5. Dolor: Obtención de Certificados y Burocracia Comercial.**
-1. **Cómo se resuelve hoy:** Ingresar con RUT de empresa al SII para descargar la "Carpeta Tributaria" requerida por bancos.
-2. **Costo actual:** Gratis en plataforma.
-3. **Tiempo y fricción:** Olvido de credenciales (ClaveSII) o no saber qué opción específica descargar del menú del SII.
-4. **Tasa de fracaso/abandono:** Demoras en la apertura de cuentas bancarias o postulación a licitaciones.
-5. **Brecha IA:** Generación y entrega automática de la carpeta tributaria por WhatsApp al solicitarla mediante credenciales vinculadas.
+
+- **Cómo se resuelve hoy:** Ingresar con RUT de empresa al SII para descargar la "Carpeta Tributaria" requerida por bancos.
+- **Costo actual:** Gratis en plataforma.
+- **Tiempo y fricción:** Olvido de credenciales (ClaveSII) o no saber qué opción específica descargar del menú del SII.
+- **Tasa de fracaso/abandono:** Demoras en la apertura de cuentas bancarias o postulación a licitaciones.
+- **Brecha IA:** Generación y entrega automática de la carpeta tributaria por WhatsApp al solicitarla mediante credenciales vinculadas.
 
 **6. Dolor: Conciliación Bancaria.**
-1. **Cómo se resuelve hoy:** Cruzar manualmente la cartola de CuentaRUT Emprendedor con facturas o boletas.
-2. **Costo actual:** Tiempo valioso consumido.
-3. **Tiempo y fricción:** Horas comparando montos; problemas con depósitos agrupados (pasarelas).
-4. **Tasa de fracaso/abandono:** Cuentas por cobrar no identificadas (dinero que se pierde).
-5. **Brecha IA:** Subida de PDF de cartola al chat; la IA extrae datos (OCR/NLP) y detecta facturas impagas cruzando con registro del SII.
+
+- **Cómo se resuelve hoy:** Cruzar manualmente la cartola de CuentaRUT Emprendedor con facturas o boletas.
+- **Costo actual:** Tiempo valioso consumido.
+- **Tiempo y fricción:** Horas comparando montos; problemas con depósitos agrupados (pasarelas).
+- **Tasa de fracaso/abandono:** Cuentas por cobrar no identificadas (dinero que se pierde).
+- **Brecha IA:** Subida de PDF de cartola al chat; la IA extrae datos (OCR/NLP) y detecta facturas impagas cruzando con registro del SII.
 
 **7. Dolor: Gestión de Boletas de Honorarios recibidas (Retenciones).**
-1. **Cómo se resuelve hoy:** Pagar la retención mensual correspondiente en el F29.
-2. **Costo actual:** Retención del porcentaje legal que incrementa anualmente (13.75% en 2024).
-3. **Tiempo y fricción:** Confusión aritmética entre "sueldo bruto" y "sueldo líquido" al acordar un pago con un *freelancer*.
-4. **Tasa de fracaso/abandono:** Pagos líquidos incorrectos y multas si la empresa olvida retener y pagar el F29.
-5. **Brecha IA:** Calcular matemáticamente al instante "líquido vs bruto" en WhatsApp.
+
+- **Cómo se resuelve hoy:** Pagar la retención mensual correspondiente en el F29.
+- **Costo actual:** Retención del porcentaje legal que incrementa anualmente (13.75% en 2024).
+- **Tiempo y fricción:** Confusión aritmética entre "sueldo bruto" y "sueldo líquido" al acordar un pago con un *freelancer*.
+- **Tasa de fracaso/abandono:** Pagos líquidos incorrectos y multas si la empresa olvida retener y pagar el F29.
+- **Brecha IA:** Calcular matemáticamente al instante "líquido vs bruto" en WhatsApp.
 
 **8. Dolor: Primer choque con multas SII.**
-1. **Cómo se resuelve hoy:** Pánico, inacción, o visita presencial angustiante a la oficina local del SII.
-2. **Costo actual:** Intereses penales y reajustes mensuales que encarecen la multa original.
-3. **Tiempo y fricción:** Miedo a ser embargados; lectura de notificaciones legales incomprensibles.
-4. **Tasa de fracaso/abandono:** Abandono del sistema formal; la empresa queda "sucia" con deudas fiscales irrecuperables.
-5. **Brecha IA:** Traducción del nivel de urgencia del correo del SII y guía sobre cómo solicitar "Condonación de Multas e Intereses" online.
+
+- **Cómo se resuelve hoy:** Pánico, inacción, o visita presencial angustiante a la oficina local del SII.
+- **Costo actual:** Intereses penales y reajustes mensuales que encarecen la multa original.
+- **Tiempo y fricción:** Miedo a ser embargados; lectura de notificaciones legales incomprensibles.
+- **Tasa de fracaso/abandono:** Abandono del sistema formal; la empresa queda "sucia" con deudas fiscales irrecuperables.
+- **Brecha IA:** Traducción del nivel de urgencia del correo del SII y guía sobre cómo solicitar "Condonación de Multas e Intereses" online.
 
 **Síntesis E3:** La operación formal es un régimen de cumplimiento. La ansiedad de equivocarse con "los impuestos" paraliza. El Copiloto debe simplificar la contabilidad diaria y actuar como puente hacia contadores reales cuando la complejidad técnica excede la IA.
 
@@ -343,60 +371,68 @@ Ya existe la "Empresa". Ahora, el Estado exige un cumplimiento mensual estricto.
 El negocio es estable y formal, pero carece de capital e infraestructura para escalar. Las herramientas del Estado y la banca existen, pero los requisitos son crípticos.
 
 **1. Dolor: Acceso a Financiamiento y Microcréditos.**
-1. **Cómo se resuelve hoy:** BancoEstado Microempresas, Banigualdad, Fondo Esperanza. Los bancos exigen 1-2 años de IVA continuo. Microfinanzas como Fondo Esperanza utilizan modelo de "crédito solidario" o Banca Comunal `[cite: 11, 12]`.
-2. **Costo actual:** Fondo Esperanza reportó en 2024 una tasa de intervención/referencia ajustada del 5% `[cite: 12]`. Banigualdad opera con tasas en torno al 1.52% mensual `[cite: 13, 14]`.
-3. **Tiempo y fricción:** Evaluaciones estrictas, necesidad de formar grupos (avales solidarios en Banigualdad son de 18 personas) `[cite: 13, 15]`. 
-4. **Tasa de fracaso/abandono:** 44% de los emprendedores identifica el acceso a financiamiento como su principal barrera `[cite: 12]`. Alto rechazo en la banca tradicional.
-5. **Brecha IA:** Diagnóstico de "Salud Crediticia" evaluando continuidad de F29 y derivación a la institución microfinanciera idónea según historial.
+
+- **Cómo se resuelve hoy:** BancoEstado Microempresas, Banigualdad, Fondo Esperanza. Los bancos exigen 1-2 años de IVA continuo. Microfinanzas como Fondo Esperanza utilizan modelo de "crédito solidario" o Banca Comunal `[cite: 11, 12]`.
+- **Costo actual:** Fondo Esperanza reportó en 2024 una tasa de intervención/referencia ajustada del 5% `[cite: 12]`. Banigualdad opera con tasas en torno al 1.52% mensual `[cite: 13, 14]`.
+- **Tiempo y fricción:** Evaluaciones estrictas, necesidad de formar grupos (avales solidarios en Banigualdad son de 18 personas) `[cite: 13, 15]`. 
+- **Tasa de fracaso/abandono:** 44% de los emprendedores identifica el acceso a financiamiento como su principal barrera `[cite: 12]`. Alto rechazo en la banca tradicional.
+- **Brecha IA:** Diagnóstico de "Salud Crediticia" evaluando continuidad de F29 y derivación a la institución microfinanciera idónea según historial.
 
 **2. Dolor: Postulación a Subsidios del Estado (Sercotec/Corfo).**
-1. **Cómo se resuelve hoy:** Llenado de formularios largos y modelos Canvas en www.sercotec.cl. Requiere grabación de "pitch" de video.
-2. **Costo actual:** Postulación gratuita, pero exige un cofinanciamiento posterior obligatorio si se gana.
-3. **Tiempo y fricción:** Semanas redactando respuestas. Brecha enorme en redacción técnica ("literacy" regulatoria y de negocios).
-4. **Tasa de fracaso/abandono:** Altísima tasa de rechazo, superando sistemáticamente el 50% de los proyectos postulados por ser inadmisibles o mal formulados `[cite: 6, 7]`.
-5. **Brecha IA:** Asistente conversacional que actúa como oráculo/RAG: entrevista al usuario y redacta el Modelo Canvas y el guion del Pitch.
+
+- **Cómo se resuelve hoy:** Llenado de formularios largos y modelos Canvas en www.sercotec.cl. Requiere grabación de "pitch" de video.
+- **Costo actual:** Postulación gratuita, pero exige un cofinanciamiento posterior obligatorio si se gana.
+- **Tiempo y fricción:** Semanas redactando respuestas. Brecha enorme en redacción técnica ("literacy" regulatoria y de negocios).
+- **Tasa de fracaso/abandono:** Altísima tasa de rechazo, superando sistemáticamente el 50% de los proyectos postulados por ser inadmisibles o mal formulados `[cite: 6, 7]`.
+- **Brecha IA:** Asistente conversacional que actúa como oráculo/RAG: entrevista al usuario y redacta el Modelo Canvas y el guion del Pitch.
 
 **3. Dolor: Créditos con Garantía Estatal (FOGAPE).**
-1. **Cómo se resuelve hoy:** Solicitud a través del banco comercial del emprendedor.
-2. **Costo actual:** Tasa fijada por normativa + comisiones bancarias.
-3. **Tiempo y fricción:** Falsa expectativa: los usuarios creen que el Estado les prestará el dinero directo o les perdonará la deuda si fracasan.
-4. **Tasa de fracaso/abandono:** Rechazo de los bancos si el riesgo de la pyme es excesivo (la garantía cubre una parte al banco, no asegura el otorgamiento).
-5. **Brecha IA:** Desmitificar que FOGAPE no es un regalo, es un aval. Explicar claramente el riesgo de mora.
+
+- **Cómo se resuelve hoy:** Solicitud a través del banco comercial del emprendedor.
+- **Costo actual:** Tasa fijada por normativa + comisiones bancarias.
+- **Tiempo y fricción:** Falsa expectativa: los usuarios creen que el Estado les prestará el dinero directo o les perdonará la deuda si fracasan.
+- **Tasa de fracaso/abandono:** Rechazo de los bancos si el riesgo de la pyme es excesivo (la garantía cubre una parte al banco, no asegura el otorgamiento).
+- **Brecha IA:** Desmitificar que FOGAPE no es un regalo, es un aval. Explicar claramente el riesgo de mora.
 
 **4. Dolor: Contratación del Primer Empleado y Ley Laboral.**
-1. **Cómo se resuelve hoy:** Contratos "de palabra" o descarga de formatos genéricos inseguros de internet.
-2. **Costo actual:** En caso de litigio, demandas laborales que pueden quebrar a una pyme.
-3. **Tiempo y fricción:** Complejidad en la redacción de causales y registro obligatorio en el portal de la Dirección del Trabajo (DT).
-4. **Tasa de fracaso/abandono:** Multas de la Inspección del Trabajo por no escrituración y registro a tiempo.
-5. **Brecha IA:** Generador automático de un Contrato de Trabajo validado (Código del Trabajo) y tutorial para su registro en MiDT.
+
+- **Cómo se resuelve hoy:** Contratos "de palabra" o descarga de formatos genéricos inseguros de internet.
+- **Costo actual:** En caso de litigio, demandas laborales que pueden quebrar a una pyme.
+- **Tiempo y fricción:** Complejidad en la redacción de causales y registro obligatorio en el portal de la Dirección del Trabajo (DT).
+- **Tasa de fracaso/abandono:** Multas de la Inspección del Trabajo por no escrituración y registro a tiempo.
+- **Brecha IA:** Generador automático de un Contrato de Trabajo validado (Código del Trabajo) y tutorial para su registro en MiDT.
 
 **5. Dolor: Pago de Cotizaciones (PreviRed).**
-1. **Cómo se resuelve hoy:** Carga manual de planillas en previred.com.
-2. **Costo actual:** Multas y presunción legal de deuda si no se pagan. Imposibilidad de licitar con Estado (Ley Bustos).
-3. **Tiempo y fricción:** Proceso poco amigable los días 10 de cada mes.
-4. **Tasa de fracaso/abandono:** Declaración omitida por falta de caja.
-5. **Brecha IA:** Recordatorio del día 10 y educación crítica: "Si no tienes liquidez este mes, debes DECLARAR sin pago en Previred para evitar la multa inmediata".
+
+- **Cómo se resuelve hoy:** Carga manual de planillas en previred.com.
+- **Costo actual:** Multas y presunción legal de deuda si no se pagan. Imposibilidad de licitar con Estado (Ley Bustos).
+- **Tiempo y fricción:** Proceso poco amigable los días 10 de cada mes.
+- **Tasa de fracaso/abandono:** Declaración omitida por falta de caja.
+- **Brecha IA:** Recordatorio del día 10 y educación crítica: "Si no tienes liquidez este mes, debes DECLARAR sin pago en Previred para evitar la multa inmediata".
 
 **6. Dolor: Cumplimiento de Normativas Modernas (ej. Ley Karin).**
-1. **Cómo se resuelve hoy:** Contratación de consultoras de RRHH costosas o ignorancia de la ley de acoso laboral.
-2. **Costo actual:** Multas severas de la DT y daño reputacional.
-3. **Tiempo y fricción:** Dificultad para generar protocolos legales de cero.
-4. **Tasa de fracaso/abandono:** Incumplimiento generalizado en el segmento microempresas.
-5. **Brecha IA:** Proveer el "Protocolo de Prevención" estándar simplificado por la DT para microempresas de menos de 10 trabajadores.
+
+- **Cómo se resuelve hoy:** Contratación de consultoras de RRHH costosas o ignorancia de la ley de acoso laboral.
+- **Costo actual:** Multas severas de la DT y daño reputacional.
+- **Tiempo y fricción:** Dificultad para generar protocolos legales de cero.
+- **Tasa de fracaso/abandono:** Incumplimiento generalizado en el segmento microempresas.
+- **Brecha IA:** Proveer el "Protocolo de Prevención" estándar simplificado por la DT para microempresas de menos de 10 trabajadores.
 
 **7. Dolor: Vender al Estado (Mercado Público / PymeÁgil).**
-1. **Cómo se resuelve hoy:** Registro en ChileProveedores y postulación a licitaciones largas y complejas.
-2. **Costo actual:** Inscripción y mantención en el registro de proveedores.
-3. **Tiempo y fricción:** Burocracia inmensa; exigencia de boletas de garantía.
-4. **Tasa de fracaso/abandono:** Desistimiento ante licitaciones complejas.
-5. **Brecha IA:** Focalizar a la usuaria en "Compra Ágil" (compras menores a 30 UTM) donde el Estado compra rápido y directo.
+
+- **Cómo se resuelve hoy:** Registro en ChileProveedores y postulación a licitaciones largas y complejas.
+- **Costo actual:** Inscripción y mantención en el registro de proveedores.
+- **Tiempo y fricción:** Burocracia inmensa; exigencia de boletas de garantía.
+- **Tasa de fracaso/abandono:** Desistimiento ante licitaciones complejas.
+- **Brecha IA:** Focalizar a la usuaria en "Compra Ágil" (compras menores a 30 UTM) donde el Estado compra rápido y directo.
 
 **8. Dolor: Expansión Digital (Pasarelas de pago y links).**
-1. **Cómo se resuelve hoy:** Adopción de Transbank, Mercado Pago, MACH, o Flow.
-2. **Costo actual:** Comisiones por transacción (ej. 2.95% + IVA) variables.
-3. **Tiempo y fricción:** Alta confusión matemática sobre el "costo real" de ofrecer pago con tarjeta al cliente.
-4. **Tasa de fracaso/abandono:** Absorción de la comisión por la pyme, matando su escaso margen de ganancia.
-5. **Brecha IA:** Calculador de pasarelas. "Si cobras 10.000 con Transbank recibes X, con Flow recibes Y. ¿Quieres que recalcule el precio de venta para que tú recibas tus 10.000 limpios?".
+
+- **Cómo se resuelve hoy:** Adopción de Transbank, Mercado Pago, MACH, o Flow.
+- **Costo actual:** Comisiones por transacción (ej. 2.95% + IVA) variables.
+- **Tiempo y fricción:** Alta confusión matemática sobre el "costo real" de ofrecer pago con tarjeta al cliente.
+- **Tasa de fracaso/abandono:** Absorción de la comisión por la pyme, matando su escaso margen de ganancia.
+- **Brecha IA:** Calculador de pasarelas. "Si cobras 10.000 con Transbank recibes X, con Flow recibes Y. ¿Quieres que recalcule el precio de venta para que tú recibas tus 10.000 limpios?".
 
 **Síntesis E4:** Crecer requiere capital (Sercotec/Bancos) y recursos humanos (DT/Previred). La IA se convierte en un Estratega: ayuda a levantar fondos traduciendo ideas a "lenguaje Sercotec" y blinda legalmente al negocio en sus primeras contrataciones.
 
@@ -405,60 +441,68 @@ El negocio es estable y formal, pero carece de capital e infraestructura para es
 El fracaso es parte del ciclo. Cuando las deudas ahogan o el modelo no funciona, el sistema suele castigar con estigma social y muerte comercial.
 
 **1. Dolor: Sobreendeudamiento impagable (Insolvencia).**
-1. **Cómo se resuelve hoy:** Búsqueda de ayuda legal de urgencia. Aplicación de la Ley 21.563 (Reorganización y Liquidación) `[cite: 4, 16]`.
-2. **Costo actual:** Costos jurídicos altos y angustia emocional.
-3. **Tiempo y fricción:** Procedimientos judiciales largos e intimidantes.
-4. **Tasa de fracaso/abandono:** Inacción hasta sufrir embargos judiciales de bienes físicos.
-5. **Brecha IA:** Educar sobre el "Procedimiento Concursal de Reorganización Simplificada" que otorga protección financiera contra embargos `[cite: 16, 17]`.
+
+- **Cómo se resuelve hoy:** Búsqueda de ayuda legal de urgencia. Aplicación de la Ley 21.563 (Reorganización y Liquidación) `[cite: 4, 16]`.
+- **Costo actual:** Costos jurídicos altos y angustia emocional.
+- **Tiempo y fricción:** Procedimientos judiciales largos e intimidantes.
+- **Tasa de fracaso/abandono:** Inacción hasta sufrir embargos judiciales de bienes físicos.
+- **Brecha IA:** Educar sobre el "Procedimiento Concursal de Reorganización Simplificada" que otorga protección financiera contra embargos `[cite: 16, 17]`.
 
 **2. Dolor: Liquidación Simplificada (Quiebra Mipyme).**
-1. **Cómo se resuelve hoy:** Cierre desordenado ("bajar la cortina"), arrastrando deudas personales perpetuas.
-2. **Costo actual:** Pérdida patrimonial y exclusión bancaria indefinida.
-3. **Tiempo y fricción:** Desconocimiento de que la ley permite limpiar deudas (Discharge) liquidando activos `[cite: 5]`.
-4. **Tasa de fracaso/abandono:** Vida eterna en la clandestinidad financiera.
-5. **Brecha IA:** Acompañamiento emocional y explicación de que la liquidación formal permite extinguir saldos insolutos para volver a empezar `[cite: 5, 17]`.
+
+- **Cómo se resuelve hoy:** Cierre desordenado ("bajar la cortina"), arrastrando deudas personales perpetuas.
+- **Costo actual:** Pérdida patrimonial y exclusión bancaria indefinida.
+- **Tiempo y fricción:** Desconocimiento de que la ley permite limpiar deudas (Discharge) liquidando activos `[cite: 5]`.
+- **Tasa de fracaso/abandono:** Vida eterna en la clandestinidad financiera.
+- **Brecha IA:** Acompañamiento emocional y explicación de que la liquidación formal permite extinguir saldos insolutos para volver a empezar `[cite: 5, 17]`.
 
 **3. Dolor: Profesionales a Honorarios ahogados en deudas.**
-1. **Cómo se resuelve hoy:** Desesperación o usura.
-2. **Costo actual:** Inviabilidad financiera.
-3. **Tiempo y fricción:** Confusión sobre si aplican como persona o empresa.
-4. **Tasa de fracaso/abandono:** Caída en default prolongado.
-5. **Brecha IA:** Explicar una innovación de la Ley 21.563: emisores de boletas de honorarios acceden a la *renegociación gratuita* ante la SUPERIR en vez de ir a juicio de quiebra `[cite: 4, 16]`.
+
+- **Cómo se resuelve hoy:** Desesperación o usura.
+- **Costo actual:** Inviabilidad financiera.
+- **Tiempo y fricción:** Confusión sobre si aplican como persona o empresa.
+- **Tasa de fracaso/abandono:** Caída en default prolongado.
+- **Brecha IA:** Explicar una innovación de la Ley 21.563: emisores de boletas de honorarios acceden a la *renegociación gratuita* ante la SUPERIR en vez de ir a juicio de quiebra `[cite: 4, 16]`.
 
 **4. Dolor: Suspensión Temporal o Término de Giro SII.**
-1. **Cómo se resuelve hoy:** Dejar "botada" la empresa, acumulando F29 no presentados.
-2. **Costo actual:** Multas sistemáticas mensuales por omisión, acumulando millones.
-3. **Tiempo y fricción:** Miedo a avisar al SII que el negocio fracasó.
-4. **Tasa de fracaso/abandono:** Acumulación de multas fiscales impagables.
-5. **Brecha IA:** Guiar el "Aviso de Suspensión Temporal" o el "Término de Giro" definitivo para cortar el sangrado legal.
+
+- **Cómo se resuelve hoy:** Dejar "botada" la empresa, acumulando F29 no presentados.
+- **Costo actual:** Multas sistemáticas mensuales por omisión, acumulando millones.
+- **Tiempo y fricción:** Miedo a avisar al SII que el negocio fracasó.
+- **Tasa de fracaso/abandono:** Acumulación de multas fiscales impagables.
+- **Brecha IA:** Guiar el "Aviso de Suspensión Temporal" o el "Término de Giro" definitivo para cortar el sangrado legal.
 
 **5. Dolor: Disolución de Sociedad en RES.**
-1. **Cómo se resuelve hoy:** Redactar acta de disolución, firma de todos los socios.
-2. **Costo actual:** Notaría (costos variables).
-3. **Tiempo y fricción:** Dificultad para coordinar a ex-socios peleados.
-4. **Tasa de fracaso/abandono:** Sociedades fantasmas vigentes legalmente pero muertas comercialmente.
-5. **Brecha IA:** Flujo guiado para el cierre ordenado en Tu Empresa en Un Día.
+
+- **Cómo se resuelve hoy:** Redactar acta de disolución, firma de todos los socios.
+- **Costo actual:** Notaría (costos variables).
+- **Tiempo y fricción:** Dificultad para coordinar a ex-socios peleados.
+- **Tasa de fracaso/abandono:** Sociedades fantasmas vigentes legalmente pero muertas comercialmente.
+- **Brecha IA:** Flujo guiado para el cierre ordenado en Tu Empresa en Un Día.
 
 **6. Dolor: Venta de la empresa / Traspaso de acciones.**
-1. **Cómo se resuelve hoy:** Acuerdos informales ("te paso la llave").
-2. **Costo actual:** Abogados para la compraventa corporativa.
-3. **Tiempo y fricción:** Riesgo de adquirir pasivos ocultos del dueño anterior.
-4. **Tasa de fracaso/abandono:** Ventas fallidas o estafas en el traspaso.
-5. **Brecha IA:** Orientar sobre el proceso formal de ceder acciones o derechos sociales vía Empresa en Un Día.
+
+- **Cómo se resuelve hoy:** Acuerdos informales ("te paso la llave").
+- **Costo actual:** Abogados para la compraventa corporativa.
+- **Tiempo y fricción:** Riesgo de adquirir pasivos ocultos del dueño anterior.
+- **Tasa de fracaso/abandono:** Ventas fallidas o estafas en el traspaso.
+- **Brecha IA:** Orientar sobre el proceso formal de ceder acciones o derechos sociales vía Empresa en Un Día.
 
 **7. Dolor: El estigma y bloqueo de DICOM.**
-1. **Cómo se resuelve hoy:** Caer en redes o mercado negro de "borrado de DICOM".
-2. **Costo actual:** Estafas o exclusión crediticia total.
-3. **Tiempo y fricción:** Aislamiento económico de hasta 5 años o más.
-4. **Tasa de fracaso/abandono:** Muerte comercial de la persona natural detrás de la empresa.
-5. **Brecha IA:** Explicar los plazos de prescripción reales y cómo la finalización de un proceso de la Ley 21.563 rehabilita financieramente `[cite: 4]`.
+
+- **Cómo se resuelve hoy:** Caer en redes o mercado negro de "borrado de DICOM".
+- **Costo actual:** Estafas o exclusión crediticia total.
+- **Tiempo y fricción:** Aislamiento económico de hasta 5 años o más.
+- **Tasa de fracaso/abandono:** Muerte comercial de la persona natural detrás de la empresa.
+- **Brecha IA:** Explicar los plazos de prescripción reales y cómo la finalización de un proceso de la Ley 21.563 rehabilita financieramente `[cite: 4]`.
 
 **8. Dolor: Reinvención post-fracaso (El Pivot).**
-1. **Cómo se resuelve hoy:** Retorno al trabajo asalariado o informalidad extrema.
-2. **Costo actual:** Pérdida del talento emprendedor para el país.
-3. **Tiempo y fricción:** Duelo emocional severo.
-4. **Tasa de fracaso/abandono:** Fin de la vida emprendedora.
-5. **Brecha IA:** Coaching de resiliencia; extracción de lecciones ("Pivot") y fomento de volver a intentar con estructuras de bajo riesgo (MEF).
+
+- **Cómo se resuelve hoy:** Retorno al trabajo asalariado o informalidad extrema.
+- **Costo actual:** Pérdida del talento emprendedor para el país.
+- **Tiempo y fricción:** Duelo emocional severo.
+- **Tasa de fracaso/abandono:** Fin de la vida emprendedora.
+- **Brecha IA:** Coaching de resiliencia; extracción de lecciones ("Pivot") y fomento de volver a intentar con estructuras de bajo riesgo (MEF).
 
 ---
 
@@ -968,8 +1012,6 @@ Para el **Claude Impact Lab Chile 2026**, el MVP debe balancear la utilidad cív
 2.  **Buscador de Giros Inverso - `[E2-FORM-20]`:** Si una Mipyme elige "Agricultura" en el SII en vez de "Elaboración de Alimentos", el SEREMI de Salud la paralizará 6 meses. La IA que cruza NLP con el diccionario oficial del SII previene un cuello de botella fatal antes de que ocurra.
 3.  **Alerta de Tope CuentaRUT - `[E1-OPER-10]`:** BancoEstado impone topes estrictos de depósitos mensuales. Un negocio informal que "pega un palo" en ventas por Instagram, de pronto se encuentra con su cuenta congelada, bloqueando su liquidez vital. Avisarle 24 horas antes es un salvavidas que generará una tasa de retención brutal.
 
-
-
 **Sources:**
 1. [soychile.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBeAHuW3ZZc31i6kCUGUWjvswkX1oR0yxQH7W0-FSsA9utx1_Fdm7gp2hOxXVMToX60VXNTBAW7oqIY7JSvzWBtTkw40f9ddpweR1LqT7Ec6vKNs82zZ-vI0Tb7NXAofGc0h5oehNeBdyfhmyLDhvvlgM0bpuwA8kT5EOBXmvCN9q1W1oYw7sPEEGvXr5EDQ==)
 2. [apigateway.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqKR8TIGEnGzeeuavHZOQVomUC1Lc4HQmR2X_Lxre4Py32k70xQsAyUiDd_P79n50_KxRjdrgUqqG0bp-YB-mEqyvpRcQE8_aa4QlhlvWu)
@@ -1029,7 +1071,6 @@ Para el **Claude Impact Lab Chile 2026**, el MVP debe balancear la utilidad cív
 56. [culqi.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGp6oq14tc4sMVudszQLut7sVQQIAgOjF7Ng_QozC1PD10yHDMd0jn9Ks7pa5k0peGc0GXngO2_fl8lyZaJQ5pc7kWx6g0NTok79qi17F86mJe9XfxtqZ_ePrQP)
 57. [esan.edu.pe](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfAoWmdmMyaVPrCFEm5l3cUBs54gea-K3l_zt8Dx5LfY205D0E54mIWWJltv-__kZjo7AW3VS9gM6xEcbHQHRlsTkclLZHKTFuECmotZhbmkrdWv3glo6uSoyOpAx5_C0kj-Rhwt_yrlA9F25EOx3q0uOY0y0aWeWgxpffYTQEh_JsWtlU)
 58. [fluyez.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEM-2DahUOzt4vjsybNBE2vicw0bDAVKJODITsZGrciLZujsTVQnDuz0mvV7C-LAJIyaA8Z68GvuLCmi6moigvtIxBPQLNAZReYJh6uK42AJi6ojLGDowr6Fxmvcaxn56g2FCCKOXoPWw02U1AqhUW-diIHT1cDgDOB8mFeZT3bY38aTEw=)
-
 
 ## Visualizaciones
 
