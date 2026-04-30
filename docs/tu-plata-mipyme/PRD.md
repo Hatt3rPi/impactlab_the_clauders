@@ -304,11 +304,41 @@ Cada RF es derivable del backlog ✅ Incluir, del plan técnico (`plan.md` §3 j
 
 ### 5.1 Tabla de criterios
 
-[Pendiente — Tarea 9]
+Cada criterio (CA) se ancla a un RF de la Sección 4.3 (excepto los CA transversales finales, que cubren auto-score, demo end-to-end y verificabilidad de citas). Los responsables se distribuyen entre los 4 miembros según los roles declarados en [miembros.md](../equipo/miembros.md): **Felipe** (AI Builder + Tech lead), **Jose** (PM + Comercial/Producto + Pitch lead potencial), **Cristian** (AI Builder de apoyo) y **Anahi** (UX/UI + Vibecoder + análisis de datos). Estado inicial: todos **Pendiente** hasta que el responsable los marque verificados antes del 6 de mayo.
 
-### 5.2 Responsable de validación
+| ID | Criterio (RF asociado) | Método de verificación | Responsable | Estado |
+|---|---|---|---|---|
+| CA-01 | RF-01 — bot WhatsApp responde a mensaje en lenguaje natural en < 4 s p95 desde mobile | 10 mensajes cronometrados desde mobile real; registrar p95 en log de demo | Felipe | Pendiente |
+| CA-02 | RF-02 — supervisor rutea correctamente a `acompanante-informal` con expediente cargado | Set curado de 10 prompts de Etapa 2; auditoría manual del rutado y del expediente entregado | Cristian | Pendiente |
+| CA-03 | RF-03 — 100 % de mensajes del demo respetan ≤ 160 caracteres y 1 idea por mensaje en B1 / 8° básico | Revisión manual de transcripción del demo por Anahi con checklist de legibilidad | Anahi | Pendiente |
+| CA-04 | RF-04 — registro de venta por NLP desde texto ("vendí $X") confirmado y persistido en Postgres | 5 mensajes de prueba con variaciones de monto y formato; verificar fila en tabla `ventas` | Cristian | Pendiente |
+| CA-05 | RF-05 — sesión 2 retoma contexto sin re-pedir datos básicos | Cerrar sesión, abrir nueva conversación con mismo número, verificar que el bot saluda con expediente cargado | Felipe | Pendiente |
+| CA-06 | RF-06 — reporte semanal automático con utilidad real vs simulación Pro-Pyme | Ejecutar cron del reporte en ambiente demo y verificar mensaje recibido con ambos números | Cristian | Pendiente |
+| CA-07 | RF-07 — tool `simular-pro-pyme` retorna número en CLP + explicación + disclaimer | 3 casos de prueba con ventas/gastos distintos; verificar respuesta completa y disclaimer "no te calculo, te enseño" | Felipe | Pendiente |
+| CA-08 | RF-08 — tool `generar-carta-banco` produce PDF descargable y legible en mobile | Generar carta para 2 perfiles distintos; abrir PDF en iPhone y Android, verificar legibilidad | Anahi | Pendiente |
+| CA-09 | RF-09 — 100 % de respuestas normativas del demo incluyen link verificable a SII / CORFO / SERCOTEC / CMF | Auditoría manual de transcripción del demo: cada respuesta normativa contrastada contra link clickeable | Jose | Pendiente |
+| CA-10 | RF-10 — derivación explícita "no sé, te derivo" ante prompt fuera de scope, sin alucinación | Set de 5 prompts fuera de dominio (medicina, política, deportes); verificar que ninguna respuesta inventa contenido | Cristian | Pendiente |
+| CA-11 | RF-11 — comandos `/mis-datos` y `/borrar-mis-datos` operativos por WhatsApp | Demo en vivo: enviar cada comando y verificar export JSON / confirmación de borrado | Felipe | Pendiente |
+| CA-12 | RF-12 — landing y embed del chat accesibles durante el pitch en mobile y desktop | Abrir URL pública desde 3 dispositivos (laptop, iPhone, Android); verificar embed funcional | Anahi | Pendiente |
+| CA-13 | RF-13 — panel paralelo en la web muestra handoffs, tools y citas en tiempo real durante la demo | Ensayo del demo con panel visible; verificar latencia < 2 s entre evento del agente y render en panel | Felipe | Pendiente |
+| CA-14 | RF-14 — MCP propio sobre corpus regulatorio chileno con cache hit rate > 80 % | Telemetría local del MCP durante 30 consultas variadas; reportar hit rate medido | Cristian | Pendiente |
+| CA-15 | RF-15 — fallback offline pre-grabado activo para registro de venta y carta a banco si Claude API o WhatsApp gateway fallan | Simular caída forzada de cada dependencia; verificar continuidad del demo con indicador "modo offline" | Felipe | Pendiente |
+| CA-16 | RF-16 — repo evidencia Claude API + Agent SDK + ≥ 1 MCP propio; README lo declara | Inspección del repo `Hatt3rPi/impactlab_the_clauders` por Jose contra checklist de [criterios-evaluacion](../competencia/criterios-evaluacion.md) | Jose | Pendiente |
+| CA-17 | RF-17 — telemetría anónima opt-in con eventos del flujo dorado, sin PII | Inspección de eventos generados durante un demo completo; verificar ausencia de PII en payload | Anahi | Pendiente |
+| CA-18 | RF-18 — pitch de ~5 min con narrativa Hook → Usuario → Solución → Demo → Claude/agentic → Impacto, ensayado ≥ 2 veces antes del 7-may 12:00 | Cronometrar 2 ensayos completos el 5 y 6 de mayo; registrar duración y feedback en bitácora | Jose | Pendiente |
+| CA-19 | **Transversal** — auto-score interno ≥ 85/100 según los 5 criterios oficiales (Impacto 25 % · Datos 25 % · Claude/Agentic 20 % · Funcionalidad 15 % · Pitch 15 %) más bonus *agentic thinking* | Auto-evaluación del equipo completo el 6-may en la noche, cruzando contra [criterios-evaluacion](../competencia/criterios-evaluacion.md) | Equipo completo (Jose facilita) | Pendiente |
+| CA-20 | **Transversal** — demo end-to-end del flujo dorado en mobile real en < 90 s | Cronómetro + grabación de video de 2 corridas consecutivas; ambas deben quedar bajo el umbral | Felipe | Pendiente |
+| CA-21 | **Transversal** — 100 % de respuestas del demo con afirmación normativa traen cita verificable a SII / CORFO / SERCOTEC / CMF | Doble revisión: Anahi audita la transcripción, Jose verifica que cada link abre la página oficial | Anahi + Jose | Pendiente |
 
-[Pendiente — Tarea 9]
+*(Fuente: [criterios-evaluacion](../competencia/criterios-evaluacion.md), [plan.md](plan.md), [miembros.md](../equipo/miembros.md))*
+
+> **Asignación tentativa.** Los responsables se asignaron a partir de los roles declarados en `miembros.md` el 30 de abril. El equipo confirma o ajusta la distribución en la reunión del **5 de mayo** (cierre de formación de equipos). Cualquier reasignación queda registrada en bitácora antes del primer ensayo del pitch.
+
+### 5.2 Responsable de validación final
+
+**Jose Foncea** — Project Manager + Comercial/Producto del equipo, según [miembros.md](../equipo/miembros.md) — es el responsable de validar que cada CA de la Sección 5.1 está cumplido antes del pitch del **7 de mayo de 2026 · 12:00**. La validación final ocurre la noche del **6 de mayo** durante el lab, en una sesión dedicada de revisión cruzada con los 4 miembros. Cualquier CA que quede en estado **Pendiente** después de esa sesión bloquea el sign-off del pitch y obliga a una de tres acciones: (a) cerrarlo antes de las 12:00 del 7-may, (b) marcarlo como conocido y mitigado con fallback offline (RF-15), o (c) excluir el flujo afectado del demo.
+
+*(Fuente: [miembros.md](../equipo/miembros.md), [timeline](../competencia/timeline.md))*
 
 ---
 
