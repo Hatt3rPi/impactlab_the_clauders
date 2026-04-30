@@ -74,19 +74,19 @@ La etapa inicial del emprendimiento está dominada por bloqueos emocionales y de
 
 **Documentación esencial (orden de prioridad):**
 
-1. **[Carta de Derechos del Contribuyente]**
-   - **URL:** https://www.sii.cl/sobre_el_sii/derechos_contribuyentes.pdf
-   - **Qué cubre:** Establece los límites de la acción fiscalizadora, garantizando un trato cortés, la no dilación injustificada y el respeto a la buena fe (Art. 8 bis del Código Tributario) [cite: 1, 2].
-   - **Vigencia:** Permanente (actualizado con últimas reformas).
-   - **Acceso técnico:** `PDF descargable` — formato fijo, ingestable a RAG.
-   - **Notas:** Es el documento central para que el agente responda desde la empatía legal ("El SII tiene reglas que te protegen").
+!!! example ":material-file-document: Doc 1 — Carta de Derechos del Contribuyente"
+    - **URL:** [https://www.sii.cl/sobre_el_sii/derechos_contribuyentes.pdf](https://www.sii.cl/sobre_el_sii/derechos_contribuyentes.pdf)
+    - **Qué cubre:** Establece los límites de la acción fiscalizadora, garantizando un trato cortés, la no dilación injustificada y el respeto a la buena fe (Art. 8 bis del Código Tributario) [cite: 1, 2].
+    - **Vigencia:** Permanente (actualizado con últimas reformas).
+    - **Acceso técnico:** `PDF descargable` — formato fijo, ingestable a RAG.
+    - **Notas:** Es el documento central para que el agente responda desde la empatía legal ("El SII tiene reglas que te protegen").
 
-2. **[Normativa sobre Auditorías y Fiscalización]**
-   - **URL:** https://www.sii.cl/destacados/sii_educa/contenidos/contribuyentes/derechos_del_contribuyente/94-GA-201405290650.pdf
-   - **Qué cubre:** Define qué es una fiscalización preventiva y aclara que el control del cumplimiento suele enfocarse en procesos masivos, reduciendo el temor a la "persecución personal" [cite: 3].
-   - **Vigencia:** Permanente.
-   - **Acceso técnico:** `PDF descargable` — formato fijo, ingestable a RAG.
-   - **Notas:** Documento educativo (SII Educa) con un lenguaje más digerible.
+!!! example ":material-file-document: Doc 2 — Normativa sobre Auditorías y Fiscalización"
+    - **URL:** [https://www.sii.cl/destacados/sii_educa/contenidos/contribuyentes/derechos_del_contribuyente/94-GA-201405290650.pdf](https://www.sii.cl/destacados/sii_educa/contenidos/contribuyentes/derechos_del_contribuyente/94-GA-201405290650.pdf)
+    - **Qué cubre:** Define qué es una fiscalización preventiva y aclara que el control del cumplimiento suele enfocarse en procesos masivos, reduciendo el temor a la "persecución personal" [cite: 3].
+    - **Vigencia:** Permanente.
+    - **Acceso técnico:** `PDF descargable` — formato fijo, ingestable a RAG.
+    - **Notas:** Documento educativo (SII Educa) con un lenguaje más digerible.
 
 **Documentación complementaria** (no esencial pero recomendada):
 - Guías de "Educación Fiscal" del SII (sii.cl/siieduca) para contextualizar el rol de los Tribunales Tributarios y Aduaneros [cite: 4].
@@ -106,12 +106,12 @@ La correcta ingesta de estos derechos permite al agente cambiar el paradigma de 
 
 **Documentación esencial (orden de prioridad):**
 
-1. **[Manuales y Capacitaciones Sercotec - Centro de Negocios]**
-   - **URL:** https://capacitacion.sercotec.cl/
-   - **Qué cubre:** Materiales educativos oficiales sobre gestión financiera básica, cálculo de costos y fijación de precios teórica para microempresas.
-   - **Vigencia:** Permanente (se actualiza por programa).
-   - **Acceso técnico:** `HTML scrapeable` — sin login (cursos abiertos) o `PDF descargable`.
-   - **Notas:** No existen leyes ni APIs de precios. Sercotec es la única entidad estatal que enseña esto formalmente.
+!!! example ":material-file-document: Doc 1 — Manuales y Capacitaciones Sercotec - Centro de Negocios"
+    - **URL:** [https://capacitacion.sercotec.cl/](https://capacitacion.sercotec.cl/)
+    - **Qué cubre:** Materiales educativos oficiales sobre gestión financiera básica, cálculo de costos y fijación de precios teórica para microempresas.
+    - **Vigencia:** Permanente (se actualiza por programa).
+    - **Acceso técnico:** `HTML scrapeable` — sin login (cursos abiertos) o `PDF descargable`.
+    - **Notas:** No existen leyes ni APIs de precios. Sercotec es la única entidad estatal que enseña esto formalmente.
 
 **Documentación complementaria** (no esencial pero recomendada):
 - Guías de educación financiera de la Comisión para el Mercado Financiero (CMF Educa).
@@ -131,12 +131,12 @@ En paralelo a la estructuración de precios, las emprendedoras chocan contra la 
 
 **Documentación esencial (orden de prioridad):**
 
-1. **[API ChileAtiende - Fichas de Trámites]**
-   - **URL:** https://www.chileatiende.gob.cl/api/fichas/{fichaId}
-   - **Qué cubre:** Repositorio centralizado que explica los requisitos, costos y canales de atención para obtener patentes y certificados de zonificación [cite: 5].
-   - **Vigencia:** Tiempo real.
-   - **Acceso técnico:** `API pública disponible` — endpoint: GET `https://www.chileatiende.gob.cl/api/fichas/{fichaId}` [cite: 5]. Requiere token de acceso [cite: 5].
-   - **Notas:** Permite extraer el paso a paso simplificado (JSON) de la mayoría de los trámites estatales.
+!!! example ":material-file-document: Doc 1 — API ChileAtiende - Fichas de Trámites"
+    - **URL:** [https://www.chileatiende.gob.cl/api/fichas/{fichaId}](https://www.chileatiende.gob.cl/api/fichas/{fichaId})
+    - **Qué cubre:** Repositorio centralizado que explica los requisitos, costos y canales de atención para obtener patentes y certificados de zonificación [cite: 5].
+    - **Vigencia:** Tiempo real.
+    - **Acceso técnico:** `API pública disponible` — endpoint: GET `https://www.chileatiende.gob.cl/api/fichas/{fichaId}` [cite: 5]. Requiere token de acceso [cite: 5].
+    - **Notas:** Permite extraer el paso a paso simplificado (JSON) de la mayoría de los trámites estatales.
 
 **Documentación complementaria** (no esencial pero recomendada):
 - Documentación de la plataforma Tu Empresa en un Día (Registro de Empresas y Sociedades).
@@ -155,32 +155,32 @@ Una vez superada la barrera de los permisos, el aislamiento psicológico se conv
 
 **Documentación esencial (orden de prioridad):**
 
-1. **[Calendarios y Convocatorias Sercotec (Servicio de Cooperación Técnica)]**
-   - **URL:** https://www.sercotec.cl/
-   - **Qué cubre:** Fechas, requisitos y aperturas de programas clave enfocados en Mypes, tales como "Digitaliza tu Almacén" (subsidios de hasta $3 millones) [cite: 6], fondos "Crece" [cite: 7], y convocatorias regionales específicas como el FNDR Economía Circular para emprendimientos de reciclaje (ej. en Los Lagos) [cite: 8, 9].
-   - **Vigencia:** Volatilidad alta (cierres de postulación continuos durante el año).
-   - **Acceso técnico:** `HTML scrapeable` — sin login.
-   - **Notas:** La información cambia radicalmente por región; requiere monitoreo territorial específico.
+!!! example ":material-file-document: Doc 1 — Calendarios y Convocatorias Sercotec (Servicio de Cooperación Técnica)"
+    - **URL:** [https://www.sercotec.cl/](https://www.sercotec.cl/)
+    - **Qué cubre:** Fechas, requisitos y aperturas de programas clave enfocados en Mypes, tales como "Digitaliza tu Almacén" (subsidios de hasta $3 millones) [cite: 6], fondos "Crece" [cite: 7], y convocatorias regionales específicas como el FNDR Economía Circular para emprendimientos de reciclaje (ej. en Los Lagos) [cite: 8, 9].
+    - **Vigencia:** Volatilidad alta (cierres de postulación continuos durante el año).
+    - **Acceso técnico:** `HTML scrapeable` — sin login.
+    - **Notas:** La información cambia radicalmente por región; requiere monitoreo territorial específico.
 
-2. **[Convocatorias y Programas Corfo (Corporación de Fomento de la Producción)]**
-   - **URL:** https://www.corfo.cl/ y https://programadps.gob.cl/Convocatorias/ [cite: 10, 11]
-   - **Qué cubre:** Fondos para innovación, resiliencia productiva y eficiencia hídrica (específicamente orientados a la macrozona centro-sur incluyendo La Araucanía) [cite: 12], así como apoyos para institutos tecnológicos públicos [cite: 10].
-   - **Vigencia:** Volatilidad alta.
-   - **Acceso técnico:** `HTML scrapeable` — sin login.
-   - **Notas:** Los subsidios de Corfo apuntan a negocios con potencial de escalabilidad o desafíos productivos mayores [cite: 10, 12].
+!!! example ":material-file-document: Doc 2 — Convocatorias y Programas Corfo (Corporación de Fomento de la Producción)"
+    - **URL:** https://www.corfo.cl/ y https://programadps.gob.cl/Convocatorias/ [cite: 10, 11]
+    - **Qué cubre:** Fondos para innovación, resiliencia productiva y eficiencia hídrica (específicamente orientados a la macrozona centro-sur incluyendo La Araucanía) [cite: 12], así como apoyos para institutos tecnológicos públicos [cite: 10].
+    - **Vigencia:** Volatilidad alta.
+    - **Acceso técnico:** `HTML scrapeable` — sin login.
+    - **Notas:** Los subsidios de Corfo apuntan a negocios con potencial de escalabilidad o desafíos productivos mayores [cite: 10, 12].
 
-3. **[Programas de Emprendimiento FOSIS (Fondo de Solidaridad e Inversión Social)]**
-   - **URL:** https://www.fosis.gob.cl
-   - **Qué cubre:** Programas estructurales orientados a población vulnerable (ej. "Emprendamos Semilla", "Emprendamos Básico/Avanzado" e "Innova FOSIS") que otorgan capacitación y financiamiento directo que oscila entre $430 mil y $800 mil [cite: 13, 14, 15].
-   - **Vigencia:** Anual/Semestral (Postulaciones masivas usualmente abren en marzo-abril) [cite: 13, 15].
-   - **Acceso técnico:** `HTML scrapeable` — sin login.
-   - **Notas:** Requiere cruce indispensable con la ficha del Registro Social de Hogares de la usuaria para calificar.
+!!! example ":material-file-document: Doc 3 — Programas de Emprendimiento FOSIS (Fondo de Solidaridad e Inversión Social)"
+    - **URL:** [https://www.fosis.gob.cl](https://www.fosis.gob.cl)
+    - **Qué cubre:** Programas estructurales orientados a población vulnerable (ej. "Emprendamos Semilla", "Emprendamos Básico/Avanzado" e "Innova FOSIS") que otorgan capacitación y financiamiento directo que oscila entre $430 mil y $800 mil [cite: 13, 14, 15].
+    - **Vigencia:** Anual/Semestral (Postulaciones masivas usualmente abren en marzo-abril) [cite: 13, 15].
+    - **Acceso técnico:** `HTML scrapeable` — sin login.
+    - **Notas:** Requiere cruce indispensable con la ficha del Registro Social de Hogares de la usuaria para calificar.
 
-4. **[Aceleradora Start-Up Chile]**
-   - **URL:** https://startupchile.org/postula/ [cite: 16]
-   - **Qué cubre:** Programas de aceleración tecnológica y acceso a redes de contacto de alto nivel, visas tech y apoyo estratégico [cite: 16].
-   - **Vigencia:** Ventanas de postulación específicas (ej. hasta noviembre para arrancar en enero) [cite: 16].
-   - **Acceso técnico:** `HTML scrapeable` para fechas, pero la postulación opera en una plataforma externa (`charly.io`) [cite: 16].
+!!! example ":material-file-document: Doc 4 — Aceleradora Start-Up Chile"
+    - **URL:** https://startupchile.org/postula/ [cite: 16]
+    - **Qué cubre:** Programas de aceleración tecnológica y acceso a redes de contacto de alto nivel, visas tech y apoyo estratégico [cite: 16].
+    - **Vigencia:** Ventanas de postulación específicas (ej. hasta noviembre para arrancar en enero) [cite: 16].
+    - **Acceso técnico:** `HTML scrapeable` para fechas, pero la postulación opera en una plataforma externa (`charly.io`) [cite: 16].
 
 **Documentación complementaria** (no esencial pero recomendada):
 - Portal FOGAPE (Fondo de Garantía para Pequeños Empresarios) para acceso a crédito bancario con aval del Estado.
@@ -201,12 +201,12 @@ Mitigar la soledad con fondos es inútil si la arquitectura financiera de la emp
 
 **Documentación esencial (orden de prioridad):**
 
-1. **[Educación Financiera CMF (Comisión para el Mercado Financiero)]**
-   - **URL:** https://www.cmfeduca.cl/
-   - **Qué cubre:** Definición y beneficios de cuentas a la vista y cuentas RUT (instrumentos básicos de separación financiera sin costo de mantención).
-   - **Vigencia:** Permanente.
-   - **Acceso técnico:** `HTML scrapeable` — sin login.
-   - **Notas:** Información normativa y neutral del Estado sobre la oferta bancaria disponible.
+!!! example ":material-file-document: Doc 1 — Educación Financiera CMF (Comisión para el Mercado Financiero)"
+    - **URL:** [https://www.cmfeduca.cl/](https://www.cmfeduca.cl/)
+    - **Qué cubre:** Definición y beneficios de cuentas a la vista y cuentas RUT (instrumentos básicos de separación financiera sin costo de mantención).
+    - **Vigencia:** Permanente.
+    - **Acceso técnico:** `HTML scrapeable` — sin login.
+    - **Notas:** Información normativa y neutral del Estado sobre la oferta bancaria disponible.
 
 **Documentación complementaria** (no esencial pero recomendada):
 - Sitio de BancoEstado sobre condiciones de la CuentaRUT Comercial/Personal.
@@ -226,12 +226,12 @@ El último dolor de la ideación es un corolario del problema de precios, pero p
 
 **Documentación esencial (orden de prioridad):**
 
-1. **[Datos del Sueldo Mínimo y UF - Servicio de Impuestos Internos]**
-   - **URL:** https://www.sii.cl/valores_y_fechas/
-   - **Qué cubre:** Valor oficial de la Unidad de Fomento (UF), UTM (Unidad Tributaria Mensual - índice reajustable utilizado en Chile para el cobro de impuestos y multas) y el Sueldo Mínimo vigente [cite: 17].
-   - **Vigencia:** Tiempo real (mensual/diario).
-   - **Acceso técnico:** `HTML scrapeable` — sin login (o consumir APIs públicas alternativas como Mindicador).
-   - **Notas:** El SII publica las métricas [cite: 18]; usar el sueldo mínimo horario como referencia obligatoria de valor/tiempo.
+!!! example ":material-file-document: Doc 1 — Datos del Sueldo Mínimo y UF - Servicio de Impuestos Internos"
+    - **URL:** [https://www.sii.cl/valores_y_fechas/](https://www.sii.cl/valores_y_fechas/)
+    - **Qué cubre:** Valor oficial de la Unidad de Fomento (UF), UTM (Unidad Tributaria Mensual - índice reajustable utilizado en Chile para el cobro de impuestos y multas) y el Sueldo Mínimo vigente [cite: 17].
+    - **Vigencia:** Tiempo real (mensual/diario).
+    - **Acceso técnico:** `HTML scrapeable` — sin login (o consumir APIs públicas alternativas como Mindicador).
+    - **Notas:** El SII publica las métricas [cite: 18]; usar el sueldo mínimo horario como referencia obligatoria de valor/tiempo.
 
 **Documentación complementaria** (no esencial pero recomendada):
 - Estadísticas del Instituto Nacional de Estadísticas (INE) sobre ingreso medio en La Araucanía (para contexto geográfico empático).
@@ -257,12 +257,12 @@ Una vez que la emprendedora empieza a operar sin constitución legal formal, los
 
 **Documentación esencial (orden de prioridad):**
 
-1. **[Sistema de Facturación Gratuito del SII]**
-   - **URL:** https://www.sii.cl/preguntas_frecuentes/factura_electronica/
-   - **Qué cubre:** Requisitos normativos para acceder a la facturación electrónica, explicitando que la persona natural o jurídica debe tener Inicio de Actividades en Primera Categoría [cite: 17].
-   - **Vigencia:** Permanente.
-   - **Acceso técnico:** `HTML scrapeable` — FAQ del SII [cite: 17].
-   - **Notas:** Sirve como base técnica para explicarle a la usuaria lo que se "pierde" al estar fuera del sistema.
+!!! example ":material-file-document: Doc 1 — Sistema de Facturación Gratuito del SII"
+    - **URL:** [https://www.sii.cl/preguntas_frecuentes/factura_electronica/](https://www.sii.cl/preguntas_frecuentes/factura_electronica/)
+    - **Qué cubre:** Requisitos normativos para acceder a la facturación electrónica, explicitando que la persona natural o jurídica debe tener Inicio de Actividades en Primera Categoría [cite: 17].
+    - **Vigencia:** Permanente.
+    - **Acceso técnico:** `HTML scrapeable` — FAQ del SII [cite: 17].
+    - **Notas:** Sirve como base técnica para explicarle a la usuaria lo que se "pierde" al estar fuera del sistema.
 
 **Documentación complementaria** (no esencial pero recomendada):
 - Guía SII sobre los beneficios del Crédito Fiscal IVA (Impuesto al Valor Agregado).
@@ -282,12 +282,12 @@ La informalidad sostenida ya no es invisible. La nueva legislación somete las c
 
 **Documentación esencial (orden de prioridad):**
 
-1. **[Ley 21.713 de Cumplimiento Tributario ("Ley de las 50 transferencias")]**
-   - **URL:** https://www.bcn.cl/leychile/navegar?idNorma=1207746
-   - **Qué cubre:** Modificaciones al Código Tributario que exigen a los bancos reportar al SII a contribuyentes que reciban más de 50 transferencias de emisores distintos en un día, semana o mes, o 100 transferencias en un semestre [cite: 19, 20, 21].
-   - **Vigencia:** Entró en vigencia en enero de 2025 [cite: 20].
-   - **Acceso técnico:** `API pública disponible` — Biblioteca del Congreso Nacional (BCN).
-   - **Notas:** Es un CRITERIO CRÍTICO. El agente debe monitorear y alertar este umbral como un "Warning" máximo. Actualmente los bancos reportan esta anomalía de manera semestral [cite: 20].
+!!! example ":material-file-document: Doc 1 — Ley 21.713 de Cumplimiento Tributario ("Ley de las 50 transferencias")"
+    - **URL:** [https://www.bcn.cl/leychile/navegar?idNorma=1207746](https://www.bcn.cl/leychile/navegar?idNorma=1207746)
+    - **Qué cubre:** Modificaciones al Código Tributario que exigen a los bancos reportar al SII a contribuyentes que reciban más de 50 transferencias de emisores distintos en un día, semana o mes, o 100 transferencias en un semestre [cite: 19, 20, 21].
+    - **Vigencia:** Entró en vigencia en enero de 2025 [cite: 20].
+    - **Acceso técnico:** `API pública disponible` — Biblioteca del Congreso Nacional (BCN).
+    - **Notas:** Es un CRITERIO CRÍTICO. El agente debe monitorear y alertar este umbral como un "Warning" máximo. Actualmente los bancos reportan esta anomalía de manera semestral [cite: 20].
 
 **Documentación complementaria** (no esencial pero recomendada):
 - Circular N° 2 del SII que regula cómo las instituciones financieras entregan esta información [cite: 20].
@@ -308,12 +308,12 @@ Paralelo al riesgo fiscal, el crecimiento orgánico pero desordenado impide eval
 
 **Documentación esencial (orden de prioridad):**
 
-1. **[Obligaciones de Contabilidad Simplificada SII (Art. 14 D LIR)]**
-   - **URL:** https://www.sii.cl/destacados/modernizacion/tipos_regimenes_mt.html
-   - **Qué cubre:** Bases de la tributación según ingresos percibidos menos gastos pagados, y el deber de llevar un control de caja bajo régimen Pro Pyme [cite: 22, 23].
-   - **Vigencia:** Permanente.
-   - **Acceso técnico:** `HTML scrapeable` — sin login.
-   - **Notas:** Utilizar la normativa de "ingreso/gasto" del SII como marco metodológico para justificar el hábito diario que el agente pedirá por WhatsApp.
+!!! example ":material-file-document: Doc 1 — Obligaciones de Contabilidad Simplificada SII (Art. 14 D LIR)"
+    - **URL:** [https://www.sii.cl/destacados/modernizacion/tipos_regimenes_mt.html](https://www.sii.cl/destacados/modernizacion/tipos_regimenes_mt.html)
+    - **Qué cubre:** Bases de la tributación según ingresos percibidos menos gastos pagados, y el deber de llevar un control de caja bajo régimen Pro Pyme [cite: 22, 23].
+    - **Vigencia:** Permanente.
+    - **Acceso técnico:** `HTML scrapeable` — sin login.
+    - **Notas:** Utilizar la normativa de "ingreso/gasto" del SII como marco metodológico para justificar el hábito diario que el agente pedirá por WhatsApp.
 
 **Documentación complementaria** (no esencial pero recomendada):
 - Formatos de Libro Caja de Sercotec.
@@ -332,12 +332,12 @@ Finalmente, el dolor más grande para las emprendedoras de estratos vulnerables 
 
 **Documentación esencial (orden de prioridad):**
 
-1. **[Reglamentos y Guías del Registro Social de Hogares - RSH]**
-   - **URL:** https://www.registrosocial.gob.cl/docs/04_Solicitud_de_actualizacion_de_ingresos_y_situacion_ocupacional.pdf
-   - **Qué cubre:** Criterios de evaluación del Estado para actualizar ingresos laborales (dependientes e independientes). Explica exhaustivamente cómo las boletas de honorarios informadas por el SII o los ingresos de capital afectan la cartola de vulnerabilidad del RSH [cite: 24, 25, 26].
-   - **Vigencia:** Permanente.
-   - **Acceso técnico:** `PDF descargable` (Manuales de actualización) [cite: 25].
-   - **Notas:** El trámite real requiere de forma obligatoria la modalidad `Requiere ClaveÚnica` en ventanillaunicasocial.gob.cl [cite: 25, 27], pero los criterios teóricos son públicos en PDF.
+!!! example ":material-file-document: Doc 1 — Reglamentos y Guías del Registro Social de Hogares - RSH"
+    - **URL:** [https://www.registrosocial.gob.cl/docs/04_Solicitud_de_actualizacion_de_ingresos_y_situacion_ocupacional.pdf](https://www.registrosocial.gob.cl/docs/04_Solicitud_de_actualizacion_de_ingresos_y_situacion_ocupacional.pdf)
+    - **Qué cubre:** Criterios de evaluación del Estado para actualizar ingresos laborales (dependientes e independientes). Explica exhaustivamente cómo las boletas de honorarios informadas por el SII o los ingresos de capital afectan la cartola de vulnerabilidad del RSH [cite: 24, 25, 26].
+    - **Vigencia:** Permanente.
+    - **Acceso técnico:** `PDF descargable` (Manuales de actualización) [cite: 25].
+    - **Notas:** El trámite real requiere de forma obligatoria la modalidad `Requiere ClaveÚnica` en ventanillaunicasocial.gob.cl [cite: 25, 27], pero los criterios teóricos son públicos en PDF.
 
 **Documentación complementaria** (no esencial pero recomendada):
 - Portal de Beneficios del Ministerio de Desarrollo Social y Familia (MIDESO).
@@ -361,18 +361,18 @@ La formalización comprende la barrera más densa de fricción técnica. Constit
 
 **Documentación esencial (orden de prioridad):**
 
-1. **[Ley 20.659 (Simplifica Régimen de Sociedades Comerciales)]**
-   - **URL:** https://www.bcn.cl/leychile/navegar?idNorma=1048718
-   - **Qué cubre:** Base legal del Registro de Empresas y Sociedades (RES), que permite constituciones sin notario convencional (usando firma electrónica) y asigna un RUT provisorio inmediato [cite: 28, 29, 30].
-   - **Vigencia:** Actualizado (01-feb-2023) [cite: 28].
-   - **Acceso técnico:** `API pública disponible` — BCN LeyChile.
-   - **Notas:** Documento fundamental para entender legalmente que la fecha de constitución del acto es, a efectos prácticos, la firma del primer socio [cite: 29].
+!!! example ":material-file-document: Doc 1 — Ley 20.659 (Simplifica Régimen de Sociedades Comerciales)"
+    - **URL:** [https://www.bcn.cl/leychile/navegar?idNorma=1048718](https://www.bcn.cl/leychile/navegar?idNorma=1048718)
+    - **Qué cubre:** Base legal del Registro de Empresas y Sociedades (RES), que permite constituciones sin notario convencional (usando firma electrónica) y asigna un RUT provisorio inmediato [cite: 28, 29, 30].
+    - **Vigencia:** Actualizado (01-feb-2023) [cite: 28].
+    - **Acceso técnico:** `API pública disponible` — BCN LeyChile.
+    - **Notas:** Documento fundamental para entender legalmente que la fecha de constitución del acto es, a efectos prácticos, la firma del primer socio [cite: 29].
 
-2. **[Manuales de Usuario del RES]**
-   - **URL:** www.registrodeempresasysociedades.cl (Portal RES).
-   - **Qué cubre:** Guías paso a paso de los formularios web (capital, objeto social, facultades y poderes de administración) [cite: 30].
-   - **Vigencia:** Permanente.
-   - **Acceso técnico:** `HTML scrapeable` / `PDF descargable`.
+!!! example ":material-file-document: Doc 2 — Manuales de Usuario del RES"
+    - **URL:** www.registrodeempresasysociedades.cl (Portal RES).
+    - **Qué cubre:** Guías paso a paso de los formularios web (capital, objeto social, facultades y poderes de administración) [cite: 30].
+    - **Vigencia:** Permanente.
+    - **Acceso técnico:** `HTML scrapeable` / `PDF descargable`.
 
 **Documentación complementaria** (no esencial pero recomendada):
 - Borradores estandarizados de objetos sociales comunes (ej. venta al por menor de alimentos en puestos, comercio electrónico).
@@ -392,22 +392,22 @@ Antes de llenar el formulario, el dolor radica en una decisión estructurante qu
 
 **Documentación esencial (orden de prioridad):**
 
-1. **[Características de Regímenes Pro-Pyme SII (Art 14 D)]**
-   - **URL:** https://www.sii.cl/destacados/renta/2025/regimenes_renta2025.html
-   - **Qué cubre:** Diferencias vitales entre los regímenes tributarios orientados a microempresas [cite: 22, 23, 31]. Define la estructura de tributación y la obligación de PPM (Pagos Provisionales Mensuales - un anticipo mensual obligatorio contra el impuesto a la renta anual).
-   - **Vigencia:** Actualizado a la Operación Renta 2025 [cite: 22].
-   - **Acceso técnico:** `HTML scrapeable` — portal SII [cite: 22].
-   - **Notas:** Documento clave para Pymes nuevas que condiciona la carga contable (contabilidad completa vs. simplificada) [cite: 23, 32].
+!!! example ":material-file-document: Doc 1 — Características de Regímenes Pro-Pyme SII (Art 14 D)"
+    - **URL:** [https://www.sii.cl/destacados/renta/2025/regimenes_renta2025.html](https://www.sii.cl/destacados/renta/2025/regimenes_renta2025.html)
+    - **Qué cubre:** Diferencias vitales entre los regímenes tributarios orientados a microempresas [cite: 22, 23, 31]. Define la estructura de tributación y la obligación de PPM (Pagos Provisionales Mensuales - un anticipo mensual obligatorio contra el impuesto a la renta anual).
+    - **Vigencia:** Actualizado a la Operación Renta 2025 [cite: 22].
+    - **Acceso técnico:** `HTML scrapeable` — portal SII [cite: 22].
+    - **Notas:** Documento clave para Pymes nuevas que condiciona la carga contable (contabilidad completa vs. simplificada) [cite: 23, 32].
 
    > **Decodificación Empática de Regímenes para el Sistema:**
    > *   **Técnica:** El régimen *Pro-Pyme General (14 D N°3)* aplica una tasa de Impuesto de Primera Categoría (IDPC) del 12,5%, con tributación basada en ingresos menos gastos. El régimen *Pro-Pyme Transparente (14 D N°8)* libera a la empresa del IDPC; las utilidades se atribuyen directamente a los dueños, quienes tributan en su Impuesto Global Complementario [cite: 22].
    > *   **Analogía en el prompt:** Para el bot, el **Pro-Pyme General** debe explicarse como: *"La empresa es una alcancía con llave. Gana dinero, paga sus propios impuestos corporativos, y lo que sobra se queda guardado ahí hasta que decides sacarlo formalmente para ti."* Por el contrario, el **Pro-Pyme Transparente** debe explicarse como: *"La empresa es un embudo. Todo el dinero que entra y queda como ganancia limpia fluye directo a tu bolsillo personal al final del año, y eres tú (no la empresa) quien rinde cuentas al Estado. Esto te libera de hacer balances y registros complicados mes a mes."*
 
-2. **[Leyes de Sociedades y Estructura Jurídica - BCN]**
-   - **URL:** https://www.bcn.cl/leychile
-   - **Qué cubre:** Las diferencias legales y estructurales de las entidades constitucionales más comunes para el segmento micro [cite: 29].
-   - **Vigencia:** Permanente.
-   - **Acceso técnico:** `API pública disponible` — BCN.
+!!! example ":material-file-document: Doc 2 — Leyes de Sociedades y Estructura Jurídica - BCN"
+    - **URL:** [https://www.bcn.cl/leychile](https://www.bcn.cl/leychile)
+    - **Qué cubre:** Las diferencias legales y estructurales de las entidades constitucionales más comunes para el segmento micro [cite: 29].
+    - **Vigencia:** Permanente.
+    - **Acceso técnico:** `API pública disponible` — BCN.
 
 **Tabla Comparativa Procedimental de Figuras Jurídicas:**
 
@@ -437,18 +437,18 @@ La falla de experiencia de usuario más común en la formalización chilena ocur
 
 **Documentación esencial (orden de prioridad):**
 
-1. **[Circular N°38 de 2025 del SII]**
-   - **URL:** https://www.sii.cl/normativa_legislacion/circulares/2025/circu38.pdf
-   - **Qué cubre:** Instrucciones consolidadas sobre el Rol Único Tributario (RUT) y el Aviso de Inicio de Actividades (Formulario 4415) [cite: 33]. 
-   - **Vigencia:** 30 de abril de 2025 [cite: 33].
-   - **Acceso técnico:** `PDF descargable` — desde sii.cl [cite: 33].
-   - **Notas:** El documento obliga a realizar la declaración jurada de inicio de actividades de manera estrictamente electrónica a través de la carpeta tributaria [cite: 30, 33].
+!!! example ":material-file-document: Doc 1 — Circular N°38 de 2025 del SII"
+    - **URL:** [https://www.sii.cl/normativa_legislacion/circulares/2025/circu38.pdf](https://www.sii.cl/normativa_legislacion/circulares/2025/circu38.pdf)
+    - **Qué cubre:** Instrucciones consolidadas sobre el Rol Único Tributario (RUT) y el Aviso de Inicio de Actividades (Formulario 4415) [cite: 33].
+    - **Vigencia:** 30 de abril de 2025 [cite: 33].
+    - **Acceso técnico:** `PDF descargable` — desde sii.cl [cite: 33].
+    - **Notas:** El documento obliga a realizar la declaración jurada de inicio de actividades de manera estrictamente electrónica a través de la carpeta tributaria [cite: 30, 33].
 
-2. **[Guías SII para Timbraje y Emisión DTE]**
-   - **URL:** sii.cl/preguntas_frecuentes/factura_electronica/
-   - **Qué cubre:** Pasos técnicos para autorizar y emitir Documentos Tributarios Electrónicos (DTE, el estándar técnico y legal del SII que agrupa facturas, boletas y notas de crédito digitales) [cite: 30].
-   - **Vigencia:** Permanente.
-   - **Acceso técnico:** `HTML scrapeable`.
+!!! example ":material-file-document: Doc 2 — Guías SII para Timbraje y Emisión DTE"
+    - **URL:** sii.cl/preguntas_frecuentes/factura_electronica/
+    - **Qué cubre:** Pasos técnicos para autorizar y emitir Documentos Tributarios Electrónicos (DTE, el estándar técnico y legal del SII que agrupa facturas, boletas y notas de crédito digitales) [cite: 30].
+    - **Vigencia:** Permanente.
+    - **Acceso técnico:** `HTML scrapeable`.
 
 **Documentación complementaria** (no esencial pero recomendada):
 - Resolución sobre certificación de sistemas de facturación gratuitos del Mipyme SII.
@@ -468,12 +468,12 @@ El atasco del F4415 es frecuentemente provocado por un rechazo sistémico al int
 
 **Documentación esencial (orden de prioridad):**
 
-1. **[Circular N°31 de 2007 / Circular N°38 de 2025 y Guías SII]**
-   - **URL:** https://www.sii.cl/preguntas_frecuentes/rut_inicio_actividades/001_105_0136.htm / https://www.sii.cl/material_inf/acreditar_domicilio.pdf
-   - **Qué cubre:** Las reglas estrictas de acreditación para facturadores de 1ra Categoría (que venden afectos a IVA). Exige contrato de arriendo firmado expresamente ante Notario, un certificado de dominio vigente, o autorización jurada del propietario si el inmueble es cedido (ej. casa de los padres) [cite: 33, 34, 35].
-   - **Vigencia:** Actualizado a mayo de 2025 [cite: 34, 36].
-   - **Acceso técnico:** `HTML scrapeable` / `PDF descargable`.
-   - **Notas:** El agente debe recalcar que para emitir facturas, un contrato simple no sirve, DEBE estar firmado ante notario o con firma electrónica avanzada autorizada [cite: 35]. El SII admite acreditar inmuebles que simultáneamente ejercen otra actividad comercial, previo análisis [cite: 36].
+!!! example ":material-file-document: Doc 1 — Circular N°31 de 2007 / Circular N°38 de 2025 y Guías SII"
+    - **URL:** https://www.sii.cl/preguntas_frecuentes/rut_inicio_actividades/001_105_0136.htm / https://www.sii.cl/material_inf/acreditar_domicilio.pdf
+    - **Qué cubre:** Las reglas estrictas de acreditación para facturadores de 1ra Categoría (que venden afectos a IVA). Exige contrato de arriendo firmado expresamente ante Notario, un certificado de dominio vigente, o autorización jurada del propietario si el inmueble es cedido (ej. casa de los padres) [cite: 33, 34, 35].
+    - **Vigencia:** Actualizado a mayo de 2025 [cite: 34, 36].
+    - **Acceso técnico:** `HTML scrapeable` / `PDF descargable`.
+    - **Notas:** El agente debe recalcar que para emitir facturas, un contrato simple no sirve, DEBE estar firmado ante notario o con firma electrónica avanzada autorizada [cite: 35]. El SII admite acreditar inmuebles que simultáneamente ejercen otra actividad comercial, previo análisis [cite: 36].
 
 **Documentación complementaria** (no esencial pero recomendada):
 - Ley de Microempresa Familiar (MEF) para justificación de uso de domicilio habitacional.
@@ -493,19 +493,19 @@ Superado el SII, la carga regulatoria pasa al terreno físico de los municipios.
 
 **Documentación esencial (orden de prioridad):**
 
-1. **[Ley sobre Rentas Municipales (Decreto Ley 3063)]**
-   - **URL:** https://www.bcn.cl/leychile
-   - **Qué cubre:** La obligación a nivel nacional de pagar patente comercial por el ejercicio de la actividad gravada, estableciendo el cobro independiente de la patente por cada municipalidad si se tienen sucursales [cite: 21].
-   - **Vigencia:** Permanente.
-   - **Acceso técnico:** `API pública disponible` — BCN.
-   - **Notas:** Marco jurídico general nacional; no resuelve el detalle pragmático local (precios, horarios, formularios).
+!!! example ":material-file-document: Doc 1 — Ley sobre Rentas Municipales (Decreto Ley 3063)"
+    - **URL:** [https://www.bcn.cl/leychile](https://www.bcn.cl/leychile)
+    - **Qué cubre:** La obligación a nivel nacional de pagar patente comercial por el ejercicio de la actividad gravada, estableciendo el cobro independiente de la patente por cada municipalidad si se tienen sucursales [cite: 21].
+    - **Vigencia:** Permanente.
+    - **Acceso técnico:** `API pública disponible` — BCN.
+    - **Notas:** Marco jurídico general nacional; no resuelve el detalle pragmático local (precios, horarios, formularios).
 
-2. **[Ordenanzas Municipales Locales (Top Comunas Araucanía y Sur)]**
-   - **URL:** Sitios institucionales `.muni.cl` (ej. Temuco, Villarrica, Padre Las Casas).
-   - **Qué cubre:** Tasas específicas por mil sobre el capital, zonificaciones exactas (planos reguladores), y exigencias de recepción definitiva de las direcciones de obras municipales (DOM).
-   - **Vigencia:** Varía por comuna anualmente.
-   - **Acceso técnico:** `HTML scrapeable` / `PDF descargable` / **`Trámite presencial`**.
-   - **Notas:** Fragmentación extrema y crítica. Muchas comunas rurales de la región no tienen esta información digitalizada en ninguna plataforma.
+!!! example ":material-file-document: Doc 2 — Ordenanzas Municipales Locales (Top Comunas Araucanía y Sur)"
+    - **URL:** Sitios institucionales `.muni.cl` (ej. Temuco, Villarrica, Padre Las Casas).
+    - **Qué cubre:** Tasas específicas por mil sobre el capital, zonificaciones exactas (planos reguladores), y exigencias de recepción definitiva de las direcciones de obras municipales (DOM).
+    - **Vigencia:** Varía por comuna anualmente.
+    - **Acceso técnico:** `HTML scrapeable` / `PDF descargable` / **`Trámite presencial`**.
+    - **Notas:** Fragmentación extrema y crítica. Muchas comunas rurales de la región no tienen esta información digitalizada en ninguna plataforma.
 
 **El caso del comercio 100% digital (Domicilios Virtuales):**
 La siguiente pregunta lógica e ineludible de una emprendedora moderna es: *"Si mi negocio es 100% digital (ej. vendo mermeladas o servicios por Instagram) y opero exclusivamente desde la mesa de mi casa sin recibir público, ¿necesito patente municipal y cómo la tramito?"*. 
@@ -530,18 +530,18 @@ Si el emprendimiento es de manipulación de alimentos, el municipio congelará l
 
 **Documentación esencial (orden de prioridad):**
 
-1. **[Reglamento Sanitario de los Alimentos (Decreto 977)]**
-   - **URL:** https://www.bcn.cl/leychile
-   - **Qué cubre:** Requisitos técnicos de infraestructura, flujos sucios/limpios, manipulación y etiquetado para cualquier productor de alimentos [cite: 37].
-   - **Vigencia:** Permanente.
-   - **Acceso técnico:** `API pública disponible` — BCN.
+!!! example ":material-file-document: Doc 1 — Reglamento Sanitario de los Alimentos (Decreto 977)"
+    - **URL:** [https://www.bcn.cl/leychile](https://www.bcn.cl/leychile)
+    - **Qué cubre:** Requisitos técnicos de infraestructura, flujos sucios/limpios, manipulación y etiquetado para cualquier productor de alimentos [cite: 37].
+    - **Vigencia:** Permanente.
+    - **Acceso técnico:** `API pública disponible` — BCN.
 
-2. **[Plataforma ASDIGITAL - SEREMI de Salud]**
-   - **URL:** https://seremienlinea.minsal.cl/asdigital/
-   - **Qué cubre:** El portal de Autoridad Sanitaria Digital donde se tramita la solicitud real. Permite solicitar la "Resolución Sanitaria" que autoriza instalaciones productoras [cite: 37, 38]. Contiene los instructivos de saneamiento y formularios PDF [cite: 39].
-   - **Vigencia:** Permanente.
-   - **Acceso técnico:** `Requiere ClaveÚnica` para operar transaccionalmente [cite: 38]. Existen secciones de `HTML scrapeable` en las Seremis regionales (ej. Seremi Salud Ñuble/Araucanía) con aranceles actualizados [cite: 39, 40].
-   - **Notas:** Para operar formalmente como empresa (SpA/EIRL), se debe registrar a la "Persona Jurídica" bajo un rol de operador en la plataforma vinculándola al representante legal [cite: 38].
+!!! example ":material-file-document: Doc 2 — Plataforma ASDIGITAL - SEREMI de Salud"
+    - **URL:** [https://seremienlinea.minsal.cl/asdigital/](https://seremienlinea.minsal.cl/asdigital/)
+    - **Qué cubre:** El portal de Autoridad Sanitaria Digital donde se tramita la solicitud real. Permite solicitar la "Resolución Sanitaria" que autoriza instalaciones productoras [cite: 37, 38]. Contiene los instructivos de saneamiento y formularios PDF [cite: 39].
+    - **Vigencia:** Permanente.
+    - **Acceso técnico:** `Requiere ClaveÚnica` para operar transaccionalmente [cite: 38]. Existen secciones de `HTML scrapeable` en las Seremis regionales (ej. Seremi Salud Ñuble/Araucanía) con aranceles actualizados [cite: 39, 40].
+    - **Notas:** Para operar formalmente como empresa (SpA/EIRL), se debe registrar a la "Persona Jurídica" bajo un rol de operador en la plataforma vinculándola al representante legal [cite: 38].
 
 **Documentación complementaria** (no esencial pero recomendada):
 - Guías de Buenas Prácticas de Manufactura (BPM) elaboradas por el Ministerio de Salud.
@@ -562,17 +562,17 @@ Finalizando la formalización administrativa, la necesidad de firmar los actos e
 
 **Documentación esencial (orden de prioridad):**
 
-1. **[FAQ SII - Firma Electrónica Avanzada y Simple]**
-   - **URL:** https://www.sii.cl/preguntas_frecuentes/factura_electronica/001_003_6497.htm / https://www.sii.cl/preguntas_frecuentes/factura_electronica/001_003_6495.htm
-   - **Qué cubre:** Aclara taxativamente que la plataforma "Tu Empresa en un Día" (RES) exige Firma Electrónica Avanzada (FEA) para constituir sociedades [cite: 17], pero detalla que para emitir Facturas y Boletas en el portal Mipyme del SII de manera recurrente *basta con un Certificado Digital Simple* (FES) [cite: 17, 18, 41].
-   - **Vigencia:** Febrero/Mayo 2025 [cite: 17, 18].
-   - **Acceso técnico:** `HTML scrapeable` — portal FAQ del SII [cite: 17, 18].
-   - **Notas:** Documento resolutorio: El propio Estado (SII) recomienda la firma Simple porque "es más simple y efectiva" para los fines de facturación masiva [cite: 17].
+!!! example ":material-file-document: Doc 1 — FAQ SII - Firma Electrónica Avanzada y Simple"
+    - **URL:** https://www.sii.cl/preguntas_frecuentes/factura_electronica/001_003_6497.htm / https://www.sii.cl/preguntas_frecuentes/factura_electronica/001_003_6495.htm
+    - **Qué cubre:** Aclara taxativamente que la plataforma "Tu Empresa en un Día" (RES) exige Firma Electrónica Avanzada (FEA) para constituir sociedades [cite: 17], pero detalla que para emitir Facturas y Boletas en el portal Mipyme del SII de manera recurrente *basta con un Certificado Digital Simple* (FES) [cite: 17, 18, 41].
+    - **Vigencia:** Febrero/Mayo 2025 [cite: 17, 18].
+    - **Acceso técnico:** `HTML scrapeable` — portal FAQ del SII [cite: 17, 18].
+    - **Notas:** Documento resolutorio: El propio Estado (SII) recomienda la firma Simple porque "es más simple y efectiva" para los fines de facturación masiva [cite: 17].
 
-2. **[Catálogo Entidades Certificadoras (Ministerio de Economía)]**
-   - **URL:** https://www.entidadacreditadora.gob.cl/
-   - **Qué cubre:** Listado de los proveedores oficiales (Acepta, E-cert, Firma.cl, etc.).
-   - **Acceso técnico:** `HTML scrapeable`.
+!!! example ":material-file-document: Doc 2 — Catálogo Entidades Certificadoras (Ministerio de Economía)"
+    - **URL:** [https://www.entidadacreditadora.gob.cl/](https://www.entidadacreditadora.gob.cl/)
+    - **Qué cubre:** Listado de los proveedores oficiales (Acepta, E-cert, Firma.cl, etc.).
+    - **Acceso técnico:** `HTML scrapeable`.
 
 **Documentación complementaria** (no esencial pero recomendada):
 - Ley 19.799 sobre Documentos Electrónicos, Firma Electrónica y Servicios de Certificación.
@@ -594,12 +594,12 @@ La formalización ya no es el destino, es la línea de partida. La carga recurre
 
 **Documentación esencial (orden de prioridad):**
 
-1. **[Guía para Declarar F29 por Internet (SII)]**
-   - **URL:** https://www.sii.cl/pagina/iva/guia_f29.htm
-   - **Qué cubre:** Instrucciones de declaraciones de retenciones legales (IVA, retenciones de boletas de honorarios y los obligatorios PPM). Distingue crucialmente entre operaciones "Con pago", "Sin pago con movimiento" y "Sin pago sin movimiento" (declaración obligatoria en código 91 igual a cero) [cite: 42].
-   - **Vigencia:** Permanente.
-   - **Acceso técnico:** `HTML scrapeable` — Portal SII [cite: 42].
-   - **Notas:** Calendario de vencimientos estricto: Día 20 de cada mes para facturadores electrónicos que realizan el pago mediante la web [cite: 43, 44].
+!!! example ":material-file-document: Doc 1 — Guía para Declarar F29 por Internet (SII)"
+    - **URL:** [https://www.sii.cl/pagina/iva/guia_f29.htm](https://www.sii.cl/pagina/iva/guia_f29.htm)
+    - **Qué cubre:** Instrucciones de declaraciones de retenciones legales (IVA, retenciones de boletas de honorarios y los obligatorios PPM). Distingue crucialmente entre operaciones "Con pago", "Sin pago con movimiento" y "Sin pago sin movimiento" (declaración obligatoria en código 91 igual a cero) [cite: 42].
+    - **Vigencia:** Permanente.
+    - **Acceso técnico:** `HTML scrapeable` — Portal SII [cite: 42].
+    - **Notas:** Calendario de vencimientos estricto: Día 20 de cada mes para facturadores electrónicos que realizan el pago mediante la web [cite: 43, 44].
 
 **Documentación complementaria** (no esencial pero recomendada):
 - Guías del SII sobre la Postergación del Pago de IVA a dos meses (Ley de ayuda a Pymes) [cite: 44].
@@ -619,11 +619,11 @@ Finalmente, las reglas bajo las cuales la emprendedora debe regir la contabilida
 
 **Documentación esencial (orden de prioridad):**
 
-1. **[Características y Obligaciones de los Regímenes Pro Pyme (SII)]**
-   - **URL:** https://www.sii.cl/destacados/renta/2025/regimenes_renta2025.html
-   - **Qué cubre:** Detalla operativamente las tasas de PPM para inicio de giro (0.2% obligatorio o 0.25% si no excede 50.000 UF a futuro) [cite: 31]. Además, especifica la carga administrativa de registros (Registro de Rentas Afectas, Registro de Saldo Acumulado de Créditos) que exige el régimen General, o la liberación total de los mismos en el régimen Transparente [cite: 22].
-   - **Vigencia:** Vigente (Operación Renta 2025) [cite: 22].
-   - **Acceso técnico:** `HTML scrapeable` — SII [cite: 22].
+!!! example ":material-file-document: Doc 1 — Características y Obligaciones de los Regímenes Pro Pyme (SII)"
+    - **URL:** [https://www.sii.cl/destacados/renta/2025/regimenes_renta2025.html](https://www.sii.cl/destacados/renta/2025/regimenes_renta2025.html)
+    - **Qué cubre:** Detalla operativamente las tasas de PPM para inicio de giro (0.2% obligatorio o 0.25% si no excede 50.000 UF a futuro) [cite: 31]. Además, especifica la carga administrativa de registros (Registro de Rentas Afectas, Registro de Saldo Acumulado de Créditos) que exige el régimen General, o la liberación total de los mismos en el régimen Transparente [cite: 22].
+    - **Vigencia:** Vigente (Operación Renta 2025) [cite: 22].
+    - **Acceso técnico:** `HTML scrapeable` — SII [cite: 22].
 
 **Documentación complementaria** (no esencial pero recomendada):
 - Resoluciones Exentas del SII referidas al formato técnico de llenado de las DJ 1948 (Pro Pyme General) y DJ 1947 (Pro Pyme Transparente) [cite: 22].
