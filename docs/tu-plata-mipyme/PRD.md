@@ -44,79 +44,58 @@ El siguiente diagrama sintetiza, etapa por etapa, los dolores arquetípicos del 
 ```mermaid
 flowchart LR
     classDef pain fill:#fee2e2,stroke:#b91c1c,color:#7f1d1d
-    classDef barrier fill:#e5e5e5,stroke:#525252,color:#1f2937,stroke-dasharray:4 3
-    classDef abandon fill:#fafafa,stroke:#737373,color:#404040,stroke-dasharray:2 2
+    classDef barrier fill:#e5e5e5,stroke:#525252,color:#1f2937
+    classDef abandon fill:#fafafa,stroke:#737373,color:#404040
 
-    subgraph E1["1\. Sueño — 'tengo una idea'"]
-        D1A["Miedo irracional al SII<br/><i>el SII me va a multar antes de empezar</i><br/>E0-D2 — CRÍTICO transversal"]:::pain
-        D1B["Ignora cómo fijar precios<br/><i>copia el precio del vecino</i><br/>E0-D3"]:::pain
-        D1C["Mezcla finanzas familia / negocio<br/><i>cuenta única, sin separación</i><br/>E0-D7"]:::pain
+    subgraph E1["1. Sueno"]
+        D1A["Miedo SII E0-D2"]:::pain
+        D1B["No sabe pricing E0-D3"]:::pain
+        D1C["Mezcla finanzas E0-D7"]:::pain
     end
 
-    subgraph E2["2\. Informal activo — 'ya vendo'"]
-        D2A["Sin RUT comercial — pierde B2B<br/><i>cliente exige factura, no puede emitir</i><br/>E1-D1 · pérdida ~$200K/mes"]:::pain
-        D2B["Cobra en CuentaRUT — alerta lavado<br/><i>presunción de movimiento sospechoso</i><br/>E1-D2"]:::pain
-        D2C["Crecimiento invisible — sin balance<br/><i>no sabe si gana o pierde plata</i><br/>E1-D7"]:::pain
+    subgraph E2["2. Informal activo"]
+        D2A["Sin RUT pierde B2B E1-D1"]:::pain
+        D2B["CuentaRUT alerta lavado E1-D2"]:::pain
+        D2C["Crecimiento invisible E1-D7"]:::pain
     end
 
-    subgraph E3["3\. Formalización — 'me decido a legalizar'"]
-        D3A["Elección errónea figura jurídica<br/><i>SpA cuando bastaba EIRL</i><br/>E2-D2"]:::pain
-        D3B["Abismo RES → SII (F4415)<br/><i>empresa creada pero no factura</i><br/>E2-D3"]:::pain
-        D3C["4-6 trámites desconectados<br/><i>SII, Municipalidad, SEREMI sin hablarse</i><br/>E2-D1, E2-D5, E2-D6"]:::pain
+    subgraph E3["3. Formalizacion"]
+        D3A["Figura juridica erronea E2-D2"]:::pain
+        D3B["Abismo RES-SII E2-D3"]:::pain
+        D3C["4-6 tramites desconectados"]:::pain
     end
 
-    subgraph E4["4\. PYME crecimiento — 'quiero escalar'"]
-        D4A["F29 mensual — ansiedad de errar<br/><i>me van a multar por equivocarme</i><br/>E3-D1"]:::pain
-        D4B[">50% rechazo CORFO/SERCOTEC<br/><i>bases mal interpretadas</i><br/>E4-D2"]:::pain
-        D4C["Primer empleado — ley laboral<br/><i>contrato sin asesoría</i><br/>E4-D4"]:::pain
+    subgraph E4["4. PYME crecimiento"]
+        D4A["F29 ansiedad E3-D1"]:::pain
+        D4B["50 por ciento rechazo CORFO E4-D2"]:::pain
+        D4C["Primer empleado laboral E4-D4"]:::pain
     end
 
-    SII["SII<br/>lenguaje técnico"]:::barrier
-    BCO["Bancos<br/>rechazan informal"]:::barrier
-    CONTA["Contadores<br/>fees inalcanzables"]:::barrier
-    GOV["CORFO / SERCOTEC<br/>bases ilegibles"]:::barrier
+    SII["SII"]:::barrier
+    BCO["Bancos"]:::barrier
+    GOV["CORFO/SERCOTEC"]:::barrier
 
-    AB1["abandono temprano:<br/>queda en idea"]:::abandon
-    AB2["trampa de informalidad:<br/>nunca formaliza"]:::abandon
-    AB3["abandona trámites:<br/>vuelve a informal"]:::abandon
-    AB4["estancamiento:<br/>no postula o postula mal"]:::abandon
+    AB1["queda en idea"]:::abandon
+    AB2["nunca formaliza"]:::abandon
+    AB3["abandona tramites"]:::abandon
+    AB4["estancamiento"]:::abandon
 
-    E1 -.->|"~60% no llega a vender"| AB1
+    E1 -.-> AB1
     E1 ==> E2
-    E2 -.->|"escudo de cristal"| AB2
+    E2 -.-> AB2
     E2 ==> E3
-    E3 -.->|"agencias sin conversar"| AB3
+    E3 -.-> AB3
     E3 ==> E4
-    E4 -.->|"crecimiento estancado"| AB4
+    E4 -.-> AB4
 
     SII -.-> E1
-    SII -.-> E2
-    SII -.-> E3
-    SII -.-> E4
     BCO -.-> E2
-    BCO -.-> E3
-    CONTA -.-> E2
-    CONTA -.-> E3
-    CONTA -.-> E4
     GOV -.-> E4
 
-    %% Navegación: click en nodos para profundizar (abre en nueva pestaña)
-    click E1 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-1-sueno-free" _blank "Ver detalle de la etapa Sueño en plan.md"
-    click E2 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-2-informal-activo-free" _blank "Ver detalle de la etapa Informal activo en plan.md"
-    click E3 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-3-en-formalizacion-pro" _blank "Ver detalle de la etapa Formalización en plan.md"
-    click E4 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-4-pyme-en-crecimiento-plus-marketplace" _blank "Ver detalle de la etapa PYME crecimiento en plan.md"
-    click D1A "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-0-idea-sueno" _blank "Dolor E0-D2: ver ficha en dolores.md"
-    click D1B "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-0-idea-sueno" _blank "Dolor E0-D3: ver ficha en dolores.md"
-    click D1C "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-0-idea-sueno" _blank "Dolor E0-D7: ver ficha en dolores.md"
-    click D2A "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-1-validacion-informal" _blank "Dolor E1-D1: ver ficha en dolores.md"
-    click D2B "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-1-validacion-informal" _blank "Dolor E1-D2: ver ficha en dolores.md"
-    click D2C "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-1-validacion-informal" _blank "Dolor E1-D7: ver ficha en dolores.md"
-    click D3A "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-2-formalizacion" _blank "Dolor E2-D2: ver ficha en dolores.md"
-    click D3B "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-2-formalizacion" _blank "Dolor E2-D3: ver ficha en dolores.md"
-    click D3C "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-2-formalizacion" _blank "Dolores E2-D1, E2-D5, E2-D6: ver fichas en dolores.md"
-    click D4A "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-3-operacion-formal" _blank "Dolor E3-D1: ver ficha en dolores.md"
-    click D4B "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-4-crecimiento" _blank "Dolor E4-D2: ver ficha en dolores.md"
-    click D4C "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-4-crecimiento" _blank "Dolor E4-D4: ver ficha en dolores.md"
+    click E1 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-1-sueno-free" "Etapa Sueno" _blank
+    click E2 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-2-informal-activo-free" "Etapa Informal" _blank
+    click E3 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-3-en-formalizacion-pro" "Etapa Formalizacion" _blank
+    click E4 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-4-pyme-en-crecimiento-plus-marketplace" "Etapa PYME" _blank
 ```
 
 > **Lectura del diagrama.** Cada etapa concentra dolores arquetípicos respaldados por el run #06; las **flechas punteadas** muestran los puntos de abandono típicos en los que el emprendedor queda atrapado o retrocede. Las **cajas grises** son las instituciones que hoy son barrera —no enemigas— pero cuyo lenguaje, costo o lógica de operación expulsa al segmento NSE D-E. La trayectoria sólida E1 → E2 → E3 → E4 es la que ocurre en el papel; en la práctica, la mayor parte del universo se atasca entre E1 y E2.
@@ -202,134 +181,56 @@ flowchart LR
     classDef tool fill:#dbeafe,stroke:#1e40af,color:#1e3a8a
     classDef solved fill:#d1fae5,stroke:#065f46,color:#064e3b
     classDef tech fill:#f5f5f5,stroke:#525252,color:#1f2937
-    classDef chan fill:#dcfce7,stroke:#15803d,color:#14532d
 
-    subgraph CANAL["Canal · WhatsApp-first + Web complementaria · mensajes ≤160 chars · 1 idea por mensaje"]
-        WA["WhatsApp Business<br/>vía Twilio"]:::chan
-        WEB["Web Next.js<br/>landing + dashboard"]:::chan
+    WA["WhatsApp Twilio"]:::tech
+    WEB["Web Next.js"]:::tech
+    SUP["Supervisor Sonnet 4.6 + Agent SDK + Postgres + MCPs"]:::tech
+
+    subgraph E1["1. Sueno"]
+        AG1["mentor-inicio"]:::agent
+        T1["Validacion idea + pricing + punto equilibrio"]:::tool
+        S1["Cierra E0-D2 D3 D7"]:::solved
+        AG1 --> T1 --> S1
     end
 
-    subgraph STACK["Stack técnico"]
-        SUP["Supervisor<br/>Sonnet 4.6"]:::tech
-        HAI["Clasificador<br/>Haiku 4.5"]:::tech
-        SDK["Agent SDK<br/>handoffs JSON"]:::tech
-        DB["Postgres<br/>expediente persistente"]:::tech
-        MCP["MCPs SII / CORFO / SERCOTEC<br/>+ caching >80%"]:::tech
+    subgraph E2["2. Informal activo (Fase 0)"]
+        AG2["acompanante-informal"]:::agent
+        T2["Registro WhatsApp + reporte semanal Pro-Pyme"]:::tool
+        S2["Cierra E1-D1 D2 D7"]:::solved
+        AG2 --> T2 --> S2
     end
 
-    subgraph E1["1\. Sueño"]
-        AG1["Agente: mentor-inicio"]:::agent
-        T1A["Validación rápida idea"]:::tool
-        T1B["Calculadora punto equilibrio<br/>(teoría, sin cálculo directo)"]:::tool
-        T1C["Pricing + valor del tiempo"]:::tool
-        S1["Resuelve:<br/>✓ Miedo SII desmitificado (E0-D2)<br/>✓ Pricing con disclaimer (E0-D3)<br/>✓ Separación finanzas (E0-D7)"]:::solved
-        AG1 --> T1A
-        AG1 --> T1B
-        AG1 --> T1C
-        T1A --> S1
-        T1B --> S1
-        T1C --> S1
+    subgraph E3["3. Formalizacion"]
+        AG3["gestor-formalizacion"]:::agent
+        T3["MCP SII + decisor figura + carta banco PDF"]:::tool
+        S3["Cierra E2-D1 D2 D3 D5 D6"]:::solved
+        AG3 --> T3 --> S3
     end
 
-    subgraph E2["2\. Informal activo"]
-        AG2["Agente: acompanante-informal<br/>(foco Fase 0 demo del lab)"]:::agent
-        T2A["Registro venta WhatsApp<br/>'vendí 30 mil'"]:::tool
-        T2B["Reporte semanal utilidad real<br/>vs simulación Pro-Pyme"]:::tool
-        T2C["Warning CuentaRUT<br/>(alerta lavado)"]:::tool
-        T2D["Recordatorios asincrónicos<br/>frecuencia adaptativa"]:::tool
-        S2["Resuelve:<br/>✓ Crecimiento visible (E1-D7)<br/>✓ Alerta riesgo bancario (E1-D2)<br/>✓ Detecta cuándo formalizar conviene"]:::solved
-        AG2 --> T2A
-        AG2 --> T2B
-        AG2 --> T2C
-        AG2 --> T2D
-        T2A --> S2
-        T2B --> S2
-        T2C --> S2
-    end
-
-    subgraph E3["3\. Formalización"]
-        AG3["Agente: gestor-formalizacion"]:::agent
-        T3A["MCP SII<br/>validar_rut + Inicio Actividades"]:::tool
-        T3B["Decisor figura jurídica<br/>MEF / EIRL / SpA"]:::tool
-        T3C["Checklist 4-6 trámites<br/>RES → SII → Mun → SEREMI"]:::tool
-        T3D["generar_carta_banco PDF"]:::tool
-        S3["Resuelve:<br/>✓ Hilo conductor entre agencias (E2-D3)<br/>✓ Decisión informada figura (E2-D2)<br/>✓ Acceso bancario vía PDF (RF-08)"]:::solved
-        AG3 --> T3A
-        AG3 --> T3B
-        AG3 --> T3C
-        AG3 --> T3D
-        T3A --> S3
-        T3B --> S3
-        T3D --> S3
-    end
-
-    subgraph E4["4\. PYME crecimiento"]
-        AG4["Agente: estratega-crecimiento"]:::agent
-        T4A["matcher_fondos<br/>CORFO / SERCOTEC / FOGAPE"]:::tool
-        T4B["generador_borrador postulación"]:::tool
-        T4C["Acompañamiento F29 mensual"]:::tool
-        T4D["Marketplace asesores humanos"]:::tool
-        S4["Resuelve:<br/>✓ Subsidios bien postulados (E4-D2)<br/>✓ Calendario + recordatorio F29 (E3-D1)<br/>✓ Derivación legal humana (E4-D4)"]:::solved
-        AG4 --> T4A
-        AG4 --> T4B
-        AG4 --> T4C
-        AG4 --> T4D
-        T4A --> S4
-        T4B --> S4
-        T4C --> S4
+    subgraph E4["4. PYME crecimiento"]
+        AG4["estratega-crecimiento"]:::agent
+        T4["matcher fondos + borrador postulacion + F29"]:::tool
+        S4["Cierra E3-D1 E4-D2 D4"]:::solved
+        AG4 --> T4 --> S4
     end
 
     WA --> SUP
     WEB --> SUP
-    SUP --> HAI
-    SUP --> SDK
-    SUP --> DB
-    SDK --> AG1
-    SDK --> AG2
-    SDK --> AG3
-    SDK --> AG4
-    AG3 --> MCP
-    AG4 --> MCP
+    SUP --> AG1
+    SUP --> AG2
+    SUP --> AG3
+    SUP --> AG4
 
-    AG1 ==>|"upgrade trigger:<br/>'lista para vender'"| AG2
-    AG2 ==>|"handoff JSON:<br/>'quiero formalizar'"| AG3
-    AG3 ==>|"6 meses formalizada<br/>handoff JSON"| AG4
+    AG1 ==>|"upgrade"| AG2
+    AG2 ==>|"handoff JSON"| AG3
+    AG3 ==>|"6 meses formalizada"| AG4
 
-    %% Navegación: click en nodos para profundizar (abre en nueva pestaña)
-    click WA "https://theclauders.netlify.app/tu-plata-mipyme/especificaciones/adrs/0004-whatsapp-first-freemium-multiagente/" _blank "ADR-0004: por qué WhatsApp-first"
-    click WEB "https://theclauders.netlify.app/tu-plata-mipyme/especificaciones/adrs/0004-whatsapp-first-freemium-multiagente/" _blank "ADR-0004: rol de la web complementaria"
-    click SUP "https://theclauders.netlify.app/tu-plata-mipyme/plan/#42-componentes-y-tecnologia" _blank "Componentes técnicos en plan.md §4.2"
-    click HAI "https://theclauders.netlify.app/tu-plata-mipyme/plan/#42-componentes-y-tecnologia" _blank "Componentes técnicos en plan.md §4.2"
-    click SDK "https://theclauders.netlify.app/tu-plata-mipyme/plan/#5-sistema-multi-agente-diseno-detallado" _blank "Sistema multi-agente con Agent SDK en plan.md §5"
-    click DB "https://theclauders.netlify.app/tu-plata-mipyme/plan/#43-modelo-de-datos-nucleo" _blank "Modelo de datos en plan.md §4.3"
-    click MCP "https://theclauders.netlify.app/tu-plata-mipyme/plan/#42-componentes-y-tecnologia" _blank "MCPs y caching en plan.md §4.2"
-    click E1 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-1-sueno-free" _blank "Detalle Etapa Sueño en plan.md"
-    click E2 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-2-informal-activo-free" _blank "Detalle Etapa Informal activo en plan.md"
-    click E3 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-3-en-formalizacion-pro" _blank "Detalle Etapa Formalización en plan.md"
-    click E4 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-4-pyme-en-crecimiento-plus-marketplace" _blank "Detalle Etapa PYME crecimiento en plan.md"
-    click AG1 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-1-sueno-free" _blank "Agente mentor-inicio en plan.md §3.2"
-    click AG2 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-2-informal-activo-free" _blank "Agente acompanante-informal en plan.md §3.2"
-    click AG3 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-3-en-formalizacion-pro" _blank "Agente gestor-formalizacion en plan.md §3.2"
-    click AG4 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-4-pyme-en-crecimiento-plus-marketplace" _blank "Agente estratega-crecimiento en plan.md §3.2"
-    click S1 "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-0-idea-sueno" _blank "Dolores E0 cerrados por mentor-inicio"
-    click S2 "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-1-validacion-informal" _blank "Dolores E1 cerrados por acompanante-informal"
-    click S3 "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-2-formalizacion" _blank "Dolores E2 cerrados por gestor-formalizacion"
-    click S4 "https://theclauders.netlify.app/tu-plata-mipyme/dolores/#etapa-4-crecimiento" _blank "Dolores E3-E4 cerrados por estratega-crecimiento"
-    click T1A "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools mentor-inicio en backlog.md"
-    click T1B "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools mentor-inicio en backlog.md"
-    click T1C "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools mentor-inicio en backlog.md"
-    click T2A "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools acompanante-informal en backlog.md"
-    click T2B "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools acompanante-informal en backlog.md"
-    click T2C "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools acompanante-informal en backlog.md"
-    click T2D "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools acompanante-informal en backlog.md"
-    click T3A "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools gestor-formalizacion en backlog.md"
-    click T3B "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools gestor-formalizacion en backlog.md"
-    click T3C "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools gestor-formalizacion en backlog.md"
-    click T3D "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools gestor-formalizacion en backlog.md"
-    click T4A "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools estratega-crecimiento en backlog.md"
-    click T4B "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools estratega-crecimiento en backlog.md"
-    click T4C "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools estratega-crecimiento en backlog.md"
-    click T4D "https://theclauders.netlify.app/tu-plata-mipyme/backlog/" _blank "Tools estratega-crecimiento en backlog.md"
+    click E1 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-1-sueno-free" "Etapa Sueno" _blank
+    click E2 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-2-informal-activo-free" "Etapa Informal" _blank
+    click E3 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-3-en-formalizacion-pro" "Etapa Formalizacion" _blank
+    click E4 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-4-pyme-en-crecimiento-plus-marketplace" "Etapa PYME" _blank
+    click SUP "https://theclauders.netlify.app/tu-plata-mipyme/plan/#42-componentes-y-tecnologia" "Stack en plan.md" _blank
+    click WA "https://theclauders.netlify.app/tu-plata-mipyme/especificaciones/adrs/0004-whatsapp-first-freemium-multiagente/" "ADR-0004" _blank
 ```
 
 > **Lectura del diagrama.** Las **cajas verdes** son los canales (WhatsApp principal · Web complementaria). Las **cajas grises** son los componentes técnicos compartidos: el supervisor en Sonnet 4.6 enruta a 4 subagentes vía Agent SDK; Haiku 4.5 clasifica intención (más barato, más rápido); Postgres persiste el expediente del emprendedor entre sesiones; los MCPs propios sobre SII/CORFO/SERCOTEC habilitan tools que **citan la fuente y no alucinan números**. Las **cajas violetas** son los agentes; las **azules** son sus tools; las **verdes claras** muestran qué dolores específicos del AS-IS se cierran en cada etapa. Las **flechas gruesas** entre agentes son los **handoffs explícitos** con contexto JSON estructurado (no historia conversacional cruda) que mantienen la continuidad del journey sin perder al usuario entre etapas.
