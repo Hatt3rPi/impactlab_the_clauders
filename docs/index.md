@@ -53,6 +53,7 @@ Bienvenidos al espacio de trabajo del equipo **The Clauders** para el [Claude Im
 - [x] Plataforma inicial — **Web mobile-first** ([ADR 0003](tu-plata-mipyme/especificaciones/adrs/0003-plataforma-web-mobile-first.md), parcialmente superseded)
 - [x] Pool de ideas pre-evaluadas con scoring ([Tablero de ideas](competencia/ideas-evaluadas/index.md))
 - [x] **Idea ganadora aterrizada — Tu Plata Mipyme** ([ADR 0004](tu-plata-mipyme/especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md))
+- [x] **PRD redactado** — [PRD Tu Plata Mipyme](tu-plata-mipyme/PRD.md)
 - [x] Backlog de 60 features generado y revisado parcialmente
 - [ ] Completar revisión backlog E3-E5 (32 features pendientes)
 - [ ] Spike técnico del supervisor multi-agente

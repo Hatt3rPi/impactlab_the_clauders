@@ -109,6 +109,7 @@ nav:
 
   - "🚀 Tu Plata Mipyme":
       - tu-plata-mipyme/index.md
+      - "PRD": tu-plata-mipyme/PRD.md
       - "Qué es y para quién": tu-plata-mipyme/que-es.md
       - "Plan de implementación": tu-plata-mipyme/plan.md
       - "Backlog (60 features)": tu-plata-mipyme/backlog.md

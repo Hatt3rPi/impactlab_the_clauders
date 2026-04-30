@@ -444,4 +444,29 @@ del equipo en la próxima reunión técnica.
 
 ## 8. Anexos — Trazabilidad al repo
 
-[Pendiente — Tarea 12]
+Cada sección del PRD se construyó a partir de las siguientes fuentes del repo.
+Si una fuente cambia, evaluar si el PRD requiere actualización.
+
+| Sección PRD | Fuentes principales |
+|---|---|
+| 1. Problema | [que-es.md](que-es.md) · [research run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) · [run #04](../competencia/research/_runs-deep-research/2026-04-29-04-money-left-on-the-table.md) · [línea inclusión financiera](../competencia/lineas-tematicas/inclusion-financiera.md) · [comportamiento digital Chile 2026](../competencia/research/usuarios/comportamiento-digital-chile-2026.md) |
+| 2. Resultado esperado | [que-es.md](que-es.md) · [plan.md §1, §8](plan.md) · [criterios-evaluacion](../competencia/criterios-evaluacion.md) |
+| 3. Alcance | [plan.md §7](plan.md) · [backlog.md](backlog.md) · [deliverables](../competencia/deliverables.md) · [reglas](../competencia/reglas.md) · [ideas-evaluadas/index.md](../competencia/ideas-evaluadas/index.md) |
+| 4. Requerimientos | [backlog.md](backlog.md) · [plan.md §3, §4, §5](plan.md) · [ADR-0004](especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md) |
+| 5. Criterios de aceptación | [criterios-evaluacion](../competencia/criterios-evaluacion.md) · RF de Sección 4 · [miembros.md](../equipo/miembros.md) |
+| 6. Supuestos / restricciones | [reglas](../competencia/reglas.md) · [timeline](../competencia/timeline.md) · ADR 0001-0004 · [plan.md §4.4](plan.md) |
+| 7. Riesgos | [plan.md §9](plan.md) · [reuniones del equipo](../reuniones/) · análisis al redactar |
+
+### 8.1 Versión y revisiones
+
+| Versión | Fecha | Cambios |
+|---|---|---|
+| 1.0 | 2026-04-30 | Versión inicial — consolidación de research, ADRs, plan técnico, backlog y reuniones |
+
+### 8.2 Documentos relacionados en el hub
+
+- [Tu Plata Mipyme — Hub](index.md) — overview y atajos.
+- [Qué es y para quién](que-es.md) — definición canónica del producto.
+- [Plan de implementación](plan.md) — arquitectura técnica end-to-end.
+- [Backlog (60 features)](backlog.md) — catálogo categorizado E0-E5.
+- [Decisiones (ADRs)](especificaciones/adrs/index.md) — 4 ADRs registrados.

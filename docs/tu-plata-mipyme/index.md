@@ -25,6 +25,7 @@ tags:
 
 | Doc | Qué contiene |
 |---|---|
+| [PRD](PRD.md) | Documento de Requerimiento de Producto consolidado — frame de negocio, alcance, RF priorizados, CA, supuestos, riesgos |
 | [Qué es y para quién](que-es.md) | Definición canónica, tiers (Free/Pro/Plus/Marketplace), segmentos, qué hace y qué NO hace |
 | [Plan de implementación](plan.md) | Arquitectura multi-agente (1 supervisor + 4 subagentes), stack, principios duros, KPIs, roadmap 4 fases |
 | [Backlog (60 features)](backlog.md) | Catálogo categorizado E0-E5, escenarios de usuario, decisiones del equipo (✅/❌/💡/⏳) |
