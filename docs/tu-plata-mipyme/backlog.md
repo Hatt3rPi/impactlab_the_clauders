@@ -22,6 +22,9 @@ tags:
 
 > *60 funcionalidades candidatas categorizadas por etapa del journey del microemprendedor chileno (E0-E5) y subcategoría (FORM/OPER/FIN/LEGAL/CRECE/RIESGO/EMOCIONAL). Insumo para priorizar el MVP del Lab del 7 de mayo y el roadmap post-lab.*
 
+!!! tip "Antes de leer el backlog: conocé los dolores"
+    Las features de abajo responden a los **48 dolores documentados** del journey del microemprendedor. Si querés entender **el problema antes de la solución**, leé primero [Dolores del journey](./dolores.md).
+
 ## Resumen
 
 - **48 dolores documentados** a lo largo de 6 etapas del journey (idea → cierre).

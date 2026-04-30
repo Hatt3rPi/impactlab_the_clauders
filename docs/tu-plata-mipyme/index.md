@@ -26,6 +26,7 @@ tags:
 | Doc | Qué contiene |
 |---|---|
 | [Qué es y para quién](que-es.md) | Definición canónica, tiers (Free/Pro/Plus/Marketplace), segmentos, qué hace y qué NO hace |
+| [**Dolores del journey**](dolores.md) | 48 dolores documentados E0-E5 con 5 puntos cada uno (cómo se resuelve hoy, costo, tiempo, fracaso, brecha IA) + decisión literal del equipo |
 | [Plan de implementación](plan.md) | Arquitectura multi-agente (1 supervisor + 4 subagentes), stack, principios duros, KPIs, roadmap 4 fases |
 | [Backlog (60 features)](backlog.md) | Catálogo categorizado E0-E5, escenarios de usuario, decisiones del equipo (✅/❌/💡/⏳) |
 

@@ -64,6 +64,9 @@ Para lograr esto, no basta con un *chatbot* de preguntas frecuentes; se requiere
 
 ## Sección 1 y 2: Mapeo del Journey y Documentación de Dolores
 
+!!! tip ":material-arrow-top-right: Esta sección fue promovida al hub del producto"
+    El contenido de los **48 dolores E0-E5** vive ahora como documento canónico del producto en [`tu-plata-mipyme/dolores.md`](../../../tu-plata-mipyme/dolores.md), con header propio, tabla resumen y links cruzados al backlog. Esta versión raw permanece como evidencia histórica del research que produjo el insight.
+
 El viaje del microemprendedor no es lineal. Para el segmento objetivo (mujeres de 30-50 años, NSE D-E), el tránsito desde la informalidad hacia la formalización está minado de obstáculos emocionales, burocráticos y financieros. A continuación, se detalla cada etapa del proceso, analizando el ecosistema actual de soluciones, sus costos, tiempos y la brecha que una Inteligencia Artificial conversacional puede explotar.
 
 *Nota metodológica: Las tasas de fracaso específicas a nivel micro-municipal no siempre están centralizadas; cuando las cifras exactas no están disponibles, se proporcionan estimaciones basadas en encuestas nacionales como la EME 8 y reportes de organismos técnicos.*
