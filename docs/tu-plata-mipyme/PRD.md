@@ -61,15 +61,63 @@ Cada mes que el segmento informal sigue operando sin acompañamiento accesible s
 
 ### 2.1 Estado futuro deseado
 
-[Pendiente — Tarea 6]
+Habilitar que cualquier microemprendedor chileno —desde el momento en que tiene una idea hasta que opera como PYME formalizada que postula a subsidios— pueda **conversar por WhatsApp con un copiloto que lo entienda en su idioma, lo acompañe al ritmo asincrónico de su día y lo derive al instrumento estatal correcto cuando corresponda**. El sistema funciona en el smartphone que el usuario ya tiene, gratis hasta el punto en que el siguiente paso (formalización o postulación a subsidio) genera valor monetario evidente que justifica un cobro modesto. La web complementa con visualización (gráficos de utilidad), formularios largos y descargas (carta a banco, checklists de trámites) — nunca exclusiviza *(Fuente: [ADR-0004](especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md))*.
+
+El acompañamiento se entrega vía **cuatro agentes especializados por etapa del journey** (`mentor-inicio`, `acompanante-informal`, `gestor-formalizacion`, `estratega-crecimiento`) coordinados por un supervisor que enruta por etapa+intención y comparten un expediente único del emprendedor. Cada respuesta cita la norma chilena verificable (SII, CORFO, SERCOTEC) y cada cálculo ejecuta la regla *"no te calculo, te enseño lo que debes saber"* — el copiloto orienta y deriva, no reemplaza al contador ni al abogado *(Fuente: [plan.md](plan.md))*. En palabras del equipo: *"Es ofrecer la ayuda a que este gallo deje de pensar y se dedique a emprender"* *(Fuente: [reunión 30-abr](../reuniones/2026-04-30-revision-dolores-backlog.md))*.
 
 ### 2.2 Beneficios esperados
 
-[Pendiente — Tarea 6]
+- **Cobertura efectiva del segmento donde ya está.** Llegar al 1,08 M de microemprendedores informales por el canal que ya usan, sin pedirles aprender una app nueva ni instalar nada: WhatsApp con 95,3 % de penetración mobile en Chile *(Fuente: [comportamiento digital Chile 2026](../competencia/research/usuarios/comportamiento-digital-chile-2026.md))*. Esto cierra la brecha de canal descrita en la causa 3 de la Sección 1.
+- **Acompañamiento continuo, no consulta puntual.** Sustituir el modelo "una visita al contador / una llamada a SERCOTEC" por una conversación recurrente y asincrónica que captura ventas y gastos día a día, recuerda plazos y siembra conciencia de formalización sin presionar — diferenciador estructural frente a los RAG estáticos que dominarán el lab *(Fuente: [ADR-0004](especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md))*.
+- **Asesoría especializada por etapa, no genérica.** Cuatro agentes con system prompts focalizados <2k tokens por etapa (vs. >8k que degradan calidad en evals internos), cada uno con sus tools y memoria. Un soñador no recibe el mismo trato que una PYME que postula a CORFO; el supervisor enruta y los handoffs pasan contexto JSON estructurado *(Fuente: [plan.md](plan.md))*.
+- **Modelo económico inclusivo y sostenible.** Tier Free indefinido para soñador e informal activo; cobro solo cuando el valor monetario del siguiente paso es evidente para el usuario (Pro ~$4.990 CLP/mes al formalizar; Plus $15.000-30.000 CLP por postulación a subsidio); marketplace con comisión 10-15 % al derivar a contador/abogado certificado regional. Captura willingness-to-pay real sin reproducir la barrera económica que es causa raíz del problema *(Fuente: [que-es.md](que-es.md))*.
+- **Trazabilidad normativa con cita verificable.** Cada respuesta tributaria, jurídica o de fomento incluye link a la fuente oficial (SII, CORFO, SERCOTEC, CMF), implementado vía MCP propio sobre corpus regulatorio chileno con prompt caching de Anthropic (>80 % hit objetivo) — mitiga el riesgo descalificante de alucinación legal del lab *(Fuente: [estrategia de pitch](../equipo/estrategia-pitch-lab.md))*.
+- **Reducción de capital público no aprovechado.** Bajar el >50 % de rechazo en SERCOTEC/CORFO por mala formulación y la fuga de dueños únicos que pagan 27 % de primera categoría cuando calificarían a 0 % en Pro-Pyme Transparente, vía postulación asistida y match probabilístico con instrumentos *(Fuente: [research run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md))*.
 
 ### 2.3 Indicadores de éxito
 
-[Pendiente — Tarea 6]
+#### 2.3.1 Producto (mensuales)
+
+| # | Indicador | Definición | Meta Fase 1 |
+|---|---|---|---|
+| 1 | MAU | Emprendedores con ≥ 1 mensaje en el mes | 50 → 500 |
+| 2 | Retención semana 4 | % activo a 4 semanas | > 40 % |
+| 3 | Tasa avance de etapa | % que pasa de etapa N a N+1 en el mes | 5 % E2→E3 · 15 % E3→E4 |
+| 4 | Conversión Free → Pro | % que paga al ver el trigger contextual | > 8 % |
+| 5 | NPS | Encuesta WhatsApp post-interacción | > 40 |
+
+*(Fuente: [plan.md §8.1](plan.md))*
+
+#### 2.3.2 Impacto (trimestrales, reporte público)
+
+| # | Indicador | Definición | Meta |
+|---|---|---|---|
+| 6 | Formalizaciones inducidas | Inicios de Actividades SII confirmados con código de referido | Reportado trimestral |
+| 7 | Subsidios postulados | Postulaciones CORFO/SERCOTEC asistidas con la plataforma | Reportado trimestral |
+| 8 | Subsidios adjudicados | Postulaciones asistidas que ganaron | Reportado trimestral |
+| 9 | Distribución regional | % usuarios fuera de RM (proxy descentralización) | Crecimiento sostenido |
+| 10 | Brecha de género cerrada | % usuarias mujeres vs línea base 59 % informalidad femenina | ≥ 59 % |
+
+*(Fuente: [plan.md §8.2](plan.md))*
+
+#### 2.3.3 Técnicos
+
+| # | Indicador | Meta |
+|---|---|---|
+| 11 | Latencia p95 respuesta WhatsApp | < 4 s |
+| 12 | Costo por usuario activo / mes | < $0,30 USD (con caching) |
+| 13 | Cache hit rate (corpus regulatorio) | > 80 % |
+| 14 | Uptime gateway WhatsApp | > 99,5 % |
+
+*(Fuente: [plan.md §8.3](plan.md))*
+
+#### 2.3.4 Específicos al pitch del lab
+
+| # | Indicador | Meta |
+|---|---|---|
+| 15 | Auto-score interno vs criterios oficiales | ≥ 85 / 100 *(Fuente: [criterios-evaluacion](../competencia/criterios-evaluacion.md))* |
+| 16 | Demo end-to-end del agente `acompanante-informal` (E2 — universo 1,08 M) | < 90 s en mobile *(Fuente: [plan.md §7](plan.md))* |
+| 17 | Cita verificable en respuesta tributaria/regulatoria de la demo | 100 % de respuestas con link a fuente oficial (SII/CORFO/SERCOTEC/CMF) *(Fuente: [estrategia de pitch](../equipo/estrategia-pitch-lab.md))* |
 
 ---
 
