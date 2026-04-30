@@ -239,15 +239,64 @@ Las siguientes 24 ideas evaluadas en el catálogo del equipo NO son parte del al
 
 ### 4.1 Requerimientos de negocio
 
-[Pendiente — Tarea 8]
+Lo que el sistema debe hacer expresado desde dos perspectivas: la del **microemprendedor informal** (usuario primario de Fase 0) y la del **equipo The Clauders** durante el pitch del 7 de mayo.
+
+**Para el microemprendedor informal (Etapa 2 del journey):**
+
+1. **Registrar ventas y gastos diarios por WhatsApp** mediante mensajes en lenguaje natural y recibir cada semana el cálculo de utilidad real comparado contra la simulación del régimen Pro-Pyme Transparente. La conversación respeta el formato ≤ 160 caracteres con 1 idea por mensaje, alineado con comprensión lectora bajo nivel 3 PIAAC del segmento NSE D-E *(Fuente: [plan.md §1.2](plan.md))*.
+2. **Recibir recordatorios contextuales con frecuencia adaptativa** (no agresiva) que rompan la invisibilidad del crecimiento sin presionar a formalizar antes de que el cálculo de utilidad lo justifique *(Fuente: [plan.md §3.2](plan.md))*.
+3. **Recibir derivaciones explícitas a humanos o instituciones** ("no sé, te derivo") cuando la consulta excede el scope del asistente, en lugar de respuestas alucinadas — regla dura del equipo: *"No te calculo, te enseño lo que debes saber"* *(Fuente: [plan.md §1.2](plan.md))*.
+4. **Verificar la fuente de cualquier respuesta normativa** con link verificable a SII, CORFO, SERCOTEC o CMF, sin tener que confiar a ciegas en el bot *(Fuente: [ADR-0004](especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md))*.
+5. **Pasar a la Etapa 3 (formalización) con handoff explícito** al `gestor-formalizacion` cuando la utilidad calculada justifica el paso, conservando el expediente del emprendedor para que la conversación retome sin re-pedir datos básicos *(Fuente: [plan.md §3.2](plan.md))*.
+6. **Ejercer derechos ARCO desde el mismo canal** mediante los comandos `/mis-datos` y `/borrar-mis-datos` operativos por WhatsApp, en cumplimiento de Ley 19.628 + Ley 21.719 *(Fuente: [plan.md §4.4](plan.md))*.
+
+**Para el equipo The Clauders durante el pitch del 7 de mayo:**
+
+7. **Mostrar una conversación end-to-end en mobile en menos de 90 segundos** que recorra el flujo dorado del `acompanante-informal` (registro de venta → reporte semanal → simulación Pro-Pyme → carta a banco) *(Fuente: [plan.md §7](plan.md))*.
+8. **Mostrar lo que el agente está "pensando"** (handoffs entre subagents, tools llamadas, citas resueltas) en un panel paralelo de la web — captura el bonus +5 puntos por *agentic thinking* y mitiga el riesgo "demo en vivo de WhatsApp es menos espectacular que UI rica" *(Fuente: [estrategia de pitch](../equipo/estrategia-pitch-lab.md))*.
+9. **Tener fallback offline pre-grabado para los 2 casos demo principales** (registro de venta + carta a banco) si la API de Claude o el gateway WhatsApp fallan en vivo, con indicador visual sutil de "modo offline" sin interrupción del flujo *(Fuente: [estrategia de pitch](../equipo/estrategia-pitch-lab.md))*.
 
 ### 4.2 Requerimientos operativos
 
-[Pendiente — Tarea 8]
+Lo que el sistema y el equipo deben sostener para que la Fase 0 sea reproducible, auditable y conforme al marco regulatorio chileno.
+
+1. **Demo reproducible end-to-end desde cualquier laptop del equipo.** Felipe, Jose, Cristian o Anahi pueden levantar la demo desde su laptop sin pasos manuales fuera del repo (variables documentadas, secretos en `.env.example`, README con quickstart) *(Fuente: [deliverables.md](../competencia/deliverables.md))*.
+2. **Recuperación ante fallo en vivo.** Para los 2 casos demo principales existe fallback pre-grabado o cacheado localmente que se activa si Claude API o el gateway WhatsApp fallan, sin que el jurado lo perciba como ruptura *(Fuente: [estrategia de pitch](../equipo/estrategia-pitch-lab.md))*.
+3. **Trazabilidad de consultas.** Cada respuesta del demo guarda un log local con prompt, tools llamadas, citas resueltas y respuesta final — auditable a posteriori por el equipo y por el jurado si lo solicita *(Fuente: [plan.md §4.4](plan.md))*.
+4. **Cumplimiento Ley 19.628 + Ley 21.719.** Consentimiento granular al enrolar (opt-in explícito por categoría de dato), comandos `/mis-datos` y `/borrar-mis-datos` operativos en la demo, encriptación at-rest y in-transit (TLS 1.3), retención de telemetría agregada sin PII a 90 días *(Fuente: [plan.md §4.4](plan.md))*.
+5. **Repo del equipo como única fuente de verdad.** El equipo opera el lab desde la wiki (PRD, plan, backlog, ADRs, reuniones) sin herramientas externas no conectadas. Filosofía consensuada en kickoff: *"Repositorio como fuente de la verdad — ambiente productivo todo por excelencia"* *(Fuente: [reunión 29-abr](../reuniones/2026-04-29-definicion-problema-setup.md))*.
 
 ### 4.3 Tabla de Requerimientos Funcionales (Fase 0)
 
-[Pendiente — Tarea 8]
+Cada RF es derivable del backlog ✅ Incluir, del plan técnico (`plan.md` §3 journey por agente, §4 stack) o del ADR-0004. La prioridad usa la escala **Must Have · Should Have · Nice to Have**. Los RF marcados Must Have deben estar funcionales y demostrables en el pitch del 7 de mayo.
+
+| ID | Requerimiento | Prioridad | Criterio de aceptación breve | Fuente |
+|---|---|---|---|---|
+| RF-01 | Iniciar conversación por WhatsApp con mensaje en lenguaje natural | Must Have | Mensaje del usuario al número del bot genera respuesta en < 4 s p95 | [plan.md §4.2](plan.md) · [plan.md §8.3](plan.md) |
+| RF-02 | El supervisor clasifica al usuario en su etapa del journey y rutea al agente correcto (Fase 0: solo `acompanante-informal`) | Must Have | Mensaje del tipo "vendí 30 mil" → rutea a Etapa 2 con expediente cargado | [plan.md §3.2](plan.md) · [plan.md §5.3](plan.md) |
+| RF-03 | El bot responde con mensajes ≤ 160 caracteres y 1 idea por mensaje, en lenguaje B1 / 8° básico | Must Have | 100 % de mensajes del demo cumplen el formato; revisión manual por Anahi | [plan.md §1.2](plan.md) · [reunión 30-abr](../reuniones/2026-04-30-revision-dolores-backlog.md) |
+| RF-04 | Registrar venta del día por NLP desde texto ("vendí $X") y por audio (post-MVP) | Must Have | Sistema confirma la venta y actualiza el expediente en Postgres | [backlog E1-OPER-09](backlog.md) |
+| RF-05 | Memoria persistente del expediente del emprendedor entre sesiones | Must Have | Sesión 2 retoma el contexto sin re-pedir datos básicos al usuario | [plan.md §4.2](plan.md) |
+| RF-06 | Reporte semanal de utilidad real vs simulación Pro-Pyme Transparente | Must Have | Mensaje semanal automático con utilidad calculada y comparación contra régimen Pro-Pyme | [plan.md §3.2](plan.md) |
+| RF-07 | Tool `simular-pro-pyme` que acepta ventas y gastos anuales y devuelve utilidad neta | Must Have | Tool retorna número en CLP + explicación simple + disclaimer "no te calculo, te enseño" | [plan.md §3.2](plan.md) |
+| RF-08 | Tool `generar-carta-banco` que produce carta de presentación a banco en PDF descargable | Must Have | URL de PDF entregada en chat; PDF abre y es legible en mobile | [plan.md §3.2](plan.md) · [backlog E2-FORM-24](backlog.md) |
+| RF-09 | Toda respuesta normativa cita su fuente con link verificable a SII / CORFO / SERCOTEC / CMF | Must Have | 100 % de respuestas tributarias o regulatorias del demo incluyen link a fuente oficial | [plan.md §1.2](plan.md) · [estrategia de pitch](../equipo/estrategia-pitch-lab.md) |
+| RF-10 | Manejar "no sé, te derivo" cuando la consulta excede el scope, sin alucinar | Must Have | Caso de prueba con prompt fuera de dominio devuelve derivación explícita (no respuesta inventada) | [plan.md §1.2](plan.md) · [reunión 30-abr](../reuniones/2026-04-30-revision-dolores-backlog.md) |
+| RF-11 | Comandos ARCO `/mis-datos` y `/borrar-mis-datos` operativos por WhatsApp | Must Have | Demo de cada comando devuelve respuesta esperada (export JSON / confirmación de borrado) | [plan.md §4.4](plan.md) |
+| RF-12 | Web pública con landing y embed del chat para soporte visual del pitch | Must Have | URL accesible durante el pitch; embed funcional en mobile y desktop | [plan.md §4.2](plan.md) · [plan.md §7](plan.md) |
+| RF-13 | Panel paralelo en la web que muestra handoffs, tools llamadas y citas resueltas en tiempo real | Must Have | Durante la demo el jurado ve simultáneamente la conversación WhatsApp y el "thinking" del agente | [estrategia de pitch](../equipo/estrategia-pitch-lab.md) |
+| RF-14 | MCP propio sobre corpus regulatorio chileno (markdown indexado con prompt caching) | Must Have | Cache hit rate del corpus regulatorio > 80 % medido con telemetría local | [plan.md §4.2](plan.md) · [estrategia de pitch](../equipo/estrategia-pitch-lab.md) |
+| RF-15 | Fallback offline pre-grabado para los 2 casos demo principales | Must Have | Si Claude API o WhatsApp gateway fallan, la demo continúa desde caché con indicador "modo offline" | [estrategia de pitch](../equipo/estrategia-pitch-lab.md) |
+| RF-16 | Stack obligatorio del lab presente y verificable en el repo | Must Have | Repo evidencia uso de Claude API + Agent SDK + ≥ 1 MCP propio; README lo declara | [reglas](../competencia/reglas.md) · [criterios-evaluacion](../competencia/criterios-evaluacion.md) |
+| RF-17 | Telemetría anónima básica con eventos opt-in (sin PII) | Must Have | Eventos del flujo dorado registrados; el repo evidencia configuración opt-in | [plan.md §4.4](plan.md) |
+| RF-18 | Pitch de ~5 minutos con narrativa Hook → Usuario real → Solución → Demo en vivo → Por qué Claude / agentic → Impacto y próximos pasos | Must Have | Estructura visible y cronometrada; ensayo completo ≥ 2 veces antes del 7-may 12:00 | [deliverables.md](../competencia/deliverables.md) · [estrategia de pitch](../equipo/estrategia-pitch-lab.md) |
+| RF-19 | Recordatorio asincrónico ("Hace N días que no me cuentas...") con frecuencia adaptativa | Should Have | Demo muestra el recordatorio activado con regla de frecuencia ajustable | [plan.md §3.2](plan.md) · [backlog E1-OPER-09](backlog.md) |
+| RF-20 | Aceptar input de audio entrante por WhatsApp (transcripción vía Whisper) | Nice to Have | Audio WhatsApp se transcribe automáticamente y se procesa por el flujo normal | [plan.md §4.2](plan.md) |
+| RF-21 | TTS de salida con voz neutra chilena (vía ElevenLabs MCP) cuando el usuario lo pide | Nice to Have | Bot responde con audio adjunto si el usuario solicita "audio" o "léelo" | [plan.md §4.2](plan.md) · [reunión 30-abr](../reuniones/2026-04-30-revision-dolores-backlog.md) |
+
+> **Total Fase 0:** 21 RF (18 Must Have · 1 Should Have · 2 Nice to Have). La tabla es expandible — pueden agregarse RF nuevos si emergen durante el spike técnico de los 7 días del lab. Los RF no resueltos en Fase 0 se trasladan a Fase 1 del roadmap.
+>
+> **Cobertura backlog:** los RF de la tabla cubren los 21 features ✅ Incluir del backlog en su versión Fase 0 (registro de ventas, simulador Pro-Pyme, derivación a contador vía handoff, carta a banco, derechos ARCO). El detalle por feature E0-E5 vive en [backlog.md](backlog.md). Las 32 features ⏳ pendientes y las 6 ❌ excluidas no entran en alcance de Fase 0.
 
 ---
 
