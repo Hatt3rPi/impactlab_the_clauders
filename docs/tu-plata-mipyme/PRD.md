@@ -346,23 +346,73 @@ Cada criterio (CA) se ancla a un RF de la Sección 4.3 (excepto los CA transvers
 
 ### 6.1 Supuestos del proyecto
 
-[Pendiente — Tarea 10]
+Los siguientes supuestos deben mantenerse verdaderos para que el plan de Fase 0 funcione. Si alguno se rompe antes del 6 de mayo, el equipo activa la mitigación correspondiente o ajusta el alcance del demo.
+
+1. **Las fuentes públicas SII / CORFO / SERCOTEC / CMF / SERNAC siguen accesibles vía web pública o scrape pre-lab durante los 7 días previos y los 2 días del lab.** Es la base del corpus regulatorio del MCP propio (RF-14). El equipo asume que ninguna de estas fuentes cierra o cambia su esquema de URL antes del pitch *(Fuente: [reglas](../competencia/reglas.md))*.
+2. **El stack obligatorio del lab (Claude API, Agent SDK, MCPs) tiene cuotas y rate limits suficientes para los 7 días pre-lab + 48 h del lab.** El supuesto incluye disponibilidad de Sonnet 4.6 para conversación y Haiku 4.5 para clasificación de intención sin throttling agresivo durante ensayos y pitch *(Fuente: [plan.md §4.2](plan.md))*.
+3. **Los 4 miembros de The Clauders están full-time durante las 48 h del lab (6-7 mayo en Espacio Riesco).** Felipe declaró disponibilidad limitada por familia pero con entrada/salida flexible; Jose, Cristian y Anahi confirman alta disponibilidad *(Fuente: [miembros.md](../equipo/miembros.md))*.
+4. **Tu Plata Mipyme se mantiene como producto del equipo hasta el pitch sin re-apertura del Tollgate 1.** ADR-0004 cierra la decisión WhatsApp-first + freemium + multiagente; el equipo no re-discute producto ni canal entre el 30 de abril y el 7 de mayo *(Fuente: [ADR-0004](especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md))*.
+5. **El sandbox de WhatsApp Business de Twilio es configurable con un número del equipo y permite probar el flujo dorado end-to-end durante los ensayos.** Si Twilio no es viable, el supuesto alterno es Meta WhatsApp Business Cloud API directa (decisión diferida a ADR-0005 pendiente) *(Fuente: [plan.md §4.2](plan.md))*.
+6. **Espacio Riesco provee internet estable durante el pitch del 7 de mayo.** El equipo asume conectividad funcional para Claude API y gateway WhatsApp; el plan de contingencia es el fallback offline pre-grabado de RF-15 *(Fuente: [estrategia de pitch](../equipo/estrategia-pitch-lab.md))*.
+7. **El segmento usuario primario (mujer microemprendedora 30-50 años NSE D-E sur de Chile) es simulable con perfiles sintéticos defendibles si el equipo no completa 5-10 entrevistas reales antes del 5 de mayo.** Los perfiles sintéticos se construyen sobre datos INE EME8 + research run #06 y se nombran explícitamente como tales en el pitch *(Fuente: [que-es.md](que-es.md))*.
+8. **El alcance reducido *un agente, una etapa, un flujo dorado* es suficiente para capturar el bonus +5 puntos por *agentic thinking* en los 5 criterios oficiales del lab.** El equipo apuesta a calidad de un flujo end-to-end por sobre amplitud de funcionalidades *(Fuente: [criterios-evaluacion](../competencia/criterios-evaluacion.md))*.
 
 ### 6.2 Dependencias
 
-[Pendiente — Tarea 10]
+#### Externas
+
+1. **Anthropic Claude API operativa** con Sonnet 4.6 (motor de conversación) y Haiku 4.5 (clasificación de intención + FAQ) durante los 7 días pre-lab y las 48 h del lab *(Fuente: [plan.md §4.2](plan.md))*.
+2. **Gateway WhatsApp Business** en una de dos modalidades: Twilio (decisión MVP del equipo) o Meta WhatsApp Business Cloud API directa (alterno, ADR-0005 pendiente) *(Fuente: [plan.md §4.2](plan.md))*.
+3. **Datasets oficiales SII / CORFO / SERCOTEC / CMF / SERNAC** vía web pública o scrape pre-lab. Los datasets curados por la organización del lab (APIs/MCPs) son la fuente preferida cuando estén disponibles *(Fuente: [reglas](../competencia/reglas.md))*.
+4. **Hosting:** Google Cloud Run para la API gateway (FastAPI) y Vercel o Netlify para la web pública con embed del chat *(Fuente: [plan.md §4.2](plan.md))*.
+5. **Bendi** — agente de soporte 24/7 con contexto regulatorio activo desde el 2 de mayo, provisto por la organización del lab *(Fuente: [timeline](../competencia/timeline.md))*.
+
+#### Internas
+
+6. **Spike técnico del supervisor multi-agente con `acompanante-informal` cerrado antes del 5 de mayo.** Sin spike validado, RF-02 y RF-13 no son demostrables al pitch *(Fuente: [plan.md §4.2](plan.md))*.
+7. **Decisión de gateway WhatsApp (Twilio vs Meta Cloud API directa) cerrada antes del 5 de mayo** mediante ADR-0005 pendiente; el equipo no entra al lab con ambigüedad de canal *(Fuente: [hub index](index.md))*.
+8. **Diseño visual de la web pública (landing + embed del chat + panel de *agentic thinking*) entregado por Anahi antes del 6 de mayo,** alineado con la paleta sobria definida en la reunión del 30 de abril *(Fuente: [reunión 30-abr](../reuniones/2026-04-30-revision-dolores-backlog.md))*.
+9. **5-10 entrevistas reales con microemprendedoras NSE D-E del segmento prioritario, o en su defecto perfiles sintéticos defendibles**, listos antes del 5 de mayo para anclar la narrativa del pitch en un caso humano nombrado *(Fuente: [estrategia de pitch](../equipo/estrategia-pitch-lab.md))*.
+10. **Confirmación con la organización del lab sobre admisibilidad del modelo freemium** (Free / Pro / Plus / Marketplace). La decisión está en duda desde la reunión del 30 de abril; sin confirmación, el equipo prepara una variante "gratuidad total" del pitch *(Fuente: [hub index](index.md))*.
 
 ### 6.3 Restricciones técnicas
 
-[Pendiente — Tarea 10]
+1. **Stack obligatorio del lab.** Uso de Claude API obligatorio (es lo que evalúan en el criterio "Claude & Agentic Thinking"); datos preferentemente desde fuentes públicas (CMF, SII, SERNAC) o datasets provistos; no se exige un lenguaje o framework específico *(Fuente: [reglas](../competencia/reglas.md))*.
+2. **Canal principal: WhatsApp.** Toda funcionalidad core debe ser usable solo en WhatsApp; la web complementa con visualización y descargas pero nunca exclusiviza *(Fuente: [ADR-0004](especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md))*.
+3. **Datasets: solo fuentes públicas en Fase 0.** Sin integración transaccional con bancos, sin Open Banking (Ley 21.521 entra en Fase 3 del roadmap), sin scraping de fuentes con paywall *(Fuente: [plan.md §7](plan.md))*.
+4. **Modelo dual: Sonnet 4.6 para conversación y razonamiento; Haiku 4.5 para clasificación de intención y FAQ.** Opus se reserva para tareas críticas post-MVP; no se usa en el demo del lab *(Fuente: [plan.md §4.2](plan.md))*.
+5. **Caching de Anthropic con objetivo > 80 % hit rate** en el corpus regulatorio chileno indexado como markdown — restricción de costo y latencia, base del KPI técnico #13 *(Fuente: [plan.md §4.2](plan.md))*.
+6. **Lenguaje de respuesta:** mensajes ≤ 160 caracteres, 1 idea por mensaje, español chileno B1 / 8° básico, párrafos cortos, dibujos sobre texto largo cuando aplique *(Fuente: [reunión 30-abr](../reuniones/2026-04-30-revision-dolores-backlog.md))*.
+7. **Anti-alucinación con regla dura.** La IA **no** hace cálculos numéricos directos en respuestas críticas. Solo entrega teoría + rango + disclaimer, bajo el principio del equipo *"no te calculo, te enseño lo que debes saber"* *(Fuente: [reunión 30-abr](../reuniones/2026-04-30-revision-dolores-backlog.md))*.
+8. **Tiempo de desarrollo acotado.** Ventana fija de 48 h durante el lab (6-7 mayo) + lo que el equipo construya entre el 30 de abril y el 5 de mayo en repo privado de transición. El repo "oficial" del lab arranca el 6 de mayo sin commits previos para no entrar en el descalificador "trabajo pre-existente" *(Fuente: [reglas](../competencia/reglas.md))*.
+9. **Tamaño del equipo: 4 personas** (regla del lab: equipos de 2 a 4 personas o solo). Sin posibilidad de sumar miembros después del 5 de mayo *(Fuente: [reglas](../competencia/reglas.md))*.
+10. **Arquitectura multi-agente con supervisor + 4 subagents,** no un único system prompt monolítico. Cada subagent con system prompt < 2 k tokens (umbral medido en evals internos del equipo) *(Fuente: [ADR-0004](especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md))*.
 
 ### 6.4 Restricciones del lab y de negocio
 
-[Pendiente — Tarea 10]
+1. **Línea temática elegida: Inclusión Financiera.** Las otras dos líneas oficiales del lab (Ciberseguridad ciudadana y Protección de datos personales) quedan fuera del alcance de Tu Plata Mipyme *(Fuente: [ADR-0002](especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md))*.
+2. **Modalidad: equipo de 4 personas presenciales** los días 6 y 7 de mayo (regla del lab: equipos de 2 a 4 personas o solo, asistencia presencial obligatoria) *(Fuente: [reglas](../competencia/reglas.md))*.
+3. **Pitch: ~5 minutos máximo el 7 de mayo a las 12:00, formato presencial en Espacio Riesco.** Es la única deadline fija del lab; cualquier deliverable faltante a esa hora descalifica al equipo *(Fuente: [deliverables.md](../competencia/deliverables.md))*.
+4. **Deliverables obligatorios al cierre del lab:** prototipo funcional, demo / pitch presentado al panel evaluador, y documentación para adopción post-lab por reguladores u otros equipos *(Fuente: [deliverables](../competencia/deliverables.md))*.
+5. **Modelo de negocio freemium (Free / Pro / Plus / Marketplace) con admisibilidad pendiente de confirmación con la organización del lab.** El equipo mantiene una variante "gratuidad total" del pitch como contingencia *(Fuente: [hub index](index.md))*.
+6. **Cumplimiento Ley 19.628 (protección de datos personales) + Ley 21.719** desde Fase 0: consentimiento granular al enrolar, comandos ARCO `/mis-datos` y `/borrar-mis-datos` operativos, encriptación at-rest e in-transit (TLS 1.3), retención telemetría agregada sin PII a 90 días *(Fuente: [plan.md §4.4](plan.md))*.
+7. **Anti-objetivos del producto.** Tu Plata Mipyme **no** firma declaraciones tributarias, **no** otorga ni recomienda crédito específico, **no** representa al usuario en disputas, y **no** sustituye a SERCOTEC ni a CORFO — es complementario, orienta y deriva *(Fuente: [que-es.md](que-es.md))*.
 
 ### 6.5 Fecha límite y hitos críticos
 
-[Pendiente — Tarea 10]
+| Fecha | Hito | Estado al 30/04/2026 |
+|---|---|---|
+| 30 abr 2026 · 23:59 | Cierre de inscripción individual al lab | :material-check-bold: Cumplido |
+| 30 abr 2026 | PRD redactado y commitado | En curso |
+| 5 may 2026 | Cierre formación de equipos · spike técnico del supervisor multi-agente cerrado · 5-10 entrevistas reales o perfiles sintéticos defendibles · ADR-0005 (gateway WhatsApp) cerrado | Pendiente |
+| 6 may 2026 · mañana | Inicio del lab + keynote oficial · arranque del repo "oficial" del prototipo | Pendiente |
+| 6 may 2026 · noche | Validación final de los 21 CA de la Sección 5.1 + auto-score interno ≥ 85/100 | Pendiente |
+| **7 may 2026 · 12:00** | **Pitch final ante el panel evaluador en Espacio Riesco — fecha inamovible** | Pendiente |
+| junio 2026+ | Acelera AI Fintech Sandbox (60 días) para los equipos ganadores del lab | Roadmap |
+
+*(Fuente: [timeline](../competencia/timeline.md), [deliverables](../competencia/deliverables.md))*
+
+> **Fecha inamovible.** El **7 de mayo de 2026 a las 12:00** es la única deadline fija del lab. Cualquier deliverable faltante a esa hora descalifica al equipo según las reglas oficiales *(Fuente: [reglas](../competencia/reglas.md))*.
 
 ---
 
