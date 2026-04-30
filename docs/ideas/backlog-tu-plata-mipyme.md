@@ -37,98 +37,99 @@ Cada feature tiene:
 - **Subcategorías:** FORM (formalización), OPER (operación), FIN (financiero), LEGAL (legal/laboral), CRECE (crecimiento/marketing), RIESGO (multas/estafas), EMOC (emocional).
 - **Tier:** Free, Pro, Plus, Marketplace.
 - **Complejidad:** S (small, días), M (medium, semanas), L (large, mes+).
+- **Escenario:** micro-historia que muestra el dolor en acción. Personajes recurrentes son mujeres microemprendedoras 30-50 años en regiones del sur de Chile (María en Pucón, Carmen en Temuco, Patricia en Curanilahue, Roxana en Valdivia, Ana en Osorno, Luisa en Puerto Montt) — alineadas con el target prioritario.
 
 ## Tabla maestra (las 60 features)
 
 ### E0 — Idea / Sueño (8 features)
 
-| ID | Feature | Tier | Compl. | Dolor que ataca |
+| ID | Feature | Tier | Compl. | Escenario |
 |---|---|---|---|---|
-| [E0-EMOC-01] | El Espejo Mágico (test arquetipo) | Free | S | Síndrome del impostor socioeconómico |
-| [E0-EMOC-02] | Mata-Mitos SII (V/F sobre fiscalización) | Free | S | Miedo irracional al SII |
-| [E0-FIN-03] | Calculadora "Sueldo Justo" | Free | M | Autoexplotación / no cobrar tiempo |
-| [E0-OPER-04] | Pizarrón de Costeo de Producto | Free | S | Fijación de precios copiando ciegamente |
-| [E0-CRECE-05] | Validador de Idea Express | Pro | M | Parálisis viabilidad hiperlocal |
-| [E0-RIESGO-06] | Simulador de Multas Realista | Free | S | Ignorancia sobre costos de decomiso |
-| [E0-EMOC-07] | Comunidad Audio-Foro (testimonios sur) | Free | M | Soledad emprendedora rural |
-| [E0-OPER-08] | Separador Financiero Conceptual | Free | S | Caos cuenta personal vs negocio |
+| [E0-EMOC-01] | El Espejo Mágico (test arquetipo) | Free | S | María lleva 5 años haciendo mermeladas en Pucón pero piensa "yo no soy empresaria, solo cocino, no podría". |
+| [E0-EMOC-02] | Mata-Mitos SII (V/F sobre fiscalización) | Free | S | Carmen escuchó en el almacén que "el SII te embarga si declarás más de $300 lucas". Mejor no formalizarse. |
+| [E0-FIN-03] | Calculadora "Sueldo Justo" | Free | M | Patricia vende empanadas a $1.500. Trabajó 8 horas amasando. Cobra solo los ingredientes y nunca su tiempo. |
+| [E0-OPER-04] | Pizarrón de Costeo de Producto | Free | S | Roxana copia el precio del kuchen del local de al lado: $3.500. No sabe que pierde $800 por unidad vendida. |
+| [E0-CRECE-05] | Validador de Idea Express | Pro | M | Ana quiere abrir un taller de costura en Curanilahue pero no sabe si en su barrio hay clientas suficientes. |
+| [E0-RIESGO-06] | Simulador de Multas Realista | Free | S | Luisa cree que vender en la feria sin permiso es "normal" hasta que le decomisaron $80K en mercadería. |
+| [E0-EMOC-07] | Comunidad Audio-Foro (testimonios sur) | Free | M | Patricia teje en el campo cerca de Pucón. No conoce a nadie más que esté emprendiendo y se siente sola. |
+| [E0-OPER-08] | Separador Financiero Conceptual | Free | S | María paga el supermercado con la misma CuentaRUT donde le abonan los pedidos. No sabe cuánto gana realmente. |
 
 ### E1 — Validación Informal (8 features)
 
-| ID | Feature | Tier | Compl. | Dolor que ataca |
+| ID | Feature | Tier | Compl. | Escenario |
 |---|---|---|---|---|
-| [E1-OPER-09] | Caja Zapatos Digital (NLP por audio) | Free | S | Ceguera financiera / sin registro |
-| [E1-OPER-10] | Alerta Tope CuentaRUT (Open Banking) | Pro | M | Bloqueo de cuenta por sobre-uso |
-| [E1-FIN-11] | Generador Link de Pago (MP/Flow) | Free | M | Pérdida de ventas sin tarjeta |
-| [E1-RIESGO-12] | Botón del Pánico Fiscalizador | Free | S | Decomiso/inspección sorpresa |
-| [E1-CRECE-13] | Catálogo Web Instantáneo (URL) | Pro | M | Mandar fotos manualmente a clientes |
-| [E1-OPER-14] | Cotizador/Comprobantes (con disclaimer SII) | Free | S | Profesionalizar venta informal |
-| [E1-EMOC-15] | Reporte Pérdida B2B mensual | Pro | S | Imposibilidad vender a empresas |
-| [E1-OPER-16] | Caza-Estafas Visual (OCR pantallazos) | Pro | L | Estafas con pantallazos falsos |
+| [E1-OPER-09] | Caja Zapatos Digital (NLP por audio) | Free | S | María vendió 3 mermeladas y compró azúcar. A fin de mes no se acuerda y cree que "ganó" porque hay plata. |
+| [E1-OPER-10] | Alerta Tope CuentaRUT (Open Banking) | Pro | M | Ana vendió bien en diciembre. BancoEstado le congeló la CuentaRUT por superar el tope mensual. Sin liquidez. |
+| [E1-FIN-11] | Generador Link de Pago (MP/Flow) | Free | M | Carmen pierde 2 ventas al día porque sus clientas "no andan trayendo plata efectiva" y ella no acepta tarjeta. |
+| [E1-RIESGO-12] | Botón del Pánico Fiscalizador | Free | S | Luisa estaba vendiendo en feria libre. Llegó un inspector. Se paralizó: "¿qué firmo?, ¿qué digo?, ¿corro?". |
+| [E1-CRECE-13] | Catálogo Web Instantáneo (URL) | Pro | M | Patricia manda 30 fotos de joyería por WhatsApp a cada clienta nueva. Le agota el día y desordena el chat. |
+| [E1-OPER-14] | Cotizador/Comprobantes (con disclaimer SII) | Free | S | Roxana le tiene que pasar un "documento" al jefe de su clienta para que rinda el gasto. No tiene cómo. |
+| [E1-EMOC-15] | Reporte Pérdida B2B mensual | Pro | S | Una clienta del restaurante le pidió factura por $200K. María dijo "no puedo" y perdió la venta y todas las que vendrán. |
+| [E1-OPER-16] | Caza-Estafas Visual (OCR pantallazos) | Pro | L | Carmen recibió pantallazo de transferencia por $45K. Entregó la mercadería. La plata nunca llegó. |
 
 ### E2 — Formalización (12 features)
 
-| ID | Feature | Tier | Compl. | Dolor que ataca |
+| ID | Feature | Tier | Compl. | Escenario |
 |---|---|---|---|---|
-| [E2-FORM-17] | Triage Jurídico MEF vs EIRL vs SpA | Free | S | Elección equivocada de figura jurídica |
-| [E2-FORM-18] | **Traductor Tu Empresa en Un Día (Vision)** | Free | M | 35-40% abandono por jerga legal |
-| [E2-FORM-19] | Redactor Objeto Social Amplio | Free | S | Bloqueo futuras líneas de negocio |
-| [E2-FORM-20] | Buscador de Giros SII (diccionario inverso) | Free | S | Errores de clasificación que impiden patente |
-| [E2-FORM-21] | Acompañamiento Inicio Actividades F4415 | Free | M | Creer que RES habilita facturar |
-| [E2-FORM-22] | Búsqueda Fonética INAPI | Pro | M | Plagio accidental de marca |
-| [E2-FORM-23] | Asesor Domicilio Tributario | Free/Pro | M | Rechazo SII por papel mal notariado |
-| [E2-FORM-24] | **Handoff a Contador Pyme** | Marketplace | M | Casos borde técnicos imposibles |
-| [E2-FORM-25] | Simulador Gastos de Formalización | Free | S | Sorpresa financiera intermedia |
-| [E2-FORM-26] | Pre-chequeo SEREMI Alimentos | Pro | M | Rechazo recurrente arquitectónico |
-| [E2-FORM-27] | Asesor Patentes Municipales | Plus | L | Falta transparencia ordenanzas |
-| [E2-FORM-28] | Orientador Firmas Electrónicas | Free | S | Compra errónea de Token avanzado |
+| [E2-FORM-17] | Triage Jurídico MEF vs EIRL vs SpA | Free | S | María entró a empresaenundia.cl y se quedó pegada en "EIRL vs SpA". ¿Cuál le conviene si trabaja en la casa, sola? |
+| [E2-FORM-18] | **Traductor Tu Empresa en Un Día (Vision)** | Free | M | Roxana ve el campo "objeto social" en RES y no entiende qué tiene que escribir. Cierra la pestaña y abandona. |
+| [E2-FORM-19] | Redactor Objeto Social Amplio | Free | S | Patricia escribió solo "venta de pan" en el RES. Luego quiso vender kuchenes y no podía: tenía que modificar estatutos. |
+| [E2-FORM-20] | Buscador de Giros SII (diccionario inverso) | Free | S | Ana eligió giro "Agricultura" en SII pensando que vendía verduras. La SEREMI de Salud la paralizó 6 meses por elaboración de alimentos. |
+| [E2-FORM-21] | Acompañamiento Inicio Actividades F4415 | Free | M | María creó la SpA en RES, vendió 3 facturas. SII la multó: nunca hizo el inicio de actividades F4415. |
+| [E2-FORM-22] | Búsqueda Fonética INAPI | Pro | M | Carmen quiere registrar "La Patagona" para sus tejidos. No sabe que ya existe "La Patagonia": rechazo seguro. |
+| [E2-FORM-23] | Asesor Domicilio Tributario | Free/Pro | M | Luisa lleva el contrato de arriendo al SII. Rechazado: faltaba el rol de la propiedad. Vuelta a la municipalidad. |
+| [E2-FORM-24] | **Handoff a Contador Pyme** | Marketplace | M | María se atascó configurando régimen tributario. La IA le dice "aquí necesitas un humano" y le agenda una hora con contadora certificada. |
+| [E2-FORM-25] | Simulador Gastos de Formalización | Free | S | Patricia empezó la formalización pensando que era gratis. Se topó con $40K en firma electrónica + notario. Abandona. |
+| [E2-FORM-26] | Pre-chequeo SEREMI Alimentos | Pro | M | Roxana pagó el arancel SEREMI sin saber que su cocina no tenía lavamanos separado. Rechazo, $35K perdidos. |
+| [E2-FORM-27] | Asesor Patentes Municipales | Plus | L | Carmen pidió patente en La Pintana. Se cambió a Maipú. Cada comuna le pide papeles distintos y no hay claridad. |
+| [E2-FORM-28] | Orientador Firmas Electrónicas | Free | S | María compró un Token Avanzado físico de $40K. Solo necesitaba la firma simple online de $2K para RES. |
 
 ### E3 — Operación Formal (11 features)
 
-| ID | Feature | Tier | Compl. | Dolor que ataca |
+| ID | Feature | Tier | Compl. | Escenario |
 |---|---|---|---|---|
-| [E3-OPER-29] | **Facturador WhatsApp (ApiGateway/Pana)** | Pro | L | Interfaz tosca SII Mipyme |
-| [E3-OPER-30] | Emisor e-Boletas exprés | Pro | L | Fricción app e-Boleta del Estado |
-| [E3-OPER-31] | Recordatorio Empático F29 | Free | S | Olvido declaración → multas |
-| [E3-OPER-32] | Declarador "Sin Movimiento" (F29 cero) | Free | M | Multas por mes sin ventas |
-| [E3-FIN-33] | Calculador Honorarios Líquido↔Bruto | Free | S | Confusión retención freelancer |
-| [E3-OPER-34] | Monitor Compras RCV (alerta facturas) | Plus | L | Facturas sorpresa al RUT |
-| [E3-RIESGO-35] | **Traductor Notificaciones SII (correos rojos)** | Free | S | Pánico jerga fiscalizadora |
-| [E3-FIN-36] | Simulador Pro-Pyme Transparente (IGC) | Plus | L | Ceguera impuestazo abril |
-| [E3-OPER-37] | Descargador Carpeta Tributaria | Pro | M | Banco exige certificado complejo |
-| [E3-OPER-38] | Handoff Operación Renta F22 | Marketplace | M | F22 demasiado complejo para IA sola |
-| [E3-FIN-39] | Conciliador Bancario Visual (OCR cartolas) | Plus | L | Cobros olvidados / desorden |
+| [E3-OPER-29] | **Facturador WhatsApp (ApiGateway/Pana)** | Pro | L | Patricia está vendiendo en feria. La clienta le pide factura por $50K. Tiene que dejar todo, ir a la casa y abrir el computador. |
+| [E3-OPER-30] | Emisor e-Boletas exprés | Pro | L | Roxana usa la app del SII pero le quema datos en el campo y a veces simplemente no carga. Pierde la venta. |
+| [E3-OPER-31] | Recordatorio Empático F29 | Free | S | María se olvidó del F29 de marzo entre los pedidos. Multa $35K + intereses. Cada mes igual: el F29 se le pasa. |
+| [E3-OPER-32] | Declarador "Sin Movimiento" (F29 cero) | Free | M | Ana no vendió nada en abril por una enfermedad. Cree que "no hay que declarar". Acumuló 3 multas seguidas. |
+| [E3-FIN-33] | Calculador Honorarios Líquido↔Bruto | Free | S | Carmen acordó con su sobrina pagarle $300K líquidos por diseñar el logo. No sabe cuánto retener ni cómo declararlo. |
+| [E3-OPER-34] | Monitor Compras RCV (alerta facturas) | Plus | L | Luisa abrió el SII y vio una factura de $2M de un proveedor que nunca contrató. ¿Fraude? ¿Error? No sabe a quién llamar. |
+| [E3-RIESGO-35] | **Traductor Notificaciones SII (correos rojos)** | Free | S | María recibió un correo del SII con palabras como "omisión sustantiva". Pánico. No abrió el correo por 2 semanas. |
+| [E3-FIN-36] | Simulador Pro-Pyme Transparente (IGC) | Plus | L | Patricia retiró $5M durante el año sin saber que tributaba en su renta personal. En abril le tocó pagar $800K y no tenía la plata. |
+| [E3-OPER-37] | Descargador Carpeta Tributaria | Pro | M | Roxana fue al banco a pedir crédito. El ejecutivo le pidió "su carpeta tributaria". ¿Qué es eso?, ¿de dónde la baja? |
+| [E3-OPER-38] | Handoff Operación Renta F22 | Marketplace | M | María llegó a marzo con su F22 a medias. La IA dice: "esto excede lo que puedo resolver, derivémoslo a un contador" y agenda. |
+| [E3-FIN-39] | Conciliador Bancario Visual (OCR cartolas) | Plus | L | Carmen cobró 80 transferencias en diciembre vía MACH y CuentaRUT. No tiene idea cuáles eran de qué clienta ni si hay morosos. |
 
 ### E4 — Crecimiento (12 features)
 
-| ID | Feature | Tier | Compl. | Dolor que ataca |
+| ID | Feature | Tier | Compl. | Escenario |
 |---|---|---|---|---|
-| [E4-FIN-40] | Scout de Subsidios Sercotec/Corfo | Free | M | Desconocimiento calendarios |
-| [E4-FIN-41] | **Borrador Modelo Canvas Sercotec** | Pro/Plus | M | >50% rechazo por mala formulación |
-| [E4-FIN-42] | Asistente Pitch Video (90s) | Pro | S | Vergüenza escénica ante cámara |
-| [E4-FIN-43] | Recomendador Microcréditos (Banigualdad/F.Esp) | Free/Mkt | M | Miedo a tasas usureras |
-| [E4-FIN-44] | Desmitificador FOGAPE | Free | S | "FOGAPE no se paga si me va mal" (falso) |
-| [E4-LEGAL-45] | Generador Contrato de Trabajo seguro | Pro | M | Demandas laborales por contrato Google |
-| [E4-LEGAL-46] | Guía Previred Exprés | Pro | S | Portal Previred poco amigable |
-| [E4-LEGAL-47] | Simulador Finiquito básico | Plus | M | No saber cuánto cuesta despedir |
-| [E4-LEGAL-48] | Generador Protocolo Ley Karin | Free | S | Consultoras cobran $$$ por PDF |
-| [E4-CRECE-49] | Bot Analista Precios Proveedores | Pro | L | Pyme absorbe inflación insumos |
-| [E4-CRECE-50] | Creador Textos Instagram (RAG copy) | Pro | S | No saben redactar redes |
-| [E4-CRECE-51] | Filtro Compra Ágil <30 UTM (Mercado Público) | Plus | L | Burocracia ChileProveedores |
+| [E4-FIN-40] | Scout de Subsidios Sercotec/Corfo | Free | M | Patricia se enteró del Capital Semilla 2 días antes del cierre por una vecina. Imposible postular bien con esos plazos. |
+| [E4-FIN-41] | **Borrador Modelo Canvas Sercotec** | Pro/Plus | M | Ana llenó el modelo Canvas como pudo en la pega. Le rechazaron por "propuesta de valor poco clara". Postulaba por tercera vez. |
+| [E4-FIN-42] | Asistente Pitch Video (90s) | Pro | S | María tiene que grabar 90 segundos para Sercotec. Se traba al minuto 30. Le da vergüenza la cámara. Re-graba 8 veces. |
+| [E4-FIN-43] | Recomendador Microcréditos (Banigualdad/F.Esp) | Free/Mkt | M | Carmen necesita $1M para insumos. El banco le dice no por DICOM viejo. ¿Banigualdad? ¿Fondo Esperanza? No sabe ni a cuál ir. |
+| [E4-FIN-44] | Desmitificador FOGAPE | Free | S | Luisa pidió un FOGAPE creyendo que "si no me va bien, lo paga el Estado". Incumplió y ahora el banco la cobra a ella. |
+| [E4-LEGAL-45] | Generador Contrato de Trabajo seguro | Pro | M | Roxana contrató a su primera ayudante. Bajó un PDF de Google. La ayudante la denunció a tutela laboral por causales mal redactadas. |
+| [E4-LEGAL-46] | Guía Previred Exprés | Pro | S | Patricia quiere pagar las cotizaciones de su empleada pero el portal Previred le pide "archivo .ple". ¿Qué es eso? |
+| [E4-LEGAL-47] | Simulador Finiquito básico | Plus | M | María tiene que despedir a su garzón del local. No sabe si le debe 1 o 3 sueldos. No despide por miedo y la ahorca financieramente. |
+| [E4-LEGAL-48] | Generador Protocolo Ley Karin | Free | S | Carmen tiene 2 empleadas. La consultora le cotiza $250K por "implementar protocolo Ley Karin". Es un PDF genérico. |
+| [E4-CRECE-49] | Bot Analista Precios Proveedores | Pro | L | Roxana lleva 3 meses pagando harina más cara y vendiendo el pan al mismo precio. Quiebra invisible: no se da cuenta. |
+| [E4-CRECE-50] | Creador Textos Instagram (RAG copy) | Pro | S | Patricia tiene cuenta de Instagram con 800 seguidores pero solo sube fotos. No vende porque no sabe qué texto poner. |
+| [E4-CRECE-51] | Filtro Compra Ágil <30 UTM (Mercado Público) | Plus | L | Ana podría venderle al CESFAM local por <30 UTM. Pero ChileProveedores le pide 50 formularios. Desiste. |
 
 ### E5 — Recuperación / Cierre / Pivot (9 features)
 
-| ID | Feature | Tier | Compl. | Dolor que ataca |
+| ID | Feature | Tier | Compl. | Escenario |
 |---|---|---|---|---|
-| [E5-LEGAL-52] | Asesor Ley 21.563 Reorganización Mipyme | Free | M | Embargos sobre patrimonio personal |
-| [E5-LEGAL-53] | **El "Torniquete" (suspensión SII asistida)** | Pro | M | Empresas zombi acumulando F29 |
-| [E5-EMOC-54] | Botón de la Vergüenza (educación DICOM) | Free | S | Estigma + mafias de "borrado" |
-| [E5-LEGAL-55] | Derivación Quiebra Simplificada | Plus/Mkt | M | Muerte económica de por vida |
-| [E5-EMOC-56] | Diario Post-Mortem (lecciones del fracaso) | Free | S | Duelo no procesado |
-| [E5-LEGAL-57] | Renegociación 2da Categoría (honorarios) | Free | S | Default profesional post-pandemia |
-| [E5-LEGAL-58] | Disolución Sociedad RES | Pro | S | Sociedades zombi legales |
-| [E5-FIN-59] | Invocación Sernac Financiero | Free | S | Cobranza abusiva sobre Mipyme caída |
-| [E5-EMOC-60] | Ruta Reinvención (re-empezar como MEF) | Free | S | Trauma del fracaso paraliza retorno |
+| [E5-LEGAL-52] | Asesor Ley 21.563 Reorganización Mipyme | Free | M | María tiene $8M en deudas bancarias que no puede pagar. El banco la quiere embargar el auto. No sabe que la Ley 21.563 la protege 40 días. |
+| [E5-LEGAL-53] | **El "Torniquete" (suspensión SII asistida)** | Pro | M | Carmen "cerró" el negocio hace 2 años. Sin avisar al SII. Acumuló $1.8M en multas F29 sin saberlo. La empresa sigue "viva". |
+| [E5-EMOC-54] | Botón de la Vergüenza (educación DICOM) | Free | S | Patricia está en DICOM hace 4 años. Le ofrecen "borrar el DICOM por $50K". Es una estafa pero ella no lo sabe. |
+| [E5-LEGAL-55] | Derivación Quiebra Simplificada | Plus/Mkt | M | Roxana arrastra deudas hace 5 años. No sabe que la liquidación simplificada le permitiría extinguir el saldo y volver a operar limpia. |
+| [E5-EMOC-56] | Diario Post-Mortem (lecciones del fracaso) | Free | S | María cerró su panadería hace 6 meses. Llora todas las noches. No quiere ni hablar del tema con nadie. Duelo en silencio. |
+| [E5-LEGAL-57] | Renegociación 2da Categoría (honorarios) | Free | S | Luisa emite boletas a honorarios por terapias. Está ahogada con cuotas vencidas. Cree que la quiebra "no aplica para ella". Sí aplica. |
+| [E5-LEGAL-58] | Disolución Sociedad RES | Pro | S | Carmen y su ex-socio crearon SpA hace 3 años. Ya no se hablan. La SpA sigue "viva" acumulando obligaciones tributarias. |
+| [E5-FIN-59] | Invocación Sernac Financiero | Free | S | Patricia recibe llamadas de cobranza 5 veces al día desde un call center que la insulta y la amenaza con su madre. |
+| [E5-EMOC-60] | Ruta Reinvención (re-empezar como MEF) | Free | S | María quiere volver a emprender pero piensa "ya fracasé una vez, no me la creo de nuevo". MEF sería el primer paso seguro. |
 
 ---
 
