@@ -31,6 +31,7 @@ Cada reunión queda **versionada en el repo**: transcripción cruda + resumen ej
 | Fecha | Título | Tipo | Decisiones clave | Link |
 |---|---|---|---|---|
 | 2026-04-29 | Definición de problema y setup del hackathon | kickoff | Línea: inclusión financiera · Plataforma: web mobile-first · Roles asumidos | [Ver](2026-04-29-definicion-problema-setup.md) |
+| 2026-04-30 | Revisión de dolores E0-E3 + decisiones de backlog | diseño-producto | 21 features ✅ · 6 ❌ · 1 💡 · 32 ⏳ · E2 (formalización) es el fuerte · Pendiente: confirmar freemium con organización | [Ver](2026-04-30-revision-dolores-backlog.md) |
 
 ## Acciones abiertas (vivas)
 

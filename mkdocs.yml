@@ -206,6 +206,7 @@ nav:
       - reuniones/index.md
       - Plantilla: reuniones/_template.md
       - "2026-04-29 · Definición de problema y setup": reuniones/2026-04-29-definicion-problema-setup.md
+      - "2026-04-30 · Revisión de dolores (E0-E3)": reuniones/2026-04-30-revision-dolores-backlog.md
   - Equipo:
       - Miembros: equipo/miembros.md
       - Roles: equipo/roles.md
