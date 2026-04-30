@@ -78,6 +78,7 @@ La fase inicial se caracteriza por una profunda parálisis analítica. Las empre
 - **Tasa de fracaso/abandono:** No hay datos centralizados, pero el miedo tributario es la barrera #1 a la formalización temprana.
 - **Brecha IA:** Desmitificación proactiva. La IA puede explicar en lenguaje cotidiano que vender montos pequeños al inicio no desencadena auditorías inmediatas.
 - **Decisión equipo (30-abr):** ✅ Incluir (CRÍTICO + transversal). "Es lo más importante del proyecto." Comunicación incremental por etapa.
+- **Documentación oficial requerida:** **Carta de Derechos del Contribuyente** SII ([PDF](https://www.sii.cl/sobre_el_sii/derechos_contribuyentes.pdf)) + [SII Educa](https://www.sii.cl/destacados/sii_educa/contenidos/contribuyentes/derechos_del_contribuyente/94-GA-201405290650.pdf) (PDF descargable). **Acciones técnicas:** RAG estático con PDFs de derechos. *System prompt* cita Art. 8 bis (presunción de buena fe) cuando detecta miedo. Detalle: [run #07 §E0-D2](../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md).
 
 **3. Dolor: Ignorancia sobre fijación de precios (¿Cuánto cobro?).** — ✅ Incluir con disclaimer
 
@@ -87,6 +88,7 @@ La fase inicial se caracteriza por una profunda parálisis analítica. Las empre
 - **Tasa de fracaso/abandono:** Mortalidad por "quiebra invisible" (se agota la liquidez sin entender por qué).
 - **Brecha IA:** Calculadora de costos por WhatsApp. "Cuéntame qué ingredientes usas y cuánto tiempo te toma, yo te sugiero un precio mínimo".
 - **Decisión equipo (30-abr):** ✅ Incluir con disclaimer. Solo teoría simplificada, sin cálculo directo. "No te calculo, te enseño lo que debes saber".
+- **Documentación oficial requerida:** **Sercotec Capacitación** ([capacitacion.sercotec.cl](https://capacitacion.sercotec.cl/)) — gestión financiera y costos para microempresas (HTML scrapeable / PDF). **Acciones técnicas:** Crawler manual sobre currículos de 'Estructura de Costos' de Sercotec/Sence. RAG limitado a teoría: 'no te calculo, te enseño'. Detalle: [run #07 §E0-D3](../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md).
 
 **4. Dolor: Viabilidad del mercado hiperlocal.** — ❌ Excluir
 
@@ -105,6 +107,7 @@ La fase inicial se caracteriza por una profunda parálisis analítica. Las empre
 - **Tasa de fracaso/abandono:** Abandono del proceso formal ante la primera lista de requisitos exigentes.
 - **Brecha IA:** Un mapeo instantáneo de requisitos (ej. SEREMI de Salud para alimentos) explicado paso a paso en lenguaje natural.
 - **Decisión equipo (30-abr):** ✅ Incluir. Documentación municipal + manejo alimentos + reglamentos. Costo: tener documentación + responder sobre ella.
+- **Documentación oficial requerida:** **API ChileAtiende — Fichas de Trámites** ([endpoint](https://www.chileatiende.gob.cl/api/fichas/) — requiere access token) — repositorio centralizado de requisitos, costos y canales por trámite. **Acciones técnicas:** Construir **MCP ChileAtiende** consumiendo el endpoint de fichas. Brecha: no llega a nivel de ordenanza comunal. Detalle: [run #07 §E0-D5](../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md).
 
 **6. Dolor: Soledad del emprendedor (Falta de red de apoyo).** — ✅ Incluir + scrapper
 
@@ -114,6 +117,7 @@ La fase inicial se caracteriza por una profunda parálisis analítica. Las empre
 - **Tasa de fracaso/abandono:** Alta tasa de rechazo (>50% a >80% por cupos limitados en fondos estatales) `[cite: 6, 7]`.
 - **Brecha IA:** Acompañamiento 24/7, simulando una presencia de soporte constante y derivación a comunidades virtuales.
 - **Decisión equipo (30-abr):** ✅ Incluir + scrapper. Scrapper diario de Sercotec, Corfo, Startup Chile, FOGAPE, FOSIS. Match con perfil del usuario. **Posible MVP separado.**
+- **Documentación oficial requerida:** **Sercotec** ([sercotec.cl](https://www.sercotec.cl/)) · **Corfo** ([corfo.cl](https://www.corfo.cl/) + [programadps.gob.cl](https://programadps.gob.cl/Convocatorias/)) · **FOSIS** ([fosis.gob.cl](https://www.fosis.gob.cl)) · **Start-Up Chile** ([startupchile.org](https://startupchile.org/postula/)) — todos HTML scrapeable, **sin API pública**. **Acciones técnicas:** Cron Job semanal de scraping a las 4 URLs. Extraer: título, regiones, fechas de cierre, monto. Cruzar con perfil sociodemográfico del usuario en BD vectorial. **Brecha crítica: cero interoperabilidad estatal.** Detalle: [run #07 §E0-D6](../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md).
 
 **7. Dolor: Mezclar finanzas familiares con el negocio potencial.** — ✅ Incluir como pregunta diagnóstica
 
@@ -123,6 +127,7 @@ La fase inicial se caracteriza por una profunda parálisis analítica. Las empre
 - **Tasa de fracaso/abandono:** Quiebre de la economía doméstica arrastrada por el negocio.
 - **Brecha IA:** Educar tempranamente sobre la separación de bolsillos y habilitar un registro de "Caja Zapatos" digital en el chat antes de abrir cuentas de empresa.
 - **Decisión equipo (30-abr):** ✅ Incluir como pregunta diagnóstica. Pregunta inicial: "¿Tienes cuenta separada?" → si no, recomienda cuentas vista gratuitas (Cuenta FAN BancoChile, etc.).
+- **Documentación oficial requerida:** **CMF Educa** ([cmfeduca.cl](https://www.cmfeduca.cl/)) — definición y beneficios de cuentas vista (información neutral del Estado, HTML scrapeable). **Acciones técnicas:** RAG texto plano con tipos de cuenta (Vista, Corriente, RUT). Pregunta diagnóstica en onboarding. **Cuidado:** NO actuar como asesor de inversiones ni favorecer un banco. Detalle: [run #07 §E0-D7](../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md).
 
 **8. Dolor: Desconocimiento del valor de su propio tiempo.** — ✅ Incluir dentro de pricing
 
@@ -132,6 +137,7 @@ La fase inicial se caracteriza por una profunda parálisis analítica. Las empre
 - **Tasa de fracaso/abandono:** Cierre por desgaste físico y mental de la fundadora.
 - **Brecha IA:** IA que fuerza al usuario a asignar un "sueldo" mínimo por hora trabajada en su costeo, visibilizando su valor laboral.
 - **Decisión equipo (30-abr):** ✅ Incluir dentro de pricing. No es feature aparte: va dentro del flujo de cómo poner precios.
+- **Documentación oficial requerida:** **SII Valores y Fechas** ([sii.cl/valores_y_fechas](https://www.sii.cl/valores_y_fechas/)) — UF, UTM, Sueldo Mínimo (HTML scrapeable, alternativa: API Mindicador). **Acciones técnicas:** Scrapear sueldo mínimo. Heurística inyectada en RAG: `Costo Hora Base = Sueldo Mínimo / 180h`. Conectar invisiblemente con flujo E0-D3 (precios). Detalle: [run #07 §E0-D8](../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md).
 
 **Síntesis E0:** La barrera principal aquí no es tecnológica, es psicológica. El usuario no busca un software de gestión; busca validación. El copiloto debe actuar como un consejero de confianza antes de introducir herramientas financieras.
 
@@ -147,6 +153,7 @@ En esta fase, la emprendedora ya vende, pero opera bajo el radar. Utiliza redes 
 - **Tasa de fracaso/abandono:** Estancamiento del negocio; imposibilidad de escalar las ventas.
 - **Brecha IA:** Cuantificar la pérdida diaria ("Este mes perdiste $200.000 por no dar factura. Formalizarte cuesta $0 en Tu Empresa en Un Día").
 - **Decisión equipo (30-abr):** ✅ Incluir. Cuantificar pérdida B2B mensual ("perdiste $200K"). **Caso real Felipe:** su cuñada vende tortas por Instagram, un director de colegio le compraría todos los meses pero necesita factura.
+- **Documentación oficial requerida:** **SII Factura Electrónica FAQ** ([sii.cl/preguntas_frecuentes/factura_electronica](https://www.sii.cl/preguntas_frecuentes/factura_electronica/)) — requisitos para emitir + IVA crédito/débito (HTML scrapeable). **Acciones técnicas:** Ingestar FAQs IVA. Configurar agente para traducir requisito tributario a argumento comercial: 'sin factura, el cliente B2B pierde su crédito IVA y elige otro proveedor'. Detalle: [run #07 §E1-D1](../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md).
 
 **2. Dolor: Recepción de pagos (Uso de Cuentas Personales).** — ✅ Incluir como warning IA
 
@@ -156,6 +163,7 @@ En esta fase, la emprendedora ya vende, pero opera bajo el radar. Utiliza redes 
 - **Tasa de fracaso/abandono:** Bloqueo de cuentas por sobrepasar límites mensuales o por actividad sospechosa por parte del banco.
 - **Brecha IA:** Alertas proactivas sobre límites de CuentaRUT y riesgo de bloqueos por presunción de lavado de activos o evasión si el volumen crece.
 - **Decisión equipo (30-abr):** ✅ Incluir como warning IA. La IA, con contexto del workspace, alerta cuando se acerca el tope mensual o riesgo de bloqueo. Open Banking aún no — usar reenvío correos.
+- **Documentación oficial requerida:** **Ley 21.713 Cumplimiento Tributario** ([BCN LeyChile](https://www.bcn.cl/leychile/navegar?idNorma=1207746)) — regla 50/100 transferencias que dispara reporte bancario al SII (vigente 01-2025) + Circular N°2 SII (API BCN pública). **Acciones técnicas:** **MCP LeyChile** ingestando texto base. Prompt condicional: detectar pagos informales sistemáticos → activar **warning crítico** sobre umbral 50/100 + alerta Open Banking 07/2027. Detalle: [run #07 §E1-D2](../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md).
 
 **3. Dolor: Riesgo de decomiso por inspectores municipales o Carabineros.** — ❌ Excluir como dolor independiente
 
@@ -201,6 +209,7 @@ En esta fase, la emprendedora ya vende, pero opera bajo el radar. Utiliza redes 
 - **Tasa de fracaso/abandono:** 100% de incapacidad para proyectar crecimiento a 6 meses.
 - **Brecha IA:** Generación de un mini-estado de resultados conversacional simplificado ("Este mes te quedaron $150.000 libres reales").
 - **Decisión equipo (30-abr):** ✅ Incluir. Mensaje diario por WhatsApp pidiendo ingresos/gastos. **Generar el hábito de registro.**
+- **Documentación oficial requerida:** **Régimen Pro-Pyme SII** ([sii.cl/destacados/modernizacion/tipos_regimenes_mt](https://www.sii.cl/destacados/modernizacion/tipos_regimenes_mt.html)) — base tributaria 'ingresos percibidos menos gastos pagados' (Art. 14 D LIR, HTML scrapeable). **Acciones técnicas:** Flujo cron WhatsApp diario pidiendo ingresos/gastos. Marco metodológico: Régimen Transparente (modelo a seguir desde E1). Detalle: [run #07 §E1-D7](../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md).
 
 **8. Dolor: Miedo a la pérdida de beneficios sociales.** — ✅ Incluir como info
 
@@ -210,6 +219,7 @@ En esta fase, la emprendedora ya vende, pero opera bajo el radar. Utiliza redes 
 - **Tasa de fracaso/abandono:** Sub-declaración intencional de ingresos que perpetúa la pobreza.
 - **Brecha IA:** Aclarar con datos reales de MIDESO cómo la formalización como SpA (persona jurídica distinta) no afecta automáticamente la vulnerabilidad personal en el RSH si se estructura adecuadamente.
 - **Decisión equipo (30-abr):** ✅ Incluir como info. Información estática + scrapper de beneficios estatales.
+- **Documentación oficial requerida:** **RSH Manual de Actualización** ([PDF registrosocial.gob.cl](https://www.registrosocial.gob.cl/docs/04_Solicitud_de_actualizacion_de_ingresos_y_situacion_ocupacional.pdf)) — criterios de cómo afectan ingresos formales al tramo de vulnerabilidad. **Acciones técnicas:** RAG estático con PDFs de actualización RSH. **Limitación explícita del agente:** no puede predecir el tramo exacto post-formalización; sí explica los mecanismos (Declaración Jurada N°1 y N°2). Detalle: [run #07 §E1-D8](../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md).
 
 **Síntesis E1:** La informalidad es un escudo de cristal. Protege de la burocracia, pero expone a estafas, multas y estancamiento. La IA debe actuar como un "acompañante" que demuestre empíricamente que el costo de ser informal ya superó al costo de formalizarse.
 
@@ -225,6 +235,7 @@ Este es el cuello de botella cívico. La emprendedora decide dar el salto, pero 
 - **Tasa de fracaso/abandono:** Aproximadamente 35-40% de los borradores no se firman por dudas técnicas.
 - **Brecha IA:** Asistente paso-a-paso que traduzca campos legales mediante *Vision AI* (capturas de pantalla) y guíe hacia la firma.
 - **Decisión equipo (30-abr):** ✅ Incluir como acompañamiento. "Te ayudamos a completar formularios pero no lo hacemos por ti".
+- **Documentación oficial requerida:** **Ley 20.659** que crea el RES ([BCN LeyChile](https://www.bcn.cl/leychile/navegar?idNorma=1048718)) + **Manuales del RES** ([registrodeempresasysociedades.cl](https://www.registrodeempresasysociedades.cl/)) (API BCN + HTML/PDF). **Acciones técnicas:** RAG con tutoriales y FAQs del RES. Curar **taxonomía de objetos sociales comunes** (dataset interno) para sugerir texto exacto a copiar al portal estatal. RES no tiene API abierta — asistencia 'side-by-side'. Detalle: [run #07 §E2-D1](../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md).
 
 **2. Dolor: Elección errónea de figura jurídica.** — ✅ Incluir
 
@@ -234,6 +245,7 @@ Este es el cuello de botella cívico. La emprendedora decide dar el salto, pero 
 - **Tasa de fracaso/abandono:** Alta incidencia de crear EIRLs restrictivas o sociedades que luego chocan con planes reguladores municipales.
 - **Brecha IA:** *Triage* conversacional rápido: "¿Trabajarás desde casa? ¿Tendrás socios?". La IA recomienda la estructura óptima de inmediato.
 - **Decisión equipo (30-abr):** ✅ Incluir. Información a la mano (MEF vs EIRL vs SpA + régimen contable Pro-Pyme General/Transparente). Caso Jose: usó GPT especializado para asesorarse.
+- **Documentación oficial requerida:** **Regímenes Pro-Pyme SII** ([sii.cl/destacados/renta/2025](https://www.sii.cl/destacados/renta/2025/regimenes_renta2025.html)) — Pro-Pyme General 14 D N°3 vs Transparente 14 D N°8 (HTML) + Leyes de sociedades (API BCN). **Acciones técnicas:** **MCP LeyChile** + tabla curada (MEF/EIRL/SpA con responsabilidad patrimonial, costo, ideal para). Inyectar al *system prompt* del Agente E2. Detalle: [run #07 §E2-D2](../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md).
 
 *Tabla Comparativa de Figuras Jurídicas Relevantes:*
 
@@ -252,6 +264,7 @@ Este es el cuello de botella cívico. La emprendedora decide dar el salto, pero 
 - **Tasa de fracaso/abandono:** Abandono del proceso dejando un RUT inactivo permanentemente.
 - **Brecha IA:** Alerta proactiva post-creación: "Felicidades por tu SpA. Aún no puedes vender. Vamos al SII a hacer el F4415".
 - **Decisión equipo (30-abr):** ✅ Incluir como continuación de etapa. Construir journey: SPA creada → SII iniciar actividades → activar boleta → activar factura. **Pasos distintos.**
+- **Documentación oficial requerida:** **Circular SII N°38/2025 sobre RUT e Inicio de Actividades** ([PDF](https://www.sii.cl/normativa_legislacion/circulares/2025/circu38.pdf), vigente 30-abr-2025) + Guías SII Timbraje DTE. **Acciones técnicas:** Curar el journey de formalización: 1) RUT provisorio RES → 2) Clave Tributaria → 3) F4415 en sii.cl → 4) Acreditación DTE. Fraccionar la explicación en hitos imperativos (no es un solo trámite). Detalle: [run #07 §E2-D3](../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md).
 
 **4. Dolor: Acreditación de Domicilio Tributario.** — ✅ Incluir como recomendación
 
@@ -261,6 +274,7 @@ Este es el cuello de botella cívico. La emprendedora decide dar el salto, pero 
 - **Tasa de fracaso/abandono:** Bloqueo del inicio de actividades por no poder probar un domicilio válido.
 - **Brecha IA:** Explicar la diferencia entre domicilio tributario y comercial, y conectar con *marketplaces* de oficinas virtuales integradas.
 - **Decisión equipo (30-abr):** ✅ Incluir como recomendación. **Atasco real** — Jose lo vivió. Si arriendas, la familia no tiene domicilio propio y no quieres pagar oficina virtual = trancado.
+- **Documentación oficial requerida:** **Acreditar Domicilio SII** ([PDF](https://www.sii.cl/material_inf/acreditar_domicilio.pdf) + [FAQ](https://www.sii.cl/preguntas_frecuentes/rut_inicio_actividades/001_105_0136.htm)) — contrato notariado / certificado dominio / autorización jurada (vigente mayo-2025). **Acciones técnicas:** RAG estático con opciones y excepciones. Heurística para casos reales: si el flujo detecta domicilio informal, ofrecer alternativa **oficina virtual privada** como destrabador legal. Detalle: [run #07 §E2-D4](../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md).
 
 **5. Dolor: Obtención de Patente Municipal (Ley de Rentas Municipales).** — ✅ Incluir
 
@@ -270,6 +284,7 @@ Este es el cuello de botella cívico. La emprendedora decide dar el salto, pero 
 - **Tasa de fracaso/abandono:** Muchísimas Mipymes operan formalizadas en el SII pero ilegales municipalmente.
 - **Brecha IA:** Información geolocalizada. "En tu comuna, estos son los papeles exactos; si trabajas en casa, usemos la ruta MEF".
 - **Decisión equipo (30-abr):** ✅ Incluir. Una patente por municipalidad si vende en varias comunas. Nuestro flujo de agentes debe geolocalizar.
+- **Documentación oficial requerida:** **DL 3063 Ley de Rentas Municipales** (API BCN) + **Ordenanzas locales** de las comunas top (Temuco, Villarrica, Padre Las Casas — `*.muni.cl`, HTML/PDF/presencial). **Acciones técnicas:** **MCP LeyChile** para la nacional. **Cura manual ineludible:** dataset top 50 comunas (priorizando sur de Chile) con tasas, exigencias digitales y requisitos. **Handoff humano** para comunas no indexadas: 'debes ir presencialmente al Departamento de Rentas'. Brecha CRÍTICA: cero API consolidada. Detalle: [run #07 §E2-D5](../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md).
 
 **6. Dolor: Permisos Sanitarios (Resolución Sanitaria SEREMI).** — ✅ Incluir condicionado
 
@@ -279,6 +294,7 @@ Este es el cuello de botella cívico. La emprendedora decide dar el salto, pero 
 - **Tasa de fracaso/abandono:** Alto rechazo por incumplimiento de requisitos infraestructurales (ej. lavamanos separado, materialidad de muros).
 - **Brecha IA:** Checklist conversacional previo. "Antes de pagar el arancel, asegúrate de tener basureros con tapa a pedal y superficies lavables".
 - **Decisión equipo (30-abr):** ✅ Incluir condicionado. Solo si vende alimentos. El flujo de agentes debe activarlo/excluirlo según el caso del usuario.
+- **Documentación oficial requerida:** **Decreto 977 Reglamento Sanitario de Alimentos** (API BCN) + **ASDIGITAL SEREMI** ([seremienlinea.minsal.cl/asdigital](https://seremienlinea.minsal.cl/asdigital/), requiere ClaveÚnica) + portales SEREMI regionales con aranceles. **Acciones técnicas:** **MCP LeyChile** ingestando títulos relevantes (Infraestructura, Manipulación). RAG con instructivos PDF y aranceles. **Router semántico:** activar este sub-árbol *solo* si el clasificador detecta rubro 'Alimentos'. Detalle: [run #07 §E2-D6](../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md).
 
 **7. Dolor: Protección de marca (INAPI).** — 💡 Guiño / logro futuro
 
@@ -297,6 +313,7 @@ Este es el cuello de botella cívico. La emprendedora decide dar el salto, pero 
 - **Tasa de fracaso/abandono:** Compra errónea de firmas incompatibles.
 - **Brecha IA:** Explicación directiva: "Para RES solo necesitas comprar la firma simple de $2.000. Te mando el link correcto, no compres el token físico".
 - **Decisión equipo (30-abr):** ✅ Incluir como quick win. One-time cada 2 años. **Info clave para no comprar Token caro innecesario.**
+- **Documentación oficial requerida:** **SII FAQ FEA vs Simple** ([001_003_6497](https://www.sii.cl/preguntas_frecuentes/factura_electronica/001_003_6497.htm) + [001_003_6495](https://www.sii.cl/preguntas_frecuentes/factura_electronica/001_003_6495.htm)) + **Catálogo Entidades Certificadoras** ([entidadacreditadora.gob.cl](https://www.entidadacreditadora.gob.cl/)). **Acciones técnicas:** Quick win programático: explicar **FEA de un solo uso** ($1.000 para constituir empresa) + **Firma Simple** ($15.000 por años para emitir facturas en SII Mipyme). Evitar la compra innecesaria del Token USB ($40K+ anuales). Detalle: [run #07 §E2-D8](../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md).
 
 **Síntesis E2:** La formalización no es un acto, es un flujo de 4 a 6 sub-trámites en distintas agencias (RES, SII, Municipalidad, SEREMI) que no conversan entre sí. La IA debe ser el hilo conductor que mantenga a la usuaria enfocada.
 
@@ -312,6 +329,7 @@ Ya existe la "Empresa". Ahora, el Estado exige un cumplimiento mensual estricto.
 - **Tasa de fracaso/abandono:** Acumulación de multas por olvidar declarar "sin movimiento".
 - **Brecha IA:** Recordatorio proactivo ("Mañana vence el F29") y conexión con contadores del *marketplace* para validación.
 - **Decisión equipo (30-abr):** ✅ Incluir. Acompañamiento fuerte primeros 3 meses + recordatorio + **calendario** (no solo pop-up — algo agendable que reserva el día). "El tremendo deseable de muchos".
+- **Documentación oficial requerida:** **Guía F29 SII** ([sii.cl/pagina/iva/guia_f29](https://www.sii.cl/pagina/iva/guia_f29.htm)) — distingue 'Con pago', 'Sin pago con movimiento', 'Sin pago sin movimiento' (código 91=0, HTML scrapeable). **Vencimiento:** día 20 de cada mes (facturadores electrónicos web). **Acciones técnicas:** **Eventos agendables push** WhatsApp días 12 y 18 de cada mes. MCP para calendario tributario + cruce con feriados bancarios (que mueven el plazo si día 20 cae fin de semana). Brecha: RCV requiere ClaveSII obligatoria — el agente no puede pagar/firmar por el usuario. Detalle: [run #07 §E3-D1](../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md).
 
 **2. Dolor: Facturación Electrónica (Uso del Sistema Gratuito SII Mipyme).** — ❌ Excluir generación automática
 
@@ -330,6 +348,7 @@ Ya existe la "Empresa". Ahora, el Estado exige un cumplimiento mensual estricto.
 - **Tasa de fracaso/abandono:** Tributación ineficiente.
 - **Brecha IA:** Traducción de las implicancias directas de los regímenes Pyme a lenguaje llano.
 - **Decisión equipo (30-abr):** ✅ Incluir, **pero en E2**. Es necesario para iniciar actividades — debería estar en el flujo previo de formalización.
+- **Documentación oficial requerida:** **Regímenes Pro Pyme SII** ([sii.cl/destacados/renta/2025](https://www.sii.cl/destacados/renta/2025/regimenes_renta2025.html)) — operativa de PPM (0.2% inicio / 0.25% si <50K UF) + obligaciones de registros (RAF, RSAC) según General vs Transparente. **Acciones técnicas:** Ingestar cuadros resumen 'Pro-Pyme General vs Transparente' al RAG vectorial. Validación heurística inicial: confirmar régimen del usuario y limitar respuestas estrictamente a las reglas de ese universo legal (DJ 1948 vs DJ 1947). Detalle: [run #07 §E3-D3](../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md).
 
 *Tabla Comparativa de Regímenes Tributarios Pyme (Ley 21.210):*
 

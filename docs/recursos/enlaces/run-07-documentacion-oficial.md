@@ -1,0 +1,75 @@
+---
+title: "Enlaces del run Deep Research #07"
+description: "URLs citadas por el agente Google Deep Research Max para el run #07: Documentación oficial chilena para los 19 dolores priorizados de Tu Plata Mipyme."
+tags:
+  - recursos
+  - enlaces
+  - run-07
+  - documentacion-oficial
+---
+
+# Enlaces del run Deep Research #07 — Documentación oficial para los 19 dolores
+
+<!-- AUTO-BANNER -->
+!!! info ":material-book-open-variant: Síntesis de fuentes externas"
+    Lista de URLs citadas por el agente Google Deep Research Max en el run [`run-07`](../../competencia/research/_runs-deep-research/2026-04-30-07-documentacion-oficial-dolores-incluidos.md). **Verificar contra fuente primaria antes de citar en el pitch.**
+
+> :warning: Los URLs son **redirects de `vertexaisearch.cloud.google.com`**. El dominio destino visible (texto del link) es la fuente real. Si un redirect deja de funcionar, buscar manualmente en el dominio destino.
+
+**Total: 44 fuentes citadas.**
+
+## Categorías destacadas
+
+- **Servicio de Impuestos Internos (SII):** ~18 fuentes — derechos contribuyente, Pro-Pyme, F29, F4415, factura electrónica, firmas, valores y fechas. **Es el dominio dominante del producto.**
+- **Biblioteca del Congreso Nacional (BCN/LeyChile):** Ley 21.713 (transferencias), Ley 20.659 (RES), Ley 19.749 (MEF), DL 3063 (Rentas Municipales), Decreto 977 (Reglamento Sanitario Alimentos).
+- **ChileAtiende:** API de fichas de trámites — punto de integración técnica clave.
+- **Registro Social de Hogares:** PDFs de actualización RSH.
+- **SEREMI Salud:** ASDIGITAL + portales regionales (Ñuble, Biobío) con aranceles.
+- **Sercotec, Corfo, FOSIS, Start-Up Chile:** sin API, scraping necesario.
+
+## Fuentes (orden original del reporte)
+
+1. [sii.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEGNKh6DkVV2JHuIqjAcIgO_Cu_xpzHvZLWp6b1OML8nX_Nnk7PyzA9ua6Sc-lEyVVkeCreCnlPk41x9XiwFwP4XTvMxjZUxM9X2tkFNcYaBAk6YYiTVRlmEGaV5JDcQXnHAIFzRsvZNCnz9cYEK5EROg==) — Carta de Derechos del Contribuyente.
+2. [sii.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiX6w3tZBx-8ayW9yG-bK5kOjLGQ2LMvgZeEKr3l2OuuXbojdq2P88wiIOQ_HRtJyTWKUAppPUAncoCFKY74jlumqHR6UnLxPqhYpt699SY8rb7GW_FUPacWaMPXbN5J2PehZeBSTlCk9aRA==) — Art. 8 bis Código Tributario.
+3. [sii.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGNL_C9FGa4JBQl6H_W2yxelRtM3fsM7jHzcfrdGcNWlwtDdQxrMjFeR03awrEA_KTYqtmjDOE1Ij8pDd2-ZL511Kz7eniWb2yU8Cq8zkLz49OeysYfXHKTEVoQY85i2JsilGQAgbR5cUDnPqRwmSVe_IMnUbWsimzemthMvh8LUE8XRaMfScn4xXbFAPnLbumPuvQUlwnI0w0Kybah50TjK8aBhmkf_Ef) — Auditorías y fiscalización SII.
+4. [sii.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4NHxG7eC4K1TJaNJmzv3pXhzHw1p4AfD8m2cv13ayLzDhmNP-7Ceq-nkblIUmK_zBNzD3Z5C-YEdEoQV7HffkdGYeBdumiBB-yA1SfYYgqcUeTvcvHcYQqPedW9mQ3mNFtZNGQyBz-tr52nI65rrprbpNaN2Q0hSJBubSb1JgUd1Zh23_c46FrkX8oNKemVEEtknQPx3r2q9Ugo32KHdK9XSpVuRrWeR0) — Educación Fiscal SII.
+5. [chileatiende.gob.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPCvH-VgwaDQJXo9_PiHY2jG06CNNE13OnIKzXvO6ytfdKbUTUzIe_Fwrvj0aarDztmiZ8FKVP9xuayBjnk5v91Wk9HFR8U7fca2BvLhr8oU6CN1rAub2AZPmQwRajCQ88qlKZRg==) — API ChileAtiende fichas de trámites.
+6. [laserenaonline.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVE56UrijZv4yeTn3NmFKwOhDvM6x0UDHeeJdoYLEpLadil8jBYCoZTETrsMHWKRSwTrXrEl9bX0_mbVPRHN5bW6akAJyFNKvuMTv6nwQJGTGBVGJggYfaBTOdmLIQGgUTtg4wIURu5cD8_-u_oxQCNRbaNHFTQ2NUtwPOIQ0V3_iq00RyJnE49BWBVqw=) — Sercotec Digitaliza tu Almacén.
+7. [universo.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6w9hO-taTVU7gSp0UKPwBdch0HRW7W12f9ckKoENsDvuZSzdXIkxscLV-1d-pnUVa8GDNIOm84KRbgBVZJBMhJqxe-kTUaUu0kzC_jNuqhKs8fA4Hn9OJHF1L4PO-CP4zy1ZmoHswUFV3_7ODXMPS0tbetA6OcQ44iQPL4RBaPczCCVJSN_MCzUCg29bW58pNoejcZMYl-5i73YbOuB_zI4-t8HtdkP9dT7mUUrVxKYv7terr3za_GNZOdJ8=) — Sercotec Crece.
+8. [elcalbucano.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEq064VaUcV6lk36rrD09KMn-BriUhaN4g8dKHb1wMfHvD1qQbzCuqUK20XP94ugtZeT3STg4s6ZdlR6rJMlfG1mrJchJ1EFue7z2QADjXFhcnCjgZiNhRV6-lA57FZpTqeZC3ivlpDllU9wnSaZTPkxMzQ9t0ETg3bAQj86UcxP8BBguUlgXEU4-xQWpPnlru0pW7njUnyRNaG2nNejLgefeClSU34WFfit0WbHpUiRGSD) — FNDR Economía Circular Los Lagos.
+9. [sercotec.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHu_lD5x-BLQBYUoCJX1-WwNX-_0G8nRb4wQoZ9moQ7dY3EOteaNfHLTvWiOOxun9cTog9J1w8WSz9aapt4gtxemVYaWgQaH50V0uat0Ao=) — Sercotec portal principal.
+10. [ine.gob.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFa8HQmOVGZLOl9cibgiawK2Jwn6eQEylOS_miQ8UogSqJ6OLbaHCWp_mvq40sFCVLnb75uC-zUp4T_oJWYq1WuTsTKXgdymd0FWxnLCGG_6TQQJo0L8DhCrr4TO51cB0Scd07QRe4kfZ-zLq7gIFCnRGpfQvpuRfo-By8PzUz6S7tJBlbR23TZHip1U7TK8fdFCl_6tDfPhbum2BRwnPn1-mRpWQzByVBpH7oMxIFZDN_0pWLoFbA3Yj9yOUUeYzdEgpprdivzsw7W0TyyR1cEBg4=) — INE estadísticas Araucanía.
+11. [programadps.gob.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgqGA6mDnSVePTNXruGmxANH2SwVjW_GivVyAAa1JaDUQJinHogUtR7pnqQTHY2GA7JB-G5gG1oqMhDaa3yKj4S4tGHTd3g2Fi-GL3_jgH652eTjyBlUfwrnvsyXhq-w==) — Programa DPS Convocatorias Corfo.
+12. [chillanonline.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7puykiWyMCI6WeSzSTKDg2crEOW-2pOdPwBchXjgNntX0XpiBkw-wGulrONOsKKkkCwugNio4P3DPdp225iONPygZDZNM87qvPpdCDNpy475PV6wkWH9aq1nNgGk9EbLUYl-rIVGw6vsfxwZvpT-2_XkskvOr1NLSyRU0sAETuiV3HdD7NEq90qRfKR1oj8EaNjosjDXxFT52gaOvUvP0zNs6gvHmpHMTZufk8tzBxJ3EjO7dbVo4yEHBQMKA0bned2TYGY_iMyqnqYwkj7dqRjmNn2Y_tvelOwLouARn) — Corfo macrozona centro-sur.
+13. [chillanonline.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGycAtb_39ZtK7sQvNEE1tXG6h9sVyfA-mzr3XhTlxihANTFWKOFAGK2DBpNvVi4UzRlUcMiYl_D8JzBN5yiGCX-_q6v4nW7ePPeZ9N9BbdExgIC3ht_Crbir4uFMrEZ6x9CFmHATqgqKLmIB1Zkr_iE3QWZfNKKEH0ELjz2Mf-rha0Bs0RIdiNJovyHNoS43WowHsTDzXfRnRrF8r0EvymvqyBAZSWgIPwpZk52A==) — FOSIS Emprendamos Semilla.
+14. [servicioproteccion.gob.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiRDpH4efLn04kd5da6M17B20FBCqw1x9Xp1dNXKwspftrDcxpycE5f0wz3ohpIDioAcjnRvzI87BumAUs_dIXI7PYP_VA6cKMRL6EvCdEiV8YsQqqSRnSsIMarGqKcTsz-vuDsCyd1sGQUaDFRKPW6rIYeg==) — Servicio Protección Social.
+15. [elcalbucano.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERzqTXQsMlR6k0EnyeGTEeK0JAox2F55vC0cm6IGIxNcyHArsnll-7AUGZk5iGAk3HkjyKDy8ABiwe1nhaFLdNZ92hgrb_nXF9YDYHeDgZI3XjYssshwXELdGukFvv3L4kZqiHcXFQCBuOWwRBhLXisbOXu545Pa3pka_Ee0or5GHjAmKECbnvCKQ=) — FOSIS calendarios postulación.
+16. [startupchile.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfIunDmMNXz9hdottDF8bWx3Hl3eP3yF4einIxdm3e6DdYmBesPKtX1beWVwnQUgIVC_ppcBymuk-KXho4zMli4I1fFZq3zOrJZZX9-_MPBH1lQyAE2G0=) — Start-Up Chile postulaciones.
+17. [sii.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExj4tyZOmV6Ect_8U3Yab66DhLIl3WFkYf2-ZzEYz_PvXpDBXwu16dFbKxVlBAhW9eZzs0TYDWmDi22H4EXxfEZvWnNOuby7hs4dKIyS8E0hhQoYTs6WQ5oz_HWKwjVeQARliD7e55uMFXt-EqQgxuDhgxLE63DQgafLsNEjuG0jAL) — SII FAQ FEA vs simple (factura).
+18. [sii.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhJlqYW_4fSpYGndkZRh3JjPPL1yzKeT6LZQ6J7iF_JVIX1D1gAkYP_SYvDUrmnCitvjGaznzq2wxO7nNQAhq7qrPnU76lDbecjs4as_kJc1WiLyQx_nqYM2cXkBbqVe1fcUrmZie-8vkiBILMBFH0w_rtzOE7RbSvCn8i09sNRJtR) — SII FAQ certificado digital simple.
+19. [bcn.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7XYuCbu45oEKYqFUAvZUwVq1UQe4RI8b4_rDbRqwXrfgQbE6SYf7LjoNY_Xa3mOzAtY6XTiES3k01g97j-61lANT1qq5d4yd83GnGdfoecM8o-JBzYkFaMxTVwzXQOtXqKg7e-q2-LhsHARfzko7GoJyYqVoSIEqekFNsAACgQXLKqg==) — Ley 21.713 Cumplimiento Tributario (50/100 transferencias).
+20. [valorpyme.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZqn04PKvzqugXzb_OIe33ZdRFSLaKcyOIxD3PSNFOgpC7SCvB0ulx7OC1nnb2sJkTNLLUdkeQgqjhludSLjUzJcoCCuvKpxVh0F8sgsMn00eW892rdwXYrNccm2kwzluD91F7_jl1-uc=) — ValorPyme análisis Ley 21.713.
+21. [bcn.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7MrKLc-b8RGKltOvMfnEyfOJfv5LrXf0beSrFTA6Stn-2IMhU56i6UtiQ6pS-IteUrsbKv51YTlqjorc3mLlBADIVnPG2imiwtHZ7-gwJ0PFIWouixqC6hmyXCRZs-8yMnK1byTtuXdo=) — DL 3063 Ley de Rentas Municipales.
+22. [sii.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZyW7YIl9MbFrlZRKNS2fZVHj3DNuvJJC_IqTTWej8NHib_dhFRuo9UUeNR1iOspq1f-OsVakssDxe9-5QBmCqiuWe8ybzyh6EoqS0xydwJzEusb41e5P5EHcHnupw6PPrUNIQcUJ73bxPeGlnFWEaA_gLOgjqOg==) — Regímenes Pro-Pyme Operación Renta 2025.
+23. [sii.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFldavb6tFykEb6-_xTmfAKDohnxrjnLz0griZ0VXunixt9vNhdM9i0Mni974WMqMSh8j93xhwOil8QbwgJ3yfkY9vYlzxpSTcS6GlA5GwRTcPKIsqKdAlWQtHr_YyuvSK-TeYqJqEoY0XtREo1Llww-rCQR3fAtVcM) — Pro-Pyme General vs Transparente.
+24. [registrosocial.gob.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8R9_jOUPdNCKfe-zZmxu9waR_CdlN_nrrHsWpUGIWq6FSoBFnv0IIyiyLt-AXqY-UUzfORXHQ9a94Hd3vC6FVzY2Ok2htiDMI-JrwivauD7LHiyf6aCOFkJTo60_kvDZLnRtMQ9cAzSnUBIzi9_1ba4_efqk3IXoOhjkM7ljJOD0C) — RSH solicitud actualización ingresos.
+25. [registrosocial.gob.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzdybobXtQgTazIfhs3vjm85CddY9r5cfCv6yQ-nlIzKxbcUv31W_e_9oVU6fbl2v5CAFHyVVxHcsfVUosyzAghjIEQimo4cweOt_WI7fESFqf9hyaZAJzQVDBoKhk0FrW2F0PmfxWhKIO2sO7fdbE5pzZl7dZcaDpgrPHOYscEGkgGoFYZh8Esfq3Kq9AD76coKTQdT2CaTqeYhDNPUrMLI0=) — RSH manual de actualización.
+26. [registrosocial.gob.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLX7VJct8G9SWGVOOi78k-16aeO8odht3LGC8l7Rlhb0_Mx8pJsZKxc1MpL2-8CIqU8S2Lpou7dV_ar75jf-zga6g9U1-y91yTiLpWpU-yZqiCQaZm9yrG0FrPZcOh2hd7qWDeA92buyCN_fvdIgYnbvfQc17dgVb6RdteSzdW01EmP7ssCkS4TYGY62QvRIFPim5Y594=) — RSH cartola vulnerabilidad.
+27. [registrosocial.gob.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0a8cFGle6iGlrDEGdnvaAp7wDwUL5ENNnAdJ6vzUV5NoXJXX6dVPLjC3OQH1Y0JkPDVrNs06yzQHRJe1COWFqf7qbOFZjrCM8GTCxOfI-7rKf9X4vl2VtEGDjlYVuSdlF_oc01QPkKY2kU6fxGg==) — RSH ventanilla única social.
+28. [bcn.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9Pk6DVbTEofchIqxmM81otm64roHWjJtAtB52QSc6A-WTRcJ51ljjVPZ4RDQCevIwudjmvrVsRCsw93ORCUGcjwJI7hn03ij4SKoqtCJIqgYtsVQmfXxB3ZGVtPeEpYC89Xf8lmWSplM=) — Ley 20.659 Régimen Simplificado Sociedades.
+29. [oas.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFoML7k39ualnsN4rHRRr3bAwyDlKgPlBREoUKA_Z4BPw6z4vHxmc606EHyHniM9aOXjxAj9vxCMW-RhVXf2sICHESptiyI356c5f7AxjvIcHH4cY-8SJ1rVukpGyt0RiUAJebm2g==) — OAS análisis comparado leyes sociedades.
+30. [sietelagos.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLatVCjM3YRyVoAZbAnecoYmNKUtoij4Tkb_f7Z8cjYrthlSc5SFF4FiWL6XHpNjnxIbjZD5kYeogKadC4Er7OFkl8c3N74BXh8hgxc_VcFIZBDQEdqlFegZR0PUywC513qRy4GFZjCZ-yI1fwmstuK_Nx_bK1q_fFlT2aVZh6fhzDKauq9EfjyoA6k8l2acezZ4Q5i1g=) — RES manual de usuario.
+31. [sumup.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrZ9udZqLu218XXopxvBk3Yfda04wvraK-wjiCFl6dK4uavfLN4NPOPpVfPWF-S7YTGCAX235Ua5j2cxVLPg57ZDOXhVS0vmuBjxLAx_6Cjs6jmM2a_aBgU4zeLkJMakTcGZF-XmQmNbc5Bsd4rRdAagif_jPkkG1o-UNyYWTjwQGEHsmQsnY1wAWly3UpuhAJ) — SumUp tope ingresos 50.000 UF.
+32. [bicevida.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF98L19FZxz_zwKRVGQb7FijRyC_c5OB3DZo--9ex60NIFh-Qb20XOsA1gFyorWk3XpDkUSZu6PVpCCMXgd29NM1ZM8fHJhRvbQBuOm_TNJoFbQWh2wWPOOy66MMKCgKA4C30UJnyr-JS_hv6DYJn26h_iRLbo3vRc=) — BICE Vida Pro-Pyme contabilidad.
+33. [sii.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFv6-bPQgGBKKav0kDzLQGXAQrGF2DMGW2APBVaWGXb3kTIQNhXAq2qiXVaigDvZ5EoCTe65piZAg4Ln_XBYHeTqj18NhCa8m5kPGOmP_DBugSgg6eX5g54izZFw4ox4xYr3vNjRXizrDIYEH5s8SxwiIWdy1ADWZN8A==) — Circular SII N°38/2025 RUT e Inicio Actividades.
+34. [sii.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHwcguehjUgxuVPYNxYRU4L6yMiRjZU78P7YpMtOdBDUyXGvkMltzxSQSA2inpDfC77LBgNgNfXRMUVJ5j1PZhlfejOqMPZyiAPASk_lpXQVZlQte_kmCXi-tlmt4EKCCSsYQdF_ANQCiDBwGrBgWPICEXoIfXh5zWsigSbtrLQiCjIlTlo) — SII acreditar domicilio FAQ.
+35. [sii.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjqG48pdhkdbyh5mD8iAf6y1vKFL56H8qrIUalTQm0Y4YyN-qMLS4AHeN567qm94pfdzn61Lp6-3SzNNtTirdzOIKowJA_vRKbzR8NZRvZB4bBlHm3QFSFEXuNDhc5jadEMHOj7NcZrz3ofhm_) — SII acreditar domicilio reglas.
+36. [sii.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFc5gBmneVX6bNMdWN8j4dr0vweC-u_HO4n4yUF_FQs9QoOk4D4uMVb9Ul7b2O28vF_Oet8d7AZWzwcy-FZ_hWQ_nJLlUlchBbPBB8MSIRWlhbdYgpIIsmkqCvHPNAeBbVY_S3U3bunilNRQEZQNx1wq2EEXoXN2kDX-FnmhP7dZQEHeu_m) — SII inmuebles con actividad mixta.
+37. [consultoraserpyme.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyDXMpbS_MPZaTH3su0NxMGolPYKyROaMeqBkYTIEbeXOwj_xxY1P5JnnRTj4TekT4i6l3QRk3NLQmjtOu7BcIxjYbyYBky6ovI0loO_7XJn5d_K_lTIoV-x00IU-TJHcfN6_4xEIYDuo-6nNSKt_MICplQ-g39u2mw-DSWR1f-X5IFWtEINiW3Ida) — Consultora SerPyme Decreto 977.
+38. [ecostandard.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEN3c2OG8zK9J78kfQf2nG2ra4_YKVlbq9aYprM_T8kkRcGla_yKYtD11Y2WgUdr-y4RukPw84gxqtzklbFBlGBBbtXADTXuH-S1JzrMFa0AkF18TYrLse359YNNyDeH-pSMPdiTTKjr2zYQBSKydLslR93) — Ecostandard ASDIGITAL Resolución Sanitaria.
+39. [seremidesaludnuble.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUWiHi_lrwBtyPqsLBwQjV8rzU0TWE13wbwC2V9Ayo4v_ZRRzEgDB_gujUnlW4Pe9uvB97xK-khDwGqgieqdJ71Wz29uMfIIVzh56zGrZqoZp9xhQARbeqWERgHfd5iR9WgyyvtSdkA3r4iuaDVK7f6_-pCG6yW91R) — SEREMI Salud Ñuble aranceles.
+40. [seremidesaludbiobio.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOwFKjlpV-AAyAqcMTT8v1gEa03W-AP1d5JH5Y8prFCCluLQ9Cdjxc-qU7tPCGiI2GWXfZGI-ycZzrhWNGC7nHixe9-mVYpILKD4eN5PLNa7EYwg6DNhwt40AwWsKKbkO1inu44qnfii1mi1b6TawXXjeOv2fCVg-n1RDWEtBeya8i2p4txnS1fEC1XXzV79QhzoiLf_7m-pCErrbpfc2jhQPDLUc4fXBfAXI=) — SEREMI Salud Biobío instructivos.
+41. [oficinavirtualchile.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvPfpeH0Udp1H4T7lK9WptYZOorWel5dN5_P3EpGs_FoIHRf90_WhJOKDa7ppip3cJBeT30ldRenXmDWYSKdHZJ1Ccf8WPl51mIQMSeNnokb_qJOoP6IG64dUyC5X3fVbyS8yyr5fTG4aqkWbut7aTxCfDjz9Xd9c=) — Oficina Virtual Chile (alternativa domicilio).
+42. [sii.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfaeURjrfroxlbgrURqCgQLRDdU2fplSAvzrKMVRWcQv4URGa-5U7bDF-wIEsrgAxvYB2rL5dXzVZylaxPUmTg9AwmtL-8Cvz6DmFFBHM1UFBmicH7sR0omLlcqQK_6H4=) — SII Guía F29 declaración mensual.
+43. [chita.cl](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESaTKT42_QirEm3CyfEj-4BXdIipOc5_wlJ-9t7GhW0A6oHTppg8rAohIpaTYItNCk3EyPD-By_o0A10z_DXp8IZ_KM_T9USLHpoiH9iovf9G74nnBnzlg9Y-X0Sd1ugPwo59f5btn9zZrF9AOI0DjuerBvj0WHwB-59YX8g==) — Chita.cl recordatorios F29.
+44. [xepelin.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjLbe0FVGkavPqqUuOfH4i2hCYYFJTudZ8uXCCEof8f5BPTgweU6HQ3d5yvS2Q1EvCSAw9awcOPG-0D1oVdBgNtdZqjbwGw05_ZP9so87ARJmaUrdsVK-didJxy9337BIyJuC8z94-A80m5Vtl173spp_erjindMk=) — Xepelin postergación pago IVA Ley Pyme.
