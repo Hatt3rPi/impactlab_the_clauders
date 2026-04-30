@@ -37,6 +37,72 @@ tags:
 
 En Chile hay aproximadamente **1,08 millones de microemprendedores informales** (INE EME8) *(Fuente: [que-es.md](que-es.md))* que sostienen su actividad sin registro tributario, sin contabilidad sistemática y sin acceso real a los instrumentos de fomento que el Estado ya tiene diseñados para ellos. **El 59 % de los informales son mujeres** y en regiones como **la Araucanía la informalidad alcanza el 38 %** *(Fuente: [que-es.md](que-es.md))*; en Los Ríos la brecha de ingresos entre mujeres y hombres microemprendedores llega a **-43,7 %** *(Fuente: [research run #06](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md))*. La asesoría de gestión, tributaria y de fomento existe — vive en SII, CORFO, SERCOTEC, contadores y OTECs — pero está geográfica, lingüística y económicamente fuera del alcance del segmento que más la necesita.
 
+#### Journey actual del microemprendedor (AS-IS)
+
+El siguiente diagrama sintetiza, etapa por etapa, los dolores arquetípicos del segmento informal y las instituciones-barrera que hoy operan como muro de contención. Cada dolor lleva el código del [run #06 de deep research](../competencia/research/_runs-deep-research/2026-04-30-06-entrepreneur-journey-backlog.md) y una glosa que explica el arquetipo.
+
+```mermaid
+flowchart LR
+    classDef pain fill:#fee2e2,stroke:#b91c1c,color:#7f1d1d
+    classDef barrier fill:#e5e5e5,stroke:#525252,color:#1f2937,stroke-dasharray:4 3
+    classDef abandon fill:#fafafa,stroke:#737373,color:#404040,stroke-dasharray:2 2
+
+    subgraph E1["1\. Sueño — 'tengo una idea'"]
+        D1A["Miedo irracional al SII<br/><i>el SII me va a multar antes de empezar</i><br/>E0-D2 — CRÍTICO transversal"]:::pain
+        D1B["Ignora cómo fijar precios<br/><i>copia el precio del vecino</i><br/>E0-D3"]:::pain
+        D1C["Mezcla finanzas familia / negocio<br/><i>cuenta única, sin separación</i><br/>E0-D7"]:::pain
+    end
+
+    subgraph E2["2\. Informal activo — 'ya vendo'"]
+        D2A["Sin RUT comercial — pierde B2B<br/><i>cliente exige factura, no puede emitir</i><br/>E1-D1 · pérdida ~$200K/mes"]:::pain
+        D2B["Cobra en CuentaRUT — alerta lavado<br/><i>presunción de movimiento sospechoso</i><br/>E1-D2"]:::pain
+        D2C["Crecimiento invisible — sin balance<br/><i>no sabe si gana o pierde plata</i><br/>E1-D7"]:::pain
+    end
+
+    subgraph E3["3\. Formalización — 'me decido a legalizar'"]
+        D3A["Elección errónea figura jurídica<br/><i>SpA cuando bastaba EIRL</i><br/>E2-D2"]:::pain
+        D3B["Abismo RES → SII (F4415)<br/><i>empresa creada pero no factura</i><br/>E2-D3"]:::pain
+        D3C["4-6 trámites desconectados<br/><i>SII, Municipalidad, SEREMI sin hablarse</i><br/>E2-D1, E2-D5, E2-D6"]:::pain
+    end
+
+    subgraph E4["4\. PYME crecimiento — 'quiero escalar'"]
+        D4A["F29 mensual — ansiedad de errar<br/><i>me van a multar por equivocarme</i><br/>E3-D1"]:::pain
+        D4B[">50% rechazo CORFO/SERCOTEC<br/><i>bases mal interpretadas</i><br/>E4-D2"]:::pain
+        D4C["Primer empleado — ley laboral<br/><i>contrato sin asesoría</i><br/>E4-D4"]:::pain
+    end
+
+    SII["SII<br/>lenguaje técnico"]:::barrier
+    BCO["Bancos<br/>rechazan informal"]:::barrier
+    CONTA["Contadores<br/>fees inalcanzables"]:::barrier
+    GOV["CORFO / SERCOTEC<br/>bases ilegibles"]:::barrier
+
+    AB1["abandono temprano:<br/>queda en idea"]:::abandon
+    AB2["trampa de informalidad:<br/>nunca formaliza"]:::abandon
+    AB3["abandona trámites:<br/>vuelve a informal"]:::abandon
+    AB4["estancamiento:<br/>no postula o postula mal"]:::abandon
+
+    E1 -.->|"~60% no llega a vender"| AB1
+    E1 ==> E2
+    E2 -.->|"escudo de cristal"| AB2
+    E2 ==> E3
+    E3 -.->|"agencias sin conversar"| AB3
+    E3 ==> E4
+    E4 -.->|"crecimiento estancado"| AB4
+
+    SII -.-> E1
+    SII -.-> E2
+    SII -.-> E3
+    SII -.-> E4
+    BCO -.-> E2
+    BCO -.-> E3
+    CONTA -.-> E2
+    CONTA -.-> E3
+    CONTA -.-> E4
+    GOV -.-> E4
+```
+
+> **Lectura del diagrama.** Cada etapa concentra dolores arquetípicos respaldados por el run #06; las **flechas punteadas** muestran los puntos de abandono típicos en los que el emprendedor queda atrapado o retrocede. Las **cajas grises** son las instituciones que hoy son barrera —no enemigas— pero cuyo lenguaje, costo o lógica de operación expulsa al segmento NSE D-E. La trayectoria sólida E1 → E2 → E3 → E4 es la que ocurre en el papel; en la práctica, la mayor parte del universo se atasca entre E1 y E2.
+
 ### 1.2 Causas principales
 
 - **Mercado de asesores con barrera económica de entrada.** Los contadores, OTECs y oficinas SERCOTEC operan con tarifas y presencia geográfica que excluyen al segmento informal — el costo de transporte, espera y honorarios por hora supera la disposición/capacidad de pago en NSE D-E rural *(Fuente: [que-es.md](que-es.md))*.
@@ -64,6 +130,114 @@ Cada mes que el segmento informal sigue operando sin acompañamiento accesible s
 Habilitar que cualquier microemprendedor chileno —desde el momento en que tiene una idea hasta que opera como PYME formalizada que postula a subsidios— pueda **conversar por WhatsApp con un copiloto que lo entienda en su idioma, lo acompañe al ritmo asincrónico de su día y lo derive al instrumento estatal correcto cuando corresponda**. El sistema funciona en el smartphone que el usuario ya tiene, gratis hasta el punto en que el siguiente paso (formalización o postulación a subsidio) genera valor monetario evidente que justifica un cobro modesto. La web complementa con visualización (gráficos de utilidad), formularios largos y descargas (carta a banco, checklists de trámites) — nunca exclusiviza *(Fuente: [ADR-0004](especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md))*.
 
 El acompañamiento se entrega vía **cuatro agentes especializados por etapa del journey** (`mentor-inicio`, `acompanante-informal`, `gestor-formalizacion`, `estratega-crecimiento`) coordinados por un supervisor que enruta por etapa+intención y comparten un expediente único del emprendedor. Cada respuesta cita la norma chilena verificable (SII, CORFO, SERCOTEC) y cada cálculo ejecuta la regla *"no te calculo, te enseño lo que debes saber"* — el copiloto orienta y deriva, no reemplaza al contador ni al abogado *(Fuente: [plan.md](plan.md))*. En palabras del equipo: *"Es ofrecer la ayuda a que este gallo deje de pensar y se dedique a emprender"* *(Fuente: [reunión 30-abr](../reuniones/2026-04-30-revision-dolores-backlog.md))*.
+
+#### Journey con Tu Plata Mipyme (TO-BE)
+
+El siguiente diagrama mapea, etapa por etapa, **qué agente y qué tools** asume cada conjunto de dolores del journey AS-IS, y **sobre qué stack técnico** se ejecuta. Cada etapa cierra con el listado de dolores resueltos referenciados por su código (E0-D2, E1-D1, etc.), preservando la trazabilidad con el AS-IS de §1.1.
+
+```mermaid
+flowchart LR
+    classDef agent fill:#e0e7ff,stroke:#3730a3,color:#1e1b4b
+    classDef tool fill:#dbeafe,stroke:#1e40af,color:#1e3a8a
+    classDef solved fill:#d1fae5,stroke:#065f46,color:#064e3b
+    classDef tech fill:#f5f5f5,stroke:#525252,color:#1f2937
+    classDef chan fill:#dcfce7,stroke:#15803d,color:#14532d
+
+    subgraph CANAL["Canal · WhatsApp-first + Web complementaria · mensajes ≤160 chars · 1 idea por mensaje"]
+        WA["WhatsApp Business<br/>vía Twilio"]:::chan
+        WEB["Web Next.js<br/>landing + dashboard"]:::chan
+    end
+
+    subgraph STACK["Stack técnico"]
+        SUP["Supervisor<br/>Sonnet 4.6"]:::tech
+        HAI["Clasificador<br/>Haiku 4.5"]:::tech
+        SDK["Agent SDK<br/>handoffs JSON"]:::tech
+        DB["Postgres<br/>expediente persistente"]:::tech
+        MCP["MCPs SII / CORFO / SERCOTEC<br/>+ caching >80%"]:::tech
+    end
+
+    subgraph E1["1\. Sueño"]
+        AG1["Agente: mentor-inicio"]:::agent
+        T1A["Validación rápida idea"]:::tool
+        T1B["Calculadora punto equilibrio<br/>(teoría, sin cálculo directo)"]:::tool
+        T1C["Pricing + valor del tiempo"]:::tool
+        S1["Resuelve:<br/>✓ Miedo SII desmitificado (E0-D2)<br/>✓ Pricing con disclaimer (E0-D3)<br/>✓ Separación finanzas (E0-D7)"]:::solved
+        AG1 --> T1A
+        AG1 --> T1B
+        AG1 --> T1C
+        T1A --> S1
+        T1B --> S1
+        T1C --> S1
+    end
+
+    subgraph E2["2\. Informal activo"]
+        AG2["Agente: acompanante-informal<br/>(foco Fase 0 demo del lab)"]:::agent
+        T2A["Registro venta WhatsApp<br/>'vendí 30 mil'"]:::tool
+        T2B["Reporte semanal utilidad real<br/>vs simulación Pro-Pyme"]:::tool
+        T2C["Warning CuentaRUT<br/>(alerta lavado)"]:::tool
+        T2D["Recordatorios asincrónicos<br/>frecuencia adaptativa"]:::tool
+        S2["Resuelve:<br/>✓ Crecimiento visible (E1-D7)<br/>✓ Alerta riesgo bancario (E1-D2)<br/>✓ Detecta cuándo formalizar conviene"]:::solved
+        AG2 --> T2A
+        AG2 --> T2B
+        AG2 --> T2C
+        AG2 --> T2D
+        T2A --> S2
+        T2B --> S2
+        T2C --> S2
+    end
+
+    subgraph E3["3\. Formalización"]
+        AG3["Agente: gestor-formalizacion"]:::agent
+        T3A["MCP SII<br/>validar_rut + Inicio Actividades"]:::tool
+        T3B["Decisor figura jurídica<br/>MEF / EIRL / SpA"]:::tool
+        T3C["Checklist 4-6 trámites<br/>RES → SII → Mun → SEREMI"]:::tool
+        T3D["generar_carta_banco PDF"]:::tool
+        S3["Resuelve:<br/>✓ Hilo conductor entre agencias (E2-D3)<br/>✓ Decisión informada figura (E2-D2)<br/>✓ Acceso bancario vía PDF (RF-08)"]:::solved
+        AG3 --> T3A
+        AG3 --> T3B
+        AG3 --> T3C
+        AG3 --> T3D
+        T3A --> S3
+        T3B --> S3
+        T3D --> S3
+    end
+
+    subgraph E4["4\. PYME crecimiento"]
+        AG4["Agente: estratega-crecimiento"]:::agent
+        T4A["matcher_fondos<br/>CORFO / SERCOTEC / FOGAPE"]:::tool
+        T4B["generador_borrador postulación"]:::tool
+        T4C["Acompañamiento F29 mensual"]:::tool
+        T4D["Marketplace asesores humanos"]:::tool
+        S4["Resuelve:<br/>✓ Subsidios bien postulados (E4-D2)<br/>✓ Calendario + recordatorio F29 (E3-D1)<br/>✓ Derivación legal humana (E4-D4)"]:::solved
+        AG4 --> T4A
+        AG4 --> T4B
+        AG4 --> T4C
+        AG4 --> T4D
+        T4A --> S4
+        T4B --> S4
+        T4C --> S4
+    end
+
+    WA --> SUP
+    WEB --> SUP
+    SUP --> HAI
+    SUP --> SDK
+    SUP --> DB
+    SDK --> AG1
+    SDK --> AG2
+    SDK --> AG3
+    SDK --> AG4
+    AG3 --> MCP
+    AG4 --> MCP
+
+    AG1 ==>|"upgrade trigger:<br/>'lista para vender'"| AG2
+    AG2 ==>|"handoff JSON:<br/>'quiero formalizar'"| AG3
+    AG3 ==>|"6 meses formalizada<br/>handoff JSON"| AG4
+```
+
+> **Lectura del diagrama.** Las **cajas verdes** son los canales (WhatsApp principal · Web complementaria). Las **cajas grises** son los componentes técnicos compartidos: el supervisor en Sonnet 4.6 enruta a 4 subagentes vía Agent SDK; Haiku 4.5 clasifica intención (más barato, más rápido); Postgres persiste el expediente del emprendedor entre sesiones; los MCPs propios sobre SII/CORFO/SERCOTEC habilitan tools que **citan la fuente y no alucinan números**. Las **cajas violetas** son los agentes; las **azules** son sus tools; las **verdes claras** muestran qué dolores específicos del AS-IS se cierran en cada etapa. Las **flechas gruesas** entre agentes son los **handoffs explícitos** con contexto JSON estructurado (no historia conversacional cruda) que mantienen la continuidad del journey sin perder al usuario entre etapas.
+
+**Cambio neto frente al AS-IS.** Donde antes había instituciones-barrera y abandono entre etapas, ahora hay un único punto de entrada (WhatsApp) con cuatro especialistas que se relevan, citan la norma y derivan a humano cuando corresponde. La fricción que el segmento experimenta no se elimina —los trámites siguen existiendo— pero deja de operar como muro: el copiloto traduce, ordena, recuerda y acompaña.
 
 ### 2.2 Beneficios esperados
 
