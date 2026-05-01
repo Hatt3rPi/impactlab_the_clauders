@@ -98,14 +98,32 @@ Notación: ✅ **incluir** · ❌ **excluir** · 💡 **guiño/futuro** · ⏳ *
 
 **Síntesis E2 acordada:** *"La formalización no es un acto, es un flujo de 4-6 sub-trámites en distintas agencias que no conversan entre sí. La IA debe ser el hilo conductor."* Felipe: **"Es nuestro fuerte hasta el momento."**
 
-### E3 — Operación Formal (revisión incompleta)
+### E3 — Operación Formal (revisión parcial)
 
 | ID | Dolor | Decisión | Notas del equipo |
 |---|---|---|---|
 | E3-D1 | Declaración mensual F29 | ✅ Incluir | Acompañamiento fuerte primeros 3 meses + recordatorio + **calendario** (no solo pop-up — algo agendable que reserva el día). "El tremendo deseable de muchos." |
 | E3-D2 | Facturación electrónica desde WhatsApp | ❌ Excluir generación automática | Afuera por complejidad técnica. Dirigir a soluciones existentes (Bsale, Defontana, SII Mipyme). **Mantenemos rol de información, no de ejecución.** |
 | E3-D3 | Elección y comprensión del régimen tributario | ✅ Incluir, **pero en E2** | Es necesario para iniciar actividades — debería estar en el flujo previo de formalización. |
-| E3-D4 a E3-D8 | (Resto: F22, certificados, conciliación, honorarios, multas SII) | ⏳ **Pendiente** | La reunión se cortó por compromiso de Felipe a las 11:00. **Revisar en próxima sesión.** |
+| E3-D8 | Primer choque con multas SII | ✅ Incluir *(complementaria)* | Traducir urgencia de "correos rojos" + guiar Condonación de Multas e Intereses. Evita el espiral de abandono. |
+| E3-D4 a D7 | (F22, certificados, conciliación, honorarios) | ⏳ **Pendiente** | Sin revisar aún. |
+
+### E4 — Crecimiento (sesión complementaria)
+
+| ID | Dolor | Decisión | Notas del equipo |
+|---|---|---|---|
+| E4-D2 | Postulación Subsidios Sercotec/Corfo | ✅ Incluir *(complementaria)* | Empareja la cancha contra el >50% de rechazo: entrevista → Canvas + pitch video. Combinable con Scout de Subsidios (E0-D6). |
+| E4-D3 | Créditos FOGAPE | ✅ Incluir *(complementaria)* | Desmitificador: la usuaria entiende **antes de firmar** que es un aval (no un regalo) y que el cobro de mora recae sobre ella. |
+| E4-D5 | PreviRed | ✅ Incluir + recordatorio *(complementaria)* | Misma mecánica que F29: push días previos al 10 + educación clave "declarar sin pago evita la multa por Ley Bustos". Calendario agendable. |
+| E4-D1, D4, D6, D7, D8 | (Microcréditos, primer empleado, Ley Karin, Mercado Público, Pasarelas) | ⏳ **Pendiente** | Sin revisar aún. |
+
+### E5 — Recuperación / Cierre (sesión complementaria)
+
+| ID | Dolor | Decisión | Notas del equipo |
+|---|---|---|---|
+| E5-D4 | Suspensión Temporal / Término de Giro SII | ✅ Incluir (trigger eliminar cuenta) *(complementaria)* | **Trigger explícito:** cuando la usuaria intenta eliminar su cuenta del producto, el agente le sugiere proactivamente cerrar formalmente la empresa antes de irse. Es el "Torniquete" del backlog (E5-LEGAL-53). |
+| E5-D5 | Disolución de Sociedad en RES | ✅ Incluir *(complementaria)* | Flujo guiado en RES para disolver SpA/EIRL. Complementario al Aviso de Suspensión SII: ambos se activan desde el mismo trigger "eliminar cuenta". |
+| E5-D1, D2, D3, D6, D7, D8 | (Insolvencia, quiebra, honorarios ahogados, venta empresa, DICOM, reinvención) | ⏳ **Pendiente** | Sin revisar aún. |
 
 ## Decisiones de producto/contenido
 

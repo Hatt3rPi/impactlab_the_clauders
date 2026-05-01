@@ -400,14 +400,14 @@ Ya existe la "Empresa". Ahora, el Estado exige un cumplimiento mensual estricto.
 - **Brecha IA:** Calcular matemáticamente al instante "líquido vs bruto" en WhatsApp.
 - **Decisión equipo (30-abr):** ⏳ Pendiente. Pendiente revisión del equipo.
 
-**8. Dolor: Primer choque con multas SII.** — ⏳ Pendiente
+**8. Dolor: Primer choque con multas SII.** — ✅ Incluir
 
 - **Cómo se resuelve hoy:** Pánico, inacción, o visita presencial angustiante a la oficina local del SII.
 - **Costo actual:** Intereses penales y reajustes mensuales que encarecen la multa original.
 - **Tiempo y fricción:** Miedo a ser embargados; lectura de notificaciones legales incomprensibles.
 - **Tasa de fracaso/abandono:** Abandono del sistema formal; la empresa queda "sucia" con deudas fiscales irrecuperables.
 - **Brecha IA:** Traducción del nivel de urgencia del correo del SII y guía sobre cómo solicitar "Condonación de Multas e Intereses" online.
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Pendiente revisión del equipo.
+- **Decisión equipo (30-abr, complementaria):** ✅ Incluir. Traducir el nivel de urgencia de los "correos rojos" del SII en lenguaje cotidiano + guiar la solicitud de Condonación de Multas e Intereses para evitar el espiral de abandono.
 
 **Síntesis E3:** La operación formal es un régimen de cumplimiento. La ansiedad de equivocarse con "los impuestos" paraliza. El Copiloto debe simplificar la contabilidad diaria y actuar como puente hacia contadores reales cuando la complejidad técnica excede la IA.
 
@@ -424,23 +424,23 @@ El negocio es estable y formal, pero carece de capital e infraestructura para es
 - **Brecha IA:** Diagnóstico de "Salud Crediticia" evaluando continuidad de F29 y derivación a la institución microfinanciera idónea según historial.
 - **Decisión equipo (30-abr):** ⏳ Pendiente. Etapa pendiente de revisión por el equipo.
 
-**2. Dolor: Postulación a Subsidios del Estado (Sercotec/Corfo).** — ⏳ Pendiente
+**2. Dolor: Postulación a Subsidios del Estado (Sercotec/Corfo).** — ✅ Incluir
 
 - **Cómo se resuelve hoy:** Llenado de formularios largos y modelos Canvas en www.sercotec.cl. Requiere grabación de "pitch" de video.
 - **Costo actual:** Postulación gratuita, pero exige un cofinanciamiento posterior obligatorio si se gana.
 - **Tiempo y fricción:** Semanas redactando respuestas. Brecha enorme en redacción técnica ("literacy" regulatoria y de negocios).
 - **Tasa de fracaso/abandono:** Altísima tasa de rechazo, superando sistemáticamente el 50% de los proyectos postulados por ser inadmisibles o mal formulados `[cite: 6, 7]`.
 - **Brecha IA:** Asistente conversacional que actúa como oráculo/RAG: entrevista al usuario y redacta el Modelo Canvas y el guion del Pitch.
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Etapa pendiente de revisión por el equipo.
+- **Decisión equipo (30-abr, complementaria):** ✅ Incluir. Empareja la cancha contra el >50% de rechazo: entrevista conversacional → borrador de Canvas Sercotec + guion de pitch en video. Combinable con el Scout de Subsidios (E0-D6) para detectar ventanas abiertas.
 
-**3. Dolor: Créditos con Garantía Estatal (FOGAPE).** — ⏳ Pendiente
+**3. Dolor: Créditos con Garantía Estatal (FOGAPE).** — ✅ Incluir
 
 - **Cómo se resuelve hoy:** Solicitud a través del banco comercial del emprendedor.
 - **Costo actual:** Tasa fijada por normativa + comisiones bancarias.
 - **Tiempo y fricción:** Falsa expectativa: los usuarios creen que el Estado les prestará el dinero directo o les perdonará la deuda si fracasan.
 - **Tasa de fracaso/abandono:** Rechazo de los bancos si el riesgo de la pyme es excesivo (la garantía cubre una parte al banco, no asegura el otorgamiento).
 - **Brecha IA:** Desmitificar que FOGAPE no es un regalo, es un aval. Explicar claramente el riesgo de mora.
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Etapa pendiente de revisión por el equipo.
+- **Decisión equipo (30-abr, complementaria):** ✅ Incluir. Desmitificador FOGAPE: la usuaria entiende antes de firmar que es un aval (no un regalo), que el banco igual evalúa riesgo, y que en caso de mora el cobro recae sobre ella. Evita el "pidieron y quebraron" por desinformación.
 
 **4. Dolor: Contratación del Primer Empleado y Ley Laboral.** — ⏳ Pendiente
 
@@ -451,14 +451,14 @@ El negocio es estable y formal, pero carece de capital e infraestructura para es
 - **Brecha IA:** Generador automático de un Contrato de Trabajo validado (Código del Trabajo) y tutorial para su registro en MiDT.
 - **Decisión equipo (30-abr):** ⏳ Pendiente. Etapa pendiente de revisión por el equipo.
 
-**5. Dolor: Pago de Cotizaciones (PreviRed).** — ⏳ Pendiente
+**5. Dolor: Pago de Cotizaciones (PreviRed).** — ✅ Incluir + recordatorio
 
 - **Cómo se resuelve hoy:** Carga manual de planillas en previred.com.
 - **Costo actual:** Multas y presunción legal de deuda si no se pagan. Imposibilidad de licitar con Estado (Ley Bustos).
 - **Tiempo y fricción:** Proceso poco amigable los días 10 de cada mes.
 - **Tasa de fracaso/abandono:** Declaración omitida por falta de caja.
 - **Brecha IA:** Recordatorio del día 10 y educación crítica: "Si no tienes liquidez este mes, debes DECLARAR sin pago en Previred para evitar la multa inmediata".
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Etapa pendiente de revisión por el equipo.
+- **Decisión equipo (30-abr, complementaria):** ✅ Incluir + recordatorio. Misma mecánica que F29 (E3-D1): push WhatsApp días previos al 10 + educación clave: "si no hay caja, declarar sin pago igual evita la multa inmediata por Ley Bustos". Componente de calendario agendable, no solo pop-up.
 
 **6. Dolor: Cumplimiento de Normativas Modernas (ej. Ley Karin).** — ⏳ Pendiente
 
@@ -520,23 +520,23 @@ El fracaso es parte del ciclo. Cuando las deudas ahogan o el modelo no funciona,
 - **Brecha IA:** Explicar una innovación de la Ley 21.563: emisores de boletas de honorarios acceden a la *renegociación gratuita* ante la SUPERIR en vez de ir a juicio de quiebra `[cite: 4, 16]`.
 - **Decisión equipo (30-abr):** ⏳ Pendiente. Etapa pendiente de revisión por el equipo.
 
-**4. Dolor: Suspensión Temporal o Término de Giro SII.** — ⏳ Pendiente
+**4. Dolor: Suspensión Temporal o Término de Giro SII.** — ✅ Incluir (trigger eliminar cuenta)
 
 - **Cómo se resuelve hoy:** Dejar "botada" la empresa, acumulando F29 no presentados.
 - **Costo actual:** Multas sistemáticas mensuales por omisión, acumulando millones.
 - **Tiempo y fricción:** Miedo a avisar al SII que el negocio fracasó.
 - **Tasa de fracaso/abandono:** Acumulación de multas fiscales impagables.
 - **Brecha IA:** Guiar el "Aviso de Suspensión Temporal" o el "Término de Giro" definitivo para cortar el sangrado legal.
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Etapa pendiente de revisión por el equipo.
+- **Decisión equipo (30-abr, complementaria):** ✅ Incluir. **Trigger específico: cuando la usuaria intenta eliminar su cuenta del producto**, el agente le sugiere proactivamente "antes de irte, dejá tu empresa en regla" → guía el Aviso de Suspensión Temporal o Término de Giro en SII. Evita que la empresa zombi siga acumulando multas tras el abandono. Es el "Torniquete" del backlog (E5-LEGAL-53).
 
-**5. Dolor: Disolución de Sociedad en RES.** — ⏳ Pendiente
+**5. Dolor: Disolución de Sociedad en RES.** — ✅ Incluir
 
 - **Cómo se resuelve hoy:** Redactar acta de disolución, firma de todos los socios.
 - **Costo actual:** Notaría (costos variables).
 - **Tiempo y fricción:** Dificultad para coordinar a ex-socios peleados.
 - **Tasa de fracaso/abandono:** Sociedades fantasmas vigentes legalmente pero muertas comercialmente.
 - **Brecha IA:** Flujo guiado para el cierre ordenado en Tu Empresa en Un Día.
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Etapa pendiente de revisión por el equipo.
+- **Decisión equipo (30-abr, complementaria):** ✅ Incluir. Flujo guiado en RES para disolver SpA/EIRL formalmente. Complementario al Aviso de Suspensión SII (E5-D4): la suspensión corta el sangrado tributario, la disolución cierra la persona jurídica. Ambos pueden activarse desde el mismo trigger "eliminar cuenta del producto".
 
 **6. Dolor: Venta de la empresa / Traspaso de acciones.** — ⏳ Pendiente
 
