@@ -69,7 +69,13 @@ flowchart LR
     subgraph E4["4. PYME crecimiento"]
         D4A["F29 ansiedad E3-D1"]:::pain
         D4B["50 por ciento rechazo CORFO E4-D2"]:::pain
-        D4C["Primer empleado laboral E4-D4"]:::pain
+        D4C["FOGAPE desinformacion E4-D3"]:::pain
+        D4D["PreviRed Ley Bustos E4-D5"]:::pain
+    end
+
+    subgraph E5["5. Cierre ordenado"]
+        D5A["Empresa zombi SII E5-D4"]:::pain
+        D5B["Sociedad fantasma RES E5-D5"]:::pain
     end
 
     SII["SII"]:::barrier
@@ -80,6 +86,7 @@ flowchart LR
     AB2["nunca formaliza"]:::abandon
     AB3["abandona tramites"]:::abandon
     AB4["estancamiento"]:::abandon
+    AB5["empresa zombi"]:::abandon
 
     E1 -.-> AB1
     E1 ==> E2
@@ -88,10 +95,13 @@ flowchart LR
     E3 -.-> AB3
     E3 ==> E4
     E4 -.-> AB4
+    E4 ==> E5
+    E5 -.-> AB5
 
     SII -.-> E1
     BCO -.-> E2
     GOV -.-> E4
+    SII -.-> E5
 
     click E1 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-1-sueno-free" "Etapa Sueno" _blank
     click E2 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-2-informal-activo-free" "Etapa Informal" _blank
@@ -118,7 +128,8 @@ flowchart LR
     - [Etapa 1 — Validación Informal](dolores.md#etapa-1-validacion-informal) (E1-D1 sin RUT · E1-D2 CuentaRUT · E1-D7 crecimiento invisible)
     - [Etapa 2 — Formalización](dolores.md#etapa-2-formalizacion) (E2-D1 RES · E2-D2 figura jurídica · E2-D3 abismo F4415 · E2-D5 patente · E2-D6 SEREMI)
     - [Etapa 3 — Operación Formal](dolores.md#etapa-3-operacion-formal) (E3-D1 F29)
-    - [Etapa 4 — Crecimiento](dolores.md#etapa-4-crecimiento) (E4-D2 subsidios · E4-D4 primer empleado)
+    - [Etapa 4 — Crecimiento](dolores.md#etapa-4-crecimiento) (E4-D2 subsidios Sercotec/Corfo · E4-D3 FOGAPE · E4-D5 PreviRed)
+    - [Etapa 5 — Recuperación / Cierre](dolores.md#etapa-5-recuperacion-cierre-o-pivot) (E5-D4 suspensión SII · E5-D5 disolución RES)
 
 ### 1.2 Causas principales
 
@@ -211,9 +222,16 @@ flowchart LR
 
     subgraph E4["4. PYME crecimiento"]
         AG4["estratega-crecimiento"]:::agent
-        T4["matcher fondos + borrador postulacion + F29"]:::tool
-        S4["Cierra E3-D1 E4-D2 D4"]:::solved
+        T4["matcher fondos + Canvas + F29 + FOGAPE + PreviRed"]:::tool
+        S4["Cierra E3-D1 D8 E4-D2 D3 D5"]:::solved
         AG4 --> T4 --> S4
+    end
+
+    subgraph E5["5. Cierre ordenado"]
+        AG5["estratega-crecimiento (extension)"]:::agent
+        T5["Suspension SII + Termino Giro + Disolucion RES"]:::tool
+        S5["Cierra E5-D4 D5 al eliminar cuenta"]:::solved
+        AG5 --> T5 --> S5
     end
 
     WA --> SUP
@@ -222,10 +240,12 @@ flowchart LR
     SUP --> AG2
     SUP --> AG3
     SUP --> AG4
+    SUP --> AG5
 
     AG1 ==>|"upgrade"| AG2
     AG2 ==>|"handoff JSON"| AG3
     AG3 ==>|"6 meses formalizada"| AG4
+    AG4 ==>|"trigger eliminar cuenta"| AG5
 
     click E1 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-1-sueno-free" "Etapa Sueno" _blank
     click E2 "https://theclauders.netlify.app/tu-plata-mipyme/plan/#etapa-2-informal-activo-free" "Etapa Informal" _blank
@@ -526,7 +546,7 @@ Cada RF es derivable del backlog ✅ Incluir, del plan técnico (`plan.md` §3 j
 
 > **Total Fase 0:** 21 RF (18 Must Have · 1 Should Have · 2 Nice to Have). La tabla es expandible — pueden agregarse RF nuevos si emergen durante el spike técnico de los 7 días del lab. Los RF no resueltos en Fase 0 se trasladan a Fase 1 del roadmap.
 >
-> **Cobertura backlog:** los RF de la tabla cubren los 21 features ✅ Incluir del backlog en su versión Fase 0 (registro de ventas, simulador Pro-Pyme, derivación a contador vía handoff, carta a banco, derechos ARCO). El detalle por feature E0-E5 vive en [backlog.md](backlog.md). Las 32 features ⏳ pendientes y las 6 ❌ excluidas no entran en alcance de Fase 0.
+> **Cobertura del backlog (alcance V1 cerrado el 30-abr):** el equipo cerró el alcance del producto V1 con **25 dolores ✅ Incluir** (de 48), tras la sesión complementaria del 30-abr que sumó 6 dolores nuevos a los 19 originales: E3-D8 multas SII, E4-D2 subsidios Sercotec/Corfo, E4-D3 FOGAPE, E4-D5 PreviRed, E5-D4 suspensión SII (trigger eliminar cuenta), E5-D5 disolución RES. Los 22 ❌ Excluir quedan documentados con justificación en [dolores.md](dolores.md). Los RF de la tabla son la slice Fase 0 (registro ventas, simulador Pro-Pyme, handoff a contador, carta a banco, ARCO); las features de los otros 24 dolores ✅ Incluir se entregan en Fases 1-3 del roadmap.
 
 ---
 

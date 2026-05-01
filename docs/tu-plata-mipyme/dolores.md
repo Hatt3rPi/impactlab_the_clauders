@@ -405,6 +405,7 @@ Ya existe la "Empresa". Ahora, el Estado exige un cumplimiento mensual estricto.
 - **Tasa de fracaso/abandono:** Abandono del sistema formal; la empresa queda "sucia" con deudas fiscales irrecuperables.
 - **Brecha IA:** Traducción del nivel de urgencia del correo del SII y guía sobre cómo solicitar "Condonación de Multas e Intereses" online.
 - **Decisión equipo (30-abr, complementaria):** ✅ Incluir. Traducir el nivel de urgencia de los "correos rojos" del SII en lenguaje cotidiano + guiar la solicitud de Condonación de Multas e Intereses para evitar el espiral de abandono.
+- **Documentación oficial requerida:** **Procedimiento de Condonación de Multas e Intereses SII** (Circular SII vigente sobre giros y multas) + **Calculadora oficial de intereses penales y reajustes mensuales** (sii.cl). Notificaciones tipificadas: giro / requerimiento / citación. **Acciones técnicas:** MCP `CalcularDeudaEstimada` (estima multa + intereses + reajustes en tiempo real). Curar dataset traductor: jerga punitiva ("omisión sustantiva", "infracción Art. 97") → lenguaje cotidiano. RAG estático con tipos de notificación + plazos de respuesta. Detalle: [run #08](../competencia/research/_runs-deep-research/2026-05-01-08-documentacion-oficial-6-dolores-complementarios.md).
 
 **Síntesis E3:** La operación formal es un régimen de cumplimiento. La ansiedad de equivocarse con "los impuestos" paraliza. El Copiloto debe simplificar la contabilidad diaria y actuar como puente hacia contadores reales cuando la complejidad técnica excede la IA.
 
@@ -429,6 +430,7 @@ El negocio es estable y formal, pero carece de capital e infraestructura para es
 - **Tasa de fracaso/abandono:** Altísima tasa de rechazo, superando sistemáticamente el 50% de los proyectos postulados por ser inadmisibles o mal formulados `[cite: 6, 7]`.
 - **Brecha IA:** Asistente conversacional que actúa como oráculo/RAG: entrevista al usuario y redacta el Modelo Canvas y el guion del Pitch.
 - **Decisión equipo (30-abr, complementaria):** ✅ Incluir. Empareja la cancha contra el >50% de rechazo: entrevista conversacional → borrador de Canvas Sercotec + guion de pitch en video. Combinable con el Scout de Subsidios (E0-D6) para detectar ventanas abiertas.
+- **Documentación oficial requerida:** **Bases técnicas Sercotec** (Capital Semilla, Crece, Mujer Emprendedora — sercotec.cl/programas) · **Bases Corfo** (Subsidio Semilla Inicia, Capital Abeja — corfo.cl + programadps.gob.cl/Convocatorias) · **FOSIS Emprendamos Semilla/Básico/Avanzado** (subsidios $350K-$750K CLP, requiere RSH). **Acciones técnicas:** MCP `EntrevistadorCanvas` con diálogo socrático que rellena Modelo Canvas + guion pitch video según las bases del programa elegido. Cron scrape semanal de calendarios (sin API consolidada). Cruce automático con perfil RSH del usuario para FOSIS. Detalle: [run #08](../competencia/research/_runs-deep-research/2026-05-01-08-documentacion-oficial-6-dolores-complementarios.md).
 
 **3. Dolor: Créditos con Garantía Estatal (FOGAPE).** — ✅ Incluir
 
@@ -438,6 +440,7 @@ El negocio es estable y formal, pero carece de capital e infraestructura para es
 - **Tasa de fracaso/abandono:** Rechazo de los bancos si el riesgo de la pyme es excesivo (la garantía cubre una parte al banco, no asegura el otorgamiento).
 - **Brecha IA:** Desmitificar que FOGAPE no es un regalo, es un aval. Explicar claramente el riesgo de mora.
 - **Decisión equipo (30-abr, complementaria):** ✅ Incluir. Desmitificador FOGAPE: la usuaria entiende antes de firmar que es un aval (no un regalo), que el banco igual evalúa riesgo, y que en caso de mora el cobro recae sobre ella. Evita el "pidieron y quebraron" por desinformación.
+- **Documentación oficial requerida:** **Reglamento FOGAPE vigente** (BancoEstado FOGAPE) · líneas activas: **Pyme, Mujer Emprendedora, Reactiva**. Cobertura 85-95% al banco. Bancos participantes y sus condiciones. **Acciones técnicas:** MCP `SimuladorEducativoFOGAPE`: proyecta cuota mensual + riesgo patrimonial real frente a impago. Disclaimer central: "FOGAPE avala al banco, no a ti — si no pagás, te cobran al 100%". RAG con bases de cada línea + bancos participantes. Detalle: [run #08](../competencia/research/_runs-deep-research/2026-05-01-08-documentacion-oficial-6-dolores-complementarios.md).
 
 **4. Dolor: Contratación del Primer Empleado y Ley Laboral.** — ❌ Excluir
 
@@ -456,6 +459,7 @@ El negocio es estable y formal, pero carece de capital e infraestructura para es
 - **Tasa de fracaso/abandono:** Declaración omitida por falta de caja.
 - **Brecha IA:** Recordatorio del día 10 y educación crítica: "Si no tienes liquidez este mes, debes DECLARAR sin pago en Previred para evitar la multa inmediata".
 - **Decisión equipo (30-abr, complementaria):** ✅ Incluir + recordatorio. Misma mecánica que F29 (E3-D1): push WhatsApp días previos al 10 + educación clave: "si no hay caja, declarar sin pago igual evita la multa inmediata por Ley Bustos". Componente de calendario agendable, no solo pop-up.
+- **Documentación oficial requerida:** **Manual oficial PreviRed para empleadores** (previred.com) · **Ley Bustos** (presunción de deuda + nulidad de despidos por no pago de cotizaciones) · tasas vigentes: AFP 10,49-11,45%, SIS 1,54-1,78%, AFC, Mutual, Ley SANNA. **Multa 0,75 UF por trabajador/mes** por no declaración. **Acciones técnicas:** MCP `GeneradorNóminaTXT` automatiza el llenado del archivo posicional `.ple` (105 campos). Push WhatsApp días 8-9-10 + alerta crítica para "Declaración y No Pago" (DNP) cuando no hay caja: declarar sin pago igual evita multa Ley Bustos. Detalle: [run #08](../competencia/research/_runs-deep-research/2026-05-01-08-documentacion-oficial-6-dolores-complementarios.md).
 
 **6. Dolor: Cumplimiento de Normativas Modernas (ej. Ley Karin).** — ❌ Excluir
 
@@ -525,6 +529,7 @@ El fracaso es parte del ciclo. Cuando las deudas ahogan o el modelo no funciona,
 - **Tasa de fracaso/abandono:** Acumulación de multas fiscales impagables.
 - **Brecha IA:** Guiar el "Aviso de Suspensión Temporal" o el "Término de Giro" definitivo para cortar el sangrado legal.
 - **Decisión equipo (30-abr, complementaria):** ✅ Incluir. **Trigger específico: cuando la usuaria intenta eliminar su cuenta del producto**, el agente le sugiere proactivamente "antes de irte, dejá tu empresa en regla" → guía el Aviso de Suspensión Temporal o Término de Giro en SII. Evita que la empresa zombi siga acumulando multas tras el abandono. Es el "Torniquete" del backlog (E5-LEGAL-53).
+- **Documentación oficial requerida:** **Suspensión Temporal de Actividades SII** (F2125 — pausa el RUT, bloquea facturación pero mantiene jurídicamente activa) vs **Término de Giro** (F2121 — liquidación definitiva, requiere FUT/STUT y certificados). Bifurcación decisional documentada en sii.cl. **Acciones técnicas:** Trigger `EvaluarEstadoSalida` interconectado al intento de eliminación de cuenta del usuario. Árbol de decisión: ¿pausa o cierre? Genera checklist personalizado de pasos según F2125 vs F2121. Detalle: terminodegiro.cl como referencia complementaria. Detalle: [run #08](../competencia/research/_runs-deep-research/2026-05-01-08-documentacion-oficial-6-dolores-complementarios.md).
 
 **5. Dolor: Disolución de Sociedad en RES.** — ✅ Incluir
 
@@ -534,6 +539,7 @@ El fracaso es parte del ciclo. Cuando las deudas ahogan o el modelo no funciona,
 - **Tasa de fracaso/abandono:** Sociedades fantasmas vigentes legalmente pero muertas comercialmente.
 - **Brecha IA:** Flujo guiado para el cierre ordenado en Tu Empresa en Un Día.
 - **Decisión equipo (30-abr, complementaria):** ✅ Incluir. Flujo guiado en RES para disolver SpA/EIRL formalmente. Complementario al Aviso de Suspensión SII (E5-D4): la suspensión corta el sangrado tributario, la disolución cierra la persona jurídica. Ambos pueden activarse desde el mismo trigger "eliminar cuenta del producto".
+- **Documentación oficial requerida:** **Disolución de Sociedad en RES** (registrodeempresasysociedades.cl) — procedimiento digitalizado para SpA y EIRL · **Inscripción en Registro de Comercio del Conservador** para sociedades tradicionales (Ltda) · **Acta de disolución** (formato y contenido mínimo). **Acciones técnicas:** MCP `GeneradorActaDisolucion` provee andamiaje legal preliminar (no firmado). Casos especiales documentados: socio ausente / fallecido / desacuerdo. Handoff a abogado del Marketplace cuando hay conflicto entre ex-socios. Referencias: ncrabogados.cl, legalprisma.cl. Detalle: [run #08](../competencia/research/_runs-deep-research/2026-05-01-08-documentacion-oficial-6-dolores-complementarios.md).
 
 **6. Dolor: Venta de la empresa / Traspaso de acciones.** — ❌ Excluir
 

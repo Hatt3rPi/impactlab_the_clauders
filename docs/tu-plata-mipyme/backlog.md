@@ -110,14 +110,14 @@ Cada feature tiene:
 | [E3-OPER-29] | **Facturador WhatsApp (ApiGateway/Pana)** | Pro | L | ❌ Excluir generación auto | Patricia está vendiendo en feria. La clienta le pide factura por $50K. Tiene que dejar todo, ir a la casa y abrir el computador. |
 | [E3-OPER-30] | Emisor e-Boletas exprés | Pro | L | ❌ Excluir generación auto | Roxana usa la app del SII pero le quema datos en el campo y a veces simplemente no carga. Pierde la venta. |
 | [E3-OPER-31] | Recordatorio Empático F29 | Free | S | ✅ Incluir + calendario | María se olvidó del F29 de marzo entre los pedidos. Multa $35K + intereses. Cada mes igual: el F29 se le pasa. |
-| [E3-OPER-32] | Declarador "Sin Movimiento" (F29 cero) | Free | M | ⏳ Pendiente | Ana no vendió nada en abril por una enfermedad. Cree que "no hay que declarar". Acumuló 3 multas seguidas. |
-| [E3-FIN-33] | Calculador Honorarios Líquido↔Bruto | Free | S | ⏳ Pendiente | Carmen acordó con su sobrina pagarle $300K líquidos por diseñar el logo. No sabe cuánto retener ni cómo declararlo. |
-| [E3-OPER-34] | Monitor Compras RCV (alerta facturas) | Plus | L | ⏳ Pendiente | Luisa abrió el SII y vio una factura de $2M de un proveedor que nunca contrató. ¿Fraude? ¿Error? No sabe a quién llamar. |
-| [E3-RIESGO-35] | **Traductor Notificaciones SII (correos rojos)** | Free | S | ⏳ Pendiente | María recibió un correo del SII con palabras como "omisión sustantiva". Pánico. No abrió el correo por 2 semanas. |
-| [E3-FIN-36] | Simulador Pro-Pyme Transparente (IGC) | Plus | L | ⏳ Pendiente | Patricia retiró $5M durante el año sin saber que tributaba en su renta personal. En abril le tocó pagar $800K y no tenía la plata. |
-| [E3-OPER-37] | Descargador Carpeta Tributaria | Pro | M | ⏳ Pendiente | Roxana fue al banco a pedir crédito. El ejecutivo le pidió "su carpeta tributaria". ¿Qué es eso?, ¿de dónde la baja? |
-| [E3-OPER-38] | Handoff Operación Renta F22 | Marketplace | M | ⏳ Pendiente | María llegó a marzo con su F22 a medias. La IA dice: "esto excede lo que puedo resolver, derivémoslo a un contador" y agenda. |
-| [E3-FIN-39] | Conciliador Bancario Visual (OCR cartolas) | Plus | L | ⏳ Pendiente | Carmen cobró 80 transferencias en diciembre vía MACH y CuentaRUT. No tiene idea cuáles eran de qué clienta ni si hay morosos. |
+| [E3-OPER-32] | Declarador "Sin Movimiento" (F29 cero) | Free | M | ❌ Excluir | Ana no vendió nada en abril por una enfermedad. Cree que "no hay que declarar". Acumuló 3 multas seguidas. |
+| [E3-FIN-33] | Calculador Honorarios Líquido↔Bruto | Free | S | ❌ Excluir | Carmen acordó con su sobrina pagarle $300K líquidos por diseñar el logo. No sabe cuánto retener ni cómo declararlo. |
+| [E3-OPER-34] | Monitor Compras RCV (alerta facturas) | Plus | L | ❌ Excluir | Luisa abrió el SII y vio una factura de $2M de un proveedor que nunca contrató. ¿Fraude? ¿Error? No sabe a quién llamar. |
+| [E3-RIESGO-35] | **Traductor Notificaciones SII (correos rojos)** | Free | S | ✅ Incluir | María recibió un correo del SII con palabras como "omisión sustantiva". Pánico. No abrió el correo por 2 semanas. |
+| [E3-FIN-36] | Simulador Pro-Pyme Transparente (IGC) | Plus | L | ❌ Excluir | Patricia retiró $5M durante el año sin saber que tributaba en su renta personal. En abril le tocó pagar $800K y no tenía la plata. |
+| [E3-OPER-37] | Descargador Carpeta Tributaria | Pro | M | ❌ Excluir | Roxana fue al banco a pedir crédito. El ejecutivo le pidió "su carpeta tributaria". ¿Qué es eso?, ¿de dónde la baja? |
+| [E3-OPER-38] | Handoff Operación Renta F22 | Marketplace | M | ❌ Excluir | María llegó a marzo con su F22 a medias. La IA dice: "esto excede lo que puedo resolver, derivémoslo a un contador" y agenda. |
+| [E3-FIN-39] | Conciliador Bancario Visual (OCR cartolas) | Plus | L | ❌ Excluir | Carmen cobró 80 transferencias en diciembre vía MACH y CuentaRUT. No tiene idea cuáles eran de qué clienta ni si hay morosos. |
 
 ### E4 — Crecimiento (12 features)
 
@@ -125,18 +125,18 @@ Cada feature tiene:
 
 | ID | Feature | Tier | Compl. | Decisión 30-abr | Escenario |
 |---|---|---|---|---|---|
-| [E4-FIN-40] | Scout de Subsidios Sercotec/Corfo | Free | M | ⏳ Pendiente | Patricia se enteró del Capital Semilla 2 días antes del cierre por una vecina. Imposible postular bien con esos plazos. |
-| [E4-FIN-41] | **Borrador Modelo Canvas Sercotec** | Pro/Plus | M | ⏳ Pendiente | Ana llenó el modelo Canvas como pudo en la pega. Le rechazaron por "propuesta de valor poco clara". Postulaba por tercera vez. |
-| [E4-FIN-42] | Asistente Pitch Video (90s) | Pro | S | ⏳ Pendiente | María tiene que grabar 90 segundos para Sercotec. Se traba al minuto 30. Le da vergüenza la cámara. Re-graba 8 veces. |
-| [E4-FIN-43] | Recomendador Microcréditos (Banigualdad/F.Esp) | Free/Mkt | M | ⏳ Pendiente | Carmen necesita $1M para insumos. El banco le dice no por DICOM viejo. ¿Banigualdad? ¿Fondo Esperanza? No sabe ni a cuál ir. |
-| [E4-FIN-44] | Desmitificador FOGAPE | Free | S | ⏳ Pendiente | Luisa pidió un FOGAPE creyendo que "si no me va bien, lo paga el Estado". Incumplió y ahora el banco la cobra a ella. |
-| [E4-LEGAL-45] | Generador Contrato de Trabajo seguro | Pro | M | ⏳ Pendiente | Roxana contrató a su primera ayudante. Bajó un PDF de Google. La ayudante la denunció a tutela laboral por causales mal redactadas. |
-| [E4-LEGAL-46] | Guía Previred Exprés | Pro | S | ⏳ Pendiente | Patricia quiere pagar las cotizaciones de su empleada pero el portal Previred le pide "archivo .ple". ¿Qué es eso? |
-| [E4-LEGAL-47] | Simulador Finiquito básico | Plus | M | ⏳ Pendiente | María tiene que despedir a su garzón del local. No sabe si le debe 1 o 3 sueldos. No despide por miedo y la ahorca financieramente. |
-| [E4-LEGAL-48] | Generador Protocolo Ley Karin | Free | S | ⏳ Pendiente | Carmen tiene 2 empleadas. La consultora le cotiza $250K por "implementar protocolo Ley Karin". Es un PDF genérico. |
-| [E4-CRECE-49] | Bot Analista Precios Proveedores | Pro | L | ⏳ Pendiente | Roxana lleva 3 meses pagando harina más cara y vendiendo el pan al mismo precio. Quiebra invisible: no se da cuenta. |
-| [E4-CRECE-50] | Creador Textos Instagram (RAG copy) | Pro | S | ⏳ Pendiente | Patricia tiene cuenta de Instagram con 800 seguidores pero solo sube fotos. No vende porque no sabe qué texto poner. |
-| [E4-CRECE-51] | Filtro Compra Ágil <30 UTM (Mercado Público) | Plus | L | ⏳ Pendiente | Ana podría venderle al CESFAM local por <30 UTM. Pero ChileProveedores le pide 50 formularios. Desiste. |
+| [E4-FIN-40] | Scout de Subsidios Sercotec/Corfo | Free | M | ✅ Incluir | Patricia se enteró del Capital Semilla 2 días antes del cierre por una vecina. Imposible postular bien con esos plazos. |
+| [E4-FIN-41] | **Borrador Modelo Canvas Sercotec** | Pro/Plus | M | ✅ Incluir | Ana llenó el modelo Canvas como pudo en la pega. Le rechazaron por "propuesta de valor poco clara". Postulaba por tercera vez. |
+| [E4-FIN-42] | Asistente Pitch Video (90s) | Pro | S | ✅ Incluir | María tiene que grabar 90 segundos para Sercotec. Se traba al minuto 30. Le da vergüenza la cámara. Re-graba 8 veces. |
+| [E4-FIN-43] | Recomendador Microcréditos (Banigualdad/F.Esp) | Free/Mkt | M | ❌ Excluir | Carmen necesita $1M para insumos. El banco le dice no por DICOM viejo. ¿Banigualdad? ¿Fondo Esperanza? No sabe ni a cuál ir. |
+| [E4-FIN-44] | Desmitificador FOGAPE | Free | S | ✅ Incluir | Luisa pidió un FOGAPE creyendo que "si no me va bien, lo paga el Estado". Incumplió y ahora el banco la cobra a ella. |
+| [E4-LEGAL-45] | Generador Contrato de Trabajo seguro | Pro | M | ❌ Excluir | Roxana contrató a su primera ayudante. Bajó un PDF de Google. La ayudante la denunció a tutela laboral por causales mal redactadas. |
+| [E4-LEGAL-46] | Guía Previred Exprés | Pro | S | ✅ Incluir | Patricia quiere pagar las cotizaciones de su empleada pero el portal Previred le pide "archivo .ple". ¿Qué es eso? |
+| [E4-LEGAL-47] | Simulador Finiquito básico | Plus | M | ❌ Excluir | María tiene que despedir a su garzón del local. No sabe si le debe 1 o 3 sueldos. No despide por miedo y la ahorca financieramente. |
+| [E4-LEGAL-48] | Generador Protocolo Ley Karin | Free | S | ❌ Excluir | Carmen tiene 2 empleadas. La consultora le cotiza $250K por "implementar protocolo Ley Karin". Es un PDF genérico. |
+| [E4-CRECE-49] | Bot Analista Precios Proveedores | Pro | L | ❌ Excluir | Roxana lleva 3 meses pagando harina más cara y vendiendo el pan al mismo precio. Quiebra invisible: no se da cuenta. |
+| [E4-CRECE-50] | Creador Textos Instagram (RAG copy) | Pro | S | ❌ Excluir | Patricia tiene cuenta de Instagram con 800 seguidores pero solo sube fotos. No vende porque no sabe qué texto poner. |
+| [E4-CRECE-51] | Filtro Compra Ágil <30 UTM (Mercado Público) | Plus | L | ❌ Excluir | Ana podría venderle al CESFAM local por <30 UTM. Pero ChileProveedores le pide 50 formularios. Desiste. |
 
 ### E5 — Recuperación / Cierre / Pivot (9 features)
 
@@ -144,15 +144,15 @@ Cada feature tiene:
 
 | ID | Feature | Tier | Compl. | Decisión 30-abr | Escenario |
 |---|---|---|---|---|---|
-| [E5-LEGAL-52] | Asesor Ley 21.563 Reorganización Mipyme | Free | M | ⏳ Pendiente | María tiene $8M en deudas bancarias que no puede pagar. El banco la quiere embargar el auto. No sabe que la Ley 21.563 la protege 40 días. |
-| [E5-LEGAL-53] | **El "Torniquete" (suspensión SII asistida)** | Pro | M | ⏳ Pendiente | Carmen "cerró" el negocio hace 2 años. Sin avisar al SII. Acumuló $1.8M en multas F29 sin saberlo. La empresa sigue "viva". |
-| [E5-EMOC-54] | Botón de la Vergüenza (educación DICOM) | Free | S | ⏳ Pendiente | Patricia está en DICOM hace 4 años. Le ofrecen "borrar el DICOM por $50K". Es una estafa pero ella no lo sabe. |
-| [E5-LEGAL-55] | Derivación Quiebra Simplificada | Plus/Mkt | M | ⏳ Pendiente | Roxana arrastra deudas hace 5 años. No sabe que la liquidación simplificada le permitiría extinguir el saldo y volver a operar limpia. |
-| [E5-EMOC-56] | Diario Post-Mortem (lecciones del fracaso) | Free | S | ⏳ Pendiente | María cerró su panadería hace 6 meses. Llora todas las noches. No quiere ni hablar del tema con nadie. Duelo en silencio. |
-| [E5-LEGAL-57] | Renegociación 2da Categoría (honorarios) | Free | S | ⏳ Pendiente | Luisa emite boletas a honorarios por terapias. Está ahogada con cuotas vencidas. Cree que la quiebra "no aplica para ella". Sí aplica. |
-| [E5-LEGAL-58] | Disolución Sociedad RES | Pro | S | ⏳ Pendiente | Carmen y su ex-socio crearon SpA hace 3 años. Ya no se hablan. La SpA sigue "viva" acumulando obligaciones tributarias. |
-| [E5-FIN-59] | Invocación Sernac Financiero | Free | S | ⏳ Pendiente | Patricia recibe llamadas de cobranza 5 veces al día desde un call center que la insulta y la amenaza con su madre. |
-| [E5-EMOC-60] | Ruta Reinvención (re-empezar como MEF) | Free | S | ⏳ Pendiente | María quiere volver a emprender pero piensa "ya fracasé una vez, no me la creo de nuevo". MEF sería el primer paso seguro. |
+| [E5-LEGAL-52] | Asesor Ley 21.563 Reorganización Mipyme | Free | M | ❌ Excluir | María tiene $8M en deudas bancarias que no puede pagar. El banco la quiere embargar el auto. No sabe que la Ley 21.563 la protege 40 días. |
+| [E5-LEGAL-53] | **El "Torniquete" (suspensión SII asistida)** | Pro | M | ✅ Incluir | Carmen "cerró" el negocio hace 2 años. Sin avisar al SII. Acumuló $1.8M en multas F29 sin saberlo. La empresa sigue "viva". |
+| [E5-EMOC-54] | Botón de la Vergüenza (educación DICOM) | Free | S | ❌ Excluir | Patricia está en DICOM hace 4 años. Le ofrecen "borrar el DICOM por $50K". Es una estafa pero ella no lo sabe. |
+| [E5-LEGAL-55] | Derivación Quiebra Simplificada | Plus/Mkt | M | ❌ Excluir | Roxana arrastra deudas hace 5 años. No sabe que la liquidación simplificada le permitiría extinguir el saldo y volver a operar limpia. |
+| [E5-EMOC-56] | Diario Post-Mortem (lecciones del fracaso) | Free | S | ❌ Excluir | María cerró su panadería hace 6 meses. Llora todas las noches. No quiere ni hablar del tema con nadie. Duelo en silencio. |
+| [E5-LEGAL-57] | Renegociación 2da Categoría (honorarios) | Free | S | ❌ Excluir | Luisa emite boletas a honorarios por terapias. Está ahogada con cuotas vencidas. Cree que la quiebra "no aplica para ella". Sí aplica. |
+| [E5-LEGAL-58] | Disolución Sociedad RES | Pro | S | ✅ Incluir | Carmen y su ex-socio crearon SpA hace 3 años. Ya no se hablan. La SpA sigue "viva" acumulando obligaciones tributarias. |
+| [E5-FIN-59] | Invocación Sernac Financiero | Free | S | ❌ Excluir | Patricia recibe llamadas de cobranza 5 veces al día desde un call center que la insulta y la amenaza con su madre. |
+| [E5-EMOC-60] | Ruta Reinvención (re-empezar como MEF) | Free | S | ❌ Excluir | María quiere volver a emprender pero piensa "ya fracasé una vez, no me la creo de nuevo". MEF sería el primer paso seguro. |
 
 ---
 

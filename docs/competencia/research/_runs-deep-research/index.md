@@ -43,6 +43,7 @@ Cada archivo lleva:
 | 2026-04-29 | [Canales distribución NSE D-E](2026-04-29-05-canales-distribucion-confianza.md) | ~10 min | 74 fuentes (CEP, Cadem, Latinobarómetro, IPS, Hacienda, casos comparables Yape/DaviPlata/Gov.br/Sine) | ~USD 5 |
 | 2026-04-30 | [Entrepreneur Journey + Backlog Tu Plata Mipyme (60 features)](2026-04-30-06-entrepreneur-journey-backlog.md) | ~15 min | 58 fuentes (SII, RES, ChileAtiende, SUPERIR, ApiGateway, TuPana, Banigualdad + 17 casos LATAM: Stone, Conta Azul, Clip, Alegra, Sempli, Yape, Culqi, Bind ERP) | ~USD 5 |
 | 2026-04-30 | [Documentación oficial para los 19 dolores priorizados](2026-04-30-07-documentacion-oficial-dolores-incluidos.md) | ~12 min | 44 fuentes (SII dominante: derechos contribuyente, Pro-Pyme, F29, F4415 + BCN: Ley 21.713 / 20.659 / DL 3063 / Decreto 977 + ChileAtiende API + RSH + ASDIGITAL SEREMI) | ~USD 5 |
+| 2026-05-01 | [Documentación oficial para los 6 dolores complementarios](2026-05-01-08-documentacion-oficial-6-dolores-complementarios.md) | ~11 min | 77 fuentes (SII condonación multas + F2125/F2121 término giro + PreviRed manual + bases Sercotec/Corfo/FOSIS + reglamento FOGAPE BancoEstado + RES disolución) | ~USD 5 |
 
 ## Hallazgo operacional importante (29-abr-2026)
 
