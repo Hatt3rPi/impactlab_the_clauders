@@ -364,41 +364,41 @@ Ya existe la "Empresa". Ahora, el Estado exige un cumplimiento mensual estricto.
 | **Tributación de los Dueños** | Los socios pagan Impuesto Global Complementario (IGC) al retirar el dinero, usando el IDPC pagado como crédito. | Los dueños tributan en su IGC personal *directamente* por el resultado de la empresa en el mismo año. |
 | **Contabilidad** | Completa (o simplificada si se opta). | Estrictamente simplificada (ingresos menos egresos). |
 
-**4. Dolor: Operación Renta Anual (F22).** — ⏳ Pendiente
+**4. Dolor: Operación Renta Anual (F22).** — ❌ Excluir
 
 - **Cómo se resuelve hoy:** Asistente del SII en abril o contador estacional.
 - **Costo actual:** Pago honorario puntual a contadores ($50.000 - $150.000). Pago obligatorio de cotizaciones previsionales si hubo boletas de honorarios.
 - **Tiempo y fricción:** Pánico en el mes de abril por cruces de información (DJ).
 - **Tasa de fracaso/abandono:** Retención de devoluciones de impuestos por inconsistencias.
 - **Brecha IA:** Acompañamiento en el Asistente del SII y pre-alerta de montos a pagar o devolver.
-- **Decisión equipo (30-abr):** ⏳ Pendiente. La reunión se cortó por compromiso de Felipe a las 11:00. Revisar en próxima sesión.
+- **Decisión equipo (30-abr, complementaria):** ❌ Excluir. Operación anual compleja (DJ, balances). Excede el alcance "información, no ejecución" — derivar a contador del Marketplace en abril.
 
-**5. Dolor: Obtención de Certificados y Burocracia Comercial.** — ⏳ Pendiente
+**5. Dolor: Obtención de Certificados y Burocracia Comercial.** — ❌ Excluir
 
 - **Cómo se resuelve hoy:** Ingresar con RUT de empresa al SII para descargar la "Carpeta Tributaria" requerida por bancos.
 - **Costo actual:** Gratis en plataforma.
 - **Tiempo y fricción:** Olvido de credenciales (ClaveSII) o no saber qué opción específica descargar del menú del SII.
 - **Tasa de fracaso/abandono:** Demoras en la apertura de cuentas bancarias o postulación a licitaciones.
 - **Brecha IA:** Generación y entrega automática de la carpeta tributaria por WhatsApp al solicitarla mediante credenciales vinculadas.
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Pendiente revisión del equipo.
+- **Decisión equipo (30-abr, complementaria):** ❌ Excluir. Operación anual compleja (DJ, balances). Excede el alcance "información, no ejecución" — derivar a contador del Marketplace en abril.
 
-**6. Dolor: Conciliación Bancaria.** — ⏳ Pendiente
+**6. Dolor: Conciliación Bancaria.** — ❌ Excluir
 
 - **Cómo se resuelve hoy:** Cruzar manualmente la cartola de CuentaRUT Emprendedor con facturas o boletas.
 - **Costo actual:** Tiempo valioso consumido.
 - **Tiempo y fricción:** Horas comparando montos; problemas con depósitos agrupados (pasarelas).
 - **Tasa de fracaso/abandono:** Cuentas por cobrar no identificadas (dinero que se pierde).
 - **Brecha IA:** Subida de PDF de cartola al chat; la IA extrae datos (OCR/NLP) y detecta facturas impagas cruzando con registro del SII.
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Pendiente revisión del equipo.
+- **Decisión equipo (30-abr, complementaria):** ❌ Excluir. La descarga de Carpeta Tributaria requiere ClaveSII y trámite directo del usuario. Fuera del alcance.
 
-**7. Dolor: Gestión de Boletas de Honorarios recibidas (Retenciones).** — ⏳ Pendiente
+**7. Dolor: Gestión de Boletas de Honorarios recibidas (Retenciones).** — ❌ Excluir
 
 - **Cómo se resuelve hoy:** Pagar la retención mensual correspondiente en el F29.
 - **Costo actual:** Retención del porcentaje legal que incrementa anualmente (13.75% en 2024).
 - **Tiempo y fricción:** Confusión aritmética entre "sueldo bruto" y "sueldo líquido" al acordar un pago con un *freelancer*.
 - **Tasa de fracaso/abandono:** Pagos líquidos incorrectos y multas si la empresa olvida retener y pagar el F29.
 - **Brecha IA:** Calcular matemáticamente al instante "líquido vs bruto" en WhatsApp.
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Pendiente revisión del equipo.
+- **Decisión equipo (30-abr, complementaria):** ❌ Excluir. Requiere Open Banking que llega 07/2027. Sin acceso transaccional, el valor agregado es marginal.
 
 **8. Dolor: Primer choque con multas SII.** — ✅ Incluir
 
@@ -415,14 +415,14 @@ Ya existe la "Empresa". Ahora, el Estado exige un cumplimiento mensual estricto.
 
 El negocio es estable y formal, pero carece de capital e infraestructura para escalar. Las herramientas del Estado y la banca existen, pero los requisitos son crípticos.
 
-**1. Dolor: Acceso a Financiamiento y Microcréditos.** — ⏳ Pendiente
+**1. Dolor: Acceso a Financiamiento y Microcréditos.** — ❌ Excluir
 
 - **Cómo se resuelve hoy:** BancoEstado Microempresas, Banigualdad, Fondo Esperanza. Los bancos exigen 1-2 años de IVA continuo. Microfinanzas como Fondo Esperanza utilizan modelo de "crédito solidario" o Banca Comunal `[cite: 11, 12]`.
 - **Costo actual:** Fondo Esperanza reportó en 2024 una tasa de intervención/referencia ajustada del 5% `[cite: 12]`. Banigualdad opera con tasas en torno al 1.52% mensual `[cite: 13, 14]`.
 - **Tiempo y fricción:** Evaluaciones estrictas, necesidad de formar grupos (avales solidarios en Banigualdad son de 18 personas) `[cite: 13, 15]`. 
 - **Tasa de fracaso/abandono:** 44% de los emprendedores identifica el acceso a financiamiento como su principal barrera `[cite: 12]`. Alto rechazo en la banca tradicional.
 - **Brecha IA:** Diagnóstico de "Salud Crediticia" evaluando continuidad de F29 y derivación a la institución microfinanciera idónea según historial.
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Etapa pendiente de revisión por el equipo.
+- **Decisión equipo (30-abr, complementaria):** ❌ Excluir. Operación anual compleja (DJ, balances). Excede el alcance "información, no ejecución" — derivar a contador del Marketplace en abril.
 
 **2. Dolor: Postulación a Subsidios del Estado (Sercotec/Corfo).** — ✅ Incluir
 
@@ -442,14 +442,14 @@ El negocio es estable y formal, pero carece de capital e infraestructura para es
 - **Brecha IA:** Desmitificar que FOGAPE no es un regalo, es un aval. Explicar claramente el riesgo de mora.
 - **Decisión equipo (30-abr, complementaria):** ✅ Incluir. Desmitificador FOGAPE: la usuaria entiende antes de firmar que es un aval (no un regalo), que el banco igual evalúa riesgo, y que en caso de mora el cobro recae sobre ella. Evita el "pidieron y quebraron" por desinformación.
 
-**4. Dolor: Contratación del Primer Empleado y Ley Laboral.** — ⏳ Pendiente
+**4. Dolor: Contratación del Primer Empleado y Ley Laboral.** — ❌ Excluir
 
 - **Cómo se resuelve hoy:** Contratos "de palabra" o descarga de formatos genéricos inseguros de internet.
 - **Costo actual:** En caso de litigio, demandas laborales que pueden quebrar a una pyme.
 - **Tiempo y fricción:** Complejidad en la redacción de causales y registro obligatorio en el portal de la Dirección del Trabajo (DT).
 - **Tasa de fracaso/abandono:** Multas de la Inspección del Trabajo por no escrituración y registro a tiempo.
 - **Brecha IA:** Generador automático de un Contrato de Trabajo validado (Código del Trabajo) y tutorial para su registro en MiDT.
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Etapa pendiente de revisión por el equipo.
+- **Decisión equipo (30-abr, complementaria):** ❌ Excluir. La descarga de Carpeta Tributaria requiere ClaveSII y trámite directo del usuario. Fuera del alcance.
 
 **5. Dolor: Pago de Cotizaciones (PreviRed).** — ✅ Incluir + recordatorio
 
@@ -460,32 +460,32 @@ El negocio es estable y formal, pero carece de capital e infraestructura para es
 - **Brecha IA:** Recordatorio del día 10 y educación crítica: "Si no tienes liquidez este mes, debes DECLARAR sin pago en Previred para evitar la multa inmediata".
 - **Decisión equipo (30-abr, complementaria):** ✅ Incluir + recordatorio. Misma mecánica que F29 (E3-D1): push WhatsApp días previos al 10 + educación clave: "si no hay caja, declarar sin pago igual evita la multa inmediata por Ley Bustos". Componente de calendario agendable, no solo pop-up.
 
-**6. Dolor: Cumplimiento de Normativas Modernas (ej. Ley Karin).** — ⏳ Pendiente
+**6. Dolor: Cumplimiento de Normativas Modernas (ej. Ley Karin).** — ❌ Excluir
 
 - **Cómo se resuelve hoy:** Contratación de consultoras de RRHH costosas o ignorancia de la ley de acoso laboral.
 - **Costo actual:** Multas severas de la DT y daño reputacional.
 - **Tiempo y fricción:** Dificultad para generar protocolos legales de cero.
 - **Tasa de fracaso/abandono:** Incumplimiento generalizado en el segmento microempresas.
 - **Brecha IA:** Proveer el "Protocolo de Prevención" estándar simplificado por la DT para microempresas de menos de 10 trabajadores.
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Etapa pendiente de revisión por el equipo.
+- **Decisión equipo (30-abr, complementaria):** ❌ Excluir. Requiere Open Banking que llega 07/2027. Sin acceso transaccional, el valor agregado es marginal.
 
-**7. Dolor: Vender al Estado (Mercado Público / PymeÁgil).** — ⏳ Pendiente
+**7. Dolor: Vender al Estado (Mercado Público / PymeÁgil).** — ❌ Excluir
 
 - **Cómo se resuelve hoy:** Registro en ChileProveedores y postulación a licitaciones largas y complejas.
 - **Costo actual:** Inscripción y mantención en el registro de proveedores.
 - **Tiempo y fricción:** Burocracia inmensa; exigencia de boletas de garantía.
 - **Tasa de fracaso/abandono:** Desistimiento ante licitaciones complejas.
 - **Brecha IA:** Focalizar a la usuaria en "Compra Ágil" (compras menores a 30 UTM) donde el Estado compra rápido y directo.
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Etapa pendiente de revisión por el equipo.
+- **Decisión equipo (30-abr, complementaria):** ❌ Excluir. Casuística contable compleja. Cubierto parcialmente por E3-D3 (régimen tributario) + handoff contador.
 
-**8. Dolor: Expansión Digital (Pasarelas de pago y links).** — ⏳ Pendiente
+**8. Dolor: Expansión Digital (Pasarelas de pago y links).** — ❌ Excluir
 
 - **Cómo se resuelve hoy:** Adopción de Transbank, Mercado Pago, MACH, o Flow.
 - **Costo actual:** Comisiones por transacción (ej. 2.95% + IVA) variables.
 - **Tiempo y fricción:** Alta confusión matemática sobre el "costo real" de ofrecer pago con tarjeta al cliente.
 - **Tasa de fracaso/abandono:** Absorción de la comisión por la pyme, matando su escaso margen de ganancia.
 - **Brecha IA:** Calculador de pasarelas. "Si cobras 10.000 con Transbank recibes X, con Flow recibes Y. ¿Quieres que recalcule el precio de venta para que tú recibas tus 10.000 limpios?".
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Etapa pendiente de revisión por el equipo.
+- **Decisión equipo (30-abr, complementaria):** ❌ Excluir. Cubierto parcialmente por E4-D3 (FOGAPE). Recomendar Banigualdad/Fondo Esperanza es solo info — no diferencia.
 
 **Síntesis E4:** Crecer requiere capital (Sercotec/Bancos) y recursos humanos (DT/Previred). La IA se convierte en un Estratega: ayuda a levantar fondos traduciendo ideas a "lenguaje Sercotec" y blinda legalmente al negocio en sus primeras contrataciones.
 
@@ -493,32 +493,32 @@ El negocio es estable y formal, pero carece de capital e infraestructura para es
 
 El fracaso es parte del ciclo. Cuando las deudas ahogan o el modelo no funciona, el sistema suele castigar con estigma social y muerte comercial.
 
-**1. Dolor: Sobreendeudamiento impagable (Insolvencia).** — ⏳ Pendiente
+**1. Dolor: Sobreendeudamiento impagable (Insolvencia).** — ❌ Excluir
 
 - **Cómo se resuelve hoy:** Búsqueda de ayuda legal de urgencia. Aplicación de la Ley 21.563 (Reorganización y Liquidación) `[cite: 4, 16]`.
 - **Costo actual:** Costos jurídicos altos y angustia emocional.
 - **Tiempo y fricción:** Procedimientos judiciales largos e intimidantes.
 - **Tasa de fracaso/abandono:** Inacción hasta sufrir embargos judiciales de bienes físicos.
 - **Brecha IA:** Educar sobre el "Procedimiento Concursal de Reorganización Simplificada" que otorga protección financiera contra embargos `[cite: 16, 17]`.
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Etapa pendiente de revisión por el equipo.
+- **Decisión equipo (30-abr, complementaria):** ❌ Excluir. Generar contratos validados es alta responsabilidad legal (riesgo demanda tutela). Derivar a abogado del Marketplace.
 
-**2. Dolor: Liquidación Simplificada (Quiebra Mipyme).** — ⏳ Pendiente
+**2. Dolor: Liquidación Simplificada (Quiebra Mipyme).** — ❌ Excluir
 
 - **Cómo se resuelve hoy:** Cierre desordenado ("bajar la cortina"), arrastrando deudas personales perpetuas.
 - **Costo actual:** Pérdida patrimonial y exclusión bancaria indefinida.
 - **Tiempo y fricción:** Desconocimiento de que la ley permite limpiar deudas (Discharge) liquidando activos `[cite: 5]`.
 - **Tasa de fracaso/abandono:** Vida eterna en la clandestinidad financiera.
 - **Brecha IA:** Acompañamiento emocional y explicación de que la liquidación formal permite extinguir saldos insolutos para volver a empezar `[cite: 5, 17]`.
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Etapa pendiente de revisión por el equipo.
+- **Decisión equipo (30-abr, complementaria):** ❌ Excluir. PDFs genéricos no agregan valor — la implementación real requiere consultoría humana. Fuera del alcance.
 
-**3. Dolor: Profesionales a Honorarios ahogados en deudas.** — ⏳ Pendiente
+**3. Dolor: Profesionales a Honorarios ahogados en deudas.** — ❌ Excluir
 
 - **Cómo se resuelve hoy:** Desesperación o usura.
 - **Costo actual:** Inviabilidad financiera.
 - **Tiempo y fricción:** Confusión sobre si aplican como persona o empresa.
 - **Tasa de fracaso/abandono:** Caída en default prolongado.
 - **Brecha IA:** Explicar una innovación de la Ley 21.563: emisores de boletas de honorarios acceden a la *renegociación gratuita* ante la SUPERIR en vez de ir a juicio de quiebra `[cite: 4, 16]`.
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Etapa pendiente de revisión por el equipo.
+- **Decisión equipo (30-abr, complementaria):** ❌ Excluir. ChileProveedores tiene fricción burocrática alta + boletas de garantía. Segmento target rara vez llega ahí.
 
 **4. Dolor: Suspensión Temporal o Término de Giro SII.** — ✅ Incluir (trigger eliminar cuenta)
 
@@ -538,32 +538,32 @@ El fracaso es parte del ciclo. Cuando las deudas ahogan o el modelo no funciona,
 - **Brecha IA:** Flujo guiado para el cierre ordenado en Tu Empresa en Un Día.
 - **Decisión equipo (30-abr, complementaria):** ✅ Incluir. Flujo guiado en RES para disolver SpA/EIRL formalmente. Complementario al Aviso de Suspensión SII (E5-D4): la suspensión corta el sangrado tributario, la disolución cierra la persona jurídica. Ambos pueden activarse desde el mismo trigger "eliminar cuenta del producto".
 
-**6. Dolor: Venta de la empresa / Traspaso de acciones.** — ⏳ Pendiente
+**6. Dolor: Venta de la empresa / Traspaso de acciones.** — ❌ Excluir
 
 - **Cómo se resuelve hoy:** Acuerdos informales ("te paso la llave").
 - **Costo actual:** Abogados para la compraventa corporativa.
 - **Tiempo y fricción:** Riesgo de adquirir pasivos ocultos del dueño anterior.
 - **Tasa de fracaso/abandono:** Ventas fallidas o estafas en el traspaso.
 - **Brecha IA:** Orientar sobre el proceso formal de ceder acciones o derechos sociales vía Empresa en Un Día.
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Etapa pendiente de revisión por el equipo.
+- **Decisión equipo (30-abr, complementaria):** ❌ Excluir. Implementación técnica (no enseñanza). Recomendar Mercado Pago/Flow/MACH es comparativa estática — fuera del alcance.
 
-**7. Dolor: El estigma y bloqueo de DICOM.** — ⏳ Pendiente
+**7. Dolor: El estigma y bloqueo de DICOM.** — ❌ Excluir
 
 - **Cómo se resuelve hoy:** Caer en redes o mercado negro de "borrado de DICOM".
 - **Costo actual:** Estafas o exclusión crediticia total.
 - **Tiempo y fricción:** Aislamiento económico de hasta 5 años o más.
 - **Tasa de fracaso/abandono:** Muerte comercial de la persona natural detrás de la empresa.
 - **Brecha IA:** Explicar los plazos de prescripción reales y cómo la finalización de un proceso de la Ley 21.563 rehabilita financieramente `[cite: 4]`.
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Etapa pendiente de revisión por el equipo.
+- **Decisión equipo (30-abr, complementaria):** ❌ Excluir. Ley 21.563 Reorganización requiere abogado. Información estática insuficiente — derivar a SUPERIR/abogado del Marketplace.
 
-**8. Dolor: Reinvención post-fracaso (El Pivot).** — ⏳ Pendiente
+**8. Dolor: Reinvención post-fracaso (El Pivot).** — ❌ Excluir
 
 - **Cómo se resuelve hoy:** Retorno al trabajo asalariado o informalidad extrema.
 - **Costo actual:** Pérdida del talento emprendedor para el país.
 - **Tiempo y fricción:** Duelo emocional severo.
 - **Tasa de fracaso/abandono:** Fin de la vida emprendedora.
 - **Brecha IA:** Coaching de resiliencia; extracción de lecciones ("Pivot") y fomento de volver a intentar con estructuras de bajo riesgo (MEF).
-- **Decisión equipo (30-abr):** ⏳ Pendiente. Etapa pendiente de revisión por el equipo.
+- **Decisión equipo (30-abr, complementaria):** ❌ Excluir. Procedimiento judicial complejo. Mismo razonamiento que D1 — derivar a abogado del Marketplace.
 
 ---
 
