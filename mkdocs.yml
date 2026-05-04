@@ -127,6 +127,9 @@ nav:
           - tu-plata-mipyme/especificaciones/index.md
           - "Arquitectura": tu-plata-mipyme/especificaciones/arquitectura.md
           - "Prototipo": tu-plata-mipyme/especificaciones/prototipo.md
+          - "Diseño":
+              - tu-plata-mipyme/especificaciones/diseno/index.md
+              - "Design System (resumen)": tu-plata-mipyme/especificaciones/diseno/design-system.md
           - "Stack tecnológico":
               - tu-plata-mipyme/especificaciones/stack/index.md
               - "Claude API": tu-plata-mipyme/especificaciones/stack/claude-api.md

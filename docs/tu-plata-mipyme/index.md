@@ -73,13 +73,22 @@ Detalle por etapa: ver [backlog.md](backlog.md).
 
 ---
 
+## Decisiones pendientes
+
+!!! warning ":material-help-circle: Naming del producto"
+    El nombre actual del documento del hub es **"Tu Plata Mipyme"**, pero el equipo ya lo descartó como nombre final. Anahi propuso **"Impulsa"** en su [Design System v0.1](especificaciones/diseno/index.md) (3-may-2026). El nombre final es **decisión pendiente del equipo** antes del pitch del 7-may. Mientras tanto, el código del wiki sigue refiriéndose al producto por su nombre de trabajo `tu-plata-mipyme/` para evitar romper rutas; el rebranding integral se hace tras la decisión.
+
+!!! warning ":material-help-circle: Modelo de negocio (freemium vs gratuidad total)"
+    Pendiente de confirmar con la organización del lab si el modelo freemium (Free / Pro / Plus / Marketplace) es admisible o si exigen gratuidad total. Plan de contingencia: variante "Free indefinido financiado por SERCOTEC/sponsors" del pitch.
+
 ## Próximos hitos
 
-- Completar revisión de etapas E3 (D4-D8), E4 y E5 con el equipo (32 features pendientes).
-- Confirmar modelo de negocio con la organización del lab.
-- Definir paleta visual (Anahi).
-- Spike técnico del supervisor multi-agente.
-- Demo script para el lab (6-7 mayo 2026).
+- ✅ ~~Completar revisión de etapas E3-E5~~ (cerrado 30-abr; alcance V1 con 25 ✅ Incluir, 22 ❌ Excluir).
+- ✅ ~~Definir paleta visual~~ (Anahi entregó [Design System + prototipo](especificaciones/diseno/index.md) el 3-may).
+- ⏳ **Resolver naming definitivo del producto** (decisión pendiente arriba).
+- ⏳ Confirmar modelo de negocio con la organización del lab.
+- ⏳ Spike técnico del supervisor multi-agente en [`impactlab_pre_journeyemprendedor`](https://github.com/Hatt3rPi/impactlab_pre_journeyemprendedor) (repo de código separado).
+- ⏳ Demo script para el lab (6-7 mayo 2026).
 
 ## Referencias
 
