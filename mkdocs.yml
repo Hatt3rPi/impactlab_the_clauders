@@ -145,6 +145,9 @@ nav:
               - "0002 — Línea temática": tu-plata-mipyme/especificaciones/adrs/0002-linea-tematica-inclusion-financiera.md
               - "0003 — Plataforma web mobile-first": tu-plata-mipyme/especificaciones/adrs/0003-plataforma-web-mobile-first.md
               - "0004 — WhatsApp-first / freemium / multi-agente": tu-plata-mipyme/especificaciones/adrs/0004-whatsapp-first-freemium-multiagente.md
+          - "Manuales":
+              - tu-plata-mipyme/especificaciones/manuales/index.md
+              - "Extender gamificación": tu-plata-mipyme/especificaciones/manuales/extender-gamificacion.md
 
   - "🏆 Competencia":
       - competencia/index.md
