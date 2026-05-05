@@ -257,3 +257,172 @@ Los 4 riesgos críticos del [PRD §7](PRD.md#7-riesgos) que pueden hundir el pit
 | Versión | Fecha | Cambios |
 |---|---|---|
 | 1.0 | 2026-04-30 | Versión inicial — derivada del PRD v1.0 aplicando lógica de business case (problema cuantificado → solución como capacidad → impacto en 3 escenarios → recomendación al jurado) |
+| 1.1 | 2026-05-05 | Agrega sección Contra-PITCH — 10 objeciones anticipadas con respuesta para preparación del ensayo del 5-may y pitch del 7-may |
+
+---
+
+## Contra-PITCH — Las 10 objeciones que el jurado puede lanzar (y cómo responderlas)
+
+!!! warning ":material-gavel: Modo jurado activado"
+    Esta sección fue construida adoptando el rol de jurado exigente. Cada objeción representa una línea de ataque realista frente a un proyecto de inclusión financiera con IA en un hackathon. El objetivo es que el equipo **las ensaye en voz alta**, no solo las lea.
+
+> **Cómo usarlo.** Cada objeción viene con la respuesta corta (≤30 segundos en voz alta) y la respuesta larga (para preguntas de seguimiento). En el pitch de 5 minutos solo activan la respuesta corta. El jurado que profundiza recibe la larga.
+
+---
+
+### O-01 — "La IA inventa. ¿Cómo garantizan que el copiloto no le dé consejos fiscales incorrectos a alguien que no puede permitirse un error?"
+
+**Nivel de amenaza:** 🔴 Crítico — si no se responde bien, destruye la propuesta entera.
+
+**Respuesta corta (ensayar en ≤25 seg):**
+
+> "Diseñamos exactamente para eso. Cada respuesta de naturaleza normativa lleva link verificable a SII, CORFO o SERCOTEC — si el agente no puede citar la fuente oficial, no responde. El copiloto orienta y deriva; no reemplaza al contador ni al abogado. La regla interna es: 'no te calculo, te enseño lo que debes saber'."
+
+**Respuesta larga (si preguntan más):**
+
+El riesgo de alucinación legal es el R-02 del PRD, catalogado como probabilidad media e impacto crítico. La mitigación está cableada desde Fase 0: todo agente tiene una tool de verificación que ejecuta antes de cualquier respuesta tributaria o legal. Si la tool no retorna una cita activa del corpus regulatorio chileno (MCP propio con caching >80%), el agente responde con una variante de "esto requiere asesoría de un contador habilitado" y ofrece derivar al marketplace de asesores humanos. El sistema jamás responde con una cifra fiscal sin atribución verificable. Adicionalmente, cada respuesta incluye un disclaimer visible de que el copiloto es orientador, no asesor certificado — cuestión que protege tanto al usuario como al equipo desde el punto de vista de responsabilidad.
+
+**Lo que NO decir:** "La IA de Anthropic es muy buena y rara vez se equivoca." Eso no convence a ningún jurado.
+
+---
+
+### O-02 — "El segmento NSE D-E no confía en bots. ¿Cómo van a lograr adopción real con personas que ya desconfían del Estado y de las apps?"
+
+**Nivel de amenaza:** 🔴 Crítico — la adopción es el supuesto más frágil de todo el modelo.
+
+**Respuesta corta (ensayar en ≤25 seg):**
+
+> "Por eso elegimos WhatsApp. No les pedimos que aprendan una app nueva ni que 'visiten un sitio web'. El copiloto llega donde ya están — en el mismo hilo donde hablan con su familia. El 95,3% de Chile tiene mobile. El segmento ya usa WhatsApp para coordinar ventas, pedidos y cobranza. Nosotros ponemos el copiloto en ese flujo, no les pedimos que cambien el suyo."
+
+**Respuesta larga (si preguntan más):**
+
+La confianza se construye por diseño de canal, no por branding. Tres mecanismos concretos: (1) la primera interacción del copiloto no pide datos personales — solo pregunta en qué puede ayudar; (2) cada respuesta cita la fuente oficial, lo que permite al usuario verificar por sí mismo en el sitio del SII o SERCOTEC; (3) el sistema incluye handoff a asesor humano real (marketplace) cuando el caso lo supera — el copiloto nunca pretende ser la respuesta final. La confianza en Fase 1 se ancla vía Fondo Esperanza y Hogar de Cristo, organizaciones que ya tienen relación de confianza establecida con el segmento. Ellos son el canal de reclutamiento, no el equipo tecnológico.
+
+---
+
+### O-03 — "Las personas tentativas del equipo dicen 'validada: false'. ¿Tienen evidencia real de usuarios o esto es todo hipotético?"
+
+**Nivel de amenaza:** 🟠 Alto — toca la base del Design Thinking. Un jurado que leyó el repo lo va a encontrar.
+
+**Respuesta corta (ensayar en ≤25 seg):**
+
+> "El research primario de entrevistas va a Fase 1. Para el lab partimos de seis deep research runs sobre datos INE, research del SII, bases CORFO/SERCOTEC y una fuente directa: la cuñada de Felipe, que vende tortas en Quilicura y pierde ~$200.000 mensuales por no poder facturar a B2B. Ese es el caso real de la demo."
+
+**Respuesta larga (si preguntan más):**
+
+El equipo tomó la decisión explícita de documentar la incertidumbre antes que fingir validación. Las personas están marcadas como tentativas porque son el output de 6 deep research runs con fuentes secundarias (INE EME8, research SERCOTEC, data SII), no de entrevistas propias. Eso es una limitación real. La mitigación: Fase 1 incluye reclutamiento de 50-100 emprendedoras reales vía Fondo Esperanza y Hogar de Cristo, con protocolo de entrevistas estructuradas antes de las primeras 4 semanas de piloto. Los dolores están cuantificados en 48 pain points del run #06, todos con fuente citada. No son inventados — son underresearched.
+
+---
+
+### O-04 — "¿Por qué WhatsApp y no una app propia? Meta puede cortarles el acceso mañana."
+
+**Nivel de amenaza:** 🟡 Medio — es una objeción técnica válida pero que tiene respuesta clara.
+
+**Respuesta corta (ensayar en ≤20 seg):**
+
+> "Riesgo real, decisión consciente. El canal importa más que la infraestructura en esta etapa. La web es nuestro fallback completo — misma experiencia conversacional, mismos agentes, sin dependencia de Meta. Pero para adopción inicial, el canal donde el segmento ya vive vale más que la propiedad técnica del canal."
+
+**Respuesta larga (si preguntan más):**
+
+Esta decisión está documentada en el ADR-0004. La dependencia de Twilio/WhatsApp Business API es un riesgo catalogado y aceptado deliberadamente. Los contrapesos: (1) la web complementaria tiene feature parity completa — no es un degradado; (2) la arquitectura de agentes es agnóstica al canal de entrada; cambiar de WhatsApp a Telegram o a app propia requiere modificar solo la capa de entrada, no los agentes ni el expediente del usuario; (3) el costo de adopción de una app propia en NSE D-E supera con creces el riesgo de dependencia de Meta en Fase 0-1. En Fase 3, con base de usuarios establecida, la decisión de canal se revisa.
+
+---
+
+### O-05 — "El modelo freemium no funciona en este segmento. Nadie va a pagar $4.990 al mes si ya no tienen plata."
+
+**Nivel de amenaza:** 🟠 Alto — toca la sostenibilidad del modelo de negocio.
+
+**Respuesta corta (ensayar en ≤25 seg):**
+
+> "El cobro no es mensual arbitrario — es contextual. El trigger de Pro aparece en el momento en que el copiloto muestra que el usuario califica a Pro-Pyme Transparente y pagaría $0 de primera categoría en vez del 27% que paga hoy. $4.990 al mes contra ahorro tributario real es la ecuación. Nadie paga por acceder — pagan en el momento en que el valor es evidente y cuantificado."
+
+**Respuesta larga (si preguntan más):**
+
+El diseño del freemium está construido sobre el concepto de Willingness to Pay contextual. El Free cubre las etapas 1 y 2 del journey (sueño e informal activo) indefinidamente — no hay paywall en la asesoría básica. El Pro se activa solo cuando el usuario alcanza un punto de inflexión financiero: formalización que genera ahorro tributario o acceso a facturación B2B (+$200.000/mes en el caso arquetípico). El Plus ($15.000-30.000 por postulación) se activa solo cuando el usuario tiene una postulación concreta a CORFO/SERCOTEC — donde el monto del subsidio en juego es 10x el precio del servicio. El marketplace de asesores genera comisión (10-15%) sin costo para el usuario. El modelo no reproduce la barrera económica — la remonta.
+
+---
+
+### O-06 — "¿En qué se diferencian de ChatGPT con un prompt sobre el SII? Cualquiera puede hacer eso en un fin de semana."
+
+**Nivel de amenaza:** 🟠 Alto — es la objeción de commoditización. Directa al corazón del diferenciador.
+
+**Respuesta corta (ensayar en ≤25 seg):**
+
+> "ChatGPT no tiene el corpus regulatorio chileno cacheado, no tiene expediente persistente del emprendedor, no hace handoffs entre especialistas por etapa del journey, y no tiene el trigger freemium cableado a eventos de valor real. El gap entre 'prompt sobre el SII' y 'copiloto que lleva a María desde su primera venta de tortas hasta una carta al banco con 6 meses de historial' es exactamente nuestro producto."
+
+**Respuesta larga (si preguntan más):**
+
+Cuatro capas de diferenciación técnica y de producto que un prompt genérico no tiene: (1) **MCP propio sobre corpus regulatorio chileno**: no es RAG ad hoc — es un servidor de contexto con caching >80% que permite citar norma vigente verificable, no "según información que tengo"; (2) **Expediente persistente en Postgres**: la conversación tiene memoria transaccional del emprendedor — ventas, gastos, etapa del journey, documentos generados. Un prompt de ChatGPT no recuerda que María vendió $30.000 el martes pasado; (3) **Arquitectura multi-agente con handoffs estructurados**: 4 subagentes con system prompts <2k tokens especializados por etapa, coordinados por supervisor Sonnet 4.6. El cambio de `acompanante-informal` a `gestor-formalizacion` lleva un JSON con el contexto completo del caso — no es un nuevo chat; (4) **Modelo de negocio con triggers contextuales**: el sistema sabe cuándo ofrecer el upgrade porque tiene el historial financiero del usuario. ChatGPT no vende nada.
+
+---
+
+### O-07 — "¿Qué pasa cuando la ley cambia? ¿Cómo mantienen actualizado el corpus regulatorio?"
+
+**Nivel de amenaza:** 🟡 Medio — es una objeción operativa válida y frecuente en proyectos LegalTech.
+
+**Respuesta corta (ensayar en ≤20 seg):**
+
+> "El MCP sobre corpus regulatorio es actualizable quirúrgicamente — no requiere reentrenar ningún modelo. Cuando el SII actualiza una circular o SERCOTEC publica nuevas bases, se actualiza el documento en el MCP y el caching se invalida solo para esa sección. Es un pipeline de mantenimiento documental, no un ciclo de ML."
+
+**Respuesta larga (si preguntan más):**
+
+La arquitectura MCP permite apuntar a fuentes vivas. En Fase 1, el roadmap incluye monitoreo automatizado de cambios en el Diario Oficial, circulares SII y bases CORFO/SERCOTEC. Cuando hay cambio normativo relevante, el equipo actualiza el documento en el corpus y el sistema lo refleja sin downtime. El riesgo de corpus desactualizado es real pero manejable — es mucho menos grave que el de una app que tiene la norma hardcodeada en el código. Y la regla "sin cita verificable no responde" actúa como red de seguridad: si la norma cambió y el MCP no se actualizó, el agente no inventa la nueva versión — deriva al usuario a la fuente oficial.
+
+---
+
+### O-08 — "¿Quién responde si alguien sigue el consejo del bot, lo aplica mal y tiene un problema legal o tributario?"
+
+**Nivel de amenaza:** 🔴 Crítico — responsabilidad legal en servicios de información financiera es una pregunta de jurado sofisticado.
+
+**Respuesta corta (ensayar en ≤25 seg):**
+
+> "El copiloto es un orientador, no un asesor certificado — eso está explícito en cada interacción y en los términos de uso desde Fase 0. Es equivalente al rol del ejecutivo de orientación del SII: te dice qué formulario llenar, no firma tu declaración. La responsabilidad de la decisión final siempre es del usuario o del asesor humano al que derivamos."
+
+**Respuesta larga (si preguntan más):**
+
+Tres capas de protección: (1) **Disclaimer visible en cada respuesta normativa**: el copiloto antepone que es orientador y que para decisiones con consecuencias relevantes se debe consultar a un contador o abogado habilitado; (2) **Derivación activa al marketplace de asesores humanos**: cuando el caso supera el alcance del copiloto, el sistema no solo dice "consulte un experto" — ofrece conectar al usuario con un asesor real del marketplace (Fase 2); (3) **Términos de uso con exención de responsabilidad profesional desde Fase 0**: el equipo asesora con abogado en Fase 1 para ajustar el marco legal. El modelo es análogo a apps de salud (tipo Ada o Symptomate) que dan orientación sin actuar como médicos — categoría regulatoria conocida y operable.
+
+---
+
+### O-09 — "Tienen una demo de 90 segundos. ¿Eso es el producto real o un Wizard of Oz? ¿Qué tan construido está realmente?"
+
+**Nivel de amenaza:** 🟠 Alto — en un hackathon de 48h, el gap entre demo y producto real es enorme y los jurados lo saben.
+
+**Respuesta corta (ensayar en ≤25 seg):**
+
+> "La Fase 0 tiene alcance declarado: un agente operativo — `acompanante-informal` — con dos tools reales, memoria persistente en Postgres y handoff funcional a Web. No es un prototipo en papel ni un flujo hardcodeado. Los otros tres agentes están diseñados en el PRD y en Fase 1. Lo que ven en la demo es el producto real recortado con honestidad."
+
+**Respuesta larga (si preguntan más):**
+
+El PRD documenta explícitamente la decisión de recorte en el R-10: los 4 agentes no cabían en 48 horas con la calidad requerida, por lo tanto Fase 0 entrega 1 agente que funciona end-to-end. El flujo dorado de la demo — de "hola, vendo tortas" a "aquí está tu carta al banco" — está construido sobre los RF-04, RF-06, RF-07 y RF-08 del PRD como requerimientos must have de Fase 0. Hay fallback offline pre-grabado para los 2 casos principales (R-07, owner: Felipe) en caso de falla de API durante el pitch. El repo público tiene el código real, los ADRs y el PRD — no hay nada que ocultar sobre el alcance.
+
+---
+
+### O-10 — "Hay 200 equipos en este lab. ¿Por qué este proyecto merece financiamiento más que el resto?"
+
+**Nivel de amenaza:** 🔴 Crítico — es la pregunta de cierre. El equipo tiene que cerrar con convicción.
+
+**Respuesta corta (ensayar en ≤30 seg):**
+
+> "Porque no estamos resolviendo un problema que alguien imaginó — estamos resolviendo un problema que tiene 1,08 millones de personas detrás, con métrica del INE, y lo estamos resolviendo en el canal correcto, con el modelo económico correcto, con stack agentic real y con un roadmap que tiene partners identificados antes del pitch. Hay demos más vistosas aquí. No hay muchas con este nivel de trazabilidad de problema a impacto."
+
+**Respuesta larga (si preguntan más):**
+
+Cinco vectores de diferenciación frente al campo: (1) **Profundidad del research**: 6 deep research runs, 48 dolores cuantificados con fuente, PRD + Plan + Backlog + ADRs publicados antes del lab. El equipo llegó al lab con el trabajo hecho, no lo inventó en 48 horas; (2) **Canal**: la mayoría de los equipos construirá web apps. Este equipo construye en WhatsApp — el único canal donde el segmento objetivo ya opera sin fricción; (3) **Arquitectura agentic real**: multi-agente con Agent SDK, no un chatbot con system prompt monolítico. Eso es lo que el lab premia en el criterio Claude/Agentic (25% del score); (4) **Modelo de negocio funcionante**: no es "gratis y luego veremos". El freemium con triggers contextuales tiene lógica de monetización que no reproduce la barrera económica del problema original; (5) **Impacto de tercera dimensión**: usuario + Estado (capital público que llega) + sistema fintech (datos de comportamiento de un segmento invisible para la banca). Tres beneficiarios, no uno.
+
+---
+
+### Tabla resumen para ensayo rápido
+
+| # | Objeción | Nivel | Respuesta en una línea |
+|---|---|---|---|
+| O-01 | Alucinaciones legales | 🔴 | "Sin cita verificable al SII/CORFO, no responde. La regla está cableada." |
+| O-02 | El segmento no confía en bots | 🔴 | "WhatsApp no es un bot nuevo — es donde ya viven. No cambiamos su canal." |
+| O-03 | Personas no validadas | 🟠 | "48 dolores cuantificados con fuente. Entrevistas reales van a Fase 1 con Fondo Esperanza." |
+| O-04 | Dependencia de Meta/WhatsApp | 🟡 | "Riesgo consciente y documentado. Web tiene feature parity completa como fallback." |
+| O-05 | Nadie va a pagar $4.990 | 🟠 | "El cobro es contextual, no mensual arbitrario. Aparece cuando el ahorro tributario es visible." |
+| O-06 | Igual a ChatGPT con un prompt | 🟠 | "MCP + expediente persistente + multi-agente + triggers freemium. Eso no es un prompt." |
+| O-07 | Corpus desactualizado cuando cambia la ley | 🟡 | "MCP es actualizable quirúrgicamente. Sin cita válida, el agente deriva — no inventa." |
+| O-08 | Responsabilidad legal si el consejo falla | 🔴 | "Orientador, no asesor. Disclaimer en cada respuesta. Marketplace de asesores humanos para casos complejos." |
+| O-09 | Demo vs. producto real | 🟠 | "Un agente real, dos tools reales, memoria persistente. Alcance declarado en el PRD, no escondido." |
+| O-10 | ¿Por qué ustedes y no los otros 199? | 🔴 | "Research, canal, arquitectura, modelo de negocio y roadmap con partners. Todo documentado antes del lab." |

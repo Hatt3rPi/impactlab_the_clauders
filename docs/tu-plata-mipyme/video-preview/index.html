@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tu Plata Mipyme — Video Pitch Preview</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0a0a0a;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  /* ── STAGE ── */
+  #stage {
+    width: 960px;
+    height: 540px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px #222, 0 24px 64px rgba(0,0,0,.8);
+    background: #000;
+  }
+
+  /* ── SCENES ── */
+  .scene {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    padding: 48px;
+    text-align: center;
+  }
+  .scene.active { opacity: 1; }
+
+  /* BG VARIANTS */
+  .bg-black   { background: #000; }
+  .bg-dark    { background: #0f1117; }
+  .bg-warm    { background: #1a1208; }
+  .bg-dark-warm { background: #111008; }
+  .bg-brand   { background: #082a1a; }
+  .bg-black-green { background: #05100a; }
+
+  /* ── SCENE 1: HOOK ── */
+  #counter {
+    font-size: 96px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    color: #fff;
+    font-variant-numeric: tabular-nums;
+  }
+  #counter-label {
+    font-size: 18px;
+    color: #666;
+    margin-top: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  #source-note {
+    position: absolute;
+    bottom: 32px;
+    font-size: 12px;
+    color: #444;
+    letter-spacing: 1px;
+  }
+
+  /* ── SCENE 2: PROBLEMA ── */
+  .cards-row {
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+  }
+  .stat-card {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 28px 24px;
+    flex: 1;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    text-align: center;
+  }
+  .stat-card.visible { opacity: 1; transform: translateY(0); }
+  .stat-card .big { font-size: 48px; font-weight: 800; color: #f97316; line-height: 1; }
+  .stat-card .desc { font-size: 13px; color: #888; margin-top: 10px; line-height: 1.5; }
+
+  /* ── SCENE 3: CAROLINA ── */
+  .persona-layout {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    width: 100%;
+  }
+  .avatar-placeholder {
+    width: 180px;
+    height: 220px;
+    border-radius: 120px 120px 80px 80px;
+    background: linear-gradient(160deg, #d4a574 0%, #c4855a 100%);
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .avatar-placeholder::after {
+    content: '👩‍💼';
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+  }
+  .persona-info { text-align: left; flex: 1; }
+  .persona-name { font-size: 32px; font-weight: 700; margin-bottom: 4px; }
+  .persona-sub { font-size: 14px; color: #f97316; margin-bottom: 16px; }
+  .persona-facts { font-size: 15px; color: #aaa; line-height: 2; }
+  .persona-quote {
+    margin-top: 20px;
+    font-size: 17px;
+    font-style: italic;
+    color: #f5e6c8;
+    border-left: 3px solid #f97316;
+    padding-left: 14px;
+    line-height: 1.5;
+  }
+  .whatsapp-mock {
+    width: 200px;
+    background: #111;
+    border-radius: 16px;
+    border: 1px solid #2a2a2a;
+    padding: 16px 12px;
+    flex-shrink: 0;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.6s ease 0.8s;
+  }
+  .whatsapp-mock.visible { opacity: 1; transform: translateX(0); }
+  .wa-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+  .wa-dot { width: 28px; height: 28px; border-radius: 50%; background: #25d366; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+  .wa-name { font-size: 11px; font-weight: 600; }
+  .wa-msg { background: #1f2937; border-radius: 8px 8px 8px 2px; padding: 8px 10px; font-size: 10px; color: #ccc; line-height: 1.4; }
+  .wa-cursor { display: inline-block; width: 1px; height: 12px; background: #25d366; animation: blink 1s infinite; }
+  @keyframes blink { 0%,100% { opacity:1 } 50% { opacity:0 } }
+
+  /* ── SCENE 4: SOLUCIÓN ── */
+  .demo-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .chat-window {
+    flex: 1;
+    background: #111;
+    border-radius: 16px;
+    border: 1px solid #2a2a2a;
+    padding: 16px;
+    min-height: 320px;
+  }
+  .chat-header {
+    display: flex; align-items: center; gap: 10px;
+    border-bottom: 1px solid #222; padding-bottom: 12px; margin-bottom: 12px;
+  }
+  .chat-avatar { width: 36px; height: 36px; border-radius: 50%; background: #25d366; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+  .chat-title { font-size: 13px; font-weight: 600; }
+  .chat-sub { font-size: 10px; color: #25d366; }
+  .chat-messages { display: flex; flex-direction: column; gap: 10px; }
+  .msg-user { background: #054640; border-radius: 12px 12px 2px 12px; padding: 8px 12px; font-size: 12px; align-self: flex-end; max-width: 80%; opacity: 0; transition: opacity 0.4s ease; }
+  .msg-bot  { background: #1f2937; border-radius: 12px 12px 12px 2px; padding: 10px 12px; font-size: 12px; align-self: flex-start; max-width: 90%; line-height: 1.5; opacity: 0; transition: opacity 0.4s ease; }
+  .msg-user.show, .msg-bot.show { opacity: 1; }
+  .msg-link { color: #25d366; font-size: 10px; display: block; margin-top: 4px; }
+  .badge-verified {
+    background: #0a2a1a;
+    border: 1px solid #25d366;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 12px;
+    color: #25d366;
+    width: 200px;
+    flex-shrink: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .badge-verified.show { opacity: 1; }
+  .badge-icon { font-size: 24px; margin-bottom: 8px; }
+  .badge-title { font-weight: 700; margin-bottom: 4px; }
+  .badge-sub { color: #aaa; font-size: 11px; line-height: 1.4; }
+
+  /* ── SCENE 5: DIFERENCIADORES ── */
+  .arch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+  }
+  .arch-title { font-size: 13px; color: #666; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
+  .arch-supervisor {
+    background: #1a2a3a;
+    border: 2px solid #3b82f6;
+    border-radius: 10px;
+    padding: 12px 32px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #93c5fd;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .arch-arrow { color: #3b82f6; font-size: 20px; opacity: 0; transition: opacity 0.5s ease 0.4s; }
+  .arch-agents {
+    display: flex;
+    gap: 12px;
+    opacity: 0;
+    transition: opacity 0.5s ease 0.8s;
+  }
+  .agent-card {
+    background: #0f1117;
+    border: 1px solid #2a3a4a;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 11px;
+    text-align: center;
+    color: #64748b;
+  }
+  .agent-card .agent-name { font-weight: 600; color: #94a3b8; margin-bottom: 4px; font-size: 10px; }
+  .agent-card .agent-etapa { color: #f97316; font-size: 9px; }
+  .arch-badge {
+    background: #0a1a0a;
+    border: 1px solid #22c55e;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-size: 12px;
+    color: #22c55e;
+    opacity: 0;
+    transition: opacity 0.5s ease 1.2s;
+  }
+  .arch-supervisor.show, .arch-arrow.show, .arch-agents.show, .arch-badge.show { opacity: 1; }
+
+  .diff-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin-top: 16px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .diff-table.show { opacity: 1; }
+  .diff-table th { padding: 8px 12px; text-align: left; color: #666; border-bottom: 1px solid #1a1a1a; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; }
+  .diff-table td { padding: 8px 12px; border-bottom: 1px solid #111; }
+  .diff-table .ours { color: #22c55e; font-weight: 600; }
+  .diff-table .theirs { color: #666; }
+
+  /* ── SCENE 6: STACK ── */
+  .stack-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    width: 100%;
+    max-width: 640px;
+  }
+  .stack-card {
+    background: #0f1a0f;
+    border: 1px solid #1a3a1a;
+    border-radius: 10px;
+    padding: 16px 20px;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  .stack-card.show { opacity: 1; transform: translateY(0); }
+  .stack-card .sc-label { font-size: 10px; color: #22c55e; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
+  .stack-card .sc-name { font-size: 16px; font-weight: 700; margin-bottom: 2px; }
+  .stack-card .sc-role { font-size: 11px; color: #666; }
+  .stack-metrics {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .stack-metrics.show { opacity: 1; }
+  .metric { text-align: center; }
+  .metric .mval { font-size: 22px; font-weight: 800; color: #22c55e; }
+  .metric .mlabel { font-size: 10px; color: #666; margin-top: 2px; }
+
+  /* ── SCENE 7: IMPACTO ── */
+  .impact-layout { display: flex; gap: 40px; align-items: center; width: 100%; }
+  .chart-area {
+    flex: 1;
+    height: 220px;
+    position: relative;
+  }
+  .chart-svg { width: 100%; height: 100%; }
+  .kpi-list { display: flex; flex-direction: column; gap: 16px; width: 240px; }
+  .kpi-item {
+    background: #111;
+    border-radius: 10px;
+    padding: 14px 16px;
+    border-left: 3px solid #f97316;
+    opacity: 0;
+    transform: translateX(16px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  .kpi-item.show { opacity: 1; transform: translateX(0); }
+  .kpi-item .kval { font-size: 20px; font-weight: 800; color: #f97316; }
+  .kpi-item .kdesc { font-size: 11px; color: #888; margin-top: 2px; line-height: 1.4; }
+
+  /* ── SCENE 8: CIERRE ── */
+  #cierre-logo {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  #cierre-logo .verde { color: #22c55e; }
+  #cierre-tagline {
+    font-size: 14px;
+    color: #555;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    opacity: 0;
+    transition: opacity 1s ease 0.6s;
+  }
+  #cierre-quote {
+    font-size: 20px;
+    font-style: italic;
+    color: #ddd;
+    max-width: 520px;
+    line-height: 1.6;
+    opacity: 0;
+    transition: opacity 1s ease 1.2s;
+  }
+  #cierre-author {
+    font-size: 13px;
+    color: #555;
+    margin-top: 12px;
+    opacity: 0;
+    transition: opacity 1s ease 1.8s;
+  }
+  #cierre-logo.show, #cierre-tagline.show, #cierre-quote.show, #cierre-author.show { opacity: 1; }
+
+  /* ── NARRATION BAR ── */
+  #narration-bar {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    padding: 32px 32px 20px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.5;
+    min-height: 80px;
+    transition: opacity 0.3s ease;
+  }
+  #narration-text { font-style: italic; }
+
+  /* ── PROGRESS BAR ── */
+  #progress-track {
+    width: 960px;
+    height: 3px;
+    background: #1a1a1a;
+    margin-top: 12px;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  #progress-fill {
+    height: 100%;
+    background: #22c55e;
+    width: 0%;
+    transition: width 0.5s linear;
+  }
+
+  /* ── CONTROLS ── */
+  #controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+    width: 960px;
+  }
+  .ctrl-btn {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .ctrl-btn:hover { background: #2a2a2a; }
+  .ctrl-btn:disabled { opacity: 0.3; cursor: default; }
+  #scene-info {
+    font-size: 12px;
+    color: #555;
+    flex: 1;
+    text-align: center;
+  }
+  #time-display {
+    font-size: 12px;
+    color: #444;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ── SCENE INDICATOR ── */
+  #scene-dots {
+    display: flex;
+    gap: 6px;
+    margin-top: 12px;
+  }
+  .dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: #2a2a2a;
+    transition: background 0.3s ease;
+  }
+  .dot.active { background: #22c55e; }
+</style>
+</head>
+<body>
+
+<div id="stage">
+
+  <!-- ESCENA 1: HOOK -->
+  <div class="scene bg-black active" id="s1">
+    <div id="counter">0</div>
+    <div id="counter-label">microemprendedores informales en Chile</div>
+    <div id="source-note">INE EME8 · Chile 2024 · 59% mujeres · 38% informalidad en Araucanía</div>
+  </div>
+
+  <!-- ESCENA 2: PROBLEMA -->
+  <div class="scene bg-dark-warm" id="s2">
+    <h2 style="font-size:18px;color:#666;letter-spacing:2px;text-transform:uppercase;margin-bottom:32px">El costo del statu quo</h2>
+    <div class="cards-row">
+      <div class="stat-card" id="card1">
+        <div class="big">+50%</div>
+        <div class="desc">postulaciones SERCOTEC/CORFO rechazadas por mala formulación</div>
+      </div>
+      <div class="stat-card" id="card2">
+        <div class="big">27%→0%</div>
+        <div class="desc">sobrepago tributario evitable · Pro-Pyme existe pero nadie lo activa</div>
+      </div>
+      <div class="stat-card" id="card3">
+        <div class="big">~60%</div>
+        <div class="desc">ideas informales mueren antes de la primera venta</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ESCENA 3: CAROLINA -->
+  <div class="scene bg-warm" id="s3">
+    <div class="persona-layout">
+      <div class="avatar-placeholder"></div>
+      <div class="persona-info">
+        <div class="persona-name">Carolina</div>
+        <div class="persona-sub">34 años · emprendedora digital</div>
+        <div class="persona-facts">
+          Vende por Instagram + Tienda Nube<br/>
+          Factura ~3M CLP/mes<br/>
+          Mezcla cuentas personal y negocio<br/>
+          Miedo al SII antes de empezar
+        </div>
+        <div class="persona-quote">
+          "Yo solo quiero vender tranquila, pero con tantas reglas... mejor no facturo."
+        </div>
+      </div>
+      <div class="whatsapp-mock" id="wa-mock">
+        <div class="wa-header">
+          <div class="wa-dot">💬</div>
+          <div>
+            <div class="wa-name">Tu Plata Mipyme</div>
+            <div style="font-size:9px;color:#25d366">en línea</div>
+          </div>
+        </div>
+        <div class="wa-msg">
+          Hola Carolina 👋 ¿En qué puedo ayudarte hoy?<span class="wa-cursor"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ESCENA 4: SOLUCIÓN -->
+  <div class="scene bg-brand" id="s4">
+    <div class="demo-layout">
+      <div class="chat-window">
+        <div class="chat-header">
+          <div class="chat-avatar">💬</div>
+          <div>
+            <div class="chat-title">Tu Plata Mipyme</div>
+            <div class="chat-sub" style="font-size:10px">● en línea · WhatsApp</div>
+          </div>
+        </div>
+        <div class="chat-messages">
+          <div class="msg-user" id="m1">¿Necesito boletas si vendo por Instagram?</div>
+          <div class="msg-bot" id="m2">
+            Sí. Como persona natural, cada venta es ingreso tributable desde el primer peso.
+            <span class="msg-link">📎 sii.cl/boletas-honorarios</span>
+          </div>
+          <div class="msg-user" id="m3">¿Y si no he vendido mucho todavía?</div>
+          <div class="msg-bot" id="m4">
+            Igual debes emitir. Pero no te preocupes — te muestro el flujo paso a paso. Toma 10 minutos desde el sitio del SII.
+            <span class="msg-link">📎 sii.cl/inicio-actividades</span>
+          </div>
+        </div>
+      </div>
+      <div class="badge-verified" id="badge-ver">
+        <div class="badge-icon">✓</div>
+        <div class="badge-title">Fuente verificada</div>
+        <div class="badge-sub">Cada respuesta normativa incluye link al SII, CORFO o SERCOTEC.<br/><br/>Sin alucinación. Sin ambigüedad.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ESCENA 5: DIFERENCIADORES -->
+  <div class="scene bg-dark" id="s5">
+    <div class="arch-container">
+      <div class="arch-title">Arquitectura multi-agente</div>
+      <div class="arch-supervisor" id="arch-sup">
+        ⚡ Supervisor · Claude Sonnet 4.6
+      </div>
+      <div class="arch-arrow" id="arch-arr">↓ handoff JSON · Agent SDK</div>
+      <div class="arch-agents" id="arch-ags">
+        <div class="agent-card">
+          <div class="agent-name">mentor-inicio</div>
+          <div class="agent-etapa">Etapa 1 · Sueño</div>
+        </div>
+        <div class="agent-card">
+          <div class="agent-name">acompañante-informal</div>
+          <div class="agent-etapa">Etapa 2 · FOCO</div>
+        </div>
+        <div class="agent-card">
+          <div class="agent-name">gestor-formalizacion</div>
+          <div class="agent-etapa">Etapa 3 · Formal</div>
+        </div>
+        <div class="agent-card">
+          <div class="agent-name">estratega-crecimiento</div>
+          <div class="agent-etapa">Etapa 4 · PYME</div>
+        </div>
+      </div>
+      <div class="arch-badge" id="arch-bdg">MCP propio · corpus regulatorio chileno · cache hit &gt;80%</div>
+    </div>
+  </div>
+
+  <!-- ESCENA 6: STACK TÉCNICO -->
+  <div class="scene bg-black-green" id="s6">
+    <h2 style="font-size:14px;color:#22c55e;letter-spacing:2px;text-transform:uppercase;margin-bottom:24px">Stack técnico</h2>
+    <div class="stack-grid">
+      <div class="stack-card" id="sc1">
+        <div class="sc-label">Supervisor</div>
+        <div class="sc-name">Claude Sonnet 4.6</div>
+        <div class="sc-role">Orquestación + razonamiento</div>
+      </div>
+      <div class="stack-card" id="sc2">
+        <div class="sc-label">Clasificador</div>
+        <div class="sc-name">Claude Haiku 4.5</div>
+        <div class="sc-role">Routing de intención</div>
+      </div>
+      <div class="stack-card" id="sc3">
+        <div class="sc-label">Framework</div>
+        <div class="sc-name">Anthropic Agent SDK</div>
+        <div class="sc-role">4 subagentes especializados</div>
+      </div>
+      <div class="stack-card" id="sc4">
+        <div class="sc-label">Corpus regulatorio</div>
+        <div class="sc-name">MCP propio</div>
+        <div class="sc-role">SII · CORFO · SERCOTEC · CMF</div>
+      </div>
+    </div>
+    <div class="stack-metrics" id="stk-metrics">
+      <div class="metric"><div class="mval">&lt;4s</div><div class="mlabel">latencia WhatsApp</div></div>
+      <div class="metric"><div class="mval">&gt;80%</div><div class="mlabel">cache hit</div></div>
+      <div class="metric"><div class="mval">&lt;$0.30</div><div class="mlabel">USD/usuario/mes</div></div>
+    </div>
+  </div>
+
+  <!-- ESCENA 7: IMPACTO -->
+  <div class="scene bg-dark" id="s7">
+    <div class="impact-layout">
+      <div class="chart-area">
+        <h3 style="font-size:12px;color:#666;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px">Usuarios activos mensuales (MAU)</h3>
+        <svg class="chart-svg" viewBox="0 0 400 180" id="mau-svg">
+          <defs>
+            <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#f97316" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <!-- Grid lines -->
+          <line x1="40" y1="20" x2="40" y2="160" stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="40" y1="160" x2="380" y2="160" stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="40" y1="20" x2="380" y2="20" stroke="#111" stroke-width="1" stroke-dasharray="4,4"/>
+          <line x1="40" y1="90" x2="380" y2="90" stroke="#111" stroke-width="1" stroke-dasharray="4,4"/>
+          <!-- Labels -->
+          <text x="36" y="164" fill="#555" font-size="9" text-anchor="end">0</text>
+          <text x="36" y="94" fill="#555" font-size="9" text-anchor="end">250</text>
+          <text x="36" y="24" fill="#555" font-size="9" text-anchor="end">500</text>
+          <!-- X labels -->
+          <text x="80" y="172" fill="#555" font-size="9" text-anchor="middle">Mes 1</text>
+          <text x="150" y="172" fill="#555" font-size="9" text-anchor="middle">Mes 3</text>
+          <text x="240" y="172" fill="#555" font-size="9" text-anchor="middle">Mes 6</text>
+          <text x="340" y="172" fill="#555" font-size="9" text-anchor="middle">Mes 9</text>
+          <!-- Area fill -->
+          <path id="chart-area" d="M80,155 L150,143 L240,115 L340,20 L340,160 L80,160 Z" fill="url(#lineGrad)" opacity="0">
+            <animate attributeName="opacity" from="0" to="1" dur="1s" begin="indefinite" id="area-anim" fill="freeze"/>
+          </path>
+          <!-- Line -->
+          <polyline id="chart-line"
+            points="80,155 150,143 240,115 340,20"
+            fill="none" stroke="#f97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+            stroke-dasharray="400" stroke-dashoffset="400">
+          </polyline>
+          <!-- Dots -->
+          <circle cx="80"  cy="155" r="4" fill="#f97316" opacity="0" id="d1"/>
+          <circle cx="150" cy="143" r="4" fill="#f97316" opacity="0" id="d2"/>
+          <circle cx="240" cy="115" r="4" fill="#f97316" opacity="0" id="d3"/>
+          <circle cx="340" cy="20"  r="4" fill="#f97316" opacity="0" id="d4"/>
+          <!-- Value labels -->
+          <text x="80"  y="150" fill="#f97316" font-size="9" text-anchor="middle" opacity="0" id="v1">~10</text>
+          <text x="150" y="138" fill="#f97316" font-size="9" text-anchor="middle" opacity="0" id="v2">50</text>
+          <text x="240" y="110" fill="#f97316" font-size="9" text-anchor="middle" opacity="0" id="v3">250</text>
+          <text x="340" y="15"  fill="#f97316" font-size="9" text-anchor="middle" opacity="0" id="v4">500</text>
+        </svg>
+      </div>
+      <div class="kpi-list">
+        <div class="kpi-item" id="kpi1">
+          <div class="kval">40%</div>
+          <div class="kdesc">retención semana 4<br/><span style="color:#555">vs ~15% promedio apps financieras</span></div>
+        </div>
+        <div class="kpi-item" id="kpi2">
+          <div class="kval">&gt;50% → &lt;25%</div>
+          <div class="kdesc">rechazo SERCOTEC/CORFO<br/><span style="color:#555">en cohorte asistida</span></div>
+        </div>
+        <div class="kpi-item" id="kpi3">
+          <div class="kval">&gt;8%</div>
+          <div class="kdesc">conversión Free → Pro<br/><span style="color:#555">en el momento del valor evidente</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ESCENA 8: CIERRE -->
+  <div class="scene bg-black" id="s8">
+    <div id="cierre-logo">Tu Plata <span class="verde">Mipyme</span></div>
+    <div id="cierre-tagline">Copiloto WhatsApp · Freemium · Multi-agente</div>
+    <div id="cierre-quote">"Al final es ofrecer la ayuda para que este emprendedor deje de pensar en el sistema y se dedique a emprender."</div>
+    <div id="cierre-author">— Felipe, co-fundador</div>
+  </div>
+
+  <!-- Narration overlay -->
+  <div id="narration-bar">
+    <div id="narration-text"></div>
+  </div>
+
+</div><!-- /stage -->
+
+<!-- Progress -->
+<div id="progress-track"><div id="progress-fill"></div></div>
+
+<!-- Controls -->
+<div id="controls">
+  <button class="ctrl-btn" id="btn-prev" onclick="prevScene()" disabled>← Anterior</button>
+  <button class="ctrl-btn" id="btn-play" onclick="togglePlay()">▶ Play</button>
+  <div id="scene-info">Escena 1 de 8 — HOOK</div>
+  <div id="time-display">0:00 / 5:00</div>
+  <button class="ctrl-btn" id="btn-next" onclick="nextScene()">Siguiente →</button>
+</div>
+
+<!-- Scene dots -->
+<div id="scene-dots">
+  <div class="dot active" onclick="goToScene(0)"></div>
+  <div class="dot" onclick="goToScene(1)"></div>
+  <div class="dot" onclick="goToScene(2)"></div>
+  <div class="dot" onclick="goToScene(3)"></div>
+  <div class="dot" onclick="goToScene(4)"></div>
+  <div class="dot" onclick="goToScene(5)"></div>
+  <div class="dot" onclick="goToScene(6)"></div>
+  <div class="dot" onclick="goToScene(7)"></div>
+</div>
+
+<script>
+const scenes = [
+  {
+    id: 's1', duration: 30,
+    label: 'HOOK — 1.08 M',
+    narration: '"Un millón ochenta mil chilenas y chilenos sostienen su negocio en la informalidad. No porque quieran. Porque el sistema que debería acompañarlos habla en un idioma que no es el suyo."',
+    onEnter: animateS1
+  },
+  {
+    id: 's2', duration: 45,
+    label: 'PROBLEMA — El costo invisible',
+    narration: '"Más de la mitad de las postulaciones a SERCOTEC y CORFO se rechazan. No porque los proyectos sean malos — porque nadie los acompañó a formularlos bien. Los emprendedores que calificarían a Pro-Pyme siguen pagando el 27% cuando deberían pagar cero. Y el 60% abandona antes de la primera venta."',
+    onEnter: animateS2
+  },
+  {
+    id: 's3', duration: 45,
+    label: 'PERSONA — Carolina, 34 años',
+    narration: '"Carolina tiene 34 años. Vende por Instagram y Tienda Nube. Factura ~3 millones de pesos al mes. Su mayor miedo: que el SII la multe antes de que tenga tiempo de entender qué hizo mal."',
+    onEnter: animateS3
+  },
+  {
+    id: 's4', duration: 60,
+    label: 'SOLUCIÓN — Demo WhatsApp',
+    narration: '"Tu Plata Mipyme vive en WhatsApp — donde Carolina ya está. Cada respuesta normativa viene con link verificable al SII, CORFO o SERCOTEC. Sin alucinación. Gratis hasta el momento en que formalizarse genera valor evidente."',
+    onEnter: animateS4
+  },
+  {
+    id: 's5', duration: 45,
+    label: 'DIFERENCIADORES — Multi-agente',
+    narration: '"95.3% de penetración móvil. WhatsApp no requiere aprender nada nuevo. 4 subagentes especializados por etapa del emprendedor, coordinados por un supervisor, con corpus regulatorio chileno propio, cacheado a más del 80%."',
+    onEnter: animateS5
+  },
+  {
+    id: 's6', duration: 30,
+    label: 'STACK TÉCNICO',
+    narration: '"Claude Sonnet 4.6 supervisor · Haiku 4.5 clasificador · Agent SDK · MCP propio. Cache hit >80% · Latencia <4s · Costo <$0.30 USD/usuario/mes."',
+    onEnter: animateS6
+  },
+  {
+    id: 's7', duration: 30,
+    label: 'IMPACTO PROYECTADO',
+    narration: '"50 emprendedoras en el mes 3. 500 en el mes 9. Retención s4: 40%. Rechazo SERCOTEC: >50% → <25% en cohorte asistida. Conversión Free→Pro: >8%."',
+    onEnter: animateS7
+  },
+  {
+    id: 's8', duration: 15,
+    label: 'CIERRE',
+    narration: '"Al final es ofrecer la ayuda para que este emprendedor deje de pensar en el sistema y se dedique a emprender." — Felipe, co-fundador',
+    onEnter: animateS8
+  }
+];
+
+let current = 0;
+let playing = false;
+let timer = null;
+let elapsed = 0;
+let sceneElapsed = 0;
+const TOTAL = scenes.reduce((a,s) => a + s.duration, 0); // 300s
+
+function formatTime(s) {
+  const m = Math.floor(s/60);
+  const sec = Math.floor(s%60);
+  return `${m}:${sec.toString().padStart(2,'0')}`;
+}
+
+function updateUI() {
+  document.getElementById('scene-info').textContent =
+    `Escena ${current+1} de ${scenes.length} — ${scenes[current].label}`;
+  document.getElementById('time-display').textContent =
+    `${formatTime(elapsed)} / ${formatTime(TOTAL)}`;
+  document.getElementById('progress-fill').style.width =
+    `${(elapsed/TOTAL)*100}%`;
+  document.getElementById('narration-text').textContent =
+    scenes[current].narration;
+  document.getElementById('btn-prev').disabled = current === 0;
+  document.getElementById('btn-next').disabled = current === scenes.length - 1;
+  document.querySelectorAll('.dot').forEach((d,i) => d.classList.toggle('active', i === current));
+}
+
+function showScene(idx) {
+  document.querySelectorAll('.scene').forEach(s => s.classList.remove('active'));
+  document.getElementById(scenes[idx].id).classList.add('active');
+  scenes[idx].onEnter();
+  updateUI();
+}
+
+function goToScene(idx) {
+  stopPlay();
+  current = idx;
+  elapsed = scenes.slice(0,idx).reduce((a,s) => a + s.duration, 0);
+  sceneElapsed = 0;
+  showScene(idx);
+}
+
+function nextScene() {
+  if (current < scenes.length - 1) goToScene(current + 1);
+}
+
+function prevScene() {
+  if (current > 0) goToScene(current - 1);
+}
+
+function togglePlay() {
+  if (playing) stopPlay(); else startPlay();
+}
+
+function startPlay() {
+  playing = true;
+  document.getElementById('btn-play').textContent = '⏸ Pausa';
+  timer = setInterval(() => {
+    elapsed++;
+    sceneElapsed++;
+    updateUI();
+    if (sceneElapsed >= scenes[current].duration) {
+      sceneElapsed = 0;
+      if (current < scenes.length - 1) {
+        current++;
+        showScene(current);
+      } else {
+        stopPlay();
+      }
+    }
+  }, 1000);
+}
+
+function stopPlay() {
+  playing = false;
+  document.getElementById('btn-play').textContent = '▶ Play';
+  clearInterval(timer);
+}
+
+// ── ANIMACIONES POR ESCENA ──
+
+function animateS1() {
+  const el = document.getElementById('counter');
+  let v = 0, target = 1080000;
+  const step = Math.ceil(target / 80);
+  el.textContent = '0';
+  const t = setInterval(() => {
+    v = Math.min(v + step, target);
+    el.textContent = v.toLocaleString('es-CL');
+    if (v >= target) clearInterval(t);
+  }, 25);
+}
+
+function animateS2() {
+  ['card1','card2','card3'].forEach((id, i) => {
+    setTimeout(() => document.getElementById(id).classList.add('visible'), i * 700);
+  });
+}
+
+function animateS3() {
+  setTimeout(() => document.getElementById('wa-mock').classList.add('visible'), 600);
+}
+
+function animateS4() {
+  const msgs = ['m1','m2','m3','m4'];
+  msgs.forEach((id, i) => {
+    setTimeout(() => document.getElementById(id).classList.add('show'), 800 + i * 1400);
+  });
+  setTimeout(() => document.getElementById('badge-ver').classList.add('show'), 3000);
+}
+
+function animateS5() {
+  setTimeout(() => document.getElementById('arch-sup').classList.add('show'), 300);
+  setTimeout(() => document.getElementById('arch-arr').classList.add('show'), 800);
+  setTimeout(() => document.getElementById('arch-ags').classList.add('show'), 1300);
+  setTimeout(() => document.getElementById('arch-bdg').classList.add('show'), 2000);
+}
+
+function animateS6() {
+  ['sc1','sc2','sc3','sc4'].forEach((id, i) => {
+    setTimeout(() => document.getElementById(id).classList.add('show'), 300 + i * 400);
+  });
+  setTimeout(() => document.getElementById('stk-metrics').classList.add('show'), 2200);
+}
+
+function animateS7() {
+  // Chart animation
+  const line = document.getElementById('chart-line');
+  line.style.transition = 'stroke-dashoffset 1.5s ease-in-out';
+  setTimeout(() => { line.style.strokeDashoffset = '0'; }, 200);
+  setTimeout(() => {
+    document.getElementById('chart-area').beginElement &&
+      document.getElementById('chart-area').beginElement();
+    document.getElementById('chart-area').style.opacity = '1';
+    ['d1','d2','d3','d4','v1','v2','v3','v4'].forEach(id => {
+      document.getElementById(id).style.opacity = '1';
+    });
+  }, 1800);
+  ['kpi1','kpi2','kpi3'].forEach((id, i) => {
+    setTimeout(() => document.getElementById(id).classList.add('show'), 600 + i * 500);
+  });
+}
+
+function animateS8() {
+  ['cierre-logo','cierre-tagline','cierre-quote','cierre-author'].forEach(id => {
+    document.getElementById(id).classList.add('show');
+  });
+}
+
+// Init
+showScene(0);
+</script>
+</body>
+</html>
