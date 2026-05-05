@@ -18,5 +18,605 @@
     "requisitos": "Contribuyentes que tributen en Primera Categoría.\nEmpresas privadas no constituidas en Chile, que tributen en los términos señalados en el numeral 1, o que desarrollen actividades similares a aquellas gravadas en Chile por el Impuesto de Primera Categoría, que desarrollen proyectos de inversión productiva o de servicios.\nBases legales\nProyecto de inversión estimado sea igual o superior a $ 12.000.000 (doce millones de pesos).\nCuando el beneficiario sea una empresa de base indígena o una cooperativa indígena, Proyecto de inversión estimado sea igual o superior a $ 10.000.000 (diez millones de pesos).",
     "estado": "Abiertas",
     "descripcion_corta": "Buscamos apoyar la materialización de proyectos de inversión productiva con potencial de generación de externalidades positivas, mediante el otorgamiento de un cofinanciamiento para la adquisición de activo fijo, habilitación de infraestructura productiva y capital de trabajo. Se entenderá por proyectos de inversión productiva, aquellos que tengan por objeto la producción y comercialización de bienes o servicios, que contribuyan al incremento de la actividad económica y generen nuevos empleos."
+  },
+  {
+    "nombre": "PAR – REGIÓN DE AYSÉN – 1° CONVOCATORIA 2026 LITORAL DE AYSÉN",
+    "fecha_inicio": "04/05/2026",
+    "fecha_cierre": "29/05/2026",
+    "region": "Aysén",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/par-aysen-1-convocatoria-litoral-de-aysen-2026/",
+    "requisitos": "Podrán postular proyectos que se ejecuten por contribuyentes de primera categoría del SII en las Comunas de Guaitecas, Aysén y Tortel.\nLa focalización temática es de carácter multisectorial, orientada a iniciativas que aborden distintas áreas de desarrollo vinculadas al litoral de Aysén.\nBases legales\nEn la comuna de Aysén se priorizará, según la focalización del CDPR Aysén, la localidad de Islas Huichas, que comprende los pueblos de Puerto Aguirre, Estero Copa y Caleta Andrade, debido a su condición estratégica y necesidades de desarrollo territorial en el litoral.\nLa postulación se realiza a través de alguno de los Agentes Operadores Intermediarios (AOI) de CORFO habilitados en la región de Aysén. Para efectos de la presente convocatoria Codesser o Gedes.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Programa que busca apoyar la reactivación productiva de micro y pequeñas empresas del litoral de la Región de Aysén, mediante el cofinanciamiento de proyectos de inversión que fortalezcan sus capacidades, mejoren su gestión y les permitan acceder a nuevas oportunidades de negocio."
+  },
+  {
+    "nombre": "PRIMER CONCURSO INNOVA REGIÓN COMITÉ DE DESARROLLO PRODUCTIVO REGIONAL AYSÉN 2026",
+    "fecha_inicio": "04/05/2026",
+    "fecha_cierre": "04/06/2026",
+    "region": "Aysén",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/primer-concurso-innova-region-comite-de-desarrollo-productivo-regional-aysen-2026/",
+    "requisitos": "Personas jurídicas constituidas en Chile.\nPersonas naturales que, al momento de postular, tengan cumplidos, a lo menos, 18 años de edad.\nBases legales\nAl momento de la postulación, se deberá cumplir con los siguientes requisitos:\nHaber transcurrido, a lo menos, 18 meses, contados desde la fecha de inicio de actividades en un giro empresarial de primera categoría, de conformidad con lo establecido en el artículo 20 de la Ley de Impuesto a la Renta (D.L. 824, de 1974), el cual debe encontrarse vigente.\nAcreditar ingresos por ventas dentro de los 18 meses previos a la postulación (no necesariamente en todos los meses).",
+    "estado": "Abiertas",
+    "descripcion_corta": "Innova Región es un instrumento que busca apoyar el desarrollo de nuevos o mejorados productos (bienes o servicios) y/o procesos desde la fase de prototipo, hasta la fase de validación técnica a escala productiva y/o validación comercial, que aporten a la economía regional y fortalezcan las capacidades de innovación en la empresa."
+  },
+  {
+    "nombre": "Semilla Inicia Aysén 2026 CDPR",
+    "fecha_inicio": "04/05/2026",
+    "fecha_cierre": "04/06/2026",
+    "region": "Aysén",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/semilla-inicia-aysen-cdpr-2026/",
+    "requisitos": "Si postula como persona natural, debe tener más de 18 años y tener residencia en Chile.\nSi postula como persona jurídica, la empresa debe tener una antigüedad máxima de 18 meses de inicio de actividades en SII contados desde la fecha de apertura de la convocatoria y no tener ventas hasta el mes calendario anterior a la apertura de la convocatoria, independiente de su giro.\nBases legales",
+    "estado": "Abiertas",
+    "descripcion_corta": "Buscamos apoyar a emprendedores y emprendedoras que cuenten con proyectos de negocios de alto potencial de crecimiento, mediante el cofinanciamiento de actividades para la validación técnica y comercial del emprendimiento, además de acceso a servicios de apoyo para su implementación y desarrollo."
+  },
+  {
+    "nombre": "VIRALIZA DIFUSION MEDIOS AYSEN 2026",
+    "fecha_inicio": "04/05/2026",
+    "fecha_cierre": "04/06/2026",
+    "region": "Aysén",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/viraliza-difusion-medios-aysen-2026/",
+    "requisitos": "Pueden postular personas jurídicas constituidas o creadas en Chile.\nCoejecutores y/o asociados deben ser personas jurídicas constituidas o creadas en Chile\nBases legales",
+    "estado": "Abiertas",
+    "descripcion_corta": "Busca la difusión y promoción del emprendimiento y de la innovación, mediante la realización de programas audiovisuales, a ser transmitidos a través de medios de comunicación masiva, que permitan poner en conocimiento del público general casos relevantes de emprendimiento e innovación, con carácter motivacional e inspiracional, además, de metodologías y otros temas y materias ligadas al emprendimiento y la innovación en la Región de Aysén."
+  },
+  {
+    "nombre": "Viraliza Eventos Tarapacá 2026",
+    "fecha_inicio": "04/05/2026",
+    "fecha_cierre": "04/06/2026",
+    "region": "Tarapacá",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/viraliza-eventos-tarapaca-2026/",
+    "requisitos": "Pueden postular personas jurídicas constituidas o creadas en Chile.\nBases legales\nCoejecutores y/o asociados deben ser personas jurídicas constituidas o creadas en Chile.",
+    "estado": "Abiertas",
+    "descripcion_corta": "El objetivo será realizar eventos de alta convocatoria, de forma presencial, que promuevan el intercambio de conocimientos, generación de redes y traspaso de buenas prácticas relacionadas con el emprendimiento y la innovación, con la finalidad de acelerar el desarrollo y fortalecimiento de los ecosistemas de emprendimiento dinámico de la región."
+  },
+  {
+    "nombre": "Start-Up Chile – Build 12",
+    "fecha_inicio": "04/05/2026",
+    "fecha_cierre": "25/05/2026",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/start-up-chile-build-12-2026/",
+    "requisitos": "Personas naturales chilenas o extranjeras, mayores de 18 años.\nPersonas jurídicas con fines de lucro, constituidas en Chile con iniciación de actividades ante el Servicio de Impuestos Internos.\nBases legales\nCorresponde a una persona natural chilena o extranjera, que al momento de la postulación tenga cumplido, a lo menos, dieciocho años de edad, y sea fundador(a) o socio(a) de una persona jurídica extranjera que ejecuta un proyecto global (de base tecnológica) que utilice a Chile como plataforma.\nPodrán postular personas jurídicas con fines de lucro, constituidas en Chile, que ejecuten un proyecto global (de base tecnológica) que utilice a Chile como plataforma, y que no tengan iniciación de actividades ante el Servicio de Impuestos Internos por un período superior a 12 meses contados hacia atrás desde la fecha de apertura de la respectiva convocatoria.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Start-Up Chile está compuesto por tres líneas que se funden en este instrumento; en primer lugar “Build” que tiene por finalidad la pre-aceleración enfocada en desarrollo de MVP, prototipos y habilidades emprendedoras; en segundo lugar “Ignite”, que tiene por finalidad la aceleración de startups que utilicen a Chile como plataforma para el crecimiento comercial de nuevos negocios; y, en tercer lugar “Growth”."
+  },
+  {
+    "nombre": "Start-Up Chile – Growth 12",
+    "fecha_inicio": "04/05/2026",
+    "fecha_cierre": "25/05/2026",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/start-up-chile-growth-12-2026/",
+    "requisitos": "Personas naturales chilenas o extranjeras, mayores de 18 años\nPersonas jurídicas con fines de lucro, constituidas en Chile con iniciación de actividades ante el Servicio de Impuestos Internos.\nBases legales\nCorresponde a una persona natural chilena o extranjera, que al momento de la postulación tenga cumplido, a lo menos, dieciocho años de edad, y sea fundador(a) o socio(a) de una persona jurídica extranjera que ejecuta un proyecto global (de base tecnológica) que utilice a Chile como plataforma.\nSe deberá demostrar que el proyecto global (tanto en Chile como en el extranjero) ha tenido ingresos por ventas, en los 12 meses anteriores al mes de apertura del concurso de, al menos 2.400 UF y hasta 25.000 UF.",
+    "estado": "Abiertas",
+    "descripcion_corta": "El Programa Start-Up Chile está compuesto por tres líneas que se funden en este instrumento; en primer lugar “Build”, que tiene por finalidad la pre-aceleración enfocada en desarrollo de MVP, prototipos y habilidades emprendedoras; en segundo lugar “Ignite”, que tiene por finalidad la aceleración de startups que utilicen a Chile como plataforma para el crecimiento comercial de nuevos negocios; y, en tercer lugar “Growth”."
+  },
+  {
+    "nombre": "Start-Up Chile – Ignite 12",
+    "fecha_inicio": "04/05/2026",
+    "fecha_cierre": "25/05/2026",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/start-up-chile-ignite-12-2026/",
+    "requisitos": "Personas naturales chilenas o extranjeras, mayores de 18 años.\nPersonas jurídicas con fines de lucro, constituidas en Chile con iniciación de actividades ante el Servicio de Impuestos Internos.\nBases legales\nCorresponde a una persona natural chilena o extranjera, que al momento de la postulación tenga cumplido, a lo menos, dieciocho años de edad, y sea fundador(a) o socio(a) de una persona jurídica extranjera que ejecuta un proyecto global (de base tecnológica) que utilice a Chile como plataforma.\nPodrán postular personas jurídicas con fines de lucro, constituidas en Chile, que ejecuten un proyecto global (de base tecnológica) que utilice a Chile como plataforma, y que no tengan iniciación de actividades ante el Servicio de Impuestos Internos por un período superior a 36 meses contados hacia atrás desde la fecha de apertura de la respectiva convocatoria.",
+    "estado": "Abiertas",
+    "descripcion_corta": "El Programa Start-Up Chile está compuesto por tres líneas que se funden en este instrumento; en primer lugar “Build”, que tiene por finalidad la pre-aceleración enfocada en desarrollo de MVP, prototipos y habilidades emprendedoras; en segundo lugar “Ignite”, que tiene por finalidad la aceleración de startups que utilicen a Chile como plataforma para el crecimiento comercial de nuevos negocios; y, en tercer lugar “Growth”."
+  },
+  {
+    "nombre": "CONVOCATORIA CDPR METROPOLITANO 2026: SEMILLA INICIA",
+    "fecha_inicio": "30/04/2026",
+    "fecha_cierre": "29/05/2026",
+    "region": "Metropolitana",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/cdpr-metropolitano-semilla-inicia-2026/",
+    "requisitos": "Personas naturales, mayores de 18 años, con residencia en Chile\nPersona jurídica, constituida en Chile, que tengan menos de 18 meses de iniciación de actividades ante el Servicio de Impuestos Internos (SII), SIN VENTAS.\nBases legales",
+    "estado": "Abiertas",
+    "descripcion_corta": "Buscamos apoyar a emprendedores y emprendedoras que cuenten con proyectos de negocios de alto potencial de crecimiento, mediante el cofinanciamiento de actividades para la validación técnica y comercial del emprendimiento, además de acceso a servicios de apoyo para su implementación y desarrollo."
+  },
+  {
+    "nombre": "CONVOCATORIA CDPR METROPOLITANO 2026: SÚMATE A INNOVAR FOCO SOSTENIBLE",
+    "fecha_inicio": "30/04/2026",
+    "fecha_cierre": "01/07/2026",
+    "region": "Metropolitana",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/cdpr-metropolitano-sumate-a-innovar-foco-sostenible-2026/",
+    "requisitos": "Personas Jurídicas Constituidas en Chile\nPersonas Naturales mayores de 18 años que tributen en primera categoría\nBases legales\nHaber transcurrido, a lo menos, 24 meses, contados desde la fecha de inicio de actividades en un giro empresarial de primera categoría, de conformidad con lo establecido en el artículo 20 de la Ley de Impuesto a la Renta D.L. 824, de 1974, el cual debe encontrarse vigente.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Buscamos aumentar el desarrollo de soluciones innovadoras para resolver problemas y desafíos de productividad y competitividad de las empresas nacionales, a través de la vinculación con entidades colaboradoras."
+  },
+  {
+    "nombre": "Convocatoria Viraliza Formación – CDPR Magallanes y Antártica Chilena – 2026",
+    "fecha_inicio": "30/04/2026",
+    "fecha_cierre": "08/06/2026",
+    "region": "Magallanes",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/viraliza-formacion-cdpr-magallanes-y-antartica-chilena-2026/",
+    "requisitos": "Pueden postular personas jurídicas constituidas o creadas en Chile, que tengan una antigüedad mínima de dos años al momento de la postulación, contados desde su creación.\nCoejecutores y/o asociados deben ser personas jurídicas constituidas o creadas en Chile.\nBases legales\nEl programa de formación debe estar dirigido a un mínimo de 20 emprendimientos (si se postula al Programa Estratégico de Tierra del Fuego) y de 30 emprendimientos, si se postula un programa para el resto de las provincias de la Región, los cuales pueden ser:\na) Personas Naturales, mayores de 18 años, que cuenten con una idea de negocio o con un negocio en funcionamiento, y que estén en etapas previas a la formalización del emprendimiento (constitución de una persona jurídica con inicio de actividades en un giro de primera categoría, de conformidad a lo establecido en el artículo 20 de la Ley de Impuesto a la Renta, ante el Servicio de Impuestos Internos) a la fecha de postulación a la Convocatoria realizada por el Ejecutor.\nb) Personas jurídicas constituidas en Chile, con inicio de actividades en giro de primera categoría, con una antigüedad máxima de 6 años y ventas anuales menores a $800.000.000.- (Ochocientos millones de pesos), interesadas en desarrollar nuevas líneas de negocio, mejorar su capacidad innovadora o integrarse a cadenas de valor regionales.\nc) En ambos casos (letras a) y b) precedentes), los emprendimientos en etapa de idea, en funcionamiento o ya formalizados, deben ser innovadores y con potencial de alto crecimiento.\nEl programa de formación debe ser coherente y relacionado al segmento y características de los emprendedores que busquen atender.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Buscamos desarrollar un programa de formación teórico-práctico presencial orientado a fortalecer las capacidades de innovación organizacional y la generación de nuevas unidades de negocio en emprendimientos dinámicos y Mipymes emergentes de la Región de Magallanes."
+  },
+  {
+    "nombre": "Programa de Difusión Tecnológica Atacama 2026",
+    "fecha_inicio": "30/04/2026",
+    "fecha_cierre": "04/06/2026",
+    "region": "Atacama",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/pdt-atacama-2026/",
+    "requisitos": "Personas jurídicas constituidas en Chile.\nPersonas naturales con, a lo menos, 18 años cumplidos al momento de postular, con giro empresarial de primera categoría.\nBases legales\nAl momento de la postulación, se deberá cumplir con los siguientes requisitos:\nHaber transcurrido, a lo menos, 24 meses, contados desde la fecha de inicio de actividades en un giro empresarial de primera categoría, de conformidad con lo establecido en el artículo 20 de la Ley de Impuesto a la Renta (D.L. 824, de 1974), el cual debe encontrarse vigente.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Es un programa que busca contribuir al cierre de brechas de productividad del sector empresarial, de preferencia Pymes, de la región de Atacama, a través de la difusión de tecnologías y mejores prácticas innovadoras, con el propósito de fomentar su adopción y potenciar la competitividad de un grupo de empresas de una industria o sector que enfrentan una problemática común."
+  },
+  {
+    "nombre": "PROGRAMA DE DIFUSIÓN TECNOLÓGICA – REGIÓN DE TARAPACÁ 2026",
+    "fecha_inicio": "29/04/2026",
+    "fecha_cierre": "22/05/2026",
+    "region": "Tarapacá",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/pdt-tarapaca-2026/",
+    "requisitos": "Beneficiario o gestor:\n– Personas jurídicas constituidas en Chile.\n– Las sociedades de profesionales referidas en el artículo 42 N°2, de la Ley sobre Impuesto a la Renta, que hayan optado por declarar sus rentas de acuerdo con las normas de la primera categoría\n– Personas naturales con, a lo menos, 18 años cumplidos al momento de postular.\nBeneficiaria/o Atendida/o:\n– Personas jurídicas constituidas en Chile.\n– Personas naturales que, al momento de la postulación, tengan, a lo menos, 18 años cumplidos.\nBases legales\n– La convocatoria se focalizará territorialmente en proyectos que se materialicen en la región de Tarapacá, y que hayan sido postulados por contribuyentes que tengan domicilio registrado ante el SII en la Región de Tarapacá.\n– El beneficiario deberá poseer capacidades técnicas suficientes para ejecutar la mayor parte de las actividades planteadas, y demostrar también, capacidad financiera para ejecutar el programa.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Programa que busca contribuir al cierre de brechas de productividad del sector empresarial de la región de Tarapacá, a través de la difusión de tecnologías y mejores prácticas innovadoras, con el propósito de fomentar su adopción y potenciar a competitividad de un grupo de empresas de una industria o sector que enfrentan una problemática común."
+  },
+  {
+    "nombre": "FOCAL – REGIÓN DE COQUIMBO – 1° CONVOCATORIA 2026 AVANCE COLECTIVO",
+    "fecha_inicio": "24/04/2026",
+    "fecha_cierre": "25/05/2026",
+    "region": "Coquimbo",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/focal-coquimbo-1ra-convocatoria-avance-colectivo-2026/",
+    "requisitos": "Empresarios contribuyentes de actividades gravadas con Impuesto de Primera Categoría, que demuestren ventas netas anuales superiores a UF 1.200 y que no excedan las UF 100.000.\nEmpresas que vendan menos de UF 1.200 (mil doscientas Unidades de Fomento), que desarrollen actividades económicas clasificadas en los rubros agricultura y/o ganadería, y rubro turístico.\nBases legales\nEl concurso se focalizará territorialmente en proyectos que se materialicen en la Región de Coquimbo.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Este programa tiene por objeto apoyar a las empresas en el mejoramiento de la productividad y competitividad, a través de un incentivo a la implementación y certificación de normas técnicas de sistemas de gestión y de productos o de protocolos, reconocidos por esta Corporación como habilitantes para acceder a mercados más sofisticados o de exportación."
+  },
+  {
+    "nombre": "FOCAL – REGIÓN DE COQUIMBO – 1° CONVOCATORIA 2026 AVANCE INDIVIDUAL",
+    "fecha_inicio": "24/04/2026",
+    "fecha_cierre": "25/05/2026",
+    "region": "Coquimbo",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/focal-coquimbo-1ra-convocatoria-avance-individual-2026/",
+    "requisitos": "Empresarios contribuyentes de actividades gravadas con Impuesto de Primera Categoría, que demuestren ventas netas anuales superiores a UF 1.200 y que no excedan las UF 100.000.\nEmpresas que vendan menos de UF 1.200 (mil doscientas Unidades de Fomento), que desarrollen actividades económicas clasificadas en los rubros agricultura y/o ganadería, y rubro turístico.\nBases legales\nEl concurso se focalizará territorialmente en proyectos que se materialicen en la Región de Coquimbo",
+    "estado": "Abiertas",
+    "descripcion_corta": "Este programa tiene por objeto apoyar a las empresas en el mejoramiento de la productividad y competitividad, a través de un incentivo a la implementación y certificación de normas técnicas de sistemas de gestión y de productos o de protocolos, reconocidos por esta Corporación como habilitantes para acceder a mercados más sofisticados o de exportación."
+  },
+  {
+    "nombre": "BIENES PÚBLICOS – REGIÓN DE LOS LAGOS – TURISMO NÁUTICO PATAGONIA COSTA",
+    "fecha_inicio": "15/04/2026",
+    "fecha_cierre": "16/06/2026",
+    "region": "Los Lagos",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/bienes-publicos-los-lagos-turismo-nautico-patagonia-costa-2026/",
+    "requisitos": "Persona Jurídicas constituidas en Chile.\nBases legales\nEl proyecto debe contar con un Mandante distinto al postulante (Ministerios, Agencias de Estado, Entidades Gremiales, Gobiernos Regionales, Municipalidades, Entidades Internacionales, Empresas Públicas, u otros).",
+    "estado": "Abiertas",
+    "descripcion_corta": "Para abordar distintos desafíos asociados a la falta de información de aplicación productiva que permita tomar decisiones en ciertos sectores y recursos estratégicos, Corfo dispone del instrumento Bienes Públicos, cuyo objetivo es apoyar el desarrollo de bienes públicos para la competitividad, orientados a resolver fallas de mercado (de coordinación y/o asimetrías de información), con la finalidad de fortalecer la competitividad, diversificar la economía y/o aumentar la productividad."
+  },
+  {
+    "nombre": "DESARROLLA INVERSIÓN PRODUCTIVA – REGIÓN DE ATACAMA – CONV. 2026 PRODUCTORES DE PISCO Y PAJARETE",
+    "fecha_inicio": "08/04/2026",
+    "fecha_cierre": "No informado",
+    "region": "Atacama",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/dip-atacama-productores-de-pisco-y-pajarete-2026/",
+    "requisitos": "Contribuyentes con inicio de actividades, que tributen en primera categoría.\nBases legales\nSe focalizará territorialmente en proyectos que se ejecuten en la Región de Atacama.\nSe focalizará temáticamente en proyectos de rubros relacionados con la producción de pisco, vino y/o pajarete.",
+    "estado": "Abiertas",
+    "descripcion_corta": "El objeto de esta línea de apoyo es apoyar la materialización de proyectos de inversión productiva, con un potencial de generar externalidades positivas, mediante el otorgamiento de un cofinanciamiento para la adquisición de activos fijos, habilitación de infraestructura productiva y capital de trabajo"
+  },
+  {
+    "nombre": "BIENES PÚBLICOS – REGIÓN METROPOLITANA – CONVOCATORIA 2026 CDPR",
+    "fecha_inicio": "06/03/2026",
+    "fecha_cierre": "15/05/2026",
+    "region": "Metropolitana",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/bienes-publicos-metropolitana-cdpr-2026/",
+    "requisitos": "Beneficiarios: Personas Jurídicas constituidas en Chile, públicas o privadas.\nDe manera obligatoria, el proyecto debe contar con al menos un Mandante distinto al postulante (Ministerios, Agencias de Estado, Entidades Gremiales, Gobiernos Regionales, Municipalidades, Entidades Internacionales, Empresas Públicas, u otros).\nBases legales\nFocalización Territorial: La convocatoria se focalizará territorialmente en la Región Metropolitana de Santiago, debiendo ejecutarse los proyectos en dicha región.\nFocalización Temática: La presente focalización se enmarca en el lineamiento estratégico del Comité de Desarrollo Productivo Regional Metropolitano de Santiago, específicamente en el eje Emprendimiento orientado a ciudades inteligentes y encadenamientos productivos. Este eje busca fortalecer el ecosistema emprendedor y pyme regional con enfoque territorial, impulsando emprendimientos dinámicos y creativos, la innovación aplicada a ciudades inteligentes, el desarrollo de capital humano y la consolidación de encadenamientos productivos inclusivos que retengan valor y generen oportunidades locales sostenibles.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Buscamos proyectos que contribuyan a resolver fallas de mercado relevantes (de coordinación y/o asimetrías de información) que contribuyan a fortalecer la competitividad, diversificar la economía y/o aumentar la productividad en un sector y/o industria de la Región Metropolitana."
+  },
+  {
+    "nombre": "CDPR METROPOLITANO 2026: SÚMATE A INNOVAR FOCO MUJERES",
+    "fecha_inicio": "06/03/2026",
+    "fecha_cierre": "07/05/2026",
+    "region": "Metropolitana",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/cdpr-metropolitan-sumate-a-innovar-foco-mujeres-2026/",
+    "requisitos": "Personas jurídicas constituidas en Chile.\nPersonas naturales, de género femenino que, al momento de postular, tengan, a lo menos, 18 años de edad cumplidos.\nBases legales\nHaber transcurrido, a lo menos, 24 meses, contados desde la fecha de inicio de actividades en un giro empresarial de primera categoría, de conformidad con lo establecido en el artículo 20 de la Ley de Impuesto a la Renta D.L. 824, de 1974, el cual debe encontrarse vigente.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Aumentar el desarrollo de soluciones innovadoras para resolver problemas y desafíos de productividad y competitividad de las empresas nacionales, a través de la vinculación con entidades colaboradoras."
+  },
+  {
+    "nombre": "ACTIVA RIEGO – REGIÓN DE ÑUBLE – TIPO EXTRAPREDIAL 2026",
+    "fecha_inicio": "03/03/2026",
+    "fecha_cierre": "08/05/2026",
+    "region": "Ñuble",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/activa-riego-nuble-tipo-extrapredial-2026/",
+    "requisitos": "Organizaciones de usuarios reguladas en el Código de Aguas.\nBases legales\nOrganizaciones de usuarios reguladas en el Código de Aguas, incluidas las comunidades no organizadas que hayan iniciado su proceso de constitución.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Buscamos apoyar la formulación de proyectos de riego , para identificar alternativas de inversión y evaluarlas técnica, económica y financieramente."
+  },
+  {
+    "nombre": "ACTIVA RIEGO – REGIÓN DE ÑUBLE – TIPO INTRAPREDIAL 2026",
+    "fecha_inicio": "03/03/2026",
+    "fecha_cierre": "08/05/2026",
+    "region": "Ñuble",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/activa-riego-nuble-tipo-intrapredial-2026/",
+    "requisitos": "El postulante es contribuyente que desarrolle actividades gravadas con el Impuesto de Primera Categoría de la ley de Impuesto a la Renta, según lo establecido en el articulo 20 del D.L N° 824, de 1974, verificable con la información disponible en el sitio web del servicio de Impuestos Internos (SII).\nBases legales\n1. Contribuyentes que sean propietarios, usufructuarios, poseedores inscritos o meros tenedores en proceso de regularización de títulos de predios agrícolas.\n2. Contribuyentes que sean arrendatarios de predios agrícolas y aquellos que hayan celebrado un contrato de arriendo con opción de compra o leasing, siempre y cuando, cumplan con los requisitos determinados por la Ley N° 20.284, que modifica la Ley N° 18.450.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Buscamos apoyar la formulación de proyectos de riego intraprediales, para identificar alternativas de inversión y evaluarlas técnica, económica y financieramente."
+  },
+  {
+    "nombre": "RED ASOCIATIVA – REGIÓN DE ÑUBLE – ETAPA DIAGNÓSTICO 2026",
+    "fecha_inicio": "03/03/2026",
+    "fecha_cierre": "08/05/2026",
+    "region": "Ñuble",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/red-asociativa-nuble-etapa-diagnostico-2026/",
+    "requisitos": "Personas naturales o jurídicas, que tributen en 1ra categoría, con rango de ventas entre 2.400 UF y 600.000 UF.\nEn un proyecto, se podrán incorporar beneficiarios de un menor nivel de ventas al señalado, los que, en conjunto, no deberán exceder el 50% del número total de éstos. En todo momento, estos proyectos deberán estar integrados por, al menos, 3 beneficiarios.\nBases legales\nFocalización territorial: La convocatoria se focalizará territorialmente en la Región de Ñuble, debiendo los proyectos ejecutarse en la Región de Ñuble.\nFocalización temática: El llamado a la\nconvocatoria se encontrará focalizado temáticamente en propuestas que, además de ser coherentes con los objetivos del instrumento de financiamiento, se encuentren enmarcados en, a lo menos, uno de los siguientes sectores productivos:\n• Agroindustria\n• Turismo, Cultura y/o Patrimonio",
+    "estado": "Abiertas",
+    "descripcion_corta": "El Programa Red Asociativa permite participar junto a otras Empresas para mejorar su oferta de valor y acceder a nuevos mercados, a través del Programa RED Asociativa te apoyamos con asesoría experta para abordar oportunidades de mercado y de mejoramiento tecnológico, desarrollando estrategias de negocios colaborativos, de acuerdo a las características productivas del grupo de empresas."
+  },
+  {
+    "nombre": "RED GTT+ – REGIÓN DE ÑUBLE – ETAPA DIAGNÓSTICO 2026",
+    "fecha_inicio": "03/03/2026",
+    "fecha_cierre": "08/05/2026",
+    "region": "Ñuble",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/red-gtt-nuble-etapa-diagnostico-2026/",
+    "requisitos": "Personas naturales o jurídicas, deberán tener giro del sector silvoagropecuario, (según la clasificación de actividades del Servicios de Impuestos Internos – SII), y deberán demostrar, en forma individual, ventas netas anuales entre UF 2.400.- (dos mil cuatrocientas Unidades de Fomento) y UF 600.000.- (seiscientas mil Unidades de Fomento).\nEn un proyecto, se podrán incorporar beneficiarios de un menor nivel de ventas al señalado, los que, en conjunto, no deberán exceder el 50% del número total de éstos. En todo momento, estos proyectos deberán estar integrados por, al menos, 3 beneficiarios.\nBases legales\nFocalización territorial: La convocatoria se focalizará territorialmente en la Región de Ñuble, debiendo los proyectos ejecutarse en la Región de Ñuble.\nFocalización temática: El llamado a la convocatoria se encontrará focalizado temáticamente en propuestas que, además de ser coherentes con los objetivos del instrumento de financiamiento, se encuentren enmarcado en el sector productivo Silvoagropecuario.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Red Tecnológica GTT+ busca que grupos de entre 10 y 15 empresas puedan, a través del intercambio entre pares y asistencias técnicas, cerrar brechas tecnológicas y de gestión, incorporando herramientas y mejores prácticas productivas, fomentando la construcción de alianzas entre los empresarios para ampliar el capital relacional, mejorar su productividad y posición competitiva."
+  },
+  {
+    "nombre": "RED MERCADOS – REGIÓN DE ÑUBLE – ETAPA DIAGNÓSTICO 2026",
+    "fecha_inicio": "03/03/2026",
+    "fecha_cierre": "08/05/2026",
+    "region": "Ñuble",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/red-mercados-nuble-etapa-diagnostico-2026/",
+    "requisitos": "Empresas, personas naturales o jurídicas, que tributen en primera categoría, con ventas anuales entre 2.400 UF y 100.000 UF.\nNo acceder habitualmente a mercados de exportación.\nHasta 50% de las empresas postulantes podrá tener ventas menores a 2.400 UF.\nEmpresas postulantes deben realizar Test Exportador:\nhttps://acortar.link/4VAwHp\nBases legales\nFocalización territorial: La convocatoria se focalizará territorialmente en la Región de Ñuble, debiendo los proyectos ejecutarse en la Región de Ñuble.\nFocalización temática será para los siguientes sectores productivos; Forestal, Maderero, Silvoagropecuario, Agroindustria, Turismo, Cultura, Patrimonio y Economía Creativa.",
+    "estado": "Abiertas",
+    "descripcion_corta": "El Programa Red Mercados busca apoyar a un grupo de empresas a acceder y usar información de mercado, relevante para el proceso de exportación transfiriendo técnicas y prácticas productivas para la adecuación de la oferta a los requerimientos de la demanda incorporando el conocimiento y requerimiento para implementar procesos de comercialización hacia y en los mercados de destino."
+  },
+  {
+    "nombre": "PROGRAMA DE DIFUSIÓN TECNOLÓGICA – PROVINCIAS CHILOÉ Y/O PALENA – REGIÓN DE LOS LAGOS",
+    "fecha_inicio": "02/03/2026",
+    "fecha_cierre": "19/05/2026",
+    "region": "Los Lagos",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/pdt-chiloe-palena-los-lagos-2026/",
+    "requisitos": "Personas jurídicas constituidas en Chile.\nPersonas naturales con, a lo menos, 18 años cumplidos al momento de postular.\nBases legales\nAdemás, al momento de la postulación, en relación con el beneficiario, se deberá cumplir con los siguientes requisitos:\nHaber transcurrido, a lo menos, 24 meses, contados desde la fecha de inicio de actividades primera categoría, de conformidad con lo establecido en el artículo 20 de la Ley de Impuesto a la Renta (D.L. 824, de 1974), y que mantenga al menos un giro vigente de primera categoría. En el caso de las sociedades de profesionales, los 24 meses se contarán desde que hayan ejercido la opción de declarar sus rentas de acuerdo con las normas de la primera categoría o desde el inicio de actividades, y;\nAcreditar ingresos por ventas dentro de los 24 meses previos a la postulación (no necesariamente en todos los meses).\nEl beneficiario deberá poseer capacidades técnicas suficientes para ejecutar la mayor parte de las actividades planteadas, lo que será evaluado por InnovaChile. Asimismo, el beneficiario deberá demostrar capacidad financiera para ejecutar el programa.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Contribuir al cierre de brechas de productividad del sector empresarial, de preferencia Pymes, a través de la difusión de tecnologías y mejores prácticas innovadoras, con el propósito de fomentar su adopción y potenciar la competitividad de un grupo de empresas de una industria o sector que enfrentan una problemática común."
+  },
+  {
+    "nombre": "PROGRAMA DE DIFUSIÓN TECNOLÓGICA – PROVINCIAS OSORNO Y/O LLANQUIHUE – REGIÓN DE LOS LAGOS",
+    "fecha_inicio": "02/03/2026",
+    "fecha_cierre": "19/05/2026",
+    "region": "Los Lagos",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/pdt-osorno-llanquihue-los-lagos-2026/",
+    "requisitos": "Personas jurídicas constituidas en Chile.\nPersonas naturales con, a lo menos, 18 años cumplidos al momento de postular.\nBases legales\nAdemás, al momento de la postulación, en relación con el beneficiario, se deberá cumplir con los siguientes requisitos:\nHaber transcurrido, a lo menos, 24 meses, contados desde la fecha de inicio de actividades primera categoría, de conformidad con lo establecido en el artículo 20 de la Ley de Impuesto a la Renta (D.L. 824, de 1974), y que mantenga al menos un giro vigente de primera categoría. En el caso de las sociedades de profesionales, los 24 meses se contarán desde que hayan ejercido la opción de declarar sus rentas de acuerdo con las normas de la primera categoría o desde el inicio de actividades, y;\nAcreditar ingresos por ventas dentro de los 24 meses previos a la postulación (no necesariamente en todos los meses).\nEl beneficiario deberá poseer capacidades técnicas suficientes para ejecutar la mayor parte de las actividades planteadas, lo que será evaluado por InnovaChile. Asimismo, el beneficiario deberá demostrar capacidad financiera para ejecutar el programa.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Contribuir al cierre de brechas de productividad del sector empresarial, de preferencia Pymes, a través de la difusión de tecnologías y mejores prácticas innovadoras, con el propósito de fomentar su adopción y potenciar la competitividad de un grupo de empresas de una industria o sector que enfrentan una problemática común."
+  },
+  {
+    "nombre": "FOCAL – REGIÓN DE LOS LAGOS – CONVOCATORIA PROVINCIAS CHILOÉ Y/O PALENA, AVANCE INDIVIDUAL 2026",
+    "fecha_inicio": "19/02/2026",
+    "fecha_cierre": "07/05/2026",
+    "region": "Los Lagos",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/focal-region-de-los-lagos-convocatoria-provincias-chiloe-y-o-palena-avance-individual-2026/",
+    "requisitos": "Empresarios contribuyentes de actividades gravadas con Impuesto de Primera Categoría, incluidas las Cooperativas que demuestren ventas netas anuales superiores a 1.200 UF y que no excedan las 100.000 UF.\nLos proyectos individuales que se presenten deberán operar en modalidad de avance individual.\nBases legales\nPodrán ser beneficiarios de este instrumento contribuyentes que vendan menos de 1.200 UF, que desarrollen actividades económicas clasificadas en rubros agricultura y ganadería y aquellas del rubro turístico. Estas últimas deberán estar registradas en Registro Nacional de prestadores Turísticos.\nEl proyecto presentado por el postulante, deberá orientarse a implementar y certificar normas que aporten a la Competitividad Regional Sostenible con énfasis en Economía Circular en la región en las empresas de la Región de Los Lagos, entendiendo por tales normas aquellas establecidas en la resolución de focalización del concurso.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Este programa tiene por objeto apoyar a las empresas en el mejoramiento de la productividad y competitividad, a través de un incentivo a la implementación y certificación de normas técnicas de sistemas de gestión y de productos o de protocolos, reconocidos por esta Corporación como habilitantes para acceder a mercados sofisticados y/o de exportación."
+  },
+  {
+    "nombre": "FOCAL – REGIÓN DE LOS LAGOS – CONVOCATORIA PROVINCIAS OSORNO Y/O LLANQUIHUE, AVANCE INDIVIDUAL 2026",
+    "fecha_inicio": "19/02/2026",
+    "fecha_cierre": "07/05/2026",
+    "region": "Los Lagos",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/focal-region-de-los-lagos-convocatoria-provincias-osorno-y-o-llanquihue-avance-individual-2026/",
+    "requisitos": "Empresarios contribuyentes de actividades gravadas con Impuesto de Primera Categoría, incluidas las Cooperativas que demuestren ventas netas anuales superiores a 1.200 UF y que no excedan las 100.000 UF.\nLos proyectos individuales que se presenten deberán operar en modalidad de avance individual.\nBases legales\nPodrán ser beneficiarios de este instrumento contribuyentes que vendan menos de 1.200 UF, que desarrollen actividades económicas clasificadas en rubros agricultura y ganadería y aquellas del rubro turístico. Estas últimas deberán estar registradas en Registro Nacional de prestadores Turísticos.\nEl proyecto presentado por el postulante, deberá orientarse a implementar y certificar normas que aporten a la Competitividad Regional Sostenible con énfasis en Economía Circular en la región en las empresas de la Región de Los Lagos, entendiendo por tales normas aquellas establecidas en la resolución de focalización del concurso.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Este programa tiene por objeto apoyar a las empresas en el mejoramiento de la productividad y competitividad, a través de un incentivo a la implementación y certificación de normas técnicas de sistemas de gestión y de productos o de protocolos, reconocidos por esta Corporación como habilitantes para acceder a mercados sofisticados y/o de exportación."
+  },
+  {
+    "nombre": "DESARROLLA INVERSIÓN PRODUCTIVA – REGIÓN METROPOLITANA – FOCO DESCARBONIZACIÓN 2026 CDPR",
+    "fecha_inicio": "18/02/2026",
+    "fecha_cierre": "15/05/2026",
+    "region": "Metropolitana",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/desarrolla-inversion-productiva-region-metropolitana-foco-descarbonizacion-2026/",
+    "requisitos": "Beneficiarios: Contribuyentes que desarrollen actividades gravadas con el Impuesto de Primera Categoría de la Ley de Impuesto a la Renta, según lo establecido en el artículo 20 del D.L. N°824, de 1974, certificable con la información disponible en el sitio web del Servicio de Impuesto Internos (SII)\nPersonas naturales o Jurídicas contribuyentes de primera categoría, que contemplen una inversión total igual o superior a $12.000.000.\nBases legales\nFocalización Territorial: La convocatoria se focalizará territorialmente en la Región Metropolitana de Santiago, debiendo ejecutarse los proyectos en dicha región.\nFocalización temática:\nLa focalización temática corresponde al eje “Desarrollo Productivo Sostenible y Economía Circular” (ver Anexo N°1)\nSe buscará el apoyo preferente a proyectos de inversión productiva que contemplen, al menos, uno de los siguientes enfoques:\n• Sustitución de fuentes energéticas fósiles por energías renovables no convencionales (solar, eólica, biomasa, geotermia, entre otras).\n• Eficiencia energética avanzada, mediante modernización tecnológica, reconversión de equipamiento productivo o digitalización de procesos que reduzcan el consumo energético por unidad producida.\n• Electrificación de procesos productivos, reemplazando tecnologías intensivas en combustibles fósiles.\n• Economía circular aplicada a la reducción de emisiones, incluyendo reutilización de residuos, valorización energética y optimización de recursos.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Apoyo a proyectos de inversión productiva con foco en descarbonización y con potencial de generación de externalidades positivas mediante un cofinanciamiento para la adquisición de activo fijo, infraestructura y capital de trabajo."
+  },
+  {
+    "nombre": "DESARROLLA INVERSIÓN PRODUCTIVA – REGIÓN METROPOLITANA – FOCO TURISMO 2026 CDPR",
+    "fecha_inicio": "18/02/2026",
+    "fecha_cierre": "15/05/2026",
+    "region": "Metropolitana",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/desarrolla-inversion-productiva-region-metropolitana-foco-turismo-2026/",
+    "requisitos": "Beneficiarios: Contribuyentes que desarrollen actividades gravadas con el Impuesto de Primera Categoría de la Ley de Impuesto a la Renta, según lo establecido en el artículo 20 del D.L. N°824, de 1974, certificable con la información disponible en el sitio web del Servicio de Impuesto Internos (SII)\nPersonas naturales o Jurídicas contribuyentes de primera categoría, que contemplen una inversión total igual o superior a $12.000.000.\nBases legales\nFocalización Territorial: La convocatoria se focalizará territorialmente en la Región Metropolitana de Santiago, debiendo ejecutarse los proyectos en dicha región.\nFocalización temática:\nLa focalización temática corresponde al eje “Turismo inteligente y sostenible” (ver Anexo N°1)\nSe buscará apoyar proyectos que permitan dinamizar el turismo, potenciando capilaridad de la cadena de valor, fortaleciendo la oferta del turismo desde una mirada de turismo inteligente, sostenible en sus distintas tipologías (Montaña, Enoturismo, Rural, Urbano y Mice) poniendo en valor el patrimonio natural, cultural y urbano de la región, aportando a la competitividad del sector.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Apoyo a proyectos de inversión productiva con foco en turismo y con potencial de generación de externalidades positivas mediante un cofinanciamiento para la adquisición de activo fijo, infraestructura y capital de trabajo."
+  },
+  {
+    "nombre": "RED PROVEEDORES – REGIÓN METROPOLITANA – ETAPA DESARROLLO 2026 CDPR",
+    "fecha_inicio": "18/02/2026",
+    "fecha_cierre": "No informado",
+    "region": "Metropolitana",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/red-proveedores-region-metropolitana-etapa-desarrollo-2026/",
+    "requisitos": "El proyecto debe ser postulado por la empresa demandante. Esta debe ser una persona natural o jurídica, que tribute en primera categoría y que demuestre ventas sobre las 25.000 UF.\nEmpresa Demandante Co-Ejecutora: una o más empresas privadas y/o empresas públicas, sociedades en las que el Estado o un órgano de la administración del Estado tenga participación, que demuestren de forma individual, ventas netas anuales superiores a UF 25.000. Esta empresa deberá desempeñarse en el mismo ámbito de la Empresa Demandante, o en una actividad complementaria, y ser parte de la cadena productiva. (ver excepcionalidad regional en las Bases REDES).\nBases legales\nEmpresa Demandante: con ventas netas anuales superiores a UF 25.000. Para regiones que presenten un índice de pobreza igual o mayor al 15%, podrán ser beneficiarias aquellas que demuestren ventas netas anuales superiores a las UF 10.000. Así también, en aquellas regiones en las que el universo de empresas con ventas netas anuales sobre las UF25.000 sea inferior a 500, podrán ser Empresas Demandantes aquellas que demuestren ventas netas anuales superiores a las UF 10.000.\nEmpresa Proveedora: un proyecto deberá reunir, durante toda su ejecución, al menos 5 Empresas Proveedoras. Serán proveedoras las empresas, personas naturales o jurídicas, que abastecen o puedan abastecer bienes y/o servicios necesarios en la cadena de producción y/o en los canales de distribución de una Empresa Demandante. Deberán demostrar, de forma individual, ventas netas anuales que no excedan de UF 100.000. En cada proyecto se podrán incorporar Empresas Proveedoras con un mayor nivel de ventas al señalado, las que, en conjunto, no podrán exceder el 30% del total de Empresas Proveedoras participantes.\nFocalización Territorial: La convocatoria se focalizará territorialmente en la Región Metropolitana de Santiago, debiendo ejecutarse los proyectos en dicha región.\nFocalización Temática: corresponde a la materialización de proyectos que se encuentren alineados al eje “Emprendimiento orientado a ciudades inteligentes y encadenamientos productivos”, buscando fortalecer el ecosistema emprendedor y pyme regional, con enfoque territorial, impulsando emprendimientos dinámicos y creativos, innovación aplicada a ciudades inteligentes, capital humano y encadenamientos productivos inclusivos que retengan valor y generen oportunidades locales. (ver Anexo N°1)",
+    "estado": "Abiertas",
+    "descripcion_corta": "Si tienes interés en fortalecer tu cadena productiva, promoviendo el trabajo colaborativo con proveedores actuales o nuevos, fortaleciendo la relación estratégica Proveedores – Demandante, para mejorar la oferta de valor y el acceso a nuevos mercados, te invitamos a postular a Red Proveedores."
+  },
+  {
+    "nombre": "PAR – REGIÓN DE ATACAMA – 2° CONVOCATORIA INDUSTRIAS CREATIVAS 2026",
+    "fecha_inicio": "09/02/2026",
+    "fecha_cierre": "31/12/2026",
+    "region": "Atacama",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/par-region-de-atacama-2-convocatoria-industrias-creativas-2026/",
+    "requisitos": "Podrán ser beneficiarios los contribuyentes de primera categoría Ley de Impueto a la Renta con ventas anuales de entre UF 200 y hasta UF 10.000.\nEmprendedores sin inicio de actividades ante el SII, podrán postular, en la medida que su proyección de ventas cumpla con los niveles de ventas requeridos, quienes no podrán superar en su conjunto el 30% del total de participantes del Proyecto PAR.\nBases legales\nSe focalizará territorialmente en la Región de Atacama, debiendo, los postulantes, tener domicilio tributario registrado ante el Servicio de Impuestos Internos-SII en esta región y los proyectos deberán ejecutarse en la misma.\nSe focalizará temáticamente en proyectos de rubros relacionados con el sector de industrias creativas.",
+    "estado": "Abiertas",
+    "descripcion_corta": "El objetivo de esta línea es mejorar el potencial productivo y fortalecer la gestión de las empresas y/o emprendedores de un territorio, apoyando el desarrollo de sus competencias, capacidades y cofinanciando proyectos de inversión, que les permitan acceder a nuevas oportunidades de negocios y/o a mantener los existentes."
+  },
+  {
+    "nombre": "IFNB – PROGRAMA DE FORTALECIMIENTO PARA INSTITUCIONES FINANCIERAS NO BANCARIAS, 1° CONV. 2026",
+    "fecha_inicio": "06/02/2026",
+    "fecha_cierre": "30/06/2026",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/ifnb-programa-de-fortalecimiento-para-instituciones-financieras-no-bancarias-1-conv-2026/",
+    "requisitos": "Ejecutor Directo\nBeneficiario Atendido\nBases legales\nEjecutor Directo\nSerá el encargado de realizar el proceso de asistencia técnica a la IFNB.\nPodrán postular como beneficiario o ejecutor directo las personas jurídicas, constituidas en Chile, que al momento de la postulación tengan a lo menos 2 años de antigüedad contados desde su fecha de constitución y que cumplan con los demás requisitos establecidos en las BAG.\nBeneficiario Atendido\nSerá quien reciba la asistencia técnica por parte del Ejecutor directo.\nPodrán ser beneficiarios atendidos: Cooperativas de Ahorro y Crédito (CAC), cooperativas agrícolas de importancia económica, Cooperativas agrícolas, campesinas, y otras Instituciones financieras definidas en las bases.",
+    "estado": "Abiertas",
+    "descripcion_corta": "El Programa PRO IFNB tiene como objetivo mejorar la gestión financiera y de negocio de IFNB, optimizando su perfil de riesgo y mejorando las condiciones y oportunidades de acceso de las micro, pequeña y medianas empresas a sus servicios financieros."
+  },
+  {
+    "nombre": "CONVOCATORIA 2026 PROGRAMA DE DIFUSIÓN TECNOLÓGICA REGIÓN DE LA ARAUCANÍA",
+    "fecha_inicio": "28/01/2026",
+    "fecha_cierre": "15/05/2026",
+    "region": "La Araucanía",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/programa-de-difusion-tecnologica-region-de-la-araucania-2026/",
+    "requisitos": "Beneficiario o gestor\nBases legales\nPersonas jurídicas constituidas en Chile.\nLas sociedades de profesionales referidas en el artículo 42 N°2, de la Ley sobre Impuesto a la Renta, que hayan optado por declarar sus rentas de acuerdo con las normas de la primera categoría.\nPersonas naturales con, a lo menos, 18 años cumplidos al momento de postular.\nFocalización temática:\n• Turismo\n• Agroindustrial\n• Silvoagropecuario\n• Construcción\n• Pesca artesanal y Acuicultura\n• Industrias emergentes; son sectores económicos que están en desarrollo y que tienenel potencial de generar un impacto significativo en la economía y la sociedad. Secaracterizan por su innovación, rápida evolución y adopción de nuevas tecnologías",
+    "estado": "Abiertas",
+    "descripcion_corta": "Queremos mejorar el acceso al conocimiento, tecnologías y mejores prácticas “prospectadas” para un conjunto de empresas, de preferencia Pymes de la region de La Araucanía, a través de actividades de difusión y transferencia tecnológica que aporten valor al desempeño productivo y a la competitividad de las empresas (Revisar resolución (E) de focalización N°5-2026 adjunta)."
+  },
+  {
+    "nombre": "Capital Humano para la Innovación",
+    "fecha_inicio": "18/11/2025",
+    "fecha_cierre": "28/05/2026",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/capital-humano-para-la-innovacion-2025/",
+    "requisitos": "Personas jurídicas constituidas en Chile.\nPersonas naturales que, al momento de postular, tengan cumplidos, a lo menos, 18 años de edad.\nBases legales\nAl momento de la postulación, en relación con el beneficiario, se deberá cumplir con los siguientes requisitos:\n▪ Haber transcurrido, a lo menos, 18 meses, contados desde la fecha de inicio de actividades en un giro empresarial de primera categoría, de conformidad con lo establecido en el artículo 20 de la Ley de Impuesto a la Renta (D.L. 824, de 1974), el cual debe encontrarse vigente.\n▪ Acreditar ingresos por ventas dentro de los 18 meses previos a la postulación (no necesariamente en todos los meses).\nLas instituciones de educación superior (universidades, institutos profesionales y centros de formación técnica), no podrán participar en calidad de beneficiario, y sólo podrán participar como entidades contratadas por el beneficiario para la ejecución de actividades externalizadas del proyecto.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Buscamos contribuir al fortalecimiento de capacidades en I+D+i en las empresas nacionales, a través de la inserción de profesionales y técnicos/as de nivel superior, altamente calificados, para su participación en el desarrollo de soluciones que aborden desafíos productivos y/o competitivos que requieran de actividades de I+D+i, con la finalidad de aumentar la productividad y competitividad de dichas empresas."
+  },
+  {
+    "nombre": "Programa de Absorción Tecnológica para la Innovación",
+    "fecha_inicio": "18/11/2025",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/programa-de-absorcion-tecnologica-para-la-innovacion-2025/",
+    "requisitos": "Podrán postular como beneficiario o gestor:\n▪ Personas jurídicas constituidas en Chile.\n▪ Las sociedades de profesionales referidas en el artículo 42, N°2, de la Ley sobre Impuesto a la Renta, que hayan optado por declarar sus rentas de acuerdo con las normas de la primera categoría.\n▪ Personas naturales que, al momento de postular, tengan, a lo menos, 18 años cumplidos.\nBases legales\nAl momento de la postulación, en relación con el beneficiario o gestor, se deberá cumplir con los siguientes requisitos:\n▪ Haber transcurrido, a lo menos, 24 meses, contados desde la fecha de inicio de actividades en primera categoría, de conformidad con lo establecido en la Ley de Impuesto a la Renta (D.L. 824, de 1974), el cual debe encontrarse vigente. En el caso de las sociedades de profesionales, los 24 meses se contarán desde que hayan ejercido la opción de declarar sus rentas de acuerdo con las normas de la primera categoría o desde el inicio de actividades.\n▪ Acreditar ingresos por ventas dentro de los 24 meses previos a la postulación (no necesariamente en todos los meses).",
+    "estado": "Abiertas",
+    "descripcion_corta": "Busca contribuir a mejorar las capacidades de innovación sistemática en un conjunto de empresas, de preferencia Pymes, mediante el fortalecimiento de las capacidades de absorción tecnológica, cofinanciando la incorporación de nuevo conocimiento, mejores prácticas y/o tecnologías."
+  },
+  {
+    "nombre": "Entidades Patrocinadoras para Semilla Inicia y Semilla Expande",
+    "fecha_inicio": "01/08/2024",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/entidades_patrocinadoras_para_semilla_inicia_y_semilla_expande/",
+    "requisitos": "Personas jurídicas constituida o creada en Chile\nContar con una antigüedad mínima de dos años al momento de la postulación a la convocatoria.\nDeclarar disponer de una capacidad financiera suficiente que le permita obtener directamente y hacer entrega de los documentos de garantía exigidos por Corfo, para la entrega del cofinanciamiento de cada proyecto a patrocinar.\nPoseer experiencia suficiente en el desarrollo de operaciones y actividades relacionadas con el apoyo a emprendedores(as), tales como aspectos de gestión, ventas, comercialización, contabilidad, aspectos legales, levantamiento de financiamiento privado, entre otros relevantes para el correcto desarrollo de un emprendimiento.",
+    "estado": "Abiertas",
+    "descripcion_corta": "El presente instrumento tiene por objetivo regular la incorporación de determinadas entidades a la “Nómina de Entidades Patrocinadoras para Semilla Inicia” y a la “Nómina de Entidades Patrocinadoras para Semilla Expande”, respectivamente, así como sus obligaciones y el proceso de evaluación periódica de las mismas durante la ejecución de los proyectos. Las referidas nóminas, además, habilitarán a las Entidades Patrocinadoras en ellas incorporadas, para apoyar proyectos ejecutados en el contexto de los instrumentos de financiamiento “Semilla Inicia para Empresas Lideradas por Mujeres” y “Semilla Expande para Empresas Lideradas por Mujeres”, respectivamente."
+  },
+  {
+    "nombre": "Innova Alta Tecnología – Eureka",
+    "fecha_inicio": "11/07/2024",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/innova_alta_tecnologia_eureka/",
+    "requisitos": "Podrán postular como beneficiarios personas jurídicas constituidas en Chile.\nBases legales\nAdemás, al momento de la postulación, en relación con el beneficiario, se deberá cumplir con los siguientes requisitos:\nHaber transcurrido, a lo menos, 3 años, contados desde la fecha de inicio de actividades en un giro empresarial de primera categoría, de conformidad con lo establecido en el artículo 20 de la Ley de Impuesto a la Renta (D.L. 824, de 1974), el cual debe encontrarse vigente.\nAcreditar ingresos por ventas dentro de los 3 años previos a la postulación (no necesariamente en todos los meses).",
+    "estado": "Abiertas",
+    "descripcion_corta": "Apoyamos innovaciones intensivas en I+D, que enfrenten alta incertidumbre tecnológica y que apunten a escalamientos de alto potencial de comercialización nacional o global, fortaleciendo las capacidades de I+D+i en las empresas."
+  },
+  {
+    "nombre": "Programa de Prospección Tecnológica focalizado en vinculación internacional",
+    "fecha_inicio": "08/07/2024",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/programa_de_prospeccion_tecnologica_vinculacion_internacional/",
+    "requisitos": "Podrán postular como beneficiario o gestor:\nPersonas jurídicas constituidas en Chile.\nLas sociedades de profesionales referidas en el artículo 42 N°2, de la Ley sobre Impuesto a la Renta, que hayan optado por declarar sus rentas de acuerdo con las normas de la primera categoría.\nPersonas naturales con, a lo menos, 18 años cumplidos al momento de postular.\nBases legales\nAl momento de la postulación, en relación con el beneficiario, se deberá cumplir con los siguientes requisitos:\nHaber transcurrido, a lo menos, 24 meses, contados desde la fecha de inicio de actividades en primera categoría, de conformidad con lo establecido en la Ley de Impuesto a la Renta (D.L. 824, de 1974), y que mantenga al menos un giro vigente de primera categoría.\nEn el caso de las sociedades de profesionales, los 24 meses se contarán desde que hayan ejercido la opción de declarar sus rentas de acuerdo con las normas de la primera categoría o desde el inicio de actividades, y;\nAcreditar ingresos por ventas dentro de los 24 meses previos a la postulación (no necesariamente en todos los meses).",
+    "estado": "Abiertas",
+    "descripcion_corta": "Apoya actividades asociativas de prospección tecnológica, de conocimiento y de mejores prácticas no disponibles a nivel nacional, y su adecuación y transferencia al contexto nacional, que contribuyan a la creación de valor y fortalecimiento de las capacidades de innovación en las empresas."
+  },
+  {
+    "nombre": "RED TECNOLÓGICA GTT+ – REGIÓN DE O’HIGGINS – ETAPA DE DIAGNÓSTICO Y DESARROLLO 2023",
+    "fecha_inicio": "30/06/2023",
+    "fecha_cierre": "30/12/2025",
+    "region": "O'Higgins",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/red_tecnologica_gtt_oh_diag_desar/",
+    "requisitos": "Personas naturales o jurídicas, que tributen en 1ra categoría, con rango de ventas entre 2.400 UF y 600.000 UF.\nEn un proyecto se podrán incorporar beneficiarios/as de un menor nivel de ventas al señalado, los que, en conjunto, no deberán exceder el 35% del número total de éstos/as.\nBases legales\nFocalización temática: que se materialicen en la Región del Libertador Bernardo O’Higgins, postulados por contribuyentes que tengan domicilio registrado ante el SII en dicha Región, medida que se justifica en relación con la necesidad de reactivar actividades económicas de la misma.\nFocalización territorial: La presente convocatoria se focalizará en proyectos pertenecientes a la categoría multisectorial con foco sostenible que busquen, de preferencia, impactar positivamente en, al menos, uno de los ámbitos asociados a los Objetivo de Desarrollo Sostenible – ODS.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Buscamos empresas con interés en participar junto a otras, para aumentar tu competitividad a través del Programa RED GTT para abordar brechas en ámbitos tecnológicos y de gestión, desarrollando actividades de construcción de capital social de Pymes silvoagropecuarias, a través de la organización y el trabajo en grupo de los productores, de acuerdo con las características productivas del grupo de empresas. Convocatoria abierta para la Región de O’Higgins."
+  },
+  {
+    "nombre": "Garantía PRO-INVERSIÓN",
+    "fecha_inicio": "01/02/2022",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/garantia_pro_inversion/",
+    "requisitos": "Empresas Privadas, productoras de bienes y/o prestadoras de servicios.\nPara solicitarlo debes contactarte con alguna de las instituciones financieras que operan con nosotros.\nPara más detalles revisar “\nReglamento\n”\nEmpresas Privadas (personas jurídicas o personas naturales, ambas con giro vigente ante el S.I.I y sujetas de crédito), productoras de bienes y/o prestadoras de servicios, que cumplan con alguna de las siguientes condiciones:\nMicro, pequeña, mediana y grandes empresas con ventas hasta por UF600.000 al año (excluido el IVA).\nEmpresas emergentes (sin historia, pero con proyección de ventas acotadas al límite señalado anteriormente).\nNo podrán solicitarlo:\nEmpresas con mora superior a 60 días corridos en los últimos 12 meses, en la institución Financiera donde solicita el crédito.\nEmpresas con solicitudes de cobro en Corfo de subsidio contingente (cobertura), registradas en los últimos 5 años.",
+    "estado": "Abiertas",
+    "descripcion_corta": "ES UN MECANISMO DE APOYO para acceder a Financiamiento para micro, pequeña, mediana y grandes empresas (venta anual hasta UF600.000). Corfo facilita el acceso a crédito, mediante el otorgamiento de coberturas a instituciones financieras, que en su proceso de evaluación y otorgamiento de créditos requieren garantías del deudor para cursar los financiamientos, fomentando de esta forma la realización de proyectos de inversión y/o adquisición de activos fijos."
+  },
+  {
+    "nombre": "Becas Capital Humano",
+    "fecha_inicio": "No informado",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/becascapitalhumano/home",
+    "requisitos": "No informado",
+    "estado": "Abiertas",
+    "descripcion_corta": "Queremos apoyar la labor de los trabajadores de diversos sectores productivos y geográficos del país, donde existe una falta de personal calificado o donde el personal existente requiera fortalecer habilidades fundamentales para su mejor desempeño laboral, a través de cursos de especialización."
+  },
+  {
+    "nombre": "Crea y Valida-Eureka",
+    "fecha_inicio": "No informado",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/crea_valida_eureka/",
+    "requisitos": "Podrán postular como beneficiarios personas jurídicas constituidas en Chile\nBases legales\nAdemás, al momento de la postulación, en relación con el beneficiario, se deberá cumplir con los siguientes requisitos:\nHaber transcurrido, a lo menos, 24 meses, contados desde la fecha de inicio de actividades en primera categoría, de conformidad con lo establecido en el artículo 20 de la Ley de Impuesto a la Renta (D.L. 824, de 1974), y que mantenga al menos un giro vigente de primera categoría\nAcreditar ingresos por ventas dentro de los 24 meses previos a la postulación (no necesariamente en todos los meses).",
+    "estado": "Abiertas",
+    "descripcion_corta": "Es un apoyo que cofinancia proyectos colaborativos de I+D+i para empresas chilenas que trabajen en el desarrollo de nuevos o mejorados productos (bienes o servicios) y/o procesos, que requieran I+D, desde la fase de prototipo y hasta la fase de validación técnica a escala productiva y/o validación comercial con empresas de países miembros de la Red Eureka, estimulando el intercambio tecnológico y la cooperación internacional en I+D+i entre empresas chilenas y las entidades de los países participantes de la Red Eureka."
+  },
+  {
+    "nombre": "Crédito Corfo MiPyme",
+    "fecha_inicio": "No informado",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/credito_mipyme/",
+    "requisitos": "Empresas privadas (Personas jurídicas y personas naturales) productoras de bienes o servicios.\nPara solicitarlo debes contactarte con alguna de las instituciones financieras no bancarias que colaboran con nosotros.\nPara más detalles revisar “\nReglamento\n”\nLas Empresas, esto es, personas jurídicas o personas natural, sujetas de crédito, que destinen recursos a actividades de producción de bienes y servicios, que cumplan con alguna de las siguientes condiciones:\nMicro, pequeña y mediana empresa con ventas anuales hasta por UF100.000 (excluido el IVA)\nLas actividades desarrolladas por las empresas deberán ser aquellas contempladas en el artículo 20 de la Ley de Impuesto a la Renta, hayan o no iniciado actividades ante el Servicio de Impuestos Internos o actividades comprendidas en el artículo 42 N°2 del mismo cuerpo legal, según el giro autorizado.\nNo podrán financiar:\nProyectos inmobiliarios de construcción de viviendas o departamentos, o loteo o subdivisión de inmuebles.\nFines especulativos, la compra de acciones o participaciones en empresas o sociedades o de otros valores mobiliarios.\nOtorgamiento de créditos a personas naturales o jurídicas relacionadas en propiedad o gestión, en los términos establecidos en el artículo 100 de la Ley N°18.045.\nLas establecidas en la lista de Exclusión del Informe de Gestión Ambiental y Social del Banco Interamericano de Desarrollo (BID).",
+    "estado": "Abiertas",
+    "descripcion_corta": "Es un programa de financiamiento que busca ampliar y/o mejorar la oferta de financiamiento para las Micro, Pequeñas y Medianas Empresas (MIPYMES). Lo anterior, a través de Intermediarios Financieros No Bancarios (IFNB), que otorguen operaciones de Crédito, Leasing y/o Factoring para capital de trabajo y/o inversión."
+  },
+  {
+    "nombre": "Crédito Verde",
+    "fecha_inicio": "No informado",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/credito_verde/",
+    "requisitos": "Empresas privadas (Personas jurídicas y personas naturales con giro) productoras de bienes o servicios.\nPara solicitarlo debes contactarte con alguna de las instituciones financieras que operan con el Programa.\nPara más detalles revisar “\nReglamento\n”\nEmpresas Privadas (personas jurídicas o personas naturales sujetos de crédito), productora de bienes y/o prestadoras de servicios, que cumplan con alguna de las siguientes condiciones:\nPueden operar empresa de cualquier tamaño, sin que exista un tope de ventas anuales.\nPueden operar empresas emergentes con proyección de ventas anuales sin tope.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Programa de financiamiento, a través de instituciones financieras participantes, para potenciar el desarrollo y ejecución de proyectos que mitiguen los efectos del cambio climático y/o mejoren la sustentabilidad ambiental de las empresas, reimpulsando la inversión en iniciativas de:"
+  },
+  {
+    "nombre": "Fondo de Desarrollo y Crecimiento Perfil Administradoras",
+    "fecha_inicio": "No informado",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/fondo_de_desarrollo_crecimiento_perfil_administradoras/",
+    "requisitos": "No informado",
+    "estado": "Abiertas",
+    "descripcion_corta": "Queremos potenciar el desarrollo de fondos de inversión de capital de riesgo que permitan el financiamiento de pequeñas y medianas empresas chilenas con alto potencial de crecimiento, y que se encuentren en etapas de expansión. Este Programa es para postulación de administradoras, según el detalle señalado en beneficiarios."
+  },
+  {
+    "nombre": "Fondo Etapas Tempranas Perfil Administradoras",
+    "fecha_inicio": "No informado",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/fondo_etapas_tempranas_perfil_administradoras/",
+    "requisitos": "No informado",
+    "estado": "Abiertas",
+    "descripcion_corta": "Queremos fomentar la creación de fondos de inversión que permitan financiar y desarrollar a las pequeñas y medianas empresas chilenas, que se encuentren en etapas tempranas y presenten potencial de crecimiento e innovación. Para ello, Corfo entrega financiamiento a los fondos de inversión, para que éstos inviertan en este tipo de empresas mediante créditos o aportes de capital. A cambio, el fondo adquiere un porcentaje de participación en la empresa y se involucra activamente en su gestión."
+  },
+  {
+    "nombre": "Fondo Etapas Tempranas Tecnológicas Perfil Administradoras",
+    "fecha_inicio": "No informado",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/fondo_etapas_tempranas_tecnologicas_perfil_administradoras/",
+    "requisitos": "No informado",
+    "estado": "Abiertas",
+    "descripcion_corta": "Queremos potenciar el desarrollo de fondos de inversión de capital de riesgo, con foco en empresas chilenas que se encuentren en etapas tempranas de desarrollo y presenten potencial de crecimiento e innovación con sectores vinculados con tecnologías."
+  },
+  {
+    "nombre": "Garantía COBEX",
+    "fecha_inicio": "No informado",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/cobex/",
+    "requisitos": "Empresas Privadas, productoras de bienes y/o prestadoras de servicios.\nPara solicitarlo debes contactarte con alguna de las instituciones financieras que operan con nosotros.\nPara más detalles revisar “\nReglamento\n”\nEmpresas Privadas (personas jurídicas o personas naturales, ambas con giro vigente ante el S.I.I y sujetas de crédito), productoras de bienes y/o prestadoras de servicios, que cumplan con alguna de las siguientes condiciones:\nMicro, pequeña y mediana empresas relacionadas directa o indirectamente con el comercio exterior, con ventas de hasta UF 100.000 al año (excluido el IVA) y empresas exportadoras con ventas de hasta UF 600.000 al año.\nEmpresas emergentes (sin historia, pero con proyección de ventas de hasta UF 100.000 al año y UF 600.000 al año en caso de ser exportadoras).\nNo podrán solicitarlo:\nEmpresas con mora superior a 60 días corridos, en la institución financiera donde solicita el financiamiento.\nEmpresas con solicitudes de cobro en Corfo de subsidio contingente (cobertura) registradas en los últimos 3 años.",
+    "estado": "Abiertas",
+    "descripcion_corta": "ES UN MECANISMO DE APOYO para acceder a Financiamiento para la micro, pequeña, mediana y grandes empresas relacionadas directa o indirectamente con el comercio exterior (venta anual hasta UF600.000). Corfo facilita el acceso a crédito, mediante el otorgamiento de coberturas a instituciones financieras, que en su proceso de evaluación y otorgamiento de créditos requieren garantías del deudor para cursar los financiamientos para inversión y capital de trabajo, incluidas las operaciones destinadas a mitigar el riesgo de tipo de cambio, fomentando de esta forma el comercio exterior."
+  },
+  {
+    "nombre": "Garantía ESCALA PRO-INVERSIÓN",
+    "fecha_inicio": "No informado",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/escala_pro_inversion/",
+    "requisitos": "Empresas con planes de crecimiento, aceleración y/o con soluciones innovadoras.\nHaber sido beneficiarias con algún instrumento de CORFO proveniente de las Gerencias señaladas, o de su Comité Innova Chile.\nContar con una carta de recomendación de CORFO.\nPara solicitarlo debes contactarte con alguna de las instituciones financieras que operan con nosotros.\nPara más detalles revisar “\nReglamento\n”\nEmpresas Privadas (personas jurídicas o personas naturales, ambas con giro vigente ante el S.I.I y sujetas de crédito), productoras de bienes y/o prestadoras de servicios, que cumplan con las siguientes condiciones:\nMicro, pequeña, mediana y grandes empresas con ventas hasta UF 600.000 al año (excluido el IVA) con planes de crecimiento, aceleración y/o con soluciones innovadoras.\nBeneficiarias de un instrumento de las Gerencias de Emprendimiento, Redes y Territorio, Capacidades Tecnológicas o Innova de Corfo.\nTener una carta de recomendación entregada por la respectiva gerencia o comité de CORFO, la que permitirá acceder a las condiciones especiales de cobertura.\nLa recomendación no podrá tener una antigüedad mayor a 12 meses al momento del curse de la operación que se acoja a la cobertura.\nLa recomendación de CORFO no garantiza la aprobación del crédito, el que debe ser evaluado por la institución financiara.\nIMPORTANTE:\nLa empresa debe ser sujeto de crédito y encontrarse en proceso de evaluación por parte de una institución financiera intermediaria de la modalidad, para la solicitud de recomendación se debe llenar el formulario disponible en el portal privado de Corfo en el menú Escala Proinversión.\nNo podrán solicitarlo:\nEmpresas con mora superior a 60 días corridos en los últimos 12 meses, en la institución Financiera donde solicita el crédito.\nEmpresas con solicitudes de cobro en Corfo de subsidio contingente (cobertura), registradas en los últimos 5 años.",
+    "estado": "Abiertas",
+    "descripcion_corta": "ES UN MECANISMO DE APOYO para acceder a Financiamiento para Empresas con planes de crecimiento, aceleración y/o con soluciones innovadoras que hayan sido previamente beneficiarias de un instrumento de las Gerencias de Emprendimiento, Redes y Territorio, Capacidades Tecnológicas o Innova de Corfo; y cuenten con una carta de recomendación entregada por la respectiva gerencia o comité."
+  },
+  {
+    "nombre": "Garantía FOGAIN",
+    "fecha_inicio": "No informado",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/fogain/",
+    "requisitos": "No informado",
+    "estado": "Abiertas",
+    "descripcion_corta": "ES UN MECANISMO DE APOYO para acceder a CREDITOS para micro, pequeñas y medianas empresas. Corfo facilita el acceso a crédito mediante el otorgamiento de coberturas a instituciones financieras, que en su proceso de evaluación y otorgamiento de créditos requieren garantías del deudor para cursar los financiamientos."
+  },
+  {
+    "nombre": "Garantía FOGAIN MUJER",
+    "fecha_inicio": "No informado",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/fogain_mujer/",
+    "requisitos": "Empresas Privadas, productoras de bienes y/o prestadoras de servicios lideradas por mujeres.\nPara solicitarlo debes contactarte con alguna de las instituciones financieras que colaboran con nosotros.\nPara más detalles revisar “Reglamento”\nEmpresas Privadas lideradas por mujeres (personas jurídicas o personas naturales sujetas a crédito), productoras de bienes y/o prestadoras de servicios, con ventas hasta UF25.000 al año (excluido el IVA).\nSe entenderá que una empresa es liderada por mujeres, en los siguientes casos:\nI.\nPersonas Natural de sexo femenino (sexo y nombre registral), mayor de 18 años.\n1.\nEn caso de personas natural, si la empresaria inpidual es mujer.\nII.\nPersonas Jurídicas constituidas en Chile, que correspondan a una empresa liderada por mujeres.\n1.\nEn caso de persona jurídica con fines de lucro que cuente con directorio (por exigirlo la ley o porque así lo acuerden los socios o accionistas)\nQue una o más mujeres tengan participación en, al menos, un 50% del capital social, con derecho a voto. En otros términos, que una o más mujeres sean dueñas de la mitad o más de la sociedad.\nQue una o más mujeres tengan participación en, al menos, un 30% del capital social, con derecho a voto y que, además, una o más mujeres tengan facultad para representar a la sociedad, ya sea como directoras, gerentas, administradoras, o ejecutivas principales.\n2.\nEn caso de persona jurídica con fines de lucro que no cuente con directorio, en cualquiera de los dos siguientes casos:\nQue una o más mujeres tengan participación en, al menos, un 50% del capital social. En otros términos, que una o más mujeres sean dueñas de la mitad o más de la sociedad.\nQue una o más mujeres tengan participación en, al menos, un 30% del capital social y que, además, una o más mujeres tengan facultad para representar a la empresa.\n3.\nEn caso de personas jurídicas sin fines de lucro o otras (por ejemplo: corporaciones, fundaciones, asociaciones gremiales, entre otras):\nSi su directorio (o el órgano al que le corresponda la administración) esta integrado, al menos, en un 50% por mujeres. En otros términos, que al menos la mitad del directorio este integrado por mujeres.\nNo podrán solicitarlo:\nEmpresas lideradas por mujeres que presenten una solicitud de cobertura en los últimos 12 meses, en cualquiera de los programas de cobertura.\nEmpresas con mora superior a 60 días en la institución Financiera donde solicita el crédito.\nEmpresas con solicitudes de cobro en Corfo de subsidio contingente registradas en los últimos 3 años.",
+    "estado": "Abiertas",
+    "descripcion_corta": "ES UN MECANISMO DE APOYO para acceder a FINANCIAMIENTO para micro y pequeña empresa lideradas por mujeres, de todo Chile, con necesidades de capital de trabajo, inversión y/o refinanciamiento. Para ello, Corfo otorga una garantía parcial a los créditos otorgados por Instituciones Financieras Bancarias y No Bancarias, compensando parcialmente sus pérdidas en caso de que estas empresas beneficiarias no cumplan con el pago de sus créditos."
+  },
+  {
+    "nombre": "Ley de Incentivo Tributario a la I+D",
+    "fecha_inicio": "No informado",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/incentivo_tributario/",
+    "requisitos": "No informado",
+    "estado": "Abiertas",
+    "descripcion_corta": "La Ley Investigación y Desarrollo (I+D) tiene por objetivo contribuir a mejorar la capacidad competitiva de las empresas chilenas, al establecer un incentivo tributario para la inversión en I+D permitiéndoles rebajar, del impuesto de primera categoría, hasta el 52,55% de los recursos destinados a actividades de investigación y desarrollo. #Ley I+D #Incentivo #Incentivo Tributario #Ley #I+D #Desarrollar #Investigar #Empresas #Ciencia #Desarrollo tecnológico #Impuesto #Beneficio Tributario"
+  },
+  {
+    "nombre": "PAR GESTIÓN EFICIENTE DE RECURSOS HÍDRICOS – REGIÓN DE O’HIGGINS 2022",
+    "fecha_inicio": "No informado",
+    "fecha_cierre": "No informado",
+    "region": "O'Higgins",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/par_gestion_eficiente_de_recursos_hidricos_ohiggins/",
+    "requisitos": "Contribuyentes con actividades gravadas con el Impuesto de Primera Categoría.\nQuienes cuenten con un tiempo de operación inferior a un año, deberán tener una proyección de ventas que les permita cumplir con los niveles de ventas requeridos.\nBases legales\nLos proyectos deben estar vinculados a la sustentabilidad medioambiental y cambio climático, incorporando como elemento principal la eficiente gestión de recursos hídricos.\nDeben demostrar ventas netas anuales entre UF 200 y UF 10.000.\nEmprendedores sin inicio de actividades ante el SII, podrán postular, en la medida que su proyección de ventas cumpla con los niveles de ventas requeridos.\nLos proyectos se deben desarrollar y tener dirección comercial en la Región de O’Higgins.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Subsidio que busca mejorar el potencial productivo y fortalecer la gestión de las empresas y/o emprendedores de un territorio, apoyando proyectos vinculados a la sustentabilidad medioambiental, que incorporen la gestión eficiente de recursos hídricos, fomentando el desarrollo de sus competencias y capacidades y cofinanciando proyectos de inversión, que les permitan acceder a nuevas oportunidades de negocio y/o mantener las existentes."
+  },
+  {
+    "nombre": "PAR MULTISECTORIAL IDENTIDAD REGIONAL Y PATRIMONIAL – REGIÓN DE O’HIGGINS – AÑO 2023",
+    "fecha_inicio": "No informado",
+    "fecha_cierre": "No informado",
+    "region": "O'Higgins",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/par_multisectorial_identidad_regional_y_patrimonial_oh/",
+    "requisitos": "Contribuyentes con actividades gravadas con el Impuesto de Primera Categoría.\nNo podrán ser beneficiarios/as de este instrumento, las personas naturales que tengan inscripción vigente en el Registro Nacional de Deudores de Persones de Alimentos, regulado por la Ley N°21.389.\nDeben demostrar ventas netas anuales entre UF 200 y UF 10.000.\nQuienes cuenten con un tiempo de operación inferior a un año, deberán tener una proyección de ventas que les permita cumplir con los niveles de ventas requeridos.\nBases legales\nSe focalizará en proyectos con actividades vinculadas a identidad regional y patrimonial de la Región de O’Higgins, tales como: Chamantos y mantas de Doñihue, Sal de Cáhuil, Chacolí , Licores y Mistelas de Doñihue, Mimbre de Chimbarongo, Cobre Labrado y Orfebrería de Coya, Cerámica de Pañul, Piedra Rosada y mueblistas de Pelequén.\nEmprendedores sin inicio de actividades ante el SII, podrán postular, en la medida que su proyección de ventas cumpla con los niveles de ventas requeridos.\nLos proyectos se deben desarrollar y tener dirección comercial en la Región de O’Higgins.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Queremos potenciar a un grupo entre 5 y 15 empresas y/o emprendedores de una localidad o sector económico determinado, para que mejoren su competencia productiva y gestión, desarrollando planes de asistencia técnica, capacitación y cofinanciando la inversión productiva."
+  },
+  {
+    "nombre": "PAR MULTISECTORIAL INCLUSIÓN – REGIÓN DE O’HIGGINS – AÑO 2023",
+    "fecha_inicio": "No informado",
+    "fecha_cierre": "No informado",
+    "region": "O'Higgins",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/par_multisectorial_inclusion_oh/",
+    "requisitos": "Contribuyentes con actividades gravadas con el Impuesto de Primera Categoría.\nNo podrán ser beneficiarios/as de este instrumento, las personas naturales que tengan inscripción vigente en el Registro Nacional de Deudores de Persones de Alimentos, regulado por la Ley N°21.389.\nDeben demostrar ventas netas anuales entre UF 200 y UF 10.000.\nQuienes cuenten con un tiempo de operación inferior a un año, deberán tener una proyección de ventas que les permita cumplir con los niveles de ventas requeridos.\nBases legales\nFocalizado en proyectos pertenecientes a la categoría multisectorial y en el marco de la inclusión orientada a: proyectos postulados por empresas lideradas por personas en situación de discapacidad y/o adultos mayores.\nEmprendedores sin inicio de actividades ante el SII, podrán postular, en la medida que su proyección de ventas cumpla con los niveles de ventas requeridos.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Queremos potenciar a un grupo entre 5 y 15 empresas y/o emprendedores de una localidad o sector económico determinado, para que mejoren su competencia productiva y gestión, desarrollando planes de asistencia técnica, capacitación y cofinanciando la inversión productiva."
+  },
+  {
+    "nombre": "Programa de Cobertura para Instituciones de Garantía Recíproca – Cobertura IGR",
+    "fecha_inicio": "No informado",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/fondos_de_garantia_a_instituciones_de_garantia_reciproca/",
+    "requisitos": "No informado",
+    "estado": "Abiertas",
+    "descripcion_corta": "Buscamos fomentar el desarrollo de las instituciones de garantía recíproca (IGR), para que puedan garantizar créditos a micro, pequeñas y medianas empresas y, de este modo, las mipymes puedan acceder"
+  },
+  {
+    "nombre": "Red Tecnológica GTT+",
+    "fecha_inicio": "No informado",
+    "fecha_cierre": "No informado",
+    "region": "Arica y Parinacota, Bío Bío, Metropolitana, O'Higgins, Tarapacá",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/gtt/",
+    "requisitos": "Empresas, Personas Jurídicas\nBases legales\nLos beneficiarios deberán tener giro silvoagropecuario y demostrar, en forma individual, ventas netas anuales superiores a UF 2.400.- (dos mil cuatrocientas Unidades de Fomento) y que no excedan de UF 600.000.- (seiscientas mil Unidades de Fomento).\nEn un proyecto se podrá incorporar beneficiarios de menor nivel de ventas a los señalados, los que en conjunto, no deberán exceder el 35% del número total de éstos.\nAl postular, el proyecto deberá contar con un mínimo de 10 y un máximo de 15 beneficiarios y, durante su ejecución, su número podrá reducirse hasta 8 beneficiarios.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Si tienes interés en participar junto a otras empresas del sector silvoagropecuario en un proyecto GTT, los invitamos a postular al programa GTT+. Esta línea de apoyo busca que grupos de entre 10 y 15 empresas puedan, a través del intercambio entre pares y asistencias técnicas, cerrar brechas tecnológicas y de gestión, incorporando herramientas y mejores prácticas productivas, fomentando la construcción de alianzas entre los empresarios para ampliar el capital relacional, mejorar su productividad y posición competitiva."
+  },
+  {
+    "nombre": "Solicitud previa de aprobación de proyectos de I+D – artículo 41 G LIR",
+    "fecha_inicio": "No informado",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/solicitud_aprobacion_proyectos_excepcion_rentas_pasivas/",
+    "requisitos": "Contribuyentes o patrimonios de afectación con domicilio, residencia o constituidos en Chile\nBases legales\nQue – directa o indirectamente – controlan una o más entidades sin domicilio ni residencia en el país, de acuerdo con las definiciones y requisitos señalados en el artículo 41 G de la LIR.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Procedimiento para solicitar a Corfo, en el marco del régimen ProPyme de la letra D del artículo 14 de la LIR, la certificación previa de acuerdos que se celebren para el financiamiento mediante la participación en Pymes, con la finalidad de apoyar puesta en marcha, desarrollo o crecimiento de emprendimientos o de proyectos de innovación tecnológica. En mérito de dicha certificación, no se entenderán entidades relacionadas con la Pyme, aquellas que participen en ella con ese fin y, por lo tanto, no se consideran para el cálculo de los ingresos brutos de la Pyme."
+  },
+  {
+    "nombre": "Solicitud previa de certificación de acuerdos – artículo 14 LIR",
+    "fecha_inicio": "No informado",
+    "fecha_cierre": "No informado",
+    "region": "Todo Chile",
+    "link": "https://www.corfo.gob.cl/sites/cpp/convocatoria/certificacion_acuerdo_financiamiento_participacion_pyme/",
+    "requisitos": "Empresas que reúna las condiciones copulativas indicadas en el número 1 de la letra D) del artículo 14 de la LIR.\nBases legales\nEmpresas contribuyentes de la 1ra. Categoría Ley impuesto a la renta, revisar en Bases y Descargables archivo “Otros requisitos señalados en el número 1 de la letra D) del artículo 14 de la LIR”.",
+    "estado": "Abiertas",
+    "descripcion_corta": "Procedimiento para solicitar a Corfo, en el marco del régimen ProPyme de la letra D del artículo 14 de la LIR, la certificación previa de acuerdos que se celebren para el financiamiento mediante la participación en Pymes, con la finalidad de apoyar puesta en marcha, desarrollo o crecimiento de emprendimientos o de proyectos de innovación tecnológica. En mérito de dicha certificación, no se entenderán entidades relacionadas con la Pyme, aquellas que participen en ella con ese fin y, por lo tanto, no se consideran para el cálculo de los ingresos brutos de la Pyme."
   }
 ]
