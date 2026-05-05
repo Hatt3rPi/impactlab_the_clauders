@@ -1,0 +1,7 @@
+requests>=2.32
+beautifulsoup4>=4.12
+lxml>=5.2
+# Opcional: solo si se usa --selenium con scraper.py
+selenium>=4.20
+# Necesario para scraper_playwright.py (recordar: playwright install chromium)
+playwright>=1.45
