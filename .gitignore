@@ -31,3 +31,11 @@ desktop.ini
 
 # Claude Code local settings (not part of project)
 .claude/settings.local.json
+
+# Playwright MCP artefactos temporales (snapshots de navegación, screenshots)
+.playwright-mcp/
+*.playwright.png
+
+# Screenshots one-shot (descartar artefactos de testing manual)
+twilio-*.png
+*-screenshot.png

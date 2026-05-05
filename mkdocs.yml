@@ -151,6 +151,9 @@ nav:
           - "Manuales":
               - tu-plata-mipyme/especificaciones/manuales/index.md
               - "Extender gamificación": tu-plata-mipyme/especificaciones/manuales/extender-gamificacion.md
+          - "RAG":
+              - tu-plata-mipyme/especificaciones/rag/index.md
+              - "Corpus inicial por entidad": tu-plata-mipyme/especificaciones/rag/corpus-inicial.md
 
   - "🏆 Competencia":
       - competencia/index.md
