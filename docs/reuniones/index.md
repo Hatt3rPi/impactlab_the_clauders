@@ -29,24 +29,28 @@ Cada reunión queda **versionada en el repo**: transcripción cruda + resumen ej
 | 2026-04-29 | Definición de problema y setup del hackathon | kickoff | Línea: inclusión financiera · Plataforma: web mobile-first · Roles asumidos | [Ver](2026-04-29-definicion-problema-setup.md) |
 | 2026-04-30 | Revisión de dolores E0-E3 + decisiones de backlog | diseño-producto | 21 features ✅ · 6 ❌ · 1 💡 · 32 ⏳ · E2 (formalización) es el fuerte · Pendiente: confirmar freemium con organización | [Ver](2026-04-30-revision-dolores-backlog.md) |
 | 2026-05-04 | Kickoff Impact Lab Fintech — Sesión Organizadores | kickoff | Entrega: día 6 cierre · Evaluación por rúbrica multicritero · Datos libres · Deploy en nube recomendado · Tickets por confirmar | [Ver](2026-05-04-kickoff-impactlab-fintech.md) |
+| 2026-05-05 | Arquitectura multi-agente y definición de producto (~3 h) | diseño-producto | Stack: Open Cloud + Supabase PG Vector + Google Embedding · Arquitectura multi-agente (Opus + Sonnet/Haiku) · 3 dolores core · Roles definidos · Alcance MVP cerrado | [Ver](2026-05-05-arquitectura-producto-definicion.md) |
+| 2026-05-05 | SEO, landing y organización de tareas (22 min) | sync | Landing en Astro + blog SEO · robot.txt + LLM.txt · División de roles confirmada · Sesión docs a las 09:00 h | [Ver](2026-05-05-seo-landing-organizacion-tareas.md) |
 
 ## Acciones abiertas (vivas)
 
 > Idealmente sincronizadas con cada reunión. Mover a "cerradas" cuando se completen.
 
 - [ ] @Equipo — **Confirmar ticket para ambos días del evento** — antes del 6/05
-- [ ] @Equipo — **Tollgate 1**: cerrar problema/segmento y aprobar PRD — objetivo hoy o mañana
-- [ ] @Equipo — Llegar con computador cargado y todo descargado antes del evento — 6/05 AM
+- [ ] @Felipe — Migrar WhatsApp de Twilio a Open Cloud — 05-may
+- [ ] @Cristian — Montar web scraping de postulaciones (Corfo, SERCOTEC, Startup Chile) — 05-may
+- [ ] @Cristian — Configurar Supabase PG Vector + Google Embedding — 05-may
+- [ ] @Jose — Construir landing Astro + módulo web autenticado — 06-may
+- [ ] @Jose — Subir documentación de organismos (SII, municipalidades, Corfo) — 05-may
+- [ ] @Anahi — UX/UI pantallas internas + diseño de marca — 06-may
+- [ ] @Felipe — Punto de control personalización de sugerencias a las 14:00-15:00 h — 05-may
 - [ ] @EquipoDev — No conectar APIs hasta tener la solución modelada — durante hackathon
 - [ ] @EquipoDev — Evaluar deploy en la nube antes de presentar — 6/05 cierre
-- [ ] @Jose — Compartir research inicial (cruce CMF + Impact Lab) en el repo — 2026-04-29
-- [ ] @Todos — Centralizar links y fuentes en el repo — continuo
-- [ ] @Todos — Diseñar proceso de validación con usuarios vía redes sociales — esta semana
-- [ ] @Equipo — **Tollgate 2**: arquitectura + stack definidos antes del 5 de mayo
-- [ ] @Equipo — MVP testeado antes del kickoff del lab — 2026-05-06
+- [ ] @Equipo — Subir documentación a plataforma del Impact Lab — antes del jueves 07-may
 
 ## Acciones cerradas
 
 - [x] @Felipe — Montar repositorio/wiki como fuente de la verdad (2026-04-29)
 - [x] @Jose — Armar hoja de ruta con etapas e hitos (audio + diagrama 2026-04-29 → [propuesta registrada](../equipo/proceso-y-hoja-de-ruta.md))
 - [x] @Todos — Levantamiento individual reemplazado por incorporación de research previo + 9 ideas pre-evaluadas (2026-04-29)
+- [x] @Equipo — Tollgate 2: arquitectura + stack definidos (2026-05-05)
