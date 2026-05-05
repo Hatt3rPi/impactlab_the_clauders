@@ -7,10 +7,6 @@ tags:
 
 # Reuniones
 
-<!-- AUTO-BANNER -->
-!!! abstract ":material-toy-brick: Plantilla / esqueleto inicial"
-    Estructura generada al iniciar la wiki, sin datos del equipo. **Reemplazar el contenido antes de citarlo.** Convención: ver [Convenciones de contenido](../convenciones-de-contenido.md).
-
 Cada reunión queda **versionada en el repo**: transcripción cruda + resumen ejecutivo + decisiones + acciones.
 
 ## Cómo registrar una reunión
@@ -32,13 +28,17 @@ Cada reunión queda **versionada en el repo**: transcripción cruda + resumen ej
 |---|---|---|---|---|
 | 2026-04-29 | Definición de problema y setup del hackathon | kickoff | Línea: inclusión financiera · Plataforma: web mobile-first · Roles asumidos | [Ver](2026-04-29-definicion-problema-setup.md) |
 | 2026-04-30 | Revisión de dolores E0-E3 + decisiones de backlog | diseño-producto | 21 features ✅ · 6 ❌ · 1 💡 · 32 ⏳ · E2 (formalización) es el fuerte · Pendiente: confirmar freemium con organización | [Ver](2026-04-30-revision-dolores-backlog.md) |
+| 2026-05-04 | Kickoff Impact Lab Fintech — Sesión Organizadores | kickoff | Entrega: día 6 cierre · Evaluación por rúbrica multicritero · Datos libres · Deploy en nube recomendado · Tickets por confirmar | [Ver](2026-05-04-kickoff-impactlab-fintech.md) |
 
 ## Acciones abiertas (vivas)
 
 > Idealmente sincronizadas con cada reunión. Mover a "cerradas" cuando se completen.
 
-- [ ] @Equipo — **Validar propuesta de [hoja de ruta](../equipo/proceso-y-hoja-de-ruta.md)** (3 etapas + 2 tollgates) en reunión de hoy 21:00
+- [ ] @Equipo — **Confirmar ticket para ambos días del evento** — antes del 6/05
 - [ ] @Equipo — **Tollgate 1**: cerrar problema/segmento y aprobar PRD — objetivo hoy o mañana
+- [ ] @Equipo — Llegar con computador cargado y todo descargado antes del evento — 6/05 AM
+- [ ] @EquipoDev — No conectar APIs hasta tener la solución modelada — durante hackathon
+- [ ] @EquipoDev — Evaluar deploy en la nube antes de presentar — 6/05 cierre
 - [ ] @Jose — Compartir research inicial (cruce CMF + Impact Lab) en el repo — 2026-04-29
 - [ ] @Todos — Centralizar links y fuentes en el repo — continuo
 - [ ] @Todos — Diseñar proceso de validación con usuarios vía redes sociales — esta semana
