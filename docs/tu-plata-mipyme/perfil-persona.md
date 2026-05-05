@@ -70,7 +70,7 @@ Las 6:00 AM Rosa hornea para entregar a las 9:00. Cobra por transferencia a su C
 
 ## Persona secundaria: Felipe, 29 — Microemprendedor digital informal
 
-> *Segmento secundario: jóvenes con negocio online que crecen rápido y choca contra la barrera de facturación B2B.*
+> *Segmento secundario: jóvenes con negocio online que crecen rápido y chocan contra la barrera de facturación B2B.*
 
 | Dimensión | Detalle |
 |---|---|
@@ -84,36 +84,23 @@ Las 6:00 AM Rosa hornea para entregar a las 9:00. Cobra por transferencia a su C
 
 ## Mapa de stakeholders institucionales en el journey de Rosa
 
-El journey de Rosa no es solo un proceso lineal: es una red de actores estatales, privados y comunitarios con los que debe interactuar. Muchos de ellos generan fricción sin saberlo.
+El journey de Rosa no es solo un proceso lineal: es una red de actores estatales, privados y comunitarios con los que debe interactuar en cada etapa. Muchos de ellos generan fricción sin saberlo.
 
-```mermaid
-journey
-    title Journey institucional de Rosa (idea → PYME operando)
-    section Sueño / Idea
-      Grupos Facebook / Boca a boca: 2: Rosa
-      SERCOTEC (no lo conoce): 1: Rosa
-    section Validación informal
-      CuentaRUT BancoEstado: 5: Rosa
-      Feria libre / vecinos: 5: Rosa
-      SII (miedo, no lo toca): 1: Rosa
-    section Formalización
-      RES Ministerio de Economía: 2: Rosa
-      SII — F4415 Inicio de Actividades: 2: Rosa
-      Municipalidad — Patente comercial: 2: Rosa
-      SEREMI de Salud (si vende alimentos): 2: Rosa
-    section Operación formal
-      SII — F29 mensual: 3: Rosa
-      PreviRed (si contrata): 2: Rosa
-      Banco — Cuenta empresa: 3: Rosa
-    section Crecimiento
-      SERCOTEC / CORFO — Subsidios: 2: Rosa
-      FOGAPE — Garantía crédito: 1: Rosa
-      FOSIS — Subsidio social: 1: Rosa
-    section Riesgo / Crisis
-      SERNAC — Reclamos: 2: Rosa
-      CMF Educa: 1: Rosa
-      RSH / MIDESO — Subsidios: 3: Rosa
-```
+<div style="position:relative; margin: 16px 0 8px;">
+  <a href="../../assets/journey-rosa.html"
+     target="_blank"
+     style="position:absolute;top:10px;right:10px;z-index:10;background:#1a1d2e;color:#c8cce0;font-size:11px;font-family:sans-serif;padding:5px 12px;border-radius:5px;text-decoration:none;border:1px solid #2e3250;display:inline-flex;align-items:center;gap:5px;">
+    ⛶ Pantalla completa
+  </a>
+  <iframe
+    src="../../assets/journey-rosa.html"
+    style="width:100%;height:680px;border:none;border-radius:8px;display:block;"
+    title="Journey institucional de Rosa — mapa interactivo de actores"
+    loading="lazy">
+  </iframe>
+</div>
+
+> Haz clic en cualquier actor del mapa para ver su rol en el journey, el nivel de fricción y la oportunidad específica de Tu Plata Mipyme.
 
 ### Tabla de actores y rol en el journey
 
